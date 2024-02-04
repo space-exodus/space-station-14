@@ -64,6 +64,7 @@
   - type: Weldable
     time: 3
   - type: Airlock
+    openUnlitVisible: true # Corvax-Resprite-Airlocks
   - type: NavMapDoor
   - type: DoorBolt
   - type: Appearance
@@ -147,5 +148,3 @@
   - type: PryUnpowered
   placement:
     mode: SnapgridCenter
-
-

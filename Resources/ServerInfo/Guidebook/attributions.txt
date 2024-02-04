@@ -1,0 +1,5 @@
+Based on https://github.com/space-syndicate/space-station-14/tree/master/Resources/ServerInfo/GuideBook by:
+- lapatison
+- lzk228
+- ficcialfaint
+- AwareFoxy

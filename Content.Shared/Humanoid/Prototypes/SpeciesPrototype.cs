@@ -66,13 +66,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// <summary>
     ///     Humanoid species variant used by this entity.
     /// </summary>
-    [DataField("prototype", required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("prototype", required: true, customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string Prototype { get; private set; } = default!;
 
     /// <summary>
     /// Prototype used by the species for the dress-up doll in various menus.
     /// </summary>
-    [DataField("dollPrototype", required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("dollPrototype", required: true, customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string DollPrototype { get; private set; } = default!;
 
     /// <summary>
@@ -87,8 +87,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField("femaleFirstNames")]
     public string FemaleFirstNames { get; private set; } = "names_first_female";
 
-    [DataField("lastNames")]
-    public string LastNames { get; private set; } = "names_last";
+    // Loki-LastnameGender-Start
+    [DataField("maleLastNames")]
+    public string MaleLastNames { get; private set; } = "names_last_male";
+
+    [DataField("femaleLastNames")]
+    public string FemaleLastNames { get; private set; } = "names_last_female";
+    // Loki-LastnameGender-End
 
     [DataField("naming")]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;

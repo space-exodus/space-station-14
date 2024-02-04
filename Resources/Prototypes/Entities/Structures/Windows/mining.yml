@@ -40,6 +40,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: walls  # Corvax-Resprite
     base: mwindow
   - type: Appearance
   - type: DamageVisuals
@@ -66,7 +67,7 @@
     state: state0
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: walls  # Corvax-Resprite
     base: state
   - type: Icon
     sprite: Structures/Windows/mining_diagonal.rsi

@@ -29,7 +29,7 @@ namespace Content.Server.GameTicking
 
             if (_mind.TryGetMind(session.UserId, out var mindId, out var mind))
             {
-                if (args.NewStatus != SessionStatus.Disconnected)
+                if (args.OldStatus == SessionStatus.Connecting && args.NewStatus == SessionStatus.Connected)
                 {
                     mind.Session = session;
                     _pvsOverride.AddSessionOverride(GetNetEntity(mindId.Value), session);
@@ -43,92 +43,93 @@ namespace Content.Server.GameTicking
             switch (args.NewStatus)
             {
                 case SessionStatus.Connected:
-                {
-                    AddPlayerToDb(args.Session.UserId.UserId);
-
-                    // Always make sure the client has player data.
-                    if (session.Data.ContentDataUncast == null)
                     {
-                        var data = new ContentPlayerData(session.UserId, args.Session.Name);
-                        data.Mind = mindId;
-                        session.Data.ContentDataUncast = data;
-                    }
+                        AddPlayerToDb(args.Session.UserId.UserId);
 
-                    // Make the player actually join the game.
-                    // timer time must be > tick length
-                    Timer.Spawn(0, () => _playerManager.JoinGame(args.Session));
+                        // Always make sure the client has player data.
+                        if (session.Data.ContentDataUncast == null)
+                        {
+                            var data = new ContentPlayerData(session.UserId, args.Session.Name);
+                            data.Mind = mindId;
+                            session.Data.ContentDataUncast = data;
+                        }
 
-                    var record = await _dbManager.GetPlayerRecordByUserId(args.Session.UserId);
-                    var firstConnection = record != null &&
-                                          Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 1;
+                        // Make the player actually join the game.
+                        // timer time must be > tick length
+                        // Timer.Spawn(0, args.Session.JoinGame); // Corvax-Queue: Moved to `JoinQueueManager`
 
-                    _chatManager.SendAdminAnnouncement(firstConnection
-                        ? Loc.GetString("player-first-join-message", ("name", args.Session.Name))
-                        : Loc.GetString("player-join-message", ("name", args.Session.Name)));
+                        var record = await _dbManager.GetPlayerRecordByUserId(args.Session.UserId);
+                        var firstConnection = record != null &&
+                                              Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 1;
 
-                    RaiseNetworkEvent(GetConnectionStatusMsg(), session.Channel);
+                        _chatManager.SendAdminAnnouncement(firstConnection
+                            ? Loc.GetString("player-first-join-message", ("name", args.Session.Name))
+                            : Loc.GetString("player-join-message", ("name", args.Session.Name)));
 
-                    if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
-                    {
-                        _roundStartCountdownHasNotStartedYetDueToNoPlayers = false;
-                        _roundStartTime = _gameTiming.CurTime + LobbyDuration;
-                    }
+                        RaiseNetworkEvent(GetConnectionStatusMsg(), session.Channel);
 
-                    break;
-                }
-
-                case SessionStatus.InGame:
-                {
-                    _userDb.ClientConnected(session);
-
-                    if (mind == null)
-                    {
-                        if (LobbyEnabled)
-                            PlayerJoinLobby(session);
-                        else
-                            SpawnWaitDb();
+                        if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
+                        {
+                            _roundStartCountdownHasNotStartedYetDueToNoPlayers = false;
+                            _roundStartTime = _gameTiming.CurTime + LobbyDuration;
+                        }
 
                         break;
                     }
 
-                    if (mind.CurrentEntity == null || Deleted(mind.CurrentEntity))
+                case SessionStatus.InGame:
                     {
-                        DebugTools.Assert(mind.CurrentEntity == null, "a mind's current entity was deleted without updating the mind");
+                        _userDb.ClientConnected(session);
 
-                        // This player is joining the game with an existing mind, but the mind has no entity.
-                        // Their entity was probably deleted sometime while they were disconnected, or they were an observer.
-                        // Instead of allowing them to spawn in, we will dump and their existing mind in an observer ghost.
-                        SpawnObserverWaitDb();
-                    }
-                    else
-                    {
-                        if (_playerManager.SetAttachedEntity(session, mind.CurrentEntity))
+                        if (mind == null)
                         {
-                            PlayerJoinGame(session);
+                            if (LobbyEnabled)
+                                PlayerJoinLobby(session);
+                            else
+                                SpawnWaitDb();
+
+                            break;
+                        }
+
+                        if (mind.CurrentEntity == null || Deleted(mind.CurrentEntity))
+                        {
+                            DebugTools.Assert(mind.CurrentEntity == null, "a mind's current entity was deleted without updating the mind");
+
+                            // This player is joining the game with an existing mind, but the mind has no entity.
+                            // Their entity was probably deleted sometime while they were disconnected, or they were an observer.
+                            // Instead of allowing them to spawn in, we will dump and their existing mind in an observer ghost.
+                            SpawnObserverWaitDb();
                         }
                         else
                         {
-                            Log.Error(
-                                $"Failed to attach player {session} with mind {ToPrettyString(mindId)} to its current entity {ToPrettyString(mind.CurrentEntity)}");
-                            SpawnObserverWaitDb();
+                            if (_playerManager.SetAttachedEntity(session, mind.CurrentEntity))
+                            {
+                                PlayerJoinGame(session);
+                            }
+                            else
+                            {
+                                Log.Error(
+                                    $"Failed to attach player {session} with mind {ToPrettyString(mindId)} to its current entity {ToPrettyString(mind.CurrentEntity)}");
+                                SpawnObserverWaitDb();
+                            }
                         }
-                    }
 
-                    break;
-                }
+                        break;
+                    }
 
                 case SessionStatus.Disconnected:
-                {
-                    _chatManager.SendAdminAnnouncement(Loc.GetString("player-leave-message", ("name", args.Session.Name)));
-                    if (mind != null)
                     {
-                        _pvsOverride.ClearOverride(GetNetEntity(mindId!.Value));
-                        mind.Session = null;
-                    }
+                        _chatManager.SendAdminAnnouncement(Loc.GetString("player-leave-message", ("name", args.Session.Name)));
+                        if (mind != null)
+                        {
+                            _pvsOverride.ClearOverride(GetNetEntity(mindId!.Value));
+                            mind.Session = null;
+                        }
 
-                    _userDb.ClientDisconnected(session);
-                    break;
-                }
+                        if (_playerGameStatuses.ContainsKey(args.Session.UserId)) // Corvax-Queue: Delete data only if player was in game
+                            _userDb.ClientDisconnected(session);
+                        break;
+                    }
             }
             //When the status of a player changes, update the server info text
             UpdateInfoText();

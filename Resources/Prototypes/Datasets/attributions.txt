@@ -1,0 +1,5 @@
+Based on https://github.com/space-syndicate/space-station-14/tree/master/Resources/Prototypes/Datasets by:
+- Morb0
+- lzk228
+- lapatison
+- ficcialfaint

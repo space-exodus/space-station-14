@@ -37,6 +37,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
+    key: walls  # Corvax-Resprite
     base: pwindow
   - type: Construction
     graph: Window
@@ -113,7 +114,7 @@
     state: state0
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: walls  # Corvax-Resprite
     base: state
   - type: Icon
     sprite: Structures/Windows/plasma_diagonal.rsi
