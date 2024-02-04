@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 #10 hrs
+      time: 36000 #10 hrs # Corvax-RoleTime
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos
@@ -26,10 +26,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
     back: ClothingBackpackSecurityFilled
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsJackSec # Corvax-Resprite-MRP
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHelmetBasic
-    outerClothing: ClothingOuterArmorBasic
+    outerClothing: ClothingOuterVestArmorSec # Corvax-Resprite
     id: SecurityPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled

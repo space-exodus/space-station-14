@@ -37,7 +37,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls  # Corvax-Resprite
     base: ruwindow
   - type: Construction
     graph: Window
@@ -68,8 +67,8 @@
     sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
     state: state0
   - type: IconSmooth
-    key: walls  # Corvax-Resprite
     mode: Diagonal
+    key: walls  # Corvax-Resprite
     base: state
   - type: Icon
     sprite: Structures/Windows/reinforced_uranium_diagonal.rsi

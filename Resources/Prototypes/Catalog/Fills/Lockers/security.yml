@@ -32,6 +32,7 @@
       - id: FlashlightSeclite
       - id: WeaponDisabler
         prob: 0.3
+      - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
       - id: ClothingBeltSecurityFilled
       - id: Flash
       - id: ClothingEyesGlassesSunglasses
@@ -40,6 +41,7 @@
       - id: ClothingShoesBootsJack
       - id: ClothingOuterCoatWarden
       - id: ClothingOuterWinterWarden
+      - id: ClothingOuterCoatWardenAlt # Corvax-SecFashion
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
@@ -67,6 +69,8 @@
       - id: ClothingShoesBootsJack
       - id: WeaponMeleeNeedle
         prob: 0.1
+      - id: ClothingOuterCoatSecurityOvercoat # Corvax-SecFashion
+        prob: 0.2
       - id: ClothingEyesHudSecurity
       - id: HoloprojectorSecurity
         prob: 0.6
@@ -105,6 +109,11 @@
         prob: 0.7
       - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
         prob: 0.15
+      - id: ClothingHeadHelmetSecurityMedic # Corvax-Resprite
+      - id: ClothingOuterVestSecurityMedic # Corvax-Resprite
+        prob: 0.5
+      - id: ClothingOuterCoatLabSecurityMedic # Corvax-Resprite
+        prob: 0.5
 
 - type: entity
   id: LockerDetectiveFilled
@@ -125,6 +134,7 @@
       - id: BoxForensicPad
       - id: DrinkDetFlask
       - id: ClothingHandsGlovesForensic
+      - id: BookBusido # Corvax-Books
       - id: HoloprojectorSecurity
 
 - type: entity

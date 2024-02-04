@@ -40,7 +40,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: walls  # Corvax-Resprite
     base: swindow
   - type: Construction
     graph: Window

@@ -63,5 +63,3 @@ ent-ClothingBackpackDebug3 = gay wackpack
 ent-ClothingBackpackDebug4 = offset wackpack
     .desc = What the fuck is this?
     .suffix = Debug
-ent-ClothingBackpackCE = рюкзак старшего инженера
-    .desc = Технически продвинутый рюкзак.
