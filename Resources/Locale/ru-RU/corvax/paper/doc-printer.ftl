@@ -1,157 +1,157 @@
-doc-text-printer-ReportStation =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ-ЦК[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                                 ОТЧЁТ О СИТУАЦИИ
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+doc-text-printer-report-station =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ-ЦК[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                                ОТЧЁТ О СИТУАЦИИ
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Цель:
-     Статус выполнения цели:
-     Код уровня угрозы:
-     Причина установления кода:
-     Активные угрозы:
-     Потери среди экипажа:
-     Текущая ситуация:
+    Цель:
+    Статус выполнения цели:
+    Код уровня угрозы:
+    Причина установления кода:
+    Активные угрозы:
+    Потери среди экипажа:
+    Текущая ситуация:
 
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ReportOnEliminationOfViolations =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                             ОТЧЁТ ОБ УСТРАНЕНИИ НАРУШЕНИЙ
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-report-on-elimination-of-violations =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                            ОТЧЁТ ОБ УСТРАНЕНИИ НАРУШЕНИЙ
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Я, (ФИО), в должности (полное наименование должности), отчитываюсь об устранении нарушений в работе, выявленных (ФИО), в должности (полное наименование должности).
-     Предъявленные нарушения:
+    Я, (ФИО), в должности (полное наименование должности), отчитываюсь об устранении нарушений в работе, выявленных (ФИО), в должности (полное наименование должности).
+    Предъявленные нарушения:
 
-     Причина нарушений:
+    Причина нарушений:
 
-     Проведенные мероприятия по устранению нарушений:
+    Проведенные мероприятия по устранению нарушений:
 
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ReporDepartment =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                                 ОТЧЁТ О РАБОТЕ ОТДЕЛА
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-report-department =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                                ОТЧЁТ О РАБОТЕ ОТДЕЛА
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Количество сотрудников в отделе:
-     Количество стажёров:
-     Неактивные сотрудники отдела:
-     ФИО, должность, причина
-     Степень готовности цели:
-     Общее состояние отдела:
+    Количество сотрудников в отделе:
+    Количество стажёров:
+    Неактивные сотрудники отдела:
+    ФИО, должность, причина
+    Степень готовности цели:
+    Общее состояние отдела:
 
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ReportEmployeePerformance =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ПД-КОМ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                         ОТЧЁТ О РАБОТЕ СОТРУДНИКА
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-report-employee-performance =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ПД-КОМ[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                        ОТЧЁТ О РАБОТЕ СОТРУДНИКА
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Я, (ФИО), в должности (полное наименования должности), в ходе исполнения своих обязанностей выполнил положенный объем работ. Прошу принять результат работ Главой отдела (наименование отдела).
-     Произведённые работы:
+    Я, (ФИО), в должности (полное наименования должности), в ходе исполнения своих обязанностей выполнил положенный объем работ. Прошу принять результат работ Главой отдела (наименование отдела).
+    Произведённые работы:
 
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ReportOnTheChaptersMeeting =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                                 ОТЧЁТ О СОБРАНИИ ГЛАВ
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-report-on-the-chapters-meeting =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 КОМ[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                                ОТЧЁТ О СОБРАНИИ ГЛАВ
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Причина созыва Собрания Глав:
-     Формулировка поставленного перед Главами вопроса:
-     Количество голосов «За»:
-     Проголосовавшие «За»:
+    Причина созыва Собрания Глав:
+    Формулировка поставленного перед Главами вопроса:
+    Количество голосов «За»:
+    Проголосовавшие «За»:
 
-     Количество голосов «Против»:
-     Проголосовавшие «Против»:
+    Количество голосов «Против»:
+    Проголосовавшие «Против»:
 
-     Количество воздержавшихся от голосования:
-     Воздержавшиеся от голосования:
+    Количество воздержавшихся от голосования:
+    Воздержавшиеся от голосования:
 
-     Решение Собрания Глав:
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-InternalAffairsAgentsReport =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ЮР-КОМ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                 ОТЧЁТ О ВНУТРЕННЕМ РАСЛЕДОВАНИИ
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+    Решение Собрания Глав:
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-internal-affairs-agents-report =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ЮР-КОМ[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                ОТЧЁТ О ВНУТРЕННЕМ РАСЛЕДОВАНИИ
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Я, (ФИО), в должности Агента Внутренних Дел, в ходе внутренней проверки, запрошенной (ФИО), в должности (полное наименование должности) по причине (причина проверки) выявил следующие нарушения:
+    Я, (ФИО), в должности Агента Внутренних Дел, в ходе внутренней проверки, запрошенной (ФИО), в должности (полное наименование должности) по причине (причина проверки) выявил следующие нарушения:
 
-     Также хочу сообщить о следующем:
+    Также хочу сообщить о следующем:
 
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ConditionReport =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ИНЖ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-     =============================================
-                         ОТЧЁТ О ТЕХНИЧЕСКОМ СОСТОЯНИИ
-     =============================================
-     Время от начала смены и дата:
-     Составитель документа:
-     Должность составителя:
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-condition-report =
+   ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+   ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+   ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+   ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ИНЖ[/bold]
+   ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+    =============================================
+                        ОТЧЁТ О ТЕХНИЧЕСКОМ СОСТОЯНИИ
+    =============================================
+    Время от начала смены и дата:
+    Составитель документа:
+    Должность составителя:
 
-     Была произведена проверка (название системы или объекта), результаты проверки были проанализированы, был проведен анализ причин возникновения нестабильной работы объекта.
-     Причина поломки объекта:
+    Была произведена проверка (название системы или объекта), результаты проверки были проанализированы, был проведен анализ причин возникновения нестабильной работы объекта.
+    Причина поломки объекта:
 
-     Выявленные повреждения объекта:
+    Выявленные повреждения объекта:
 
-     Произведенный ремонт объекта:
+    Произведенный ремонт объекта:
 
-     =============================================
-                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ReportStudyObject =
+    =============================================
+                                ⠀[italic]Место для печатей[/italic]
+doc-text-printer-Report-study-object =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -171,7 +171,7 @@ doc-text-printer-ReportStudyObject =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ExperimentReport =
+doc-text-printer-experiment-report =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -199,7 +199,7 @@ doc-text-printer-ExperimentReport =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-DisposalReport =
+doc-text-printer-disposal-report =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -217,7 +217,7 @@ doc-text-printer-DisposalReport =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ApplicationAppointmentInterim =
+doc-text-printer-application-appointment-interim =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -236,7 +236,7 @@ doc-text-printer-ApplicationAppointmentInterim =
     По прибытии Главы отдела/Капитана с Центрального Командования обязуюсь сдать повышенный доступ, особо ценные предметы и снаряжение.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ApplicationEmployment =
+doc-text-printer-application-employment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -253,7 +253,7 @@ doc-text-printer-ApplicationEmployment =
     Обязуюсь следовать Стандартным Рабочим Процедурам отдела. Обязуюсь сдать рабочее снаряжение и экипировку отдела при переводе.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-LetterResignation =
+doc-text-printer-letter-resignation =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -270,7 +270,7 @@ doc-text-printer-LetterResignation =
     Обязуюсь заплатить штраф, установленный условиями расторжения срочного/бессрочного контракта, на станции Центрального Командования.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ApplicationAccess =
+doc-text-printer-application-access =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -289,7 +289,7 @@ doc-text-printer-ApplicationAccess =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ApplicationEquipment =
+doc-text-printer-application-equipment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -308,7 +308,7 @@ doc-text-printer-ApplicationEquipment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-Appeal =
+doc-text-printer-appeal =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -328,7 +328,7 @@ doc-text-printer-Appeal =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-EvacuationShuttleRequest =
+doc-text-printer-evacuation-shuttle-request =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -346,7 +346,7 @@ doc-text-printer-EvacuationShuttleRequest =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ShuttleRegistrationRequest =
+doc-text-printer-shuttle-registration-request =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -370,7 +370,7 @@ doc-text-printer-ShuttleRegistrationRequest =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestCallMembersCentralCommitteeDSO =
+doc-text-printer-request-call-members-central-committee-dso =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -389,7 +389,7 @@ doc-text-printer-RequestCallMembersCentralCommitteeDSO =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestToEstablishThreatLevel =
+doc-text-printer-request-to-establish-threat-level =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -408,7 +408,7 @@ doc-text-printer-RequestToEstablishThreatLevel =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestChangeSalary =
+doc-text-printer-request-change-salary =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -426,7 +426,7 @@ doc-text-printer-RequestChangeSalary =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestForNonlistedEmployment =
+doc-text-printer-request-for-non-listed-employment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -452,7 +452,7 @@ doc-text-printer-RequestForNonlistedEmployment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestForPromotion =
+doc-text-printer-request-for-promotion =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -474,7 +474,7 @@ doc-text-printer-RequestForPromotion =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestDocuments =
+doc-text-printer-request-documents =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -491,7 +491,7 @@ doc-text-printer-RequestDocuments =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestEuthanasia =
+doc-text-printer-request-euthanasia =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -508,7 +508,7 @@ doc-text-printer-RequestEuthanasia =
     По окончании процедуры прошу утилизировать тело путём (способ утилизации) при наличии на это возможности.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestConstructionWork =
+doc-text-printer-request-construction-work =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -526,7 +526,7 @@ doc-text-printer-RequestConstructionWork =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-RequestModernization =
+doc-text-printer-request-modernization =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -544,7 +544,7 @@ doc-text-printer-RequestModernization =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ComplaintViolationLaborRules =
+doc-text-printer-complaint-violation-labor-rules =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -562,7 +562,7 @@ doc-text-printer-ComplaintViolationLaborRules =
     Прошу провести внутреннюю проверку по данным фактам нарушений.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ComplaintOffense =
+doc-text-printer-complaint-offense =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -580,7 +580,7 @@ doc-text-printer-ComplaintOffense =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-PermissionEquipment =
+doc-text-printer-permission-equipment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -597,7 +597,7 @@ doc-text-printer-PermissionEquipment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-PermissionToTravelInCaseOfThreat =
+doc-text-printer-permission-to-travel-in-case-of-threat=
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -617,7 +617,7 @@ doc-text-printer-PermissionToTravelInCaseOfThreat =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-SearchPermission =
+doc-text-printer-search-permission =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -635,7 +635,7 @@ doc-text-printer-SearchPermission =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-PermissionToCarryWeapons =
+doc-text-printer-permission-to-carry-weapons =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -657,7 +657,7 @@ doc-text-printer-PermissionToCarryWeapons =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-PrescriptionDrugAuthorization =
+doc-text-printer-prescription-drug-authorization =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -677,7 +677,7 @@ doc-text-printer-PrescriptionDrugAuthorization =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-PermissionDisposeBody =
+doc-text-printer-permission-dispose-body =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -695,7 +695,7 @@ doc-text-printer-PermissionDisposeBody =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ConstructionPermit =
+doc-text-printer-construction-permit =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -713,7 +713,7 @@ doc-text-printer-ConstructionPermit =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-PermissionToExtendMarriage =
+doc-text-printer-permission-to-extend-marriage =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -736,7 +736,7 @@ doc-text-printer-PermissionToExtendMarriage =
     (ФИО), в должности (полное наименование должности)
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderDismissal =
+doc-text-printer-order-dismissal =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -753,7 +753,7 @@ doc-text-printer-OrderDismissal =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderDeprivationAccess =
+doc-text-printer-order-deprivation-access =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -770,7 +770,7 @@ doc-text-printer-OrderDeprivationAccess =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderEncouragement =
+doc-text-printer-order-encouragement =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -787,7 +787,7 @@ doc-text-printer-OrderEncouragement =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderParolePrisoner =
+doc-text-printer-order-parole-prisoner =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -804,7 +804,7 @@ doc-text-printer-OrderParolePrisoner =
     Выдаваемая профессия:
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderRecognizingSentienceCreature =
+doc-text-printer-order-recognizing-rentience-creature =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -825,7 +825,7 @@ doc-text-printer-OrderRecognizingSentienceCreature =
     Существо принято/не принято в качестве пассажира станции до окончания смены.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderMedicalIntervention =
+doc-text-printer-order-medical-intervention =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -843,7 +843,7 @@ doc-text-printer-OrderMedicalIntervention =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ProductManufacturingOrder =
+doc-text-printer-product-manufacturing-order =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -863,7 +863,7 @@ doc-text-printer-ProductManufacturingOrder =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderPurchaseResourcesEquipment =
+doc-text-printer-order-purchase-resources-equipment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -884,7 +884,7 @@ doc-text-printer-OrderPurchaseResourcesEquipment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderingSpecialEquipment =
+doc-text-printer-ordering-special-equipment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -904,7 +904,7 @@ doc-text-printer-OrderingSpecialEquipment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-OrderPurchaseWeapons =
+doc-text-printer-order-purchase-weapons =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -922,7 +922,7 @@ doc-text-printer-OrderPurchaseWeapons =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-Certificate =
+doc-text-printer-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -939,7 +939,7 @@ doc-text-printer-Certificate =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-CertificateAdvancedTraining =
+doc-text-printer-certificate-advanced-training =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -955,7 +955,7 @@ doc-text-printer-CertificateAdvancedTraining =
     Я, (ФИО), в должности главы отдела (полное наименование отдела), свидетельствую, что сотрудник (ФИО) в должности (должность сотрудника), успешно завершил образовательный курс "(название курса)" и был аттестован.
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-CertificateOffense =
+doc-text-printer-certificate-offense =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -980,7 +980,7 @@ doc-text-printer-CertificateOffense =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-DeathCertificate =
+doc-text-printer-death-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1002,7 +1002,7 @@ doc-text-printer-DeathCertificate =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-MarriageCertificate =
+doc-text-printer-marriage-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1023,7 +1023,7 @@ doc-text-printer-MarriageCertificate =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-DivorceCertificate =
+doc-text-printer-divorce-certificate =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1046,7 +1046,7 @@ doc-text-printer-DivorceCertificate =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ClosingIndictment =
+doc-text-printer-closing-indictment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1068,30 +1068,30 @@ doc-text-printer-ClosingIndictment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-Sentence =
-    ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
-    ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
-    ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
-    ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 СБ[/bold]
-    ⠀[color=#1b487e]░░░░██░░░████░███[/color]
-    =============================================
-                                    ПРИГОВОР
-    =============================================
-    Время от начала смены и дата:
-    Составитель документа:
-    Должность составителя:
+doc-text-printer-sentence =
+        ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
+        ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+        ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+        ⠀[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 СБ[/bold]
+        ⠀[color=#1b487e]░░░░██░░░████░███[/color]
+        =============================================
+                                        ПРИГОВОР
+        =============================================
+        Время от начала смены и дата:
+        Составитель документа:
+        Должность составителя:
 
-    Я, (ФИО), в должности (полное название должности), выношу приговор согласно данным мне полномочиям в отношении (ФИО), в должности (полное название должности).
-    Данное лицо нарушило следующие статьи Корпоративного Закона:
-    (перечисление статей)
-    С учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде:
-    (суммарный срок, пожизненно заключение, либо приговор к казни)
-    Административное наказание:
-    (понижение в должности, увольнение)
-    Срок заключения под стражу отсчитывается с: (время начала заключения)
-    =============================================
-                                ⠀[italic]Место для печатей[/italic]
-doc-text-printer-Judgment =
+        Я, (ФИО), в должности (полное название должности), выношу приговор согласно данным мне полномочиям в отношении (ФИО), в должности (полное название должности).
+        Данное лицо нарушило следующие статьи Корпоративного Закона:
+        (перечисление статей)
+        С учетом всех смягчающих и отягчающих обстоятельств, правовое наказание данного лица представлено в виде:
+        (суммарный срок, пожизненно заключение, либо приговор к казни)
+        Административное наказание:
+        (понижение в должности, увольнение)
+        Срок заключения под стражу отсчитывается с: (время начала заключения)
+        =============================================
+                                    ⠀[italic]Место для печатей[/italic]
+doc-text-printer-judgment =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1123,7 +1123,7 @@ doc-text-printer-Judgment =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-StatementHealth =
+doc-text-printer-statement-health =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1149,7 +1149,7 @@ doc-text-printer-StatementHealth =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-DecisionToStartTrial =
+doc-text-printer-decision-to-start-trial =
     ⠀[color=#1b487e]███░███░░░░██░░░░[/color]
     ⠀[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
     ⠀[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
@@ -1167,7 +1167,7 @@ doc-text-printer-DecisionToStartTrial =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-ErrorLoadingFormHeader =
+doc-text-printer-error-loading-form-header =
     ⠀[color=#B50F1D] ███░██████░███[/color]
     ⠀[color=#B50F1D] █░░░██░░░░░░░█[/color]    [head=3]Бланк документа[/head]
     ⠀[color=#B50F1D] █░░░░████░░░░█[/color]             [head=3]Syndicate[/head]
@@ -1182,7 +1182,7 @@ doc-text-printer-ErrorLoadingFormHeader =
     Полное содержание документа со всей необходимой информацией и описанием
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-NOTICEOFLIQUIDATION =
+doc-text-printer-notice-of-liquidation =
     ⠀[color=#B50F1D] ███░██████░███[/color]
     ⠀[color=#B50F1D] █░░░██░░░░░░░█[/color]    [head=3]Бланк документа[/head]
     ⠀[color=#B50F1D] █░░░░████░░░░█[/color]             [head=3]Syndicate[/head]
@@ -1199,7 +1199,7 @@ doc-text-printer-NOTICEOFLIQUIDATION =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-BUSINESSDEAL =
+doc-text-printer-business-deal =
     ⠀[color=#B50F1D] ███░██████░███[/color]
     ⠀[color=#B50F1D] █░░░██░░░░░░░█[/color]    [head=3]Бланк документа[/head]
     ⠀[color=#B50F1D] █░░░░████░░░░█[/color]             [head=3]Syndicate[/head]
@@ -1217,7 +1217,7 @@ doc-text-printer-BUSINESSDEAL =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-NOTEBEGINNINGMILITARYACTIONS =
+doc-text-printer-note-beginning-military-actions =
     ⠀[color=#B50F1D] ███░██████░███[/color]
     ⠀[color=#B50F1D] █░░░██░░░░░░░█[/color]    [head=3]Бланк документа[/head]
     ⠀[color=#B50F1D] █░░░░████░░░░█[/color]             [head=3]Syndicate[/head]
@@ -1234,7 +1234,7 @@ doc-text-printer-NOTEBEGINNINGMILITARYACTIONS =
 
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
-doc-text-printer-REPORTACCOMPLISHMENTGOALS =
+doc-text-printer-report-accomplishment-goals =
     ⠀[color=#B50F1D] ███░██████░███[/color]
     ⠀[color=#B50F1D] █░░░██░░░░░░░█[/color]    [head=3]Бланк документа[/head]
     ⠀[color=#B50F1D] █░░░░████░░░░█[/color]             [head=3]Syndicate[/head]
