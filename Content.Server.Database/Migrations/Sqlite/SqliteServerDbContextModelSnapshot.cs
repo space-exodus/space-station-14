@@ -597,6 +597,14 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("player_id");
 
+                    b.Property<ulong?>("DiscordId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("discord_id");
+
+                    b.Property<string>("DiscordVerificationCode")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("discord_verification_code");
+
                     b.Property<DateTime>("FirstSeenTime")
                         .HasColumnType("TEXT")
                         .HasColumnName("first_seen_time");

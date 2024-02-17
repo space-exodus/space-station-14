@@ -12,6 +12,7 @@ namespace Content.Server.Database
         public string LastSeenUserName { get; }
         public DateTimeOffset LastSeenTime { get; }
         public IPAddress LastSeenAddress { get; }
+        public ulong? DiscordId { get; }
 
         public PlayerRecord(
             NetUserId userId,
@@ -19,7 +20,8 @@ namespace Content.Server.Database
             string lastSeenUserName,
             DateTimeOffset lastSeenTime,
             IPAddress lastSeenAddress,
-            ImmutableArray<byte>? hwId)
+            ImmutableArray<byte>? hwId,
+            ulong? discordId)
         {
             UserId = userId;
             FirstSeenTime = firstSeenTime;
@@ -27,6 +29,7 @@ namespace Content.Server.Database
             LastSeenTime = lastSeenTime;
             LastSeenAddress = lastSeenAddress;
             HWId = hwId;
+            DiscordId = discordId;
         }
     }
 }

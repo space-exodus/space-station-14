@@ -136,7 +136,7 @@ namespace Content.Server.Database
 
             await db.DbContext.SaveChangesAsync();
 
-            return new PlayerPreferences(new[] {new KeyValuePair<int, ICharacterProfile>(0, defaultProfile)}, 0, Color.FromHex(prefs.AdminOOCColor));
+            return new PlayerPreferences(new[] { new KeyValuePair<int, ICharacterProfile>(0, defaultProfile) }, 0, Color.FromHex(prefs.AdminOOCColor));
         }
 
         public async Task DeleteSlotAndSetSelectedIndex(NetUserId userId, int deleteSlot, int newSlot)
@@ -268,19 +268,19 @@ namespace Content.Server.Database
             profile.Jobs.AddRange(
                 humanoid.JobPriorities
                     .Where(j => j.Value != JobPriority.Never)
-                    .Select(j => new Job {JobName = j.Key, Priority = (DbJobPriority) j.Value})
+                    .Select(j => new Job { JobName = j.Key, Priority = (DbJobPriority) j.Value })
             );
 
             profile.Antags.Clear();
             profile.Antags.AddRange(
                 humanoid.AntagPreferences
-                    .Select(a => new Antag {AntagName = a})
+                    .Select(a => new Antag { AntagName = a })
             );
 
             profile.Traits.Clear();
             profile.Traits.AddRange(
                 humanoid.TraitPreferences
-                        .Select(t => new Trait {TraitName = t})
+                        .Select(t => new Trait { TraitName = t })
             );
 
             return profile;
@@ -520,6 +520,27 @@ namespace Content.Server.Database
         /*
          * PLAYER RECORDS
          */
+        // Exodus-Refactor-Start: Rewrite player record creation on the first connection
+        public async Task CreatePlayerRecord(NetUserId userId, string username, IPAddress address)
+        {
+            await using var db = await GetDb();
+            var record = await db.DbContext.Player.SingleOrDefaultAsync(p => p.UserId == userId.UserId);
+
+            if (record != null)
+                return;
+
+            db.DbContext.Player.Add(record = new Player
+            {
+                FirstSeenTime = DateTime.UtcNow,
+                LastSeenTime = DateTime.UtcNow,
+                UserId = userId.UserId,
+                LastSeenAddress = address,
+                LastSeenUserName = username,
+            });
+            await db.DbContext.SaveChangesAsync();
+        }
+        // Exodus-Refactor-End
+
         public async Task UpdatePlayerRecord(
             NetUserId userId,
             string userName,
@@ -968,6 +989,74 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
         #endregion
 
+        // Exodus-Discord-Start
+        #region Discord
+
+        public async Task<string?> GenerateDiscordVerificationCode(NetUserId player)
+        {
+            await using var db = await GetDb();
+
+            var dbPlayer = await db.DbContext.Player.Where(dbPlayer => dbPlayer.UserId == player).SingleOrDefaultAsync();
+
+            if (dbPlayer == null)
+            {
+                return null;
+            }
+
+            // Why do you would generate verification code for a user with already linked account?
+            if (dbPlayer.DiscordId != null)
+            {
+                return null;
+            }
+
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Robust.Shared.Random.RobustRandom();
+            var code = new string(Enumerable.Repeat(chars, 12)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+
+            // if somehow with chance like 1 in 36^12 (17 zeros after the point) you'll get the same code
+            // as with the other player (which shouldn't be verified too) we'll handle this
+            if (await VerifyDiscordVerificationCode(code) != null)
+            {
+                return await GenerateDiscordVerificationCode(player);
+            }
+
+            dbPlayer.DiscordVerificationCode = code;
+            await db.DbContext.SaveChangesAsync();
+
+            return code;
+        }
+
+        public async Task<Guid?> VerifyDiscordVerificationCode(string code)
+        {
+            await using var db = await GetDb();
+
+            var dbPlayer = await db.DbContext.Player.Where(dbPlayer => dbPlayer.DiscordVerificationCode == code).SingleOrDefaultAsync();
+
+            return dbPlayer?.UserId;
+        }
+
+        public async Task<bool?> LinkDiscord(NetUserId player, ulong discordId)
+        {
+            await using var db = await GetDb();
+
+            var dbPlayer = await db.DbContext.Player.Where(dbPlayer => dbPlayer.UserId == player).SingleOrDefaultAsync();
+
+            if (dbPlayer == null)
+            {
+                return false;
+            }
+
+            dbPlayer.DiscordId = discordId;
+            dbPlayer.DiscordVerificationCode = null;
+            await db.DbContext.SaveChangesAsync();
+
+            return true;
+        }
+
+        #endregion
+        // Exodus-Discord-End
+
         #region Uploaded Resources Logs
 
         public async Task AddUploadedResourceLogAsync(NetUserId user, DateTime date, string path, byte[] data)
@@ -1110,7 +1199,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             return new ServerRoleBanNote(ban.Id, ban.RoundId, ban.Round, ban.PlayerUserId,
                 player, ban.PlaytimeAtNote, ban.Reason, ban.Severity, ban.CreatedBy,
                 ban.BanTime, ban.LastEditedBy, ban.LastEditedAt, ban.ExpirationTime,
-                ban.Hidden, new [] { ban.RoleId.Replace(BanManager.JobPrefix, null) },
+                ban.Hidden, new[] { ban.RoleId.Replace(BanManager.JobPrefix, null) },
                 unbanningAdmin, ban.Unban?.UnbanTime);
         }
 
@@ -1361,7 +1450,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             // Client side query, as EF can't do groups yet
             var bansEnumerable = bansQuery
-                    .GroupBy(ban => new { ban.BanTime, CreatedBy = (Player?)ban.CreatedBy, ban.Reason, Unbanned = ban.Unban == null })
+                    .GroupBy(ban => new { ban.BanTime, CreatedBy = (Player?) ban.CreatedBy, ban.Reason, Unbanned = ban.Unban == null })
                     .Select(banGroup => banGroup)
                     .ToArray();
 

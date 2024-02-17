@@ -40,3 +40,10 @@ panic-bunker-account-reason-overall =
         [few] часа
        *[other] часов
     }.
+# Exodus-Discord-Start
+discord-not-linked =
+    Ваш аккаунт Space Station 14 не имеет привязанного аккаунта Discord.
+    Перейдите на наш Discord-сервер и привяжите свой аккаунт следуя инструкциям.
+    Наш Discord сервер: [ В ДАННЫЙ МОМЕНТ ПРОЕКТ ЗАКРЫТ ОТ ПОСТОРОННИХ ]
+    Код проверки: { $code } (изменяется при каждом перезаходе)
+# Exodus-Discord-End

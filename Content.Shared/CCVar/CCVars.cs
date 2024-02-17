@@ -409,6 +409,10 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> DiscordRoundEndRoleWebhook =
             CVarDef.Create("discord.round_end_role", string.Empty, CVar.SERVERONLY);
 
+        // Exodus-Discord-Start
+        public static readonly CVarDef<bool> DiscordVerificationEnabled =
+            CVarDef.Create("discord.verification_enabled", false, CVar.SERVERONLY);
+        // Exodus-Discord-End
 
         /*
          * Suspicion

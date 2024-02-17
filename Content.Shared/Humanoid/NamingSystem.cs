@@ -60,7 +60,7 @@ namespace Content.Shared.Humanoid
 
         public string GetLastName(SpeciesPrototype speciesProto, Gender? gender = null)
         {
-            // Loki-LastnameGender-Start
+            // Exodus-LastnameGender-Start
             switch (gender)
             {
                 case Gender.Male:
@@ -73,7 +73,7 @@ namespace Content.Shared.Humanoid
                     else
                         return _random.Pick(_prototypeManager.Index<DatasetPrototype>(speciesProto.FemaleLastNames).Values);
             }
-            // Loki-LastnameGender-End
+            // Exodus-LastnameGender-End
         }
     }
 }

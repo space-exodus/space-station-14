@@ -87,13 +87,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField("femaleFirstNames")]
     public string FemaleFirstNames { get; private set; } = "names_first_female";
 
-    // Loki-LastnameGender-Start
+    // Exodus-LastnameGender-Start
     [DataField("maleLastNames")]
     public string MaleLastNames { get; private set; } = "names_last_male";
 
     [DataField("femaleLastNames")]
     public string FemaleLastNames { get; private set; } = "names_last_female";
-    // Loki-LastnameGender-End
+    // Exodus-LastnameGender-End
 
     [DataField("naming")]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;

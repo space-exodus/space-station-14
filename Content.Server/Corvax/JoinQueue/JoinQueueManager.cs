@@ -62,7 +62,7 @@ public sealed class JoinQueueManager
         {
             foreach (var session in _queue)
             {
-                session.ConnectedClient.Disconnect("Queue was disabled");
+                session.Channel.Disconnect("Queue was disabled");
             }
         }
     }
@@ -76,6 +76,15 @@ public sealed class JoinQueueManager
                 SendToGame(e.Session);
                 return;
             }
+
+            // Exodus-Queue-Start
+            if (await _connectionManager.HavePrivilegedJoin(e.Session.UserId))
+            {
+                SendToGame(e.Session);
+                return;
+            }
+            // Exodus-Queue-End
+
             var currentOnline = _playerManager.PlayerCount - 1; // Do not count current session in general online, because we are still deciding her fate
             var haveFreeSlot = currentOnline < _cfg.GetCVar(CCVars.SoftMaxPlayers);
             if (haveFreeSlot)
@@ -135,7 +144,7 @@ public sealed class JoinQueueManager
     {
         for (var i = 0; i < _queue.Count; i++)
         {
-            _queue[i].ConnectedClient.SendMessage(new MsgQueueUpdate
+            _queue[i].Channel.SendMessage(new MsgQueueUpdate
             {
                 Total = _queue.Count,
                 Position = i + 1,

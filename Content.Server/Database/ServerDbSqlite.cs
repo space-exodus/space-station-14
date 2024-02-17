@@ -358,7 +358,8 @@ namespace Content.Server.Database
                 record.LastSeenUserName,
                 new DateTimeOffset(record.LastSeenTime, TimeSpan.Zero),
                 record.LastSeenAddress,
-                record.LastSeenHWId?.ToImmutableArray());
+                record.LastSeenHWId?.ToImmutableArray(),
+                record.DiscordId); // Exodus-Discord
         }
 
         private static ServerBanDef? ConvertBan(ServerBan? ban)
@@ -453,8 +454,8 @@ namespace Content.Server.Database
 
             var admins = await db.SqliteDbContext.Admin
                 .Include(a => a.Flags)
-                .GroupJoin(db.SqliteDbContext.Player, a => a.UserId, p => p.UserId, (a, grouping) => new {a, grouping})
-                .SelectMany(t => t.grouping.DefaultIfEmpty(), (t, p) => new {t.a, p!.LastSeenUserName})
+                .GroupJoin(db.SqliteDbContext.Player, a => a.UserId, p => p.UserId, (a, grouping) => new { a, grouping })
+                .SelectMany(t => t.grouping.DefaultIfEmpty(), (t, p) => new { t.a, p!.LastSeenUserName })
                 .ToArrayAsync(cancel);
 
             var adminRanks = await db.DbContext.AdminRank.Include(a => a.Flags).ToArrayAsync(cancel);

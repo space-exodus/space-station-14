@@ -64,10 +64,20 @@ namespace Content.Server.Connection
 
         private async Task NetMgrOnConnecting(NetConnectingArgs e)
         {
-            var deny = await ShouldDeny(e);
-
+            // Exodus-Refactor-Start: Rewrite player record creation on the first connection
             var addr = e.IP.Address;
             var userId = e.UserId;
+
+            var playerRecord = await _db.GetPlayerRecordByUserId(userId);
+
+            if (playerRecord == null)
+            {
+                await _db.CreatePlayerRecordAsync(userId, e.UserName, addr);
+                playerRecord = await _db.GetPlayerRecordByUserId(userId);
+            }
+
+            var deny = await ShouldDeny(e, playerRecord!);
+            // Exodus-Refactor-End
 
             var serverId = (await _serverDbEntry.ServerEntity).Id;
 
@@ -93,7 +103,7 @@ namespace Content.Server.Connection
         }
 
         private async Task<(ConnectionDenyReason, string, List<ServerBanDef>? bansHit)?> ShouldDeny(
-            NetConnectingArgs e)
+            NetConnectingArgs e, PlayerRecord record) // Exodus-Refactor: Rewrite player record creation on the first connection
         {
             // Check if banned.
             var addr = e.IP.Address;
@@ -117,9 +127,7 @@ namespace Content.Server.Connection
                 var customReason = _cfg.GetCVar(CCVars.PanicBunkerCustomReason);
 
                 var minMinutesAge = _cfg.GetCVar(CCVars.PanicBunkerMinAccountAge);
-                var record = await _dbManager.GetPlayerRecordByUserId(userId);
-                var validAccountAge = record != null &&
-                                      record.FirstSeenTime.CompareTo(DateTimeOffset.Now - TimeSpan.FromMinutes(minMinutesAge)) <= 0;
+                var validAccountAge = record.FirstSeenTime.CompareTo(DateTimeOffset.Now - TimeSpan.FromMinutes(minMinutesAge)) <= 0; // Exodus-Refactor
                 var bypassAllowed = _cfg.GetCVar(CCVars.BypassBunkerWhitelist) && await _db.GetWhitelistStatusAsync(userId);
 
                 // Use the custom reason if it exists & they don't have the minimum account age
@@ -191,6 +199,18 @@ namespace Content.Server.Connection
                 }
             }
 
+            // Exodus-Discord-Start
+            if (_cfg.GetCVar(CCVars.DiscordVerificationEnabled) && !isPrivileged)
+            {
+                if (record.DiscordId == null)
+                {
+                    var code = await _db.GenerateDiscordVerificationCode(e.UserId);
+
+                    return (ConnectionDenyReason.NotVerified, Loc.GetString("discord-not-linked", ("code", code!)), null);
+                }
+            }
+            // Exodus-Discord-End
+
             return null;
         }
 
@@ -219,8 +239,7 @@ namespace Content.Server.Connection
             var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
                             ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
-            return isAdmin ||
-                   wasInGame;
+            return isAdmin || wasInGame;
         }
         // Corvax-Queue-End
     }

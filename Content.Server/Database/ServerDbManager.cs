@@ -83,7 +83,7 @@ namespace Content.Server.Database
             IPAddress? address,
             NetUserId? userId,
             ImmutableArray<byte>? hwId,
-            bool includeUnbanned=true);
+            bool includeUnbanned = true);
 
         Task AddServerBanAsync(ServerBanDef serverBan);
         Task AddServerUnbanAsync(ServerUnbanDef serverBan);
@@ -169,6 +169,8 @@ namespace Content.Server.Database
         #endregion
 
         #region Player Records
+        Task CreatePlayerRecordAsync(NetUserId userId, string username, IPAddress address); // Exodus-Refactor: Rewrite player record creation on the first connection
+
         Task UpdatePlayerRecordAsync(
             NetUserId userId,
             string userName,
@@ -236,6 +238,18 @@ namespace Content.Server.Database
         Task RemoveFromWhitelistAsync(NetUserId player);
 
         #endregion
+
+        // Exodus-Discord-Start
+        #region Discord
+
+        Task<string?> GenerateDiscordVerificationCode(NetUserId player);
+
+        Task<Guid?> VerifyDiscordVerificationCode(string code);
+
+        Task<bool?> LinkDiscord(NetUserId player, ulong discordId);
+
+        #endregion
+        // Exodus-Discord-End
 
         #region Uploaded Resources Logs
 
@@ -405,7 +419,7 @@ namespace Content.Server.Database
             IPAddress? address,
             NetUserId? userId,
             ImmutableArray<byte>? hwId,
-            bool includeUnbanned=true)
+            bool includeUnbanned = true)
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerBansAsync(address, userId, hwId, includeUnbanned));
@@ -492,6 +506,14 @@ namespace Content.Server.Database
         }
 
         #endregion
+
+        // Exodus-Refactor-Start: Rewrite player record creation on the first connection
+        public Task CreatePlayerRecordAsync(NetUserId userId, string username, IPAddress address)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.CreatePlayerRecord(userId, username, address));
+        }
+        // Exodus-Refactor-End
 
         public Task UpdatePlayerRecordAsync(
             NetUserId userId,
@@ -665,6 +687,26 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RemoveFromWhitelistAsync(player));
         }
 
+        // Exodus-Discord-Start
+        public Task<string?> GenerateDiscordVerificationCode(NetUserId player)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.GenerateDiscordVerificationCode(player));
+        }
+
+        public Task<Guid?> VerifyDiscordVerificationCode(string code)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.VerifyDiscordVerificationCode(code));
+        }
+
+        public Task<bool?> LinkDiscord(NetUserId player, ulong discordId)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.LinkDiscord(player, discordId));
+        }
+        // Exodus-Discord-End
+
         public Task AddUploadedResourceLogAsync(NetUserId user, DateTime date, string path, byte[] data)
         {
             DbWriteOpsMetric.Inc();
@@ -776,7 +818,7 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.GetServerRoleBanAsNoteAsync(id));
         }
 
-    public Task<List<IAdminRemarksCommon>> GetAllAdminRemarks(Guid player)
+        public Task<List<IAdminRemarksCommon>> GetAllAdminRemarks(Guid player)
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetAllAdminRemarks(player));
