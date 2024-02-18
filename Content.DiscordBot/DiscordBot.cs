@@ -40,8 +40,7 @@ public sealed class DiscordBot : IHostedService
     private readonly DiscordSocketClient _client = new();
 
     private static readonly string Token =
-        Environment.GetEnvironmentVariable("EXODUS_DISCORD_TOKEN",
-            EnvironmentVariableTarget.User)
+        Environment.GetEnvironmentVariable("EXODUS_DISCORD_TOKEN")
         ?? throw new NullReferenceException("No ENV Token Found.");
 
     private ISawmill _logger = default!;
