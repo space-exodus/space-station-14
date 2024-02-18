@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
+using Content.Server.Discord;
 using Content.Server.GameTicking;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -32,6 +33,7 @@ public sealed class BanManager : IBanManager, IPostInjectInit
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly DiscordWebhook _discord = default!;
 
     private ISawmill _sawmill = default!;
 
@@ -165,6 +167,39 @@ public sealed class BanManager : IBanManager, IPostInjectInit
 
         _sawmill.Info(logMessage);
         _chat.SendAdminAlert(logMessage);
+
+        // Exodus-BanWebhook-Start
+        _discord.TryGetWebhook(_cfg.GetCVar(CCVars.DiscordBanWebhook), async (banWebhook) =>
+        {
+            var ban = await _db.GetServerBanAsync(null, target, null);
+            var targetUser = target == null ? null : await _db.GetPlayerRecordByUserId(target.Value);
+            var discordMention = targetUser?.DiscordId != null ? $"<@!{targetUser.DiscordId}>" : "null";
+
+            var description = $"> **ID раунда:** `{roundId}`\n\n"
+            + $"> **Нарушитель:** `{targetUsername}` ({discordMention})\n> **Администратор:** `{adminName}`\n\n"
+            + $"> **Выдан:** <t:{DateTimeOffset.Now.ToUnixTimeSeconds()}:R> ({DateTimeOffset.Now})\n\n";
+
+            if (expires != null)
+            {
+                description += $"**Истекает:** <t:{expires.Value.ToUnixTimeSeconds()}:R> ({expires.Value})\n";
+            }
+            if (reason != string.Empty)
+            {
+                description += "**Причина:**\n > " + string.Join("\n> ", reason.Trim().Split("\n")) + "\n";
+            }
+
+            var payload = new WebhookPayload()
+            {
+                Embeds = new() {
+                    new() {
+                        Title = minutes > 0 ? $"Бан #{ban?.Id} на {minutes} минут" : $"Перманентный бан #{ban?.Id}",
+                        Description = description
+                    }
+                }
+            };
+            await _discord.CreateMessage(banWebhook.ToIdentifier(), payload);
+        });
+        // Exodus-BanWebhook-End
 
         // If we're not banning a player we don't care about disconnecting people
         if (target == null)

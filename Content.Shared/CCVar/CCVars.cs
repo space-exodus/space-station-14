@@ -414,6 +414,11 @@ namespace Content.Shared.CCVar
             CVarDef.Create("discord.verification_enabled", false, CVar.SERVERONLY);
         // Exodus-Discord-End
 
+        // Exodus-DiscordBanWebhook-Start
+        public static readonly CVarDef<string> DiscordBanWebhook =
+            CVarDef.Create("discord.ban_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
+        // Exodus-DiscordBanWebhook-End
+
         /*
          * Suspicion
          */
