@@ -649,6 +649,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("first_seen_time");
 
+                    b.Property<bool>("IsPremium")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_premium");
+
                     b.Property<DateTime?>("LastReadRules")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("last_read_rules");
@@ -670,6 +674,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("last_seen_user_name");
+
+                    b.Property<string>("PremiumOOCColor")
+                        .HasColumnType("text")
+                        .HasColumnName("premium_ooc_color");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid")

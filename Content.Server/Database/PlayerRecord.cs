@@ -12,7 +12,9 @@ namespace Content.Server.Database
         public string LastSeenUserName { get; }
         public DateTimeOffset LastSeenTime { get; }
         public IPAddress LastSeenAddress { get; }
-        public ulong? DiscordId { get; }
+        public ulong? DiscordId { get; } // Exodus-Discord
+        public bool IsPremium { get; } // Exodus-Sponsorship
+        public string? PremiumOOCColor { get; } // Exodus-Sponsorship
 
         public PlayerRecord(
             NetUserId userId,
@@ -21,7 +23,9 @@ namespace Content.Server.Database
             DateTimeOffset lastSeenTime,
             IPAddress lastSeenAddress,
             ImmutableArray<byte>? hwId,
-            ulong? discordId)
+            ulong? discordId, // Exodus-Discord
+            bool isPremium, // Exodus-Sponsorship
+            string? premiumOOCColor) // Exodus-Sponsorship
         {
             UserId = userId;
             FirstSeenTime = firstSeenTime;
@@ -29,7 +33,9 @@ namespace Content.Server.Database
             LastSeenTime = lastSeenTime;
             LastSeenAddress = lastSeenAddress;
             HWId = hwId;
-            DiscordId = discordId;
+            DiscordId = discordId; // Exodus-Discord
+            IsPremium = isPremium; // Exodus-Sponsorship
+            PremiumOOCColor = premiumOOCColor; // Exodus-Sponsorship
         }
     }
 }

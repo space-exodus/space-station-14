@@ -89,6 +89,8 @@
         /// </summary>
         EditNotes = 1 << 14,
 
+        Sponsors = 1u << 30, // Exodus-Sponsorship
+
         /// <summary>
         ///     Dangerous host permissions like scsi.
         /// </summary>

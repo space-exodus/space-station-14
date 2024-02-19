@@ -359,7 +359,9 @@ namespace Content.Server.Database
                 new DateTimeOffset(record.LastSeenTime, TimeSpan.Zero),
                 record.LastSeenAddress,
                 record.LastSeenHWId?.ToImmutableArray(),
-                record.DiscordId); // Exodus-Discord
+                record.DiscordId, // Exodus-Discord
+                record.IsPremium, // Exodus-Sponsorship
+                record.PremiumOOCColor); // Exodus-Sponsorship
         }
 
         private static ServerBanDef? ConvertBan(ServerBan? ban)

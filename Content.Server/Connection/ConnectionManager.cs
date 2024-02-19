@@ -32,6 +32,7 @@ namespace Content.Server.Connection
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly ILocalizationManager _loc = default!;
         [Dependency] private readonly ServerDbEntryManager _serverDbEntry = default!;
+        [Dependency] private readonly IEntityManager _entity = default!; // Exodus-Queue
 
         public void Initialize()
         {
@@ -232,15 +233,17 @@ namespace Content.Server.Connection
             return assigned;
         }
 
-        // Corvax-Queue-Start: Make these conditions in one place, for checks in the connection and in the queue
+        // Exodus-Queue-Start: Make these conditions in one place, for checks in the connection and in the queue
         public async Task<bool> HavePrivilegedJoin(NetUserId userId)
         {
             var isAdmin = await _dbManager.GetAdminDataForAsync(userId) != null;
-            var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
+            var playerRecord = await _dbManager.GetPlayerRecordByUserId(userId);
+            var isPremium = playerRecord != null && playerRecord.IsPremium;
+            var wasInGame = _entity.TrySystem<GameTicker>(out var ticker) &&
                             ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
-            return isAdmin || wasInGame;
+            return isAdmin || wasInGame || isPremium;
         }
-        // Corvax-Queue-End
+        // Exodus-Queue-End
     }
 }

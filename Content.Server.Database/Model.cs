@@ -421,10 +421,15 @@ namespace Content.Server.Database
         public List<AdminLogPlayer> AdminLogs { get; set; } = null!;
 
         public DateTime? LastReadRules { get; set; }
+
         // Exodus-Discord-Start
         public ulong? DiscordId { get; set; }
         public string? DiscordVerificationCode { get; set; }
         // Exodus-Discord-End
+        // Exodus-Sponsorship-Start
+        public bool IsPremium { get; set; }
+        public string? PremiumOOCColor { get; set; }
+        // Exodus-Sponsorship-End
 
         public List<AdminNote> AdminNotesReceived { get; set; } = null!;
         public List<AdminNote> AdminNotesCreated { get; set; } = null!;

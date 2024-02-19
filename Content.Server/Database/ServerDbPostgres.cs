@@ -466,7 +466,9 @@ namespace Content.Server.Database
                 new DateTimeOffset(record.LastSeenTime),
                 record.LastSeenAddress,
                 record.LastSeenHWId?.ToImmutableArray(),
-                record.DiscordId); // Exodus-Discord
+                record.DiscordId, // Exodus-Discord
+                record.IsPremium, // Exodus-Sponsorship
+                record.PremiumOOCColor); // Exodus-Sponsorship
         }
 
         public override async Task<int> AddConnectionLogAsync(

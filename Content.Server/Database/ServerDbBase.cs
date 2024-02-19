@@ -1036,7 +1036,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             return dbPlayer?.UserId;
         }
 
-        public async Task<bool?> LinkDiscord(NetUserId player, ulong discordId)
+        public async Task<bool> LinkDiscord(NetUserId player, ulong discordId)
         {
             await using var db = await GetDb();
 
@@ -1056,6 +1056,51 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
         #endregion
         // Exodus-Discord-End
+
+        // Exodus-Sponsorship-Start
+        #region Sponsorship
+        public async Task<bool> PromoteSponsor(NetUserId player)
+        {
+            await using var db = await GetDb();
+
+            var dbPlayer = await db.DbContext.Player.Where(dbPlayer => dbPlayer.UserId == player).SingleOrDefaultAsync();
+
+            if (dbPlayer == null)
+            {
+                return false;
+            }
+
+            dbPlayer.IsPremium = true;
+            await db.DbContext.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<bool> UnpromoteSponsor(NetUserId player)
+        {
+            await using var db = await GetDb();
+
+            var dbPlayer = await db.DbContext.Player.Where(dbPlayer => dbPlayer.UserId == player).SingleOrDefaultAsync();
+
+            if (dbPlayer == null)
+            {
+                return false;
+            }
+
+            if (!dbPlayer.IsPremium)
+            {
+                return false;
+            }
+
+            dbPlayer.IsPremium = false;
+            await db.DbContext.SaveChangesAsync();
+
+            return true;
+        }
+
+
+        #endregion
+        // Exodus-Sponsorship-End
 
         #region Uploaded Resources Logs
 

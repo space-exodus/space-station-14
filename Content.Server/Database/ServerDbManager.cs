@@ -246,10 +246,19 @@ namespace Content.Server.Database
 
         Task<Guid?> VerifyDiscordVerificationCode(string code);
 
-        Task<bool?> LinkDiscord(NetUserId player, ulong discordId);
+        Task<bool> LinkDiscord(NetUserId player, ulong discordId);
 
         #endregion
         // Exodus-Discord-End
+
+        // Exodus-Sponsorship-Start
+        #region Sponsorship
+
+        Task<bool> PromoteSponsor(NetUserId player);
+        Task<bool> UnpromoteSponsor(NetUserId player);
+
+        #endregion
+        // Exodus-Sponsorship-End
 
         #region Uploaded Resources Logs
 
@@ -700,12 +709,25 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.VerifyDiscordVerificationCode(code));
         }
 
-        public Task<bool?> LinkDiscord(NetUserId player, ulong discordId)
+        public Task<bool> LinkDiscord(NetUserId player, ulong discordId)
         {
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.LinkDiscord(player, discordId));
         }
         // Exodus-Discord-End
+        // Exodus-Sponsorship-Start
+        public Task<bool> PromoteSponsor(NetUserId player)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.PromoteSponsor(player));
+        }
+
+        public Task<bool> UnpromoteSponsor(NetUserId player)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.UnpromoteSponsor(player));
+        }
+        // Exodus-Sponsorship-End
 
         public Task AddUploadedResourceLogAsync(NetUserId user, DateTime date, string path, byte[] data)
         {

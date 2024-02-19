@@ -8,6 +8,7 @@ using Content.Server.Connection;
 using Content.Server.Corvax.JoinQueue;
 using Content.Server.Database;
 using Content.Server.EUI;
+using Content.Server.Exodus.Sponsors;
 using Content.Server.GameTicking;
 using Content.Server.GhostKick;
 using Content.Server.GuideGenerator;
@@ -103,6 +104,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<ContentNetworkResourceManager>().Initialize();
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<JoinQueueManager>().Initialize(); // Corvax-Queue
+                IoCManager.Resolve<SponsorsManager>().Initialize(); // Exodus-Sponsorship
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
 
                 _voteManager.Initialize();

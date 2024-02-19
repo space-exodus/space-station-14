@@ -9,6 +9,7 @@ using Content.Server.Corvax.JoinQueue;
 using Content.Server.Database;
 using Content.Server.Discord;
 using Content.Server.EUI;
+using Content.Server.Exodus.Sponsors;
 using Content.Server.GhostKick;
 using Content.Server.Info;
 using Content.Server.Maps;
@@ -56,6 +57,7 @@ namespace Content.Server.IoC
             IoCManager.Register<PlayTimeTrackingManager>();
             IoCManager.Register<UserDbDataManager>();
             IoCManager.Register<JoinQueueManager>(); // Corvax-Queue
+            IoCManager.Register<SponsorsManager>(); // Exodus-Sponsorship
             IoCManager.Register<ServerInfoManager>();
             IoCManager.Register<PoissonDiskSampler>();
             IoCManager.Register<DiscordWebhook>();
