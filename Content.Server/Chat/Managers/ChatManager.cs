@@ -40,6 +40,8 @@ namespace Content.Server.Chat.Managers
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Exodus-Sponsorship
 
+        public const string AllowedOOCSpecialCharacters = ".,:-\"'!?`(){}[]<>\\/|#%^$~№&*+="; // Exodus-ChatRestrictions
+
         /// <summary>
         /// The maximum length a player-sent message can be sent
         /// </summary>
@@ -178,7 +180,7 @@ namespace Content.Server.Chat.Managers
         /// <param name="type">The type of message.</param>
         public void TrySendOOCMessage(ICommonSession player, string message, OOCChatType type)
         {
-            if (!HandleRateLimit(player))
+            if (!HandleRateLimit(player, message)) // Exodus-ChatRestrictions
                 return;
 
             // Check if message exceeds the character limit
@@ -187,6 +189,30 @@ namespace Content.Server.Chat.Managers
                 DispatchServerMessage(player, Loc.GetString("chat-manager-max-message-length-exceeded-message", ("limit", MaxMessageLength)));
                 return;
             }
+
+            // Exodus-ChatRestrictions-Start
+            var specialCharsAmount = message.Count((ch) => !char.IsLetterOrDigit(ch) && !char.IsWhiteSpace(ch));
+
+            if (specialCharsAmount > 20)
+            {
+                var serverMessage = Loc.GetString("chat-manager-too-much-special-characters");
+                var wrappedServerMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", FormattedMessage.EscapeText(serverMessage)));
+
+                ChatMessageToOne(ChatChannel.Server, serverMessage, wrappedServerMessage, default, false, player.Channel, colorOverride: Color.Red);
+                _adminLogger.Add(LogType.Chat, LogImpact.High, $"{player:Player} tried to send message with too much special characters: {message}");
+                return;
+            }
+
+            if (message.Any(ch => !AllowedOOCSpecialCharacters.Contains(ch) && !char.IsLetterOrDigit(ch) && !char.IsWhiteSpace(ch)))
+            {
+                var serverMessage = Loc.GetString("chat-manager-restricted-special-characters");
+                var wrappedServerMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", FormattedMessage.EscapeText(serverMessage)));
+
+                ChatMessageToOne(ChatChannel.Server, serverMessage, wrappedServerMessage, default, false, player.Channel, colorOverride: Color.Red);
+                _adminLogger.Add(LogType.Chat, LogImpact.High, $"{player:Player} tried to send message with restricted special characters: {message}");
+                return;
+            }
+            // Exodus-ChatRestrictions-End
 
             switch (type)
             {

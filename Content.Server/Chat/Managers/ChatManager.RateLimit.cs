@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Runtime.InteropServices;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -11,7 +12,7 @@ internal sealed partial class ChatManager
 {
     private readonly Dictionary<ICommonSession, RateLimitDatum> _rateLimitData = new();
 
-    public bool HandleRateLimit(ICommonSession player)
+    public bool HandleRateLimit(ICommonSession player, string message) // Exodus-ChatRestrictions
     {
         ref var datum = ref CollectionsMarshal.GetValueRefOrAddDefault(_rateLimitData, player, out _);
         var time = _gameTiming.RealTime;
@@ -24,8 +25,12 @@ internal sealed partial class ChatManager
             datum.Announced = false;
         }
 
+        // Exodus-ChatRestrictions-Start
+        var characters = message.Count((ch) => char.IsLetterOrDigit(ch) || char.IsWhiteSpace(ch));
+
         var maxCount = _configurationManager.GetCVar(CCVars.ChatRateLimitCount);
-        datum.Count += 1;
+        datum.Count += characters;
+        // Exodus-ChatRestrictions-End
 
         if (datum.Count <= maxCount)
             return true;

@@ -1593,10 +1593,10 @@ namespace Content.Shared.CCVar
         /// </summary>
         /// <seealso cref="ChatRateLimitCount"/>
         public static readonly CVarDef<int> ChatRateLimitPeriod =
-            CVarDef.Create("chat.rate_limit_period", 2, CVar.SERVERONLY);
+            CVarDef.Create("chat.rate_limit_period", 60, CVar.SERVERONLY);
 
         /// <summary>
-        /// How many chat messages are allowed in a single rate limit period.
+        /// How many characters are allowed in a single rate limit period.
         /// </summary>
         /// <remarks>
         /// The total rate limit throughput per second is effectively
@@ -1605,7 +1605,7 @@ namespace Content.Shared.CCVar
         /// <seealso cref="ChatRateLimitPeriod"/>
         /// <seealso cref="ChatRateLimitAnnounceAdmins"/>
         public static readonly CVarDef<int> ChatRateLimitCount =
-            CVarDef.Create("chat.rate_limit_count", 10, CVar.SERVERONLY);
+            CVarDef.Create("chat.rate_limit_count", 845, CVar.SERVERONLY);
 
         /// <summary>
         /// If true, announce when a player breached chat rate limit to game administrators.
