@@ -92,6 +92,11 @@
         Sponsors = 1u << 30, // Exodus-Sponsorship
 
         /// <summary>
+        ///     Lets you Massban, on SS14.Admin
+        /// </summary>
+        MassBan = 1 << 15,
+
+        /// <summary>
         ///     Dangerous host permissions like scsi.
         /// </summary>
         Host = 1u << 31,
