@@ -169,36 +169,39 @@ public sealed class BanManager : IBanManager, IPostInjectInit
         _chat.SendAdminAlert(logMessage);
 
         // Exodus-BanWebhook-Start
-        _discord.TryGetWebhook(_cfg.GetCVar(CCVars.DiscordBanWebhook), async (banWebhook) =>
+        if (!string.IsNullOrWhiteSpace(_cfg.GetCVar(CCVars.DiscordBanWebhook)))
         {
-            var ban = await _db.GetServerBanAsync(null, target, null);
-            var targetUser = target == null ? null : await _db.GetPlayerRecordByUserId(target.Value);
-            var discordMention = targetUser?.DiscordId != null ? $"<@!{targetUser.DiscordId}>" : "null";
-
-            var description = $"> **ID раунда:** `{roundId}`\n\n"
-            + $"> **Нарушитель:** `{targetUsername}` ({discordMention})\n> **Администратор:** `{adminName}`\n\n"
-            + $"> **Выдан:** <t:{DateTimeOffset.Now.ToUnixTimeSeconds()}:R> ({DateTimeOffset.Now})\n\n";
-
-            if (expires != null)
+            _discord.TryGetWebhook(_cfg.GetCVar(CCVars.DiscordBanWebhook), async (banWebhook) =>
             {
-                description += $"**Истекает:** <t:{expires.Value.ToUnixTimeSeconds()}:R> ({expires.Value})\n";
-            }
-            if (reason != string.Empty)
-            {
-                description += "**Причина:**\n > " + string.Join("\n> ", reason.Trim().Split("\n")) + "\n";
-            }
+                var ban = await _db.GetServerBanAsync(null, target, null);
+                var targetUser = target == null ? null : await _db.GetPlayerRecordByUserId(target.Value);
+                var discordMention = targetUser?.DiscordId != null ? $"<@!{targetUser.DiscordId}>" : "null";
 
-            var payload = new WebhookPayload()
-            {
-                Embeds = new() {
+                var description = $"> **ID раунда:** `{roundId}`\n\n"
+                + $"> **Нарушитель:** `{targetUsername}` ({discordMention})\n> **Администратор:** `{adminName}`\n\n"
+                + $"> **Выдан:** <t:{DateTimeOffset.Now.ToUnixTimeSeconds()}:R> ({DateTimeOffset.Now})\n\n";
+
+                if (expires != null)
+                {
+                    description += $"**Истекает:** <t:{expires.Value.ToUnixTimeSeconds()}:R> ({expires.Value})\n";
+                }
+                if (reason != string.Empty)
+                {
+                    description += "**Причина:**\n > " + string.Join("\n> ", reason.Trim().Split("\n")) + "\n";
+                }
+
+                var payload = new WebhookPayload()
+                {
+                    Embeds = new() {
                     new() {
                         Title = minutes > 0 ? $"Бан #{ban?.Id} на {minutes} минут" : $"Перманентный бан #{ban?.Id}",
                         Description = description
                     }
-                }
-            };
-            await _discord.CreateMessage(banWebhook.ToIdentifier(), payload);
-        });
+                    }
+                };
+                await _discord.CreateMessage(banWebhook.ToIdentifier(), payload);
+            });
+        }
         // Exodus-BanWebhook-End
 
         // If we're not banning a player we don't care about disconnecting people

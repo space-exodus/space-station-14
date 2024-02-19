@@ -184,9 +184,6 @@
         reagents:
         - ReagentId: HotCocoa
           Quantity: 20
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/hot_coco.rsi
-    state: icon-vend
   - type: Sprite
     sprite: Objects/Consumable/Drinks/hot_coco.rsi
     layers:
@@ -212,9 +209,6 @@
         reagents:
         - ReagentId: Coffee
           Quantity: 20
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/hot_coffee.rsi
-    state: icon-vend
   - type: Sprite
     sprite: Objects/Consumable/Drinks/hot_coffee.rsi
     layers:
@@ -258,9 +252,6 @@
         reagents:
         - ReagentId: Tea
           Quantity: 20
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/teacup.rsi
-    state: icon-vend-tea
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teacup.rsi
     layers:
@@ -286,9 +277,6 @@
         reagents:
         - ReagentId: GreenTea
           Quantity: 20
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/teacup.rsi
-    state: icon-vend-green-tea
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teacup.rsi
     layers:

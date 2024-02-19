@@ -31,9 +31,9 @@
       shader: unshaded
       visible: false
       map: ["enum.EmitterVisualLayers.Lights"]
-    - state: unlock # Corvax-Resprite
+    - state: unlocked # Corvax-Resprite
       shader: unshaded
-#      visible: false # Corvax-Resprite
+      # visible: false # Corvax-Resprite
       map: ["enum.LockVisualLayers.Lock"]
   - type: Emitter
   - type: Gun

@@ -367,6 +367,17 @@
     - buzzes
     - buzzes.
     - buzzes!
+    # Corvax-Localization-Start
+    - жужжит!
+    - жужжит.
+    - жужжит
+    - зажужжал
+    - зажужжал.
+    - зажужжал!
+    - зажужжала
+    - зажужжала.
+    - зажужжала!
+    # Corvax-Localization-End
 
 - type: emote
   id: Chirp
@@ -385,3 +396,17 @@
     - chirping
     - chirping.
     - chirping!
+    # Exodus-Localization-Start
+    - чирик
+    - чирик!
+    - чирик.
+    - чирикает
+    - чирикает.
+    - чирикает!
+    - чирикнул
+    - чирикнул.
+    - чирикнул!
+    - чирикает
+    - чирикает.
+    - чирикает!
+    # Exodus-Localization-Start
