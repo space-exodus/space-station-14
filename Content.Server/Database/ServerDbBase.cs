@@ -1110,6 +1110,25 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             return true;
         }
 
+        public async Task SetPremiumOOCColor(NetUserId player, string color)
+        {
+            await using var db = await GetDb();
+
+            var dbPlayer = await db.DbContext.Player.Where(dbPlayer => dbPlayer.UserId == player).SingleOrDefaultAsync();
+
+            if (dbPlayer == null)
+            {
+                return;
+            }
+
+            if (!dbPlayer.IsPremium)
+            {
+                return;
+            }
+
+            dbPlayer.PremiumOOCColor = color;
+            await db.DbContext.SaveChangesAsync();
+        }
 
         #endregion
         // Exodus-Sponsorship-End

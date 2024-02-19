@@ -257,6 +257,7 @@ namespace Content.Server.Database
 
         Task<bool> PromoteSponsor(NetUserId player);
         Task<bool> UnpromoteSponsor(NetUserId player);
+        Task SetPremiumOOCColor(NetUserId player, string color);
 
         #endregion
         // Exodus-Sponsorship-End
@@ -735,6 +736,12 @@ namespace Content.Server.Database
         {
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.UnpromoteSponsor(player));
+        }
+
+        public Task SetPremiumOOCColor(NetUserId player, string color)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetPremiumOOCColor(player, color));
         }
         // Exodus-Sponsorship-End
 
