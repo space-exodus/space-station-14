@@ -591,6 +591,18 @@ namespace Content.Server.Database
             return record == null ? null : MakePlayerRecord(record);
         }
 
+        // Exodus-Discord-Start
+        public async Task<PlayerRecord?> GetPlayerRecordByDiscordId(ulong id, CancellationToken cancel)
+        {
+            await using var db = await GetDb();
+
+            var record = await db.DbContext.Player
+                .SingleOrDefaultAsync(p => p.DiscordId == id, cancel);
+
+            return record == null ? null : MakePlayerRecord(record);
+        }
+        // Exodus-Discord-End
+
         protected abstract PlayerRecord MakePlayerRecord(Player player);
         #endregion
 

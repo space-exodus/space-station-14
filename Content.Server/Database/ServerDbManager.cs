@@ -178,6 +178,7 @@ namespace Content.Server.Database
             ImmutableArray<byte> hwId);
         Task<PlayerRecord?> GetPlayerRecordByUserName(string userName, CancellationToken cancel = default);
         Task<PlayerRecord?> GetPlayerRecordByUserId(NetUserId userId, CancellationToken cancel = default);
+        Task<PlayerRecord?> GetPlayerRecordByDiscordId(ulong id, CancellationToken cancel = default); // Exodus-Discord
         #endregion
 
         #region Connection Logs
@@ -545,6 +546,14 @@ namespace Content.Server.Database
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetPlayerRecordByUserId(userId, cancel));
         }
+
+        // Exodus-Discord-Start
+        public Task<PlayerRecord?> GetPlayerRecordByDiscordId(ulong id, CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetPlayerRecordByDiscordId(id, cancel));
+        }
+        // Exodus-Discord-End
 
         public Task<int> AddConnectionLogAsync(
             NetUserId userId,

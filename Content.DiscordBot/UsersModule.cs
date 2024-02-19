@@ -1,6 +1,7 @@
 using Content.Server.Database;
 using Discord;
 using Discord.Interactions;
+using Discord.WebSocket;
 using Robust.Shared.IoC;
 using Robust.Shared.Log;
 using Robust.Shared.Network;
@@ -53,5 +54,55 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
         }
 
         await RespondAsync($"👉 <@!{player.DiscordId}>");
+    }
+
+    [SlashCommand("получить-ckey", "Узнать CKey игрока")]
+    [RequireContext(ContextType.Guild)]
+    [RequireBotPermission(GuildPermission.MentionEveryone)]
+    public async Task GetCKey(SocketGuildUser user)
+    {
+        var player = await _db.GetPlayerRecordByDiscordId(user.Id);
+
+        if (player == null)
+        {
+            await RespondAsync("❗ У данного пользователя отсутствует привязанный профиль Space Station 14");
+            return;
+        }
+
+        await RespondAsync($"> CKey игрока: {player.LastSeenUserName}");
+    }
+
+    [SlashCommand("выдать-спонсора", "Выдать привелегии спонсора игроку")]
+    [RequireContext(ContextType.Group)]
+    [RequireUserPermission(GuildPermission.Administrator)]
+    public async Task PromoteSponsor(string ckey)
+    {
+        var player = await _db.GetPlayerRecordByUserName(ckey);
+
+        if (player == null)
+        {
+            await RespondAsync("❗ Пользователя с таким CKey не существует в нашей базе данных");
+            return;
+        }
+
+        await _db.PromoteSponsor(player.UserId);
+        await RespondAsync($"✅ Привелегии спонсора успешно были выданы игроку `{ckey}`!");
+    }
+
+    [SlashCommand("забрать-спонсора", "Забрать привелегии спонсора у игрока")]
+    [RequireContext(ContextType.Group)]
+    [RequireUserPermission(GuildPermission.Administrator)]
+    public async Task UnpromoteSponsor(string ckey)
+    {
+        var player = await _db.GetPlayerRecordByUserName(ckey);
+
+        if (player == null)
+        {
+            await RespondAsync("❗ Пользователя с таким CKey не существует в нашей базе данных");
+            return;
+        }
+
+        await _db.UnpromoteSponsor(player.UserId);
+        await RespondAsync($"✅ Привелегии спонсора успешно были забраны у игрока `{ckey}`!");
     }
 }
