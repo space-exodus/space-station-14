@@ -5,3 +5,10 @@
   components:
   - type: Stomach
     maxVolume: 50
+    specialDigestible:
+      tags:
+      - Fruit
+      - Meat
+      - Pill
+      - Crayon
+      - Paper

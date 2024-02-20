@@ -30,6 +30,10 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Utility;
 using System.Linq;
+using Content.Shared.Damage;
+using Content.Shared.Mobs.Components;
+using Robust.Shared.Prototypes;
+using Content.Shared.Damage.Prototypes;
 
 namespace Content.Server.Nutrition.EntitySystems;
 
@@ -54,6 +58,11 @@ public sealed class FoodSystem : EntitySystem
     [Dependency] private readonly StackSystem _stack = default!;
     [Dependency] private readonly StomachSystem _stomach = default!;
     [Dependency] private readonly UtensilSystem _utensil = default!;
+    // Exodus-EatingMousesKillsThem-Start
+    [Dependency] private readonly DamageableSystem _damageable = default!;
+    [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    // Exodus-EatingMousesKillsThem-End
 
     public const float MaxFeedDistance = 1.0f;
 
@@ -256,6 +265,14 @@ public sealed class FoodSystem : EntitySystem
 
         _reaction.DoEntityReaction(args.Target.Value, solution, ReactionMethod.Ingestion);
         _stomach.TryTransferSolution(stomachToUse.Owner, split, stomachToUse);
+
+        // Exodus-EatingMousesKillsThem-Start
+        if (TryComp<MobThresholdsComponent>(entity, out var mobThresholds) && _mobThreshold.TryGetDeadThreshold(entity, out var deadThreshold, mobThresholds))
+        {
+            var damage = (FixedPoint2) (transferAmount * deadThreshold * 2 / solution.MaxVolume);
+            _damageable.TryChangeDamage(entity, new(_prototypeManager.Index<DamageTypePrototype>("Blunt"), damage));
+        }
+        // Exodus-EatingMousesKellsThem-End
 
         var flavors = args.FlavorMessage;
 
