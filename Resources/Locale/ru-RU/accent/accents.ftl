@@ -102,3 +102,8 @@ accent-words-kobold-6 = Гронк!
 accent-words-kobold-7 = Хисс!
 accent-words-kobold-8 = Йии!
 accent-words-kobold-9 = Йип.
+# Nymph
+accent-words-nymph-1 = Чирик!
+accent-words-nymph-2 = Чирр...
+accent-words-nymph-3 = Чиир?
+accent-words-nymph-4 = Чиррип!

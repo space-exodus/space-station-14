@@ -68,6 +68,9 @@ chat-speech-verb-skeleton-1 = гремит
 chat-speech-verb-skeleton-2 = клацает
 chat-speech-verb-skeleton-3 = скрежещет
 chat-speech-verb-canine-1 = гавкает
+chat-speech-verb-vox-1 = кричит
+chat-speech-verb-vox-2 = визжит
+chat-speech-verb-vox-3 = каркает
 chat-speech-verb-canine-2 = лает
 chat-speech-verb-canine-3 = воет
 chat-speech-verb-small-mob-1 = скрипит
@@ -86,6 +89,5 @@ chat-speech-verb-cluwne-3 = смеётся
 chat-speech-verb-electricity-1 = трещит
 chat-speech-verb-electricity-2 = гудит
 chat-speech-verb-electricity-3 = скрипит
-
 chat-manager-too-much-special-characters = В вашем сообщении слишком много специальных символов!
 chat-manager-restricted-special-characters = Ваше сообщение содержит запрещённые специальные символы!
