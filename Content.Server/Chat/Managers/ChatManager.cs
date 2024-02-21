@@ -40,7 +40,7 @@ namespace Content.Server.Chat.Managers
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Exodus-Sponsorship
 
-        public const string AllowedOOCSpecialCharacters = ".,:-\"'!?`(){}[]<>\\/|#%^$~№&*+="; // Exodus-ChatRestrictions
+        public const string AllowedOOCSpecialCharacters = ".,:;-\"'!?`(){}[]<>\\/|#%^$~№&@*+="; // Exodus-ChatRestrictions
 
         /// <summary>
         /// The maximum length a player-sent message can be sent
