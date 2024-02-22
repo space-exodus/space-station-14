@@ -114,7 +114,7 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
         { "orange", Color.Orange },
         { "yellow", Color.Yellow },
         { "green", Color.Green },
-        { "blue", Color.Blue },
+        { "blue", Color.FromHex("#1864ab") },
         { "purple", Color.Purple },
     };
 
