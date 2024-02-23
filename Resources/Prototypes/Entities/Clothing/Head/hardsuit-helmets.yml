@@ -449,7 +449,7 @@
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
-  parent: ClothingHeadHardsuitBase
+  parent: ClothingHeadHardsuitWithLightBase # Exodus-MRP
   id: ClothingHeadHelmetHardsuitCybersun
   name: cybersun juggernaut helmet
   description: Made of compressed red matter, this helmet was designed in the Tau chromosphere facility.
