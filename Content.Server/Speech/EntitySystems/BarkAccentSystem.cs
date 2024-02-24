@@ -41,7 +41,7 @@ namespace Content.Server.Speech.EntitySystems
                 //Corvax-Localization-Start
                 .Replace("l", "r").Replace("L", "R")
                 .Replace("л", "р").Replace("Л", "Р");
-            //Corvax-Localization-End
+                //Corvax-Localization-End
         }
 
         private void OnAccent(EntityUid uid, BarkAccentComponent component, AccentGetEvent args)
