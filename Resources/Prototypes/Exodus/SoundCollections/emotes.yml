@@ -1,0 +1,72 @@
+- type: soundCollection
+  id: KidanSpeaks
+  files:
+    - /Audio/Exodus/Voice/Kidan/speak1.ogg
+    - /Audio/Exodus/Voice/Kidan/speak2.ogg
+    - /Audio/Exodus/Voice/Kidan/speak3.ogg
+
+- type: soundCollection
+  id: KidanSneeze
+  files:
+    - /Audio/Exodus/Voice/Kidan/sneeze1.ogg
+    - /Audio/Exodus/Voice/Kidan/sneeze2.ogg
+    - /Audio/Exodus/Voice/Kidan/sneeze3.ogg
+    - /Audio/Exodus/Voice/Kidan/sneeze4.ogg
+
+- type: soundCollection
+  id: KidanCough
+  files:
+  - /Audio/Exodus/Voice/Kidan/cough1.ogg
+
+- type: soundCollection
+  id: KidanScream
+  files:
+    - /Audio/Exodus/Voice/Kidan/scream1.ogg
+    - /Audio/Exodus/Voice/Kidan/scream2.ogg
+    - /Audio/Exodus/Voice/Kidan/scream3.ogg
+
+- type: soundCollection
+  id: KidanLaugh
+  files:
+  - /Audio/Exodus/Voice/Kidan/laugh1.ogg
+  - /Audio/Exodus/Voice/Kidan/laugh2.ogg
+  - /Audio/Exodus/Voice/Kidan/laugh3.ogg
+  - /Audio/Exodus/Voice/Kidan/laugh4.ogg
+  - /Audio/Exodus/Voice/Kidan/giggles1.ogg
+  - /Audio/Exodus/Voice/Kidan/giggles2.ogg
+
+- type: soundCollection
+  id: KidanSigh
+  files:
+  - /Audio/Exodus/Voice/Kidan/sigh1.ogg
+  - /Audio/Exodus/Voice/Kidan/sigh2.ogg
+
+- type: soundCollection
+  id: KidanCry
+  files:
+  - /Audio/Exodus/Voice/Kidan/cry1.ogg
+
+- type: soundCollection
+  id: KidanGrumble
+  files:
+  - /Audio/Exodus/Voice/Kidan/grumble1.ogg
+  - /Audio/Exodus/Voice/Kidan/grumble2.ogg
+  - /Audio/Exodus/Voice/Kidan/grumble3.ogg
+
+- type: soundCollection
+  id: KidanMoan
+  files:
+  - /Audio/Exodus/Voice/Kidan/moan1.ogg
+
+- type: soundCollection
+  id: KidanWigglesAtennae
+  files:
+  - /Audio/Exodus/Voice/Kidan/wiggles_antennae1.ogg
+  - /Audio/Exodus/Voice/Kidan/wiggles_antennae2.ogg
+  - /Audio/Exodus/Voice/Kidan/wiggles_antennae3.ogg
+
+- type: soundCollection
+  id: KidanWavesAntennaeSharply
+  files:
+  - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply1.ogg
+  - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply2.ogg
