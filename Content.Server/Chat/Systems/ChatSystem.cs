@@ -9,6 +9,8 @@ using Content.Server.Speech.Components;
 using Content.Server.Speech.EntitySystems;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
+using Content.Shared.Damage;
+using Content.Shared.Damage.Prototypes;
 using Content.Shared.ActionBlocker;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
@@ -57,6 +59,8 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
     [Dependency] private readonly ReplacementAccentSystem _wordreplacement = default!;
+    [Dependency] private readonly DamageableSystem _damageable = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -268,6 +272,14 @@ public sealed partial class ChatSystem : SharedChatSystem
                 return;
             }
         }
+
+        // Exodus-CritSpeech-Start
+        if (desiredType == InGameICChatType.Speak && _mobStateSystem.IsCritical(source))
+        {
+            SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker);
+            return;
+        }
+        // Exodus-CritSpeech-End
 
         // Otherwise, send whatever type.
         switch (desiredType)
@@ -561,6 +573,11 @@ public sealed partial class ChatSystem : SharedChatSystem
         }
 
         _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
+
+        // Exodus-CritSpeech-Start
+        if (_mobStateSystem.IsCritical(source) && _prototype.TryIndex<DamageTypePrototype>("Asphyxiation", out var asphyxiation))
+            _damageable.TryChangeDamage(source, new(asphyxiation, 20), true, false);
+        // Exodus-Crit-Speech-End
 
         var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
         RaiseLocalEvent(source, ev, true);
