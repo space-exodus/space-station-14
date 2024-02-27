@@ -56,8 +56,8 @@ marking-CyberlimbRHandZenghu = Протез, кисть правой руки (�
 marking-CyberlimbLHandZenghu = Протез, кисть левой руки (Зенху)
 marking-CyberlimbRLegZenghu = Протез, правая нога (Зенху)
 marking-CyberlimbLLegZenghu = Протез, левая нога (Зенху)
-marking-CyberlimbLFootZenghu = Протез, правая стопа (Зенху)
-marking-CyberlimbRFootZenghu = Протез, левая стопа (Зенху)
+marking-CyberlimbRFootZenghu = Протез, правая стопа (Зенху)  # Exodus bug fix
+marking-CyberlimbLFootZenghu = Протез, левая стопа (Зенху)   # Exodus bug fix
 marking-CyberlimbTorsoZenghu = Протез, туловище (Зенху)
 # Nanotrasen
 marking-CyberlimbRArmNanotrasen = Протез, правая рука (Nanotrasen)
