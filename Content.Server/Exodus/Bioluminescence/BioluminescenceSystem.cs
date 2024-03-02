@@ -1,7 +1,8 @@
 using Content.Shared.Actions;
+using Content.Shared.Exodus.Bioluminescence;
 using Content.Shared.Humanoid;
 
-namespace Content.Shared.SpaceStories.Bioluminescence;
+namespace Content.Server.Exodus.Bioluminescence;
 public sealed class BioluminescenceSystem : EntitySystem
 {
     [Dependency] private readonly SharedActionsSystem _actions = default!;

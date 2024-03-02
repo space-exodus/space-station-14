@@ -1,5 +1,6 @@
 using Content.Shared.Actions;
-namespace Content.Shared.SpaceStories.Bioluminescence;
+
+namespace Content.Server.Exodus.Bioluminescence;
 
 [RegisterComponent]
 public sealed partial class BioluminescenceComponent : Component
@@ -8,6 +9,3 @@ public sealed partial class BioluminescenceComponent : Component
     public string Action = "TurnBioluminescenceAction";
 }
 
-public sealed partial class TurnBioluminescenceEvent : InstantActionEvent
-{
-}
