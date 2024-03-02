@@ -1,3 +1,4 @@
+// Exodus-LayDownSystem-Start
 using Content.Server.DoAfter;
 using Content.Shared.DoAfter;
 using Content.Shared.Standing;
@@ -32,3 +33,4 @@ public sealed class StandingStateController : SharedStandingStateController
         }
     }
 }
+// Exodus-LayDownSystem-End

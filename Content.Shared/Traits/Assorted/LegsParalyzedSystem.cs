@@ -44,7 +44,7 @@ public sealed class LegsParalyzedSystem : EntitySystem
         }
     }
 
-    private void OnStartup(EntityUid uid, LegsParalyzedComponent component, ComponentStartup args)
+    private void OnStartup(EntityUid uid, LegsParalyzedComponent component, ComponentStartup args) // Exodus-Crawling-End
     {
         // TODO: In future probably must be surgery related wound
         _movementSpeedModifierSystem.ChangeBaseSpeed(uid, 0.7f, 0.7f, 20);

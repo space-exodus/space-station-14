@@ -1,18 +1,18 @@
 ﻿using Content.Shared.Bed.Sleep;
 using Content.Shared.CombatMode.Pacification;
-using Content.Shared.Damage;
+using Content.Shared.Damage; // Exodus-Crawling
 using Content.Shared.Damage.ForceSay;
 using Content.Shared.Emoting;
 using Content.Shared.Hands;
-using Content.Shared.Humanoid;
+using Content.Shared.Humanoid; // Exodus-Crawling
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Mobs.Components;
-using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Components; // Exodus-Crawling
 using Content.Shared.Movement.Events;
-using Content.Shared.Movement.Systems;
+using Content.Shared.Movement.Systems; // Exodus-Crawling
 using Content.Shared.Pointing;
 using Content.Shared.Pulling.Events;
 using Content.Shared.Speech;
@@ -48,6 +48,7 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
         SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
+        // Exodus-crawling-strings-remove
     }
 
     private void OnStateExitSubscribers(EntityUid target, MobStateComponent component, MobState state)
@@ -194,6 +195,7 @@ public partial class MobStateSystem
         args.Cancelled = true;
     }
 
+    // Exodus-Crawling-Start
     private void OnRefreshMovementSpeedModifiers(EntityUid uid, MobStateComponent component, ref RefreshMovementSpeedModifiersEvent ev)
     {
         if (!HasComp<HumanoidAppearanceComponent>(uid))
@@ -205,7 +207,6 @@ public partial class MobStateSystem
                 if (!TryComp<DamageableComponent>(uid, out var damageable))
                     return;
 
-                // Exodus-Crawling-Start
                 if (!TryComp<MovementSpeedModifierComponent>(uid, out var speed))
                     return;
 
@@ -216,10 +217,10 @@ public partial class MobStateSystem
                 var walkSpeedModifier = (1 - (float) percentage) * 2 * 0.15f * speed.BaseWalkSpeed;
 
                 ev.ModifySpeed(sprintSpeedModifier, walkSpeedModifier);
-                // Exodus-Crawling-End
                 break;
         }
     }
-
+    // Exodus-Crawling-End
     #endregion
+
 }
