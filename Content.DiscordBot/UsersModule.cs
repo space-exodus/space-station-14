@@ -22,7 +22,7 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
 
     [SlashCommand("привязать", "Привяжите свой аккаунт Discord к аккаунту SS14")]
     [RequireContext(ContextType.Guild)]
-    public async Task VerifyCommand(string verificationCode)
+    public async Task VerifyCommand([Summary("код-верификации", "Данный код вы должны получить зайдя на наш сервер SS14")] string verificationCode)
     {
         var player = await _db.VerifyDiscordVerificationCode(verificationCode);
 
@@ -120,36 +120,51 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
         await RespondAsync($"✅ Привелегии спонсора успешно были забраны у игрока `{ckey}`!", ephemeral: true);
     }
 
-    public static readonly Dictionary<string, Color> OOCColorsDict = new()
-    {
-        { "red", Color.Red },
-        { "orange", Color.Orange },
-        { "yellow", Color.Yellow },
-        { "green", Color.Green },
-        { "blue", Color.FromHex("#1864ab") },
-        { "purple", Color.Purple },
-    };
-
     [SlashCommand("установить-цвет-ooc", "Установить цвет своего OOC (только для спонсоров!)")]
     [RequireContext(ContextType.Guild)]
-    public async Task SetPremiumOOCColor(string color)
+    public async Task SetPremiumOOCColor([Summary("цвет")] PremiumOOCColor color)
     {
         var player = await _db.GetPlayerRecordByDiscordId(Context.User.Id);
 
         if (player == null || !player.IsPremium)
         {
-            await RespondAsync("❗ Вы не являетесь спонсором!", ephemeral: true);
+            await RespondAsync("> ❗ Вы не являетесь спонсором!", ephemeral: true);
             return;
         }
 
         if (!OOCColorsDict.TryGetValue(color, out var selectedColor))
         {
-            var colors = string.Join(",\n> ", OOCColorsDict.Keys);
-            await RespondAsync($"❗ Был выбран неправильный цвет.\nДоступные цвета:\n> {colors}", ephemeral: true);
+            await RespondAsync($"> ❗ Был выбран неправильный цвет", ephemeral: true);
             return;
         }
 
         await _db.SetPremiumOOCColor(player.UserId, selectedColor.ToHex());
-        await RespondAsync("> Новый цвет был успешно установлен! Для применения изменений настроек перезайдите на сервер.", ephemeral: true);
+        await RespondAsync("> ✅ Новый цвет был успешно установлен! Для применения изменений настроек перезайдите на сервер.", ephemeral: true);
+    }
+
+    public static readonly Dictionary<PremiumOOCColor, Color> OOCColorsDict = new()
+    {
+        { PremiumOOCColor.Red, Color.Red },
+        { PremiumOOCColor.Orange, Color.Orange },
+        { PremiumOOCColor.Yellow, Color.Yellow },
+        { PremiumOOCColor.Green, Color.Green },
+        { PremiumOOCColor.Blue, Color.FromHex("#1864ab") },
+        { PremiumOOCColor.Purple, Color.Purple },
+    };
+
+    public enum PremiumOOCColor
+    {
+        [ChoiceDisplay("Красный 🔴")]
+        Red,
+        [ChoiceDisplay("Оранжевый 🟠")]
+        Orange,
+        [ChoiceDisplay("Жёлтый 🟡")]
+        Yellow,
+        [ChoiceDisplay("Зелёный 🟢")]
+        Green,
+        [ChoiceDisplay("Синий 🔵")]
+        Blue,
+        [ChoiceDisplay("Фиолетовый 🟣")]
+        Purple,
     }
 }
