@@ -87,6 +87,12 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
             return;
         }
 
+        if (player.IsPremium)
+        {
+            await RespondAsync("❗ Пользователь уже обладает привелегиями спонсора", ephemeral: true);
+            return;
+        }
+
         await _db.PromoteSponsor(player.UserId);
         await RespondAsync($"✅ Привелегии спонсора успешно были выданы игроку `{ckey}`!", ephemeral: true);
     }
@@ -101,6 +107,12 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
         if (player == null)
         {
             await RespondAsync("❗ Пользователя с таким CKey не существует в нашей базе данных", ephemeral: true);
+            return;
+        }
+
+        if (!player.IsPremium)
+        {
+            await RespondAsync("❗ У данного пользователя нет привелегий спонсора", ephemeral: true);
             return;
         }
 
