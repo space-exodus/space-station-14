@@ -75,7 +75,7 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
     }
 
     [SlashCommand("выдать-спонсора", "Выдать привелегии спонсора игроку")]
-    [RequireContext(ContextType.Group)]
+    [RequireContext(ContextType.Guild)]
     [RequireUserPermission(GuildPermission.Administrator)]
     public async Task PromoteSponsor(string ckey)
     {
@@ -92,7 +92,7 @@ public sealed partial class UsersModule : InteractionModuleBase<SocketInteractio
     }
 
     [SlashCommand("забрать-спонсора", "Забрать привелегии спонсора у игрока")]
-    [RequireContext(ContextType.Group)]
+    [RequireContext(ContextType.Guild)]
     [RequireUserPermission(GuildPermission.Administrator)]
     public async Task UnpromoteSponsor(string ckey)
     {
