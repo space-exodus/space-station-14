@@ -1,3 +1,4 @@
+using Content.Server.Actions;
 using Content.Shared.Actions;
 using Content.Shared.Exodus.Bioluminescence;
 using Content.Shared.Humanoid;
@@ -5,7 +6,7 @@ using Content.Shared.Humanoid;
 namespace Content.Server.Exodus.Bioluminescence;
 public sealed class BioluminescenceSystem : EntitySystem
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly ActionsSystem _actions = default!;
     [Dependency] private readonly SharedPointLightSystem _light = default!;
 
     public override void Initialize()
@@ -25,8 +26,6 @@ public sealed class BioluminescenceSystem : EntitySystem
 
         EntityUid? act = null;
         _actions.AddAction(uid, ref act, "TurnBioluminescenceAction", uid, action);
-
-        Dirty(uid, component);
     }
 
     private void TurnBioluminescence(EntityUid uid, BioluminescenceComponent component, TurnBioluminescenceEvent _)
