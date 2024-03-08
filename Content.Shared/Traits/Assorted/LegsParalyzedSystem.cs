@@ -19,7 +19,13 @@ public sealed class LegsParalyzedSystem : EntitySystem
         SubscribeLocalEvent<LegsParalyzedComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<LegsParalyzedComponent, BuckleChangeEvent>(OnBuckleChange);
         SubscribeLocalEvent<LegsParalyzedComponent, ThrowPushbackAttemptEvent>(OnThrowPushbackAttempt);
-        // Exodus-Crawling line deletion
+        // Exodus-Crawling-LinesDeletion
+    }
+
+    private void OnStartup(EntityUid uid, LegsParalyzedComponent component, ComponentStartup args) // Exodus-Crawling
+    {
+        // TODO: In future probably must be surgery related wound
+        _movementSpeedModifierSystem.ChangeBaseSpeed(uid, 0.7f, 0.7f, 20);
     }
 
     private void OnShutdown(EntityUid uid, LegsParalyzedComponent component, ComponentShutdown args)
@@ -44,11 +50,7 @@ public sealed class LegsParalyzedSystem : EntitySystem
         }
     }
 
-    private void OnStartup(EntityUid uid, LegsParalyzedComponent component, ComponentStartup args) // Exodus-Crawling-End
-    {
-        // TODO: In future probably must be surgery related wound
-        _movementSpeedModifierSystem.ChangeBaseSpeed(uid, 0.7f, 0.7f, 20);
-    }
+    // Exodus-Crawling-LinesDeletion
 
     private void OnThrowPushbackAttempt(EntityUid uid, LegsParalyzedComponent component, ThrowPushbackAttemptEvent args)
     {

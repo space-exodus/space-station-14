@@ -2,7 +2,7 @@ using Content.Shared.Actions;
 using Content.Shared.MouseRotator;
 using Content.Shared.Movement.Components;
 using Content.Shared.Popups;
-using Content.Shared.Standing; // Exodus-Crawling
+using Content.Shared.Standing;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
 

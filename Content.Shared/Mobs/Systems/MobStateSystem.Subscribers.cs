@@ -1,18 +1,18 @@
 ﻿using Content.Shared.Bed.Sleep;
 using Content.Shared.CombatMode.Pacification;
-using Content.Shared.Damage; // Exodus-Crawling
+using Content.Shared.Damage;
 using Content.Shared.Damage.ForceSay;
 using Content.Shared.Emoting;
 using Content.Shared.Hands;
-using Content.Shared.Humanoid; // Exodus-Crawling
+using Content.Shared.Humanoid;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Mobs.Components;
-using Content.Shared.Movement.Components; // Exodus-Crawling
+using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
-using Content.Shared.Movement.Systems; // Exodus-Crawling
+using Content.Shared.Movement.Systems;
 using Content.Shared.Pointing;
 using Content.Shared.Pulling.Events;
 using Content.Shared.Speech;
@@ -47,8 +47,7 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
-        SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
-        // Exodus-crawling-strings-remove
+        SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers); // Exodus-Crawling
     }
 
     private void OnStateExitSubscribers(EntityUid target, MobStateComponent component, MobState state)
@@ -143,10 +142,10 @@ public partial class MobStateSystem
             return;
         }
 
-        // Exodus-Crit-Speech-Start
+        // Exodus-CritSpeech-Start
         if (component.CurrentState == MobState.Critical)
             return;
-        // Exodus-Crit-Speech-End
+        // Exodus-CritSpeech-End
 
         CheckAct(uid, component, args);
     }
@@ -163,8 +162,7 @@ public partial class MobStateSystem
                 if (args is not UpdateCanMoveEvent || !HasComp<HumanoidAppearanceComponent>(target))
                     args.Cancel();
                 break;
-            //Exodus-CritSpeech-End
-
+                // Exodus-CritSpeech-End
         }
     }
 
@@ -222,5 +220,4 @@ public partial class MobStateSystem
     }
     // Exodus-Crawling-End
     #endregion
-
 }
