@@ -1,10 +1,12 @@
+using Content.Shared.DoAfter; // Exodus-Crawling
 using Content.Shared.Hands.Components;
+using Content.Shared.Movement.Systems; // Exodus-Crawling
 using Content.Shared.Physics;
 using Content.Shared.Rotation;
-using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Serialization; // Exodus-Crawling
 
 namespace Content.Shared.Standing
 {
@@ -13,9 +15,22 @@ namespace Content.Shared.Standing
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedPhysicsSystem _physics = default!;
+        [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!; // Exodus-Crawling
+
 
         // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
         private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
+
+        // Exodus-Crawling-Start
+        public override void Initialize()
+        {
+            base.Initialize();
+
+            SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiersEvent);
+            SubscribeLocalEvent<StandingStateComponent, DownDoAfterEvent>(OnDownDoAfterEvent);
+            SubscribeLocalEvent<StandingStateComponent, StandDoAfterEvent>(OnStandDoAfterEvent);
+        }
+        // Exodus-Crawling-End
 
         public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
         {
@@ -25,7 +40,17 @@ namespace Content.Shared.Standing
             return !standingState.Standing;
         }
 
-        public bool Down(EntityUid uid, bool playSound = true, bool dropHeldItems = true,
+        // Exodus-Crawling-Start
+        public bool CanCrawl(EntityUid uid, StandingStateComponent? standingState = null)
+        {
+            if (!Resolve(uid, ref standingState, false))
+                return false;
+
+            return standingState.CanCrawl;
+        }
+        // Exodus-Crawling-End
+
+        public bool Down(EntityUid uid, bool playSound = true, bool dropHeldItems = true, bool canStandUp = true, // Exodus-Crawling
             StandingStateComponent? standingState = null,
             AppearanceComponent? appearance = null,
             HandsComponent? hands = null)
@@ -37,8 +62,7 @@ namespace Content.Shared.Standing
             // Optional component.
             Resolve(uid, ref appearance, ref hands, false);
 
-            if (!standingState.Standing)
-                return true;
+            // Exodus-Crawling lines deletion
 
             // This is just to avoid most callers doing this manually saving boilerplate
             // 99% of the time you'll want to drop items but in some scenarios (e.g. buckling) you don't want to.
@@ -49,6 +73,11 @@ namespace Content.Shared.Standing
                 RaiseLocalEvent(uid, new DropHandItemsEvent(), false);
             }
 
+            // Exodus-Crawling-Start
+            if (!standingState.Standing)
+                return true;
+            // Exodus-Crawling-End
+
             var msg = new DownAttemptEvent();
             RaiseLocalEvent(uid, msg, false);
 
@@ -56,8 +85,10 @@ namespace Content.Shared.Standing
                 return false;
 
             standingState.Standing = false;
-            Dirty(standingState);
+            standingState.CanStandUp = canStandUp; // Exodus-Crawling
+            Dirty(uid, standingState); // Exodus-Crawling
             RaiseLocalEvent(uid, new DownedEvent(), false);
+            _movementSpeedModifier.RefreshMovementSpeedModifiers(uid); // Exodus-Crawling
 
             // Seemed like the best place to put it
             _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Horizontal, appearance);
@@ -115,6 +146,7 @@ namespace Content.Shared.Standing
             standingState.Standing = true;
             Dirty(uid, standingState);
             RaiseLocalEvent(uid, new StoodEvent(), false);
+            _movementSpeedModifier.RefreshMovementSpeedModifiers(uid); // Exodus-Crawling
 
             _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Vertical, appearance);
 
@@ -130,6 +162,32 @@ namespace Content.Shared.Standing
 
             return true;
         }
+
+        // Exodus-Crawling-Start
+        private void OnStandDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref StandDoAfterEvent ev)
+        {
+            if (ev.Cancelled)
+                return;
+
+            Stand(uid, standingState: standing);
+        }
+
+        private void OnDownDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref DownDoAfterEvent ev)
+        {
+            if (ev.Cancelled)
+                return;
+
+            Down(uid, standingState: standing);
+        }
+
+        private void OnRefreshMovementSpeedModifiersEvent(EntityUid uid, StandingStateComponent standing, ref RefreshMovementSpeedModifiersEvent ev)
+        {
+            if (standing.Standing)
+                return;
+
+            ev.ModifySpeed(standing.CrawlingSpeedModifier, standing.CrawlingSpeedModifier);
+        }
+        // Exodus-Crawling-End
     }
 
     public sealed class DropHandItemsEvent : EventArgs
@@ -163,4 +221,16 @@ namespace Content.Shared.Standing
     public sealed class DownedEvent : EntityEventArgs
     {
     }
+
+    // Exodus-Crawling-Start
+    [Serializable, NetSerializable]
+    public sealed partial class DownDoAfterEvent : SimpleDoAfterEvent
+    {
+    }
+
+    [Serializable, NetSerializable]
+    public sealed partial class StandDoAfterEvent : SimpleDoAfterEvent
+    {
+    }
+    // Exodus-Crawling-End
 }

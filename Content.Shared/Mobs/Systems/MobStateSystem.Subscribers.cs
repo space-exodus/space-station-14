@@ -1,14 +1,18 @@
 ﻿using Content.Shared.Bed.Sleep;
 using Content.Shared.CombatMode.Pacification;
+using Content.Shared.Damage; // Exodus-Crawling
 using Content.Shared.Damage.ForceSay;
 using Content.Shared.Emoting;
 using Content.Shared.Hands;
+using Content.Shared.Humanoid; // Exodus-Crawling
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Movement.Components; // Exodus-Crawling
 using Content.Shared.Movement.Events;
+using Content.Shared.Movement.Systems; // Exodus-Crawling
 using Content.Shared.Pointing;
 using Content.Shared.Pulling.Events;
 using Content.Shared.Speech;
@@ -43,6 +47,8 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
+        SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
+        // Exodus-crawling-strings-remove
     }
 
     private void OnStateExitSubscribers(EntityUid target, MobStateComponent component, MobState state)
@@ -83,7 +89,10 @@ public partial class MobStateSystem
         switch (state)
         {
             case MobState.Alive:
-                _standing.Stand(target);
+                // Exodus-Crawling-Start
+                if (!_standing.CanCrawl(target))
+                    _standing.Stand(target);
+                // Exodus-Crawling-End
                 _appearance.SetData(target, MobStateVisuals.State, MobState.Alive);
                 break;
             case MobState.Critical:
@@ -134,6 +143,11 @@ public partial class MobStateSystem
             return;
         }
 
+        // Exodus-Crit-Speech-Start
+        if (component.CurrentState == MobState.Critical)
+            return;
+        // Exodus-Crit-Speech-End
+
         CheckAct(uid, component, args);
     }
 
@@ -141,10 +155,16 @@ public partial class MobStateSystem
     {
         switch (component.CurrentState)
         {
+            // Exodus-CritSpeech-Start
             case MobState.Dead:
-            case MobState.Critical:
                 args.Cancel();
                 break;
+            case MobState.Critical:
+                if (args is not UpdateCanMoveEvent || !HasComp<HumanoidAppearanceComponent>(target))
+                    args.Cancel();
+                break;
+            //Exodus-CritSpeech-End
+
         }
     }
 
@@ -175,5 +195,32 @@ public partial class MobStateSystem
         args.Cancelled = true;
     }
 
+    // Exodus-Crawling-Start
+    private void OnRefreshMovementSpeedModifiers(EntityUid uid, MobStateComponent component, ref RefreshMovementSpeedModifiersEvent ev)
+    {
+        if (!HasComp<HumanoidAppearanceComponent>(uid))
+            return;
+
+        switch (component.CurrentState)
+        {
+            case MobState.Critical:
+                if (!TryComp<DamageableComponent>(uid, out var damageable))
+                    return;
+
+                if (!TryComp<MovementSpeedModifierComponent>(uid, out var speed))
+                    return;
+
+                if (!_mobThreshold.TryGetPercentageForState(uid, MobState.Dead, damageable.TotalDamage, out var percentage))
+                    return;
+
+                var sprintSpeedModifier = (1 - (float) percentage) * 2 * 0.15f * speed.BaseSprintSpeed;
+                var walkSpeedModifier = (1 - (float) percentage) * 2 * 0.15f * speed.BaseWalkSpeed;
+
+                ev.ModifySpeed(sprintSpeedModifier, walkSpeedModifier);
+                break;
+        }
+    }
+    // Exodus-Crawling-End
     #endregion
+
 }
