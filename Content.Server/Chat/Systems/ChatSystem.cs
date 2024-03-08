@@ -576,8 +576,8 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         // Exodus-CritSpeech-Start
         if (_mobStateSystem.IsCritical(source) && _prototype.TryIndex<DamageTypePrototype>("Asphyxiation", out var asphyxiation))
-            _damageable.TryChangeDamage(source, new(asphyxiation, 20), true, false);
-        // Exodus-Crit-Speech-End
+            _damageable.TryChangeDamage(source, new(asphyxiation, message.Length * 1.5), true, false);
+        // Exodus-CritSpeech-End
 
         var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
         RaiseLocalEvent(source, ev, true);

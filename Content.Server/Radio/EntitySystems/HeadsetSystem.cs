@@ -2,6 +2,7 @@ using Content.Server.Chat.Systems;
 using Content.Server.Emp;
 using Content.Server.Radio.Components;
 using Content.Shared.Inventory.Events;
+using Content.Shared.Mobs.Systems;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
 using Content.Shared.Radio.EntitySystems;
@@ -14,6 +15,7 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
 {
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly RadioSystem _radio = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!; // Exodus-CritSpeech
 
     public override void Initialize()
     {
@@ -52,7 +54,7 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             && TryComp(component.Headset, out EncryptionKeyHolderComponent? keys)
             && keys.Channels.Contains(args.Channel.ID))
         {
-            _radio.SendRadioMessage(uid, args.Message, args.Channel, component.Headset);
+            _radio.SendRadioMessage(uid, _mobState.IsIncapacitated(uid) ? args.ObfuscatedMessage ?? args.Message : args.Message, args.Channel, component.Headset); // Exodus-CritSpeech
             args.Channel = null; // prevent duplicate messages from other listeners.
         }
     }

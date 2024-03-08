@@ -79,7 +79,7 @@
     actions:
       Critical:
       - ActionCritSuccumb
-      - ActionCritLastWords
+      # Exodus-CritSpeech-LinesRemoval | Remove Crit Last Words Action
   - type: MobThresholds
     thresholds:
       0: Alive

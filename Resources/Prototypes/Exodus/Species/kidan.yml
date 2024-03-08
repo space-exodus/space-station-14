@@ -42,7 +42,7 @@
     HeadTop:
       points: 1
       defaultMarkings: [ KidanHeadNormal ]
-      required: true
+      required: false
 
 - type: humanoidBaseSprite
   id: MobKidanHead

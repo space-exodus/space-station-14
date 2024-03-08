@@ -73,7 +73,7 @@
       Critical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
-      - ActionCritLastWords
+      # Exodus-CritSpeech-LinesRemoval | Remove Crit Last Words Action
   - type: Deathgasp
   - type: HealthExaminable
     examinableTypes:

@@ -16,9 +16,4 @@ public sealed partial class CritFakeDeathEvent : InstantActionEvent
 {
 }
 
-/// <summary>
-///     Only applies to mobs capable of speaking, as a last resort in crit
-/// </summary>
-public sealed partial class CritLastWordsEvent : InstantActionEvent
-{
-}
+// Exodus-CritSpeech-LinesRemoval | Remove Crit Last Words Action

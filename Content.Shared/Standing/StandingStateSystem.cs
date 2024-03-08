@@ -1,12 +1,17 @@
-using Content.Shared.DoAfter; // Exodus-Crawling
+using Content.Shared.ActionBlocker;
+using Content.Shared.Cuffs;
+using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
-using Content.Shared.Movement.Systems; // Exodus-Crawling
+using Content.Shared.Movement.Events;
+using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
+using Content.Shared.Physics.Pull;
+using Content.Shared.Pulling;
 using Content.Shared.Rotation;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
-using Robust.Shared.Serialization; // Exodus-Crawling
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Standing
 {
@@ -16,7 +21,8 @@ namespace Content.Shared.Standing
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedPhysicsSystem _physics = default!;
         [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!; // Exodus-Crawling
-
+        [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!; // Exodus-Crawling
+        [Dependency] private readonly SharedPullingSystem _pulling = default!; // Exodus-Crawling
 
         // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
         private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
@@ -29,6 +35,8 @@ namespace Content.Shared.Standing
             SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiersEvent);
             SubscribeLocalEvent<StandingStateComponent, DownDoAfterEvent>(OnDownDoAfterEvent);
             SubscribeLocalEvent<StandingStateComponent, StandDoAfterEvent>(OnStandDoAfterEvent);
+            SubscribeLocalEvent<StandingStateComponent, PullStartedMessage>(OnPull);
+            SubscribeLocalEvent<StandingStateComponent, UpdateCanMoveEvent>(OnUpdateCanMove);
         }
         // Exodus-Crawling-End
 
@@ -147,6 +155,7 @@ namespace Content.Shared.Standing
             Dirty(uid, standingState);
             RaiseLocalEvent(uid, new StoodEvent(), false);
             _movementSpeedModifier.RefreshMovementSpeedModifiers(uid); // Exodus-Crawling
+            _actionBlocker.UpdateCanMove(uid); // Exodus-Crawling
 
             _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Vertical, appearance);
 
@@ -186,6 +195,21 @@ namespace Content.Shared.Standing
                 return;
 
             ev.ModifySpeed(standing.CrawlingSpeedModifier, standing.CrawlingSpeedModifier);
+        }
+
+        private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullStartedMessage ev)
+        {
+            if (!standing.Standing)
+                _actionBlocker.UpdateCanMove(uid);
+        }
+
+        private void OnUpdateCanMove(EntityUid uid, StandingStateComponent standing, ref UpdateCanMoveEvent ev)
+        {
+            if (ev.Cancelled)
+                return;
+
+            if (!standing.Standing && _pulling.IsPulled(uid))
+                ev.Cancel();
         }
         // Exodus-Crawling-End
     }
