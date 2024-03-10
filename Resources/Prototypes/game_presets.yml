@@ -93,6 +93,7 @@
   showInVote: true # Exodus-MRP
   rules:
     - Traitor
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
@@ -118,6 +119,7 @@
   showInVote: true # Exodus-MRP
   rules:
     - Nukeops
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
@@ -132,6 +134,7 @@
   showInVote: true # Exodus-MRP
   rules:
     - Revolutionary
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 

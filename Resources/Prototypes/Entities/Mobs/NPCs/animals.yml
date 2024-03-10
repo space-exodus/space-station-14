@@ -2978,7 +2978,7 @@
         - ReagentId: Nutriment
           Quantity: 2.5
         - ReagentId: Blood
-          Quantity: 2.5
+          Quantity: 2.5 # Exodus-MRP
         - ReagentId: Fat
           Quantity: 5
   - type: Butcherable

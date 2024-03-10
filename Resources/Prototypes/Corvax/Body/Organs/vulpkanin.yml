@@ -5,7 +5,7 @@
   components:
   - type: Stomach
     maxVolume: 50
-    specialDigestible:
+    specialDigestible: # Exodus-MRP
       tags:
       - Fruit
       - Meat

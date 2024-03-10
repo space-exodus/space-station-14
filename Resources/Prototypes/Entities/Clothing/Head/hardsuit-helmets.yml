@@ -17,6 +17,9 @@
     sprite: Clothing/Head/Hardsuits/basic.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/basic.rsi
+  - type: Tag
+    tags:
+    - HidesNose
 
 #Atmospherics Hardsuit
 - type: entity
@@ -232,7 +235,7 @@
 
 #Captain's Hardsuit
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadHardsuitWithLightBase # Exodus-MRP
   id: ClothingHeadHelmetHardsuitCap
   name: captain's hardsuit helmet
   description: Special hardsuit helmet, made for the captain of the station.

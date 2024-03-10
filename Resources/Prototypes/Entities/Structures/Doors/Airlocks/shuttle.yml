@@ -47,7 +47,7 @@
   - type: Door
     closeTimeTwo: 0.4
     openTimeTwo: 0.4
-    bumpOpen: false
+    bumpOpen: false # Exodus-MRP
     crushDamage:
       types:
         Blunt: 15
