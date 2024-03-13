@@ -1,0 +1,49 @@
+- type: entity
+  id: ExodusBaseStationMaps
+  abstract: true
+  components:
+    - type: MapSpawn
+      groups:
+        trade:
+          paths:
+          - /Maps/Exodus/Misc/trading_outpost.yml
+
+- type: entity
+  id: ExodusBaseStationShuttles
+  abstract: true
+  components:
+    - type: StationCargoShuttle
+      path: /Maps/Exodus/Shuttles/cargo.yml
+    - type: GridSpawn
+      groups:
+        mining:
+          paths:
+          - /Maps/Exodus/Shuttles/mining.yml
+        # Spawn last
+        ruins:
+          hide: true
+          nameGrid: true
+          minCount: 2
+          maxCount: 2
+          stationGrid: false
+          paths:
+          - /Maps/Ruins/biodome_satellite.yml
+          - /Maps/Ruins/derelict.yml
+          - /Maps/Ruins/djstation.yml
+          - /Maps/Ruins/old_ai_sat.yml
+          - /Maps/Ruins/relaystation.yml
+          - /Maps/Ruins/whiteship_ancient.yml
+          - /Maps/Ruins/whiteship_bluespacejumper.yml
+
+- type: entity
+  id: ExodusBaseStationCentcomm
+  abstract: true
+  components:
+    - type: StationCentcomm
+      map: /Maps/Exodus/centcomm.yml
+
+- type: entity
+  id: ExodusBaseStationFTLKeys
+  abstract: true
+  components:
+    - type: StationFTLKeys
