@@ -1,3 +1,4 @@
+using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Shuttles.Systems;
@@ -23,6 +24,11 @@ public record struct MapSpawnGroup
     public int MinCount = 1;
 
     public int MaxCount = 1;
+
+    /// <summary>
+    /// Components to be added to map.
+    /// </summary>
+    public ComponentRegistry AddComponents = new();
 
     /// <summary>
     /// Hide the IFF label of the grid.

@@ -6,19 +6,19 @@
       groups:
         trade:
           paths:
-          - /Maps/Exodus/Misc/trading_outpost.yml
+          - /Maps/Exodus/Misc/exodus_trading_outpost.yml
 
 - type: entity
   id: ExodusBaseStationShuttles
   abstract: true
   components:
     - type: StationCargoShuttle
-      path: /Maps/Exodus/Shuttles/cargo.yml
+      path: /Maps/Exodus/Shuttles/exodus_cargo.yml
     - type: GridSpawn
       groups:
         mining:
           paths:
-          - /Maps/Exodus/Shuttles/mining.yml
+          - /Maps/Exodus/Shuttles/exodus_mining.yml
         # Spawn last
         ruins:
           hide: true
@@ -34,13 +34,6 @@
           - /Maps/Ruins/relaystation.yml
           - /Maps/Ruins/whiteship_ancient.yml
           - /Maps/Ruins/whiteship_bluespacejumper.yml
-
-- type: entity
-  id: ExodusBaseStationCentcomm
-  abstract: true
-  components:
-    - type: StationCentcomm
-      map: /Maps/Exodus/centcomm.yml
 
 - type: entity
   id: ExodusBaseStationFTLKeys

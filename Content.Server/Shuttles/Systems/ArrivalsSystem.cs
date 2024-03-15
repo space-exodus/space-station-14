@@ -22,6 +22,7 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Parallax.Biomes;
 using Content.Shared.Salvage;
 using Content.Shared.Shuttles.Components;
+using Content.Shared.Whitelist; // Exodus-FTLKeys
 using Robust.Shared.Spawners;
 using Content.Shared.Tiles;
 using Robust.Server.GameObjects;
@@ -491,6 +492,16 @@ public sealed class ArrivalsSystem : EntitySystem
             };
             AddComp(mapUid, restricted);
         }
+
+        // Exodus-FTLKeys-start
+        EntityWhitelist whitelist = new()
+        {
+            Tags = ["FTLDestinationAccessCross"]
+        };
+
+        if (!_shuttles.TryAddFTLDestination(mapId, true, out var ftlComp))
+            _shuttles.SetFTLWhitelist((mapUid, ftlComp), whitelist);
+        // Exodus-FTLKeys-end
 
         _mapManager.DoMapInitialize(mapId);
 

@@ -31,8 +31,20 @@ public sealed partial class ShuttleSystem
             }
 
             var mapId = _mapManager.CreateMap();
+            var mapUid = _mapManager.GetMapEntityId(mapId);
             var count = _random.Next(group.MinCount, group.MaxCount);
             paths.Clear();
+
+            foreach (var compReg in group.AddComponents.Values)
+            {
+                var compType = compReg.Component.GetType();
+
+                if (HasComp(mapUid, compType))
+                    continue;
+
+                var comp = _factory.GetComponent(compType);
+                AddComp(mapUid, comp, true);
+            }
 
             for (var i = 0; i < count; i++)
             {

@@ -214,23 +214,7 @@ public sealed partial class EmergencyShuttleSystem
             Timer.Spawn((int) (TransitTime * 1000) + _bufferTime.Milliseconds, () => _roundEnd.EndRound(), _roundEndCancelToken?.Token ?? default);
         }
 
-        // All the others.
-        if (_consoleAccumulator < minTime)
-        {
-            var query = AllEntityQuery<StationCentcommComponent, TransformComponent>();
-
-            // Guarantees that emergency shuttle arrives first before anyone else can FTL.
-            while (query.MoveNext(out var comp, out var centcommXform))
-            {
-                if (Deleted(comp.Entity))
-                    continue;
-
-                if (_shuttle.TryAddFTLDestination(centcommXform.MapID, true, out var ftlComp))
-                {
-                    _shuttle.SetFTLWhitelist((centcommXform.MapUid!.Value, ftlComp), null);
-                }
-            }
-        }
+        // Exodus-FTLKeys
     }
 
     private void OnEmergencyRepealAll(EntityUid uid, EmergencyShuttleConsoleComponent component, EmergencyShuttleRepealAllMessage args)
