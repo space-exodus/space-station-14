@@ -3,8 +3,8 @@
   abstract: true
   components:
     - type: MapSpawn
-      groups:
-        trade:
+      maps:
+        - mapName: Traiding post
           paths:
           - /Maps/Exodus/Misc/exodus_trading_outpost.yml
 

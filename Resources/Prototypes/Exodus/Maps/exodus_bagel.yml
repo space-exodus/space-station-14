@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusBagel
   mapName: 'Bagel Station'
-  mapPath: /Maps/Exodus/bagel.yml
+  mapPath: /Maps/Exodus/exodus_bagel.yml
   minPlayers: 40
   maxPlayers: 76
   stations:

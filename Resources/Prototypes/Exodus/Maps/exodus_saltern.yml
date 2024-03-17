@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusSaltern
   mapName: 'Saltern'
-  mapPath: /Maps/Exodus/saltern.yml
+  mapPath: /Maps/Exodus/exodus_saltern.yml
   minPlayers: 0
   maxPlayers: 35
   fallback: true

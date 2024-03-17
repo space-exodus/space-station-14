@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusMeta
   mapName: 'Meta Station'
-  mapPath: /Maps/Exodus/meta.yml
+  mapPath: /Maps/Exodus/exodus_meta.yml
   minPlayers: 50
   stations:
     Meta:

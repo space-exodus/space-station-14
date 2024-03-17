@@ -6,6 +6,7 @@
     - BaseStationJobsSpawning
     - BaseStationRecords
     - BaseStationArrivals
+    - BaseStationCentcomm
     - BaseStationGateway
     - BaseStationEvacuation
     - BaseStationAlertLevels

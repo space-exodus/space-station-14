@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusPacked
   mapName: 'Packed'
-  mapPath: /Maps/Exodus/packed.yml
+  mapPath: /Maps/Exodus/exodus_packed.yml
   minPlayers: 5
   maxPlayers: 40
   stations:

@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusOrigin
   mapName: 'Origin'
-  mapPath: /Maps/Exodus/origin.yml
+  mapPath: /Maps/Exodus/exodus_origin.yml
   minPlayers: 50
   stations:
     Origin:

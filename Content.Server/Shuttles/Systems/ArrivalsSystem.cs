@@ -57,6 +57,7 @@ public sealed class ArrivalsSystem : EntitySystem
     [Dependency] private readonly ShuttleSystem _shuttles = default!;
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
     [Dependency] private readonly StationSystem _station = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!;
 
     private EntityQuery<PendingClockInComponent> _pendingQuery;
     private EntityQuery<ArrivalsBlacklistComponent> _blacklistQuery;
@@ -494,12 +495,14 @@ public sealed class ArrivalsSystem : EntitySystem
         }
 
         // Exodus-FTLKeys-start
+        _metaData.SetEntityName(mapUid, "Arrivals");
+
         EntityWhitelist whitelist = new()
         {
             Tags = ["FTLDestinationAccessCross"]
         };
 
-        if (!_shuttles.TryAddFTLDestination(mapId, true, out var ftlComp))
+        if (_shuttles.TryAddFTLDestination(mapId, true, out var ftlComp))
             _shuttles.SetFTLWhitelist((mapUid, ftlComp), whitelist);
         // Exodus-FTLKeys-end
 

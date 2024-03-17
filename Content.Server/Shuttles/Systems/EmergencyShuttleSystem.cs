@@ -63,6 +63,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!; // Exodus-FTLKeys
 
     private ISawmill _sawmill = default!;
 
@@ -447,11 +448,13 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         component.MapEntity = map;
         component.Entity = grid;
         // Exodus-FTLKeys-start
+        _metaData.SetEntityName(map, "Centcomm");
+
         EntityWhitelist whitelist = new()
         {
             Tags = ["FTLDestinationAccessCentcomm"]
         };
-        if (!_shuttle.TryAddFTLDestination(mapId, true, out var ftlComp))
+        if (_shuttle.TryAddFTLDestination(mapId, true, out var ftlComp))
             _shuttle.SetFTLWhitelist((map, ftlComp), whitelist);
         // Exodus-FTLKeys-end
     }

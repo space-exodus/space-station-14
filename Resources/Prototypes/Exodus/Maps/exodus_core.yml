@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusCore
   mapName: 'Core'
-  mapPath: /Maps/Exodus/core.yml
+  mapPath: /Maps/Exodus/exodus_core.yml
   minPlayers: 30
   maxPlayers: 60
   stations:

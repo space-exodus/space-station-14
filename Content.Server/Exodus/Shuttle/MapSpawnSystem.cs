@@ -22,7 +22,7 @@ public sealed partial class ShuttleSystem
         // Spawn a map for spawn grids
         var paths = new List<ResPath>();
 
-        foreach (var group in component.Groups.Values)
+        foreach (var group in component.Groups)
         {
             if (group.Paths.Count == 0)
             {
@@ -33,6 +33,7 @@ public sealed partial class ShuttleSystem
             var mapId = _mapManager.CreateMap();
             var mapUid = _mapManager.GetMapEntityId(mapId);
             var count = _random.Next(group.MinCount, group.MaxCount);
+            _metadata.SetEntityName(mapUid, group.MapName);
             paths.Clear();
 
             foreach (var compReg in group.AddComponents.Values)

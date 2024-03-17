@@ -1,7 +1,7 @@
 - type: gameMap
   id: ExodusAtlas
   mapName: Atlas
-  mapPath: /Maps/Exodus/atlas.yml
+  mapPath: /Maps/Exodus/exodus_atlas.yml
   minPlayers: 5
   maxPlayers: 20
   stations:

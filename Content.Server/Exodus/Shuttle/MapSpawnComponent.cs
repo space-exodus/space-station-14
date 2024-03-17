@@ -13,12 +13,14 @@ public sealed partial class MapSpawnComponent : Component
     /// Dictionary of groups where each group will have entries selected.
     /// String is just an identifier to make yaml easier.
     /// </summary>
-    [DataField("groups", required: true)] public Dictionary<string, MapSpawnGroup> Groups = [];
+    [DataField("maps", required: true)] public List<MapSpawnGroup> Groups = [];
 }
 
 [DataRecord]
 public record struct MapSpawnGroup
 {
+    public string MapName = "map";
+
     public List<ResPath> Paths = [];
 
     public int MinCount = 1;
