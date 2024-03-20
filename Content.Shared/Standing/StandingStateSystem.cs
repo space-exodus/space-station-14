@@ -3,9 +3,10 @@ using Content.Shared.Cuffs;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Movement.Events;
+using Content.Shared.Movement.Pulling.Events;
+using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
-using Content.Shared.Physics.Pull;
 using Content.Shared.Pulling;
 using Content.Shared.Rotation;
 using Robust.Shared.Audio.Systems;
@@ -22,7 +23,7 @@ namespace Content.Shared.Standing
         [Dependency] private readonly SharedPhysicsSystem _physics = default!;
         [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!; // Exodus-Crawling
         [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!; // Exodus-Crawling
-        [Dependency] private readonly SharedPullingSystem _pulling = default!; // Exodus-Crawling
+        [Dependency] private readonly PullingSystem _pulling = default!; // Exodus-Crawling
 
         // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
         private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
