@@ -1,10 +1,9 @@
 - type: gameMapPool
-  id: ClassicMapPool
+  id: ExodusClassicMapPool
   maps:
     # Corvax
     - ExodusDelta
     - ExodusAvrite
-    - ExodusSpectrum
     - ExodusGate
     - ExodusSilly
     - ExodusOutpost

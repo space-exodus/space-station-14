@@ -4,7 +4,7 @@
   components:
     - type: MapSpawn
       maps:
-        - mapName: Traiding post
+        - mapName: Trading post
           paths:
           - /Maps/Exodus/Misc/exodus_trading_outpost.yml
 

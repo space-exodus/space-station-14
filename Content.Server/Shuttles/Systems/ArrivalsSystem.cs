@@ -497,7 +497,7 @@ public sealed class ArrivalsSystem : EntitySystem
         // Exodus-FTLKeys-start
         _metaData.SetEntityName(mapUid, "Arrivals");
 
-        EntityWhitelist whitelist = new()
+        var whitelist = new EntityWhitelist()
         {
             Tags = ["FTLDestinationAccessCross"]
         };
