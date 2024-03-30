@@ -1,0 +1,11 @@
+- type: gameMap
+  id: ExodusNukieOutpost
+  mapName: Nukie Outpost
+  mapPath: /Maps/Exodus/Misc/exodus_nukieplanet.yml
+  minPlayers: 0
+  stations:
+    SyndicateOutpost:
+      stationProto: StandardNukieOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Nukie Outpost"
