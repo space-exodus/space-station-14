@@ -136,9 +136,3 @@
   baseSprite:
     sprite: Exodus/Mobs/Customization/Kidan/eyes.rsi
     state: eyes
-
-- type: humanoidBaseSprite
-  id: MobKidanTail
-  baseSprite:
-    sprite: Exodus/Mobs/Customization/Kidan/tail.rsi
-
