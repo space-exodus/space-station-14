@@ -11,6 +11,8 @@
   maleFirstNames: names_kidan_male
   femaleFirstNames: names_kidan_male
   naming: FirstDashFirst
+  sexes:
+  - Unsexed
 
 - type: speciesBaseSprites
   id: MobKidanSprites
