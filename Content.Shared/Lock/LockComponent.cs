@@ -27,6 +27,15 @@ public sealed partial class LockComponent : Component
     [AutoNetworkedField]
     public bool LockOnClick;
 
+    // Exodus-FTLKeys-Start
+    /// <summary>
+    /// Whether or not the unlock is toggled by simply clicking.
+    /// </summary>
+    [DataField("unlockOnClick"), ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
+    public bool UnlockOnClick = true;
+    // Exodus-FTLKeys-End
+
     /// <summary>
     /// The sound played when unlocked.
     /// </summary>
