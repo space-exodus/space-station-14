@@ -150,3 +150,75 @@
   sprites:
     - sprite: Exodus/Mobs/Customization/Kidan/hair.rsi
       state: wide_horns_s
+
+- type: marking
+  id: KidanHairMoose
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/head_accessories.rsi
+      state: moose_s
+
+- type: marking
+  id: KidanHairWhiskers
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/head_accessories.rsi
+      state: whiskers_s
+
+- type: marking
+  id: KidanHairMirtrudmay
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/head_accessories.rsi
+      state: mirtrudmay_s
+
+- type: marking
+  id: KidanHairWing
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/head_accessories.rsi
+      state: wing_s
+
+- type: marking
+  id: KidanHairFalsereindeer
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/hair.rsi
+      state: false_reindeer_s
+
+- type: marking
+  id: KidanHairTruereindeer
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/hair.rsi
+      state: true_reindeer_s
+
+- type: marking
+  id: KidanTailWings
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/tail.rsi
+      state: wings_s
+
+- type: marking
+  id: KidanSnoutRuminations
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Kidan]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Kidan/snout.rsi
+      state: ruminations_s
