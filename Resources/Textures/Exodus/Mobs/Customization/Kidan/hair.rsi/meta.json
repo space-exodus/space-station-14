@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/ss220-space/Paradise/tree/master220/icons/mob/species/kidan",
+    "license": "CC-BY-ND-4.0",
+    "copyright": "by Asler (discord ID: 788252896016990219)",
     "size": {
         "x": 32,
         "y": 32
@@ -33,6 +33,14 @@
         },
         {
             "name": "wide_horns_s",
+            "directions": 4
+        },
+        {
+            "name": "false_reindeer_s",
+            "directions": 4
+        },
+        {
+            "name": "true_reindeer_s",
             "directions": 4
         }
     ]

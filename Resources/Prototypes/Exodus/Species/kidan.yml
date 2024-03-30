@@ -22,6 +22,7 @@
     Chest: MobKidanTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
     Eyes: MobKidanEyes
     LArm: MobKidanLArm
     RArm: MobKidanRArm
@@ -133,3 +134,9 @@
   baseSprite:
     sprite: Exodus/Mobs/Customization/Kidan/eyes.rsi
     state: eyes
+
+- type: humanoidBaseSprite
+  id: MobKidanTail
+  baseSprite:
+    sprite: Exodus/Mobs/Customization/Kidan/tail.rsi
+
