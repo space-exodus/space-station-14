@@ -1,0 +1,24 @@
+- type: entity
+  id: ExodusStandardNanotrasenStation
+  parent:
+    - BaseStation
+    - BaseStationCargo
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+    - BaseStationArrivals
+    - BaseStationCentcomm
+    - BaseStationGateway
+    - BaseStationEvacuation
+    - BaseStationAlertLevels
+    - BaseStationMagnet
+    - BaseStationExpeditions
+    - BaseStationSiliconLawCrewsimov
+    - BaseStationAllEventsEligible
+    - BaseStationNanotrasen
+
+    #Exodus
+    - ExodusBaseStationShuttles
+    - ExodusBaseStationMaps
+  noSpawn: true
+  components:
+    - type: Transform

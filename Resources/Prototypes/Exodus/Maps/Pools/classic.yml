@@ -1,0 +1,27 @@
+- type: gameMapPool
+  id: ExodusClassicMapPool
+  maps:
+    # Corvax
+    - ExodusDelta
+    - ExodusAvrite
+    - ExodusGate
+    - ExodusSilly
+    - ExodusOutpost
+    - ExodusAstra
+    - ExodusGelta
+    - ExodusMaus
+    - ExodusIshimura
+
+    # Wizard
+    - ExodusAtlas
+    - ExodusBagel
+    - ExodusBox
+    - ExodusCluster
+    - ExodusCore
+    - ExodusFland
+    - ExodusMarathon
+    - ExodusMeta
+    - ExodusOmega
+    - ExodusOrigin
+    - ExodusSaltern
+    - ExodusPacked

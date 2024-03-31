@@ -25,6 +25,7 @@ using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Events;
 using Content.Shared.Tag;
 using Content.Shared.Tiles;
+using Content.Shared.Whitelist; // Exodus-FTLKeys
 using Robust.Server.GameObjects;
 using Robust.Server.Maps;
 using Robust.Shared.Audio.Systems;
@@ -66,6 +67,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!; // Exodus-FTLKeys
 
     private const float ShuttleSpawnBuffer = 1f;
 
@@ -449,7 +451,16 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
         component.MapEntity = map;
         component.Entity = grid;
-        _shuttle.TryAddFTLDestination(mapId, false, out _);
+        // Exodus-FTLKeys-start
+        _metaData.SetEntityName(map, "Centcomm");
+
+        EntityWhitelist whitelist = new()
+        {
+            Tags = ["FTLDestinationAccessCentcomm"]
+        };
+        if (_shuttle.TryAddFTLDestination(mapId, true, out var ftlComp))
+            _shuttle.SetFTLWhitelist((map, ftlComp), whitelist);
+        // Exodus-FTLKeys-end
     }
 
     public HashSet<EntityUid> GetCentcommMaps()

@@ -685,6 +685,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         ent.Comp.NukiePlanet = _mapManager.CreateMap();
         var gameMap = _prototypeManager.Index(ent.Comp.OutpostMapPrototype);
         ent.Comp.NukieOutpost = GameTicker.LoadGameMap(gameMap, ent.Comp.NukiePlanet.Value, null)[0];
+        _metaData.SetEntityName(_mapManager.GetMapEntityId(ent.Comp.NukiePlanet.Value), "Gorlax's secret base"); // Exodus-FTLKeys
         var query = EntityQueryEnumerator<NukeOpsShuttleComponent, TransformComponent>();
         while (query.MoveNext(out var grid, out _, out var shuttleTransform))
         {
