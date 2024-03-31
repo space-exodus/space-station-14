@@ -58,9 +58,9 @@ namespace Content.Shared.Humanoid
             }
         }
 
+        // Exodus-LastnameGender-Start
         public string GetLastName(SpeciesPrototype speciesProto, Gender? gender = null)
         {
-            // Exodus-LastnameGender-Start
             switch (gender)
             {
                 case Gender.Male:
@@ -73,7 +73,7 @@ namespace Content.Shared.Humanoid
                     else
                         return _random.Pick(_prototypeManager.Index<DatasetPrototype>(speciesProto.FemaleLastNames).Values);
             }
-            // Exodus-LastnameGender-End
         }
+        // Exodus-LastnameGender-End
     }
 }

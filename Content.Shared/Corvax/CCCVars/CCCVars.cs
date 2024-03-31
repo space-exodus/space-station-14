@@ -1,4 +1,4 @@
-using Robust.Shared.Configuration;
+﻿using Robust.Shared.Configuration;
 
 namespace Content.Shared.Corvax.CCCVars;
 
@@ -7,7 +7,6 @@ namespace Content.Shared.Corvax.CCCVars;
 /// </summary>
 [CVarDefs]
 // ReSharper disable once InconsistentNaming
-
 public sealed class CCCVars
 {
     /*
