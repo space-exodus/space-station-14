@@ -20,7 +20,6 @@ using Content.Server.Body.Systems;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
-using Robust.Shared.Map;
 using Robust.Shared.Player;
 
 namespace Content.Server.Mech.Systems;
@@ -33,8 +32,6 @@ public sealed partial class MechSystem : SharedMechSystem
     [Dependency] private readonly BatterySystem _battery = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly IMapManager _map = default!;
-    [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
@@ -110,7 +107,7 @@ public sealed partial class MechSystem : SharedMechSystem
         component.Energy = battery.CurrentCharge;
         component.MaxEnergy = battery.MaxCharge;
 
-        Dirty(component);
+        Dirty(uid, component);
         _actionBlocker.UpdateCanMove(uid);
     }
 
@@ -140,7 +137,7 @@ public sealed partial class MechSystem : SharedMechSystem
         component.Energy = component.MaxEnergy;
 
         _actionBlocker.UpdateCanMove(uid);
-        Dirty(component);
+        Dirty(uid, component);
     }
 
     private void OnRemoveEquipmentMessage(EntityUid uid, MechComponent component, MechEquipmentRemoveMessage args)
@@ -338,7 +335,7 @@ public sealed partial class MechSystem : SharedMechSystem
         {
             Log.Debug($"Battery charge was not equal to mech charge. Battery {batteryComp.CurrentCharge}. Mech {component.Energy}");
             component.Energy = batteryComp.CurrentCharge;
-            Dirty(component);
+            Dirty(uid, component);
         }
         _actionBlocker.UpdateCanMove(uid);
         return true;
@@ -358,7 +355,7 @@ public sealed partial class MechSystem : SharedMechSystem
 
         _actionBlocker.UpdateCanMove(uid);
 
-        Dirty(component);
+        Dirty(uid, component);
         UpdateUserInterface(uid, component);
     }
 
@@ -373,7 +370,7 @@ public sealed partial class MechSystem : SharedMechSystem
 
         _actionBlocker.UpdateCanMove(uid);
 
-        Dirty(component);
+        Dirty(uid, component);
         UpdateUserInterface(uid, component);
     }
 

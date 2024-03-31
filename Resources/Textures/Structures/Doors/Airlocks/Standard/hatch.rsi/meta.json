@@ -59,6 +59,9 @@
       ]
     },
     {
+        "name": "open_unlit"
+    },
+    {
       "name": "open",
       "delays": [
         [

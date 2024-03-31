@@ -20,6 +20,7 @@ using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -185,7 +186,7 @@ namespace Content.Server.Zombies
                 Dirty(target, pryComp);
             }
 
-            Dirty(melee);
+            Dirty(target, melee);
 
             //The zombie gets the assigned damage weaknesses and strengths
             _damageable.SetDamageModifierSetId(target, "Zombie");

@@ -1,43 +1,36 @@
-<!-- Please read these guidelines before opening your PR: https://docs.spacestation14.io/en/getting-started/pr-guideline -->
-<!-- The text between the arrows are comments - they will not be visible on your PR. -->
+<!-- ЭТО ШАБЛОН ВАШЕГО PULL REQUEST. Текст между стрелками - это комментарии - они не будут видны в PR. -->
 
-## About the PR
-<!-- What did you change in this PR? -->
+## Описание PR
+<!-- Ниже опишите ваш Pull Request. Что он изменяет? На что еще это может повлиять? Постарайтесь описать все внесённые вами изменения! -->
 
-## Why / Balance
-<!-- Why was it changed? Link any discussions or issues here. Please discuss how this would affect game balance. -->
+**Медиа**
+<!-- Если приемлемо, добавьте скриншоты для демонстрации вашего PR. Если ваш PR представляет собой визуальное изменение, добавьте
+скриншоты, иначе он может быть закрыт. -->
 
-## Technical details
-<!-- If this is a code change, summarize at high level how your new code works. This makes it easier to review. -->
+**Проверки**
+<!-- Выполнение всех следующих действий, если это приемлемо для вида изменений сильно ускорит разбор вашего PR -->
+- [ ] PR полностью завершён и мне не нужна помощь чтобы его закончить.
+- [ ] Я внимательно просмотрел все свои изменения и багов в них не нашёл.
+- [ ] Я запускал локальный сервер со своими изменениями и всё протестировал.
+- [ ] Я добавил скриншот/видео демонстрации PR в игре, **или** этот PR этого не требует.
 
-## Media
-<!-- 
-PRs which make ingame changes (adding clothing, items, new features, etc) are required to have media attached that showcase the changes.
-Small fixes/refactors are exempt.
-Any media may be used in SS14 progress reports, with clear credit given.
+**Изменения**
+<!--
+Здесь вы можете написать список изменений, который будет автоматически добавлен в игру, когда ваш PR будет принят.
 
-If you're unsure whether your PR will require media, ask a maintainer.
+В журнал изменений следует помещать только то, что действительно важно игрокам.
 
-Check the box below to confirm that you have in fact seen this (put an X in the brackets, like [X]):
+В списке изменений тип значка не является часть предложения, поэтому явно указывайте - Добавлен, Удалён, Изменён.
+плохо: - add: Новый инструмент для инженеров
+хорошо: - add: Добавлен новый инструмент для инженеров
+
+Вы можете указать своё имя после символа :cl: именно оно будет отображаться в журнале изменений (иначе будет использоваться ваше имя на GitHub)
+Например: :cl: Ian
+
 -->
 
-- [ ] I have added screenshots/videos to this PR showcasing its changes ingame, **or** this PR does not require an ingame showcase
-
-## Breaking changes
-<!--
-List any breaking changes, including namespace, public class/method/field changes, prototype renames; and provide instructions for fixing them. This will be pasted in #codebase-changes.
--->
-
-**Changelog**
-<!--
-Make players aware of new features and changes that could affect how they play the game by adding a Changelog entry. Please read the Changelog guidelines located at: https://docs.spacestation14.io/en/getting-started/pr-guideline#changelog
--->
-
-<!--
-Make sure to take this Changelog template out of the comment block in order for it to show up.
 :cl:
-- add: Added fun!
-- remove: Removed fun!
-- tweak: Changed fun!
-- fix: Fixed fun!
--->
+- add: Добавлено веселье!
+- remove: Убрано веселье!
+- tweak: Изменено веселье!
+- fix: Исправлено веселье!
