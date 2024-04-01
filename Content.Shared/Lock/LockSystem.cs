@@ -52,24 +52,17 @@ public sealed class LockSystem : EntitySystem
         if (args.Handled)
             return;
 
-
-        // Exodus-FTLKeys-Start
         // Only attempt an unlock by default on Activate
         if (lockComp.Locked)
         {
-            if (lockComp.UnlockOnClick) {
-                TryUnlock(uid, args.User, lockComp);
-                args.Handled = true;
-            }
+            TryUnlock(uid, args.User, lockComp);
+            args.Handled = true;
         }
-        else
+        else if (lockComp.LockOnClick)
         {
-            if (lockComp.LockOnClick) {
-                TryLock(uid, args.User, lockComp);
-                args.Handled = true;
-            }
+            TryLock(uid, args.User, lockComp);
+            args.Handled = true;
         }
-        // Exodus-FTLKeys-End
     }
 
     private void OnStorageOpenAttempt(EntityUid uid, LockComponent component, ref StorageOpenAttemptEvent args)
