@@ -63,31 +63,6 @@
     color: "#43ccb5"
   - type: Rotatable
     rotateWhileAnchored: true
-  # Exodus-FTLKeys-start
-  - type: FTLAccessConsole
-    slots:
-      first:
-        whitelist:
-          tags:
-            - FTLKey
-        locked: true
-        swap: false
-        ejectOnDeconstruct: true
-        ejectOnBreak: true
-      second:
-        whitelist:
-          tags:
-            - FTLKey
-        locked: true
-        swap: false
-        ejectOnDeconstruct: true
-        ejectOnBreak: true
-  - type: AccessReader
-    access:
-    - [ Command ]
-  - type: Lock
-    unlockOnClick: false
-  # Exodus-FTLKeys-End
 
 - type: entity
   parent: BaseComputerShuttle

@@ -108,7 +108,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public string OperationName = "Test Operation";
 
     [DataField]
-    public ProtoId<GameMapPrototype> OutpostMapPrototype = "ExodusNukieOutpost"; // Exodus-FTLKeys
+    public ProtoId<GameMapPrototype> OutpostMapPrototype = "NukieOutpost";
 
     [DataField]
     public WinType WinType = WinType.Neutral;
