@@ -57,7 +57,6 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
         InitializeGridFills();
         InitializeIFF();
         InitializeImpact();
-        InitializeMapSpawn(); // Exodus-FTLKeys
 
         SubscribeLocalEvent<ShuttleComponent, ComponentStartup>(OnShuttleStartup);
         SubscribeLocalEvent<ShuttleComponent, ComponentShutdown>(OnShuttleShutdown);
