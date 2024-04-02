@@ -19,7 +19,6 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Parallax.Biomes;
 using Content.Shared.Salvage;
 using Content.Shared.Shuttles.Components;
-using Robust.Shared.Spawners;
 using Content.Shared.Tiles;
 using Robust.Server.GameObjects;
 using Robust.Shared.Collections;

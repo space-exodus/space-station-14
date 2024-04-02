@@ -11,7 +11,7 @@ nav-beacon-examine-text =
         [true] forestgreen]включён
        *[false] crimson]выключен
     }[/color], а на дисплее написано [color={ $color }]"{ $label }"[/color]
-nav-beacon-pos-no-beacons = Неизвестно где
-nav-beacon-pos-format = [color={ $color }]рядом { $marker }[/color]
-nav-beacon-pos-format-direction = [color={ $color }]{ $modifier }{ $direction } { $marker }[/color]
-nav-beacon-pos-format-direction-mod-far = дальше { "" }
+nav-beacon-pos-no-beacons = неизвестно где
+nav-beacon-pos-format = [color={ $color }]около { $marker }[/color]
+nav-beacon-pos-format-direction = [color={ $color }]{ $modifier }к { $direction }у от { $marker }[/color]
+nav-beacon-pos-format-direction-mod-far = далеко{ "" }

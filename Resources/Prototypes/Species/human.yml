@@ -22,8 +22,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobHumanTorso
-    HeadTop: MobHumanoidAnyMarking # Corvax-Sponsors
-    Tail: MobHumanoidAnyMarking # Corvax-Sponsors
+    HeadTop: MobHumanoidAnyMarking # Corvax-Resprite
+    Tail: MobHumanoidAnyMarking # Corvax-Resprite
     Eyes: MobHumanoidEyes
     LArm: MobHumanLArm
     RArm: MobHumanRArm
@@ -47,10 +47,10 @@
       points: 1
       required: false
     Tail: # the cat tail joke
-      points: 1 # Corvax-Sponsors
+      points: 1 # Corvax-Resprite
       required: false
     HeadTop: # the cat ear joke
-      points: 1 # Corvax-Sponsors
+      points: 1 # Corvax-Resprite
       required: false
     Chest:
       points: 1

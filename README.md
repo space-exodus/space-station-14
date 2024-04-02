@@ -1,8 +1,6 @@
 <p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg" /></p>
 
-Это репозиторий для проекта Exodus основанный на https://github.com/space-wizards/space-station-14.
-
-Также данный проект использует частично контент из репозитория https://github.com/space-syndicate/space-station-14, все позаимствованные модификации обозначены в комментариях `// Corvax-Something` и узнать авторов можно просматривая историю изменений аналогичных файлов в вышеуказанном репозитории, также локализация (Resources/Locale/ru-RU) целиком и полностью была позаимствована из указанного репозитория. Если у вас есть вопросы или какие-либо притензии по вопросам авторского права, то убедительная просьба связаться с нами.
+Это репозиторий для проекта Exodus основанный на https://github.com/space-syndicate/space-station-14.
 
 ## Сборка
 
@@ -12,9 +10,7 @@
 
 [Более подробная инструкция по сборке проекта.](https://docs.spacestation14.com/en/general-development/setup.html)
 
-## License
-
-Весь код репозитория контента находится под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).
+Весь код репозитория контента находится под лицензией [MIT](LICENSE.TXT).
 
 Большинство ресурсов (спрайты, аудио, переводы) находятся под лиценцзией [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) если не указано обратного. Ресурсы имеют лицензию и авторские права в файле метаданных. [Например](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 

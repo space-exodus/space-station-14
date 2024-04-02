@@ -16,7 +16,7 @@
   speciesRestriction: [SlimePerson]
   sprites:
   - sprite: Corvax/Mobs/Customization/slime_cat_parts.rsi
-    state: slime_tail_cat_wag # Corvax-Sponsors
+    state: slime_tail_cat_wag # Corvax-Resprite
 
 - type: marking
   id: SlimeCatEarsStubby

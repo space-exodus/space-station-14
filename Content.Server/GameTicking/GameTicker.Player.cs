@@ -70,10 +70,16 @@ namespace Content.Server.GameTicking
                             ? Loc.GetString("player-first-join-message", ("name", args.Session.Name))
                             : Loc.GetString("player-join-message", ("name", args.Session.Name)));
 
-                        if (firstConnection && _configurationManager.GetCVar(CCVars.AdminNewPlayerJoinSound))
-                            _audioSystem.PlayGlobal(new SoundPathSpecifier("/Audio/Effects/newplayerping.ogg"),
-                                Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false,
-                                audioParams: new AudioParams { Volume = -5f });
+                    if (firstConnection && _configurationManager.GetCVar(CCVars.AdminNewPlayerJoinSound))
+                        _audioSystem.PlayGlobal(new SoundPathSpecifier("/Audio/Effects/newplayerping.ogg"),
+                            Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false,
+                            audioParams: new AudioParams { Volume = -5f });
+
+                    if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
+                    {
+                        _roundStartCountdownHasNotStartedYetDueToNoPlayers = false;
+                        _roundStartTime = _gameTiming.CurTime + LobbyDuration;
+                    }
 
                         if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
                         {
