@@ -1,0 +1,25 @@
+- type: gameMapPool
+  id: ExodusClassicMapPool
+  maps:
+  - Atlas
+  - Bagel
+  - Box
+  - Cluster
+  - Core
+  - CorvaxAstra
+  - CorvaxAvrite
+  - CorvaxDelta
+  - CorvaxGate
+  - CorvaxGelta
+  - CorvaxIshimura
+  - CorvaxMaus
+  - CorvaxOutpost
+  - CorvaxPaper
+  - CorvaxSilly
+  - Fland
+  - Marathon
+  - Meta
+  - Omega
+  - Origin
+  - Saltern
+  - Packed
