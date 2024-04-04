@@ -23,6 +23,7 @@ using Content.Client.Replay;
 using Content.Shared.Administration.Managers;
 using Content.Client.Corvax.JoinQueue;
 using Content.Client.Exodus.Sponsors;
+using Content.Client.Roles;
 
 
 namespace Content.Client.IoC
@@ -51,6 +52,7 @@ namespace Content.Client.IoC
             IoCManager.Register<JobRequirementsManager>();
             IoCManager.Register<JoinQueueManager>(); // Corvax-Queue
             IoCManager.Register<SponsorsManager>(); // Exodus-Sponsorship
+            IoCManager.Register<RoleWhitelistManager>(); // Exodus-Whitelist
             IoCManager.Register<DocumentParsingManager>();
             IoCManager.Register<ContentReplayPlaybackManager, ContentReplayPlaybackManager>();
         }

@@ -54,6 +54,13 @@ namespace Content.Shared.Roles
         [DataField("setPreference")]
         public bool SetPreference { get; private set; } = true;
 
+        // Exodus-Whitelist-Start
+        [DataField("isWhitelisted")]
+        public bool IsWhitelisted { get; private set; } = false;
+        [DataField("whitelistRoleGroup")]
+        public string? WhitelistRoleGroup { get; private set; }
+        // Exodus-Whitelist-End
+
         /// <summary>
         ///     Whether this job should show in the ID Card Console.
         ///     If set to null, it will default to SetPreference's value.

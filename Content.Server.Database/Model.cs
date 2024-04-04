@@ -21,6 +21,8 @@ namespace Content.Server.Database
         public DbSet<Profile> Profile { get; set; } = null!;
         public DbSet<AssignedUserId> AssignedUserId { get; set; } = null!;
         public DbSet<Player> Player { get; set; } = default!;
+        public DbSet<WhitelistRole> WhitelistRole { get; set; } = default!;
+        public DbSet<WhitelistRoleGroup> WhitelistRoleGroup { get; set; } = default!;
         public DbSet<Admin> Admin { get; set; } = null!;
         public DbSet<AdminRank> AdminRank { get; set; } = null!;
         public DbSet<Round> Round { get; set; } = null!;
@@ -435,6 +437,10 @@ namespace Content.Server.Database
         public bool IsPremium { get; set; }
         public string? PremiumOOCColor { get; set; }
         // Exodus-Sponsorship-End
+        // Exodus-Whitelist-Start
+        public List<WhitelistRole> WhitelistRoles { get; set; } = null!;
+        public List<WhitelistRoleGroup> WhitelistRolesGroups { get; set; } = null!;
+        // Exodus-Whitelist-End
 
         public List<AdminNote> AdminNotesReceived { get; set; } = null!;
         public List<AdminNote> AdminNotesCreated { get; set; } = null!;
@@ -452,6 +458,20 @@ namespace Content.Server.Database
         public List<ServerBan> AdminServerBansLastEdited { get; set; } = null!;
         public List<ServerRoleBan> AdminServerRoleBansCreated { get; set; } = null!;
         public List<ServerRoleBan> AdminServerRoleBansLastEdited { get; set; } = null!;
+    }
+
+    public class WhitelistRole
+    {
+        public int Id { get; set; }
+        public Guid UserId { get; set; }
+        public string Value { get; set; } = null!;
+    }
+
+    public class WhitelistRoleGroup
+    {
+        public int Id { get; set; }
+        public Guid UserId { get; set; }
+        public string Value { get; set; } = null!;
     }
 
     [Table("whitelist")]

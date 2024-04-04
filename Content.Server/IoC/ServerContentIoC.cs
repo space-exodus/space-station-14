@@ -17,6 +17,7 @@ using Content.Server.MoMMI;
 using Content.Server.NodeContainer.NodeGroups;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Preferences.Managers;
+using Content.Server.Roles;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
 using Content.Server.Voting.Managers;
@@ -58,6 +59,7 @@ namespace Content.Server.IoC
             IoCManager.Register<UserDbDataManager>();
             IoCManager.Register<JoinQueueManager>(); // Corvax-Queue
             IoCManager.Register<SponsorsManager>(); // Exodus-Sponsorship
+            IoCManager.Register<RoleWhitelistManager>(); // Exodus-Whitelist
             IoCManager.Register<ServerInfoManager>();
             IoCManager.Register<PoissonDiskSampler>();
             IoCManager.Register<DiscordWebhook>();

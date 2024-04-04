@@ -789,13 +789,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("species");
 
-                    // Corvax-TTS-Start
-                    b.Property<string>("Voice")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("voice");
-                    // Corvax-TTS-End
-
                     b.HasKey("Id")
                         .HasName("PK_profile");
 
@@ -1201,6 +1194,64 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("whitelist", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.WhitelistRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("whitelist_role_id");
+
+                    b.Property<int?>("PlayerId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("player_id");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("user_id");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("value");
+
+                    b.HasKey("Id")
+                        .HasName("PK_whitelist_role");
+
+                    b.HasIndex("PlayerId")
+                        .HasDatabaseName("IX_whitelist_role_player_id");
+
+                    b.ToTable("whitelist_role", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.WhitelistRoleGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("whitelist_role_group_id");
+
+                    b.Property<int?>("PlayerId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("player_id");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("user_id");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("value");
+
+                    b.HasKey("Id")
+                        .HasName("PK_whitelist_role_group");
+
+                    b.HasIndex("PlayerId")
+                        .HasDatabaseName("IX_whitelist_role_group_player_id");
+
+                    b.ToTable("whitelist_role_group", (string)null);
+                });
+
             modelBuilder.Entity("PlayerRound", b =>
                 {
                     b.Property<int>("PlayersId")
@@ -1600,6 +1651,22 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.WhitelistRole", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", null)
+                        .WithMany("WhitelistRoles")
+                        .HasForeignKey("PlayerId")
+                        .HasConstraintName("FK_whitelist_role_player_player_id");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.WhitelistRoleGroup", b =>
+                {
+                    b.HasOne("Content.Server.Database.Player", null)
+                        .WithMany("WhitelistRolesGroups")
+                        .HasForeignKey("PlayerId")
+                        .HasConstraintName("FK_whitelist_role_group_player_player_id");
+                });
+
             modelBuilder.Entity("PlayerRound", b =>
                 {
                     b.HasOne("Content.Server.Database.Player", null)
@@ -1674,6 +1741,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("AdminWatchlistsLastEdited");
 
                     b.Navigation("AdminWatchlistsReceived");
+
+                    b.Navigation("WhitelistRoles");
+
+                    b.Navigation("WhitelistRolesGroups");
                 });
 
             modelBuilder.Entity("Content.Server.Database.Preference", b =>

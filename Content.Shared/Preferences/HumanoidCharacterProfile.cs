@@ -371,7 +371,7 @@ namespace Content.Shared.Preferences
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
-        public void EnsureValid(IConfigurationManager configManager, IPrototypeManager prototypeManager)
+        public void EnsureValid(IConfigurationManager configManager, IPrototypeManager prototypeManager, RoleWhitelistInfo whitelist) // Exodus-Whitelist
         {
             if (!prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
             {
@@ -486,7 +486,14 @@ namespace Content.Shared.Preferences
                     JobPriority.Medium => true,
                     JobPriority.High => true,
                     _ => false
-                }));
+                    // Exodus-Whitelist-Start
+                } &&
+                    (!job.IsWhitelisted ||
+                    whitelist.Roles.Contains(job.ID) ||
+                    job.WhitelistRoleGroup is not null &&
+                    whitelist.RolesGroups.Contains(job.WhitelistRoleGroup))
+                ));
+            // Exodus-Whitelist-End
 
             var antags = AntagPreferences
                 .Where(id => prototypeManager.TryIndex<AntagPrototype>(id, out var antag) && antag.SetPreference)
@@ -522,10 +529,10 @@ namespace Content.Shared.Preferences
             _traitPreferences.AddRange(traits);
         }
 
-        public ICharacterProfile Validated(IConfigurationManager configManager, IPrototypeManager prototypeManager)
+        public ICharacterProfile Validated(IConfigurationManager configManager, IPrototypeManager prototypeManager, RoleWhitelistInfo whitelist) // Exodus-Whitelist
         {
             var profile = new HumanoidCharacterProfile(this);
-            profile.EnsureValid(configManager, prototypeManager);
+            profile.EnsureValid(configManager, prototypeManager, whitelist); // Exodus-Whitelist
             return profile;
         }
 

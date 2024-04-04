@@ -238,6 +238,15 @@ namespace Content.Server.Database
 
         Task RemoveFromWhitelistAsync(NetUserId player);
 
+        // Exodus-Whitelist-Start
+        Task AddToRoleWhitelist(NetUserId userId, string role, CancellationToken cancel = default);
+        Task RemoveFromRoleWhitelist(NetUserId userId, string role, CancellationToken cancel = default);
+        Task<List<string>> GetRoleWhitelist(NetUserId userId, CancellationToken cancel = default);
+        Task AddToRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default);
+        Task RemoveFromRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default);
+        Task<List<string>> GetRolesGroupWhitelist(NetUserId userId, CancellationToken cancel = default);
+        // Exodus-Whitelist-End
+
         #endregion
 
         // Exodus-Discord-Start
@@ -713,6 +722,44 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.RemoveFromWhitelistAsync(player));
         }
+
+        // Exodus-Whitelist-Start
+        public Task AddToRoleWhitelist(NetUserId userId, string role, CancellationToken cancel = default)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.AddToRoleWhitelist(userId, role, cancel));
+        }
+
+        public Task RemoveFromRoleWhitelist(NetUserId userId, string role, CancellationToken cancel = default)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.RemoveFromRoleWhitelist(userId, role, cancel));
+        }
+
+        public Task<List<string>> GetRoleWhitelist(NetUserId userId, CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetRoleWhitelist(userId, cancel));
+        }
+
+        public Task AddToRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.AddToRoleGroupWhitelist(userId, group, cancel));
+        }
+
+        public Task RemoveFromRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.RemoveFromRoleGroupWhitelist(userId, group, cancel));
+        }
+
+        public Task<List<string>> GetRolesGroupWhitelist(NetUserId userId, CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetRolesGroupWhitelist(userId, cancel));
+        }
+        // Exodus-Whitelist-End
 
         // Exodus-Discord-Start
         public Task<string?> GenerateDiscordVerificationCode(NetUserId player)

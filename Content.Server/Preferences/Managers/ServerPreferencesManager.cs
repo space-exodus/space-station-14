@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Server.Humanoid;
+using Content.Server.Roles;
 using Content.Shared.CCVar;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
@@ -26,6 +27,7 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IServerDbManager _db = default!;
         [Dependency] private readonly IPrototypeManager _protos = default!;
+        [Dependency] private readonly RoleWhitelistManager _roleWhitelist = default!; // Exodus-Whitelist
 
         // Cache player prefs on the server so we don't need as much async hell related to them.
         private readonly Dictionary<NetUserId, PlayerPrefData> _cachedPlayerPrefs =
@@ -99,7 +101,10 @@ namespace Content.Server.Preferences.Managers
 
             var curPrefs = prefsData.Prefs!;
 
-            profile.EnsureValid(_cfg, _protos);
+            // Exodus-Whitelist-Start
+            var whitelist = await _roleWhitelist.GetRoleWhitelistInfo(userId);
+            profile.EnsureValid(_cfg, _protos, whitelist);
+            // Exodus-Whitelist-End
 
             var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters)
             {
@@ -260,17 +265,20 @@ namespace Content.Server.Preferences.Managers
                 return await _db.InitPrefsAsync(userId, HumanoidCharacterProfile.Random());
             }
 
-            return SanitizePreferences(prefs);
+            // Exodus-Whitelist-Start
+            var whitelist = await _roleWhitelist.GetRoleWhitelistInfo(userId);
+            return SanitizePreferences(prefs, whitelist);
+            // Exodus-Whitelist-End
         }
 
-        private PlayerPreferences SanitizePreferences(PlayerPreferences prefs)
+        private PlayerPreferences SanitizePreferences(PlayerPreferences prefs, RoleWhitelistInfo whitelist) // Exodus-Whitelist
         {
             // Clean up preferences in case of changes to the game,
             // such as removed jobs still being selected.
 
             return new PlayerPreferences(prefs.Characters.Select(p =>
             {
-                return new KeyValuePair<int, ICharacterProfile>(p.Key, p.Value.Validated(_cfg, _protos));
+                return new KeyValuePair<int, ICharacterProfile>(p.Key, p.Value.Validated(_cfg, _protos, whitelist)); // Exodus-Whitelist
             }), prefs.SelectedCharacterIndex, prefs.AdminOOCColor);
         }
 
