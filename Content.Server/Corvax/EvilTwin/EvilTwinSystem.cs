@@ -64,12 +64,13 @@ public sealed class EvilTwinSystem : EntitySystem
             if (spawnedTwin != null &&
                 _mindSystem.TryGetMind(args.Player, out var mindId, out var mind))
             {
+                Del(uid); // Exodus-FixEvilTwin
                 mind.CharacterName = MetaData(spawnedTwin.Value).EntityName;
                 _mindSystem.TransferTo(mindId, spawnedTwin);
             }
         }
 
-        QueueDel(uid);
+        // Exodus-FixEvilTwin-LinesRemoval
     }
 
     private void OnMindAdded(EntityUid uid, EvilTwinComponent component, MindAddedMessage args)
@@ -85,7 +86,7 @@ public sealed class EvilTwinSystem : EntitySystem
         _roleSystem.MindAddRole(mindId, role, mind);
         _mindSystem.TryAddObjective(mindId, mind, EscapeObjective);
         _mindSystem.TryAddObjective(mindId, mind, KillObjective);
-        if (TryComp<TargetObjectiveComponent>(uid, out var targetObj))
+        if (_mindSystem.TryGetObjectiveComp<TargetObjectiveComponent>(uid, out var targetObj)) // Exodus-FixEvilTwin
             _target.SetTarget(uid, evilTwin.TargetMindId, targetObj);
     }
 
