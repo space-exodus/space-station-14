@@ -42,8 +42,9 @@ public sealed class RoleWhitelistManager
 
     public bool HasJob(JobPrototype job)
     {
-        // has role or has role group
-        return HasRole(job.ID) || job.WhitelistRoleGroup is not null &&
-                HasRoleGroup(job.WhitelistRoleGroup);
+        // is whitelisted, has role or has role group
+        return job.IsWhitelisted &&
+                (HasRole(job.ID) || job.WhitelistRoleGroup is not null &&
+                HasRoleGroup(job.WhitelistRoleGroup));
     }
 }

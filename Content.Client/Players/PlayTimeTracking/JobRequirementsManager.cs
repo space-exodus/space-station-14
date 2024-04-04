@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using Content.Client.Roles;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
@@ -20,6 +21,7 @@ public sealed class JobRequirementsManager
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    [Dependency] private readonly RoleWhitelistManager _roleWhitelist = default!; // Exodus-Whitelist
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();
@@ -87,6 +89,14 @@ public sealed class JobRequirementsManager
             reason = FormattedMessage.FromUnformatted(Loc.GetString("role-ban"));
             return false;
         }
+
+        // Exodus-Whitelist-Start
+        if (job.IsWhitelisted && _roleWhitelist.HasJob(job))
+        {
+            reason = FormattedMessage.FromUnformatted(Loc.GetString("role-whitelisted"));
+            return false;
+        }
+        // Exodus-Whitelist-End
 
         var player = _playerManager.LocalSession;
         if (player == null)

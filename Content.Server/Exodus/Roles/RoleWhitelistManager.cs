@@ -59,4 +59,24 @@ public sealed class RoleWhitelistManager
 
         return info;
     }
+
+    public async Task AddRoleWhitelist(NetUserId userId, string role)
+    {
+        await _db.AddToRoleWhitelist(userId, role);
+    }
+
+    public async Task RemoveFromRoleWhitelist(NetUserId userId, string role)
+    {
+        await _db.RemoveFromRoleWhitelist(userId, role);
+    }
+
+    public async Task AddRolesGroupWhitelist(NetUserId userId, string role)
+    {
+        await _db.AddToRoleGroupWhitelist(userId, role);
+    }
+
+    public async Task RemoveFromRolesGroupWhitelist(NetUserId userId, string role)
+    {
+        await _db.RemoveFromRoleGroupWhitelist(userId, role);
+    }
 }
