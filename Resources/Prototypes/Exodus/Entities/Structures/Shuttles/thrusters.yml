@@ -49,7 +49,7 @@
   description: A thruster that allows a shuttle to move.
   components:
     - type: Thruster
-      thrust: 300
+      thrust: 700
       burnShape:
         - 1.4,0.5
         - -0.3,3.2
