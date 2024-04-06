@@ -37,7 +37,7 @@ public sealed partial class ShuttleSystem
     public const float DefaultTravelTime = 20f;
     public const float DefaultArrivalTime = 5f;
     private const float FTLCooldown = 10f;
-    public const float FTLMassLimit = 300f;
+    public const float FTLMassParametr = 0.5f; // Exodus-DynamicFTLMass
 
     // I'm too lazy to make CVars.
 
@@ -210,7 +210,11 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
-        if (TryComp(shuttleUid, out PhysicsComponent? shuttlePhysics) && shuttlePhysics.Mass > FTLMassLimit)
+        // Exodus-DynamicFTLMass-start
+        if (TryComp(shuttleUid, out PhysicsComponent? shuttlePhysics) &&
+            TryComp<ShuttleComponent>(shuttleUid, out var shuttleComp) &&
+            shuttlePhysics.Mass > CalculateFTLMassLimit(shuttleUid, shuttleComp))
+        // Exodus-DynamicFTLMass-end
         {
             reason = Loc.GetString("shuttle-console-mass");
             return false;
@@ -234,6 +238,13 @@ public sealed partial class ShuttleSystem
         reason = null;
         return true;
     }
+
+    // Exodus-DynamicFTLMass-start
+    public float CalculateFTLMassLimit(EntityUid shuttleUid, ShuttleComponent shuttleComp)
+    {
+        return _thruster.GetThrustValueDirection(shuttleComp, DirectionFlag.North) * FTLMassParametr;
+    }
+    // Exodus-DynamicFTLMass-end
 
     /// <summary>
     /// Moves a shuttle from its current position to the target one without any checks. Goes through the hyperspace map while the timer is running.
