@@ -24,6 +24,7 @@
     - type: Pullable
     - type: CardboardBox
       effectSound: /Audio/Effects/chime.ogg
+      quiet: true # Exodus-MRP
     - type: InputMover
     - type: EntityStorage
       isCollidableWhenOpen: false
