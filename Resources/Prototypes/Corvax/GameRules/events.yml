@@ -4,7 +4,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    minimumPlayers: 2
+    minimumPlayers: 15 # Exodus-MRP
     weight: 5
     duration: 1
     reoccurrenceDelay: 40
