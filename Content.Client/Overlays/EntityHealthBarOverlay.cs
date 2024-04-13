@@ -36,7 +36,6 @@ public sealed class EntityHealthBarOverlay : Overlay
         _mobStateSystem = _entManager.System<MobStateSystem>();
         _mobThresholdSystem = _entManager.System<MobThresholdSystem>();
         _progressColor = _entManager.System<ProgressColorSystem>();
-        _shader = _prototype.Index<ShaderPrototype>("unshaded").Instance();
         _statusIcon = _entManager.System<StatusIconSystem>(); // Exodus-HideStatusIcon
     }
 
