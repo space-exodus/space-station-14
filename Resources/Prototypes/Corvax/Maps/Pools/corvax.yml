@@ -3,7 +3,6 @@
   maps:
     - CorvaxDelta
     - CorvaxAvrite
-    - CorvaxGate
     - CorvaxSilly
     - CorvaxOutpost
     - CorvaxAstra
@@ -11,4 +10,5 @@
     - CorvaxMaus
     - CorvaxIshimura
     - CorvaxPaper
+    - CorvaxSplit
     - Box
