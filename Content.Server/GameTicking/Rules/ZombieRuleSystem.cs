@@ -249,7 +249,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
             _playerManager.Sessions,
             component.PatientZeroPrototypeId,
             includeAllJobs: false,
-            customExcludeCondition: player => HasComp<ZombieImmuneComponent>(player) || HasComp<InitialInfectedExemptComponent>(player) 
+            customExcludeCondition: player => HasComp<ZombieImmuneComponent>(player) || HasComp<InitialInfectedExemptComponent>(player)
             );
 
         // Exodus-BePatientZeroOnlyIfYouWish lines deletion
@@ -285,6 +285,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
 
         //Add the role to the mind silently (to avoid repeating job assignment)
         _roles.MindAddRole(mind, new InitialInfectedRoleComponent { PrototypeId = component.PatientZeroPrototypeId }, silent: true);
+        EnsureComp<InitialInfectedComponent>(entity);
 
         //Add the zombie components and grace period
         var pending = EnsureComp<PendingZombieComponent>(entity);
