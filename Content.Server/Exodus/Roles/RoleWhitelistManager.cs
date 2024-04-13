@@ -36,9 +36,14 @@ public sealed class RoleWhitelistManager
 
     private void OnConnected(object? sender, NetChannelArgs args)
     {
-        var info = _cachedWhitelist.TryGetValue(args.Channel.UserId, out var whitelist) ? whitelist : null;
+        SendRoleWhitelistInfo(args.Channel.UserId, args.Channel);
+    }
+
+    private void SendRoleWhitelistInfo(NetUserId userId, INetChannel channel)
+    {
+        var info = _cachedWhitelist.TryGetValue(userId, out var whitelist) ? whitelist : null;
         var msg = new MsgRoleWhitelistInfo() { Info = info };
-        _net.ServerSendMessage(msg, args.Channel);
+        _net.ServerSendMessage(msg, channel);
     }
 
     private void OnDisconnect(object? sender, NetDisconnectedArgs args)
@@ -63,20 +68,32 @@ public sealed class RoleWhitelistManager
     public async Task AddRoleWhitelist(NetUserId userId, string role)
     {
         await _db.AddToRoleWhitelist(userId, role);
+
+        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        SendRoleWhitelistInfo(userId, channel);
     }
 
     public async Task RemoveFromRoleWhitelist(NetUserId userId, string role)
     {
         await _db.RemoveFromRoleWhitelist(userId, role);
+
+        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        SendRoleWhitelistInfo(userId, channel);
     }
 
     public async Task AddRolesGroupWhitelist(NetUserId userId, string role)
     {
         await _db.AddToRoleGroupWhitelist(userId, role);
+
+        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        SendRoleWhitelistInfo(userId, channel);
     }
 
     public async Task RemoveFromRolesGroupWhitelist(NetUserId userId, string role)
     {
         await _db.RemoveFromRoleGroupWhitelist(userId, role);
+
+        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        SendRoleWhitelistInfo(userId, channel);
     }
 }
