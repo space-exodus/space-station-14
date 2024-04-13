@@ -128,6 +128,9 @@ public sealed partial class ShuttleConsoleSystem
         if (!_shuttle.CanFTL(shuttleUid.Value, out var reason))
         {
             // TODO: Session popup
+            // Exodus-DynamicFTLMass-start
+            _popup.PopupEntity(reason, ent.Owner, Shared.Popups.PopupType.Medium);
+            // Exodus-DynamicFTLMass-end
             return;
         }
 

@@ -1,3 +1,4 @@
+using Content.Client.StatusIcon; // Exodus-HideStatusIcon
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
@@ -24,6 +25,7 @@ public sealed class EntityHealthBarOverlay : Overlay
     private readonly MobStateSystem _mobStateSystem;
     private readonly MobThresholdSystem _mobThresholdSystem;
     private readonly ProgressColorSystem _progressColor;
+    private readonly StatusIconSystem _statusIcon = default!; // Exodus-HideStatusIcon
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
     public HashSet<string> DamageContainers = new();
 
@@ -34,6 +36,8 @@ public sealed class EntityHealthBarOverlay : Overlay
         _mobStateSystem = _entManager.System<MobStateSystem>();
         _mobThresholdSystem = _entManager.System<MobThresholdSystem>();
         _progressColor = _entManager.System<ProgressColorSystem>();
+        _shader = _prototype.Index<ShaderPrototype>("unshaded").Instance();
+        _statusIcon = _entManager.System<StatusIconSystem>(); // Exodus-HideStatusIcon
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -69,6 +73,11 @@ public sealed class EntityHealthBarOverlay : Overlay
             {
                 continue;
             }
+
+            // Exodus-HideStatusIcon-start
+            if (!_statusIcon.IsVisible(uid))
+                continue;
+            // Exodus-HideStatusIcon-end
 
             // we use the status icon component bounds if specified otherwise use sprite
             var bounds = _entManager.GetComponentOrNull<StatusIconComponent>(uid)?.Bounds ?? spriteComponent.Bounds;

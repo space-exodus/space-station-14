@@ -582,6 +582,15 @@ public sealed class ThrusterSystem : EntitySystem
 
     #endregion
 
+
+    // Exodus-DynamicFTLMass-start
+    public float GetThrustValueDirection(ShuttleComponent shuttleComp, DirectionFlag flag)
+    {
+        var index = GetFlagIndex(flag);
+        return shuttleComp.LinearThrust[index];
+    }
+    // Exodus-DynamicFTLMass-end
+
     private int GetFlagIndex(DirectionFlag flag)
     {
         return (int) Math.Log2((int) flag);
