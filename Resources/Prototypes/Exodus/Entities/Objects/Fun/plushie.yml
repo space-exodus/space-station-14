@@ -1,0 +1,42 @@
+- type: entity
+  parent: PlushieLizard
+  id: PlushieLizzardLokife
+  name: Lokilife
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plushie-lizard-loki
+
+- type: entity
+  parent: PlushieMoth
+  id: PlushieMothFrag
+  name: Fragoler
+  description: Такое солнышко...
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plushie-moth-frag
+  - type: PointLight
+    enabled: true
+    radius: 12
+    energy: 0.75
+    color: "#fcc860"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDogAsler
+  name: Asler
+  description: аыыы ... ььь
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: dog-evl
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDogLoxmat
+  name: Loxmat
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: dog-god
