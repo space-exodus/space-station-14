@@ -19,6 +19,7 @@ public abstract class SharedSealSystem : EntitySystem
     [Dependency] protected readonly SharedAppearanceSystem AppearanceSystem = default!;
     [Dependency] protected readonly SharedPopupSystem PopupSystem = default!;
     [Dependency] protected readonly SharedDoAfterSystem DoAfter = default!;
+
     public override void Initialize()
     {
         SubscribeLocalEvent<SealComponent, ExaminedEvent>(OnExamined);
@@ -46,7 +47,8 @@ public abstract class SharedSealSystem : EntitySystem
     private void OnExamined(EntityUid uid, SealComponent component, ExaminedEvent args)
     {
         if (component.Sealed)
-            args.PushText(Loc.GetString("seal-component-on-examine-is-sealed", ("entityName", Identity.Name(uid, EntityManager))));
+            args.PushText(Loc.GetString("seal-component-on-examine-is-sealed",
+                ("entityName", Identity.Name(uid, EntityManager))));
     }
 
     protected bool CheckAccess(EntityUid uid, EntityUid user, AccessReaderComponent? reader = null, bool quiet = false)

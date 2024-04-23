@@ -1,5 +1,4 @@
 using Content.Server.Chat.Systems;
-using Content.Server.Popups;
 using Content.Shared.DoAfter;
 using Content.Shared.Exodus.Seal;
 using Content.Shared.Hands.Components;
@@ -13,6 +12,7 @@ namespace Content.Server.Exodus.Seal;
 public sealed class SealSystem : SharedSealSystem
 {
     [Dependency] private readonly ChatSystem _chatSystem = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -103,12 +103,13 @@ public sealed class SealSystem : SharedSealSystem
         TryUnseal(uid, args.User, component, true);
     }
 
-    public void Unseal(EntityUid uid, EntityUid? user, SealComponent? component = null)
+    public void Unseal(EntityUid uid, EntityUid user, SealComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
 
-        PopupSystem.PopupEntity(Loc.GetString("seal-comp-do-unseal-success", ("entityName", Identity.Name(uid, EntityManager))), uid, user.Value);
+        PopupSystem.PopupEntity(Loc.GetString("seal-comp-do-unseal-success",
+            ("entityName", Identity.Name(uid, EntityManager))), uid, user);
 
         AudioSystem.PlayPredicted(component.UnsealingSound, uid, user);
 
@@ -149,6 +150,9 @@ public sealed class SealSystem : SharedSealSystem
     public void MakeAnnouncement(EntityUid uid, SealComponent component)
     {
         if (component.AnnounceText.HasValue && component.AnnounceTitle.HasValue)
-            _chatSystem.DispatchStationAnnouncement(uid, Loc.GetString(component.AnnounceText), Loc.GetString(component.AnnounceTitle), colorOverride: Color.Red);
+            _chatSystem.DispatchStationAnnouncement(uid,
+                Loc.GetString(component.AnnounceText),
+                Loc.GetString(component.AnnounceTitle),
+                colorOverride: Color.Red);
     }
 }

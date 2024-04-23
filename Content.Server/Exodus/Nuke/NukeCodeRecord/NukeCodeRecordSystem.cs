@@ -1,16 +1,13 @@
 using Content.Server.Nuke;
 using Content.Server.Station.Systems;
 using Content.Shared.Examine;
-using Robust.Shared.Random;
-using Robust.Shared.Utility;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Server.Exodus.Nuke.NukeCodeRecord;
 
 public sealed class NukeCodeRecordSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly StationSystem _station = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -32,10 +29,16 @@ public sealed class NukeCodeRecordSystem : EntitySystem
             args.PushText(Loc.GetString("nuke-codes-record-examine-empty"));
     }
 
+    /// <summary>
+    /// Get nuke codes and set them to NukeCodeRecord component
+    /// </summary>
+    /// <param name="uid">Entity that have component</param>
+    /// <param name="component">NukeCodeRecord component</param>
+    /// <param name="transform">Tranform component, if we have it</param>
+    /// <returns></returns>
     private bool TrySetRelativeNukeCode(
             EntityUid uid,
             NukeCodeRecordComponent component,
-            EntityUid? station = null,
             TransformComponent? transform = null)
     {
         if (!Resolve(uid, ref transform))
@@ -44,30 +47,16 @@ public sealed class NukeCodeRecordSystem : EntitySystem
         }
 
         bool nukeFound = false;
-        var owningStation = station ?? _station.GetOwningStation(uid);
+        var owningStation = _station.GetOwningStation(uid);
         var nukes = new List<Entity<NukeComponent>>();
         var query = EntityQueryEnumerator<NukeComponent>();
 
-        while (query.MoveNext(out var nukeUid, out var nuke))
-        {
-            nukes.Add((nukeUid, nuke));
-        }
+        if (!query.MoveNext(out var nukeUid, out var nuke))
+            return false;
 
-        _random.Shuffle(nukes);
+        component.NukeName = MetaData(nukeUid).EntityName;
+        component.NukeCodes = nuke.Code;
 
-        foreach (var (nukeUid, nuke) in nukes)
-        {
-            if (nuke.OriginStation != owningStation)
-            {
-                continue;
-            }
-
-            nukeFound = true;
-            component.NukeName = MetaData(nukeUid).EntityName;
-            component.NukeCodes = nuke.Code;
-            break;
-        }
-
-        return nukeFound;
+        return true;
     }
 }
