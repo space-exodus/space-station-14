@@ -18,4 +18,18 @@ public sealed class CCCVars
     /// </summary>
     public static readonly CVarDef<bool>
         QueueEnabled = CVarDef.Create("queue.enabled", false, CVar.SERVERONLY);
+
+    // Exodus-DisableStationGoal-Start
+
+    /**
+     * Station goal
+     */
+
+    /// <summary>
+    ///     Controls if round start station goal sending is enabled. `sendstationgoal` command still works even if this value set to false
+    /// </summary>
+    public static readonly CVarDef<bool>
+        StationGoalEnabled = CVarDef.Create("game.station_goal", true, CVar.SERVERONLY);
+
+    // Exodus-DisableStationGoal-End
 }

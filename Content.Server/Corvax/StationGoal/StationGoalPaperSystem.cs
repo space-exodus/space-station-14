@@ -1,7 +1,9 @@
 using System.Linq;
 using Content.Server.Fax;
+using Content.Shared.Corvax.CCCVars; // Exodus-DisableStationGoal
 using Content.Shared.GameTicking;
 using Content.Shared.Paper;
+using Robust.Shared.Configuration; // Exodus-DisableStationGoal
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -15,6 +17,7 @@ namespace Content.Server.Corvax.StationGoal
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly FaxSystem _faxSystem = default!;
+        [Dependency] private readonly IConfigurationManager _cfg = default!; // Exodus-DisableStationGoal
 
         public override void Initialize()
         {
@@ -24,7 +27,10 @@ namespace Content.Server.Corvax.StationGoal
 
         private void OnRoundStarted(RoundStartedEvent ev)
         {
-            SendRandomGoal();
+            // Exodus-DisableStationGoal-Start
+            if (_cfg.GetCVar(CCCVars.StationGoalEnabled))
+                SendRandomGoal();
+            // Exodus-DisableStationGoal-End
         }
 
         public bool SendRandomGoal()
