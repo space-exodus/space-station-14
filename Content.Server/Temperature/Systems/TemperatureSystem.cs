@@ -9,6 +9,7 @@ using Content.Shared.Atmos;
 using Content.Shared.Damage;
 using Content.Shared.Database;
 using Content.Shared.Inventory;
+using Content.Shared.Mobs.Components;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Temperature;
 using Robust.Shared.Physics.Components;
@@ -41,6 +42,7 @@ public sealed class TemperatureSystem : EntitySystem
         SubscribeLocalEvent<AlertsComponent, OnTemperatureChangeEvent>(ServerAlert);
         SubscribeLocalEvent<TemperatureProtectionComponent, InventoryRelayedEvent<ModifyChangedTemperatureEvent>>(
             OnTemperatureChangeAttempt);
+        SubscribeLocalEvent<TemperatureProtectionComponent, ModifyChangedTemperatureEvent>(OnModifyChangedTemperatureEvent); // Exodus-NakedTemperatureProtection
 
         SubscribeLocalEvent<InternalTemperatureComponent, MapInitEvent>(OnInit);
 
@@ -296,6 +298,19 @@ public sealed class TemperatureSystem : EntitySystem
 
         args.Args.TemperatureDelta *= ev.Coefficient;
     }
+
+    // Exodus-NakedTemperatureProtection-Start
+    private void OnModifyChangedTemperatureEvent(EntityUid uid, TemperatureProtectionComponent component, ref ModifyChangedTemperatureEvent args)
+    {
+        if (!HasComp<TemperatureComponent>(uid) || !HasComp<MobThresholdsComponent>(uid))
+            return;
+
+        var ev = new GetTemperatureProtectionEvent(component.Coefficient);
+        RaiseLocalEvent(uid, ref ev);
+
+        args.TemperatureDelta *= ev.Coefficient;
+    }
+    // Exodus-NakedTemperatureProtection-End
 
     private void OnParentChange(EntityUid uid, TemperatureComponent component,
         ref EntParentChangedMessage args)
