@@ -16,7 +16,9 @@
       - Meat
       - Pill
       - Crayon
-      - FoodSnack
+      - Paper
+      - Pizza
+      - Nutribrick
   - type: Metabolizer
     maxReagents: 3
     metabolizerTypes: [ Kidan ]

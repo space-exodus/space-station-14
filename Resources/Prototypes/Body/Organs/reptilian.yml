@@ -7,11 +7,13 @@
     specialDigestible:
       tags:
       - Fruit
-      - ReptilianFood
+      # - ReptilianFood # Exodus-Refactor: Why the hell is food classified not by characteristics, but by who eats it? Making it fucked up adding races that can eat it too?
       - Meat
       - Pill
       - Crayon
       - Paper
+      - Pizza # Exodus-Refactor: Still about broken food classes
+      - Nutribrick # Exodus-Refactor: Still about broken food classes
   - type: SolutionContainerManager
     solutions:
       stomach:

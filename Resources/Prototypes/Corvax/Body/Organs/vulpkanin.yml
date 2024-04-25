@@ -5,10 +5,14 @@
   components:
   - type: Stomach
     maxVolume: 50
-    specialDigestible: # Exodus-MRP
+    # Exodus-MRP-Start
+    specialDigestible:
       tags:
       - Fruit
       - Meat
       - Pill
       - Crayon
       - Paper
+      - Pizza
+      - Nutribrick
+    # Exodus-MRP-End
