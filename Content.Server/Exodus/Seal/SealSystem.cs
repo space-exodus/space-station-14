@@ -83,11 +83,15 @@ public sealed class SealSystem : SharedSealSystem
 
         if (!skipDoAfter && component.UnsealTime != TimeSpan.Zero)
         {
-            return DoAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.UnsealTime, new UnsealDoAfter(), uid, uid)
+            var doAfter = new DoAfterArgs(EntityManager, user, component.UnsealTime, new UnsealDoAfter(), uid, uid)
             {
-                BreakOnDamage = true, BreakOnMove = true, RequireCanInteract = true,
+                BreakOnDamage = true,
+                BreakOnMove = true,
+                RequireCanInteract = true,
                 NeedHand = true
-            });
+            };
+
+            return DoAfter.TryStartDoAfter(doAfter);
         }
 
         Unseal(uid, user, component);
