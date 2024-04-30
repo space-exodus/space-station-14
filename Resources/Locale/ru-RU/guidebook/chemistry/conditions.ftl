@@ -7,6 +7,15 @@ reagent-effect-condition-guidebook-total-damage =
                *[other] имеет между { NATURALFIXED($min, 2) } и { NATURALFIXED($max, 2) } общего урона
             }
     }
+reagent-effect-condition-guidebook-total-hunger =
+    { $max ->
+        [2147483648] у цели не менее { NATURALFIXED($min, 2) } ед. общего голода
+       *[other]
+            { $min ->
+                [0] цель имеет не более { NATURALFIXED($max, 2) } ед. общего голода
+               *[other] общий голод цели находится между { NATURALFIXED($min, 2) } ед. и { NATURALFIXED($max, 2) } ед.
+            }
+    }
 reagent-effect-condition-guidebook-reagent-threshold =
     { $max ->
         [2147483648] в кровеносной системе имеется по крайней мере { NATURALFIXED($min, 2) }ед. { $reagent }

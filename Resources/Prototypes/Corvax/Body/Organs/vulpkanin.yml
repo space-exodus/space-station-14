@@ -4,7 +4,6 @@
   noSpawn: true
   components:
   - type: Stomach
-    maxVolume: 50
     # Exodus-MRP-Start
     specialDigestible:
       tags:
@@ -16,3 +15,7 @@
       - Pizza
       - Nutribrick
     # Exodus-MRP-End
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50.0

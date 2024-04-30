@@ -127,6 +127,6 @@ public sealed record PlayerRecord(
     string? PremiumOOCColor // Exodus-Sponsorship
 );
 
-public sealed record RoundRecord(int Id, DateTimeOffset StartDate, ServerRecord Server);
+public sealed record RoundRecord(int Id, DateTimeOffset? StartDate, ServerRecord Server);
 
 public sealed record ServerRecord(int Id, string Name);
