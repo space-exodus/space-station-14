@@ -78,12 +78,8 @@ public enum SealVisual : byte
 }
 
 [Serializable, NetSerializable]
-public sealed partial class UnsealDoAfter : DoAfterEvent
+public sealed partial class UnsealDoAfter : SimpleDoAfterEvent
 {
-    public override DoAfterEvent Clone()
-    {
-        return this;
-    }
 }
 
 
