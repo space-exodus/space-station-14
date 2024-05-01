@@ -27,6 +27,7 @@ public sealed class SealSystem : SharedSealSystem
     {
         AppearanceSystem.SetData(uid, SealVisual.Sealed, true);
     }
+
     public void OnActivated(EntityUid uid, SealComponent component, ActivateInWorldEvent args)
     {
         if (args.Handled)
