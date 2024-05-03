@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Content.Client.Roles;
+using Content.Client.Roles; // Exodus-Whitelist
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
@@ -91,7 +91,7 @@ public sealed class JobRequirementsManager
         }
 
         // Exodus-Whitelist-Start
-        if (job.IsWhitelisted && _roleWhitelist.HasJob(job))
+        if (job.IsWhitelisted && !_roleWhitelist.HasJob(job))
         {
             reason = FormattedMessage.FromUnformatted(Loc.GetString("role-whitelisted"));
             return false;

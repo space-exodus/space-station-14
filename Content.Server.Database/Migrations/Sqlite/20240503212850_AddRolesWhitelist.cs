@@ -1,10 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Content.Server.Database.Migrations.Postgres
+namespace Content.Server.Database.Migrations.Sqlite
 {
     /// <inheritdoc />
     public partial class AddRolesWhitelist : Migration
@@ -16,11 +15,11 @@ namespace Content.Server.Database.Migrations.Postgres
                 name: "whitelist_role",
                 columns: table => new
                 {
-                    whitelist_role_id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    user_id = table.Column<Guid>(type: "uuid", nullable: false),
-                    value = table.Column<string>(type: "text", nullable: false),
-                    player_id = table.Column<int>(type: "integer", nullable: true)
+                    whitelist_role_id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    user_id = table.Column<Guid>(type: "TEXT", nullable: false),
+                    value = table.Column<string>(type: "TEXT", nullable: false),
+                    player_id = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,18 +28,19 @@ namespace Content.Server.Database.Migrations.Postgres
                         name: "FK_whitelist_role_player_player_id",
                         column: x => x.player_id,
                         principalTable: "player",
-                        principalColumn: "player_id");
+                        principalColumn: "player_id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
                 name: "whitelist_role_group",
                 columns: table => new
                 {
-                    whitelist_role_group_id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    user_id = table.Column<Guid>(type: "uuid", nullable: false),
-                    value = table.Column<string>(type: "text", nullable: false),
-                    player_id = table.Column<int>(type: "integer", nullable: true)
+                    whitelist_role_group_id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    user_id = table.Column<Guid>(type: "TEXT", nullable: false),
+                    value = table.Column<string>(type: "TEXT", nullable: false),
+                    player_id = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -49,7 +49,8 @@ namespace Content.Server.Database.Migrations.Postgres
                         name: "FK_whitelist_role_group_player_player_id",
                         column: x => x.player_id,
                         principalTable: "player",
-                        principalColumn: "player_id");
+                        principalColumn: "player_id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

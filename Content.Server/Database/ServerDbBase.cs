@@ -1011,7 +1011,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         public async Task RemoveFromWhitelistAsync(NetUserId player)
         {
             await using var db = await GetDb();
-            var entry = await db.DbContext.Whitelist.SingleAsync(w => w.UserId == player);
+            var entry = db.DbContext.Whitelist.Single(w => w.UserId == player);
             db.DbContext.Whitelist.Remove(entry);
             await db.DbContext.SaveChangesAsync();
         }
@@ -1029,13 +1029,14 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             DebugTools.Assert(record is not null, "UserID provided is invalid");
             DebugTools.Assert(record.WhitelistRoles.Find(roleRecord => roleRecord.Value == role) is not null, $"User already have \"{role}\" role added to roles whitelist");
 
-            record.WhitelistRoles.Add(
-                new WhitelistRole()
-                {
-                    UserId = userId,
-                    Value = role,
-                }
-            );
+            var whitelistRole = new WhitelistRole()
+            {
+                UserId = userId,
+                Value = role,
+                PlayerId = record.Id,
+            };
+            db.DbContext.WhitelistRole.Add(whitelistRole);
+
             await db.DbContext.SaveChangesAsync(cancel);
         }
 
@@ -1048,7 +1049,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             DebugTools.Assert(record is not null, "UserID provided is invalid");
             DebugTools.Assert(record.WhitelistRoles.Find(roleRecord => roleRecord.Value == role) is null, $"User doesn't have \"{role}\" role in roles whitelist");
 
-            var entry = await db.DbContext.WhitelistRole.SingleAsync(roleRecord => roleRecord.UserId == userId && roleRecord.Value == role);
+            var entry = db.DbContext.WhitelistRole.Single(roleRecord => roleRecord.UserId == userId && roleRecord.Value == role);
             db.DbContext.WhitelistRole.Remove(entry);
 
             await db.DbContext.SaveChangesAsync(cancel);
@@ -1057,7 +1058,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         /// <summary>
         /// Gets whitelist roles of a user
         /// </summary>
-        public async Task<List<string>> GetRoleWhitelist(NetUserId userId, CancellationToken cancel = default)
+        public async Task<List<string>> GetRoleWhitelist(NetUserId userId)
         {
             await using var db = await GetDb();
             return db.DbContext.WhitelistRole.Where(record => record.UserId == userId).Select(role => role.Value).ToList();
@@ -1075,13 +1076,14 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             DebugTools.Assert(record is not null, "UserID provided is invalid");
             DebugTools.Assert(record.WhitelistRolesGroups.Find(groupRecord => groupRecord.Value == group) is not null, $"User already have \"{group}\" group added to roles groups whitelist");
 
-            record.WhitelistRolesGroups.Add(
-                new WhitelistRoleGroup()
-                {
-                    UserId = userId,
-                    Value = group,
-                }
-            );
+            var whitelistRolesGroup = new WhitelistRoleGroup()
+            {
+                UserId = userId,
+                Value = group,
+                PlayerId = record.Id,
+            };
+            db.DbContext.WhitelistRoleGroup.Add(whitelistRolesGroup);
+
             await db.DbContext.SaveChangesAsync(cancel);
         }
 
@@ -1094,7 +1096,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             DebugTools.Assert(record is not null, "UserID provided is invalid");
             DebugTools.Assert(record.WhitelistRoles.Find(groupRecord => groupRecord.Value == group) is null, $"User doesn't have \"{group}\" group in roles groups whitelist");
 
-            var entry = await db.DbContext.WhitelistRoleGroup.SingleAsync(roleRecord => roleRecord.UserId == userId && roleRecord.Value == group);
+            var entry = db.DbContext.WhitelistRoleGroup.Single(roleRecord => roleRecord.UserId == userId && roleRecord.Value == group);
             db.DbContext.WhitelistRoleGroup.Remove(entry);
 
             await db.DbContext.SaveChangesAsync(cancel);
@@ -1103,7 +1105,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         /// <summary>
         /// Gets whitelist groups of roles of a user
         /// </summary>
-        public async Task<List<string>> GetRolesGroupWhitelist(NetUserId userId, CancellationToken cancel = default)
+        public async Task<List<string>> GetRolesGroupWhitelist(NetUserId userId)
         {
             await using var db = await GetDb();
             return db.DbContext.WhitelistRole.Where(record => record.UserId == userId).Select(group => group.Value).ToList();

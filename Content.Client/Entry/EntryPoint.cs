@@ -18,6 +18,7 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Preferences;
 using Content.Client.Radiation.Overlays;
 using Content.Client.Replay;
+using Content.Client.Roles;
 using Content.Client.Screenshot;
 using Content.Client.Singularity;
 using Content.Client.Stylesheets;
@@ -70,6 +71,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly ContentLocalizationManager _contentLoc = default!;
         [Dependency] private readonly JoinQueueManager _queueManager = default!; // Corvax-Queue
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!; // Exodus-Sponsorship
+        [Dependency] private readonly RoleWhitelistManager _roleWhitelistManager = default!; // Exodus-Whitelist
         [Dependency] private readonly ContentReplayPlaybackManager _playbackMan = default!;
         [Dependency] private readonly IResourceManager _resourceManager = default!;
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
@@ -166,6 +168,7 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _queueManager.Initialize(); // Corvax-Queue
             _sponsorsManager.Initialize(); // Exodus-Sponsorship
+            _roleWhitelistManager.Initialize(); // Exodus-Whitelist
             _documentParsingManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>

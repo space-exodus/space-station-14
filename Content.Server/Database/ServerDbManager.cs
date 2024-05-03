@@ -241,10 +241,10 @@ namespace Content.Server.Database
         // Exodus-Whitelist-Start
         Task AddToRoleWhitelist(NetUserId userId, string role, CancellationToken cancel = default);
         Task RemoveFromRoleWhitelist(NetUserId userId, string role, CancellationToken cancel = default);
-        Task<List<string>> GetRoleWhitelist(NetUserId userId, CancellationToken cancel = default);
+        Task<List<string>> GetRoleWhitelist(NetUserId userId);
         Task AddToRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default);
         Task RemoveFromRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default);
-        Task<List<string>> GetRolesGroupWhitelist(NetUserId userId, CancellationToken cancel = default);
+        Task<List<string>> GetRolesGroupWhitelist(NetUserId userId);
         // Exodus-Whitelist-End
 
         #endregion
@@ -736,10 +736,10 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RemoveFromRoleWhitelist(userId, role, cancel));
         }
 
-        public Task<List<string>> GetRoleWhitelist(NetUserId userId, CancellationToken cancel = default)
+        public Task<List<string>> GetRoleWhitelist(NetUserId userId)
         {
             DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetRoleWhitelist(userId, cancel));
+            return RunDbCommand(() => _db.GetRoleWhitelist(userId));
         }
 
         public Task AddToRoleGroupWhitelist(NetUserId userId, string group, CancellationToken cancel = default)
@@ -754,10 +754,10 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RemoveFromRoleGroupWhitelist(userId, group, cancel));
         }
 
-        public Task<List<string>> GetRolesGroupWhitelist(NetUserId userId, CancellationToken cancel = default)
+        public Task<List<string>> GetRolesGroupWhitelist(NetUserId userId)
         {
             DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetRolesGroupWhitelist(userId, cancel));
+            return RunDbCommand(() => _db.GetRolesGroupWhitelist(userId));
         }
         // Exodus-Whitelist-End
 

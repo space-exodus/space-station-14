@@ -3,6 +3,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Server.Administration.Managers;
 using Content.Server.Ghost;
+using Content.Server.Roles; // Exodus-Whitelist
 using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
@@ -27,6 +28,7 @@ namespace Content.Server.GameTicking
     {
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
+        [Dependency] private readonly RoleWhitelistManager _roleWhitelistManager = default!; // Exodus-Whitelist
 
         [ValidatePrototypeId<EntityPrototype>]
         public const string ObserverPrototypeName = "MobObserver";
@@ -127,7 +129,7 @@ namespace Content.Server.GameTicking
             if (jobBans == null || jobId != null && jobBans.Contains(jobId))
                 return;
 
-            if (jobId != null && !_playTimeTrackings.IsAllowed(player, jobId))
+            if (jobId != null && !_playTimeTrackings.IsAllowed(player, jobId) && _roleWhitelistManager.IsAllowed(player, jobId)) // Exodus-Whitelist
                 return;
             SpawnPlayer(player, character, station, jobId, lateJoin, silent);
         }

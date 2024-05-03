@@ -1,8 +1,10 @@
-using System.Linq;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Shared.Roles;
 using Robust.Shared.Network;
+using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Roles;
@@ -11,6 +13,7 @@ public sealed class RoleWhitelistManager
 {
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly IServerDbManager _db = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
 
     private readonly Dictionary<NetUserId, RoleWhitelistInfo> _cachedWhitelist = [];
 
@@ -51,6 +54,37 @@ public sealed class RoleWhitelistManager
         _cachedWhitelist.Remove(args.Channel.UserId);
     }
 
+    /// <summary>
+    /// Works only for connected players
+    /// Extracts whitelist info from managers cache which is managed asynchroniously (because of that we can't get info for not connected players)
+    /// </summary>
+    public bool TryGetRoleWhitelistForPlayer(ICommonSession player, [NotNullWhen(true)] out RoleWhitelistInfo? whitelist)
+    {
+        return _cachedWhitelist.TryGetValue(player.UserId, out whitelist);
+    }
+
+    public bool IsAllowed(ICommonSession player, string jobId)
+    {
+        // we don't know what this job is and cannot allow it
+        if (!_prototype.TryIndex<JobPrototype>(jobId, out var job))
+        {
+            return false;
+        }
+
+        // we don't know what roles are allowed for the player so we can't allow everything for it
+        if (!TryGetRoleWhitelistForPlayer(player, out var whitelist))
+        {
+            return false;
+        }
+
+        if (job.IsWhitelisted && (whitelist.Roles.Contains(jobId) || whitelist.RolesGroups.Contains(job.WhitelistRoleGroup ?? "")))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
     public async Task<RoleWhitelistInfo> GetRoleWhitelistInfo(NetUserId userId)
     {
         var rolesWhitelist = await _db.GetRoleWhitelist(userId);
@@ -69,7 +103,8 @@ public sealed class RoleWhitelistManager
     {
         await _db.AddToRoleWhitelist(userId, role);
 
-        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        if (!_net.Channels.TryFirstOrDefault((channel) => channel.UserId == userId, out var channel))
+            return;
         SendRoleWhitelistInfo(userId, channel);
     }
 
@@ -77,7 +112,8 @@ public sealed class RoleWhitelistManager
     {
         await _db.RemoveFromRoleWhitelist(userId, role);
 
-        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        if (!_net.Channels.TryFirstOrDefault((channel) => channel.UserId == userId, out var channel))
+            return;
         SendRoleWhitelistInfo(userId, channel);
     }
 
@@ -85,7 +121,8 @@ public sealed class RoleWhitelistManager
     {
         await _db.AddToRoleGroupWhitelist(userId, role);
 
-        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        if (!_net.Channels.TryFirstOrDefault((channel) => channel.UserId == userId, out var channel))
+            return;
         SendRoleWhitelistInfo(userId, channel);
     }
 
@@ -93,7 +130,8 @@ public sealed class RoleWhitelistManager
     {
         await _db.RemoveFromRoleGroupWhitelist(userId, role);
 
-        var channel = _net.Channels.First((channel) => channel.UserId == userId);
+        if (!_net.Channels.TryFirstOrDefault((channel) => channel.UserId == userId, out var channel))
+            return;
         SendRoleWhitelistInfo(userId, channel);
     }
 }

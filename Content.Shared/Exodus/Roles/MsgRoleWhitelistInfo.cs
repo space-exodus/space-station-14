@@ -25,9 +25,6 @@ public sealed class MsgRoleWhitelistInfo : NetMessage
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
-        var isSponsor = buffer.ReadBoolean();
-        buffer.ReadPadBits();
-        if (!isSponsor) return;
         var length = buffer.ReadVariableInt32();
         using var stream = new MemoryStream(length);
         buffer.ReadAlignedMemory(stream, length);
@@ -36,8 +33,6 @@ public sealed class MsgRoleWhitelistInfo : NetMessage
 
     public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
     {
-        buffer.Write(Info != null);
-        buffer.WritePadBits();
         if (Info == null) return;
         var stream = new MemoryStream();
         serializer.SerializeDirect(stream, Info);

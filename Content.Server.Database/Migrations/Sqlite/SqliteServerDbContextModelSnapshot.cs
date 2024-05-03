@@ -1201,7 +1201,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("whitelist_role_id");
 
-                    b.Property<int?>("PlayerId")
+                    b.Property<int>("PlayerId")
                         .HasColumnType("INTEGER")
                         .HasColumnName("player_id");
 
@@ -1230,7 +1230,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("whitelist_role_group_id");
 
-                    b.Property<int?>("PlayerId")
+                    b.Property<int>("PlayerId")
                         .HasColumnType("INTEGER")
                         .HasColumnName("player_id");
 
@@ -1653,18 +1653,26 @@ namespace Content.Server.Database.Migrations.Sqlite
 
             modelBuilder.Entity("Content.Server.Database.WhitelistRole", b =>
                 {
-                    b.HasOne("Content.Server.Database.Player", null)
+                    b.HasOne("Content.Server.Database.Player", "Player")
                         .WithMany("WhitelistRoles")
                         .HasForeignKey("PlayerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
                         .HasConstraintName("FK_whitelist_role_player_player_id");
+
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("Content.Server.Database.WhitelistRoleGroup", b =>
                 {
-                    b.HasOne("Content.Server.Database.Player", null)
+                    b.HasOne("Content.Server.Database.Player", "Player")
                         .WithMany("WhitelistRolesGroups")
                         .HasForeignKey("PlayerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
                         .HasConstraintName("FK_whitelist_role_group_player_player_id");
+
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("PlayerRound", b =>

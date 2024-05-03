@@ -18,6 +18,7 @@ using Content.Server.Maps;
 using Content.Server.NodeContainer.NodeGroups;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Preferences.Managers;
+using Content.Server.Roles;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
 using Content.Server.Voting.Managers;
@@ -105,6 +106,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<JoinQueueManager>().Initialize(); // Corvax-Queue
                 IoCManager.Resolve<SponsorsManager>().Initialize(); // Exodus-Sponsorship
+                IoCManager.Resolve<RoleWhitelistManager>().Initialize(); // Exodus-RolesWhitelist
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
 
                 _voteManager.Initialize();

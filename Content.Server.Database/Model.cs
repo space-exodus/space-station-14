@@ -465,6 +465,9 @@ namespace Content.Server.Database
         public int Id { get; set; }
         public Guid UserId { get; set; }
         public string Value { get; set; } = null!;
+
+        public int PlayerId { get; set; }
+        public Player Player { get; set; } = null!;
     }
 
     public class WhitelistRoleGroup
@@ -472,6 +475,9 @@ namespace Content.Server.Database
         public int Id { get; set; }
         public Guid UserId { get; set; }
         public string Value { get; set; } = null!;
+
+        public int PlayerId { get; set; }
+        public Player Player { get; set; } = null!;
     }
 
     [Table("whitelist")]
