@@ -1,6 +1,5 @@
 {
     "version": 1,
-
     "license": "CC-BY-SA-3.0",
     "copyright": "Made by brainfoo1183 (github) for ss14",
     "size": {
@@ -9,16 +8,16 @@
     },
     "states": [
         {
-            "name": "dog-evl"
+            "name": "dog-evil"
         },
         {
-            "name": "dog-god"
+            "name": "dog-good"
         },
         {
-            "name": "plushie-lizard-loki"
+            "name": "plushie-lizard-lokilife"
         },
         {
-            "name": "plushie-moth-frag"
+            "name": "plushie-moth-fragoler"
         }
     ]
 }

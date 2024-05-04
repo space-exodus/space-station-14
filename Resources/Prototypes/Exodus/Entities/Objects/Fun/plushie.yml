@@ -1,36 +1,41 @@
 - type: entity
   parent: PlushieLizard
-  id: PlushieLizzardLokife
+  id: PlushieLizardLokilife
   name: Lokilife
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: plushie-lizard-loki
+    state: plushie-lizard-lokilife
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Heat: 8
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   parent: PlushieMoth
-  id: PlushieMothFrag
+  id: PlushieMothFragoler
   name: Fragoler
-  description: Такое солнышко...
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: plushie-moth-frag
+    state: plushie-moth-fragoler
   - type: PointLight
     enabled: true
     radius: 12
-    energy: 0.75
+    energy: 0.55
     color: "#fcc860"
 
 - type: entity
   parent: BasePlushie
-  id: PlushieDogAsler
+  id: PlushieDogAskolot
   name: Asler
-  description: аыыы ... ььь
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: dog-evl
+    state: dog-evil
 
 - type: entity
   parent: BasePlushie
@@ -39,4 +44,4 @@
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: dog-god
+    state: dog-good
