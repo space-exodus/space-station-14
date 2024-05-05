@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Fax;
 using Content.Shared.Corvax.CCCVars; // Exodus-DisableStationGoal
+using Content.Shared.Fax.Components;
 using Content.Shared.GameTicking;
 using Content.Shared.Paper;
 using Robust.Shared.Configuration; // Exodus-DisableStationGoal
@@ -55,6 +56,7 @@ namespace Content.Server.Corvax.StationGoal
                 var printout = new FaxPrintout(
                     Loc.GetString(goal.Text),
                     Loc.GetString("station-goal-fax-paper-name"),
+                    null,
                     null,
                     "paper_stamp-centcom",
                     new List<StampDisplayInfo>

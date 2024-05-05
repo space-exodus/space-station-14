@@ -1,2 +1,2 @@
-loadout-window = Инвентарь
-loadout-none = Нет
+loadout-window = Снаряжение
+loadout-none = Ничего

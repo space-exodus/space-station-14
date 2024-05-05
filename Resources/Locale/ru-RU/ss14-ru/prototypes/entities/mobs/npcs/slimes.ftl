@@ -1,9 +1,9 @@
-ent-BaseMobAdultSlimes = слайм
-    .desc = Это так похоже на желе. Интересно, какой он на вкус?
+ent-BaseMobAdultSlimes = базовый слайм
+    .desc = Он так похож на желе. Интересно, каков он на вкус?
 ent-MobAdultSlimes = базовый слайм
     .desc = Он так похож на желе. Интересно, каков он на вкус?
 ent-MobSlimesGeras = герас
-    .desc = Герас слизи – название ироничное, не правда ли?
+    .desc = Слайм-герас - ироничное название, не правда ли?
 ent-MobAdultSlimesBlue = синий слайм
     .desc = { ent-MobAdultSlimes.desc }
 ent-MobAdultSlimesBlueAngry = синий слайм
