@@ -225,8 +225,6 @@
       collection: FootstepHoverBorg
       params:
         volume: -6
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
 
 - type: entity
   id: BorgChassisService
