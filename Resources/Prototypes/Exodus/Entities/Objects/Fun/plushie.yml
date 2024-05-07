@@ -1,0 +1,47 @@
+- type: entity
+  parent: PlushieLizard
+  id: PlushieLizardLokilife
+  name: Lokilife
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plushie-lizard-lokilife
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Heat: 8
+    soundHit:
+      collection: MetalThud
+
+- type: entity
+  parent: PlushieMoth
+  id: PlushieMothFragoler
+  name: Fragoler
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plushie-moth-fragoler
+  - type: PointLight
+    enabled: true
+    radius: 12
+    energy: 0.55
+    color: "#fcc860"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDogAskolot
+  name: Asler
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: dog-evil
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDogLoxmat
+  name: Loxmat
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: dog-good
