@@ -1,0 +1,19 @@
+- type: startingGear
+  id: CentcomOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
+    back: ClothingBackpackCentcomOfficerFilled
+    mask: ClothingMaskGas
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetAltCentCom
+    head: ClothingHeadCapCentcomBlack
+    neck: ClothingNeckCloakCentcomBlack
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitDeathsquad
+    suitstorage: AirTankFilled
+    shoes: ClothingShoesCentcomOfficerFilled
+    id: CentcomPDA
+    pocket1: EnergySword
+    pocket2: EnergyShield
+    belt: ClothingBeltMilitaryWebbingMedFilled
+    innerClothingSkirt: ClothingUniformJumpskirtColorBlack

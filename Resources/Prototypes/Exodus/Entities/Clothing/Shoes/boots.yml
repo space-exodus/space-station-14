@@ -8,3 +8,41 @@
     sprite: Exodus/Clothing/Shoes/Boots/blueshield.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Shoes/Boots/blueshield.rsi
+
+- type: entity
+  abstract: true
+  parent: [ClothingShoesBase, ClothingSlotBase]
+  id: ClothingShoesPenItem
+  components:
+  - type: Matchbox
+  - type: ItemSlots
+    slots:
+      item:
+        name: clothing-boots-sidearm
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
+          - Write
+
+- type: entity
+  parent: ClothingShoesPenItem
+  id: ClothingShoesCentcomOfficer
+  name: обувь офицера специальных операций
+  description: Очень дорого, очень качественно, очень строго.
+  components:
+  - type: NoSlip
+  - type: Sprite
+    sprite: Corvax/Clothing/Shoes/Specific/centcom_officer_black.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Shoes/Specific/centcom_officer_black.rsi
+
+- type: entity
+  id: ClothingShoesCentcomOfficerFilled
+  parent: ClothingShoesCentcomOfficer
+  suffix: Заполненный
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - EnergyDagger

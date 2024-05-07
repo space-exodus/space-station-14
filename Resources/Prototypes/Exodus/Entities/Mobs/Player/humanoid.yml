@@ -1,0 +1,34 @@
+- type: entity
+  id: RandomHumanoidSpawnerSpecicalOperationOfficer
+  name: Офицер специальных операций
+  suffix: ЦентКомм
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/Neck/Cloaks/centcom_officer_black.rsi
+      state: icon
+    - type: RandomMetadata
+      nameSegments:
+        - names_first_male
+        - names_last_male
+    - type: RandomHumanoidSpawner
+      settings: CentcomOfficerSettings
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CentcomOfficerSettings
+  randomizeName: false
+  speciesBlacklist:
+    - Diona
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: Офицер Спецопераций
+      description: Вы - руководитель сил Спецопераций сектора, в чьи задачи входит координация действий подконтрольных ему ОБР и Эскадрона смерти для своевременного устранения угроз в секторе. Если потребовалась ваша помощь, значит, станции осталось недолго.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ CentcomOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - names_first_male
+        - names_last_male
+    - type: InitialInfectedExempt

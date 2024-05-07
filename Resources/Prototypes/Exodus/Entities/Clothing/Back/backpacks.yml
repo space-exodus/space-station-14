@@ -6,3 +6,44 @@
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Back/Backpacks/blueshield.rsi
+    
+- type: entity
+  noSpawn: false
+  parent: ClothingBackpackCentcomOfficer
+  id: ClothingBackpackCentcomOfficerFilled
+  name: сумка оФицера специальных операций
+  description: Модифицированная сумка с увеличенным объемом хранения.
+  components:
+    - type: Storage
+      grid:
+      - 0,0,17,8
+    - type: StorageFill
+      contents:
+        - id: BoxSurvivalEngineering
+        - id: CombatMedipen
+        - id: CombatMedipen
+        - id: MagazineShotgun
+        - id: MagazineShotgun
+        - id: WeaponShotgunBulldog
+        - id: SpeedLoaderMagnumAP #
+        - id: WeaponDisablerSMG
+        - id: GrenadeFlashBang # panish army knife
+        - id: WelderExperimental #
+        - id: Hypospray  #
+        - id: DeathAcidifierImplanter # crew will try to steal their amazing hardsuits
+        - id: FreedomImplanter
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackCentcomOfficer
+  name: сумка оФицера специальных операций
+  description: Модифицированная сумка с увеличенным объемом хранения.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/satchel.rsi
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,17,8
