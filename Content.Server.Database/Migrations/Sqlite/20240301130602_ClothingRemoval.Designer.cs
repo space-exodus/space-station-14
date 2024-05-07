@@ -600,9 +600,25 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("player_id");
 
+                    // Exodus-Discord-Start
+                    b.Property<ulong?>("DiscordId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("discord_id");
+
+                    b.Property<string>("DiscordVerificationCode")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("discord_verification_code");
+                    // Exodus-Discord-End
+
                     b.Property<DateTime>("FirstSeenTime")
                         .HasColumnType("TEXT")
                         .HasColumnName("first_seen_time");
+
+                    // Exodus-Sponsorship-Start
+                    b.Property<bool>("IsPremium")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("is_premium");
+                    // Exodus-Sponsorship-End
 
                     b.Property<DateTime?>("LastReadRules")
                         .HasColumnType("TEXT")
@@ -625,6 +641,12 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("last_seen_user_name");
+
+                    // Exodus-Sponsorship-Start
+                    b.Property<string>("PremiumOOCColor")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("premium_ooc_color");
+                    // Exodus-Sponsorship-End
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("TEXT")
@@ -758,11 +780,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("species");
-
-                    b.Property<string>("Voice")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("voice");
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

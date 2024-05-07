@@ -600,6 +600,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("player_id");
 
+                    // Exodus-Discord-Start
                     b.Property<ulong?>("DiscordId")
                         .HasColumnType("INTEGER")
                         .HasColumnName("discord_id");
@@ -607,6 +608,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Property<string>("DiscordVerificationCode")
                         .HasColumnType("TEXT")
                         .HasColumnName("discord_verification_code");
+                    // Exodus-Discord-End
 
                     b.Property<DateTime>("FirstSeenTime")
                         .HasColumnType("TEXT")
