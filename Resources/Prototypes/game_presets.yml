@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: true # Exodus-MRP
+  showInVote: false
   description: survival-description
   rules:
     - RampingStationEventScheduler
