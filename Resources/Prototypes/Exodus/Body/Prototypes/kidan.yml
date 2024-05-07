@@ -18,10 +18,10 @@
         liver: OrganKidanLiver
         kidneys: OrganKidanKidneys
       connections:
-      - left arm
       - right arm
-      - left leg
+      - left arm
       - right leg
+      - left leg
     right arm:
       part: RightArmKidan
       connections:

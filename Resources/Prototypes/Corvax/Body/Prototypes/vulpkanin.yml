@@ -19,10 +19,12 @@
         liver: OrganAnimalLiver
         kidneys: OrganHumanKidneys
       connections:
-      - left arm
+      # Exodus-FixSwapArms-Start
       - right arm
-      - left leg
+      - left arm
       - right leg
+      - left leg
+      # Exodus-FixSwapArms-End
     right arm:
       part: RightArmVulpkanin
       connections:
