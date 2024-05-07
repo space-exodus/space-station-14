@@ -1,5 +1,5 @@
 - type: startingGear
-  id: CentcomOfficerGear
+  id: SpecicalOperationOfficerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
     back: ClothingBackpackCentcomOfficerFilled

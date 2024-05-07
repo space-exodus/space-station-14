@@ -11,11 +11,11 @@
         - names_first_male
         - names_last_male
     - type: RandomHumanoidSpawner
-      settings: CentcomOfficerSettings
+      settings: SpecicalOperationOfficerSettings
     - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
-  id: CentcomOfficerSettings
+  id: SpecicalOperationOfficerSettings
   randomizeName: false
   speciesBlacklist:
     - Diona
@@ -26,7 +26,7 @@
       description: Вы - руководитель сил Спецопераций сектора, в чьи задачи входит координация действий подконтрольных ему ОБР и Эскадрона смерти для своевременного устранения угроз в секторе. Если потребовалась ваша помощь, значит, станции осталось недолго.
     - type: GhostTakeoverAvailable
     - type: Loadout
-      prototypes: [ CentcomOfficerGear ]
+      prototypes: [ SpecicalOperationOfficerGear ]
     - type: RandomMetadata
       nameSegments:
         - names_first_male
