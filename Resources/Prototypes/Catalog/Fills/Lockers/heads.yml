@@ -290,7 +290,7 @@
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
-      - id: BookSecretDocuments
+      - id: BookSecretDocumentsExodus #Exodus
       - id: BookBusido # Corvax-Books
 
 - type: entity
@@ -317,7 +317,7 @@
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
-      - id: BookSecretDocuments
+      - id: BookSecretDocumentsExodus #Exodus
 
 - type: entity
   id: LockerFreezerVaultFilled
