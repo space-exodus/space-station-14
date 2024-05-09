@@ -1,7 +1,7 @@
 - type: entity
   id: RandomHumanoidSpawnerSpecicalOperationOfficer
-  name: Офицер специальных операций
-  suffix: ЦентКомм
+  name: specical operation officer
+  suffix: Centcomm
   components:
     - type: Sprite
       sprite: Corvax/Clothing/Neck/Cloaks/centcom_officer_black.rsi
@@ -22,8 +22,8 @@
   components:
     - type: MindShield
     - type: GhostRole
-      name: Офицер Спецопераций
-      description: Вы - руководитель сил Спецопераций сектора, в чьи задачи входит координация действий подконтрольных ему ОБР и Эскадрона смерти для своевременного устранения угроз в секторе. Если потребовалась ваша помощь, значит, станции осталось недолго.
+      name: ghost-role-information-Specical-Operation-Officer-name
+      description: ghost-role-information-Specical-Operation-Officer-description
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ SpecicalOperationOfficerGear ]

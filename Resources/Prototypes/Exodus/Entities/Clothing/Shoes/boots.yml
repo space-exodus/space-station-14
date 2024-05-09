@@ -40,7 +40,7 @@
 - type: entity
   id: ClothingShoesCentcomOfficerFilled
   parent: ClothingShoesCentcomOfficer
-  suffix: Заполненный
+  suffix: fill
   components:
   - type: ContainerFill
     containers:
