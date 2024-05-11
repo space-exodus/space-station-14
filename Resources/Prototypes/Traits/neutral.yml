@@ -16,6 +16,8 @@
     - type: MothAccent
     - type: ReplacementAccent
       accent: dwarf
+    - type: GrowlingAccent # Exodus-FixVulpkanins
+    - type: KidanAccent # Exodus-Kidans
 
 - type: trait
   id: Southern
