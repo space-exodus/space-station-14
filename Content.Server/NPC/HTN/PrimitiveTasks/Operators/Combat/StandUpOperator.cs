@@ -1,12 +1,14 @@
-﻿using Content.Server.Buckle.Systems;
-using Content.Shared.Buckle.Components;
+// Exodus-Crawling
+using Content.Server.DoAfter;
+using Content.Shared.DoAfter;
+using Content.Shared.Standing;
 
 namespace Content.Server.NPC.HTN.PrimitiveTasks.Operators.Combat;
 
-public sealed partial class UnbuckleOperator : HTNOperator
+public sealed partial class StandUpOperator : HTNOperator
 {
     [Dependency] private readonly IEntityManager _entManager = default!;
-    private BuckleSystem _buckle = default!;
+    private DoAfterSystem _doAfter = default!;
 
     [DataField("shutdownState")]
     public HTNPlanState ShutdownState { get; private set; } = HTNPlanState.TaskFinished;
@@ -14,17 +16,23 @@ public sealed partial class UnbuckleOperator : HTNOperator
     public override void Initialize(IEntitySystemManager sysManager)
     {
         base.Initialize(sysManager);
-        _buckle = sysManager.GetEntitySystem<BuckleSystem>();
+        _doAfter = sysManager.GetEntitySystem<DoAfterSystem>();
     }
 
     public override void Startup(NPCBlackboard blackboard)
     {
         base.Startup(blackboard);
         var owner = blackboard.GetValue<EntityUid>(NPCBlackboard.Owner);
-        if (!_entManager.TryGetComponent<BuckleComponent>(owner, out var buckle) || !buckle.Buckled)
+
+        if (!_entManager.TryGetComponent<StandingStateComponent>(owner, out var standing) || standing.Standing)
             return;
 
-        _buckle.TryUnbuckle(owner, owner, false, buckle); // Exodus-MRP NPC
+        var doAfterArgs = new DoAfterArgs(_entManager, owner, standing.StandDelay, new StandDoAfterEvent(), owner)
+        {
+            CancelDuplicate = true,
+            BreakOnDamage = true,
+        };
+        _doAfter.TryStartDoAfter(doAfterArgs);
     }
 
     public override HTNOperatorStatus Update(NPCBlackboard blackboard, float frameTime)

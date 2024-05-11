@@ -25,6 +25,16 @@
         operator: !type:UnbuckleOperator
           shutdownState: TaskFinished
 
+    # Exodus-MRP NPC-Start
+    - preconditions:
+      - !type:StandingPrecondition
+        isStanding: false
+      tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:StandUpOperator
+          shutdownState: TaskFinished
+    # Exodus-MRP NPC-End
+
     - preconditions:
       - !type:InContainerPrecondition
         isInContainer: true
@@ -35,6 +45,7 @@
     - preconditions:
       - !type:PulledPrecondition
         isPulled: true
+        isHostilePulling: true # Exodus-MRP NPC
       tasks:
       - !type:HTNPrimitiveTask
         operator: !type:UnPullOperator

@@ -179,6 +179,16 @@ public sealed partial class NpcFactionSystem : EntitySystem
         return ent.Comp.Factions.Overlaps(other.Comp.Factions) || ent.Comp.FriendlyFactions.Overlaps(other.Comp.Factions);
     }
 
+    // Exodus-Refactor-Start
+    public bool IsEntityHostile(Entity<NpcFactionMemberComponent?> ent, Entity<NpcFactionMemberComponent?> other)
+    {
+        if (!Resolve(ent, ref ent.Comp, false) || !Resolve(other, ref other.Comp, false))
+            return false;
+
+        return ent.Comp.HostileFactions.Overlaps(other.Comp.Factions);
+    }
+    // Exodus-Refactor-End
+
     public bool IsFactionFriendly(string target, string with)
     {
         return _factions[target].Friendly.Contains(with) && _factions[with].Friendly.Contains(target);
