@@ -6,6 +6,7 @@ using Content.Shared.Buckle.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
+using Content.Shared.Standing;
 using Content.Shared.StatusEffect;
 using Content.Shared.Stunnable;
 using Robust.Client.Animations;
@@ -33,6 +34,7 @@ public sealed class WaddleAnimationSystem : EntitySystem
         SubscribeLocalEvent<WaddleAnimationComponent, StunnedEvent>(OnStunned);
         SubscribeLocalEvent<WaddleAnimationComponent, KnockedDownEvent>(OnKnockedDown);
         SubscribeLocalEvent<WaddleAnimationComponent, BuckleChangeEvent>(OnBuckleChange);
+        SubscribeLocalEvent<WaddleAnimationComponent, DownedEvent>(OnDowned); // Exodus-Crawling
     }
 
     private void OnMovementInput(EntityUid entity, WaddleAnimationComponent component, MoveInputEvent args)
@@ -52,6 +54,11 @@ public sealed class WaddleAnimationSystem : EntitySystem
 
             return;
         }
+
+        // Exodus-Crawling-Start
+        if (TryComp<StandingStateComponent>(entity, out var standing) && !standing.Standing)
+            return;
+        // Exodus-Crawling-End
 
         // Only start waddling if we're not currently AND we're actually moving.
         if (component.IsCurrentlyWaddling || !args.HasDirectionalMovement)
@@ -73,6 +80,10 @@ public sealed class WaddleAnimationSystem : EntitySystem
         if (_gravity.IsWeightless(uid))
             return;
 
+        // Exodus-Crawling-Start
+        if (TryComp<StandingStateComponent>(uid, out var standing) && !standing.Standing)
+            return;
+        // Exodus-Crawling-End
 
         if (!_actionBlocker.CanMove(uid, mover))
             return;
@@ -152,6 +163,13 @@ public sealed class WaddleAnimationSystem : EntitySystem
     {
         StopWaddling(uid, component);
     }
+
+    // Exodus-Crawling-Start
+    private void OnDowned(EntityUid uid, WaddleAnimationComponent component, DownedEvent args)
+    {
+        StopWaddling(uid, component);
+    }
+    // Exodus-Crawling-End
 
     private void StopWaddling(EntityUid uid, WaddleAnimationComponent component)
     {

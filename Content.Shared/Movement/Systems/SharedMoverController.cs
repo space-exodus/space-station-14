@@ -9,6 +9,7 @@ using Content.Shared.Maps;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
+using Content.Shared.Standing;
 using Content.Shared.Tag;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -397,6 +398,11 @@ namespace Content.Shared.Movement.Systems
 
             if (!CanSound() || !_tags.HasTag(uid, "FootstepSound"))
                 return false;
+
+            // Exodus-Crawling-Start
+            if (TryComp<StandingStateComponent>(uid, out var standing) && !standing.Standing)
+                return false;
+            // Exodus-Crawling-End
 
             var coordinates = xform.Coordinates;
             var distanceNeeded = mover.Sprinting

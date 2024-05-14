@@ -2,6 +2,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.Cuffs;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
+using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Movement.Pulling.Systems;
@@ -94,8 +95,17 @@ namespace Content.Shared.Standing
                 return false;
 
             standingState.Standing = false;
-            standingState.CanStandUp = canStandUp; // Exodus-Crawling
-            Dirty(uid, standingState); // Exodus-Crawling
+            // Exodus-Crawling-Start
+            standingState.CanStandUp = canStandUp;
+            Dirty(uid, standingState);
+
+            // need to refresh movement input for proper handling of standing state update, waddling for example
+            if (TryComp<InputMoverComponent>(uid, out var input))
+            {
+                var moveInputEvent = new MoveInputEvent(uid, input, input.HeldMoveButtons);
+                RaiseLocalEvent(uid, ref moveInputEvent, false);
+            }
+            // Exodus-Crawling-End
             RaiseLocalEvent(uid, new DownedEvent(), false);
             _movementSpeedModifier.RefreshMovementSpeedModifiers(uid); // Exodus-Crawling
 
@@ -154,6 +164,16 @@ namespace Content.Shared.Standing
 
             standingState.Standing = true;
             Dirty(uid, standingState);
+
+            // Exodus-Crawling-Start
+            // need to refresh movement input for proper handling of standing state update, waddling for example
+            if (TryComp<InputMoverComponent>(uid, out var input))
+            {
+                var moveInputEvent = new MoveInputEvent(uid, input, input.HeldMoveButtons);
+                RaiseLocalEvent(uid, ref moveInputEvent, false);
+            }
+            // Exodus-Crawling-End
+
             RaiseLocalEvent(uid, new StoodEvent(), false);
             _movementSpeedModifier.RefreshMovementSpeedModifiers(uid); // Exodus-Crawling
             _actionBlocker.UpdateCanMove(uid); // Exodus-Crawling
