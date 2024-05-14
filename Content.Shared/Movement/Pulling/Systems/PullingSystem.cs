@@ -157,7 +157,10 @@ public sealed class PullingSystem : EntitySystem
 
     private void OnRefreshMovespeed(EntityUid uid, PullerComponent component, RefreshMovementSpeedModifiersEvent args)
     {
-        args.ModifySpeed(component.WalkSpeedModifier, component.SprintSpeedModifier);
+        // Exodus-RefactorPullerModificators-Start
+        if (component.Pulling != default)
+            args.ModifySpeed(component.WalkSpeedModifier, component.SprintSpeedModifier);
+        // Exodus-RefactorPullerModificators-End
     }
 
     private void OnPullableMoveInput(EntityUid uid, PullableComponent component, ref MoveInputEvent args)

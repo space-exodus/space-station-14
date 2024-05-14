@@ -22,10 +22,14 @@ public sealed partial class PullerComponent : Component
     [DataField]
     public TimeSpan ThrowCooldown = TimeSpan.FromSeconds(1);
 
+    // Exodus-RefactorPullerModificators-Start
     // Before changing how this is updated, please see SharedPullerSystem.RefreshMovementSpeed
-    public float WalkSpeedModifier => Pulling == default ? 1.0f : 0.95f;
+    [DataField]
+    public float WalkSpeedModifier = 0.95f;
 
-    public float SprintSpeedModifier => Pulling == default ? 1.0f : 0.95f;
+    [DataField]
+    public float SprintSpeedModifier = 0.95f;
+    // Exodus-RefactorPullerModificators-End
 
     /// <summary>
     /// Entity currently being pulled if applicable.
