@@ -28,6 +28,8 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Random;
+using Content.Shared.Standing;
+using Content.Shared.Movement.Events;
 
 namespace Content.Server.Atmos.EntitySystems
 {
@@ -72,6 +74,7 @@ namespace Content.Server.Atmos.EntitySystems
             SubscribeLocalEvent<FlammableComponent, IsHotEvent>(OnIsHot);
             SubscribeLocalEvent<FlammableComponent, TileFireEvent>(OnTileFire);
             SubscribeLocalEvent<FlammableComponent, RejuvenateEvent>(OnRejuvenate);
+            SubscribeLocalEvent<FlammableComponent, MoveInputEvent>(OnMoving); // Exodus-Crawling
 
             SubscribeLocalEvent<IgniteOnCollideComponent, StartCollideEvent>(IgniteOnCollide);
             SubscribeLocalEvent<IgniteOnCollideComponent, LandEvent>(OnIgniteLand);
@@ -82,6 +85,17 @@ namespace Content.Server.Atmos.EntitySystems
 
             SubscribeLocalEvent<IgniteOnHeatDamageComponent, DamageChangedEvent>(OnDamageChanged);
         }
+
+        // Exodus-Crawling-Start
+        private void OnMoving(EntityUid uid, FlammableComponent flammable, MoveInputEvent args)
+        {
+            if (!TryComp<StandingStateComponent>(uid, out var standing) || standing.Standing)
+                return;
+
+            flammable.FireStacks -= 0.1f;
+            UpdateAppearance(uid, flammable);
+        }
+        // Exodus-Crawling-End
 
         private void OnMeleeHit(EntityUid uid, IgniteOnMeleeHitComponent component, MeleeHitEvent args)
         {
