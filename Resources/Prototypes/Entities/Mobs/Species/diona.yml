@@ -102,6 +102,7 @@
     actionPrototype: DionaGibAction
     allowedStates:
     - Dead
+  - type: NoSlip # Exodus-MRP
 
 - type: entity
   parent: BaseSpeciesDummy
