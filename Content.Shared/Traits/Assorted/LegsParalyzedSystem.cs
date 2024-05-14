@@ -32,7 +32,13 @@ public sealed class LegsParalyzedSystem : EntitySystem
     {
         // Exodus-Crawling-Start
         if (!_standingSystem.CanCrawl(uid))
+        {
             _standingSystem.Stand(uid);
+        }
+        else
+        {
+            _standingSystem.SetCanStandUp(uid, true);
+        }
         // Exodus-Crawling-End
 
         _bodySystem.UpdateMovementSpeed(uid);

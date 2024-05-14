@@ -174,6 +174,15 @@ namespace Content.Shared.Standing
         }
 
         // Exodus-Crawling-Start
+        public void SetCanStandUp(EntityUid uid, bool canStandUp, StandingStateComponent? standing = null)
+        {
+            if (!Resolve(uid, ref standing, true))
+                return;
+
+            standing.CanStandUp = canStandUp;
+            Dirty(uid, standing);
+        }
+
         private void OnStandDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref StandDoAfterEvent ev)
         {
             if (ev.Cancelled)
