@@ -2,19 +2,19 @@
   id: CatEarsStubby
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-        category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
-    layers:
-      ears_cat_inner:
-        type:
-          !type:SimpleColoring
-          color: "#FFFFFF"
+  speciesRestriction: [Human, Felinid] # Exodus-Felinids
+  # coloring: # Exodus-Felinids
+  #   default:
+  #     type:
+  #       !type:CategoryColoring
+  #       category: Hair
+  #     fallbackTypes:
+  #       - !type:SkinColoring
+  #   layers:
+  #     ears_cat_inner:
+  #       type:
+  #         !type:SimpleColoring
+  #         color: "#FFFFFF"
   sprites:
   - sprite: Corvax/Mobs/Customization/cat_parts.rsi
     state: ears_stubby_outer
@@ -25,19 +25,19 @@
   id: CatEarsCurled
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-        category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
-    layers:
-      ears_cat_inner:
-        type:
-          !type:SimpleColoring
-          color: "#FFFFFF"
+  speciesRestriction: [Human, Felinid] # Exodus-Felinids
+  # coloring: # Exodus-Felinids
+  #   default:
+  #     type:
+  #       !type:CategoryColoring
+  #       category: Hair
+  #     fallbackTypes:
+  #       - !type:SkinColoring
+  #   layers:
+  #     ears_cat_inner:
+  #       type:
+  #         !type:SimpleColoring
+  #         color: "#FFFFFF"
   sprites:
   - sprite: Corvax/Mobs/Customization/cat_parts.rsi
     state: ears_curled_outer
@@ -48,19 +48,19 @@
   id: CatEarsTorn
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-        category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
-    layers:
-      ears_cat_inner:
-        type:
-          !type:SimpleColoring
-          color: "#FFFFFF"
+  speciesRestriction: [Human, Felinid] # Exodus-Felinids
+  # coloring: # Exodus-Felinids
+  #   default:
+  #     type:
+  #       !type:CategoryColoring
+  #       category: Hair
+  #     fallbackTypes:
+  #       - !type:SkinColoring
+  #   layers:
+  #     ears_cat_inner:
+  #       type:
+  #         !type:SimpleColoring
+  #         color: "#FFFFFF"
   sprites:
   - sprite: Corvax/Mobs/Customization/cat_parts.rsi
     state: ears_torn_outer
@@ -71,16 +71,16 @@
   id: CatTailStripes
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-        category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Human, Felinid] # Exodus-Felinids
+  # coloring: # Exodus-Felinids
+  #   default:
+  #     type:
+  #       !type:CategoryColoring
+  #       category: Hair
+  #     fallbackTypes:
+  #       - !type:CategoryColoring
+  #         category: FacialHair
+  #       - !type:SkinColoring
   sprites:
     - sprite: Corvax/Mobs/Customization/cat_parts.rsi
       state: tail_cat_wag_stripes_prime

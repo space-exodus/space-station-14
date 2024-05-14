@@ -1,0 +1,77 @@
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobFelinid
+  name: Urist McCat
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    scale: 0.8, 0.8
+  - type: Hunger # on x0.75 less
+    thresholds:
+      Overfed: 150
+      Okay: 125
+      Peckish: 75
+      Starving: 25
+      Dead: 0
+    baseDecayRate: 0.02
+  - type: Thirst # on 0.75x less
+    thresholds:
+      OverHydrated: 450
+      Okay: 350
+      Thirsty: 250
+      Parched: 150
+      Dead: 0
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeat
+      amount: 5
+  - type: MeleeWeapon
+    animation: WeaponArcClaw
+    soundHit:
+      collection: AlienClaw
+    damage:
+      types:
+        Slash: 5
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1.15
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      160: Dead
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
+  - type: Puller
+    walkSpeedModifier: 0.75
+    sprintSpeedModifier: 0.75
+  - type: HumanoidAppearance
+    species: Felinid
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 0.5
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+    maxSaturation: 10
+
+- type: entity
+  parent: BaseMobFelinid
+  id: MobFelinidDummy
+  noSpawn: true
+  components:
+  - type: Sprite
+    scale: 0.8, 0.8
+  - type: HumanoidAppearance
+    species: Felinid
