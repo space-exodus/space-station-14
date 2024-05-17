@@ -18,25 +18,10 @@
     - ворчит!
 
 - type: emote
-  id: Moan
-  name: chat-emote-name-moan
-  category: Vocal
-  chatMessages: [стонет.]
-  chatTriggers:
-    - moan
-    - moan.
-    - moan!
-    - moans
-    - moans.
-    - moans!
-    - стонет
-    - стонет.
-    - стонет!
-
-- type: emote
   id: WigglesAntennae
   name: chat-emote-name-wiggle-antennae
   category: Vocal
+  available: false
   chatMessages: [шевелит антенками.]
   chatTriggers:
     - waves antennae
@@ -62,6 +47,7 @@
   id: WavesAntennaeSharply
   name: chat-emote-name-wave-antennae-sharply
   category: Vocal
+  available: false
   chatMessages: [резко машет антенками.]
   chatTriggers:
     - waves antennae sharply

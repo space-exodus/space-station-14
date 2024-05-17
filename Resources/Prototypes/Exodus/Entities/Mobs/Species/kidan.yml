@@ -29,6 +29,8 @@
     - Chitine
   - type: KidanAccent
   - type: Vocal
+    speechVerb: Kidan
+    allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply']
     sounds:
       Male: UnsexedKidan
       Female: UnsexedKidan
