@@ -202,7 +202,7 @@ public partial class MobStateSystem
         if (args.Cancelled)
             return;
 
-        if (IsAlive(ent, ent))
+        if (TryComp<StandingStateComponent>(ent, out var standing) ? standing.Standing : IsAlive(ent, ent)) // Exodus-Crawling
             return;
 
         var other = args.OtherEntity;
