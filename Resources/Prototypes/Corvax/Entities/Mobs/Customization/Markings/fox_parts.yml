@@ -2,7 +2,7 @@
   id: FoxEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human, Felinid] # Exodus-Felinids
+  speciesRestriction: [Felinid] # Exodus-Felinids
   sprites:
   - sprite: Corvax/Mobs/Customization/fox_parts.rsi
     state: ears_fox_outer
