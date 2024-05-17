@@ -4,7 +4,7 @@ using Content.Shared.Standing;
 namespace Content.Server.NPC.HTN.Preconditions;
 
 /// <summary>
-/// Checks if the owner is buckled or not
+/// Checks if the owner is standing or not
 /// </summary>
 public sealed partial class StandingPrecondition : HTNPrecondition
 {
