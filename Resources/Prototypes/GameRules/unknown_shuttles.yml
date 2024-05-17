@@ -43,32 +43,32 @@
   - type: LoadMapRule
     preloadedGrid: DisasterEvacPod
 
-- type: entity
-  id: UnknownShuttleHonki
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-unknown-shuttle-incoming
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 2
-    reoccurrenceDelay: 30
-    duration: 1
-  - type: LoadMapRule
-    preloadedGrid: Honki
+# - type: entity # Exodus
+#   id: UnknownShuttleHonki
+#   parent: BaseGameRule
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     startAnnouncement: station-event-unknown-shuttle-incoming
+#     startAudio:
+#       path: /Audio/Announcements/attention.ogg
+#     weight: 2
+#     reoccurrenceDelay: 30
+#     duration: 1
+#   - type: LoadMapRule
+#     preloadedGrid: Honki
 
-- type: entity
-  id: UnknownShuttleSyndieEvacPod
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-unknown-shuttle-incoming
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 2
-    reoccurrenceDelay: 30
-    duration: 1
-  - type: LoadMapRule
-    preloadedGrid: SyndieEvacPod
+# - type: entity # Exodus
+#   id: UnknownShuttleSyndieEvacPod
+#   parent: BaseGameRule
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     startAnnouncement: station-event-unknown-shuttle-incoming
+#     startAudio:
+#       path: /Audio/Announcements/attention.ogg
+#     weight: 2
+#     reoccurrenceDelay: 30
+#     duration: 1
+#   - type: LoadMapRule
+#     preloadedGrid: SyndieEvacPod
