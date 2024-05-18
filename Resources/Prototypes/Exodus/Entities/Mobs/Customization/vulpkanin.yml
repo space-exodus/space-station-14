@@ -1,0 +1,26 @@
+- type: marking
+  id: VulpkaninSpotThroat
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: throat
+
+- type: marking
+  id: VulpkaninSpotArrow
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: arrow
+
+- type: marking
+  id: VulpkaninSpotRaccoon
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: raccoon

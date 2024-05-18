@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "By Asler (discord:788252896016990219)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "throat",
+      "directions": 4
+    },
+    {
+      "name": "arrow",
+      "directions": 4
+    },
+    {
+      "name": "raccoon",
+      "directions": 4
+    }
+  ]
+}
