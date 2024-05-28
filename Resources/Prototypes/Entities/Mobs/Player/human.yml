@@ -14,7 +14,7 @@
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
     - type: RandomMetadata
-      nameSegments: # Exodus-MRP
+      nameSegments: # Corvax-MRP
       - names_first_male
       - names_last_male
     - type: NpcFactionMember

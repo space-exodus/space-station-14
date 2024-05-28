@@ -53,6 +53,7 @@
     damageRecovery:
       types:
         Asphyxiation: -2.0
+  - type: Wagging
   - type: TemperatureProtection # Exodus-MRP: Wool is a very good thermal insulator
     coefficient: 0.1
 
