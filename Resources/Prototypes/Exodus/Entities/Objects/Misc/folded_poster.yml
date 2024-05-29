@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseItem
+  id: FoldedPoster
+  name: Folded Poster
+  description: Hmm, that looks great!
+  components:
+  - type: WallPoster
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+    state: cloth
+  - type: SpawnAfterInteract
+    prototype: RandomPosterAny
+    whitelist:
+      components:
+      - Glued
+    doAfter: 0.5
+    removeOnInteract: true
+    needClearTile: false

@@ -59,11 +59,34 @@ namespace Content.Server.Engineering.EntitySystems
             if (!TryComp(uid, out TransformComponent? transformComp))
                 return;
 
+            // Exodus-FoldedPoster-Start
+            if (!TryComp<MetaDataComponent>(uid, out var metaDataComp) ||
+                metaDataComp.EntityPrototype is null)
+                return;
+            // Exodus-FoldedPoster-End
             var entity = EntityManager.SpawnEntity(component.Prototype, transformComp.Coordinates);
 
             _handsSystem.TryPickup(user, entity);
 
             EntityManager.DeleteEntity(uid);
+
+            var ev = new DisassembleEntityEvent(metaDataComp.EntityPrototype.ID, entity);
+            RaiseLocalEvent(entity, ev);
+            // Exodus-FoldedPoster-End
         }
     }
+    // Exodus-FoldedPoster-Start
+    public sealed class DisassembleEntityEvent : EntityEventArgs
+    {
+        public string DisassembledEntProto;
+
+        public EntityUid CreatedEntity;
+
+        public DisassembleEntityEvent(string disassembledEntProto, EntityUid createdEntity)
+        {
+            DisassembledEntProto = disassembledEntProto;
+            CreatedEntity = createdEntity;
+        }
+    }
+    // Exodus-FoldedPoster-End
 }
