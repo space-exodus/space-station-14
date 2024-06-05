@@ -6,8 +6,8 @@
   components:
   - type: WallPoster
   - type: Sprite
-    sprite: Objects/Materials/materials.rsi
-    state: cloth
+    sprite: Exodus/Objects/Misc/folded.rsi
+    state: folded
   - type: SpawnAfterInteract
     prototype: RandomPosterAny
     whitelist:
