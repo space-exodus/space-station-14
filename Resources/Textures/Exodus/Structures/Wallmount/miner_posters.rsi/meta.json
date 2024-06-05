@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Made by Askolot (discord: 788252896016990219)",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "withbelt"
+    },
+    {
+      "name": "throwbins"
+    },
+    {
+      "name": "towork"
+    },
+    {
+      "name": "forward"
+    },
+    {
+      "name": "notopen"
+    },
+    {
+      "name": "notclear"
+    },
+    {
+      "name": "collapsed"
+    },
+    {
+      "name": "tocull"
+    },
+    {
+      "name": "notconnect"
+    }
+  ]
+}

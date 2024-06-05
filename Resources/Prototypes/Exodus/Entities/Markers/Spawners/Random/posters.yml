@@ -1,0 +1,22 @@
+- type: entity
+  parent: MarkerBase
+  id: RandomPosterMiners
+  name: random miner poster 
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Exodus/Structures/Wallmount/posters.rsi
+        state: random_miner
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+    - PosterMinerWithBelt
+    - PosterMinerToWork
+    - PosterMinerToCull
+    - PosterMinerThrowbins
+    - PosterMinerNotOpen
+    - PosterMinerNotConnect
+    - PosterMinerNotClear
+    - PosterMinerForward
+    - PosterMinerCollapsed
