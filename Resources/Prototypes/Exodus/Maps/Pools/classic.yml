@@ -4,11 +4,9 @@
   - Atlas
   - Bagel
   - Box
-  - Cluster
   - Core
   - CorvaxAstra
   - CorvaxAvrite
-  - CorvaxDelta
   - CorvaxGelta
   - CorvaxIshimura
   - CorvaxMaus
@@ -18,7 +16,10 @@
   - Fland
   - Marathon
   - Meta
-  - Omega
   - Origin
-  - Saltern
-  - Packed
+  # Exodus Supported Maps
+  - ExodusPacked
+  - ExodusCluster
+  - ExodusSaltern
+  - ExodusOmega
+  - ExodusDelta
