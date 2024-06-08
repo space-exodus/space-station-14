@@ -1,4 +1,5 @@
 using Content.Shared.Eui;
+using Content.Shared.Preferences; // Exodus-GhostRolesProfilesEditor
 using Content.Shared.Roles;
 using Robust.Shared.Serialization;
 
@@ -99,4 +100,17 @@ namespace Content.Shared.Ghost.Roles
         /// </summary>
         RaffleJoined
     }
+
+    // Exodus-GhostRolesProfilesEditor-Start
+    [NetSerializable, Serializable]
+    public sealed class GhostRoleHumanoidProfileMessage : EuiMessageBase
+    {
+        public HumanoidCharacterProfile Profile;
+
+        public GhostRoleHumanoidProfileMessage(HumanoidCharacterProfile profile)
+        {
+            Profile = profile;
+        }
+    }
+    // Exodus-GhostRolesProfilesEditor-End
 }

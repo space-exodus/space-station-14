@@ -597,7 +597,7 @@
     - type: Cluwne
 
 ## Lost Cargo technician
-
+# Exodus-GhostRolesProfilesEditor-Start
 - type: entity
   name: lost cargo technician spawner
   id: LostCargoTechnicianSpawner
@@ -610,36 +610,29 @@
           state: icon
     - type: RandomSpawner
       prototypes:
-      - RandomHumanoidLostCargoTechnician
+      - HumanoidLostCargoTechnician
       chance: 1
 
 - type: entity
-  id: RandomHumanoidLostCargoTechnician
+  id: HumanoidLostCargoTechnician
   name: lost cargo technician ghost role
   components:
     - type: Sprite
       sprite: Objects/Tools/appraisal-tool.rsi
       state: icon
-    - type: RandomHumanoidSpawner
-      settings: LostCargoTechnician
-
-- type: randomHumanoidSettings
-  id: LostCargoTechnician
-  randomizeName: false
-  components:
+    - type: GhostTakeoverAvailable
     - type: GhostRole
       name: ghost-role-information-lost-cargo-technical-name
       description: ghost-role-information-lost-cargo-technical-description
       rules: ghost-role-information-lost-cargo-technical-rules
       raffle:
         settings: short
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ LostCargoTechGearSuit, LostCargoTechGearCoat ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last
+    - type: GhostRoleHumanoidEditor
+      components:
+        - type: Loadout
+          prototypes: [ LostCargoTechGearSuit, LostCargoTechGearCoat ]
+        - type: GhostTakeoverAvailable
+# Exodus-GhostRolesProfilesEditor-End
 
 # Clown troupe
 
@@ -712,6 +705,7 @@
 
 # Traveling exotic chef
 
+# Exodus-GhostRolesProfilesEditor-Start
 - type: entity
   name: traveling chef spawner
   id: TravelingChefSpawner
@@ -722,24 +716,6 @@
         - state: red
         - sprite: Objects/Weapons/Melee/kitchen_knife.rsi
           state: icon
-    - type: RandomSpawner
-      prototypes:
-      - RandomHumanoidTravelingChef
-
-- type: entity
-  id: RandomHumanoidTravelingChef
-  name: traveling chef ghost role
-  components:
-    - type: Sprite
-      sprite: Objects/Tools/appraisal-tool.rsi
-      state: icon
-    - type: RandomHumanoidSpawner
-      settings: TravelingChef
-
-- type: randomHumanoidSettings
-  id: TravelingChef
-  randomizeName: false
-  components:
     - type: GhostRole
       name: ghost-role-information-traveling-chef-name
       description: ghost-role-information-traveling-chef-description
@@ -747,12 +723,11 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ TravelingChef ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last
+    - type: GhostRoleHumanoidEditor
+      components:
+        - type: Loadout
+          prototypes: [ TravelingChef ]
+        - type: GhostTakeoverAvailable
 
 # Disaster victim
 
@@ -768,41 +743,60 @@
         state: icon
   - type: RandomSpawner
     prototypes:
-    - RandomHumanoidDisasterVictimRD
-    - RandomHumanoidDisasterVictimCMO
-    - RandomHumanoidDisasterVictimCaptain
-    - MobSkeletonCloset
+    - HumanoidDisasterVictimRD
+    - HumanoidDisasterVictimCMO
+    - HumanoidDisasterVictimCaptain
 
 - type: entity
-  id: RandomHumanoidDisasterVictimRD
+  id: HumanoidDisasterVictimRD
   name: disaster victim RD ghost role
+  parent: MarkerBase
   components:
     - type: Sprite
       sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
       state: icon
-    - type: RandomHumanoidSpawner
-      settings: DisasterVictimResearchDirector
+    - type: GhostRole
+      name: ghost-role-information-disaster-victim-name
+      description: ghost-role-information-disaster-victim-description
+      rules: ghost-role-information-disaster-victim-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+        - type: GhostTakeoverAvailable
+        - type: Loadout
+          prototypes: [ DisasterVictimRD, DisasterVictimRDAlt ]
 
 - type: entity
-  id: RandomHumanoidDisasterVictimCMO
-  parent: RandomHumanoidDisasterVictimRD
+  id: HumanoidDisasterVictimCMO
+  parent: MarkerBase
   name: disaster victim CMO ghost role
   components:
-    - type: RandomHumanoidSpawner
-      settings: DisasterVictimCMO
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
+      state: icon
+    - type: GhostRole
+      name: ghost-role-information-disaster-victim-name
+      description: ghost-role-information-disaster-victim-description
+      rules: ghost-role-information-disaster-victim-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+        - type: GhostTakeoverAvailable
+        - type: Loadout
+          prototypes: [ DisasterVictimCMO, DisasterVictimCMOAlt ]
 
 - type: entity
-  id: RandomHumanoidDisasterVictimCaptain
-  parent: RandomHumanoidDisasterVictimRD
+  id: HumanoidDisasterVictimCaptain
+  parent: MarkerBase
   name: disaster victim Captain ghost role
   components:
-    - type: RandomHumanoidSpawner
-      settings: DisasterVictimCaptain
-
-- type: randomHumanoidSettings
-  id: DisasterVictimResearchDirector
-  randomizeName: false
-  components:
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
+      state: icon
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
       description: ghost-role-information-disaster-victim-description
@@ -810,48 +804,11 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ DisasterVictimRD, DisasterVictimRDAlt ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last
-
-- type: randomHumanoidSettings
-  id: DisasterVictimCMO
-  randomizeName: false
-  components:
-    - type: GhostRole
-      name: ghost-role-information-disaster-victim-name
-      description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-disaster-victim-rules
-      raffle:
-        settings: default
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ DisasterVictimCMO, DisasterVictimCMOAlt ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last
-
-- type: randomHumanoidSettings
-  id: DisasterVictimCaptain
-  randomizeName: false
-  components:
-    - type: GhostRole
-      name: ghost-role-information-disaster-victim-name
-      description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-disaster-victim-rules
-      raffle:
-        settings: default
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ DisasterVictimCaptain, DisasterVictimCaptainAlt ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last
+    - type: GhostRoleHumanoidEditor
+      components:
+        - type: GhostTakeoverAvailable
+        - type: Loadout
+          prototypes: [ DisasterVictimCaptain, DisasterVictimCaptainAlt ]
 
 # Syndie Disaster Victim
 
