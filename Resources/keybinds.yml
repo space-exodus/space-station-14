@@ -160,6 +160,12 @@ binds:
 - function: EditorCopyObject
   type: State
   key: P
+# Exodus-BetterMapping-Start | Hotkey for toggling erasing mode
+- function: EditorToggleDelete
+  type: State
+  key: P
+  mod1: Alt
+# Exodus-BetterMapping-End
 - function: SwapHands
   type: State
   key: X

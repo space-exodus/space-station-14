@@ -42,6 +42,7 @@ namespace Content.Client.Input
 
             // Not in engine, because engine cannot check for sanbox/admin status before starting placement.
             common.AddFunction(ContentKeyFunctions.EditorCopyObject);
+            common.AddFunction(ContentKeyFunctions.EditorToggleDelete); // Exodus-BetterMapping | Hotkey for toggling erasing mode
 
             // Not in engine because the engine doesn't understand what a flipped object is
             common.AddFunction(ContentKeyFunctions.EditorFlipObject);

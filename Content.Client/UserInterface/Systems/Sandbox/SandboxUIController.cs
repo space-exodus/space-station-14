@@ -12,6 +12,7 @@ using Robust.Client.Console;
 using Robust.Client.Debugging;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
+using Robust.Client.Placement; // Exodus-BetterMapping | Hotkey for toggling erasing mode
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Client.UserInterface.Controllers.Implementations;
@@ -31,6 +32,7 @@ public sealed class SandboxUIController : UIController, IOnStateChanged<Gameplay
     [Dependency] private readonly IInputManager _input = default!;
     [Dependency] private readonly ILightManager _light = default!;
     [Dependency] private readonly IClientAdminManager _admin = default!;
+    [Dependency] private readonly IPlacementManager _placement = default!; // Exodus-BetterMapping | Hotkey for toggling erasing mode
 
     [UISystemDependency] private readonly DebugPhysicsSystem _debugPhysics = default!;
     [UISystemDependency] private readonly MarkerSystem _marker = default!;
@@ -76,6 +78,15 @@ public sealed class SandboxUIController : UIController, IOnStateChanged<Gameplay
                     return;
                 DecalPlacerController.ToggleWindow();
             }));
+        // Exodus-BetterMapping-Start | Hotkey for toggling erasing mode
+        _input.SetInputCommand(ContentKeyFunctions.EditorToggleDelete,
+            InputCmdHandler.FromDelegate(_ =>
+            {
+                if (!_admin.CanAdminPlace())
+                    return;
+                _placement.ToggleEraser();
+            }));
+        // Exodus-BetterMapping-End
 
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.EditorCopyObject, new PointerInputCmdHandler(Copy))
