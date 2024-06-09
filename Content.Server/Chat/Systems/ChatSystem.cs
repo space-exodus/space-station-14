@@ -34,6 +34,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+using Content.Server.Radio.Components; // Exodus-FixIntrinsicSpeech
 
 namespace Content.Server.Chat.Systems;
 
@@ -268,23 +269,27 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             if (TryProccessRadioMessage(source, message, out var modMessage, out var channel))
             {
-                SendEntityWhisper(source, modMessage, range, channel, nameOverride, hideLog, ignoreActionBlocker);
+                // Exodus-FixIntrinsicSpeech-Start
+                if (channel != null && TryComp<IntrinsicRadioTransmitterComponent>(source, out var transmitter) && transmitter.Channels.Contains(channel.ID ?? ""))
+                    SendIntrinsicEntitySpeak(source, modMessage, channel, nameOverride, hideLog, ignoreActionBlocker);
+                else
+                    SendEntityWhisper(source, modMessage, range, channel, nameOverride, hideLog, ignoreActionBlocker);
+                // Exodus-FixIntrinsicSpeech-End
                 return;
             }
         }
-
-        // Exodus-CritSpeech-Start
-        if (desiredType == InGameICChatType.Speak && _mobStateSystem.IsCritical(source))
-        {
-            SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker);
-            return;
-        }
-        // Exodus-CritSpeech-End
 
         // Otherwise, send whatever type.
         switch (desiredType)
         {
             case InGameICChatType.Speak:
+                // Exodus-CritSpeech-Start
+                if (_mobStateSystem.IsCritical(source))
+                {
+                    SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker);
+                    break;
+                }
+                // Exodus-CritSpeech-End
                 SendEntitySpeak(source, message, range, nameOverride, hideLog, ignoreActionBlocker);
                 break;
             case InGameICChatType.Whisper:
@@ -504,6 +509,62 @@ public sealed partial class ChatSystem : SharedChatSystem
                     $"Say from {ToPrettyString(source):user}, original: {originalMessage}, transformed: {message}.");
         }
     }
+
+    // Exodus-FixIntrinsicSpeech-Start
+    private void SendIntrinsicEntitySpeak(
+        EntityUid source,
+        string originalMessage,
+        RadioChannelPrototype channel,
+        string? nameOverride,
+        bool hideLog = false,
+        bool ignoreActionBlocker = false
+        )
+    {
+        if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
+            return;
+
+        var message = FormattedMessage.RemoveMarkup(originalMessage);
+        if (message.Length == 0)
+            return;
+
+        var obfuscatedMessage = ObfuscateMessageReadability(message, 0.2f);
+
+        var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
+        RaiseLocalEvent(source, ev, true);
+
+        string name;
+        if (nameOverride != null)
+        {
+            name = nameOverride;
+        }
+        else
+        {
+            var nameEv = new TransformSpeakerNameEvent(source, Name(source));
+            RaiseLocalEvent(source, nameEv);
+            name = nameEv.Name;
+        }
+
+        name = FormattedMessage.EscapeText(name);
+
+        if (!hideLog)
+            if (originalMessage == message)
+            {
+                if (name != Name(source))
+                    _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Intrinsic speak from {ToPrettyString(source):user} as {name}: {originalMessage}.");
+                else
+                    _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Intrinsic speak from {ToPrettyString(source):user}: {originalMessage}.");
+            }
+            else
+            {
+                if (name != Name(source))
+                    _adminLogger.Add(LogType.Chat, LogImpact.Low,
+                    $"Intrinsic speak from {ToPrettyString(source):user} as {name}, original: {originalMessage}, transformed: {message}.");
+                else
+                    _adminLogger.Add(LogType.Chat, LogImpact.Low,
+                    $"Intrinsic speak from {ToPrettyString(source):user}, original: {originalMessage}, transformed: {message}.");
+            }
+    }
+    // Exodus-FixIntrinsicSpeech-End
 
     private void SendEntityWhisper(
         EntityUid source,
