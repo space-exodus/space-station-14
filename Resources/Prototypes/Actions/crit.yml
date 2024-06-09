@@ -3,7 +3,6 @@
   id: ActionCritSuccumb
   name: Succumb
   description: Accept your fate.
-  noSpawn: true
   components:
   - type: InstantAction
     itemIconStyle: NoItem
@@ -18,7 +17,6 @@
   id: ActionCritFakeDeath
   name: Fake Death
   description: Pretend to take your final breath while staying alive.
-  noSpawn: true
   components:
   - type: InstantAction
     itemIconStyle: NoItem
