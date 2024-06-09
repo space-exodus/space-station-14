@@ -138,9 +138,20 @@ public sealed class RadioSystem : EntitySystem
                 continue;
 
             // don't need telecom server for long range channels or handheld radios and intercoms
-            var needServer = !channel.LongRange && (!hasMicro || !speakerQuery.HasComponent(receiver));
+            var needServer = !channel.LongRange && (!hasMicro || !speakerQuery.HasComponent(receiver)) && !channel.Localized; // Exodus-LocalizedChannels
             if (needServer && !hasActiveServer)
                 continue;
+
+            // Exodus-LocalizedChannels-Start
+            if (channel.Localized)
+            {
+                var sourceCords = Transform(radioSource).Coordinates;
+                var destinationCords = Transform(receiver).Coordinates;
+
+                if (!sourceCords.TryDistance(EntityManager, destinationCords, out var distance) || distance > channel.Range)
+                    continue;
+            }
+            // Exodus-LocalizedChannels-End
 
             // check if message can be sent to specific receiver
             var attemptEv = new RadioReceiveAttemptEvent(channel, radioSource, receiver);

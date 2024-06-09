@@ -84,4 +84,4 @@
   frequency: 98766
   keycode: 'х'
   color: "#556b2f"
-  longRange: true
+  localized: true

@@ -75,8 +75,10 @@
   name: chat-radio-handheld
   frequency: 1330
   color: "#d39f01"
-  # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
-  longRange: true
+  # Exodus-LocalizedChannels-Start
+  localized: true
+  range: 5000
+  # Exodus-LocalizedChannels-End
 
 - type: radioChannel
   id: Binary
@@ -84,8 +86,10 @@
   keycode: 'д' # Corvax-Localization
   frequency: 1001
   color: "#2ed2fd"
-  # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
-  longRange: true
+  # Exodus-LocalizedChannels-Start
+  localized: true
+  range: 5000
+  # Exodus-LocalizedChannels-End
 
 - type: radioChannel
   id: Freelance

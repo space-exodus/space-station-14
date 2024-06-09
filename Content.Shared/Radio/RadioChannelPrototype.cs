@@ -35,4 +35,22 @@ public sealed partial class RadioChannelPrototype : IPrototype
     /// </summary>
     [DataField("longRange"), ViewVariables]
     public bool LongRange = false;
+
+    // Exodus-LocalizedChannels-Start
+    /// <summary>
+    /// If channel is localized it doesn't require telecommunitcation server
+    /// but messages can be received only in specific range from message source.
+    /// Cannot be affected by solar flare.
+    /// See also <seealso cref="Range"/>
+    /// </summary>
+    [DataField("localized"), ViewVariables]
+    public bool Localized = false;
+
+    /// <summary>
+    /// In which range from message source it can be received.
+    /// Ignored when <see cref="Localized"/> is false.
+    /// </summary>
+    [DataField("range"), ViewVariables]
+    public int Range = 300;
+    // Exodus-LocalizedChannels-End
 }
