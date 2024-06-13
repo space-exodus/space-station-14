@@ -1,29 +1,18 @@
 using System.Numerics;
 using Content.Server.NPC.Components;
-using Content.Shared.CombatMode;
 using Content.Shared.NPC;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Random;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions.Events;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
-using Content.Shared.Hands;
+
 using Content.Shared.Interaction;
-using Content.Shared.Inventory.Events;
-using Content.Shared.Mind;
-using Content.Shared.Rejuvenate;
-using Robust.Shared.Audio.Systems;
-using Robust.Shared.Containers;
-using Robust.Shared.GameStates;
-using Robust.Shared.Map;
-using Robust.Shared.Timing;
-using Robust.Shared.Utility;
 using Content.Shared.Actions;
 using Content.Server.Actions;
+using Content.Shared.Directions;
 
 namespace Content.Server.NPC.Systems;
 
@@ -186,10 +175,19 @@ public sealed partial class NPCCombatSystem
                 }
                 break;
             case WorldTargetActionComponent worldAction:
-                if (worldAction.Range < distance)
-                    return false;
-
                 var entityCoordinatesTarget = Transform(combatComp.Target).Coordinates;
+
+                if (worldAction.Range < distance)
+                {
+                    var mapTargetPos = entityCoordinatesTarget.ToMapPos(EntityManager, _transform);
+                    var mapUserPos = Transform(uid).Coordinates.ToMapPos(EntityManager, _transform);
+
+                    var direction = mapTargetPos - mapUserPos;
+                    var coefficient = worldAction.Range / distance;
+                    var delta = new Vector2(direction.X * coefficient, direction.Y * coefficient);
+                    entityCoordinatesTarget = new EntityCoordinates(entityCoordinatesTarget.EntityId, mapUserPos + delta);
+                }
+
                 _rotateToFaceSystem.TryFaceCoordinates(uid, entityCoordinatesTarget.ToMapPos(EntityManager, _transform));
 
                 if (!_actions.ValidateWorldTarget(uid, entityCoordinatesTarget, (actionUid, worldAction)))

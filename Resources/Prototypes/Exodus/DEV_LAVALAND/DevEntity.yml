@@ -64,12 +64,19 @@
       - groupProto: Rect
 
 - type: entity
-  parent: [PlushieDogAskolot, MobSpaceBasic]
+  parent: [PlushieDogAskolot, SimpleMobBase, MobCombat]
   name: Дикая Аслер
   id: DEV_ASLER
   components:
   - type: HTN
-    rootTask: HiePartCompaund
+    rootTask:
+      task: AbilityFightCompound
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
   - type: AbilityAttack
     actions:
     - ActionSpawnMagicarpSpell
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: dog-evil

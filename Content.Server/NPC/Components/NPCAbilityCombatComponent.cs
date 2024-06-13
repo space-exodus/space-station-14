@@ -1,5 +1,3 @@
-using Content.Server.NPC.HTN.PrimitiveTasks.Operators.Combat;
-
 namespace Content.Server.NPC.Components;
 
 /// <summary>

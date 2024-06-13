@@ -1,17 +1,17 @@
 - type: htnCompound
-  id: HiePartCompaund
+  id: AbilityFightCompound
   branches:
-  - tasks:
-    - !type:HTNCompoundTask
-      task: AbilityAttackCompaund
-  - tasks:
-    - !type:HTNCompoundTask
-      task: IdleCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: AbilityCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
 
-- type: htnCompaund
-  id: AbilityAttackCompaund
+- type: htnCompound
+  id: AbilityCombatCompound
   branches:
-  - preconditions:
+    - preconditions:
       - !type:BuckledPrecondition
         isBuckled: true
       tasks:
@@ -47,20 +47,19 @@
 
     # Melee combat (unarmed or otherwise)
     - tasks:
+        - !type:HTNCompoundTask
+          task: AbilityAttackTargetCompound
+
+# Tries to shoot a target at range.
+- type: htnCompound
+  id: AbilityAttackTargetCompound
+  branches:
+    # Pick target, then move into range and shoot them.
+    - tasks:
         - !type:HTNPrimitiveTask
           operator: !type:UtilityOperator
-            proto: NearbyAbilityTargets
-        - !type:HTNCompoundTask
-          task: AbillityAttackTargetCompaund
+            proto: NearbyGunTargets
 
-# Tries to melee attack our target.
-- type: htnCompound
-  id: AbillityAttackTargetCompaund
-  branches:
-    - preconditions:
-      - !type:KeyExistsPrecondition
-        key: Target
-      tasks:
         - !type:HTNPrimitiveTask
           operator: !type:MoveToOperator
             shutdownState: PlanFinished
@@ -68,23 +67,23 @@
             removeKeyOnFinish: false
             targetKey: TargetCoordinates
             pathfindKey: TargetPathfind
-            rangeKey: AbilityRange
+            stopOnLineOfSight: true
+            rangeKey: MeleeRange
+
         - !type:HTNPrimitiveTask
           operator: !type:JukeOperator
-            jukeType: Away
+            jukeType: AdjacentTile
+
         - !type:HTNPrimitiveTask
-          operator: !type:AbilityOperator
-            targetKey: Target
-            actions:
-              actionId: ActionSpawnMagicarpSpell
           preconditions:
             - !type:KeyExistsPrecondition
               key: Target
-            - !type:TargetInRangePrecondition
-              targetKey: Target
-              rangeKey: AbilityRange
+          operator: !type:AbilityOperator
+            actions:
+              - actionId: ActionSpawnMagicarpSpell
+            targetKey: Target
           services:
             - !type:UtilityService
-              id: AbilityService
-              proto: NearbyAbilityTargets
+              id: RangedService
+              proto: NearbyGunTargets
               key: Target
