@@ -1,0 +1,75 @@
+- type: entity
+  name: N01
+  id: Spawn01
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: AttackCellUnitDEBUG
+    groups:
+      - groupProto: Cell
+
+- type: entity
+  name: N02
+  id: Spawn02
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: AttackCellUnitDEBUG
+    groups:
+      - groupProto: Star
+
+- type: entity
+  name: N03
+  id: Spawn03
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: AttackCellUnitDEBUG
+    groups:
+      - groupProto: Plus
+
+- type: entity
+  name: N04
+  id: Spawn04
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: AttackCellUnitDEBUG
+    groups:
+      - groupProto: AnimFrame
+
+- type: entity
+  name: N05
+  id: Spawn05
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: AttackCellUnitDEBUG
+    groups:
+      - groupProto: Rect
+
+- type: entity
+  parent: [PlushieDogAskolot, MobSpaceBasic]
+  name: Дикая Аслер
+  id: DEV_ASLER
+  components:
+  - type: HTN
+    rootTask: HiePartCompaund
+  - type: AbilityAttack
+    actions:
+    - ActionSpawnMagicarpSpell

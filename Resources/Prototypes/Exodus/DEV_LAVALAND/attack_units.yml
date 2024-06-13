@@ -1,0 +1,59 @@
+- type: entity
+  id: AttackCellUnitBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+  - type: Sprite
+    sprite: Effects/rcd.rsi
+    state: construct0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - MidImpassable
+
+- type: entity
+  id: AttackCellUnitDespawnBase
+  abstract: true
+  parent: AttackCellUnitBase
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+  - type: TimedDespawn
+    lifetime: 0.5
+
+- type: entity
+  id: AttackCellUnitDamage
+  parent: AttackCellUnitBase
+  components:
+  - type: DamageContacts
+    damage:
+      types:
+        Heat: 20
+
+
+- type: entity
+  id: AttackCellUnitSlow
+  parent: AttackCellUnitBase
+  components:
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.2
+    sprintSpeedModifier: 0.2
+
+- type: entity
+  id: AttackCellUnitDEBUG
+  parent: [ AttackCellUnitSlow, AttackCellUnitDamage, AttackCellUnitDespawnBase ]

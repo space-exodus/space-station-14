@@ -1,0 +1,90 @@
+- type: htnCompound
+  id: HiePartCompaund
+  branches:
+  - tasks:
+    - !type:HTNCompoundTask
+      task: AbilityAttackCompaund
+  - tasks:
+    - !type:HTNCompoundTask
+      task: IdleCompound
+
+- type: htnCompaund
+  id: AbilityAttackCompaund
+  branches:
+  - preconditions:
+      - !type:BuckledPrecondition
+        isBuckled: true
+      tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:UnbuckleOperator
+          shutdownState: TaskFinished
+
+    # Exodus-MRP NPC-Start
+    - preconditions:
+      - !type:StandingPrecondition
+        isStanding: false
+      tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:StandUpOperator
+          shutdownState: TaskFinished
+    # Exodus-MRP NPC-End
+
+    - preconditions:
+      - !type:InContainerPrecondition
+        isInContainer: true
+      tasks:
+      - !type:HTNCompoundTask
+        task: EscapeCompound
+
+    - preconditions:
+      - !type:PulledPrecondition
+        isPulled: true
+        isHostilePulling: true # Exodus-MRP NPC
+      tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:UnPullOperator
+          shutdownState: TaskFinished
+
+    # Melee combat (unarmed or otherwise)
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyAbilityTargets
+        - !type:HTNCompoundTask
+          task: AbillityAttackTargetCompaund
+
+# Tries to melee attack our target.
+- type: htnCompound
+  id: AbillityAttackTargetCompaund
+  branches:
+    - preconditions:
+      - !type:KeyExistsPrecondition
+        key: Target
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: AbilityRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:AbilityOperator
+            targetKey: Target
+            actions:
+              actionId: ActionSpawnMagicarpSpell
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: AbilityRange
+          services:
+            - !type:UtilityService
+              id: AbilityService
+              proto: NearbyAbilityTargets
+              key: Target
