@@ -67,12 +67,7 @@
             removeKeyOnFinish: false
             targetKey: TargetCoordinates
             pathfindKey: TargetPathfind
-            stopOnLineOfSight: true
             rangeKey: MeleeRange
-
-        - !type:HTNPrimitiveTask
-          operator: !type:JukeOperator
-            jukeType: AdjacentTile
 
         - !type:HTNPrimitiveTask
           preconditions:
@@ -80,7 +75,9 @@
               key: Target
           operator: !type:AbilityOperator
             actions:
-              - actionId: ActionSpawnMagicarpSpell
+              - actionId: ActionSpawnDEVSpell
+                maxRange: 4
+                minRange: 0
             targetKey: Target
           services:
             - !type:UtilityService

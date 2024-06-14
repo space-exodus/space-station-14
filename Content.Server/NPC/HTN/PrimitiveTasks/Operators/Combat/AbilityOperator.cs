@@ -106,7 +106,6 @@ public sealed partial class AbilityOperator : HTNOperator
             {
                 switch (combat.Status)
                 {
-                    case AbilityCombatStatus.TargetOutOfRange:
                     case AbilityCombatStatus.Normal:
                         status = HTNOperatorStatus.Continuing;
                         break;

@@ -23,7 +23,7 @@ public sealed partial class NPCCombatSystem
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly RotateToFaceSystem _rotateToFaceSystem = default!;
 
-    private const float TargetAbilityLostRange = 14f;
+    private const float TargetAbilityLostRange = 28f;
 
     private void InitializeAbility()
     {

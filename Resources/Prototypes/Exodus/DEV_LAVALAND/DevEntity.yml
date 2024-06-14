@@ -63,6 +63,28 @@
     groups:
       - groupProto: Rect
 
+
+
+- type: entity
+  id: ActionSpawnDEVSpell
+  name: Summon Magicarp
+  description: This spell summons three Magi-Carp to your aid! May or may not turn on user.
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 2
+    range: 4
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: Spawn02
+        amount: 1
+      offset: 0, 0
+      speech: action-speech-spell-summon-magicarp
+
 - type: entity
   parent: [PlushieDogAskolot, SimpleMobBase, MobCombat]
   name: Дикая Аслер
@@ -76,7 +98,7 @@
     - SimpleHostile
   - type: AbilityAttack
     actions:
-    - ActionSpawnMagicarpSpell
+    - ActionSpawnDEVSpell
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
     state: dog-evil
