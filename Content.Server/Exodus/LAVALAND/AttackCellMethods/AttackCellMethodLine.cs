@@ -47,12 +47,13 @@ public partial class AttackCellMethodLine : AttackCellMethod
             if (_cellsNumber % Step != 0)
                 continue;
 
-            var state = _line.MoveNext();
+            if (!_line.MoveNext())
+            {
+                LifeStage = AttackCeilMethodStage.Dead;
+                return;
+            }
 
             AddCell((Vector2) _line.Current);
-
-            if (!state)
-                LifeStage = AttackCeilMethodStage.Dead;
                 
             _cellsNumber++;
         }
