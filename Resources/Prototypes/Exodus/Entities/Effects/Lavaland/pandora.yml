@@ -1,0 +1,43 @@
+- type: entity
+  id: AttackCellUnitPandora
+  parent: [ AttackCellUnitBase ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.30
+  - type: SpawnOnDespawn
+    prototype: AttackCellUnitPandoraPartDamage
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: preblast
+
+- type: entity
+  id: AttackCellUnitPandoraPartDamage
+  parent: [ AttackCellUnitSlow, AttackCellUnitDamage ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.35
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: afterblast
+
+- type: entity
+  id: AttackCellUnitPandoraAttention
+  parent: [ AttackCellUnitBase ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.20
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: preblast
+
+
+# DEBUG
+- type: entity
+  id: AttackCellUnitPandoraPartDamage
+  parent: [ AttackCellUnitSlow, AttackCellUnitDamage ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.65
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: blast

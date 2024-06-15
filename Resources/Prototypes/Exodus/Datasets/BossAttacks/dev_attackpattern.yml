@@ -84,29 +84,22 @@
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
-      - method: !type:AttackCellMethodFrame
-          initGroup: 
-            groupProto: Cell
-      - method: !type:AttackCellMethodFrame
+      - method: !type:AttackCellMethodRect
           initGroup: 
             groupProto: Cell
           vertexs:
-            - -2,-2
-            - 2,2
-        delay: 0.7
-      - method: !type:AttackCellMethodFrame
-          initGroup: 
-            groupProto: Cell
-          vertexs:
-            - -3,-3
-            - 3,3
-        delay: 1.4
+          - -3,-3
+          - 3,3
+
 
 - type: spawnGroupProto
   id: Rect
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
-      - method: !type:AttackCellMethodRect
-        initGroup: 
-          groupProto: Cell
+      - method: !type:AttackCellMethodFrame
+          initGroup: 
+            groupProto: Cell
+          vertexs:
+          - -2,2
+          - 3,-3

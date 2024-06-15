@@ -7,7 +7,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitDEBUG
+    spawnProtoID: AttackCellUnitPandora
     groups:
       - groupProto: Cell
 
@@ -20,7 +20,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitDEBUG
+    spawnProtoID: AttackCellUnitPandora
     groups:
       - groupProto: Star
 
@@ -33,7 +33,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitDEBUG
+    spawnProtoID: AttackCellUnitPandoraAttention
     groups:
       - groupProto: Plus
 
@@ -46,7 +46,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitDEBUG
+    spawnProtoID: AttackCellUnitPandoraAttention
     groups:
       - groupProto: AnimFrame
 
@@ -59,7 +59,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitDEBUG
+    spawnProtoID: AttackCellUnitPandora
     groups:
       - groupProto: Rect
 
@@ -98,7 +98,7 @@
     - SimpleHostile
   - type: AbilityAttack
     actions:
-    - ActionSpawnDEVSpell
+    - AttackCellUnitPandora
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
     state: dog-evil

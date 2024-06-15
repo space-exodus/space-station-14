@@ -10,19 +10,19 @@
   - type: Transform
     anchored: true
   - type: Physics
-  - type: Sprite
-    sprite: Effects/rcd.rsi
-    state: construct0
+    bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
-        hard: false
-        density: 7
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-0.45,-0.45,0.45,0.45"
         layer:
-        - MidImpassable
+          - SlipLayer
+        mask:
+          - ItemMask
+        density: 1000
+        hard: false
 
 - type: entity
   id: AttackCellUnitDespawnBase
@@ -39,21 +39,21 @@
 - type: entity
   id: AttackCellUnitDamage
   parent: AttackCellUnitBase
+  abstract: true
   components:
   - type: DamageContacts
     damage:
       types:
-        Heat: 20
-
+        Heat: 10
+  - type: IgniteOnCollide
+    fireStacks: 1
+    count: 10
 
 - type: entity
   id: AttackCellUnitSlow
   parent: AttackCellUnitBase
+  abstract: true
   components:
   - type: SpeedModifierContacts
-    walkSpeedModifier: 0.2
-    sprintSpeedModifier: 0.2
-
-- type: entity
-  id: AttackCellUnitDEBUG
-  parent: [ AttackCellUnitSlow, AttackCellUnitDamage, AttackCellUnitDespawnBase ]
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
