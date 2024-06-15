@@ -37,10 +37,10 @@ public partial class AttackCellMethodFrame : AttackCellMethod
             _bottom = Math.Min(_bottom, item.Y);
         }
 
-        AddLine(new Vector2(_left, _bottom), new Vector2(_left, _top));
-        AddLine(new Vector2(_left, _bottom), new Vector2(_right, _bottom));
-        AddLine(new Vector2(_left, _top), new Vector2(_right, _top));
-        AddLine(new Vector2(_right, _bottom), new Vector2(_right, _top));
+        AddLine(new Vector2(_left, _bottom + 1), new Vector2(_left, _top));
+        AddLine(new Vector2(_left, _bottom), new Vector2(_right - 1, _bottom));
+        AddLine(new Vector2(_left + 1, _top), new Vector2(_right, _top));
+        AddLine(new Vector2(_right, _bottom ), new Vector2(_right, _top - 1));
     }
 
     private void AddLine(Vector2 start, Vector2 finish)
@@ -61,9 +61,9 @@ public partial class AttackCellMethodFrame : AttackCellMethod
     }
 
 
-    public override AttackCellMethodRect Copy()
+    public override AttackCellMethodFrame Copy()
     {
-        AttackCellMethodRect newMethod = new();
+        AttackCellMethodFrame newMethod = new();
 
         newMethod.Vertexs = Vertexs;
 
