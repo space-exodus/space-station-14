@@ -1251,6 +1251,14 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> VoteEnabled =
             CVarDef.Create("vote.enabled", true, CVar.SERVERONLY);
 
+        // Exodus-AutoVote-Start
+        /// <summary>
+        ///     If enabled automatically creates preset and map votes when round restarts
+        /// </summary>
+        public static readonly CVarDef<bool> VoteAutoVoteEnabled =
+            CVarDef.Create("vote.auto_vote_enabled", false, CVar.SERVERONLY);
+        // Exodus-AutoVote-End
+
         /// <summary>
         ///     See vote.enabled, but specific to restart votes
         /// </summary>

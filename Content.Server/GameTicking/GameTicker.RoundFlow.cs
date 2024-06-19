@@ -514,8 +514,13 @@ namespace Content.Server.GameTicking
                 UpdateInfoText();
 
                 ReqWindowAttentionAll();
-                _vote.CreateStandardVote(null, StandardVoteType.Map); // Exodus-AutoVote
-                _vote.CreateStandardVote(null, StandardVoteType.Preset); // Stories-AutoVote
+                // Exodus-AutoVote-Start
+                if (_cfg.GetCVar(CCVars.VoteEnabled) && _cfg.GetCVar(CCVars.VoteAutoVoteEnabled))
+                {
+                    _vote.CreateStandardVote(null, StandardVoteType.Map);
+                    _vote.CreateStandardVote(null, StandardVoteType.Preset);
+                }
+                // Exodus-AutoVote-End
             }
         }
 
