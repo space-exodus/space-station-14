@@ -50,7 +50,6 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
-        SubscribeLocalEvent<MobStateComponent, PreventCollideEvent>(OnPreventCollide);
         SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers); // Exodus-Crawling
     }
 
@@ -195,22 +194,6 @@ public partial class MobStateSystem
     private void OnAttemptPacifiedAttack(Entity<MobStateComponent> ent, ref AttemptPacifiedAttackEvent args)
     {
         args.Cancelled = true;
-    }
-
-    private void OnPreventCollide(Entity<MobStateComponent> ent, ref PreventCollideEvent args)
-    {
-        if (args.Cancelled)
-            return;
-
-        if (TryComp<StandingStateComponent>(ent, out var standing) ? standing.Standing : IsAlive(ent, ent)) // Exodus-Crawling
-            return;
-
-        var other = args.OtherEntity;
-        if (HasComp<ProjectileComponent>(other) &&
-            CompOrNull<TargetedProjectileComponent>(other)?.Target != ent.Owner)
-        {
-            args.Cancelled = true;
-        }
     }
 
     // Exodus-Crawling-Start

@@ -82,7 +82,7 @@
   groups:
   - LawyerNeck
   - LawyerJumpsuit
-  - LawyerBackpack
+  - CommonBackpack
   - Glasses
   - Trinkets
   - Inventory # Corvax-Loadouts
@@ -94,7 +94,7 @@
   - ChaplainMask
   - ChaplainNeck
   - ChaplainJumpsuit
-  - ChaplainBackpack
+  - CommonBackpack
   - ChaplainOuterClothing
   - Glasses
   - Trinkets
@@ -150,10 +150,11 @@
 - type: roleLoadout
   id: JobMusician
   groups:
-  - MusicianBackpack
+  - CommonBackpack
   - MusicianOuterClothing
   - Glasses
   - Trinkets
+  - Instruments
   - Inventory # Corvax-Loadouts
 
 # Cargo
@@ -163,7 +164,7 @@
   - QuartermasterHead
   - QuartermasterNeck
   - QuartermasterJumpsuit
-  - QuartermasterBackpack
+  - CargoTechnicianBackpack
   - QuartermasterOuterClothing
   - QuartermasterShoes
   - Glasses
@@ -198,7 +199,7 @@
   groups:
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
-  - ChiefEngineerBackpack
+  - ChiefEngineerBackpack # Corvax-Loadouts
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
@@ -242,7 +243,7 @@
   - ResearchDirectorHead
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
-  - ResearchDirectorBackpack
+  - ScientistBackpack
   - ResearchDirectorOuterClothing
   - ScientistGloves
   - ResearchDirectorShoes
@@ -319,7 +320,7 @@
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
-  - DetectiveBackpack
+  - SecurityBackpack
   - DetectiveOuterClothing
   - SecurityShoes
   - Trinkets
@@ -341,7 +342,7 @@
   - MedicalMask
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
-  - ChiefMedicalOfficerBackpack
+  - MedicalBackpack
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
@@ -392,7 +393,7 @@
   - MedicalMask
   - ParamedicJumpsuit
   - MedicalGloves
-  - ParamedicBackpack
+  - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
   - Glasses
@@ -420,7 +421,7 @@
 - type: roleLoadout
   id: JobPsychologist
   groups:
-  - PsychologistBackpack # Corvax-MRP
+  - MedicalBackpack
   - Glasses
   - Trinkets
   - Inventory # Corvax-Loadouts

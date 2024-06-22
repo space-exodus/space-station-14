@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Content.Client.Storage.Components;
-using Content.Client.StatusIcon; // Exodus-HideStatusIcon
 using Content.Shared.Destructible;
 using Content.Shared.Foldable;
 using Content.Shared.Interaction;
@@ -30,8 +29,6 @@ public sealed class EntityStorageSystem : SharedEntityStorageSystem
 
         SubscribeLocalEvent<EntityStorageComponent, ComponentGetState>(OnGetState);
         SubscribeLocalEvent<EntityStorageComponent, ComponentHandleState>(OnHandleState);
-
-        SubscribeLocalEvent<InsideEntityStorageComponent, StatusIconVisibleEvent>(OnStatusIconVisible); // Exodus-HideStatusIcon
     }
 
     public override bool ResolveStorage(EntityUid uid, [NotNullWhen(true)] ref SharedEntityStorageComponent? component)
@@ -43,11 +40,4 @@ public sealed class EntityStorageSystem : SharedEntityStorageSystem
         component = storage;
         return component != null;
     }
-
-    // Exodus-HideStatusIcon-start
-    private void OnStatusIconVisible(EntityUid uid, InsideEntityStorageComponent comp, ref StatusIconVisibleEvent args)
-    {
-        args.Visible = false;
-    }
-    // Exodus-HideStatusIcon-end
 }

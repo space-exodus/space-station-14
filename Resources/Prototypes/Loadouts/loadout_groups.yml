@@ -53,6 +53,10 @@
   - CaptainJumpskirt
   - CaptainFormalSuit
   - CaptainFormalSkirt
+  # Corvax-Loadouts-Start
+  - CaptainJumpsuitTurtleneck
+  - CaptainJumpskirtTurtleneck
+  # Corvax-Loadouts-End
 
 - type: loadoutGroup
   id: CaptainNeck
@@ -91,6 +95,10 @@
   loadouts:
   - HoPJumpsuit
   - HoPJumpskirt
+  # Corvax-Loadouts-Start
+  - HoPJumpsuitTurtleneck
+  - HoPJumpskirtTurtleneck
+  # Corvax-Loadouts-End
 
 - type: loadoutGroup
   id: HoPNeck
@@ -104,9 +112,9 @@
   id: HoPBackpack
   name: loadout-group-hop-backpack
   loadouts:
-  - HoPBackpack
-  - HoPSatchel
-  - HoPDuffel
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
   - HoPBackpackIan
 
 - type: loadoutGroup
@@ -123,8 +131,8 @@
   loadouts:
   - GreyJumpsuit
   - GreyJumpskirt
-  - RainbowJumpsuit
   - AncientJumpsuit
+  - RainbowJumpsuit
 
 - type: loadoutGroup
   id: PassengerFace
@@ -142,7 +150,7 @@
 
 - type: loadoutGroup
   id: CommonBackpack
-  name: loadout-group-passenger-backpack
+  name: loadout-group-backpack
   loadouts:
   - CommonBackpack
   - CommonSatchel
@@ -249,14 +257,6 @@
   - LawyerNeck
 
 - type: loadoutGroup
-  id: LawyerBackpack
-  name: loadout-group-lawyer-backpack
-  loadouts:
-  - LawyerBackpack
-  - LawyerSatchel
-  - LawyerDuffel
-
-- type: loadoutGroup
   id: ChaplainHead
   name: loadout-group-chaplain-head
   minLimit: 0
@@ -282,14 +282,6 @@
   - ChaplainJumpskirt
   - ChaplainRobesLight
   - ChaplainRobesDark
-
-- type: loadoutGroup
-  id: ChaplainBackpack
-  name: loadout-group-chaplain-backpack
-  loadouts:
-  - ChaplainBackpack
-  - ChaplainSatchel
-  - ChaplainDuffel
 
 - type: loadoutGroup
   id: ChaplainOuterClothing
@@ -419,7 +411,6 @@
 - type: loadoutGroup
   id: MimeMask
   name: loadout-group-mime-mask
-  minLimit: 0
   loadouts:
   - MimeMask
   - MimeMaskSad
@@ -448,19 +439,46 @@
   - MimeWintercoat
 
 - type: loadoutGroup
-  id: MusicianBackpack
-  name: loadout-group-musician-backpack
-  loadouts:
-  - MusicianBackpack
-  - MusicianSatchel
-  - MusicianDuffel
-
-- type: loadoutGroup
   id: MusicianOuterClothing
   name: loadout-group-musician-outerclothing
   minLimit: 0
   loadouts:
   - MusicianWintercoat
+
+- type: loadoutGroup
+  id: Instruments
+  name: loadout-group-instruments
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - Glockenspiel
+  - MusicBox
+  - Xylophone
+  - Microphone
+  - Synthesizer
+  - Kalimba
+  - Woodblock
+  - ElectricGuitar
+  - BassGuitar
+  - RockGuitar
+  - AcousticGuitar
+  - Banjo
+  - Violin
+  - Viola
+  - Cello
+  - Trumpet
+  - Trombone
+  - FrenchHorn
+  - Euphonium
+  - Saxophone
+  - Accordion
+  - Harmonica
+  - Clarinet
+  - Flute
+  - Recorder
+  - PanFlute
+  - Ocarina
+  - Bagpipe
 
 # Cargo
 - type: loadoutGroup
@@ -480,14 +498,6 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
-
-- type: loadoutGroup
-  id: QuartermasterBackpack
-  name: loadout-group-quartermaster-backpack
-  loadouts:
-  - QuartermasterBackpack
-  - QuartermasterSatchel
-  - QuartermasterDuffel
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -586,14 +596,6 @@
   - ChiefEngineerJumpskirt
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
-
-- type: loadoutGroup
-  id: ChiefEngineerBackpack
-  name: loadout-group-chief-engineer-backpack
-  loadouts:
-  - ChiefEngineerBackpack
-  - ChiefEngineerSatchel
-  - ChiefEngineerDuffel
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -725,14 +727,10 @@
   loadouts:
   - ResearchDirectorJumpsuit
   - ResearchDirectorJumpskirt
-
-- type: loadoutGroup
-  id: ResearchDirectorBackpack
-  name: loadout-group-research-director-backpack
-  loadouts:
-  - ResearchDirectorBackpack
-  - ResearchDirectorSatchel
-  - ResearchDirectorDuffel
+  # Corvax-Loadouts-Start
+  - ResearchDirectorJumpsuitFormal
+  - ResearchDirectorJumpskirtFormal
+  # Corvax-Loadouts-End
 
 - type: loadoutGroup
   id: ResearchDirectorOuterClothing
@@ -846,6 +844,10 @@
   - HeadofSecurityTurtleneckSkirt
   - HeadofSecurityFormalSuit
   - HeadofSecurityFormalSkirt
+  # Corvax-Loadouts-Start
+  - HeadofSecurityJumpsuitBlack
+  - HeadofSecurityJumpskirtBlack
+  # Corvax-Loadouts-End
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -933,6 +935,7 @@
   loadouts:
   - JackSecBoots # Corvax
   - CombatBoots
+  - JackBoots
   - SecurityWinterBoots
 
 - type: loadoutGroup
@@ -965,14 +968,6 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
-
-- type: loadoutGroup
-  id: DetectiveBackpack
-  name: loadout-group-detective-backpack
-  loadouts:
-  - DetectiveBackpack
-  - DetectiveSatchel
-  - DetectiveDuffel
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1014,14 +1009,6 @@
   loadouts:
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
-
-- type: loadoutGroup
-  id: ChiefMedicalOfficerBackpack
-  name: loadout-group-chief-medical-officer-backpack
-  loadouts:
-  - ChiefMedicalOfficerBackpack
-  - ChiefMedicalOfficerSatchel
-  - ChiefMedicalOfficerDuffel
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
@@ -1161,14 +1148,6 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
-
-- type: loadoutGroup
-  id: ParamedicBackpack
-  name: loadout-group-paramedic-backpack
-  loadouts:
-  - ParamedicBackpack
-  - ParamedicSatchel
-  - ParamedicDuffel
 
 - type: loadoutGroup
   id: ParamedicShoes
