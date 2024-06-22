@@ -98,14 +98,8 @@ namespace Content.Shared.Standing
             // Exodus-Crawling-Start
             standingState.CanStandUp = canStandUp;
             Dirty(uid, standingState);
-
-            // need to refresh movement input for proper handling of standing state update, waddling for example
-            if (TryComp<InputMoverComponent>(uid, out var input))
-            {
-                var moveInputEvent = new MoveInputEvent(uid, input, input.HeldMoveButtons);
-                RaiseLocalEvent(uid, ref moveInputEvent, false);
-            }
             // Exodus-Crawling-End
+
             RaiseLocalEvent(uid, new DownedEvent(), false);
             _movementSpeedModifier.RefreshMovementSpeedModifiers(uid); // Exodus-Crawling
 
