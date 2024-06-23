@@ -13,7 +13,7 @@ using Robust.Shared.Reflection;
 using Robust.Shared.Replays;
 using Robust.Shared.Map;
 
-namespace Content.Server.Exodus.Lavaland;
+namespace Content.Server.Exodus.MassSpawn.Methods;
 
 [DataDefinition]
 public abstract partial class AttackCellMethod

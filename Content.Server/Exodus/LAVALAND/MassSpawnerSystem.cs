@@ -1,9 +1,10 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
+using Content.Server.Exodus.MassSpawn.Methods;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
-namespace Content.Server.Exodus.Lavaland;
+namespace Content.Server.Exodus.MassSpawn;
 
 public sealed partial class MassSpawnerSystem : EntitySystem
 {

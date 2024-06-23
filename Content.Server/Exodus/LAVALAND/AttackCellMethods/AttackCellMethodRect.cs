@@ -2,7 +2,7 @@ using System.Linq;
 using System.Numerics;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Exodus.Lavaland;
+namespace Content.Server.Exodus.MassSpawn.Methods;
 
 [Virtual]
 [DataDefinition]

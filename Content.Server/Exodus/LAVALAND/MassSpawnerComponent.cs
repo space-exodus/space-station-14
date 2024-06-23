@@ -1,3 +1,4 @@
+using Content.Server.Exodus.MassSpawn.Methods;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Utility;
@@ -6,7 +7,7 @@ using Robust.Shared.Map;
 using System.Numerics;
 using System.Reflection;
 
-namespace Content.Server.Exodus.Lavaland;
+namespace Content.Server.Exodus.MassSpawn;
 
 [RegisterComponent]
 public sealed partial class MassSpawnerComponent : Component
@@ -20,7 +21,10 @@ public sealed partial class MassSpawnerComponent : Component
     [DataField("groups")]
     public List<MassSpawnGroup> Groups = [];
 
+    [Access(typeof(MassSpawnerSystem))]
     public List<MassSpawnGroup> AddingGroups = [];
+
+    [Access(typeof(MassSpawnerSystem))]
     public List<MassSpawnGroup> RemovingGroups = [];
 
     public void AddGroup(MassSpawnGroup group)

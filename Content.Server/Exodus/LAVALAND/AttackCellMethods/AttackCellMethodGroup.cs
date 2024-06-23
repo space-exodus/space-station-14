@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace Content.Server.Exodus.Lavaland;
+namespace Content.Server.Exodus.MassSpawn.Methods;
 
 [Virtual]
 [DataDefinition]
