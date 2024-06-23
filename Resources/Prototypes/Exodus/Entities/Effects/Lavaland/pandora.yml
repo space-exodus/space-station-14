@@ -1,5 +1,5 @@
 - type: entity
-  id: AttackCellUnitPandora
+  id: AttackCellUnitPandoraFull
   parent: [ AttackCellUnitBase ]
   components:
   - type: TimedDespawn
@@ -33,11 +33,34 @@
 
 # DEBUG
 - type: entity
-  id: AttackCellUnitPandoraPartDamage
-  parent: [ AttackCellUnitSlow, AttackCellUnitDamage ]
+  id: AttackCellUnitPandoraFullDEBUG
+  parent: [ AttackCellUnitSlow ]
   components:
   - type: TimedDespawn
     lifetime: 0.65
   - type: Sprite
     sprite: Exodus/Effects/pandora_blast.rsi
     state: blast
+
+- type: entity
+  id: AttackCellUnitPandoraFullBigDEBUG
+  parent: [ AttackCellUnitSlow ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.65
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: blast
+    scale: 3,3
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.45,-1.45,1.45,1.45"
+        layer:
+          - SlipLayer
+        mask:
+          - ItemMask
+        density: 1000
+        hard: false

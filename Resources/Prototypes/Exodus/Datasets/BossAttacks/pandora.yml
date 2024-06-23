@@ -1,0 +1,71 @@
+
+#   1 1 1 1 1 1 1
+#   1 1 1 1 1 1 1
+#   1 1       1 1
+#   1 1       1 1
+#   1 1       1 1
+#   1 1 1 1 1 1 1
+#   1 1 1 1 1 1 1
+
+- type: spawnGroupProto
+  id: FatFrame
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Cell
+          vertexs:
+          - -2,-2
+          - 2,2
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Cell
+          vertexs:
+          - -3,-3
+          - 3,3
+
+
+
+#    2 2 2 2 2
+#    2 1 1 1 2
+#    2 1 0 1 2
+#    2 1 1 1 2
+#    2 2 2 2 2
+
+
+- type: spawnGroupProto
+  id: FrameOut3
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - method: !type:AttackCellMethodPoint
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Cell
+        delay: 0.2
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Cell
+          vertexs:
+          - -2,-2
+          - 2,2
+        delay: 0.4
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Cell
+          vertexs:
+          - -3,-3
+          - 3,3
+        delay: 0.6
+
+
+#     0 0 0
+#     0 0 0
+#     0 0 0
+
+
+- type: spawnGroupProto
+  id: Point
+  group:
+    method: !type:AttackCellMethodPoint

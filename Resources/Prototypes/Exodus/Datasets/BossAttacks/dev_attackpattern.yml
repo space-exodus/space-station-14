@@ -80,7 +80,7 @@
             groupProto: Cell
 
 - type: spawnGroupProto
-  id: AnimFrame
+  id: Rect
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
@@ -93,7 +93,7 @@
 
 
 - type: spawnGroupProto
-  id: Rect
+  id: AnimFrame
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
@@ -101,5 +101,5 @@
           initGroup: 
             groupProto: Cell
           vertexs:
-          - -2,2
+          - -2, 2
           - 3,-3

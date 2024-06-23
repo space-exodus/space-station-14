@@ -1,0 +1,41 @@
+- type: entity
+  parent: [ BaseMobLavaland ]
+  name: Pandora
+  id: MobPandora
+  components:
+  - type: HTN
+    rootTask:
+      task: AbilityRangeFightCompound
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Abilities
+    actions:
+    - ActionPandoraAttackFrameOut3
+    - ActionPandoraAttackFatFrame
+    - ActionPandoraAttackBigPoint
+    - ActionDEV1
+    - ActionDEV2
+    - ActionDEV3
+  - type: Sprite
+    sprite: Exodus/Mobs/Lavaland/pandora.rsi
+    state: pandora
+    offset: 0,0.5
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: pandora
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      10: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pandora
+      Dead:
+        Base: pandora_dead
+  - type: PointLight
+    radius: 2
+    energy: 4.5
+    color: "#a38ab0"
+    castShadows: false

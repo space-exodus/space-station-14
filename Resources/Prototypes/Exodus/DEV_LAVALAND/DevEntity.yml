@@ -7,7 +7,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitPandora
+    spawnProtoID: AttackCellUnitPandoraFullDEBUG
     groups:
       - groupProto: Cell
 
@@ -20,7 +20,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitPandora
+    spawnProtoID: AttackCellUnitPandoraFullDEBUG
     groups:
       - groupProto: Star
 
@@ -33,7 +33,7 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitPandoraAttention
+    spawnProtoID: AttackCellUnitPandoraFullDEBUG
     groups:
       - groupProto: Plus
 
@@ -46,9 +46,9 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitPandoraAttention
+    spawnProtoID: AttackCellUnitPandoraFullDEBUG
     groups:
-      - groupProto: AnimFrame
+      - groupProto: FrameOut4
 
 - type: entity
   name: N05
@@ -59,10 +59,9 @@
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: AttackCellUnitPandora
+    spawnProtoID: AttackCellUnitPandoraFullDEBUG
     groups:
-      - groupProto: Rect
-
+      - groupProto: FatFrame
 
 
 - type: entity
@@ -72,6 +71,8 @@
   noSpawn: true
   components:
   - type: WorldTargetAction
+    maxUseRange: 7
+    minUseRange: 2
     useDelay: 2
     range: 4
     itemIconStyle: BigAction
@@ -80,7 +81,7 @@
       state: spell_default
     event: !type:WorldSpawnSpellEvent
       prototypes:
-      - id: Spawn02
+      - id: Spawn04
         amount: 1
       offset: 0, 0
       speech: action-speech-spell-summon-magicarp
@@ -92,13 +93,13 @@
   components:
   - type: HTN
     rootTask:
-      task: AbilityFightCompound
+      task: AbilityRangeFightCompound
   - type: NpcFactionMember
     factions:
     - SimpleHostile
-  - type: AbilityAttack
+  - type: Abilities
     actions:
-    - AttackCellUnitPandora
+    - ActionSpawnDEVSpell
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
     state: dog-evil

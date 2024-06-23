@@ -4,3 +4,16 @@
     Cold: 1.3
     Heat: 0.7
     Blunt: 0.85
+
+- type: damageModifierSet
+  id: Lavaland
+  coefficients:
+    Blunt: 1.0
+    Slash: 1.0
+    Piercing: 0.8
+    Heat: 0.0
+    Poison: 0.0
+    Radiation: 0.0
+    Asphyxiation: 0.0
+    Bloodloss: 0.0
+    Cellular: 0.0
