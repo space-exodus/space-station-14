@@ -78,7 +78,6 @@ public sealed partial class NPCCombatSystem
             return;
         }
 
-        // TODO: When I get parallel operators move this as NPC combat shouldn't be handling this.
         _steering.Register(uid, new EntityCoordinates(combatComp.Target, Vector2.Zero), steering);
 
         if (combatComp.NextAction > curTime)
@@ -88,7 +87,8 @@ public sealed partial class NPCCombatSystem
         if (!TryComp(uid, out ActionsComponent? actionComp))
             return;
 
-        var actions = GetCurentNPCActions(uid, combatComp.NpcActions, actionComp);
+        List<EntityUid> actions = [];
+        actions.AddRange(actionComp.Actions);
 
         while (actions.Count > 0)
         {
@@ -97,11 +97,12 @@ public sealed partial class NPCCombatSystem
 
             var act = _random.PickAndTake(actions);
 
-            if (act.Value.MinRange >= distance ||
-                act.Value.MaxRange <= distance)
-                continue;
+            var attemptEv = new ActionAttemptEvent(uid);
+            RaiseLocalEvent(act, ref attemptEv);
+            if (attemptEv.Cancelled)
+                return;
 
-            if (TryUseAction(uid, act.Key, distance, combatComp, curTime))
+            if (TryUseAction(uid, act, distance, combatComp, curTime))
                 combatComp.UsedActionsLastUpd++;
         }
 
@@ -118,7 +119,6 @@ public sealed partial class NPCCombatSystem
                               NPCAbilityCombatComponent combatComp,
                               TimeSpan curTime)
     {
-
         if (!TryComp(uid, out ActionsComponent? actionComp))
             return false;
 
@@ -154,11 +154,22 @@ public sealed partial class NPCCombatSystem
             return false;
         }
 
+        if (action.MinUseRange >= distance ||
+            action.MaxUseRange <= distance)
+        {
+            Log.Error("Out");
+            return false;
+        }
+
         // Validate request by checking action blockers and the like:
         switch (action)
         {
             case EntityTargetActionComponent entityAction:
                 var targetWorldPos = _transform.GetWorldPosition(combatComp.Target);
+
+                if (entityAction.Range <= distance)
+                    return false;
+
                 _rotateToFaceSystem.TryFaceCoordinates(uid, targetWorldPos);
 
                 if (!_actions.ValidateEntityTarget(uid, combatComp.Target, (actionUid, entityAction)))
@@ -177,7 +188,7 @@ public sealed partial class NPCCombatSystem
             case WorldTargetActionComponent worldAction:
                 var entityCoordinatesTarget = Transform(combatComp.Target).Coordinates;
 
-                if (worldAction.Range < distance)
+                if (worldAction.Range <= distance)
                 {
                     var mapTargetPos = entityCoordinatesTarget.ToMapPos(EntityManager, _transform);
                     var mapUserPos = Transform(uid).Coordinates.ToMapPos(EntityManager, _transform);
@@ -222,20 +233,6 @@ public sealed partial class NPCCombatSystem
         _actions.PerformAction(uid, actionComp, actionUid, action, performEvent, curTime);
 
         return true;
-    }
-
-    private List<KeyValuePair<EntityUid, NPCAction>> GetCurentNPCActions(EntityUid uid, List<NPCAction> npcActions, ActionsComponent component)
-    {
-        var curActionUids = new List<KeyValuePair<EntityUid, NPCAction>>();
-
-        foreach (var act in component.Actions)
-        {
-            if (TryComp(act, out MetaDataComponent? meta) &&
-                npcActions.FindAll(npcAct => npcAct.ActionId == meta.EntityPrototype!.ID).Count != 0)
-                curActionUids.Add(new(act, npcActions.Find(npcAct => npcAct.ActionId == meta.EntityPrototype!.ID)));
-        }
-
-        return curActionUids;
     }
 
 }

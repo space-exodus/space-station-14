@@ -13,9 +13,6 @@ public sealed partial class NPCAbilityCombatComponent : Component
     public AbilityCombatStatus Status = AbilityCombatStatus.Normal;
 
     [ViewVariables]
-    public List<NPCAction> NpcActions = [];
-
-    [ViewVariables]
     public TimeSpan NextAction = new();
 
     [ViewVariables]
@@ -55,16 +52,4 @@ public enum AbilityCombatStatus : byte
     /// No dramas.
     /// </summary>
     Normal,
-}
-
-[DataRecord]
-public struct NPCAction
-{
-    public string ActionId = string.Empty;
-    public float MinRange = 0.0f;
-    public float MaxRange = 20.0f;
-
-    public NPCAction()
-    {
-    }
 }

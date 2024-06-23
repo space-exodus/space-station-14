@@ -32,15 +32,11 @@ public sealed partial class AbilityOperator : HTNOperator
     [DataField("actionsTimeReload")]
     public float ActionsTimeReload = 1.0f;
 
-    [DataField("actions")]
-    public List<NPCAction> NpcActions = [];
-
     public override void Startup(NPCBlackboard blackboard)
     {
         base.Startup(blackboard);
         var ability = _entManager.EnsureComponent<NPCAbilityCombatComponent>(blackboard.GetValue<EntityUid>(NPCBlackboard.Owner));
         ability.Target = blackboard.GetValue<EntityUid>(TargetKey);
-        ability.NpcActions = NpcActions;
         ability.ActionsTimeReload = ActionsTimeReload;
     }
 
