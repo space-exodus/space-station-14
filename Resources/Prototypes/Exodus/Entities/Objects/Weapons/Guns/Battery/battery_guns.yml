@@ -1,0 +1,35 @@
+- type: entity
+  name: advanced pulse pistol
+  parent: BaseWeaponBatterySmall
+  id: WeaponAdvancedPulsePistol
+  description: Energy pistol of new generation specifically designed for Blueshield Departament.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Battery/pulse_pistol_advanced.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Battery/pulse_pistol_advanced.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: PulseLight
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: StaticPrice
+    price: 750
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true

@@ -6,3 +6,9 @@
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Neck/Cloaks/blueshield.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.9

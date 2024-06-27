@@ -8,3 +8,11 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/blueshield.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/blueshield.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9

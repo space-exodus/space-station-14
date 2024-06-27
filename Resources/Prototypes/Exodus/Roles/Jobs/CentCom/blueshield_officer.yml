@@ -27,6 +27,8 @@
     belt: ClothingBeltSecurityFilled
     back: ClothingBackpackSatchelBlueshield
     neck: ClothingNeckCloakBlueshield
+    pocket1: WeaponAdvancedPulsePistol
+    pocket2: WeaponTaser
   storage:
     back:
     - WeaponSubMachineGunVector
