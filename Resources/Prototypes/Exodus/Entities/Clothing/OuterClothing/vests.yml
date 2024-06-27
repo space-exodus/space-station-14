@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingOuterVestWeb
+  id: ClothingOuterVestBlueshield
+  name: blueshield vest
+  description: A high-quality armored vest made from a hard synthetic material. It's surprisingly flexible and light, despite formidable armor plating.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/OuterClothing/Vests/blueshield.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/OuterClothing/Vests/blueshield.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.5
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9

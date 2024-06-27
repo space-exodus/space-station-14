@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackBlueshield
+  name: blueshield backpack
+  description: A stylish bag made of very high quality and durable material.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Back/Backpacks/blueshield.rsi

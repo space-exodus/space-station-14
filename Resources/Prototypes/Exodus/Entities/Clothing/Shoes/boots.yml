@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsBlueshield
+  name: blueshield boots
+  description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Shoes/Boots/blueshield.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Shoes/Boots/blueshield.rsi

@@ -1,7 +1,7 @@
 // Exodus-GhostRolesProfilesEditor-EntireFile
 using System.IO;
 using System.Linq;
-using Content.Client.Guidebook;
+using Content.Shared.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Lobby;
 using Content.Client.Lobby.UI.Roles;
@@ -23,6 +23,7 @@ using Robust.Client.Utility;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Direction = Robust.Shared.Maths.Direction;
+using Content.Client.Stylesheets;
 
 namespace Content.Client.UserInterface.Systems.Ghost.Widgets
 {
@@ -358,39 +359,97 @@ namespace Content.Client.UserInterface.Systems.Ghost.Widgets
             TraitsList.DisposeAllChildren();
 
             var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>().OrderBy(t => Loc.GetString(t.Name)).ToList();
-            TabContainer.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-traits-tab"));
+            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-traits-tab"));
 
-            if (traits.Count > 0)
-            {
-                foreach (var trait in traits)
-                {
-                    var selector = new TraitPreferenceSelector(trait);
-
-                    if (Profile?.TraitPreferences.Contains(trait.ID) == true)
-                    {
-                        selector.Preference = true;
-                    }
-                    else
-                    {
-                        selector.Preference = false;
-                    }
-
-                    selector.PreferenceChanged += preference =>
-                    {
-                        Profile = Profile?.WithTraitPreference(trait.ID, preference);
-                    };
-
-                    TraitsList.AddChild(selector);
-                }
-            }
-            else
+            if (traits.Count < 1)
             {
                 TraitsList.AddChild(new Label
                 {
-                    // TODO: Localise
-                    Text = "No traits available :(",
+                    Text = Loc.GetString("humanoid-profile-editor-no-traits"),
                     FontColorOverride = Color.Gray,
                 });
+                return;
+            }
+
+            //Setup model
+            Dictionary<string, List<string>> model = new();
+            List<string> defaultTraits = new();
+            model.Add("default", defaultTraits);
+
+            foreach (var trait in traits)
+            {
+                if (trait.Category == null)
+                {
+                    defaultTraits.Add(trait.ID);
+                    continue;
+                }
+
+                if (!model.ContainsKey(trait.Category))
+                {
+                    model.Add(trait.Category, new());
+                }
+                model[trait.Category].Add(trait.ID);
+            }
+
+            //Create UI view from model
+            foreach (var (categoryId, traitId) in model)
+            {
+                TraitCategoryPrototype? category = null;
+                if (categoryId != "default")
+                {
+                    category = _prototypeManager.Index<TraitCategoryPrototype>(categoryId);
+                    // Label
+                    TraitsList.AddChild(new Label
+                    {
+                        Text = Loc.GetString(category.Name),
+                        Margin = new Thickness(0, 10, 0, 0),
+                        StyleClasses = { StyleBase.StyleClassLabelHeading },
+                    });
+                }
+
+                List<TraitPreferenceSelector?> selectors = new();
+                var selectionCount = 0;
+
+                foreach (var traitProto in traitId)
+                {
+                    var trait = _prototypeManager.Index<TraitPrototype>(traitProto);
+                    var selector = new TraitPreferenceSelector(trait);
+
+                    selector.Preference = Profile?.TraitPreferences.Contains(trait.ID) == true;
+                    if (selector.Preference)
+                        selectionCount += trait.Cost;
+
+                    selector.PreferenceChanged += preference =>
+                    {
+                        Profile = Profile?.WithTraitPreference(trait.ID, categoryId, preference);
+                        RefreshTraits(); // If too many traits are selected, they will be reset to the real value.
+                    };
+                    selectors.Add(selector);
+                }
+
+                // Selection counter
+                if (category is { MaxTraitPoints: >= 0 })
+                {
+                    TraitsList.AddChild(new Label
+                    {
+                        Text = Loc.GetString("humanoid-profile-editor-trait-count-hint", ("current", selectionCount), ("max", category.MaxTraitPoints)),
+                        FontColorOverride = Color.Gray
+                    });
+                }
+
+                foreach (var selector in selectors)
+                {
+                    if (selector == null)
+                        continue;
+
+                    if (category is { MaxTraitPoints: >= 0 } &&
+                        selector.Cost + selectionCount > category.MaxTraitPoints)
+                    {
+                        selector.Checkbox.Label.FontColorOverride = Color.Red;
+                    }
+
+                    TraitsList.AddChild(selector);
+                }
             }
         }
 
@@ -483,6 +542,10 @@ namespace Content.Client.UserInterface.Systems.Ghost.Widgets
 
         private void OnSpeciesInfoButtonPressed(BaseButton.ButtonEventArgs args)
         {
+            // TODO GUIDEBOOK
+            // make the species guide book a field on the species prototype.
+            // I.e., do what jobs/antags do.
+
             var guidebookController = UserInterfaceManager.GetUIController<GuidebookUIController>();
             var species = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
             var page = DefaultSpeciesGuidebook;
@@ -491,10 +554,10 @@ namespace Content.Client.UserInterface.Systems.Ghost.Widgets
 
             if (_prototypeManager.TryIndex<GuideEntryPrototype>(DefaultSpeciesGuidebook, out var guideRoot))
             {
-                var dict = new Dictionary<string, GuideEntry>();
+                var dict = new Dictionary<ProtoId<GuideEntryPrototype>, GuideEntry>();
                 dict.Add(DefaultSpeciesGuidebook, guideRoot);
                 //TODO: Don't close the guidebook if its already open, just go to the correct page
-                guidebookController.ToggleGuidebook(dict, includeChildren: true, selected: page);
+                guidebookController.OpenGuidebook(dict, includeChildren: true, selected: page);
             }
         }
 

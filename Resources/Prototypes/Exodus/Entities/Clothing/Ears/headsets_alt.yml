@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltBlueshield
+  name: blueshield over-ear headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCentCom
+      - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: Exodus/Clothing/Ears/Headsets/blueshield.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Ears/Headsets/blueshield.rsi

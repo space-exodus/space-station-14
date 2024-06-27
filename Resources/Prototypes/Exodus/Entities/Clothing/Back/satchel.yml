@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelBlueshield
+  name: blueshield satchel
+  description: A stylish satchel made of very high quality and durable material.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Back/Satchels/blueshield.rsi

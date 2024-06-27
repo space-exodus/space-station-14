@@ -1,0 +1,11 @@
+- type: entity
+  parent: IDCardStandard
+  id: BlueshieldOfficierIDCard
+  name: blueshield officier ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idblueshieldofficer
+  - type: PresetIdCard
+    job: BlueshieldOfficer

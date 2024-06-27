@@ -658,6 +658,11 @@ namespace Content.Server.Database
         }
         // Exodus-Discord-End
 
+        protected async Task<bool> PlayerRecordExists(DbGuard db, NetUserId userId)
+        {
+            return await db.DbContext.Player.AnyAsync(p => p.UserId == userId);
+        }
+
         [return: NotNullIfNotNull(nameof(player))]
         protected PlayerRecord? MakePlayerRecord(Player? player)
         {

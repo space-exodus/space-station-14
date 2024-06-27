@@ -1,0 +1,42 @@
+- type: job
+  id: BlueshieldOfficer
+  name: job-name-blueshieldofficer
+  description: job-description-blueshieldofficer
+  playTimeTracker: JobBlueshieldOfficer
+  setPreference: false
+  startingGear: BlueshieldOfficerGear
+  icon: "JobIconBlueshieldOfficer"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: BlueshieldOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueshield
+    shoes: ClothingShoesBootsBlueshield
+    head: ClothingHeadHatBeretBlueshield
+    eyes: ClothingEyesGlassesBlueshield
+    gloves: ClothingHandsGlovesBlueshield
+    outerClothing: ClothingOuterVestBlueshield
+    id: BlueshieldPDA
+    ears: ClothingHeadsetAltBlueshield
+    belt: ClothingBeltSecurityFilled
+    back: ClothingBackpackSatchelBlueshield
+    neck: ClothingNeckCloakBlueshield
+  storage:
+    back:
+    - WeaponSubMachineGunVector
+    - MagazineMagnumSubMachineGun
+    - MagazineMagnumSubMachineGun
+    - MagazineMagnumSubMachineGun
+    - MagazineMagnumSubMachineGun
+    - MedicatedSuture
+    - MedicatedSuture
+    - RegenerativeMesh
+    - RegenerativeMesh
+    - CombatMedipen
+    - CombatMedipen

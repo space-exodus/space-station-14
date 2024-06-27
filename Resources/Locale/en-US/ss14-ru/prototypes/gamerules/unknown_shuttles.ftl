@@ -6,7 +6,3 @@ ent-UnknownShuttleTravelingCuisine = { ent-BaseUnknownShuttleRule }
     .desc = { ent-BaseUnknownShuttleRule.desc }
 ent-UnknownShuttleDisasterEvacPod = { ent-BaseUnknownShuttleRule }
     .desc = { ent-BaseUnknownShuttleRule.desc }
-ent-UnknownShuttleHonki = { ent-BaseUnknownShuttleRule }
-    .desc = { ent-BaseUnknownShuttleRule.desc }
-ent-UnknownShuttleSyndieEvacPod = { ent-BaseUnknownShuttleRule }
-    .desc = { ent-BaseUnknownShuttleRule.desc }

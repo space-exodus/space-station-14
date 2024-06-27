@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelBlueshield
+  name: blueshield duffel bag
+  description: A stylish duffel bag made of very high quality and durable material.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Back/Duffels/blueshield.rsi
