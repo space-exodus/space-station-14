@@ -9,7 +9,6 @@
   - CaptainOuterClothing
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
@@ -22,7 +21,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 # Civilian
 - type: roleLoadout
@@ -37,7 +35,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobBartender
@@ -49,7 +46,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -59,7 +55,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobChef
@@ -72,7 +67,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobLibrarian
@@ -82,7 +76,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobLawyer
@@ -93,7 +86,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobChaplain
@@ -107,7 +99,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobJanitor
@@ -121,7 +112,6 @@
   - Trinkets
   - JanitorPlunger
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobBotanist
@@ -133,7 +123,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobClown
@@ -146,7 +135,6 @@
   - Glasses
   - Trinkets
   - SurvivalClown
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobMime
@@ -159,7 +147,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobMusician
@@ -171,7 +158,6 @@
   - Trinkets
   - Instruments
   - Survival
-  - Inventory # Corvax-Loadouts
 
 # Cargo
 - type: roleLoadout
@@ -186,7 +172,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -199,7 +184,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobSalvageSpecialist
@@ -210,7 +194,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 # Engineering
 - type: roleLoadout
@@ -224,7 +207,6 @@
   - ChiefEngineerShoes
   - Trinkets
   - SurvivalExtended
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobTechnicalAssistant
@@ -233,7 +215,6 @@
   - StationEngineerBackpack
   - Trinkets
   - SurvivalExtended
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobStationEngineer
@@ -246,7 +227,6 @@
   - StationEngineerID
   - Trinkets
   - SurvivalExtended
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
@@ -257,7 +237,6 @@
   - AtmosphericTechnicianShoes
   - Trinkets
   - SurvivalExtended
-  - Inventory # Corvax-Loadouts
 
 # Science
 - type: roleLoadout
@@ -273,7 +252,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobScientist
@@ -289,7 +267,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobResearchAssistant
@@ -299,7 +276,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 # Security
 - type: roleLoadout
@@ -314,7 +290,6 @@
   - SecurityShoes
   - Trinkets
   - SurvivalSecurity
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobWarden
@@ -327,7 +302,6 @@
   - SecurityShoes
   - Trinkets
   - SurvivalSecurity
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobSecurityOfficer
@@ -341,7 +315,6 @@
   - SecurityBelt
   - Trinkets
   - SurvivalSecurity
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobDetective
@@ -354,7 +327,6 @@
   - SecurityShoes
   - Trinkets
   - SurvivalSecurity
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobSecurityCadet
@@ -363,7 +335,6 @@
   - SecurityBackpack
   - Trinkets
   - SurvivalSecurity
-  - Inventory # Corvax-Loadouts
 
 # Medical
 - type: roleLoadout
@@ -380,7 +351,6 @@
   - Glasses
   - Trinkets
   - SurvivalMedical
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobMedicalDoctor
@@ -396,7 +366,6 @@
   - Glasses
   - Trinkets
   - SurvivalMedical
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobMedicalIntern
@@ -406,7 +375,6 @@
   - Glasses
   - Trinkets
   - SurvivalMedical
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobChemist
@@ -419,7 +387,6 @@
   - MedicalShoes
   - Trinkets
   - SurvivalMedical
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobParamedic
@@ -434,7 +401,6 @@
   - Glasses
   - Trinkets
   - SurvivalMedical
-  - Inventory # Corvax-Loadouts
 
 # Wildcards
 - type: roleLoadout
@@ -444,7 +410,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobReporter
@@ -454,7 +419,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobPsychologist
@@ -463,7 +427,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobBoxer
@@ -474,7 +437,6 @@
   - Glasses
   - Trinkets
   - Survival
-  - Inventory # Corvax-Loadouts
 
 # These loadouts will be used without player configuration, thus they must be designed to work without manual selection
 
