@@ -71,5 +71,7 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
+  - type: Inventory # Exodus-FixLobbyCharacterPreview
+    speciesId: reptilian
 
 #Weh

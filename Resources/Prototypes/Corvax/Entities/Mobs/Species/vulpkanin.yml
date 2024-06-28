@@ -74,3 +74,5 @@
   components:
   - type: HumanoidAppearance
     species: Vulpkanin
+  - type: Inventory # Exodus-FixLobbyCharacterPreview
+    speciesId: reptilian
