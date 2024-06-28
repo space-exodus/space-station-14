@@ -38,6 +38,7 @@ namespace Content.Shared.Standing
             SubscribeLocalEvent<StandingStateComponent, DownDoAfterEvent>(OnDownDoAfterEvent);
             SubscribeLocalEvent<StandingStateComponent, StandDoAfterEvent>(OnStandDoAfterEvent);
             SubscribeLocalEvent<StandingStateComponent, PullStartedMessage>(OnPull);
+            SubscribeLocalEvent<StandingStateComponent, PullStoppedMessage>(OnPull);
             SubscribeLocalEvent<StandingStateComponent, UpdateCanMoveEvent>(OnUpdateCanMove);
         }
         // Exodus-Crawling-End
@@ -221,7 +222,7 @@ namespace Content.Shared.Standing
             ev.ModifySpeed(standing.CrawlingSpeedModifier, standing.CrawlingSpeedModifier);
         }
 
-        private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullStartedMessage ev)
+        private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullMessage ev)
         {
             if (!standing.Standing)
                 _actionBlocker.UpdateCanMove(uid);

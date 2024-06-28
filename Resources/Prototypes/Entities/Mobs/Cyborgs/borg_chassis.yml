@@ -24,7 +24,7 @@
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
       state: robot
-    name: cyborg
+    name: ent-BorgChassisGeneric # Exodus-Localization
   - type: Construction
     node: cyborg
   - type: Speech
@@ -66,7 +66,7 @@
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
       state: miner
-    name: salvage cyborg
+    name: ent-BorgChassisMining # Exodus-Localization
   - type: Construction
     node: mining
   - type: IntrinsicRadioTransmitter
@@ -114,7 +114,7 @@
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
       state: engineer
-    name: engineer cyborg
+    name: ent-BorgChassisEngineer # Exodus-Localization
   - type: Construction
     node: engineer
   - type: IntrinsicRadioTransmitter
@@ -170,7 +170,7 @@
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
       state: janitor
-    name: janitor cyborg
+    name: ent-BorgChassisJanitor # Exodus-Localization
   - type: Construction
     node: janitor
   - type: IntrinsicRadioTransmitter
@@ -226,7 +226,7 @@
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
       state: medical
-    name: medical cyborg
+    name: BorgChassisMedical # Exodus-Localization
   - type: Construction
     node: medical
   - type: IntrinsicRadioTransmitter
@@ -277,7 +277,7 @@
     sprite:
       sprite: Mobs/Silicon/chassis.rsi
       state: service
-    name: service cyborg
+    name: BorgChassisService # Exodus-Localization
   - type: Construction
     node: service
   - type: IntrinsicRadioTransmitter

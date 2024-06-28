@@ -59,7 +59,7 @@ flavor-complex-honey = как мёд
 
 # Food-specific flavors.
 
-flavor-complex-ketchunaise = как помидоры и майонез
+flavor-complex-ketchunaise = как томаты и майонез
 flavor-complex-mayonnaise = как майонез
 flavor-complex-mustard = как горчица
 
@@ -107,7 +107,7 @@ flavor-complex-cabbage = как капуста
 flavor-complex-potatoes = как картофель
 flavor-complex-pumpkin = как тыква
 flavor-complex-mushroom = как грибы
-flavor-complex-tomato = как помидоры
+flavor-complex-tomato = как томаты
 flavor-complex-corn = как кукуруза
 flavor-complex-banana = как бананы
 flavor-complex-apple = как яблоки

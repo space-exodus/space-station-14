@@ -64,7 +64,8 @@
     damageRecovery:
       types:
         Asphyxiation: -1.0
-    maxSaturation: 2.5
+    maxSaturation: 5
+  - type: GrowlingAccent
 
 - type: entity
   parent: BaseMobFelinid
