@@ -5,7 +5,6 @@
   - LawyerJumpsuit
   - CommonBackpack
   - Trinkets
-  - Inventory # Corvax-Loadouts
 
 - type: roleLoadout
   id: JobPilot
@@ -16,4 +15,3 @@
   - SecurityBelt
   - SecurityShoes
   - Trinkets
-  - Inventory # Corvax-Loadouts 

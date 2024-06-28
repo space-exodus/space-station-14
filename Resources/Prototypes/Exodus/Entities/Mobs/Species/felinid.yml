@@ -66,6 +66,8 @@
         Asphyxiation: -1.0
     maxSaturation: 5
   - type: GrowlingAccent
+  - type: CanEscapeInventory
+    baseResistTime: 1
 
 - type: entity
   parent: BaseMobFelinid
