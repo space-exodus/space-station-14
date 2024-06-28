@@ -222,7 +222,12 @@ namespace Content.Shared.Standing
             ev.ModifySpeed(standing.CrawlingSpeedModifier, standing.CrawlingSpeedModifier);
         }
 
-        private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullMessage ev)
+        private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullStartedMessage ev)
+        {
+            if (!standing.Standing)
+                _actionBlocker.UpdateCanMove(uid);
+        }
+        private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullStoppedMessage ev)
         {
             if (!standing.Standing)
                 _actionBlocker.UpdateCanMove(uid);
