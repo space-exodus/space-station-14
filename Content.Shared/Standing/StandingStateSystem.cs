@@ -224,13 +224,11 @@ namespace Content.Shared.Standing
 
         private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullStartedMessage ev)
         {
-            if (!standing.Standing)
-                _actionBlocker.UpdateCanMove(uid);
+            _actionBlocker.UpdateCanMove(uid);
         }
         private void OnPull(EntityUid uid, StandingStateComponent standing, ref PullStoppedMessage ev)
         {
-            if (!standing.Standing)
-                _actionBlocker.UpdateCanMove(uid);
+            _actionBlocker.UpdateCanMove(uid);
         }
 
         private void OnUpdateCanMove(EntityUid uid, StandingStateComponent standing, ref UpdateCanMoveEvent ev)
