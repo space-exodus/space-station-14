@@ -1,0 +1,9 @@
+atmos-gas-Oxygen = Кислород
+atmos-gas-Nitrogen = Nitrogen
+atmos-gas-CarbonDioxide = Диоксид углерода
+atmos-gas-Plasma = Плазма
+atmos-gas-Tritium = Тритий
+atmos-gas-WaterVapor = Водяной пар
+atmos-gas-Ammonia = Аммиак
+atmos-gas-NitrousOxide = Оксид азота
+atmos-gas-Frezon = Фрезон

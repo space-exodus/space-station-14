@@ -63,7 +63,7 @@ public sealed partial class PumpControl : BoxContainer
 
         foreach (var value in Enum.GetValues<VentPumpDirection>())
         {
-            _pumpDirection.AddItem(Loc.GetString($"{value}"), (int) value);
+            _pumpDirection.AddItem(Loc.GetString("air-alarm-ui-vent-pump-direction", ("dir", (int) value)), (int) value); // Exodus-Localization
         }
 
         _pumpDirection.SelectId((int) _data.PumpDirection);
@@ -76,7 +76,7 @@ public sealed partial class PumpControl : BoxContainer
 
         foreach (var value in Enum.GetValues<VentPressureBound>())
         {
-            _pressureCheck.AddItem(Loc.GetString($"{value}"), (int) value);
+            _pressureCheck.AddItem(Loc.GetString("air-alarm-ui-vent-pressure-bound", ("bound", (int) value)), (int) value); // Exodus-Localization
         }
 
         _pressureCheck.SelectId((int) _data.PressureChecks);
@@ -86,7 +86,7 @@ public sealed partial class PumpControl : BoxContainer
             _data.PressureChecks = (VentPressureBound) args.Id;
             PumpDataChanged?.Invoke(_address, _data);
         };
-		
+
 		_copySettings.OnPressed += _ =>
 		{
 			PumpDataCopied?.Invoke(_data);

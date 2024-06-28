@@ -25,11 +25,11 @@ public sealed partial class SensorInfo : BoxContainer
 
         _address = address;
 
-        SensorAddress.Title = $"{address} : {data.AlarmState}";
+        SensorAddress.Title = $"{address} : {Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))}"; // Exodus-Localization
 
         AlarmStateLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-alarm-state-indicator",
                     ("color", AirAlarmWindow.ColorForAlarm(data.AlarmState)),
-                    ("state", $"{data.AlarmState}")));
+                    ("state", Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))))); // Exodus-Localization
         PressureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-pressure-indicator",
                     ("color", AirAlarmWindow.ColorForThreshold(data.Pressure, data.PressureThreshold)),
                     ("pressure", $"{data.Pressure:0.##}")));
@@ -43,7 +43,7 @@ public sealed partial class SensorInfo : BoxContainer
             var label = new RichTextLabel();
 
             var fractionGas = amount / data.TotalMoles;
-            label.SetMarkup(Loc.GetString("air-alarm-ui-gases-indicator", ("gas", $"{gas}"),
+            label.SetMarkup(Loc.GetString("air-alarm-ui-gases-indicator", ("gas", Loc.GetString($"atmos-gas-{gas}")), // Exodus-Localization
                 ("color", AirAlarmWindow.ColorForThreshold(fractionGas, data.GasThresholds[gas])),
                 ("amount", $"{amount:0.####}"),
                 ("percentage", $"{(100 * fractionGas):0.##}")));
@@ -51,7 +51,7 @@ public sealed partial class SensorInfo : BoxContainer
             _gasLabels.Add(gas, label);
 
             var threshold = data.GasThresholds[gas];
-            var gasThresholdControl = new ThresholdControl(Loc.GetString($"air-alarm-ui-thresholds-gas-title", ("gas", $"{gas}")), threshold, AtmosMonitorThresholdType.Gas, gas, 100);
+            var gasThresholdControl = new ThresholdControl(Loc.GetString($"air-alarm-ui-thresholds-gas-title", ("gas", Loc.GetString($"atmos-gas-{gas}"))), threshold, AtmosMonitorThresholdType.Gas, gas, 100); // Exodus-Localization
             gasThresholdControl.Margin = new Thickness(20, 2, 2, 2);
             gasThresholdControl.ThresholdDataChanged += (type, threshold, arg3) =>
             {
@@ -81,11 +81,11 @@ public sealed partial class SensorInfo : BoxContainer
 
     public void ChangeData(AtmosSensorData data)
     {
-        SensorAddress.Title = $"{_address} : {data.AlarmState}";
+        SensorAddress.Title = $"{_address} : {Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))}"; // Exodus-Localization
 
         AlarmStateLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-alarm-state-indicator",
                     ("color", AirAlarmWindow.ColorForAlarm(data.AlarmState)),
-                    ("state", $"{data.AlarmState}")));
+                    ("state", Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))))); // Exodus-Localization
 
         PressureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-pressure-indicator",
                     ("color", AirAlarmWindow.ColorForThreshold(data.Pressure, data.PressureThreshold)),
@@ -103,7 +103,7 @@ public sealed partial class SensorInfo : BoxContainer
             }
 
             var fractionGas = amount / data.TotalMoles;
-            label.SetMarkup(Loc.GetString("air-alarm-ui-gases-indicator", ("gas", $"{gas}"),
+            label.SetMarkup(Loc.GetString("air-alarm-ui-gases-indicator", ("gas", Loc.GetString($"atmos-gas-{gas}")),
                 ("color", AirAlarmWindow.ColorForThreshold(fractionGas, data.GasThresholds[gas])),
                 ("amount", $"{amount:0.####}"),
                 ("percentage", $"{(100 * fractionGas):0.##}")));
