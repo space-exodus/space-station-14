@@ -610,7 +610,7 @@
     - type: GhostRole
       name: ghost-role-information-lost-cargo-technical-name
       description: ghost-role-information-lost-cargo-technical-description
-      rules: ghost-role-information-nonantagonist-rules
+      rules: ghost-role-information-nonantagonist-humanoid-editor-rules
       raffle:
         settings: short
     - type: GhostRoleHumanoidEditor
@@ -698,7 +698,7 @@
     - type: GhostRole
       name: ghost-role-information-traveling-chef-name
       description: ghost-role-information-traveling-chef-description
-      rules: ghost-role-information-nonantagonist-rules
+      rules: ghost-role-information-nonantagonist-humanoid-editor-rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -737,7 +737,7 @@
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
       description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-nonantagonist-rules
+      rules: ghost-role-information-nonantagonist-humanoid-editor-rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -760,7 +760,7 @@
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
       description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-disaster-victim-rules
+      rules: ghost-role-information-nonantagonist-humanoid-editor-rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -783,7 +783,7 @@
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
       description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-disaster-victim-rules
+      rules: ghost-role-information-nonantagonist-humanoid-editor-rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
