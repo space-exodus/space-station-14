@@ -31,10 +31,7 @@
   - type: Vocal
     speechVerb: Kidan
     allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply']
-    sounds:
-      Male: UnsexedKidan
-      Female: UnsexedKidan
-      Unsexed: UnsexedKidan
+    speechSounds: UnisexKidan
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Kidan

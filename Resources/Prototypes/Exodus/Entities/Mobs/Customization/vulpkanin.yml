@@ -1,3 +1,4 @@
+# Snouts
 - type: marking
   id: VulpkaninSpotThroat
   bodyPart: Snout
@@ -24,3 +25,236 @@
   sprites:
     - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
       state: raccoon
+
+- type: marking
+  id: VulpkaninSpotArrows
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: arrows
+
+- type: marking
+  id: VulpkaninSpotBelt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: belt
+
+- type: marking
+  id: VulpkaninSpotCase
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: case
+
+- type: marking
+  id: VulpkaninSpotEyebrows
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: eyebrows
+
+- type: marking
+  id: VulpkaninSpotHelmet
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: helmet
+
+- type: marking
+  id: VulpkaninSpotLadle
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: ladle
+
+- type: marking
+  id: VulpkaninSpotLantern
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: lantern
+
+- type: marking
+  id: VulpkaninSpotMarkings
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: markings
+
+- type: marking
+  id: VulpkaninSpotMask
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: mask
+
+- type: marking
+  id: VulpkaninSpotSiam
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: siam
+
+- type: marking
+  id: VulpkaninSpotSiamisblurred
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: siamisblurred
+
+- type: marking
+  id: VulpkaninSpotStar
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: star
+
+- type: marking
+  id: VulpkaninSpotTear
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: tear
+
+- type: marking
+  id: VulpkaninSpotTearsmall
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: tearsmall
+
+- type: marking
+  id: VulpkaninSpotThai
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
+      state: thai
+
+# Ears
+- type: marking
+  id: VulpkaninEarsCutoff
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_cutoff_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_cutoff_inner
+
+- type: marking
+  id: VulpkaninEarsFennec
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_fennec_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_fennec_inner
+
+- type: marking
+  id: VulpkaninEarsHyena
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_hyena_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_hyena_inner
+
+- type: marking
+  id: VulpkaninEarsLinx
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_linx_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_linx_inner
+
+- type: marking
+  id: VulpkaninEarsRound
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_round_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_round_inner
+
+- type: marking
+  id: VulpkaninEarsSharp
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_sharp_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_sharp_inner
+
+- type: marking
+  id: VulpkaninEarsSkarLeft
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_skar_left_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_skar_left_inner
+
+- type: marking
+  id: VulpkaninEarsSkarRight
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_skar_right_outer
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_skar_right_inner
+
+- type: marking
+  id: VulpkaninEarsSpaniel
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_ears.rsi
+      state: ears_spaniel
