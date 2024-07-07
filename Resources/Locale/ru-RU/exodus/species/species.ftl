@@ -1,2 +1,2 @@
 species-name-kidan = Кидан
-species-name-felinid = Феленид
+species-name-felinid = Фелинид

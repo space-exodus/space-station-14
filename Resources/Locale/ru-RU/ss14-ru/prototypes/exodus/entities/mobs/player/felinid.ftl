@@ -1,1 +1,1 @@
-ent-MobFelinid = Урист МакФеленид
+ent-MobFelinid = Урист МакФелинид
