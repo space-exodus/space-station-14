@@ -1,0 +1,48 @@
+- type: guideEntry
+  id: ExodusRuleset
+  name: Правила сервера
+  priority: 0
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/MrpRuleset.xml"
+  children:
+  - ExodusRule0
+  - ExodusRule1
+  - ExodusRule2
+  - ExodusRule3
+  - ExodusRule4
+  - ExodusRule5
+
+- type: guideEntry
+  id: ExodusRule0
+  name: Правило 0
+  priority: 1
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule0.xml"
+
+- type: guideEntry
+  id: ExodusRule1
+  name: Правило 1
+  priority: 2
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule1.xml"
+
+- type: guideEntry
+  id: ExodusRule2
+  name: Правило 2
+  priority: 3
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule2.xml"
+
+- type: guideEntry
+  id: ExodusRule3
+  name: Правило 3
+  priority: 4
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule3.xml"
+
+- type: guideEntry
+  id: ExodusRule4
+  name: Правило 4
+  priority: 14
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule4.xml"
+
+- type: guideEntry
+  id: ExodusRule5
+  name: Правило 5
+  priority: 15
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule5.xml"
