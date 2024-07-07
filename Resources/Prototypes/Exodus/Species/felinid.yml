@@ -3,7 +3,7 @@
   name: species-name-felinid
   roundStart: true
   prototype: MobFelinid
-  sprites: MobHumanSprites
+  sprites: MobFelinidSprites
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
@@ -23,11 +23,11 @@
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ CatEarsStubby ]
+      defaultMarkings: [ CatTail ]
     HeadTop:
       points: 1
       required: true
-      defaultMarkings: [ CatTail ]
+      defaultMarkings: [ CatEarsStubby ]
     Chest:
       points: 1
       required: false
@@ -37,3 +37,23 @@
     Arms:
       points: 2
       required: false
+
+- type: speciesBaseSprites
+  id: MobFelinidSprites
+  sprites:
+    Head: MobHumanHead
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobHumanTorso
+    HeadTop: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobHumanoidEyes
+    LArm: MobHumanLArm
+    RArm: MobHumanRArm
+    LHand: MobHumanLHand
+    RHand: MobHumanRHand
+    LLeg: MobHumanLLeg
+    RLeg: MobHumanRLeg
+    LFoot: MobHumanLFoot
+    RFoot: MobHumanRFoot

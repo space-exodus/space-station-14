@@ -3,18 +3,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Felinid] # Exodus-Felinids
-  # coloring: # Exodus-Felinids
-  #   default:
-  #     type:
-  #       !type:CategoryColoring
-  #       category: Hair
-  #     fallbackTypes:
-  #       - !type:SkinColoring
-  #   layers:
-  #     ears_cat_inner:
-  #       type:
-  #         !type:SimpleColoring
-  #         color: "#FFFFFF"
+  # Exodus-Felinids
   sprites:
   - sprite: Corvax/Mobs/Customization/cat_parts.rsi
     state: ears_stubby_outer
@@ -26,18 +15,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Felinid] # Exodus-Felinids
-  # coloring: # Exodus-Felinids
-  #   default:
-  #     type:
-  #       !type:CategoryColoring
-  #       category: Hair
-  #     fallbackTypes:
-  #       - !type:SkinColoring
-  #   layers:
-  #     ears_cat_inner:
-  #       type:
-  #         !type:SimpleColoring
-  #         color: "#FFFFFF"
+  # Exodus-Felinids
   sprites:
   - sprite: Corvax/Mobs/Customization/cat_parts.rsi
     state: ears_curled_outer
@@ -49,18 +27,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Felinid] # Exodus-Felinids
-  # coloring: # Exodus-Felinids
-  #   default:
-  #     type:
-  #       !type:CategoryColoring
-  #       category: Hair
-  #     fallbackTypes:
-  #       - !type:SkinColoring
-  #   layers:
-  #     ears_cat_inner:
-  #       type:
-  #         !type:SimpleColoring
-  #         color: "#FFFFFF"
+  # Exodus-Felinids
   sprites:
   - sprite: Corvax/Mobs/Customization/cat_parts.rsi
     state: ears_torn_outer
@@ -71,16 +38,7 @@
   id: CatTailStripes
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid] # Exodus-Felinids
-  # coloring: # Exodus-Felinids
-  #   default:
-  #     type:
-  #       !type:CategoryColoring
-  #       category: Hair
-  #     fallbackTypes:
-  #       - !type:CategoryColoring
-  #         category: FacialHair
-  #       - !type:SkinColoring
+  speciesRestriction: [] # Exodus-Felinids
   sprites:
     - sprite: Corvax/Mobs/Customization/cat_parts.rsi
       state: tail_cat_wag_stripes_prime

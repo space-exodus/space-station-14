@@ -22,8 +22,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobHumanTorso
-    HeadTop: MobHumanoidAnyMarking # Corvax-Resprite
-    Tail: MobHumanoidAnyMarking # Corvax-Resprite
+    # HeadTop: MobHumanoidAnyMarking # Corvax-Resprite # Exodus-Felinids
+    # Tail: MobHumanoidAnyMarking # Corvax-Resprite # Exodus-Felinids
     Eyes: MobHumanoidEyes
     LArm: MobHumanLArm
     RArm: MobHumanRArm
