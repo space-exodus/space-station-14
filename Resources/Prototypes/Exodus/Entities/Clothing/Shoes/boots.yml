@@ -28,8 +28,8 @@
 - type: entity
   parent: ClothingShoesPenItem
   id: ClothingShoesCentcomOfficer
-  name: обувь офицера специальных операций
-  description: Очень дорого, очень качественно, очень строго.
+  name: specical operation officer's shoes
+  description: Richy, very richy
   components:
   - type: NoSlip
   - type: Sprite
