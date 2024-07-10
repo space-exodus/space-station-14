@@ -11,11 +11,11 @@ namespace Content.Shared.Exodus.Fly;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]
 public sealed partial class FlyComponent : Component
 {
-    /// <summary>
-    /// Effect entity to delete upon removing the component. Only matters clientside.
-    /// </summary>
-    [ViewVariables, DataField("effect"), AutoNetworkedField]
-    public EntityUid Effect { get; set; }
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public bool DoAnimation = false;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    public TimeSpan AnimationTimeEnd = TimeSpan.Zero;
 
 
     [ViewVariables(VVAccess.ReadWrite), DataField]
@@ -35,11 +35,6 @@ public sealed partial class FlyComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("inAir")]
     public bool IsInAir = false;
 
-
-    [Access(typeof(SharedFlySystem))]
-    [ViewVariables(VVAccess.ReadWrite)]
-    [DataField("sprite")]
-    public string? RsiPath;
 
 
     [ViewVariables(VVAccess.ReadWrite), DataField("sound"), AutoNetworkedField]

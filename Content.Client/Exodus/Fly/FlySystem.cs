@@ -22,16 +22,46 @@ public sealed class FlySystem : SharedFlySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeNetworkEvent<FlyAnimationMessage>(OnFlyMessage);
+
+        SubscribeNetworkEvent<TakeoffAnimationMessage>(OnTakeoffAnimationMessage);
+        SubscribeNetworkEvent<LandAnimationMessage>(OnLandAnimationMessage);
+
+        SubscribeNetworkEvent<TakeoffMessage>(OnTakeoffMessage);
+        SubscribeNetworkEvent<LandMessage>(OnLandMessage);
     }
 
-    private void OnFlyMessage(FlyAnimationMessage ev)
+    private void OnTakeoffAnimationMessage(TakeoffAnimationMessage ev)
     {
         var entity = GetEntity(ev.Entity);
+
+        if (!TryComp<FlyComponent>(entity, out var flyComp))
+            return;
+
+        var effectEnt = SpawnEffect(entity, flyComp.TakeoffTime);
+        _player.Play(); // TODO
+    }
+
+    private void OnLandAnimationMessage(LandAnimationMessage ev)
+    {
+        var entity = GetEntity(ev.Entity);
+
+        if (!TryComp<FlyComponent>(entity, out var flyComp))
+            return;
+
+        var effectEnt = SpawnEffect(entity, flyComp.LandTime);
+        _player.Play(); // TODO
+    }
+
+
+
+    private EntityUid SpawnEffect(EntityUid entity, float Lifetime)
+    {
         var xform = Transform(entity);
 
-        if (Deleted(entity) || !TryComp<SpriteComponent>(entity, out var entSprite))
-            return;
+        if (Deleted(entity) ||
+            !TryComp<SpriteComponent>(entity, out var entSprite) ||
+            !TryComp<FlyComponent>(entity, out var flyComp))
+            return EntityUid.Invalid;
 
         var animationEnt = Spawn(null, xform.Coordinates);
         var animationSprite = AddComp<SpriteComponent>(animationEnt);
@@ -47,8 +77,9 @@ public sealed class FlySystem : SharedFlySystem
         animationSprite.NoRotation = true;
 
         var animationDespawn = AddComp<TimedDespawnComponent>(animationEnt);
-        animationDespawn.Lifetime;
+        animationDespawn.Lifetime = Lifetime;
 
+        return animationEnt;
     }
 
 }

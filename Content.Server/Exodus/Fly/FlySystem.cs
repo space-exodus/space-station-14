@@ -17,45 +17,86 @@ public sealed class FlySystem : SharedFlySystem
 
     [Dependency] private readonly PhysicsSystem _physics = default!;
 
-    public void TryTakeoff(EntityUid uid, bool force = false, FlyComponent? component = null)
+    public override void Initialize()
+    {
+        base.Initialize();
+    }
+
+    public override void Update(float frameTime)
+    {
+        var query = EntityQueryEnumerator<FlyComponent>();
+        while (query.MoveNext(out var uid, out var flyComp))
+        {
+            if (flyComp.DoAnimation &&
+                flyComp.AnimationTimeEnd >= Timing.CurTime)
+            {
+                if (flyComp.IsInAir)
+                {
+                    _physics.SetCanCollide(uid, false);
+
+                    RaiseNetworkEvent(new LandMessage()
+                    {
+                        Entity = GetNetEntity(uid)
+                    });
+                }
+                else
+                {
+                    _physics.SetCanCollide(uid, false);
+
+                    RaiseNetworkEvent(new TakeoffMessage()
+                    {
+                        Entity = GetNetEntity(uid)
+                    });
+                }
+
+                flyComp.IsInAir = !flyComp.IsInAir;
+                flyComp.DoAnimation = false;
+            }
+
+        }
+    }
+
+    public void TryTakeoff(EntityUid uid, FlyComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
 
-        if (CanTakeoff(uid) || force)
+        if (CanTakeoff(uid))
             TakeOff(uid, component);
     }
 
-    public void TryLand(EntityUid uid, bool force = false, FlyComponent? component = null)
+    public void TryLand(EntityUid uid, FlyComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
 
-        if (CanLand(uid) || force)
+        if (CanLand(uid))
             Land(uid, component);
     }
 
     private void TakeOff(EntityUid uid, FlyComponent component)
     {
-        _physics.SetCanCollide(uid, false);
         Audio.PlayPvs(component.SoundTakeoff, uid);
 
-        RaiseNetworkEvent(new FlyAnimationMessage()
+        component.DoAnimation = true;
+        component.AnimationTimeEnd = Timing.CurTime + TimeSpan.FromSeconds(component.TakeoffTime);
+
+        RaiseNetworkEvent(new TakeoffAnimationMessage()
         {
-            Entity = GetNetEntity(uid),
-            ToAir = true
+            Entity = GetNetEntity(uid)
         });
     }
 
     private void Land(EntityUid uid, FlyComponent component)
     {
-        _physics.SetCanCollide(uid, false);
         Audio.PlayPvs(component.SoundLanding, uid);
 
-        RaiseNetworkEvent(new FlyAnimationMessage()
+        component.DoAnimation = true;
+        component.AnimationTimeEnd = Timing.CurTime + TimeSpan.FromSeconds(component.LandTime);
+
+        RaiseNetworkEvent(new LandAnimationMessage()
         {
-            Entity = GetNetEntity(uid),
-            ToAir = false
+            Entity = GetNetEntity(uid)
         });
     }
 

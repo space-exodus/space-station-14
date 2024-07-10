@@ -22,6 +22,7 @@ namespace Content.Shared.Exodus.Fly;
 /// </summary>
 public abstract partial class SharedFlySystem : EntitySystem
 {
+    [Dependency] protected readonly IGameTiming Timing = default!;
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
     [Dependency] protected readonly SharedContainerSystem Container = default!;
@@ -38,7 +39,8 @@ public abstract partial class SharedFlySystem : EntitySystem
         if (!Resolve(uid, ref comp))
             return false;
 
-        if (Container.IsEntityInContainer(uid))
+        if (Container.IsEntityInContainer(uid) ||
+            comp.DoAnimation)
             return false;
 
         var xform = Transform(uid);
@@ -51,7 +53,8 @@ public abstract partial class SharedFlySystem : EntitySystem
 
     protected bool CanLand(EntityUid uid, FlyComponent? comp = null)
     {
-        if (!Resolve(uid, ref comp))
+        if (!Resolve(uid, ref comp) ||
+            comp.DoAnimation)
             return false;
 
         return true;
@@ -59,10 +62,26 @@ public abstract partial class SharedFlySystem : EntitySystem
 
 
     [Serializable, NetSerializable]
-    protected sealed class FlyAnimationMessage : EntityEventArgs
+    protected sealed class LandAnimationMessage : EntityEventArgs
     {
         public NetEntity Entity;
-        public bool ToAir;
     }
 
+    [Serializable, NetSerializable]
+    protected sealed class TakeoffAnimationMessage : EntityEventArgs
+    {
+        public NetEntity Entity;
+    }
+
+    [Serializable, NetSerializable]
+    protected sealed class LandMessage : EntityEventArgs
+    {
+        public NetEntity Entity;
+    }
+
+    [Serializable, NetSerializable]
+    protected sealed class TakeoffMessage : EntityEventArgs
+    {
+        public NetEntity Entity;
+    }
 }
