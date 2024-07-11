@@ -12,12 +12,20 @@ using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
 using Content.Shared.Exodus.Fly;
 using TerraFX.Interop.Xlib;
 
+using Content.Client.Movement.Systems;
+using Content.Shared.Actions;
+using Content.Shared.Ghost;
+using Robust.Client.Console;
+using Robust.Client.Player;
+using Robust.Shared.Player;
+
 namespace Content.Client.Exodus.Fly;
 
 public sealed class FlySystem : SharedFlySystem
 {
     [Dependency] private readonly ISerializationManager _serManager = default!;
     [Dependency] private readonly AnimationPlayerSystem _player = default!;
+    [Dependency] private readonly ContentEyeSystem _contentEye = default!;
 
     public override void Initialize()
     {
@@ -30,14 +38,24 @@ public sealed class FlySystem : SharedFlySystem
         SubscribeNetworkEvent<LandMessage>(OnLandMessage);
     }
 
+
     private void OnTakeoffAnimationMessage(TakeoffAnimationMessage ev)
     {
         var entity = GetEntity(ev.Entity);
 
-        if (!TryComp<FlyComponent>(entity, out var flyComp))
+        if (Deleted(entity) ||
+            !TryComp<SpriteComponent>(entity, out var entSprite) ||
+            !TryComp<FlyComponent>(entity, out var flyComp))
             return;
 
+
         var effectEnt = SpawnEffect(entity, flyComp.TakeoffTime);
+
+        if (effectEnt == EntityUid.Invalid)
+            return;
+
+        var flyLayer = entSprite.LayerMapGet(Flying.InAir);
+
         _player.Play(); // TODO
     }
 
@@ -47,14 +65,38 @@ public sealed class FlySystem : SharedFlySystem
 
         if (!TryComp<FlyComponent>(entity, out var flyComp))
             return;
-
         var effectEnt = SpawnEffect(entity, flyComp.LandTime);
+        if (effectEnt == EntityUid.Invalid)
+            return;
+
+        if (TryComp<EyeComponent>(entity, out var eyeComp) && eyeComp.DrawFov)
+            _contentEye.RequestToggleFov();
+
         _player.Play(); // TODO
     }
 
+    private void OnTakeoffMessage(TakeoffMessage ev)
+    {
+        var entity = GetEntity(ev.Entity);
 
+        if (TryComp<EyeComponent>(entity, out var eyeComp) && eyeComp.DrawFov)
+            _contentEye.RequestToggleFov();
 
-    private EntityUid SpawnEffect(EntityUid entity, float Lifetime)
+    }
+
+    private void OnLandMessage(LandMessage ev)
+    {
+        var entity = GetEntity(ev.Entity);
+
+        if (Deleted(entity) ||
+            !TryComp<SpriteComponent>(entity, out var entSprite) ||
+            !TryComp<FlyComponent>(entity, out var flyComp))
+            return;
+
+        entSprite.Visible = true;
+    }
+
+    private EntityUid SpawnEffect(EntityUid entity, float lifetime)
     {
         var xform = Transform(entity);
 
@@ -77,9 +119,14 @@ public sealed class FlySystem : SharedFlySystem
         animationSprite.NoRotation = true;
 
         var animationDespawn = AddComp<TimedDespawnComponent>(animationEnt);
-        animationDespawn.Lifetime = Lifetime;
+        animationDespawn.Lifetime = lifetime;
 
         return animationEnt;
+    }
+
+    private enum Flying
+    {
+        InAir,
     }
 
 }

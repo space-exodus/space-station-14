@@ -5,6 +5,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
 using Robust.Shared.Random;
+using Robust.Shared.Physics.System;
 using Robust.Server.GameObjects;
 
 namespace Content.Server.Exodus.Fly;
@@ -15,7 +16,7 @@ namespace Content.Server.Exodus.Fly;
 public sealed class FlySystem : SharedFlySystem
 {
 
-    [Dependency] private readonly PhysicsSystem _physics = default!;
+    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
 
     public override void Initialize()
     {
@@ -32,7 +33,7 @@ public sealed class FlySystem : SharedFlySystem
             {
                 if (flyComp.IsInAir)
                 {
-                    _physics.SetCanCollide(uid, false);
+                    _physics.SetCanCollide(uid, true);
 
                     RaiseNetworkEvent(new LandMessage()
                     {
