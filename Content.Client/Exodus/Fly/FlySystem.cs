@@ -12,6 +12,7 @@ using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
 using Content.Shared.Exodus.Fly;
 using TerraFX.Interop.Xlib;
 using Content.Client.Movement.Systems;
+using Robust.Shared.Physics.Components;
 
 
 namespace Content.Client.Exodus.Fly;
