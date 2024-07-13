@@ -88,6 +88,7 @@ public sealed class FlySystem : SharedFlySystem
         var effectEnt = SpawnFlyEffect(entity, flyComp.LandTime);
         if (effectEnt == EntityUid.Invalid)
             return;
+        _transform.SetParent(effectEnt, entity);
         var animation = new Animation()
         {
             Length = TimeSpan.FromSeconds(flyComp.LandTime),

@@ -77,6 +77,8 @@ public sealed class FlySystem : SharedFlySystem
                     {
                         Entity = GetNetEntity(uid)
                     });
+
+                    flyComp.IsInAir = false;
                 }
                 else
                 {
@@ -85,9 +87,10 @@ public sealed class FlySystem : SharedFlySystem
                     {
                         Entity = GetNetEntity(uid)
                     });
+
+                    flyComp.IsInAir = true;
                 }
 
-                flyComp.IsInAir = !flyComp.IsInAir;
                 flyComp.DoAnimation = false;
             }
 
