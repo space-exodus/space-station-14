@@ -11,13 +11,8 @@ using Robust.Shared.Utility;
 using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
 using Content.Shared.Exodus.Fly;
 using TerraFX.Interop.Xlib;
-
 using Content.Client.Movement.Systems;
-using Content.Shared.Actions;
-using Content.Shared.Ghost;
-using Robust.Client.Console;
-using Robust.Client.Player;
-using Robust.Shared.Player;
+
 
 namespace Content.Client.Exodus.Fly;
 
@@ -26,6 +21,8 @@ public sealed class FlySystem : SharedFlySystem
     [Dependency] private readonly ISerializationManager _serManager = default!;
     [Dependency] private readonly AnimationPlayerSystem _player = default!;
     [Dependency] private readonly ContentEyeSystem _contentEye = default!;
+    [Dependency] private readonly TransformSystem _transform = default!;
+
 
     public override void Initialize()
     {
@@ -48,15 +45,36 @@ public sealed class FlySystem : SharedFlySystem
             !TryComp<FlyComponent>(entity, out var flyComp))
             return;
 
+        // Create effect ent that would be shown on flying ent coordinates
+        var groundEffect = SpawnGroundEffect(entity);
+        flyComp.Effect = groundEffect;
+        _transform.SetParent(groundEffect, entity);
 
-        var effectEnt = SpawnEffect(entity, flyComp.TakeoffTime);
-
+        // Create takeoff animation ent
+        var effectEnt = SpawnFlyEffect(entity, flyComp.TakeoffTime);
         if (effectEnt == EntityUid.Invalid)
             return;
+        var animation = new Animation()
+        {
+            Length = TimeSpan.FromSeconds(flyComp.TakeoffTime),
+            AnimationTracks =
+            {
+                new AnimationTrackComponentProperty()
+                {
+                    ComponentType = typeof(SpriteComponent),
+                    Property = nameof(SpriteComponent.Offset),
+                    KeyFrames =
+                    {
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, 0f),
+                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Cos(flyComp.TakeoffAngle) * 20f,
+                                                                        (float) Math.Sin(flyComp.TakeoffAngle) * 20f), flyComp.TakeoffTime)
+                    }
+                }
+            }
+        };
+        _player.Play(effectEnt, animation, "takeoff-animation");
 
-        var flyLayer = entSprite.LayerMapGet(Flying.InAir);
-
-        _player.Play(); // TODO
+        entSprite.Visible = false;
     }
 
     private void OnLandAnimationMessage(LandAnimationMessage ev)
@@ -65,23 +83,43 @@ public sealed class FlySystem : SharedFlySystem
 
         if (!TryComp<FlyComponent>(entity, out var flyComp))
             return;
-        var effectEnt = SpawnEffect(entity, flyComp.LandTime);
+
+        // Create landig animation ent
+        var effectEnt = SpawnFlyEffect(entity, flyComp.LandTime);
         if (effectEnt == EntityUid.Invalid)
             return;
+        var animation = new Animation()
+        {
+            Length = TimeSpan.FromSeconds(flyComp.LandTime),
+            AnimationTracks =
+            {
+                new AnimationTrackComponentProperty()
+                {
+                    ComponentType = typeof(SpriteComponent),
+                    Property = nameof(SpriteComponent.Offset),
+                    KeyFrames =
+                    {
+                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Cos(flyComp.LandAngle) * 20f,
+                                                                        (float) Math.Sin(flyComp.LandTime) * 20f), 0f),
+                        new AnimationTrackProperty.KeyFrame(Vector2.Zero, flyComp.LandTime)
+                    }
+                }
+            }
+        };
+        _player.Play(effectEnt, animation, "land-animation");
 
+        // Turn off FOV
         if (TryComp<EyeComponent>(entity, out var eyeComp) && eyeComp.DrawFov)
             _contentEye.RequestToggleFov();
-
-        _player.Play(); // TODO
     }
 
     private void OnTakeoffMessage(TakeoffMessage ev)
     {
         var entity = GetEntity(ev.Entity);
 
+        // Turn on FOV
         if (TryComp<EyeComponent>(entity, out var eyeComp) && eyeComp.DrawFov)
             _contentEye.RequestToggleFov();
-
     }
 
     private void OnLandMessage(LandMessage ev)
@@ -93,10 +131,14 @@ public sealed class FlySystem : SharedFlySystem
             !TryComp<FlyComponent>(entity, out var flyComp))
             return;
 
+        // Delete ground effect
+        if (!Deleted(flyComp.Effect))
+            QueueDel(flyComp.Effect);
+
         entSprite.Visible = true;
     }
 
-    private EntityUid SpawnEffect(EntityUid entity, float lifetime)
+    private EntityUid SpawnFlyEffect(EntityUid entity, float lifetime)
     {
         var xform = Transform(entity);
 
@@ -108,7 +150,9 @@ public sealed class FlySystem : SharedFlySystem
         var animationEnt = Spawn(null, xform.Coordinates);
         var animationSprite = AddComp<SpriteComponent>(animationEnt);
 
+        entSprite.Visible = true;
         _serManager.CopyTo(entSprite, ref animationSprite, notNullableOverride: true);
+        entSprite.Visible = false;
 
         if (TryComp<AppearanceComponent>(entity, out var entAppearance))
         {
@@ -124,9 +168,20 @@ public sealed class FlySystem : SharedFlySystem
         return animationEnt;
     }
 
-    private enum Flying
+    private EntityUid SpawnGroundEffect(EntityUid entity)
     {
-        InAir,
-    }
+        var xform = Transform(entity);
 
+        if (Deleted(entity) ||
+            !TryComp<FlyComponent>(entity, out var flyComp))
+            return EntityUid.Invalid;
+
+        var animationEnt = Spawn(null, xform.Coordinates);
+        var animationSprite = AddComp<SpriteComponent>(animationEnt);
+
+        if (flyComp.GroundEffectRsi != null)
+            animationSprite.AddLayer(new SpriteSpecifier.Rsi(flyComp.GroundEffectRsi.Value, "in-air"));
+
+        return animationEnt;
+    }
 }

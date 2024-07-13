@@ -1,12 +1,8 @@
-using System.Numerics;
+using Content.Server.Administration;
+using Content.Shared.Administration;
 using Content.Shared.Exodus.Fly;
-using Content.Shared.Salvage.Fulton;
-using Robust.Shared.Containers;
-using Robust.Shared.Map;
-using Robust.Shared.Serialization;
-using Robust.Shared.Random;
-using Robust.Shared.Physics.System;
-using Robust.Server.GameObjects;
+using Robust.Shared.Console;
+using Robust.Shared.Physics.Systems;
 
 namespace Content.Server.Exodus.Fly;
 
@@ -17,11 +13,53 @@ public sealed class FlySystem : SharedFlySystem
 {
 
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
+    [Dependency] private readonly IConsoleHost _console = default!;
 
     public override void Initialize()
     {
         base.Initialize();
+
+        _console.RegisterCommand("landentity", LandEntityCommand);
+        _console.RegisterCommand("takeoffentity", TakeoffEntityCommand);
     }
+
+
+    [AdminCommand(AdminFlags.Fun)]
+    private void LandEntityCommand(IConsoleShell shell, string argstr, string[] args)
+    {
+        if (args.Length != 1)
+        {
+            shell.WriteError(Loc.GetString("cmd-landentity-invalid"));
+            return;
+        }
+
+        if (!NetEntity.TryParse(args[0], out var uidNet) || !TryGetEntity(uidNet, out var uid))
+        {
+            shell.WriteLine($"No entity found with netUid {uidNet}");
+            return;
+        }
+
+        TryLand(uid.Value);
+    }
+
+    [AdminCommand(AdminFlags.Fun)]
+    private void TakeoffEntityCommand(IConsoleShell shell, string argstr, string[] args)
+    {
+        if (args.Length != 1)
+        {
+            shell.WriteError(Loc.GetString("cmd-takeoffentity-invalid"));
+            return;
+        }
+
+        if (!NetEntity.TryParse(args[0], out var uidNet) || !TryGetEntity(uidNet, out var uid))
+        {
+            shell.WriteLine($"No entity found with netUid {uidNet}");
+            return;
+        }
+
+        TryTakeoff(uid.Value);
+    }
+
 
     public override void Update(float frameTime)
     {
@@ -42,7 +80,6 @@ public sealed class FlySystem : SharedFlySystem
                 }
                 else
                 {
-                    _physics.SetCanCollide(uid, false);
 
                     RaiseNetworkEvent(new TakeoffMessage()
                     {
@@ -79,6 +116,8 @@ public sealed class FlySystem : SharedFlySystem
     {
         Audio.PlayPvs(component.SoundTakeoff, uid);
 
+        _physics.SetCanCollide(uid, false);
+
         component.DoAnimation = true;
         component.AnimationTimeEnd = Timing.CurTime + TimeSpan.FromSeconds(component.TakeoffTime);
 
@@ -90,7 +129,7 @@ public sealed class FlySystem : SharedFlySystem
 
     private void Land(EntityUid uid, FlyComponent component)
     {
-        Audio.PlayPvs(component.SoundLanding, uid);
+        Audio.PlayPvs(component.SoundLand, uid);
 
         component.DoAnimation = true;
         component.AnimationTimeEnd = Timing.CurTime + TimeSpan.FromSeconds(component.LandTime);

@@ -2,16 +2,24 @@ using Content.Shared.Fluids.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Exodus.Fly;
 
 /// <summary>
 /// Marks an entity as able to flying
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]
+[RegisterComponent, NetworkedComponent]
 public sealed partial class FlyComponent : Component
 {
-    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    /// <summary>
+    /// Effect entity to delete upon removing the component. Only matters clientside.
+    /// </summary>
+    [ViewVariables]
+    public EntityUid Effect = EntityUid.Invalid;
+
+
+    [ViewVariables(VVAccess.ReadWrite), DataField]
     public bool DoAnimation = false;
 
     [ViewVariables(VVAccess.ReadWrite)]
@@ -19,7 +27,7 @@ public sealed partial class FlyComponent : Component
 
 
     [ViewVariables(VVAccess.ReadWrite), DataField]
-    public float LandAngle = (float) Math.PI / 6;
+    public float LandAngle = (float) - Math.PI / 6;
 
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public float TakeoffAngle = (float) Math.PI / 6;
@@ -35,11 +43,13 @@ public sealed partial class FlyComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("inAir")]
     public bool IsInAir = false;
 
+    [DataField("groundEffectRsi")]
+    public ResPath? GroundEffectRsi = null;
 
 
-    [ViewVariables(VVAccess.ReadWrite), DataField("sound"), AutoNetworkedField]
+    [ViewVariables(VVAccess.ReadWrite), DataField("soundTakeoff")]
     public SoundSpecifier? SoundTakeoff = new SoundPathSpecifier("/Audio/Items/Mining/fultext_launch.ogg");
 
-    [ViewVariables(VVAccess.ReadWrite), DataField("sound"), AutoNetworkedField]
-    public SoundSpecifier? SoundLanding = new SoundPathSpecifier("/Audio/Items/Mining/fultext_launch.ogg");
+    [ViewVariables(VVAccess.ReadWrite), DataField("soundLand")]
+    public SoundSpecifier? SoundLand = new SoundPathSpecifier("/Audio/Items/Mining/fultext_launch.ogg");
 }
