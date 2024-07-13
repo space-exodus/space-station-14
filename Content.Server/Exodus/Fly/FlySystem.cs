@@ -67,7 +67,7 @@ public sealed class FlySystem : SharedFlySystem
         while (query.MoveNext(out var uid, out var flyComp))
         {
             if (flyComp.DoAnimation &&
-                flyComp.AnimationTimeEnd >= Timing.CurTime)
+                flyComp.AnimationTimeEnd <= Timing.CurTime)
             {
                 if (flyComp.IsInAir)
                 {

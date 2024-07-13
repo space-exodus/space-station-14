@@ -40,7 +40,8 @@ public abstract partial class SharedFlySystem : EntitySystem
             return false;
 
         if (Container.IsEntityInContainer(uid) ||
-            comp.DoAnimation)
+            comp.DoAnimation ||
+            comp.IsInAir)
             return false;
 
         var xform = Transform(uid);
@@ -54,7 +55,8 @@ public abstract partial class SharedFlySystem : EntitySystem
     protected bool CanLand(EntityUid uid, FlyComponent? comp = null)
     {
         if (!Resolve(uid, ref comp) ||
-            comp.DoAnimation)
+            comp.DoAnimation ||
+            !comp.IsInAir)
             return false;
 
         return true;

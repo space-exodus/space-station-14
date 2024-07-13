@@ -54,7 +54,7 @@ public sealed class FlySystem : SharedFlySystem
         var effectEnt = SpawnFlyEffect(entity, flyComp.TakeoffTime);
         if (effectEnt == EntityUid.Invalid)
             return;
-        var animation = new Animation()
+        var takeoffAnim = new Animation()
         {
             Length = TimeSpan.FromSeconds(flyComp.TakeoffTime),
             AnimationTracks =
@@ -66,13 +66,13 @@ public sealed class FlySystem : SharedFlySystem
                     KeyFrames =
                     {
                         new AnimationTrackProperty.KeyFrame(Vector2.Zero, 0f),
-                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Cos(flyComp.TakeoffAngle) * 20f,
-                                                                        (float) Math.Sin(flyComp.TakeoffAngle) * 20f), flyComp.TakeoffTime)
+                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Sin(flyComp.TakeoffAngle) * 20f,
+                                                                        (float) Math.Cos(flyComp.TakeoffAngle) * 20f), flyComp.TakeoffTime)
                     }
                 }
             }
         };
-        _player.Play(effectEnt, animation, "takeoff-animation");
+        _player.Play(effectEnt, takeoffAnim, "takeoff-animation");
 
         entSprite.Visible = false;
     }
@@ -89,7 +89,7 @@ public sealed class FlySystem : SharedFlySystem
         if (effectEnt == EntityUid.Invalid)
             return;
         _transform.SetParent(effectEnt, entity);
-        var animation = new Animation()
+        var landAnim = new Animation()
         {
             Length = TimeSpan.FromSeconds(flyComp.LandTime),
             AnimationTracks =
@@ -100,14 +100,14 @@ public sealed class FlySystem : SharedFlySystem
                     Property = nameof(SpriteComponent.Offset),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Cos(flyComp.LandAngle) * 20f,
-                                                                        (float) Math.Sin(flyComp.LandTime) * 20f), 0f),
+                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Sin(flyComp.LandAngle) * 20f,
+                                                                        (float) Math.Cos(flyComp.LandTime) * 20f), 0f),
                         new AnimationTrackProperty.KeyFrame(Vector2.Zero, flyComp.LandTime)
                     }
                 }
             }
         };
-        _player.Play(effectEnt, animation, "land-animation");
+        _player.Play(effectEnt, landAnim, "land-animation");
 
         // Turn off FOV
         if (TryComp<EyeComponent>(entity, out var eyeComp) && eyeComp.DrawFov)
@@ -151,9 +151,8 @@ public sealed class FlySystem : SharedFlySystem
         var animationEnt = Spawn(null, xform.Coordinates);
         var animationSprite = AddComp<SpriteComponent>(animationEnt);
 
-        entSprite.Visible = true;
         _serManager.CopyTo(entSprite, ref animationSprite, notNullableOverride: true);
-        entSprite.Visible = false;
+        animationSprite.Visible = true;
 
         if (TryComp<AppearanceComponent>(entity, out var entAppearance))
         {
