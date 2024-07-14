@@ -910,11 +910,10 @@ namespace Content.Server.Database
         Whitelist = 1,
         Full = 2,
         Panic = 3,
-        NotVerified = 4, // Exodus-Discord
+        NotVerified = 4 // Exodus-Discord
         /*
          * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
          */
-        BabyJail = 5,
     }
 
     public class ServerBanHit

@@ -4,7 +4,9 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
+  - Survival
   - Trinkets
+  - GroupSpeciesBreathTool
 
 - type: roleLoadout
   id: JobPilot
@@ -14,4 +16,6 @@
   - SecurityOuterClothing
   - SecurityBelt
   - SecurityShoes
+  - Survival
   - Trinkets
+  - GroupSpeciesBreathTool

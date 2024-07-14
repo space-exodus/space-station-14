@@ -61,7 +61,11 @@ namespace Content.Shared.Standing
         }
         // Exodus-Crawling-End
 
-        public bool Down(EntityUid uid, bool playSound = true, bool dropHeldItems = true, bool canStandUp = true, // Exodus-Crawling
+        public bool Down(EntityUid uid,
+            bool playSound = true,
+            bool dropHeldItems = true,
+            bool force = false,
+            bool canStandUp = true, // Exodus-Crawling
             StandingStateComponent? standingState = null,
             AppearanceComponent? appearance = null,
             HandsComponent? hands = null)
@@ -84,16 +88,19 @@ namespace Content.Shared.Standing
                 RaiseLocalEvent(uid, new DropHandItemsEvent(), false);
             }
 
-            // Exodus-Crawling-Start
-            if (!standingState.Standing)
-                return true;
-            // Exodus-Crawling-End
+            if (!force)
+            {
+                // Exodus-Crawling-Start
+                if (!standingState.Standing)
+                    return true;
+                // Exodus-Crawling-End
 
-            var msg = new DownAttemptEvent();
-            RaiseLocalEvent(uid, msg, false);
+                var msg = new DownAttemptEvent();
+                RaiseLocalEvent(uid, msg, false);
 
-            if (msg.Cancelled)
-                return false;
+                if (msg.Cancelled)
+                    return false;
+            }
 
             standingState.Standing = false;
             // Exodus-Crawling-Start

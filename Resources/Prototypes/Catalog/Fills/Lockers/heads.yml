@@ -293,6 +293,7 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocumentsExodus #Exodus
       - id: BookBusido # Corvax-Books
+      - id: BookSpaceLaw
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -318,7 +319,8 @@
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
-      - id: BookSecretDocumentsExodus #Exodus
+      - id: BookSecretDocumentsExodus # Exodus-NukeSecretDocuments
+      - id: BookSpaceLaw
 
 - type: entity
   id: LockerFreezerVaultFilled
