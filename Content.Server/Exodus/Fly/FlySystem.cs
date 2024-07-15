@@ -11,8 +11,6 @@ namespace Content.Server.Exodus.Fly;
 /// </summary>
 public sealed class FlySystem : SharedFlySystem
 {
-
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly IConsoleHost _console = default!;
 
     public override void Initialize()
@@ -71,8 +69,6 @@ public sealed class FlySystem : SharedFlySystem
             {
                 if (flyComp.IsInAir)
                 {
-                    _physics.SetCanCollide(uid, true);
-
                     RaiseNetworkEvent(new LandMessage()
                     {
                         Entity = GetNetEntity(uid)
@@ -82,6 +78,7 @@ public sealed class FlySystem : SharedFlySystem
                 }
                 else
                 {
+                    SetCollidable(uid, false);
 
                     RaiseNetworkEvent(new TakeoffMessage()
                     {
@@ -119,8 +116,6 @@ public sealed class FlySystem : SharedFlySystem
     {
         Audio.PlayPvs(component.SoundTakeoff, uid);
 
-        _physics.SetCanCollide(uid, false);
-
         component.DoAnimation = true;
         component.AnimationTimeEnd = Timing.CurTime + TimeSpan.FromSeconds(component.TakeoffTime);
 
@@ -136,6 +131,8 @@ public sealed class FlySystem : SharedFlySystem
 
         component.DoAnimation = true;
         component.AnimationTimeEnd = Timing.CurTime + TimeSpan.FromSeconds(component.LandTime);
+
+        SetCollidable(uid, true);
 
         RaiseNetworkEvent(new LandAnimationMessage()
         {

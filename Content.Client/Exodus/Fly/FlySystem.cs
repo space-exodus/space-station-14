@@ -67,8 +67,8 @@ public sealed class FlySystem : SharedFlySystem
                     KeyFrames =
                     {
                         new AnimationTrackProperty.KeyFrame(Vector2.Zero, 0f),
-                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Sin(flyComp.TakeoffAngle) * 20f,
-                                                                        (float) Math.Cos(flyComp.TakeoffAngle) * 20f), flyComp.TakeoffTime)
+                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Sin(flyComp.TakeoffAngle) * 5f,
+                                                                        (float) Math.Cos(flyComp.TakeoffAngle) * 5f), flyComp.TakeoffTime)
                     }
                 }
             }
@@ -101,8 +101,8 @@ public sealed class FlySystem : SharedFlySystem
                     Property = nameof(SpriteComponent.Offset),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Sin(flyComp.LandAngle) * 20f,
-                                                                        (float) Math.Cos(flyComp.LandTime) * 20f), 0f),
+                        new AnimationTrackProperty.KeyFrame(new Vector2((float) Math.Sin(flyComp.LandAngle) * 5f,
+                                                                        (float) Math.Cos(flyComp.LandTime) * 5f), 0f),
                         new AnimationTrackProperty.KeyFrame(Vector2.Zero, flyComp.LandTime)
                     }
                 }

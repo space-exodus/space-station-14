@@ -11,7 +11,8 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
-using Robust.Shared.Prototypes;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Physics.Components;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 
@@ -26,6 +27,7 @@ public abstract partial class SharedFlySystem : EntitySystem
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
     [Dependency] protected readonly SharedContainerSystem Container = default!;
+    [Dependency] protected readonly SharedPhysicsSystem Physics = default!;
 
     public override void Initialize()
     {
@@ -60,6 +62,12 @@ public abstract partial class SharedFlySystem : EntitySystem
             return false;
 
         return true;
+    }
+
+    protected void SetCollidable(EntityUid uid, bool collidable)
+    {
+        var phys = EnsureComp<PhysicsComponent>(uid);
+        Physics.SetCanCollide(uid, collidable, body: phys);
     }
 
 
