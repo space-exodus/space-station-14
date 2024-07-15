@@ -70,11 +70,13 @@ namespace Content.Server.Engineering.EntitySystems
 
             EntityManager.DeleteEntity(uid);
 
+            // Exodus-FoldedPoster-Start
             var ev = new DisassembleEntityEvent(metaDataComp.EntityPrototype.ID, entity);
             RaiseLocalEvent(entity, ev);
             // Exodus-FoldedPoster-End
         }
     }
+
     // Exodus-FoldedPoster-Start
     public sealed class DisassembleEntityEvent : EntityEventArgs
     {

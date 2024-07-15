@@ -9,7 +9,7 @@ namespace Content.Server.Engineering.Components
     {
         [ViewVariables(VVAccess.ReadWrite)]  // Exodus-FoldedPoster
         [DataField("prototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-        public string? Prototype { get; set; }
+        public string? Prototype { get; set; } // Exodus-FoldedPoster - some systems, like WallPosterSystem, overwrite that
 
         [ViewVariables(VVAccess.ReadWrite)]  // Exodus-FoldedPoster
         [DataField("ignoreDistance")]
