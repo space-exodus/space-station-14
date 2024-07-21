@@ -1,8 +1,8 @@
 - type: seed
   id: lilie
-  name: лилии
+  name: seeds-lilie-name
   noun: seeds-noun-seeds
-  displayName: лилии
+  displayName: seeds-lilie-display-name
   plantRsi: Exodus/Objects/Specific/Hydroponics/lilie.rsi
   packetPrototype: LilieSeeds
   productPrototypes:
@@ -26,9 +26,9 @@
 
 - type: seed
   id: sunflower
-  name: подсолнух
+  name: seeds-sunflower-name
   noun: seeds-noun-seeds
-  displayName: подсолнух
+  displayName: seeds-sunflower-display-name
   plantRsi: Exodus/Objects/Specific/Hydroponics/sunflower.rsi
   packetPrototype: SunflowerSeeds
   productPrototypes:
@@ -52,9 +52,9 @@
 
 - type: seed
   id: rose
-  name: розы
+  name: seeds-rose-name
   noun: seeds-noun-seeds
-  displayName: розы
+  displayName: seeds-rose-display-name
   plantRsi: Exodus/Objects/Specific/Hydroponics/rose.rsi
   packetPrototype: RoseSeeds
   productPrototypes:
@@ -78,9 +78,9 @@
 
 - type: seed
   id: fieldflower
-  name: полевые цветы
+  name: seeds-fieldflower-name
   noun: seeds-noun-seeds
-  displayName: полевые цветы
+  displayName: seeds-fieldflower-display-name
   plantRsi: Exodus/Objects/Specific/Hydroponics/fieldflower.rsi
   packetPrototype: FieldFlowersSeeds
   productPrototypes:
