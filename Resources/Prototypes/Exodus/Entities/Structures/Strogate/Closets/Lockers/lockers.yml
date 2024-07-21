@@ -1,13 +1,13 @@
 
 - type: entity
-  id: LockerScientistSuit
-  parent: LockerBase
+  id: LockerScientistResprite
+  parent: LockerScientist
   name: Scientist closet
   suffix: Resprite
   components:
   - type: Appearance
   - type: Sprite
-    sprite: /Uploaded/Exodus/Structures/Storage/closet.rsi
+    sprite: Exodus/Structures/Storage/closet.rsi
     noRot: true
     layers:
     - state: science_suit
@@ -26,11 +26,10 @@
     stateDoorClosed: science_suit_door
   - type: AccessReader
     access: [ [ "Research" ] ]
-
 - type: entity
   id: LockerScienceSuitFilledResprite
-  suffix: Filled, Resprite
-  parent: LockerScientistSuit
+  suffix: Filled, Hardsuit, Resprite
+  parent: LockerScientistResprite
   name: Scientist closet
   components:
   - type: StorageFill
@@ -47,7 +46,7 @@
 
 - type: entity
   id: LockerScienceSuitFilled
-  suffix: Filled
+  suffix: Filled, Hardsuit
   parent: LockerScientist
   name: Scientist closet
   components:
