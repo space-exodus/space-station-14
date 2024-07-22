@@ -10,6 +10,12 @@
 
 [Более подробная инструкция по сборке проекта.](https://docs.spacestation14.com/en/general-development/setup.html)
 
+## Устаревание
+
+- `Content.DiscordBot` является **устаревшим**. [Почему](https://github.com/Space-Exodus/space-station-14/discussions/30)
+
+К счастью, все остальные части проекта в данном репозитории являются актуальными и пригодны для комфортного использования!
+
 # Лицензия
 Данная сборка основана на сборке Corvax [(space-syndicate/space-station-14)](https://github.com/space-syndicate/space-station-14), а потому большая часть кода находится под лицензией [MIT](https://github.com/space-syndicate/space-station-14/blob/master/LICENSE.TXT). Однако, все модификации от проекта Space Exodus являются приватными и их копирование без согласия авторов данных модификаций **строго запрещено**. Отследить какие модификации были сделаны и какими авторами вы можете при помощи технических средств системы контроля версий [GIT](https://ru.wikipedia.org/wiki/Git). Если вы желаете использовать код из данного репозитория и не иметь каких-либо проблем с лицензиями, то вам рекомендуется использовать репозиторий [(space-syndicate/space-station-14)](https://github.com/space-syndicate/space-station-14) не содержащих приватных модификаций.
 
