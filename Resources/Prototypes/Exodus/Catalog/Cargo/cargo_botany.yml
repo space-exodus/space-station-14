@@ -1,7 +1,7 @@
 - type: cargoProduct
   id: HydroponicsSeedsFlowers
   icon:
-    sprite: Stories/Objects/Specific/Hydroponics/rose.rsi
+    sprite: Exodus/Objects/Specific/Hydroponics/rose.rsi
     state: harvest
   product: CrateHydroponicsSeedsFlower
   cost: 500
