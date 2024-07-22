@@ -71,7 +71,11 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
-  - type: Inventory # Exodus-FixLobbyCharacterPreview
+    hideLayersOnEquip:
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: Inventory
     speciesId: reptilian
 
 #Weh

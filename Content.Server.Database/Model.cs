@@ -913,7 +913,11 @@ namespace Content.Server.Database
         NotVerified = 4 // Exodus-Discord
         /*
          * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
+         * 
+         * If baby jail is removed, please reserve this value for as long as can reasonably be done to prevent causing ambiguity in connection denial reasons.
+         * Reservation by commenting out the value is likely sufficient for this purpose, but may impact projects which depend on SS14 like SS14.Admin.
          */
+        BabyJail = 5,
     }
 
     public class ServerBanHit
