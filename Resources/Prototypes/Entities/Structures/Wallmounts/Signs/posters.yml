@@ -3,6 +3,11 @@
   id: PosterBase
   abstract: true
   components:
+  # Exodus-FoldedPoster-Start
+  - type: DisassembleOnAltVerb
+    prototype: FoldedPoster
+    doAfter: 1
+  # Exodus-FoldedPoster-End
   - type: WallMount
     arc: 360
   - type: Sprite
@@ -590,7 +595,7 @@
   components:
     - type: Sprite
       state: poster62_contraband
-      
+
 - type: entity
   parent: PosterBase
   id: PosterContrabandMissingSpacepen

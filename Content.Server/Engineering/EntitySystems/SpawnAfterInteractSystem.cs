@@ -5,6 +5,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Maps;
 using Content.Shared.Stacks;
+using Content.Shared.Whitelist;  // Exodus-FoldedPoster
 using JetBrains.Annotations;
 using Robust.Shared.Map.Components;
 
@@ -15,6 +16,7 @@ namespace Content.Server.Engineering.EntitySystems
     {
         [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly StackSystem _stackSystem = default!;
+        [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;  // Exodus-FoldedPoster
 
         public override void Initialize()
         {
@@ -25,6 +27,10 @@ namespace Content.Server.Engineering.EntitySystems
 
         private async void HandleAfterInteract(EntityUid uid, SpawnAfterInteractComponent component, AfterInteractEvent args)
         {
+            // Exodus-FoldedPoster-Start
+            if (!_whitelistSystem.IsValid(component.Whitelist, uid))
+                return;
+            // Exodus-FoldedPoster-End
             if (!args.CanReach && !component.IgnoreDistance)
                 return;
             if (string.IsNullOrEmpty(component.Prototype))
@@ -39,7 +45,7 @@ namespace Content.Server.Engineering.EntitySystems
                 return tileRef.Tile.IsEmpty == false && !tileRef.IsBlockedTurf(true);
             }
 
-            if (!IsTileClear())
+            if (component.NeedClearTile && !IsTileClear())  // Exodus-FoldedPoster
                 return;
 
             if (component.DoAfterTime > 0)
@@ -54,7 +60,7 @@ namespace Content.Server.Engineering.EntitySystems
                     return;
             }
 
-            if (component.Deleted || !IsTileClear())
+            if (component.Deleted || (!IsTileClear() && component.NeedClearTile))  // Exodus-FoldedPoster
                 return;
 
             if (EntityManager.TryGetComponent(uid, out StackComponent? stackComp)
