@@ -10,7 +10,8 @@
 
 [Более подробная инструкция по сборке проекта.](https://docs.spacestation14.com/en/general-development/setup.html)
 
-Весь код репозитория контента находится под лицензией [MIT](LICENSE.TXT).
+# Лицензия
+Данная сборка основана на сборке Corvax [(space-syndicate/space-station-14)](https://github.com/space-syndicate/space-station-14), а потому большая часть кода находится под лицензией [MIT](https://github.com/space-syndicate/space-station-14/blob/master/LICENSE.TXT). Однако, все модификации от проекта Space Exodus являются приватными и их копирование без согласия авторов данных модификаций **строго запрещено**. Отследить какие модификации были сделаны и какими авторами вы можете при помощи технических средств системы контроля версий [GIT](https://ru.wikipedia.org/wiki/Git). Если вы желаете использовать код из данного репозитория и не иметь каких-либо проблем с лицензиями, то вам рекомендуется использовать репозиторий [(space-syndicate/space-station-14)](https://github.com/space-syndicate/space-station-14) не содержащих приватных модификаций.
 
 Большинство ресурсов (спрайты, аудио, переводы) находятся под лиценцзией [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) если не указано обратного. Ресурсы имеют лицензию и авторские права в файле метаданных. [Например](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
