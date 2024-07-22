@@ -7,6 +7,7 @@ using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Log;
 
 namespace Content.Server.SpaceStories.GameTicking.Commands
 {
@@ -16,6 +17,7 @@ namespace Content.Server.SpaceStories.GameTicking.Commands
         [Dependency] private readonly IConfigurationManager _configurationManager = default!;
         [Dependency] private readonly IEntityManager _entityManager = default!;
         [Dependency] private readonly IGameMapManager _gameMapManager = default!;
+        [Dependency] private readonly ILogManager _logManager = default!;
 
         public string Command => "setmap";
         public string Description => Loc.GetString("setmap-command-description");
@@ -29,21 +31,20 @@ namespace Content.Server.SpaceStories.GameTicking.Commands
                 return;
             }
 
+            var log = _logManager.GetSawmill("shell");
+
             var name = args[0];
 
             var ticker = _entityManager.EntitySysManager.GetEntitySystem<GameTicker>();
             if (ticker.CanUpdateMap())
             {
-                // deny effect of forcemap if it was used before
-                _configurationManager.SetCVar(CCVars.GameMap, "");
-
                 _gameMapManager.SelectMap(name);
                 ticker.UpdateInfoText();
                 shell.WriteLine(Loc.GetString("setmap-command-success", ("map", name)));
             }
             else
             {
-                ticker.Log.Debug("Ticker cannot update map");
+                log.Debug("setmap: Ticker cannot update map");
                 shell.WriteLine(Loc.GetString("setmap-command-failed", ("map", name)));
             }
         }
