@@ -1,5 +1,6 @@
 name: Publish
 
+permissions: write-all
 #concurrency:
 #  group: publish
 
