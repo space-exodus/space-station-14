@@ -15,3 +15,4 @@
 //     .Build();
 
 // await host.RunAsync();
+Console.WriteLine("Deprecated");
