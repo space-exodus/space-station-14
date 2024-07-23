@@ -4,7 +4,6 @@
   mapPath: /Maps/Exodus/exodus_saltern.yml
   minPlayers: 0
   maxPlayers: 35
-  fallback: true
   stations:
     Saltern:
       stationProto: StandardNanotrasenStation
@@ -17,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml
         - type: StationJobs
-          overflowJobs:
-          - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]

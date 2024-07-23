@@ -13,7 +13,7 @@
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepTile
-  itemDrop: FloorTileItemConcreteWOWeatherWOWeather
+  itemDrop: FloorTileItemConcreteWOWeather
   heatCapacity: 10000
   weather: false
 

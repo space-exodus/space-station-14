@@ -109,6 +109,7 @@ chat-speech-verb-ghost-1 = жалуется
 chat-speech-verb-ghost-2 = дышит
 chat-speech-verb-ghost-3 = воет
 chat-speech-verb-ghost-4 = бормочет
+chat-speech-verb-name-kidan = Кидан
 chat-speech-verb-name-cluwne = Клувень
 chat-speech-verb-cluwne-1 = хихикает
 chat-speech-verb-cluwne-2 = хехекает

@@ -1,0 +1,71 @@
+- type: entity
+  id: OrganKidanStomach
+  parent: OrganAnimalStomach
+  name: kidan stomach
+  noSpawn: true
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Fruit
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
+      - Pizza
+      - Nutribrick
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: Metabolizer
+    maxReagents: 3
+    metabolizerTypes: [ Kidan ]
+    groups:
+    - id: Food
+    - id: Drink
+
+- type: entity
+  id: OrganKidanLiver
+  parent: OrganAnimalLiver
+  name: kidan liver
+  noSpawn: true
+  components:
+  - type: Metabolizer
+    maxReagents: 1
+    metabolizerTypes: [ Kidan ]
+    groups:
+    - id: Alcohol
+      rateModifier: 0.5
+
+- type: entity
+  id: OrganKidanHeart
+  parent: OrganAnimalHeart
+  name: kidan heart
+  noSpawn: true
+  components:
+  - type: Organ
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [ Kidan ]
+    groups:
+    - id: Medicine
+    - id: Poison
+      rateModifier: 1.7
+    - id: Narcotic
+
+- type: entity
+  id: OrganKidanKidneys
+  parent: OrganAnimalKidneys
+  name: kidan kidneys
+  noSpawn: true
+  components:
+  - type: Metabolizer
+    maxReagents: 5
+    metabolizerTypes: [ Kidan ]
+    removeEmpty: true

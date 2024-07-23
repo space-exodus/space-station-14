@@ -50,8 +50,6 @@
     size: Ginormous
   - type: MultiHandedItem
   - type: Puller
-    walkSpeedModifier: 0.75
-    sprintSpeedModifier: 0.75
   - type: HumanoidAppearance
     species: Felinid
     hideLayersOnEquip:

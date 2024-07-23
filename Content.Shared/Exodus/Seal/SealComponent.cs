@@ -6,7 +6,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Exodus.Seal;
 
 /// <summary>
-/// Component using to make one time lock 
+/// Component using to make one time lock
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SharedSealSystem))]
@@ -17,7 +17,7 @@ public sealed partial class SealComponent : Component
     public bool Sealed = true;
 
     /// <summary>
-    /// Will make station announcment on open 
+    /// Will make station announcment on open
     /// </summary>
     [DataField("willAnnounce"), ViewVariables(VVAccess.ReadWrite)]
     public bool WillAnnounce = false;
@@ -37,7 +37,7 @@ public sealed partial class SealComponent : Component
     [AutoNetworkedField]
     public bool RemoveOnUnseal = true;
 
-    [DataField("UnsealTime")]
+    [DataField("unsealTime")]
     [AutoNetworkedField]
     public TimeSpan UnsealTime = TimeSpan.FromSeconds(5);
 

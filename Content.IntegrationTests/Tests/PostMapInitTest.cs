@@ -59,6 +59,13 @@ namespace Content.IntegrationTests.Tests
             "CorvaxFrame",
             "CorvaxPearl",
             // Corvax-End
+            // Exodus-Start
+            "ExodusCluster",
+            "ExodusDelta",
+            "ExodusOmega",
+            "ExodusPacked",
+            "ExodusSaltern",
+            // Exodus-End
             "Dev",
             "TestTeg",
             "Fland",

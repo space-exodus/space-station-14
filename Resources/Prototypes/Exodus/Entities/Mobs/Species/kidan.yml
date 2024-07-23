@@ -28,10 +28,14 @@
     channels:
     - Chitine
   - type: KidanAccent
-  - type: Vocal
+  - type: Speech
     speechVerb: Kidan
     allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply']
-    speechSounds: UnisexKidan
+  - type: Vocal
+    sounds:
+      Male: UnsexedKidan
+      Female: UnsexedKidan
+      Unsexed: UnsexedKidan
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Kidan
