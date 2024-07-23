@@ -8,8 +8,8 @@
       state: icon
     - type: RandomMetadata
       nameSegments:
-        - names_first_male
-        - names_last_male
+        - NamesFirstMilitaryHighLeader
+        - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: SpecicalOperationOfficerSettings
     - type: InitialInfectedExempt
@@ -29,6 +29,6 @@
       prototypes: [ SpecicalOperationOfficerGear ]
     - type: RandomMetadata
       nameSegments:
-        - names_first_male
-        - names_last_male
+        - NamesFirstMilitaryHighLeader
+        - NamesLastMilitary
     - type: InitialInfectedExempt
