@@ -14,8 +14,8 @@ VERSION = os.environ['GITHUB_SHA']
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "https://cdn.station14.ru/"
-FORK_ID = "syndicate"
+ROBUST_CDN_URL = "https://cdn2.space-exodus.com/"
+FORK_ID = "exodus-main"
 
 def main():
     print("Fetching artifact URL from API...")
