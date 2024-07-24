@@ -17,12 +17,12 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: HitscanBatteryAmmoProvider
-    proto: PulseLight
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletPurpleLaser
     fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 100
+    autoRechargeRate: 50
   - type: Appearance
   - type: Tag
     tags:
@@ -33,3 +33,9 @@
     magState: mag
     steps: 5
     zeroVisible: true
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: BulletPurpleLaser
+      fireCost: 100
+    - proto: BulletTaser
+      fireCost: 100

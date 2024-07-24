@@ -1,0 +1,36 @@
+- type: entity
+  id: RandomHumanoidSpawnerBlueshieldOfficer
+  name: Blueshield Officer
+  suffix: ERTRole, Basic
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: blueshieldofficer
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: BlueshieldOfficer
+
+- type: randomHumanoidSettings
+  id: BlueshieldOfficer
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  speciesBlacklist:
+    - Diona
+    - Vox
+    - Felinid
+  components:
+    - type: GhostRole
+      name: ghost-role-information-blueshield-name
+      description: ghost-role-information-blueshield-description
+      rules: ghost-role-information-blueshield-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ BlueshieldOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
