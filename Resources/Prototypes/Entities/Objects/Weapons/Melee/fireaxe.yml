@@ -39,6 +39,7 @@
   - type: Tool
     qualities:
       - Prying
+      - Axing # Exodus-SimplifyAtmos
   - type: ToolTileCompatible
   - type: Prying
   - type: UseDelay
@@ -81,3 +82,9 @@
         - Scientist
         - Borg
 # Corvax-HiddenDesc-End
+  # Exodus-SimplifyAtmos-Start
+  - type: Tool
+    qualities:
+      - Prying
+      - Axing
+  # Exodus-SimplifyAtmos-End
