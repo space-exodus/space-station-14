@@ -1,0 +1,17 @@
+- type: entity
+  name: laser mode
+  id: BulletPurpleLaser
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser_greyscale
+      shader: unshaded
+      color: purple
+  - type: Projectile
+    impactEffect: BulletImpactEffectPurpleLaser
+    damage:
+      types:
+        Heat: 25
