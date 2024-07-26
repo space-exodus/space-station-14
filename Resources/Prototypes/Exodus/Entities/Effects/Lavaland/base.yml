@@ -10,7 +10,7 @@
   - type: Transform
     anchored: true
   - type: Physics
-    bodyType: Static
+    bodyType: Dynamic
   - type: Fixtures
     fixtures:
       fix1:
@@ -25,7 +25,7 @@
         hard: false
 
 - type: entity
-  id: AttackCellUnitDespawnBase
+  id: AttackCellUnitBaseBig
   abstract: true
   parent: AttackCellUnitBase
   placement:
@@ -33,27 +33,32 @@
     snap:
       - Wall
   components:
-  - type: TimedDespawn
-    lifetime: 0.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.45,-1.45,1.45,1.45"
+        layer:
+          - SlipLayer
+        mask:
+          - ItemMask
+        density: 1000
+        hard: false
 
 - type: entity
   id: AttackCellUnitDamage
-  parent: AttackCellUnitBase
   abstract: true
   components:
   - type: DamageContacts
     damage:
       types:
         Heat: 10
-  - type: IgniteOnCollide
-    fireStacks: 1
-    count: 10
 
 - type: entity
   id: AttackCellUnitSlow
-  parent: AttackCellUnitBase
   abstract: true
   components:
   - type: SpeedModifierContacts
-    walkSpeedModifier: 0.5
-    sprintSpeedModifier: 0.5
+    walkSpeedModifier: 0.8
+    sprintSpeedModifier: 0.8

@@ -1,66 +1,108 @@
+#region Full
 - type: entity
-  id: AttackCellUnitPandoraFull
+  id: PandoraAttackCellUnit
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: MassSpawner
+    groups:
+    - method: !type:AttackCellMethodPoint
+      spawnProtoID: PandoraAttackCellUnitPartBegin
+    - method: !type:AttackCellMethodPoint
+      spawnProtoID: PandoraAttackCellUnitPartDamage
+      delay: 0.30
+
+- type: entity
+  id: PandoraAttackCellUnitBig
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: MassSpawner
+    groups:
+    - method: !type:AttackCellMethodPoint
+      spawnProtoID: PandoraAttackCellUnitBigPartBegin
+    - method: !type:AttackCellMethodPoint
+      spawnProtoID: PandoraAttackCellUnitBigPartDamage
+      delay: 0.30
+#endregion
+
+
+#region Attention Cells
+- type: entity
+  id: PandoraAttackCellUnitAttention
   parent: [ AttackCellUnitBase ]
+  noSpawn: true
   components:
   - type: TimedDespawn
-    lifetime: 0.30
-  - type: SpawnOnDespawn
-    prototype: AttackCellUnitPandoraPartDamage
+    lifetime: 0.15
   - type: Sprite
     sprite: Exodus/Effects/pandora_blast.rsi
     state: preblast
 
 - type: entity
-  id: AttackCellUnitPandoraPartDamage
-  parent: [ AttackCellUnitSlow, AttackCellUnitDamage ]
+  id: PandoraAttackCellUnitBigAttention
+  parent: [ AttackCellUnitBase ]
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 0.15
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: preblast
+#endregion
+
+
+#region Parts normal
+- type: entity
+  id: PandoraAttackCellUnitPartBegin
+  parent: [ AttackCellUnitBase ]
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 0.30
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: preblast
+
+- type: entity
+  id: PandoraAttackCellUnitPartDamage
+  parent: [ AttackCellUnitBase, AttackCellUnitSlow, AttackCellUnitDamage ]
+  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 0.35
   - type: Sprite
     sprite: Exodus/Effects/pandora_blast.rsi
     state: afterblast
+#endregion
 
+
+#region Parts big
 - type: entity
-  id: AttackCellUnitPandoraAttention
-  parent: [ AttackCellUnitBase ]
+  id: PandoraAttackCellUnitBigPartBegin
+  parent: [ AttackCellUnitBaseBig ]
+  noSpawn: true
   components:
   - type: TimedDespawn
-    lifetime: 0.20
+    lifetime: 0.30
   - type: Sprite
     sprite: Exodus/Effects/pandora_blast.rsi
     state: preblast
-
-
-# DEBUG
-- type: entity
-  id: AttackCellUnitPandoraFullDEBUG
-  parent: [ AttackCellUnitSlow ]
-  components:
-  - type: TimedDespawn
-    lifetime: 0.65
-  - type: Sprite
-    sprite: Exodus/Effects/pandora_blast.rsi
-    state: blast
-
-- type: entity
-  id: AttackCellUnitPandoraFullBigDEBUG
-  parent: [ AttackCellUnitSlow ]
-  components:
-  - type: TimedDespawn
-    lifetime: 0.65
-  - type: Sprite
-    sprite: Exodus/Effects/pandora_blast.rsi
-    state: blast
     scale: 3,3
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-1.45,-1.45,1.45,1.45"
-        layer:
-          - SlipLayer
-        mask:
-          - ItemMask
-        density: 1000
-        hard: false
+
+- type: entity
+  id: PandoraAttackCellUnitBigPartDamage
+  parent: [ AttackCellUnitBaseBig, AttackCellUnitSlow, AttackCellUnitDamage ]
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 0.35
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: afterblast
+    scale: 3,3
+#endregion

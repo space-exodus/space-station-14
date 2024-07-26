@@ -14,7 +14,7 @@
       state: spell_default
     event: !type:WorldSpawnSpellEvent
       prototypes:
-      - id: AttackPandoraFrameOut3
+      - id: PandoraAttackFrameOut3
         amount: 1
       offset: 0, 0
 
@@ -34,7 +34,7 @@
       state: spell_default
     event: !type:WorldSpawnSpellEvent
       prototypes:
-      - id: AttackPandoraFatFrame
+      - id: PandoraAttackFatFrame
         amount: 1
       offset: 0, 0
 
@@ -56,12 +56,12 @@
       events:
       - !type:WorldSpawnSpellEvent
         prototypes:
-        - id: AttackPandoraBigPoint
+        - id: PandoraAttackBigPoint
           amount: 1
         offset: 0, 0
       - !type:ChangeTargetCoordsToPerformerEvent
         event: !type:WorldSpawnSpellEvent
           prototypes:
-          - id: AttackPandoraBigPoint
+          - id: PandoraAttackBigPoint
             amount: 1
           offset: 0, 0

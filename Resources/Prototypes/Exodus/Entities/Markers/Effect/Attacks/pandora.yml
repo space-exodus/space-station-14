@@ -1,0 +1,38 @@
+- type: entity
+  name: PandoraAttackFrameOut3
+  id: PandoraAttackFrameOut3
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: PandoraAttackCellUnit
+    groups:
+      - groupProto: PandoraAttackDataFrameOut3
+
+- type: entity
+  name: PandoraAttackFatFrame
+  id: PandoraAttackFatFrame
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: PandoraAttackCellUnit
+    groups:
+      - groupProto: PandoraAttackDataFatFrame
+
+- type: entity
+  name: PandoraAttackBigPoint
+  id: PandoraAttackBigPoint
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: PandoraAttackCellUnitBig
+    groups:
+      - groupProto: PandoraAttackDataPoint
