@@ -26,8 +26,9 @@
         Base: alive
       Dead:
         Base: dead
-  - type: NameIdentifier
-    group: GenericNumber
+  - type: Pullable
+  - type: Buckle
+    range: 0.0
   - type: Fixtures
     fixtures:
       fix1:
