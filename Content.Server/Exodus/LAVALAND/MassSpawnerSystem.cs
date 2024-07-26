@@ -26,17 +26,18 @@ public sealed partial class MassSpawnerSystem : EntitySystem
         while (query.MoveNext(out var uid, out var component))
         {
             UpdateCompGroups(frameTime, uid, component);
-            UpdateComp(frameTime, uid, component);
+            UpdateComponentGroupsList(frameTime, uid, component);
 
             if (component.RemoveAfterUsed && component.Groups.Count == 0)
                 _entDelList.Add(uid);
         }
 
         foreach (var uid in _entDelList)
-            QueueDel(uid);
+            TryQueueDel(uid);
+        _entDelList.Clear();
     }
 
-    private void UpdateComp(float frameTime, EntityUid uid, MassSpawnerComponent comp)
+    private void UpdateComponentGroupsList(float frameTime, EntityUid uid, MassSpawnerComponent comp)
     {
         comp.Groups.RemoveAll(x => comp.RemovingGroups.Contains(x));
         comp.RemovingGroups = [];

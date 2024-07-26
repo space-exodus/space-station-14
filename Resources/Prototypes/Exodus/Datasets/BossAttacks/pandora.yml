@@ -8,13 +8,13 @@
 #   1 1 1 1 1 1 1
 
 - type: spawnGroupProto
-  id: PandoraAttackDataFatFrame
+  id: AttackDataFatFrame
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
       - method: !type:AttackCellMethodFrame
           initGroup:
-            groupProto: Cell
+            groupProto: Point
           vertexs:
           - -2,-2
           - 2,2
@@ -33,7 +33,7 @@
 
 
 - type: spawnGroupProto
-  id: PandoraAttackDataFrameOut2
+  id: AttackDataFrameOut2
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
@@ -53,11 +53,11 @@
 
 
 - type: spawnGroupProto
-  id: PandoraAttackDataFrameOut3
+  id: AttackDataFrameOut3
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
-      - groupProto: PandoraAttackDataFrameOut2
+      - groupProto: AttackDataFrameOut2
       - method: !type:AttackCellMethodFrame
           initGroup:
             groupProto: Point
@@ -77,11 +77,11 @@
 #   3 3 3 3 3 3 3
 
 - type: spawnGroupProto
-  id: PandoraAttackDataFrameOut4
+  id: AttackDataFrameOut4
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
-      - groupProto: PandoraAttackDataFrameOut3
+      - groupProto: AttackDataFrameOut3
       - method: !type:AttackCellMethodFrame
           initGroup:
             groupProto: Point
@@ -91,8 +91,68 @@
         delay: 0.6
 
 
+#  4 4 4 4 4 4 4 4 4
+#  4 3 3 3 3 3 3 3 4
+#  4 3 2 2 2 2 2 3 4
+#  4 3 2 1 1 1 2 3 4
+#  4 3 2 1 0 1 2 3 4
+#  4 3 2 1 1 1 2 3 4
+#  4 3 2 2 2 2 2 3 4
+#  4 3 3 3 3 3 3 3 4
+#  4 4 4 4 4 4 4 4 4
 
 - type: spawnGroupProto
-  id: PandoraAttackDataPoint
+  id: AttackDataFrameOut5
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: AttackDataFrameOut4
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Point
+          vertexs:
+          - -4,-4
+          - 4,4
+        delay: 0.8
+
+
+#  6 6 6 6 6 6 6 6 6 6 6 6 6
+#  6 5 5 5 5 5 5 5 5 5 5 5 6
+#  6 5 4 4 4 4 4 4 4 4 4 5 6
+#  6 5 4 3 3 3 3 3 3 3 4 5 6
+#  6 5 4 3 2 2 2 2 2 3 4 5 6
+#  6 5 4 3 2 1 1 1 2 3 4 5 6
+#  6 5 4 3 2 1 0 1 2 3 4 5 6
+#  6 5 4 3 2 1 1 1 2 3 4 5 6
+#  6 5 4 3 2 2 2 2 2 3 4 5 6
+#  6 5 4 3 3 3 3 3 3 3 4 5 6
+#  6 5 4 4 4 4 4 4 4 4 4 5 6
+#  6 5 5 5 5 5 5 5 5 5 5 5 6
+#  6 6 6 6 6 6 6 6 6 6 6 6 6
+
+- type: spawnGroupProto
+  id: AttackDataFrameOut7
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: AttackDataFrameOut5
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Point
+          vertexs:
+          - -5,-5
+          - 5,5
+        delay: 1.0
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Point
+          vertexs:
+          - -6,-6
+          - 6,6
+        delay: 1.2
+
+
+- type: spawnGroupProto
+  id: AttackDataPoint
   group:
     method: !type:AttackCellMethodPoint
