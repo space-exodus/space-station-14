@@ -53,7 +53,9 @@
   - type: DamageContacts
     damage:
       types:
-        Heat: 10
+        Heat: 7
+        Cellular: 3
+        Radiation: 5
 
 - type: entity
   id: AttackCellUnitSlow
