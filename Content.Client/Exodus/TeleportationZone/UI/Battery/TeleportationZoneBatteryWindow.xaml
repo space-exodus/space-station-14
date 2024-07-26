@@ -1,0 +1,23 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:viewport="clr-namespace:Content.Client.Viewport"
+               Title="{Loc 'teleportationZone-battery-ui-window'}"
+               Resizable="True">
+    <BoxContainer Orientation="Vertical">
+        <BoxContainer Orientation="Horizontal">
+            <!-- This window for small battery-->
+            <BoxContainer Orientation="Vertical">
+                <Label Margin="15 0 0 5" Text="{Loc 'teleportationZone-battery-ui-label-small-battery'}" HorizontalAlignment="Center"/>
+                <Label Name="TeleportationZoneCapacitySmallBatteryLabel" Margin="15 0 0 5" Text="{Loc 'teleportationZone-battery-ui-label-capacity-small-battery'}" HorizontalAlignment="Center"/>
+                <TextureRect Name="SmallBatteryTextureRect" VerticalAlignment="Center" HorizontalAlignment="Center" TextureScale="2 2" TexturePath="/Textures/Exodus/TeleportationZone/Battery/battery_0.png"/>
+                <Button Margin="10 5 0 0" Name="TeleportationZoneBatteryDownloadButton" Text="{Loc 'teleportationZone-battery-ui-download-button'}" />
+            </BoxContainer>
+            <!-- This window for our structure (battery)-->
+            <BoxContainer Orientation="Vertical">
+                <Label Margin="15 0 0 5" Text="{Loc 'teleportationZone-battery-ui-label-battery'}" HorizontalAlignment="Center"/>
+                <Label Name="TeleportationZoneCapacityBatteryLabel" Margin="15 0 0 5" Text="{Loc 'teleportationZone-battery-ui-label-capacity-battery'}" HorizontalAlignment="Center"/>
+                <TextureRect Name="BatteryTextureRect" VerticalAlignment="Center" HorizontalAlignment="Center" TextureScale="2 2" TexturePath="/Textures/Exodus/TeleportationZone/Battery/battery_0.png"/>
+                <Button Margin="10 5 0 0" Name="TeleportationZoneBatteryUploadButton" Text="{Loc 'teleportationZone-battery-ui-unload-button'}" />
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
+</DefaultWindow>

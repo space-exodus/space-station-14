@@ -1,0 +1,14 @@
+- type: entity
+  id: TeleportationZoneScanModule
+  parent: BaseItem
+  name: Scan module
+  description: A scanning module that can store information about the bluespace core.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Sprite
+    sprite: Exodus/TeleportationZone/scan_module.rsi
+    state: bluespace_scan_module
+  - type: TeleportationZoneScanModule
+  - type: StaticPrice
+    price: 1000

@@ -1,0 +1,115 @@
+- type: entity
+  parent: [ BaseMachine, ConstructibleMachine ]
+  id: TeleportationZoneConsole
+  name: Teleportation control panel
+  description: A panel that allows you to manage time and space... It's like you're the creator!
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Sprite
+      sprite: Exodus/TeleportationZone/console.rsi
+      snapCardinals: true
+      state: dev
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-1.45,-0.45,1.45,0.45"
+          density: 100
+          layer:
+            - TableLayer
+    - type: TeleportationZoneConsole
+      slots:
+        zone-A_slot-A:
+          whitelist:
+            components:
+            - TeleportationZoneScanModule
+          name: Zone A
+          locked: false
+          swap: false
+          ejectOnDeconstruct: true
+          ejectOnBreak: true
+        zone-A_slot-B:
+          whitelist:
+            components:
+            - TeleportationZoneScanModule
+          name: Zone A
+          locked: false
+          swap: false
+          ejectOnDeconstruct: true
+          ejectOnBreak: true
+        zone-B_slot-A:
+          whitelist:
+            components:
+            - TeleportationZoneScanModule
+          name: Zone B
+          locked: false
+          swap: false
+          ejectOnDeconstruct: true
+          ejectOnBreak: true
+        zone-B_slot-B:
+          whitelist:
+            components:
+            - TeleportationZoneScanModule
+          name: Zone B
+          locked: false
+          swap: false
+          ejectOnDeconstruct: true
+          ejectOnBreak: true
+    - type: TeleportationZoneListOfPrices
+      listOfPrices:
+        BSScanModule: 1
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: StrongMetallic
+    - type: PacifismDangerousAttack
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalGlassBreak
+        - !type:ExplodeBehavior
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            MachineFrameDestroyed:
+              min: 1
+              max: 1
+        - !type:SpawnGasBehavior
+          gasMixture:
+            volume: 1000
+            moles:
+              - 0 # oxygen
+              - 0 # nitrogen
+              - 340.5701689 # carbon dioxide
+            temperature: 373.15
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 100
+      intensitySlope: 2
+      totalIntensity: 200
+    - type: WiresPanel
+    - type: AmbientOnPowered
+    - type: AmbientSound
+      volume: -5
+      range: 3
+      sound:
+        path: /Audio/Ambience/Objects/buzzing.ogg
+    - type: ActivatableUI
+      key: enum.TeleportationZoneConsoleUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.TeleportationZoneConsoleUiKey.Key:
+          type: TeleportationZoneConsoleBoundUi
