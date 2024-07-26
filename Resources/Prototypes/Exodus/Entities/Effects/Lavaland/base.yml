@@ -20,7 +20,7 @@
         layer:
           - SlipLayer
         mask:
-          - ItemMask
+          - MobMask
         density: 1000
         hard: false
 
@@ -42,7 +42,7 @@
         layer:
           - SlipLayer
         mask:
-          - ItemMask
+          - MobMask
         density: 1000
         hard: false
 
