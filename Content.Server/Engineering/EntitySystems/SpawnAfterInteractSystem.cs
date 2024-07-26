@@ -72,7 +72,7 @@ namespace Content.Server.Engineering.EntitySystems
             EntityManager.SpawnEntity(component.Prototype, args.ClickLocation.SnapToGrid(grid));
 
             if (component.RemoveOnInteract && stackComp == null)
-                TryQueueDel(uid);
+                QueueDel(uid); // Exodus-TemporalFix | Idk what's wrong but TryQueueDel right now doesn't working
         }
     }
 }
