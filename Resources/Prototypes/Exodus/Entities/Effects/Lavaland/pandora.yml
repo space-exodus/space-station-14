@@ -45,7 +45,7 @@
 
 - type: entity
   id: PandoraAttackCellUnitBigAttention
-  parent: [ AttackCellUnitBase ]
+  parent: [ AttackCellUnitBaseBig ]
   noSpawn: true
   components:
   - type: TimedDespawn
@@ -53,6 +53,7 @@
   - type: Sprite
     sprite: Exodus/Effects/pandora_blast.rsi
     state: preblast
+    scale: 3,3
 #endregion
 
 
