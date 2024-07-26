@@ -9,5 +9,5 @@ public sealed partial class ConstantDirectionEvent : InstantActionEvent
     public DirectionActionEvent? Event = null;
 
     [DataField]
-    public Vector2 ConstDirection = Vector2.Zero;
+    public Vector2 ConstDirection = Vector2.One;
 }
