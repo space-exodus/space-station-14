@@ -28,7 +28,7 @@ namespace Content.Server.Engineering.EntitySystems
         private async void HandleAfterInteract(EntityUid uid, SpawnAfterInteractComponent component, AfterInteractEvent args)
         {
             // Exodus-FoldedPoster-Start
-            if (!_whitelistSystem.IsValid(component.Whitelist, uid))
+            if (component.UseWhitelist && !_whitelistSystem.IsValid(component.Whitelist, uid))
                 return;
             // Exodus-FoldedPoster-End
             if (!args.CanReach && !component.IgnoreDistance)
