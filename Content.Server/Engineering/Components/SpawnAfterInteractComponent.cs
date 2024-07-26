@@ -29,6 +29,10 @@ namespace Content.Server.Engineering.Components
         /// </summary>
 
         [ViewVariables(VVAccess.ReadWrite)]
+        [DataField("useWhitelist")]
+        public bool UseWhitelist = false;
+
+        [ViewVariables(VVAccess.ReadWrite)]
         [DataField("whitelist")]
         public EntityWhitelist Whitelist = new();
 

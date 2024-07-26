@@ -1,15 +1,17 @@
 - type: entity
   parent: BaseItem
   id: FoldedPoster
-  name: Folded Poster
+  name: folded Poster
   description: Hmm, that looks great!
   components:
   - type: WallPoster
   - type: Sprite
     sprite: Exodus/Objects/Misc/folded.rsi
     state: folded
+    scale: 0.8,0.8
   - type: SpawnAfterInteract
     prototype: RandomPosterAny
+    useWhitelist: true
     whitelist:
       components:
       - Glued

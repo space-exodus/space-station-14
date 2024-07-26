@@ -75,7 +75,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
     public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
 
-    public const string AllowedICSpecialCharacters = ".,:;-\"'’`!?~%@*"; // Exodus-ChatRestrictions
+    public const string AllowedICSpecialCharacters = ".,:;-—–\"'’`!?~%@*"; // Exodus-ChatRestrictions
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled;
