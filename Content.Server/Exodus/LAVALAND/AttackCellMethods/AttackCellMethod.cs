@@ -15,7 +15,7 @@ using Robust.Shared.Map;
 
 namespace Content.Server.Exodus.MassSpawn.Methods;
 
-[DataDefinition]
+
 public abstract partial class AttackCellMethod
 {
     protected SharedTransformSystem? _transform = null;
