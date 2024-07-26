@@ -1,19 +1,18 @@
 - type: dataset
   id: NamesFirstMilitaryLeader
   values:
-  - Коммандер
-  - Полковник
-  - Подполковник
-  - Майор
+  - Капитан        # Exodus - MRP
+  - Ст. Лейтенант  # Exodus - MRP
+  - Мл. Лейтенант  # Exodus - MRP
   - Лейтенант
 
 - type: dataset
   id: NamesFirstMilitary
   values:
+  - Рядовой        # Exodus - MRP
   - Прапорщик
   - Старшина
   - Сержант
-  - Капрал
   - Ефрейтор
 
 - type: dataset
@@ -62,4 +61,12 @@
   - Шедар
   - Шаула
   - Электра
-  
+
+# Exodus - Centcomm Commander - start
+- type: dataset
+  id: NamesFirstMilitaryHighLeader
+  values:
+  - Полковник
+  - Подполковник
+  - Майор
+# Exodus - Centcomm Commander - end
