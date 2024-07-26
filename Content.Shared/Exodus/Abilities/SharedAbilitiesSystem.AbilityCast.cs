@@ -232,7 +232,7 @@ public abstract partial class SharedAbilitiesSystem
         var targetCoord = args.Target;
         var performerCoord = Transform(args.Performer).Coordinates;
 
-        var direction = _transform.ToMapCoordinates(targetCoord).Position - _transform.ToMapCoordinates(performerCoord).Position;
+        var direction = TransformSystem.ToMapCoordinates(targetCoord).Position - TransformSystem.ToMapCoordinates(performerCoord).Position;
 
         var shootEnumerator = new ShootEnumerator(direction, args.Angle, args.ShootCnt, args.Clockwise);
 

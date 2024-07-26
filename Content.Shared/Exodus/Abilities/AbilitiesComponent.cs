@@ -1,8 +1,19 @@
+using Content.Shared.FixedPoint;
+
 namespace Content.Shared.Exodus.Abilities;
 
 [RegisterComponent]
 public sealed partial class AbilitiesComponent : Component
 {
-    [ViewVariables(VVAccess.ReadWrite), DataField("actions")]
-    public List<string> Actions = [];
+    [DataField("grantActions")]
+    public List<string> GrantActions = [];
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    public Dictionary<string, EntityUid> Actions = [];
+
+    /// <summary>
+    /// Depending on the amount of damage, changes the available abilities.
+    /// </summary>
+    [DataField("actionsThresholds")]
+    public Dictionary<FixedPoint2, List<string>> ActionsThresholds = [];
 }

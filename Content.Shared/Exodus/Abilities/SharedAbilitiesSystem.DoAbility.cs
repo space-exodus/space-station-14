@@ -21,7 +21,7 @@ public abstract partial class SharedAbilitiesSystem
             List<PerformingAbilityGroup> delGroups = [];
             foreach (var group in doAbilityComp.Groups)
             {
-                if (_timing.CurTime >= group.TimeEnd)
+                if (Timing.CurTime >= group.TimeEnd)
                 {
                     delGroups.Add(group);
                     riseGroups.Add(group, performer);
@@ -48,14 +48,14 @@ public abstract partial class SharedAbilitiesSystem
         {
             doAbilityComp.Groups.Add(new PerformingAbilityGroup()
             {
-                TimeEnd = _timing.CurTime + TimeSpan.FromSeconds(duration),
+                TimeEnd = Timing.CurTime + TimeSpan.FromSeconds(duration),
                 ExecutableEvent = evToRise,
                 Target = targ
             });
         }
         else
         {
-            doAbilityComp.Groups.Add(new PerformingAbilityGroup() { TimeEnd = _timing.CurTime + TimeSpan.FromSeconds(duration) });
+            doAbilityComp.Groups.Add(new PerformingAbilityGroup() { TimeEnd = Timing.CurTime + TimeSpan.FromSeconds(duration) });
         }
 
 

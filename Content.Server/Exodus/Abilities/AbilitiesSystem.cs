@@ -21,8 +21,8 @@ public sealed partial class AbilitiesSystem : SharedAbilitiesSystem
     {
         var perfXform = Transform(args.Performer);
 
-        var worldTargetPoint = _transform.ToMapCoordinates(args.Target).Position;
-        var worldBeginPoint = _transform.GetWorldPosition(perfXform);
+        var worldTargetPoint = TransformSystem.ToMapCoordinates(args.Target).Position;
+        var worldBeginPoint = TransformSystem.GetWorldPosition(perfXform);
 
         var gridRel = perfXform.GridUid;
 
