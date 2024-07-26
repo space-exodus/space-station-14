@@ -60,7 +60,7 @@ public abstract partial class SharedAbilitiesSystem : EntitySystem
 
     private List<string> GetActionsForThreshold(FixedPoint2 damage, AbilitiesComponent abilities)
     {
-        var result = abilities.ActionsThresholds.Last().Value;
+        var result = abilities.GrantActions;
 
         foreach (var threshold in abilities.ActionsThresholds)
         {
