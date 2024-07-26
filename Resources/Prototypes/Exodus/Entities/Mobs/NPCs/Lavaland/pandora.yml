@@ -14,9 +14,6 @@
     - ActionPandoraAttackFrameOut3
     - ActionPandoraAttackFatFrame
     - ActionPandoraAttackBigPoint
-    - ActionDEV1
-    - ActionDEV2
-    - ActionDEV3
   - type: Sprite
     sprite: Exodus/Mobs/Lavaland/pandora.rsi
     state: pandora
