@@ -33,7 +33,7 @@ public sealed partial class MassSpawnerSystem : EntitySystem
         }
 
         foreach (var uid in _entDelList)
-            TryQueueDel(uid);
+            QueueDel(uid);
         _entDelList.Clear();
     }
 
