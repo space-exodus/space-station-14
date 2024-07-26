@@ -46,6 +46,7 @@
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ] # Exodus
             Detective: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ]
             SecurityCadet: [ 2, 2 ]
