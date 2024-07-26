@@ -15,6 +15,9 @@
     damage:
       types:
         Heat: 25
+  - type: Ammo
+    muzzleFlash: null
+  - type: Physics
   - type: Fixtures
     fixtures:
       projectile:
@@ -24,4 +27,15 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
+      fly-by:
+        shape: !type:PhysShapeCircle
+          radius: 1.5
+        layer:
+        - Impassable
+        - MidImpassable
+        - HighImpassable
+        - LowImpassable
+        hard: False
+  - type: Reflective
+    reflective:
+    - Energy
