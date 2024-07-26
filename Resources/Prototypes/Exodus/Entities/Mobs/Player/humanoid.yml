@@ -34,3 +34,38 @@
       nameSegments:
       - NamesFirstMilitaryLeader
       - NamesLastMilitary
+
+- type: entity
+  id: RandomHumanoidSpawnerSpecicalOperationOfficer
+  name: specical operation officer
+  suffix: Centcomm
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/Neck/Cloaks/centcom_officer_black.rsi
+      state: icon
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryHighLeader
+        - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: SpecicalOperationOfficerSettings
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: SpecicalOperationOfficerSettings
+  randomizeName: false
+  speciesBlacklist:
+    - Diona
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-Specical-Operation-Officer-name
+      description: ghost-role-information-Specical-Operation-Officer-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ SpecicalOperationOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryHighLeader
+        - NamesLastMilitary
+    - type: InitialInfectedExempt
