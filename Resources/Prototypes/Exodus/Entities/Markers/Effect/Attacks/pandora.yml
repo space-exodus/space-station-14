@@ -1,5 +1,4 @@
 - type: entity
-  name: PandoraAttackFatFrame
   id: PandoraAttackFatFrame
   parent: MarkerBase
   components:
@@ -13,7 +12,6 @@
 
 
 - type: entity
-  name: PandoraAttackFrameOut3
   id: PandoraAttackFrameOut3
   parent: MarkerBase
   components:
@@ -27,7 +25,6 @@
 
 
 - type: entity
-  name: PandoraAttackFrameOut4
   id: PandoraAttackFrameOut4
   parent: MarkerBase
   components:
@@ -41,7 +38,6 @@
 
 
 - type: entity
-  name: PandoraAttackFrameOut5
   id: PandoraAttackFrameOut5
   parent: MarkerBase
   components:
@@ -55,7 +51,6 @@
 
 
 - type: entity
-  name: PandoraAttackFrameOut7
   id: PandoraAttackFrameOut7
   parent: MarkerBase
   components:
@@ -69,7 +64,6 @@
 
 
 - type: entity
-  name: PandoraAttackBigPoint
   id: PandoraAttackBigPoint
   parent: MarkerBase
   components:
