@@ -20,7 +20,7 @@
           - 2,2
       - method: !type:AttackCellMethodFrame
           initGroup:
-            groupProto: Cell
+            groupProto: Point
           vertexs:
           - -3,-3
           - 3,3
@@ -40,7 +40,7 @@
       - method: !type:AttackCellMethodPoint
       - method: !type:AttackCellMethodFrame
           initGroup:
-            groupProto: Cell
+            groupProto: Point
         delay: 0.2
 
 
@@ -60,7 +60,7 @@
       - groupProto: PandoraAttackDataFrameOut2
       - method: !type:AttackCellMethodFrame
           initGroup:
-            groupProto: Cell
+            groupProto: Point
           vertexs:
           - -2,-2
           - 2,2
@@ -84,7 +84,7 @@
       - groupProto: PandoraAttackDataFrameOut3
       - method: !type:AttackCellMethodFrame
           initGroup:
-            groupProto: Cell
+            groupProto: Point
           vertexs:
           - -3,-3
           - 3,3
