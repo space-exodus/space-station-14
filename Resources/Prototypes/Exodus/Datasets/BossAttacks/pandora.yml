@@ -27,6 +27,7 @@
 
 
 
+#region FrameOut
 #    1 1 1
 #    1 0 1
 #    1 1 1
@@ -91,6 +92,7 @@
         delay: 0.6
 
 
+
 #  4 4 4 4 4 4 4 4 4
 #  4 3 3 3 3 3 3 3 4
 #  4 3 2 2 2 2 2 3 4
@@ -114,6 +116,7 @@
           - -4,-4
           - 4,4
         delay: 0.8
+
 
 
 #  6 6 6 6 6 6 6 6 6 6 6 6 6
@@ -150,6 +153,146 @@
           - -6,-6
           - 6,6
         delay: 1.2
+#endregion
+
+
+#region Cross
+#   0               0
+#     0           0
+#       0       0
+#         0   0
+#           0
+#         0   0
+#       0       0
+#     0           0
+#   0               0
+
+- type: spawnGroupProto
+  id: AttackDataCross4
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: Point
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: -1,-1
+          finish: -4,-4
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 1,1
+          finish: 4,4
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: -1,1
+          finish: -4,4
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 1,-1
+          finish: 4,-4
+
+
+- type: spawnGroupProto
+  id: AttackDataCross7
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: Point
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: -1,-1
+          finish: -7,-7
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 1,1
+          finish: 7,7
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: -1,1
+          finish: -7,7
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 1,-1
+          finish: 7,-7
+#endregion
+
+
+
+#region Plus
+#         0
+#         0
+#         0
+#         0
+#         0
+# 0 0 0 0 0 0 0 0 0 0
+#         0
+#         0
+#         0
+#         0
+#         0
+
+- type: spawnGroupProto
+  id: AttackDataPlus5
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: Point
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: -1,0
+          finish: -5,0
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 1,0
+          finish: 5,0
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 0,1
+          finish: 0,5
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 0,-1
+          finish: 0,-5
+
+
+- type: spawnGroupProto
+  id: AttackDataPlus10
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: Point
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: -1,0
+          finish: -10,0
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 1,0
+          finish: 10,0
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 0,1
+          finish: 0,10
+      - method: !type:AttackCellMethodLine
+          initGroup:
+            groupProto: Point
+          start: 0,-1
+          finish: 0,-10
+#endregion
 
 
 - type: spawnGroupProto

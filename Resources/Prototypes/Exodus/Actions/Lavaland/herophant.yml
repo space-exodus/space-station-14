@@ -1,0 +1,77 @@
+- type: entity
+  id: ActionHerophantAttackCombined5
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    maxUseRange: 6
+    minUseRange: 0
+    useDelay: 3
+    range: 6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:EntityAbilitiesGroupEvent
+      events:
+      - !type:EntityToCoordEvent
+        event: !type:WorldSpawnSpellEvent
+          prototypes:
+          - id: PandoraAttackPlus5
+            amount: 1
+          offset: 0, 0
+      - !type:DelayedEntityAbilityEvent
+        delay: 0.5
+        event: !type:EntityToCoordEvent
+          event: !type:WorldSpawnSpellEvent
+            prototypes:
+            - id: PandoraAttackCross4
+              amount: 1
+            offset: 0, 0
+      - !type:DelayedEntityAbilityEvent
+        delay: 1
+        event: !type:EntityToCoordEvent
+          event: !type:WorldSpawnSpellEvent
+            prototypes:
+            - id: PandoraAttackCrossPlus5
+              amount: 1
+            offset: 0, 0
+
+
+
+- type: entity
+  id: ActionHerophantAttackCombined10
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    maxUseRange: 6
+    minUseRange: 0
+    useDelay: 3
+    range: 6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:EntityAbilitiesGroupEvent
+      events:
+      - !type:EntityToCoordEvent
+        event: !type:WorldSpawnSpellEvent
+          prototypes:
+          - id: PandoraAttackPlusAttention10
+            amount: 1
+          offset: 0, 0
+      - !type:DelayedEntityAbilityEvent
+        delay: 0.5
+        event: !type:EntityToCoordEvent
+          event: !type:WorldSpawnSpellEvent
+            prototypes:
+            - id: PandoraAttackCrossAttention7
+              amount: 1
+            offset: 0, 0
+      - !type:DelayedEntityAbilityEvent
+        delay: 1.0
+        event: !type:EntityToCoordEvent
+          event: !type:WorldSpawnSpellEvent
+            prototypes:
+            - id: PandoraAttackCrossPlusAttention10
+              amount: 1
+            offset: 0, 0
