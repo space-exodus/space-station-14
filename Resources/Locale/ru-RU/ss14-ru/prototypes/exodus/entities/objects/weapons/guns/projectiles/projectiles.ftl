@@ -1,0 +1,1 @@
+ent-BulletPurpleLaser = заряд лазера
