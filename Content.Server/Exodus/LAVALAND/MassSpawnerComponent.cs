@@ -59,16 +59,11 @@ public sealed partial class MassSpawnGroup
     [DataField("delay")]
     public float DelayBehindStart = 0;
 
-
-
     [DataField("groupProto", customTypeSerializer: typeof(PrototypeIdSerializer<MassSpawnGroupPrototype>))]
     public string? GroupProto;
 
-
-
     [DataField("method")]
     public AttackCellMethod? Method;
-
 
 
     public bool GroupInit = false;

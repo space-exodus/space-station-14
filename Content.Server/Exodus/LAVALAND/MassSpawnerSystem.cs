@@ -33,7 +33,7 @@ public sealed partial class MassSpawnerSystem : EntitySystem
         }
 
         foreach (var uid in _entDelList)
-            Del(uid);
+            QueueDel(uid);
     }
 
     private void UpdateComp(float frameTime, EntityUid uid, MassSpawnerComponent comp)
