@@ -27,6 +27,24 @@
 
 
 
+#    1 1 1
+#    1 0 1
+#    1 1 1
+
+
+- type: spawnGroupProto
+  id: PandoraAttackDataFrameOut2
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - method: !type:AttackCellMethodPoint
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Cell
+        delay: 0.2
+
+
+
 #    2 2 2 2 2
 #    2 1 1 1 2
 #    2 1 0 1 2
@@ -39,11 +57,7 @@
   group:
     method: !type:AttackCellMethodGroup
       initGroups:
-      - method: !type:AttackCellMethodPoint
-      - method: !type:AttackCellMethodFrame
-          initGroup:
-            groupProto: Cell
-        delay: 0.2
+      - groupProto: PandoraAttackDataFrameOut2
       - method: !type:AttackCellMethodFrame
           initGroup:
             groupProto: Cell
@@ -51,6 +65,23 @@
           - -2,-2
           - 2,2
         delay: 0.4
+
+
+
+#   3 3 3 3 3 3 3
+#   3 2 2 2 2 2 3
+#   3 2 1 1 1 2 3
+#   3 2 1 0 1 2 3
+#   3 2 1 1 1 2 3
+#   3 2 2 2 2 2 3
+#   3 3 3 3 3 3 3
+
+- type: spawnGroupProto
+  id: PandoraAttackDataFrameOut4
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: PandoraAttackDataFrameOut3
       - method: !type:AttackCellMethodFrame
           initGroup:
             groupProto: Cell
