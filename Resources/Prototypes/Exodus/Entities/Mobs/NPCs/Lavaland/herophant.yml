@@ -1,7 +1,7 @@
 - type: entity
   parent: [ BaseMobLavaland ]
-  name: Pandora
-  id: MobPandora
+  name: Герофант
+  id: MobHerophant
   components:
   - type: HTN
     rootTask:
@@ -9,11 +9,9 @@
   - type: NpcFactionMember
     factions:
     - SimpleHostile
-  - type: Abilities
-    actions:
-    - ActionPandoraAttackFrameOut3
-    - ActionPandoraAttackFatFrame
-    - ActionPandoraAttackBigPoint
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.7
+    baseSprintSpeed: 1.7
   - type: Sprite
     sprite: Exodus/Mobs/Lavaland/herophant.rsi
     offset: 0,0.5
@@ -35,3 +33,16 @@
     energy: 4.5
     color: "#a38ab0"
     castShadows: true
+  - type: Abilities
+    grantActions:
+    - ActionPandoraAttackFrameOut3
+    - ActionPandoraAttackFatFrame
+    - ActionPandoraAttackBigPoint
+    actionsThresholds:
+      0:
+      - ActionPandoraAttackFrameOut3
+      100:
+      - ActionPandoraAttackFatFrame
+      200:
+      - ActionPandoraAttackFatFrame
+      - ActionPandoraAttackBigPoint
