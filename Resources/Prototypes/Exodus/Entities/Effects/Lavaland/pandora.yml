@@ -1,7 +1,8 @@
 #region Full
 - type: entity
-  id: PandoraAttackCellUnit
+  id: PandoraAttackCellUnitDEBUG  # deprecated
   parent: MarkerBase
+  noSpawn: true
   components:
   - type: Sprite
     layers:
@@ -15,8 +16,9 @@
       delay: 0.30
 
 - type: entity
-  id: PandoraAttackCellUnitBig
+  id: PandoraAttackCellUnitBigDEBUG # deprecated
   parent: MarkerBase
+  noSpawn: true
   components:
   - type: Sprite
     layers:
@@ -27,7 +29,57 @@
       spawnProtoID: PandoraAttackCellUnitBigPartBegin
     - method: !type:AttackCellMethodPoint
       spawnProtoID: PandoraAttackCellUnitBigPartDamage
-      delay: 0.30
+      delay: 0.307
+
+
+- type: entity
+  id: PandoraAttackCellUnit
+  parent: [ AttackCellUnitBase, AttackCellUnitSlow ]
+  components:
+  - type: PlaySoundOnSpawn
+    spawnSound:
+      path: /Audio/Exodus/Lavaland/Bosses/Herophant/bum.ogg
+  - type: TimedDespawn
+    lifetime: 0.65
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: blast
+  - type: TriggerOnSpawn
+  - type: TwoStageTrigger
+    triggerDelay: 0.30
+    components:
+    - type: DamageContacts
+      damage:
+        types:
+          Heat: 7
+          Cellular: 3
+          Radiation: 5
+
+
+- type: entity
+  id: PandoraAttackCellUnitBig
+  parent: [ AttackCellUnitBaseBig, AttackCellUnitSlow ]
+  components:
+  - type: PlaySoundOnSpawn
+    spawnSound:
+      path: /Audio/Exodus/Lavaland/Bosses/Herophant/bum.ogg
+  - type: TimedDespawn
+    lifetime: 0.65
+  - type: Sprite
+    sprite: Exodus/Effects/pandora_blast.rsi
+    state: blast
+    scale: 3,3
+  - type: TriggerOnSpawn
+  - type: TwoStageTrigger
+    triggerDelay: 0.30
+    components:
+    - type: DamageContacts
+      damage:
+        types:
+          Heat: 13
+          Cellular: 3
+          Radiation: 5
+
 #endregion
 
 
