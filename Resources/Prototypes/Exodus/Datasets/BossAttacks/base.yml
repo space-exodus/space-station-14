@@ -1,0 +1,4 @@
+- type: spawnGroupProto
+  id: Point
+  group:
+    method: !type:AttackCellMethodPoint

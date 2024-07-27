@@ -1,0 +1,67 @@
+- type: entity
+  id: ActionPandoraAttackFrameOut3
+  name: ActionPandoraAttackFrameOut3
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 7
+    minUseRange: 3
+    useDelay: 3
+    range: 6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: PandoraAttackFrameOut3
+        amount: 1
+      offset: 0, 0
+
+- type: entity
+  id: ActionPandoraAttackFatFrame
+  name: ActionPandoraAttackFatFrame
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 8
+    minUseRange: 4
+    useDelay: 3
+    range: 7
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: PandoraAttackFatFrame
+        amount: 1
+      offset: 0, 0
+
+- type: entity
+  id: ActionPandoraAttackBigPoint
+  name: ActionPandoraAttackBigPoint
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 4
+    minUseRange: 0
+    useDelay: 1
+    range: 4
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldAbilitiesGroupEvent
+      events:
+      - !type:WorldSpawnSpellEvent
+        prototypes:
+        - id: PandoraAttackBigPoint
+          amount: 1
+        offset: 0, 0
+      - !type:ChangeTargetCoordsToPerformerEvent
+        event: !type:WorldSpawnSpellEvent
+          prototypes:
+          - id: PandoraAttackBigPoint
+            amount: 1
+          offset: 0, 0

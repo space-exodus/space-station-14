@@ -42,5 +42,6 @@ public sealed partial class NPCCombatSystem : EntitySystem
         base.Update(frameTime);
         UpdateMelee(frameTime);
         UpdateRanged(frameTime);
+        UpdateAbility(frameTime); // Exodus-Lavaland
     }
 }

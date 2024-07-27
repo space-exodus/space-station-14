@@ -1,0 +1,65 @@
+- type: entity
+  parent:
+  - BaseMob
+  - MobCombat
+  id: BaseMobLavaland
+  abstract: true
+  components:
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
+  - type: HTN
+    rootTask:
+      task: AbilityMeleeFightCompound
+  - type: NpcFactionMember
+    factions:
+      - SimpleHostile
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Lavaland
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: Pullable
+  - type: Buckle
+    range: 0.0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.5
+        density: 300
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Butcherable
+    spawned:
+      - id: ArtifactFragment
+        amount: 4
+  - type: MeleeWeapon
+    attackRate: 0.6
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Blunt: 15
+        Structural: 7
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - DoorBumpOpener
+    - LavalandMob

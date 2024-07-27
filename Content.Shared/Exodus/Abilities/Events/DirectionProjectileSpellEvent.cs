@@ -1,9 +1,9 @@
-﻿using Content.Shared.Actions;
+using Content.Shared.Exodus.Abilities.Events;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Magic.Events;
 
-public sealed partial class ProjectileSpellEvent : WorldTargetActionEvent, ISpeakSpell
+public sealed partial class DirectionProjectileSpellEvent : DirectionActionEvent, ISpeakSpell
 {
     /// <summary>
     /// What entity should be spawned.
@@ -12,5 +12,5 @@ public sealed partial class ProjectileSpellEvent : WorldTargetActionEvent, ISpea
     public EntProtoId Prototype;
 
     [DataField]
-    public string? Speech { get; set; } // Exodus-Lavaland
+    public string? Speech { get; private set; }
 }
