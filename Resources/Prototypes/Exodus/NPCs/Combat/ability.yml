@@ -125,7 +125,7 @@
               key: Target
           operator: !type:AbilityOperator
             targetKey: Target
-            actionsTimeReload: 0.7
+            actionsTimeReload: 1
           services:
             - !type:UtilityService
               id: RangedService
