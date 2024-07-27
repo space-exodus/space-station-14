@@ -60,5 +60,6 @@
         Structural: 7
   - type: Tag
     tags:
-      - CannotSuicide
-      - DoorBumpOpener
+    - CannotSuicide
+    - DoorBumpOpener
+    - LavalandMob
