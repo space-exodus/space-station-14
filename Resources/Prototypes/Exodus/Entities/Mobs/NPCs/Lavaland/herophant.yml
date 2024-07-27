@@ -1,4 +1,26 @@
 - type: entity
+  id: MobHerophantSpawn
+  name: Герофант
+  suffix: Spawn
+  components:
+  - type: Sprite
+    sprite: Exodus/Mobs/Lavaland/herophant.rsi
+    offset: 0,0.5
+    layers:
+    - state: spawn
+      shader: unshaded
+  - type: PointLight
+    radius: 7
+    energy: 4.5
+    color: "#a38ab0"
+    castShadows: true
+  - type: TimedDespawn
+    lifetime: 2.8
+  - type: SpawnOnDespawn
+    prototype: MobHerophant
+
+
+- type: entity
   parent: [ BaseMobLavaland ]
   name: Герофант
   id: MobHerophant
@@ -9,6 +31,8 @@
   - type: NpcFactionMember
     factions:
     - SimpleHostile
+  - type: CanMoveInAir
+  - type: MovementIgnoreGravity
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.7
     baseSprintSpeed: 1.7
@@ -18,6 +42,7 @@
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
+      shader: unshaded
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -33,16 +58,12 @@
     energy: 4.5
     color: "#a38ab0"
     castShadows: true
+  - type: WarpPoint
+    follow: true
+    location: Герофант
   - type: Abilities
     grantActions:
-    - ActionPandoraAttackFrameOut3
-    - ActionPandoraAttackFatFrame
-    - ActionPandoraAttackBigPoint
+    - ActionHerophantAttackCombined10
     actionsThresholds:
       0:
-      - ActionPandoraAttackFrameOut3
-      100:
-      - ActionPandoraAttackFatFrame
-      200:
-      - ActionPandoraAttackFatFrame
-      - ActionPandoraAttackBigPoint
+      - ActionHerophantAttackCombined10
