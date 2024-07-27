@@ -153,6 +153,35 @@
           - -6,-6
           - 6,6
         delay: 1.2
+
+
+- type: spawnGroupProto
+  id: AttackDataFrameOut10
+  group:
+    method: !type:AttackCellMethodGroup
+      initGroups:
+      - groupProto: AttackDataFrameOut7
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Point
+          vertexs:
+          - -7,-7
+          - 7,7
+        delay: 1.4
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Point
+          vertexs:
+          - -8,-8
+          - 8,8
+        delay: 1.6
+      - method: !type:AttackCellMethodFrame
+          initGroup:
+            groupProto: Point
+          vertexs:
+          - -9,-9
+          - 9,9
+        delay: 1.8
 #endregion
 
 

@@ -25,7 +25,7 @@
   components:
   - type: WorldTargetAction
     maxUseRange: 8
-    minUseRange: 5
+    minUseRange: 4
     useDelay: 3
     range: 7
     itemIconStyle: BigAction

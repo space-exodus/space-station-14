@@ -1,3 +1,5 @@
+
+#region Combined
 - type: entity
   id: ActionHerophantAttackCombined5
   noSpawn: true
@@ -37,16 +39,15 @@
             offset: 0, 0
 
 
-
 - type: entity
   id: ActionHerophantAttackCombined10
   noSpawn: true
   components:
   - type: EntityTargetAction
     maxUseRange: 6
-    minUseRange: 0
-    useDelay: 3
-    range: 6
+    minUseRange: 4
+    useDelay: 4
+    range: 5
     itemIconStyle: BigAction
     icon:
       sprite: Objects/Magic/magicactions.rsi
@@ -75,3 +76,225 @@
             - id: PandoraAttackCrossPlusAttention10
               amount: 1
             offset: 0, 0
+#endregion
+
+
+#region FrameOut
+- type: entity
+  id: ActionHerophantAttackInstantFrameOut4
+  noSpawn: true
+  components:
+  - type: InstantAction
+    maxUseRange: 3
+    minUseRange: 0
+    useDelay: 1
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:ConstantWorldEvent
+      event: !type:WorldSpawnSpellEvent
+        prototypes:
+        - id: PandoraAttackFrameOut4
+          amount: 1
+        offset: 0, 0
+
+
+- type: entity
+  id: ActionHerophantAttackInstantFrameOut7
+  noSpawn: true
+  components:
+  - type: InstantAction
+    maxUseRange: 4
+    minUseRange: 0
+    useDelay: 1
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:ConstantWorldEvent
+      event: !type:WorldSpawnSpellEvent
+        prototypes:
+        - id: PandoraAttackFrameOut7
+          amount: 1
+        offset: 0, 0
+
+
+- type: entity
+  id: ActionHerophantAttackInstantFrameOut10
+  noSpawn: true
+  components:
+  - type: InstantAction
+    maxUseRange: 30
+    minUseRange: 0
+    useDelay: 3
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:ConstantWorldEvent
+      event: !type:WorldSpawnSpellEvent
+        prototypes:
+        - id: PandoraAttackFrameOut10
+          amount: 1
+        offset: 0, 0
+#endregion
+
+#region Sniper
+- type: entity
+  id: ActionHerophantAttackSniper3
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 20
+    minUseRange: 5
+    useDelay: 3
+    range: 20
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldMultishootEvent
+      angle: 0,392
+      event: !type:DirectionProjectileSpellEvent
+        prototype: BulletKinetic
+
+
+- type: entity
+  id: ActionHerophantAttackSniper5
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 20
+    minUseRange: 4
+    useDelay: 5
+    range: 20
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldMultishootEvent
+      angle: 0.523
+      shootCnt: 5
+      event: !type:DirectionProjectileSpellEvent
+        prototype: BulletKinetic
+
+
+- type: entity
+  id: ActionHerophantAttackSniper7
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 20
+    minUseRange: 4
+    useDelay: 5
+    range: 20
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldMultishootEvent
+      shootCnt: 7
+      event: !type:DirectionProjectileSpellEvent
+        prototype: BulletKinetic
+#endregion
+
+
+#region PlusCross
+- type: entity
+  id: ActionHerophantAttackPlus5
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 7
+    minUseRange: 2
+    useDelay: 3
+    range: 6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: PandoraAttackPlus5
+        amount: 1
+      offset: 0, 0
+
+
+- type: entity
+  id: ActionHerophantAttackCross4
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    maxUseRange: 7
+    minUseRange: 2
+    useDelay: 3
+    range: 6
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: PandoraAttackCross4
+        amount: 1
+      offset: 0, 0
+#endregion
+
+
+#region HAOS
+- type: entity
+  id: ActionHerophantAttackHAOS1
+  noSpawn: true
+  components:
+  - type: InstantAction
+    maxUseRange: 20
+    minUseRange: 0
+    useDelay: 5
+    range: 20
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:ConstantWorldEvent
+      event: !type:WorldMultishootEvent
+        shootCnt: 12
+        angle: 6,283
+        shootDelay: 0.15
+        event: !type:DirectionalLineSpawnEvent
+          spawnProto: BulletKinetic
+          stepDelay: 0.1
+
+
+- type: entity
+  id: ActionHerophantAttackHAOS2
+  noSpawn: true
+  components:
+  - type: InstantAction
+    maxUseRange: 20
+    minUseRange: 0
+    useDelay: 5
+    range: 20
+    itemIconStyle: BigAction
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+    event: !type:ConstantWorldEvent
+      event: !type:WorldAbilitiesGroupEvent
+        events:
+        - !type:WorldMultishootEvent
+          shootCnt: 7
+          angle: 3.1415
+          shootDelay: 0.15
+          event: !type:DirectionalLineSpawnEvent
+            spawnProto: BulletKinetic
+            stepDelay: 0.1
+        - !type:WorldMultishootEvent
+          shootCnt: 7
+          angle: 3.1415
+          clockwise: false
+          shootDelay: 0.15
+          event: !type:DirectionalLineSpawnEvent
+            spawnProto: BulletKinetic
+            stepDelay: 0.1
+#endregion

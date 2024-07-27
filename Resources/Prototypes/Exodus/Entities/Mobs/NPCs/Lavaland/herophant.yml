@@ -63,7 +63,49 @@
     location: Герофант
   - type: Abilities
     grantActions:
+    # Pandora
+    - ActionPandoraAttackBigPoint
+    - ActionPandoraAttackFatFrame
+    - ActionPandoraAttackFrameOut3
+    # Combined
+    - ActionHerophantAttackCombined5
     - ActionHerophantAttackCombined10
+    # Instant FrameOut
+    - ActionHerophantAttackInstantFrameOut4
+    - ActionHerophantAttackInstantFrameOut7
+    - ActionHerophantAttackInstantFrameOut10
+    # Sniper
+    - ActionHerophantAttackSniper3
+    - ActionHerophantAttackSniper5
+    - ActionHerophantAttackSniper7
+    # SimplePlusCross
+    - ActionHerophantAttackPlus5
+    - ActionHerophantAttackCross4
+    # Haos
+    - ActionHerophantAttackHAOS1
+    - ActionHerophantAttackHAOS2
     actionsThresholds:
       0:
+      - ActionPandoraAttackBigPoint
+      - ActionHerophantAttackSniper3
+      - ActionHerophantAttackPlus5
+      - ActionPandoraAttackFatFrame
+      300:
+      - ActionHerophantAttackInstantFrameOut4
+      - ActionHerophantAttackCross4
+      - ActionHerophantAttackSniper3
+      - ActionHerophantAttackCombined5
+      700:
+      - ActionHerophantAttackInstantFrameOut4
+      - ActionHerophantAttackCombined5
+      - ActionHerophantAttackSniper5
+      - ActionPandoraAttackFrameOut3
+      1100:
+      - ActionHerophantAttackSniper7
+      - ActionHerophantAttackInstantFrameOut7
       - ActionHerophantAttackCombined10
+      - ActionPandoraAttackFatFrame
+      1330:
+      - ActionHerophantAttackInstantFrameOut10
+      - ActionHerophantAttackHAOS1
+      - ActionHerophantAttackHAOS2

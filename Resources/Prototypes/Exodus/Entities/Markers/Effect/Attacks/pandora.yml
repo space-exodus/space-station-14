@@ -11,6 +11,20 @@
       - groupProto: AttackDataFatFrame
 
 
+- type: entity
+  id: PandoraAttackBigPoint
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: MassSpawner
+    spawnProtoID: PandoraAttackCellUnitBig
+    groups:
+      - groupProto: AttackDataPoint
+
+
+
 #region FrameOut
 - type: entity
   id: PandoraAttackFrameOut3
@@ -62,19 +76,21 @@
     spawnProtoID: PandoraAttackCellUnit
     groups:
       - groupProto: AttackDataFrameOut7
-#endregion
+
 
 - type: entity
-  id: PandoraAttackBigPoint
+  id: PandoraAttackFrameOut10
   parent: MarkerBase
   components:
   - type: Sprite
     layers:
       - state: green
   - type: MassSpawner
-    spawnProtoID: PandoraAttackCellUnitBig
+    spawnProtoID: PandoraAttackCellUnit
     groups:
-      - groupProto: AttackDataPoint
+      - groupProto: AttackDataFrameOut10
+#endregion
+
 
 
 #region Cross
