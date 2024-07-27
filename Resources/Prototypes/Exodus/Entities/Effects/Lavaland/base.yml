@@ -1,0 +1,66 @@
+- type: entity
+  id: AttackCellUnitBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.35,0.35,0.35"
+        layer:
+          - SlipLayer
+        mask:
+          - MobMask
+        density: 1000
+        hard: false
+
+- type: entity
+  id: AttackCellUnitBaseBig
+  abstract: true
+  parent: AttackCellUnitBase
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.35,-1.35,1.35,1.35"
+        layer:
+          - SlipLayer
+        mask:
+          - MobMask
+        density: 1000
+        hard: false
+
+- type: entity
+  id: AttackCellUnitDamage
+  abstract: true
+  components:
+  - type: DamageContacts
+    damage:
+      types:
+        Heat: 7
+        Cellular: 3
+        Radiation: 5
+
+- type: entity
+  id: AttackCellUnitSlow
+  abstract: true
+  components:
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.8
+    sprintSpeedModifier: 0.8
