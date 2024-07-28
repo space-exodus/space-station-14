@@ -12,5 +12,5 @@ public sealed partial class ProjectileSpellEvent : WorldTargetActionEvent, ISpea
     public EntProtoId Prototype;
 
     [DataField]
-    public string? Speech { get; set; } // Exodus-Lavaland
+    public string? Speech { get; private set; }
 }

@@ -171,11 +171,6 @@ public abstract partial class BaseActionComponent : Component
     ///     If not null, this sound will be played when performing this action.
     /// </summary>
     [DataField("sound")] public SoundSpecifier? Sound;
-
-    // Exodus-Lavaland-Start
-    [DataField("maxUseRange")] public float MaxUseRange = float.PositiveInfinity;
-    [DataField("minUseRange")] public float MinUseRange = 0;
-    // Exodus-Lavaland-End
 }
 
 [Serializable, NetSerializable]
