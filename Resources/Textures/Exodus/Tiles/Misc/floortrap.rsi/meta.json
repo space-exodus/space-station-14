@@ -1,5 +1,4 @@
 {
-    "version": 1,
     "license": "CLA",
     "copyright": "by Askolot (discord:788252896016990219), owned by Space Exodus",
     "size": {
@@ -8,7 +7,10 @@
     },
     "states": [
         {
-            "name": "folded"
+            "name": "floortrap"
+        },
+        {
+            "name": "floortrap_spikes"
         }
     ]
 }
