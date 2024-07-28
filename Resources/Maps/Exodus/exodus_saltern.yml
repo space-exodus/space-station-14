@@ -34375,8 +34375,6 @@ entities:
       pos: 14.5,-8.5
       parent: 2
     - type: DisposalUnit
-      recentlyEjected:
-      - invalid
   - uid: 5359
     components:
     - type: Transform
@@ -36386,8 +36384,6 @@ entities:
       pos: -33.5,3.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5555
       - 44
@@ -36397,8 +36393,6 @@ entities:
       pos: -33.5,4.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5555
       - 44
@@ -36408,8 +36402,6 @@ entities:
       pos: -33.5,5.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5555
       - 44
@@ -36498,8 +36490,6 @@ entities:
       pos: -37.5,-8.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 44
   - uid: 5679
@@ -36741,8 +36731,6 @@ entities:
       pos: -36.5,-8.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 44
   - uid: 5724
@@ -36752,8 +36740,6 @@ entities:
       pos: -35.5,-8.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 44
   - uid: 5725

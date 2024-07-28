@@ -10250,9 +10250,6 @@ entities:
     - type: Transform
       parent: 616
     - type: UserInterface
-      actors:
-        enum.PaperUiKey.Key:
-        - invalid
     - type: Physics
       canCollide: False
     - type: ActiveUserInterface
@@ -10406,9 +10403,6 @@ entities:
     - type: Transform
       parent: 608
     - type: UserInterface
-      actors:
-        enum.PaperUiKey.Key:
-        - invalid
     - type: Physics
       canCollide: False
     - type: ActiveUserInterface
@@ -10434,9 +10428,6 @@ entities:
     - type: Transform
       parent: 616
     - type: UserInterface
-      actors:
-        enum.PaperUiKey.Key:
-        - invalid
     - type: Physics
       canCollide: False
     - type: ActiveUserInterface
@@ -10717,9 +10708,6 @@ entities:
     - type: Transform
       parent: 621
     - type: UserInterface
-      actors:
-        enum.PaperUiKey.Key:
-        - invalid
     - type: Physics
       canCollide: False
     - type: ActiveUserInterface
@@ -32970,7 +32958,6 @@ entities:
       pos: -26.5,30.5
       parent: 2
     - type: ActivatableUI
-      currentSingleUser: invalid
 - proto: DefaultStationBeaconSurgery
   entities:
   - uid: 4746
