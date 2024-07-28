@@ -8,7 +8,10 @@
     },
     "states": [
         {
-            "name": "folded"
+            "name": "floortrap"
+        },
+        {
+            "name": "floortrap_spikes"
         }
     ]
 }
