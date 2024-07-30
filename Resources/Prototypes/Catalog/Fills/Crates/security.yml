@@ -114,3 +114,14 @@
         amount: 4
 
 # Cosmetic Crates
+
+- type: entity
+  id: CrateSecurityMiniEnergyGun
+  parent: CrateSecgear
+  name: Ящик с миниатюрными энергетическими пистолетами
+  description: Этот ящик содержит в себе два миниатюрных энергетических пистолетов. Для открытия требуется доступ службы безопасности.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponMiniEnergyGun
+        amount: 2

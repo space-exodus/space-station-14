@@ -46,8 +46,7 @@
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponX-2Dual-phaseEnergyLaserGun
   storage:
     back:
     - Flash
-    - MagazinePistol

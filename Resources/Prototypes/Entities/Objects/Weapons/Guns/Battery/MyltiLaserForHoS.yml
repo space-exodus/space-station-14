@@ -1,0 +1,129 @@
+# сам лазер
+- type: entity
+  name: Х-2 Двухфазовый энергетический лазерный пистолет
+  parent: BaseWeaponBatterySmall
+  id: WeaponX-2Dual-phaseEnergyLaserGun
+  description: Этот передовой и дорогой лазерный пистолет главы службы безопасности космической станции был изготовлен на заказ. Он сочетает в себе мощь и функциональность. Пистолет имеет два режима стрельбы - лазерный, который наносит урон ожогами на расстоянии, и станер, предназначенный для обезвреживания и задержания противников. Это оружие символизирует власть и ответственность главы службы безопасности. Однако оно не перезаряжается автоматически
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 100
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/HoSLaser.ogg
+  - type: Item
+    sprite: Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+    size: Small
+  - type: ProjectileBatteryAmmoProvider
+    proto: LaserBulletForHoS
+    fireCost: 200
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: LaserBulletForHoS
+      fireCost: 200
+    - proto: stanerBullet
+      fireCost: 175
+  - type: Battery
+    maxCharge: 2800
+    startingCharge: 2800
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 1000
+
+# проджект лазера
+- type: entity
+  name: Режим лазера
+  id: LaserBulletForHoS
+  parent: EmitterBolt
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+    layers:
+    - state: redtrac
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectLaserForHoS
+    damage:
+      types:
+        Heat: 17
+
+# проджект станера
+- type: entity
+  name: Режим станера
+  id: stanerBullet
+  parent: BulletDisabler
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+    layers:
+    - state: omnilaser
+      shader: unshaded
+  - type: StaminaDamageOnCollide
+    damage: 30
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisablerRed
+    damage:
+      types:
+        Heat: 5
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+
+# эффект от станера
+- type: entity
+  id: BulletImpactEffectDisablerRed
+  noSpawn: true
+  components:
+    - type: TimedDespawn
+      lifetime: 0.2
+    - type: Sprite
+      drawdepth: Effects
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+          state: impact_laser_red
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
+
+# эффект от лазера
+- type: entity
+  id: BulletImpactEffectLaserForHoS
+  noSpawn: true
+  components:
+    - type: TimedDespawn
+      lifetime: 0.2
+    - type: Sprite
+      drawdepth: Effects
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+          state: impact_laser
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
+
+
+
+
+
