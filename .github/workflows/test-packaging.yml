@@ -48,7 +48,7 @@ jobs:
           cd RobustToolbox/
           git submodule update --init --recursive
 
-      # Corvax-Secrets-Start
+      # Exodus-Secrets-Start
       - name: Setup secrets
         env:
           SSH_KEY: ${{ secrets.SECRETS_PRIVATE_KEY }}
@@ -59,8 +59,11 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           echo "HOST *" > ~/.ssh/config
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
-          git -c submodule.Secrets.update=checkout submodule update --init
-      # Corvax-Secrets-End
+          git clone git@github.com:space-exodus/secrets.git Secrets
+          cp -R Secrets/Resources/Prototypes Resources/Prototypes/ExodusSecrets
+          cp -R Secrets/Resources/Locale Resources/Locale/ru-RU/exodus-secrets
+          cp -R Secrets/Resources/Textures Resources/Textures/ExodusSecrets
+      # Exodus-Secrets-End
 
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3.2.0
