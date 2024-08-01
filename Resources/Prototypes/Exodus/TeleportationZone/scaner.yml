@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
-  id: SyndTeleportationZoneConsole
-  name: Syndicate teleportation control panel
-  description: A panel that allows you to manage time and space... It's like you're the creator!
+  id: TeleportationZoneInfoPortConsole
+  name: Information console
+  description: Receives important information from the central command.
   components:
     - type: Sprite
       sprite: Exodus/TeleportationZone/scaner.rsi
