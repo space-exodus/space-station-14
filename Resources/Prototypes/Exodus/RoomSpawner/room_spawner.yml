@@ -1,0 +1,43 @@
+- type: entity
+  parent: MarkerBase
+  id: ExodusBaseRoomSpawner
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Exodus/RoomSpawner/room_icon.rsi
+    icon: icon
+    snapCardinals: true
+
+- type: entity
+  parent: ExodusBaseRoomSpawner
+  id: ExodusRoomSpawner_4x4_LAB_31
+  suffix: LAB_31
+  components:
+  - type: ExodusRoomSpawner
+    roomsTag:
+    - Lab_31_4x4
+    prob: 1
+    rotation: false
+  - type: Sprite
+    sprite: Exodus/RoomSpawner/room_4x4.rsi
+    state: room_4x4
+
+- type: entity
+  parent: ExodusBaseRoomSpawner
+  id: ExodusRoomSpawner_5x5_LAB_31
+  suffix: LAB_31
+  components:
+  - type: ExodusRoomSpawner
+    roomsTag:
+    - Lab_31_5x5
+    prob: 1
+    rotation: false
+  - type: Sprite
+    sprite: Exodus/RoomSpawner/room_5x5.rsi
+    state: room_5x5

@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseItem
+  id: SyndTeleportationZoneConsole
+  name: Syndicate teleportation control panel
+  description: A panel that allows you to manage time and space... It's like you're the creator!
+  components:
+    - type: Sprite
+      sprite: Exodus/TeleportationZone/scaner.rsi
+      state: console
+    - type: TeleportationZoneScaner
+    - type: ActivatableUI
+      key: enum.TeleportationZoneScanerUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.TeleportationZoneScanerUiKey.Key:
+          type: TeleportationZoneScanerBoundUi

@@ -1,0 +1,42 @@
+- type: entity
+  abstract: true
+  parent: BaseGameRule
+  id: BaseAstroDungeonRule
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-astro-dungeon-incoming
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    weight: 5
+    reoccurrenceDelay: 30
+    duration: 1
+  - type: RuleGrids
+  - type: LoadMapRule
+
+- type: entity
+  parent: BaseAstroDungeonRule
+  id: Lab31Dungeon
+  components:
+  - type: LoadMapRule
+    preloadedGrid: DungLab31
+  - type: TeleportationZoneAstroDungeon
+    name: Laboratory No. 31*#?*#
+    coordX: -5
+    coordY: 3
+    status: Требуется проверить объект на наличие угрозы.
+    color: yellow
+    text: station-event-astro-dungeon-incoming
+
+- type: entity
+  parent: BaseAstroDungeonRule
+  id: Prison39Dungeon
+  components:
+  - type: LoadMapRule
+    preloadedGrid: DungLab31
+  - type: TeleportationZoneAstroDungeon
+    name: Prison No. 49*#?
+    coordX: -5.5
+    coordY: 6.5
+    status: Требуется недопустить враждебную фауну на объект NT!
+    color: red
+    text: station-event-astro-dungeon-incoming
