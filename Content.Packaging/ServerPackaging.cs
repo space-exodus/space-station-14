@@ -33,6 +33,10 @@ public static class ServerPackaging
 
     private static readonly List<string> ServerContentAssemblies = new()
     {
+        // Exodus-Secrets-Start
+        "Content.Exodus.Interfaces.Shared",
+        "Content.Exodus.Interfaces.Server",
+        // Exodus-Secrets-End
         "Content.Server.Database",
         "Content.Server",
         "Content.Shared",
@@ -69,6 +73,7 @@ public static class ServerPackaging
         "zh-Hant"
     };
 
+    private static readonly bool UseSecrets = File.Exists(Path.Combine("Secrets", "ExodusSecrets.sln")); // Exodus-Secrets
     public static async Task PackageServer(bool skipBuild, bool hybridAcz, IPackageLogger logger, string configuration, List<string>? platforms = null)
     {
         if (platforms == null)
@@ -117,6 +122,28 @@ public static class ServerPackaging
                     "/m"
                 }
             });
+            // Exodus-Secrets-Start
+            if (UseSecrets)
+            {
+                logger.Info($"Secrets found. Building secret project for {platform}...");
+                await ProcessHelpers.RunCheck(new ProcessStartInfo
+                {
+                    FileName = "dotnet",
+                    ArgumentList =
+                    {
+                        "build",
+                        Path.Combine("Secrets","Content.Exodus.Server", "Content.Exodus.Server.csproj"),
+                        "-c", "Release",
+                        "--nologo",
+                        "/v:m",
+                        $"/p:TargetOs={platform.TargetOs}",
+                        "/t:Rebuild",
+                        "/p:FullRelease=true",
+                        "/m"
+                    }
+                });
+            }
+            // Exodus-Secrets-End
 
             await PublishClientServer(platform.Rid, platform.TargetOs, configuration);
         }
@@ -175,6 +202,10 @@ public static class ServerPackaging
         var inputPassCore = graph.InputCore;
         var inputPassResources = graph.InputResources;
         var contentAssemblies = new List<string>(ServerContentAssemblies);
+        // Exodus-Secrets-Start
+        if (UseSecrets)
+            contentAssemblies.AddRange(["Content.Exodus.Shared", "Content.Exodus.Server"]);
+        // Exodus-Secrets-End
 
         // Additional assemblies that need to be copied such as EFCore.
         var sourcePath = Path.Combine(contentDir, "bin", "Content.Server");

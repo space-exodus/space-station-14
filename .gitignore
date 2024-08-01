@@ -12,10 +12,9 @@
 
 # Secret
 Secrets
-Resources/Prototypes/CorvaxSecrets
-Resources/Prototypes/CorvaxSecretsServer
-Resources/Textures/CorvaxSecrets
-Resources/Locale/ru-RU/corvax-secrets
+Resources/Prototypes/ExodusSecrets
+Resources/Textures/ExodusSecrets
+Resources/Locale/ru-RU/exodus-secrets
 
 # Build results
 [Dd]ebug/
