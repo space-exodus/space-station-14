@@ -15,7 +15,7 @@ FORK_ID = os.environ['FORK_ID']
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "https://cdn2.space-exodus.com/"
+ROBUST_CDN_URL = os.environ['ROBUST_CDN_URL']
 
 def main():
     print("Fetching artifact URL from API...")
