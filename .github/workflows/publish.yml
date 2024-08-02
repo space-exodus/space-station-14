@@ -77,6 +77,7 @@ jobs:
         ARTIFACT_ID: ${{ steps.artifact-upload-step.outputs.artifact-id }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
         FORK_ID: exodus-secret
+        ROBUST_CDN_URL: ${{ secrets.ROBUST_CDN_URL }}
 
     #    - name: Publish changelog (Discord)
     #      run: Tools/actions_changelogs_since_last_run.py
