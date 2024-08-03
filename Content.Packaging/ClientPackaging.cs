@@ -101,8 +101,6 @@ public static class ClientPackaging
 
         await WriteClientResources(contentDir, pass, cancel); // Exodus-Secrets: Support content resource ignore to ignore server-only prototypes
 
-        await RobustClientPackaging.WriteClientResources(contentDir, pass, cancel);
-
         inputPass.InjectFinished();
     }
 
