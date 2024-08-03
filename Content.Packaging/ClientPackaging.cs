@@ -10,7 +10,7 @@ namespace Content.Packaging;
 
 public static class ClientPackaging
 {
-    private static readonly bool UseSecrets = File.Exists(Path.Combine("Exodus", "ExodusSecrets.sln")); // Exodus-Secrets
+    private static readonly bool UseSecrets = File.Exists(Path.Combine("Secrets", "ExodusSecrets.sln")); // Exodus-Secrets
     /// <summary>
     /// Be advised this can be called from server packaging during a HybridACZ build.
     /// </summary>
