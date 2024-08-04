@@ -1,0 +1,53 @@
+# Сам прототип оружия
+- type: entity
+  name: Mini energy gun 
+  parent: BaseWeaponBatterySmall
+  id: WeaponMiniEnergyGun
+  description: A small energy gun with a built-in flashlight. It has two settings; disable and kill. Usually issued to security officers as a tactical weapon.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Battery/MiniEnergyGun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 1.5
+    projectileSpeed: 75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/MiniEnergyGun/MiniEnergyGun.ogg
+  - type: Item
+    sprite: Exodus/Objects/Weapons/Guns/Battery/MiniEnergyGun.rsi
+    size: Small
+  - type: ProjectileBatteryAmmoProvider
+    proto: LaserBulletForMEG
+    fireCost: 200
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: LaserBulletForMEG
+      fireCost: 200
+    - proto: LaserBulletStan
+      fireCost: 100
+  - type: Battery
+    maxCharge: 1200
+    startingCharge: 1200
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 250
+  - type: Sharp
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 4
+    netsync: false

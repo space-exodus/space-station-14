@@ -75,34 +75,6 @@
 		{
 			"name": "equipped-SUITSTORAGE",
 			"directions": 4
-		},
-		{
-		    "name": "BlueTrac"
-	    },
-		{
-			"name": "impact_laser",
-			"delays": [
-			  [
-				0.05,
-				0.05,
-				0.05,
-				0.05
-			  ]
-			]
-		},
-		{
-		    "name": "omnilaser"
-	    },
-		{
-			"name": "impact_laser_blue",
-			"delays": [
-			  [
-				0.05,
-				0.05,
-				0.05,
-				0.05
-			  ]
-			]
 		}
 	]
 }

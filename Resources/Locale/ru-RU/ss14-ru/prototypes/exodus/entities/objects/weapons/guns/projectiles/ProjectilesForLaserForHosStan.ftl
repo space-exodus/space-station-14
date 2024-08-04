@@ -1,0 +1,1 @@
+ent-stanerBullet = станера

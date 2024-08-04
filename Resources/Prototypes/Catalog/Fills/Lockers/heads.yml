@@ -294,6 +294,7 @@
       - id: BookSecretDocumentsExodus #Exodus
       - id: BookBusido # Corvax-Books
       - id: BookSpaceLaw
+      - id: WeaponX2DualphaseEnergyLaserGun # кастомное оружие для гсб, сделано для exodus
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -321,6 +322,7 @@
       - id: HoloprojectorSecurity
       - id: BookSecretDocumentsExodus # Exodus-NukeSecretDocuments
       - id: BookSpaceLaw
+      - id: WeaponX2DualphaseEnergyLaserGun # кастомное оружие для гсб, сделано для exodus
 
 - type: entity
   id: LockerFreezerVaultFilled

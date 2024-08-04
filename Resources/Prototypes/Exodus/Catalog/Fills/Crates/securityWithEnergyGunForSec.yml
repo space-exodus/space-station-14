@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateSecurityMiniEnergyGun
+  parent: CrateSecgear
+  name: A case of miniature energy pistols.
+  description: This box contains two miniature energy pistols. Security access is required to open it.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponMiniEnergyGun
+        amount: 2

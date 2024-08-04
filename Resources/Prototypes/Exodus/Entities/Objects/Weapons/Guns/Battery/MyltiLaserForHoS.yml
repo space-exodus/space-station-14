@@ -1,0 +1,45 @@
+# сам лазер
+- type: entity
+  name: X-2 Dual phase energy laser gun
+  parent: BaseWeaponBatterySmall
+  id: WeaponX2DualphaseEnergyLaserGun
+  description: This advanced and expensive space station security chief's laser pistol was custom made. It combines power and functionality. The gun has two firing modes - laser, which causes burn damage at a distance, and staner, designed for disarming and detaining opponents. This weapon symbolizes the power and responsibility of the head of security. However, it is not automatically reloaded.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 100
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/HoSLaser/HoSLaser.ogg
+  - type: Item
+    sprite: Exodus/Objects/Weapons/Guns/Battery/MyltiLaserForHoS.rsi
+    size: Small
+  - type: ProjectileBatteryAmmoProvider
+    proto: LaserBulletForHoS
+    fireCost: 200
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: LaserBulletForHoS
+      fireCost: 200
+    - proto: stanerBullet
+      fireCost: 175
+  - type: Battery
+    maxCharge: 2800
+    startingCharge: 2800
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 1000

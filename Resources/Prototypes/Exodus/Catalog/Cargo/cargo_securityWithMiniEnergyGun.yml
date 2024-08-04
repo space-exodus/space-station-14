@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: SecurityMiniEnergyGun
+  icon:
+    sprite: Exodus/Objects/Weapons/Guns/Battery/MiniEnergyGun.rsi
+    state: base
+  product: CrateSecurityMiniEnergyGun
+  cost: 2500
+  category: cargoproduct-category-name-security
+  group: market

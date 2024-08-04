@@ -30,7 +30,7 @@
     eyes: ClothingEyesGlassesSecurity
     id: WardenPDA
     ears: ClothingHeadsetSecurity
-    pocket1: WeaponMiniEnergyGun
+    pocket1: WeaponMiniEnergyGun # Убрал "WeaponPistolMk58" и добавил "WeaponMiniEnergyGun"
   storage:
-    back:
+    back: # Убрал "MagazinePistol"
     - Flash
