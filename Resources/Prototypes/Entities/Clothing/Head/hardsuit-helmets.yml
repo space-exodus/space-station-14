@@ -290,9 +290,9 @@
   description: Lightweight hardsuit helmet that doesn't restrict your head movements.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hardsuits/rd.rsi
+    sprite: Exodus/Clothing/Head/Hardsuits/rd.rsi   # Exodus-Resprite
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/rd.rsi
+    sprite: Exodus/Clothing/Head/Hardsuits/rd.rsi   # Exodus-Resprite
   - type: PointLight # Corvax-Resprite
     color: "#a4fef4"
   - type: PressureProtection
