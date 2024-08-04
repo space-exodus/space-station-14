@@ -1,0 +1,1 @@
+ent-LaserBulletForHoS = лазера

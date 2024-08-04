@@ -1,0 +1,79 @@
+# продект лазера
+- type: entity
+  name: Laser
+  id: LaserBulletForMEG
+  parent: EmitterBolt
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Projectiles/ProjectilesForLaserByDepresh.rsi
+    layers:
+    - state: omnilaser_greyscale
+      shader: unshaded
+      color: blue
+  - type: Projectile
+    impactEffect: BulletImpactEffectLaserForMEG
+    damage:
+      types:
+        Heat: 20
+
+# эффект от лазера
+- type: entity
+  id: BulletImpactEffectLaserForMEG
+  noSpawn: true
+  components:
+    - type: TimedDespawn
+      lifetime: 0.3
+    - type: Sprite
+      drawdepth: Effects
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Exodus/Objects/Weapons/Guns/Projectiles/ProjectilesForLaserByDepresh.rsi
+          state: impact_laser_greyscale
+          color: blue
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
+
+# проджект станера(написан на основе проджекта лазера, ибо другие ломали фонарик)
+- type: entity
+  name: Stunner
+  id: LaserBulletStan
+  parent: EmitterBolt
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Projectiles/ProjectilesForLaserByDepresh.rsi
+    layers:
+    - state: omnilaser_greyscale
+      shader: unshaded
+      color: cyan
+  - type: StaminaDamageOnCollide
+    damage: 25
+  - type: Projectile
+    impactEffect: BulletImpactEffectLaserStan
+    damage:
+      types:
+        Heat: 4.2
+
+# эффект от станера
+- type: entity
+  id: BulletImpactEffectLaserStan
+  noSpawn: true
+  components:
+    - type: TimedDespawn
+      lifetime: 0.3
+    - type: Sprite
+      drawdepth: Effects
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Exodus/Objects/Weapons/Guns/Projectiles/ProjectilesForLaserByDepresh.rsi
+          state: impact_laser_greyscale
+          color: cyan
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
