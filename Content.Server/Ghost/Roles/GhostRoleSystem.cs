@@ -3,7 +3,6 @@ using Content.Server.Administration.Logs;
 using Content.Server.EUI;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Ghost.Roles.Events;
-using Content.Server.Ghost.Roles.Raffles;
 using Content.Shared.Ghost.Roles.Raffles;
 using Content.Server.Ghost.Roles.UI;
 using Content.Server.Mind.Commands;
@@ -39,6 +38,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Content.Server.IdentityManagement;
 // Exodus-GhostRolesProfilesEditor-End
+using Content.Shared.Ghost.Roles.Components;
 
 namespace Content.Server.Ghost.Roles
 {
@@ -96,6 +96,7 @@ namespace Content.Server.Ghost.Roles
             SubscribeLocalEvent<GhostTakeoverAvailableComponent, TakeGhostRoleEvent>(OnTakeoverTakeRole);
             SubscribeLocalEvent<GhostRoleHumanoidEditorComponent, TakeGhostRoleEvent>(OnHumanoidEditorTakeRole); // Exodus-GhostRolesProfilesEditor
             SubscribeLocalEvent<GhostRoleMobSpawnerComponent, GetVerbsEvent<Verb>>(OnVerb);
+            SubscribeLocalEvent<GhostRoleMobSpawnerComponent, GhostRoleRadioMessage>(OnGhostRoleRadioMessage);
             _playerManager.PlayerStatusChanged += PlayerStatusChanged;
         }
 
@@ -892,6 +893,21 @@ namespace Content.Server.Ghost.Roles
                 var msg = Loc.GetString("ghostrole-spawner-select", ("mode", verbText));
                 _popupSystem.PopupEntity(msg, uid, userUid.Value);
             }
+        }
+
+        public void OnGhostRoleRadioMessage(Entity<GhostRoleMobSpawnerComponent> entity, ref GhostRoleRadioMessage args)
+        {
+            if (!_prototype.TryIndex(args.ProtoId, out var ghostRoleProto))
+                return;
+
+            // if the prototype chosen isn't actually part of the selectable options, ignore it
+            foreach (var selectableProto in entity.Comp.SelectablePrototypes)
+            {
+                if (selectableProto == ghostRoleProto.EntityPrototype.Id)
+                    return;
+            }
+
+            SetMode(entity.Owner, ghostRoleProto, ghostRoleProto.Name, entity.Comp);
         }
     }
 
