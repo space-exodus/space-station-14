@@ -25,6 +25,8 @@ namespace Content.Server.Exodus.TeleportationZone
             SubscribeLocalEvent<AstroGenMarkerComponent, MapInitEvent>(OnMapInit);
         }
 
+        public static Random _random = new Random();
+
         private void OnMapInit(EntityUid uid, AstroGenMarkerComponent component, MapInitEvent args)
         {
             double[,] field = GetField();
@@ -111,7 +113,7 @@ namespace Content.Server.Exodus.TeleportationZone
             int width = 201;
             int height = 201;
             int radius = 50;
-            int count_rocks = 15;
+            int count_rocks = 50;
 
             double[,] field = Generate_field(width, height);
             field = Place_main_rock(field, width, height, radius);
@@ -124,6 +126,7 @@ namespace Content.Server.Exodus.TeleportationZone
             field = Outline(field);
             double[,] caves_field = Generate_cave_mask(width, height);
             field = Apply_cave_mask(field, caves_field);
+            field = Place_guaranteed_paths(field, pos_start, pos_end);
             field = Place_main_air(field, pos_start, pos_end, 4);
 
             return field;
@@ -183,18 +186,18 @@ namespace Content.Server.Exodus.TeleportationZone
 
         private static double[,] Generate_rocks(int count)
         {
-            int min_rocks = 30;
-            int max_rocks = 71;
-            int min_radius_rocks = 5;
-            int max_radius_rocks = 25;
+            int min_rocks = 51;
+            int max_rocks = 142;
+            int min_radius_rocks = 10;
+            int max_radius_rocks = 50;
             Random random = new Random();
 
             double[,] rocks = new double[count, 3];
             for (int i = 0; i < count; i++)
             {
-                rocks[i, 0] = min_rocks + random.NextDouble() * (max_rocks - min_rocks);
-                rocks[i, 1] = min_rocks + random.NextDouble() * (max_rocks - min_rocks);
-                rocks[i, 2] = min_radius_rocks + random.NextDouble() * (max_radius_rocks - min_radius_rocks);
+                rocks[i, 0] = min_rocks + _random.NextDouble() * (max_rocks - min_rocks);
+                rocks[i, 1] = min_rocks + _random.NextDouble() * (max_rocks - min_rocks);
+                rocks[i, 2] = min_radius_rocks + _random.NextDouble() * (max_radius_rocks - min_radius_rocks);
             }
 
             return rocks;
@@ -204,8 +207,8 @@ namespace Content.Server.Exodus.TeleportationZone
         {
             int[] list_pos = new int[2];
             Random random = new Random();
-            list_pos[0] = (int)(left + random.NextDouble() * (right - left + 1));
-            list_pos[1] = (int)(top + random.NextDouble() * (bottom - top + 1));
+            list_pos[0] = (int)(left + _random.NextDouble() * (right - left + 1));
+            list_pos[1] = (int)(top + _random.NextDouble() * (bottom - top + 1));
             return list_pos;
         }
 
@@ -410,7 +413,7 @@ namespace Content.Server.Exodus.TeleportationZone
             {
                 for (int j = 0; j < width; j++)
                 {
-                    field[i, j] = random.NextDouble();
+                    field[i, j] = _random.NextDouble();
                 }
             }
             return field;
@@ -543,14 +546,13 @@ namespace Content.Server.Exodus.TeleportationZone
             return nfield;
         }
 
-        // Do not use this method, because the strikers work very slowly. Maybe I wrote something wrong when I ported this code from python to c#
         private static double[,] Place_guaranteed_paths(double[,] field, int[] pos_start, int[] pos_end)
         {
             double[,] nfield = (double[,])field.Clone();
-            List<int[]> striders_direction_masks = new List<int[]> { new int[] { 1, 4, 1, 1 }, new int[] { 1, 1, 1, 4 } };
+            List<int[]> striders_direction_masks = new List<int[]> { new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 } };
             int[] ps = (int[])pos_start.Clone();
             int[][] striders = Enumerable.Repeat(ps, striders_direction_masks.Count).ToArray();
-            while (striders.All(strider_pos => strider_pos != pos_end))
+            while (striders.All(strider_pos => !(strider_pos[0] == pos_end[0] & strider_pos[1] == pos_end[1])))
             {
                 for (int i = 0; i < striders.GetLength(0); i++)
                 {
@@ -558,7 +560,7 @@ namespace Content.Server.Exodus.TeleportationZone
                     striders[i][0] = obj.Item1;
                     striders[i][1] = obj.Item2;
                     if (striders[i] != pos_end)
-                        field = Trace(field, striders[i]);
+                        nfield = Trace(nfield, striders[i]);
                 }
             }
             return nfield;
@@ -616,9 +618,9 @@ namespace Content.Server.Exodus.TeleportationZone
             pr[0] = 0;
             for (int i = 0; i < h.Count; i++)
             {
-                pr[i + 1] = (pr[^1] + (double)h[i][1]);
+                pr[i + 1] = (pr[i] + (double)h[i][1]);
             }
-            double r = random.NextDouble() * pr[^1];
+            double r = _random.NextDouble() * pr[^1];
             for (int j = 1; j < pr.Length; j++)
             {
                 if (r < pr[j])
