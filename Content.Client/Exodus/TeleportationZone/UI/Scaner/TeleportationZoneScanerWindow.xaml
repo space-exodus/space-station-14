@@ -1,0 +1,12 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:viewport="clr-namespace:Content.Client.Viewport"
+               Title="{Loc 'teleportationZone-scaner-ui-window'}"
+               Resizable="True">
+    <BoxContainer Orientation="Vertical">
+        <Label Margin="0 0 0 5" Name="TeleportationZoneNameLabel" HorizontalAlignment="Left"/>
+        <Label Margin="0 0 0 5" Name="TeleportationZoneXLabel" HorizontalAlignment="Left"/>
+        <Label Margin="0 0 0 5" Name="TeleportationZoneYLabel" HorizontalAlignment="Left"/>
+        <RichTextLabel Margin="0 0 0 5" Name="TeleportationZoneStatusLabel" HorizontalAlignment="Left"/>
+        <Button Margin="10 5 0 0" Name="TeleportationZoneScanerRefreshButton" Text="{Loc 'teleportationZone-scaner-ui-refresh-button'}" />
+    </BoxContainer>
+</DefaultWindow>
