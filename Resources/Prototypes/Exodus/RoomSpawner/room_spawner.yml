@@ -41,3 +41,33 @@
   - type: Sprite
     sprite: Exodus/RoomSpawner/room_5x5.rsi
     state: room_5x5
+
+- type: entity
+  parent: ExodusBaseRoomSpawner
+  id: ExodusRoomSpawner_13x13_Hexes_desert_arrival
+  suffix: HEXES, DESERT
+  components:
+  - type: ExodusRoomSpawner
+    roomsTag:
+    - Hexes_desert_arrival_13x13
+    prob: 1
+    rotation: false
+    clearExisting: true
+  - type: Sprite
+    sprite: Exodus/RoomSpawner/room_13x13.rsi
+    state: room_13x13
+
+- type: entity
+  parent: ExodusBaseRoomSpawner
+  id: ExodusRoomSpawner_7x7_Hexes_desert_objective
+  suffix: HEXES, DESERT
+  components:
+  - type: ExodusRoomSpawner
+    roomsTag:
+    - Hexes_desert_objective_7x7
+    prob: 1
+    rotation: false
+    clearExisting: true
+  - type: Sprite
+    sprite: Exodus/RoomSpawner/room_7x7.rsi
+    state: room_7x7
