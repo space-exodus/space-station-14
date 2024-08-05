@@ -8,6 +8,7 @@ using Content.Shared.Maps;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
+using Content.Server.Decals;
 
 namespace Content.Server.Exodus.TeleportationZone
 {
@@ -16,6 +17,7 @@ namespace Content.Server.Exodus.TeleportationZone
         [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
         [Dependency] private readonly SharedMapSystem _mapSystem = default!;
         [Dependency] private readonly IEntityManager _entManager = default!;
+        [Dependency] private readonly DecalSystem _decals = default!;
 
         public override void Initialize()
         {
@@ -30,6 +32,8 @@ namespace Content.Server.Exodus.TeleportationZone
             var Coords = x_form.Coordinates;
             var start_x = Coords.X - 0.5f - 50;
             var start_y = Coords.Y - 0.5f + 51;
+            var arrival_pos = x_form.Coordinates;
+            var obj_pos = x_form.Coordinates;
             EntityUid start_station_uid = Transform(uid).GridUid!.Value;
             if (!TryComp<MapGridComponent>(start_station_uid, out var start_gridComp))
                 return;
@@ -59,21 +63,46 @@ namespace Content.Server.Exodus.TeleportationZone
                         var new_pos = _mapSystem.GridTileToLocal(start_station_uid, start_gridComp, tile);
                         var plating = _tileDefinitionManager["FloorDesert"];
                         start_gridComp.SetTile(new_pos, new Tile(plating.TileId));
-                        if (field[i, j] == 2)
+                        if (field[i, j] == 1)
+                        {
+                            Random random = new Random();
+                            if (random.Next(10) < 1) // этот костыль я уберу. Честное слово)
+                            {
+                                if (random.Next(10) < 1)
+                                {
+                                    _decals.TryAddDecal("Busha1", new_pos, out _);
+                                }
+                                else if (random.Next(10) < 1)
+                                {
+                                    _decals.TryAddDecal("Busha2", new_pos, out _);
+                                }
+                                else if (random.Next(10) < 1)
+                                {
+                                    _decals.TryAddDecal("Bushc1", new_pos, out _);
+                                }
+                                else
+                                {
+                                    _decals.TryAddDecal("Bushd4", new_pos, out _);
+                                }
+                            }
+                        }
+                        else if (field[i, j] == 2)
                         {
                             var spawnEnt = _entManager.SpawnEntity("WallRock", new_pos);
                         }
                         else if (field[i, j] == -1)
                         {
-                            var spawnEnt = _entManager.SpawnEntity("ExodusRoomSpawner_13x13_Hexes_desert_arrival", new_pos);
+                            arrival_pos = new_pos;
                         }
                         else if (field[i, j] == -2)
                         {
-                            var spawnEnt = _entManager.SpawnEntity("ExodusRoomSpawner_7x7_Hexes_desert_objective", new_pos);
+                            obj_pos = new_pos;
                         }
                     }
                 }
             }
+            var spawnArrival = _entManager.SpawnEntity("ExodusRoomSpawner_13x13_Hexes_desert_arrival", arrival_pos);
+            var spawnObjective = _entManager.SpawnEntity("ExodusRoomSpawner_7x7_Hexes_desert_objective", obj_pos);
         }
 
         // Lasciate ogne speranza, voi ch'entrate
@@ -87,8 +116,8 @@ namespace Content.Server.Exodus.TeleportationZone
             double[,] field = Generate_field(width, height);
             field = Place_main_rock(field, width, height, radius);
             field = Place_rocks(field, count_rocks);
-            int[] pos_start = Random_pose(15, 65, 86, 86);
-            int[] pos_end = Random_pose(15, 15, 86, 36);
+            int[] pos_start = Random_pose(15, 65, 86, 166);
+            int[] pos_end = Random_pose(86, 15, 176, 36);
             field = Place_main_points(field, pos_start, pos_end, 11);
             field = Place_pathway(field, pos_start, pos_end, 4);
             field = Restore_main_path(field, pos_start, pos_end, 2);
@@ -228,7 +257,7 @@ namespace Content.Server.Exodus.TeleportationZone
 
             if (pos_end[0] - pos_start[0] != 0)
             {
-                double k = (pos_end[1] - pos_start[1]) / (pos_end[0] - pos_start[0]);
+                double k = (double)(pos_end[1] - pos_start[1]) / (double)(pos_end[0] - pos_start[0]);
                 double a = pos_start[1] - k * pos_start[0];
 
                 for (int y = y_st; y < y_en + 1; y++)
