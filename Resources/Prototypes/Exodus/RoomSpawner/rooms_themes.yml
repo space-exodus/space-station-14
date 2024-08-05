@@ -4,6 +4,12 @@
 - type: Tag
   id: Lab_31_5x5
 
+- type: Tag
+  id: Hexes_desert_arrival_13x13
+
+- type: Tag
+  id: Hexes_desert_objective_7x7
+
 # Small for storehouse in Lab № 31
 # - 4x4
 - type: dungeonRoom
@@ -87,3 +93,21 @@
   offset: 18,6
   tags:
     - Lab_31_5x5
+
+# Medium for Hexes desert
+# arrival 13x13
+- type: dungeonRoom
+  id:  Hexes_desert_arrival_13x13
+  size: 13,13
+  atlas: /Maps/Exodus/TeleportationObjects/Themes/Hexes_desert/hexes_desert_theme.yml
+  offset: -1,-6
+  tags:
+    -  Hexes_desert_arrival_13x13
+
+- type: dungeonRoom
+  id:  Hexes_desert_objective_7x7
+  size: 7,7
+  atlas: /Maps/Exodus/TeleportationObjects/Themes/Hexes_desert/hexes_desert_theme.yml
+  offset: 13,0
+  tags:
+    -  Hexes_desert_objective_7x7
