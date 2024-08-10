@@ -113,6 +113,10 @@ namespace Content.Server.Explosion.EntitySystems
             {
                 var xform = Transform(uid);
                 _audio.PlayPvs(component.Sound, xform.Coordinates); // play the sound at its last known coordinates
+
+                // Exodus-Lavaland-start
+                RemCompDeferred<SoundOnTriggerComponent>(uid);
+                // Exodus-Lavaland-end
             }
             else // if the component doesn't get removed when triggered
             {
