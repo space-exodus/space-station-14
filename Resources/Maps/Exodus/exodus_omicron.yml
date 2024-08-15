@@ -30795,7 +30795,7 @@ entities:
     - type: Transform
       pos: 8.5,-6.5
       parent: 2
-- proto: LockerScienceFilled
+- proto: LockerScienceSuitFilledResprite
   entities:
   - uid: 4707
     components:
