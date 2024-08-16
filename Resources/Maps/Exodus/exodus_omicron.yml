@@ -46,7 +46,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: Творчество пончерро
+      name: Omicron Station
     - type: Transform
       pos: -0.91220605,-0.6873125
       parent: 1
@@ -2504,8 +2504,6 @@ entities:
       pos: 14.5,20.5
       parent: 2
     - type: DeviceList
-      configurators:
-      - invalid
   - uid: 25
     components:
     - type: Transform
@@ -20329,8 +20327,6 @@ entities:
       pos: 6.5,21.5
       parent: 2
     - type: DisposalUnit
-      recentlyEjected:
-      - invalid
   - uid: 3285
     components:
     - type: Transform
