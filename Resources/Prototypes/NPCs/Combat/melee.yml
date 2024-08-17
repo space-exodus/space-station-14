@@ -3,27 +3,23 @@
 - type: htnCompound
   id: MeleeCombatCompound
   branches:
-    # Pickup weapon if we don't have one.
-    - preconditions:
-       - !type:ActiveHandComponentPrecondition
-          components:
-          # Just serializer things
-          - type: MeleeWeapon
-            damage:
-              types:
-                Blunt: 0
-          invert: true
-      tasks:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyMeleeTargets
         - !type:HTNCompoundTask
-          task: PickupMeleeCompound
+          task: BeforeMeleeAttackTargetCompound
 
+- type: htnCompound
+  id: BeforeMeleeAttackTargetCompound
+  branches:
     - preconditions:
-      - !type:BuckledPrecondition
-        isBuckled: true
+        - !type:BuckledPrecondition
+          isBuckled: true
       tasks:
-      - !type:HTNPrimitiveTask
-        operator: !type:UnbuckleOperator
-          shutdownState: TaskFinished
+        - !type:HTNPrimitiveTask
+          operator: !type:UnbuckleOperator
+            shutdownState: TaskFinished
 
     # Exodus-MRP NPC-Start
     - preconditions:
@@ -36,26 +32,37 @@
     # Exodus-MRP NPC-End
 
     - preconditions:
-      - !type:InContainerPrecondition
-        isInContainer: true
+        - !type:PulledPrecondition
+          isPulled: true
+          isHostilePulling: true # Exodus-MRP NPC
       tasks:
-      - !type:HTNCompoundTask
-        task: EscapeCompound
+        - !type:HTNPrimitiveTask
+          operator: !type:UnPullOperator
+            shutdownState: TaskFinished
 
     - preconditions:
-      - !type:PulledPrecondition
-        isPulled: true
-        isHostilePulling: true # Exodus-MRP NPC
+        - !type:InContainerPrecondition
+          isInContainer: true
       tasks:
-      - !type:HTNPrimitiveTask
-        operator: !type:UnPullOperator
-          shutdownState: TaskFinished
+        - !type:HTNCompoundTask
+          task: EscapeCompound
+
+    # Pickup weapon if we don't have one.
+    - preconditions:
+        - !type:ActiveHandComponentPrecondition
+            components:
+              # Just serializer things
+              - type: MeleeWeapon
+                damage:
+                  types:
+                    Blunt: 0
+            invert: true
+      tasks:
+        - !type:HTNCompoundTask
+          task: PickupMeleeCompound
 
     # Melee combat (unarmed or otherwise)
     - tasks:
-        - !type:HTNPrimitiveTask
-          operator: !type:UtilityOperator
-            proto: NearbyMeleeTargets
         - !type:HTNCompoundTask
           task: MeleeAttackTargetCompound
 
