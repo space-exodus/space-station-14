@@ -60,7 +60,6 @@ internal sealed partial class ChatManager : IChatManager
 
     public void Initialize()
     {
-        IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
         _netManager.RegisterNetMessage<MsgChatMessage>();
         _netManager.RegisterNetMessage<MsgDeleteChatMessagesBy>();
 

@@ -7,13 +7,13 @@
     - id: UnknownShuttleCargoLost
     - id: UnknownShuttleTravelingCuisine
     - id: UnknownShuttleDisasterEvacPod
-    - id: UnknownShuttleHonki
+    # - id: UnknownShuttleHonki # Exodus
 
 - type: entityTable
   id: UnknownShuttlesFreelanceTable
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
-    children:
-    - id: UnknownShuttleSyndieEvacPod
+    children: []
+    # - id: UnknownShuttleSyndieEvacPod # Exodus
 
 - type: entityTable
   id: UnknownShuttlesHostileTable
@@ -59,20 +59,20 @@
   - type: LoadMapRule
     preloadedGrid: DisasterEvacPod
 
-# - type: entity # Exodus
-#   parent: BaseUnknownShuttleRule
-#   id: UnknownShuttleHonki
-#   components:
-#   - type: StationEvent
-#     weight: 2
-#   - type: LoadMapRule
-#     preloadedGrid: Honki
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: UnknownShuttleHonki
+  components:
+  - type: StationEvent
+    weight: 2
+  - type: LoadMapRule
+    preloadedGrid: Honki
 
-# - type: entity
-#   parent: BaseUnknownShuttleRule
-#   id: UnknownShuttleSyndieEvacPod
-#   components:
-#   - type: StationEvent
-#     weight: 2
-#   - type: LoadMapRule
-#     preloadedGrid: SyndieEvacPod
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: UnknownShuttleSyndieEvacPod
+  components:
+  - type: StationEvent
+    weight: 2
+  - type: LoadMapRule
+    preloadedGrid: SyndieEvacPod
