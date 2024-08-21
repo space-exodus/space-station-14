@@ -39,7 +39,7 @@
 
 <div align="center">
 
-![Активность PR](https://repobeats.axiom.co/api/embed/3c32b40de944a0159d6aafb14497be157369e165.svg "Repobeats analytics image")
+![Активность PR](https://repobeats.axiom.co/api/embed/9d0170046d19f6734bbfcd1ddb2e3290dae07b08.svg "Repobeats analytics image")
 
 </div>
 
