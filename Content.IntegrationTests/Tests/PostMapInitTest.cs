@@ -66,6 +66,7 @@ namespace Content.IntegrationTests.Tests
             "ExodusOmega",
             "ExodusPacked",
             "ExodusSaltern",
+            "ExodusOmicron",
             // Exodus-End
             "Dev",
             "TestTeg",
@@ -263,7 +264,7 @@ namespace Content.IntegrationTests.Tests
 
                         lateSpawns += GetCountLateSpawn<SpawnPointComponent>(gridUids, entManager);
                         lateSpawns += GetCountLateSpawn<ContainerSpawnPointComponent>(gridUids, entManager);
-                        
+
                         //start - Exodus   //2 0.08.2024-fix-poinstmaps-and-brigmed
                         // Output the number of latejoin spawn points found
                         Console.WriteLine($"Late spawn points found on {mapProto}: {lateSpawns}");
