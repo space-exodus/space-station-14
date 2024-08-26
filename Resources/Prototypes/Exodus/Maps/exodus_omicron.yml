@@ -1,0 +1,47 @@
+- type: gameMap
+  id: ExodusOmicron
+  mapName: 'Omicron | EFS'
+  mapPath: /Maps/Exodus/exodus_omicron.yml
+  minPlayers: 0
+  maxPlayers: 20
+  stations:
+    Omicron:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Omicrin Base {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            #service
+            Captain: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            Reporter: [ 1, 1 ]
+            #engineering
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 2, 2 ]
+            #medical
+            Chemist: [ 1, 1 ]
+            Paramedic: [ 1, 1 ]
+            MedicalDoctor: [ 2, 2 ]
+            #science
+            Scientist: [ 3, 3]
+            #security
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
+            #supply
+            SalvageSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 2, 2 ]
+            #civillian
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
