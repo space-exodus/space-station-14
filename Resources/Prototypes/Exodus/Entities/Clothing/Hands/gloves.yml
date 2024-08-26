@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHandsGlovesColorBlack
+  parent: [ClothingHandsGlovesColorBlack, BaseCommandContraband]
   id: ClothingHandsGlovesBlueshield
   name: blueshield gloves
   description: These tactical gloves are fireproof and shock resistant.
@@ -8,8 +8,6 @@
     sprite: Exodus/Clothing/Hands/Gloves/blueshield.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Hands/Gloves/blueshield.rsi
-  - type: GloveHeatResistance
-    heatResistance: 1400
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
