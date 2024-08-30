@@ -1,12 +1,13 @@
 - type: entity
   parent: FoodSnackBase
   id: Kirieshki
-  name: Кириешки Neo
-  description: Бомбезно! Ограниченная версия продуктов от DonkCo. Найди этикетку с кодом внутри.
+  name: Kirieshki Neo
+  description:  BOMBtastic! Limited edition products from DonkCo. Find the label with the code inside.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/kiriehka.rsi
     state: kirieshki-closed
+    scale: 0.75,0.75
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -39,10 +40,10 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: Кириешки Neo
+  name: Kirieshki Neo
   parent: FoodSnackBase
   id: KirieshkiOpen
-  description: Бомбезно! Ограниченная версия продуктов от DonkCo. Найди этикетку с кодом внутри.
+  description: BOMBtastic! Limited edition products from DonkCo. Find the label with the code inside.
   components:
   - type: FlavorProfile
     flavors:
@@ -51,8 +52,10 @@
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/kiriehka.rsi
     state: kirieshki-open
+    scale: 0.75,0.75
   - type: Food
-    trash: KirieshkiTrash
+    trash:
+    - KirieshkiTrash
   - type: SolutionContainerManager
     solutions:
       food:
@@ -65,14 +68,10 @@
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash
   id: KirieshkiTrash
-  name: Кириешки Neo
-  description: Это мусор.
+  name: Kirieshki Neo
+  description: This is rubbish.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/kiriehka.rsi
     state: kirieshki-empty
-
-- type: flavor
-  id: Сaesium
-  flavorType: Complex
-  description: цезиево  я чет не могу понять, мне получается сюда все оставлять кроме вкуса?...
+    scale: 0.75,0.75
