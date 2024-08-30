@@ -1,0 +1,19 @@
+{
+    "license": "CC-BY-NC-3.0",
+    "copyright": "by Askolot (discord:788252896016990219)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "kirieshki-closed"
+        },
+        {
+            "name": "kirieshki-open"
+        },
+        {
+            "name": "kirieshki-empty"
+        }
+    ]
+}
