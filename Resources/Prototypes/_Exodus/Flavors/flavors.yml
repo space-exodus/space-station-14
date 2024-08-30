@@ -1,4 +1,4 @@
 - type: flavor
-  id: Сaesium
-  flavorType: Complex
-  description: цезиево
+  id: сaesium
+  flavorType: Base
+  description: flavor-base-сaesium

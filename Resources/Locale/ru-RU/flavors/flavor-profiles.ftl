@@ -50,6 +50,7 @@ flavor-base-horrible = ужасно
 # lmao
 flavor-base-terrible = ужасающе
 flavor-base-mindful = разумно
+flavor-base-сaesium = цезиево # Exodus MRP - Kirieshki
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
