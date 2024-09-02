@@ -2,7 +2,6 @@
   parent: ClothingEyesHudMedSec
   id: ClothingEyesHudDS
   name: Усовершенствованный визор
-  suffix: New DS
   description: Визор, сочитающий в себе все остальные. Из-за крайней сложности и дороговизны был создан в единичных экземплярах
   components:
   - type: Sprite

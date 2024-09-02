@@ -1,8 +1,8 @@
 - type: entity
-  name: энергетический меч-бензопила
+  name: energy chainsword
   parent: BaseItem
   id: Chainsword
-  description: Технологии и ультранасилие в одном флаконе!
+  description: Technology and violence - two in one.
   components:
   - type: EnergySword
   - type: Sharp

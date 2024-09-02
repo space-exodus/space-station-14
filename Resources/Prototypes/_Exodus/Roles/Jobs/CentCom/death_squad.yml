@@ -22,7 +22,7 @@
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesHudDS
     gloves: ClothingHandsGlovesDS
-    outerClothing: ClothingOuterHardsuitDeathsquadAlpha
+    outerClothing: ClothingOuterHardsuitDeathsquadCommand
     id: PDACommanderDS
     ears: ClothingHeadsetDS
     belt: ClothingBeltDSCommander

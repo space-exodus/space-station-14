@@ -11,3 +11,50 @@
     borderColor: "#3E3692"
   - type: Icon
     state: pda-blueshield
+
+- type: entity
+  parent: BasePDA
+  id: PDACommanderDS
+  name: КПК Эскадрона смерти
+  description: Пахнет смертью.
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Pda
+    id: IDCardDSLeader
+    state: pda-death_squad
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentVColor: "#390504"
+  - type: Icon
+    state: pda-death_squad
+
+- type: entity
+  parent: PDACommanderDS
+  id: PDAOfficerDS
+  name: КПК Эскадрона смерти
+  description: Пахнет смертью.
+  components:
+  - type: Pda
+    id: IDCardDSOfficer
+    state: pda-death_squad
+
+- type: entity
+  parent: PDACommanderDS
+  id: PDASpecialistDS
+  name: КПК Эскадрона смерти
+  description: Пахнет смертью.
+  components:
+  - type: Pda
+    id: IDCardDSSpecialist
+    state: pda-death_squad
+

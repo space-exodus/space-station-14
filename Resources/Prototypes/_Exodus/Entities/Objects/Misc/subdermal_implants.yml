@@ -1,8 +1,8 @@
 - type: entity
   parent: TrackingImplant
   id: DSTrackingImplant
-  name: имплант Трекер Эскадрона
-  description: Этот имплант оснащен устройством слежения, подключенным к сенсорной сети костюма, а также монитором состояния радиоканала эскадрона.
+  name: Squadron tracking implant
+  description: This implant has a tracking device attached to the suit sensor network, as well as a condition monitor for the Squadron radio channel.
   components:
     - type: Rattle
       radioChannel: "DS"

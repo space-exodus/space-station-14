@@ -1,9 +1,8 @@
 - type: entity
-  name: энергетический щит
+  name: energy shield
   parent: EnergyShield
   id: DSEnergyShield
-  description: Настоящий экзотический энергетический щит. В сложенном состоянии может поместиться даже в кармане.
-  suffix: New DS
+  description: Exotic energy shield, when folded, can even fit in your pocket.
   components:
     - type: ComponentToggler
       components:
