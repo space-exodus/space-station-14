@@ -9,3 +9,35 @@
     - state: idblueshieldofficer
   - type: PresetIdCard
     job: BlueshieldOfficer
+
+- type: entity
+  parent: CentcomIDCard
+  id: IDCardDSLeader
+  name: Id Карта командира Эскадрона Смерти
+  description: Карта, необходимая для доступа в различные области станции.
+  components:
+  - type: PresetIdCard
+    job: DSLeader
+  - type: Sprite
+    layers:
+    - state: syndie
+    - state: idchiefmedicalofficer
+    - state: idcentcom
+
+- type: entity
+  parent: IDCardDSLeader
+  id: IDCardDSOfficer
+  name: Id Карта офицера Эскадрона Смерти
+  description: Карта, необходимая для доступа в различные области станции.
+  components:
+  - type: PresetIdCard
+    job: DSOfficer
+
+- type: entity
+  parent: IDCardDSLeader
+  id: IDCardDSSpecialist
+  name: Id Карта специалиста Эскадрона Смерти
+  description: Карта, необходимая для доступа в различные области станции.
+  components:
+  - type: PresetIdCard
+    job: DSSpecialist

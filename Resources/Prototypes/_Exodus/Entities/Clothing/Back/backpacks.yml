@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Back/Backpacks/blueshield.rsi
-    
+
 - type: entity
   noSpawn: false
   parent: ClothingBackpackCentcomOfficer
@@ -21,11 +21,11 @@
       contents:
         - id: BoxSurvivalEngineering
         - id: CombatMedipen
-        - id: CombatMedipen
+          amount: 4
         - id: MagazineShotgun
-        - id: MagazineShotgun
+          amount: 8
         - id: WeaponShotgunBulldog
-        - id: WeaponDisablerSMG
+        - id: WeaponTaser
         - id: GrenadeFlashBang
         - id: WelderExperimental
         - id: Hypospray
@@ -39,10 +39,91 @@
   description: Modifided backpack
   components:
   - type: Sprite
-    sprite: Clothing/Back/Satchels/satchel.rsi
+    sprite: Corvax/Back/Backpacks/deathsquad-backpack.rsi
   - type: Item
     size: Ginormous
   - type: Storage
     maxItemSize: Huge
     grid:
     - 0,0,17,8
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingDeathSquadronBackpack
+  name: Рюкзак Эскадрона Смерти
+  description: Рюкзак повышенной вместимости одноименного отряда
+  components:
+  - type: Sprite
+    sprite: Corvax/Back/Backpacks/deathsquad-backpack.rsi
+  - type: Storage
+    grid:
+    - 0,0,11,7
+    maxItemSize: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingDeathSquadronBackpack
+  id: ClothingDeathSquadronBackpackOfficer
+  name: Рюкзак Эскадрона Смерти
+  description: Рюкзак повышенной вместимости одноименного отряда
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPulseRifle
+      - id: Omnitool
+      - id: DSEnergyShield
+      - id: BoxSurvivalEngineering
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnumAP
+        amount: 2
+      - id: GrenadeIncendiary
+        amount: 2
+      - id: GrenadeShrapnel
+        amount: 2
+      - id: EmergencyMedipenDS
+        amount: 2
+
+
+- type: entity
+  parent: ClothingDeathSquadronBackpack
+  id: ClothingDeathSquadronBackpackCommander
+  name: Рюкзак Эскадрона Смерти
+  description: Рюкзак повышенной вместимости одноименного отряда
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPulseRifle
+      - id: Omnitool
+      - id: DSEnergyShield
+      - id: BoxSurvivalEngineering
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnumAP
+        amount: 2
+      - id: GrenadeIncendiary
+        amount: 2
+      - id: GrenadeShrapnel
+        amount: 2
+      - id: PinpointerNuclear
+      - id: EmergencyMedipenDS
+        amount: 2
+
+- type: entity
+  parent: ClothingDeathSquadronBackpack
+  id: ClothingDeathSquadronBackpackSpecialist
+  name: Рюкзак Эскадрона Смерти
+  description: Рюкзак повышенной вместимости одноименного отряда
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPulseRifle
+      - id: Omnitool
+      - id: DSEnergyShield
+      - id: BoxSurvivalEngineering
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnumAP
+        amount: 2
+      - id: SmokeGrenade
+      - id: TearGasGrenade
+      - id: EmergencyMedipenDS
+        amount: 4

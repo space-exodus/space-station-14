@@ -313,9 +313,9 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
   - type: Gun
-    fireRate: 1.5
+    fireRate: 3.0 # Exodus MRP - Death Squad Update
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg # Exodus MRP - Death Squad Update
   - type: HitscanBatteryAmmoProvider
     proto: Pulse
     fireCost: 100
