@@ -1,4 +1,4 @@
 - type: flavor
   id: caesium
-  flavorType: Base
-  description: flavor-base-caesium
+  flavorType: Complex
+  description: flavor-complex-caesium

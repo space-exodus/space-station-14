@@ -48,7 +48,7 @@
   - type: FlavorProfile
     flavors:
       - salty
-      - Сaesium
+      - caesium
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/kiriehka.rsi
     state: kirieshki-open
