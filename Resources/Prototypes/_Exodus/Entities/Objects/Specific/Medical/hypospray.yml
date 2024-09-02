@@ -1,0 +1,26 @@
+- type: entity
+  name: Экстренный боевой медипен
+  parent: ChemicalMedipen
+  id: EmergencyMedipenDS
+  description: Экстренный медипен, который в кратчайшие сроки ставит на ноги даже при самых тяжелых травмах. Из-за дороговизны и трудности производства применяется элитными отрядами.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Saliforsom
+          Quantity: 15
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    netsync: false
+    layers:
+    - state: morphen
+      map: [ "enum.SolutionContainerLayers.Fill" ]

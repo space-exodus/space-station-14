@@ -1,0 +1,95 @@
+- type: job
+  id: DSLeader
+  name: Командир ЭС
+  description: Командир элитного отряда зачистки НаноТрейзен - Эскадрона Смерти.
+  playTimeTracker: JobDSLeader
+  setPreference: false
+  startingGear: DSLeaderGear
+  icon: "JobIconNanotrasen"
+  supervisors: Офицер Специальных Операций
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: DSLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpackCommander
+    shoes: ClothingShoesBootsMagDS
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudDS
+    gloves: ClothingHandsGlovesDS
+    outerClothing: ClothingOuterHardsuitDeathsquadAlpha
+    id: PDACommanderDS
+    ears: ClothingHeadsetDS
+    belt: ClothingBeltDSCommander
+    suitstorage: Chainsword
+    pocket1: DoorRemoteAll
+    pocket2: BoxFolderWhiteDS
+
+- type: job
+  id: DSOfficer
+  name: Офицер ЭС
+  description: Офицер элитного отряда зачистки НаноТрейзен - Эскадрона Смерти.
+  playTimeTracker: JobDSOfficer
+  setPreference: false
+  startingGear: DSOfficerGear
+  icon: "JobIconNanotrasen"
+  supervisors: Командир ЭС
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: DSOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpack
+    shoes: ClothingShoesBootsMagDS
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudDS
+    gloves: ClothingHandsGlovesDS
+    outerClothing: ClothingOuterHardsuitDeathsquadOfficer
+    id: PDAOfficerDS
+    ears: ClothingHeadsetDS
+    belt: ClothingBeltDSOfficer
+    pocket1: EnergySword
+    suitstorage: WeaponRifleSP
+    pocket2: BoxFolderWhiteDS
+
+- type: job
+  id: DSSpecialist
+  name: Специалист ЭС
+  description: Специалист элитного отряда зачистки НаноТрейзен - Эскадрона Смерти.
+  playTimeTracker: JobDSSpecialist
+  setPreference: false
+  startingGear: DSSpecialistGear
+  icon: "JobIconNanotrasen"
+  supervisors: Командир ЭС
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: DSSpecialistGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpackSpecialist
+    shoes: ClothingShoesBootsMagDS
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudDS
+    gloves: ClothingHandsGlovesDS
+    outerClothing: ClothingOuterHardsuitDeathsquadSpecialist
+    id: PDASpecialistDS
+    ears: ClothingHeadsetDS
+    belt: ClothingBeltDSSpecialist
+    pocket1: EnergySword
+    suitstorage: DSSyringeGun
+    pocket2: BoxFolderWhiteDS

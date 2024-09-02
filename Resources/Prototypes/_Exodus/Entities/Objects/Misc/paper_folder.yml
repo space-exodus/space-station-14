@@ -1,0 +1,15 @@
+- type: entity
+  id: BoxFolderWhiteDS
+  parent: BoxFolderBase
+  name: папка
+  description: Папка, заполненная совершенно секретными документами.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: folder-centcom
+    - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: DSDocumentFoxtrot
+    - id: DSDocumentTango
