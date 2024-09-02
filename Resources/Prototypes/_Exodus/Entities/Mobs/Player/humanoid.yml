@@ -102,9 +102,9 @@
         - !type:DepartmentTimeRequirement
           department: Command
           time: 36000
-      name: Командир Эскадрона Смерти
-      description: "Командир элитного отряда зачистки НаноТрейзен - Эскадрона Смерти. OOC - ПРОЧИТАТЬ БУМАГУ В КАРМАНЕ!"
-      rules: PlaceHolder
+      name: ghost-role-information-death-squad-leader-name
+      description: ghost-role-information-death-squad-leader-description
+      rules: ghost-role-information-death-squad-leader-rules
     - type: GhostTakeoverAvailable
     - type: ZombieImmune
     - type: MobThresholds
@@ -169,7 +169,7 @@
           Toxin: -0.3
 
 - type: entity
-  name: Командир Эскадрона Смерти
+  name: death squad leader
   parent: RandomHumanoidSpawnerERTLeader
   id: MobHumanDeathSquadLeader
   suffix: DeathSquad
@@ -211,9 +211,9 @@
         - !type:DepartmentTimeRequirement
           department: Security
           time: 54000
-      name: Офицер Эскадрона Смерти
-      description: "Офицер элитного отряда зачистки НаноТрейзен - Эскадрона Смерти. OOC - ПРОЧИТАТЬ БУМАГУ В КАРМАНЕ!"
-      rules: PlaceHolder
+      name: ghost-role-information-death-squad-officer-name
+      description: ghost-role-information-death-squad-officer-description
+      rules: ghost-role-information-death-squad-officer-rules
     - type: GhostTakeoverAvailable
     - type: ZombieImmune
     - type: MobThresholds
@@ -278,7 +278,7 @@
           Toxin: -0.3
 
 - type: entity
-  name: Офицер Эскадрона Смерти
+  name: death squad officer
   parent: RandomHumanoidSpawnerERTLeader
   id: MobHumanDeathSquadOfficer
   suffix: DeathSquad
@@ -323,9 +323,9 @@
         - !type:DepartmentTimeRequirement
           department: Medical
           time: 36000
-      name: Специалист Эскадрона Смерти
-      description: "Специалист элитного отряда зачистки НаноТрейзен - Эскадрона Смерти. OOC - ПРОЧИТАТЬ БУМАГУ В КАРМАНЕ!"
-      rules: PlaceHolder
+      name: ghost-role-information-death-squad-specialist-name
+      description: ghost-role-information-death-squad-specialist-description
+      rules: ghost-role-information-death-squad-specialist-rules
     - type: GhostTakeoverAvailable
     - type: ZombieImmune
     - type: MobThresholds
@@ -390,7 +390,7 @@
           Toxin: -0.3
 
 - type: entity
-  name: Специалист Эскадрона Смерти
+  name: death squad specialist
   parent: RandomHumanoidSpawnerERTLeader
   id: MobHumanDeathSquadHealer
   suffix: DeathSquad
