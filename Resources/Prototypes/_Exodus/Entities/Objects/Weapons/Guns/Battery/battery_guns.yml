@@ -39,3 +39,14 @@
       fireCost: 100
     - proto: BulletTaser
       fireCost: 100
+
+- type: entity
+  name: Пульсовый карабин
+  parent: WeaponPulseRifle
+  id: WeaponPulseRifleNew
+  description: Энергетическая винтовка тяжелого типа, которой вооружены солдаты Эскадрона смерти.
+  components:
+  - type: Gun
+    fireRate: 3.0
+    soundGunshot:
+      path: /Uploaded/DS/Sound/rifle.ogg
