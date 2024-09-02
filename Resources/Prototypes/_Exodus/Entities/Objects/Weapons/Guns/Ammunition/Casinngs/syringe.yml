@@ -1,0 +1,136 @@
+- type: entity
+  parent: Dart
+  id: SyringeAmmo
+  name: Метательный шприц
+  description: Метательный шприц, вводящий реагент при попадании.
+  components:
+  - type: Tag
+    tags:
+      - SyringeBullet
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Casings/syringe.rsi
+  - type: Item
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Casings/syringe.rsi
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 10
+  - type: SolutionInjectOnEmbed
+    transferAmount: 10
+    blockSlots: NONE
+    solution: melee
+  - type: SolutionTransfer
+    maxTransferAmount: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Пакс)
+  id: SyringeAmmoPax
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: Pax
+              Quantity: 10
+
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Свинец)
+  id: SyringeAmmoLead
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: Lead
+              Quantity: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Ромерол)
+  id: SyringeAmmoRomerol
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: Romerol
+              Quantity: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Хлоральгидрат)
+  id: SyringeAmmoChloral
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: ChloralHydrate
+              Quantity: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Политриновая кислота)
+  id: SyringeAmmoPolytrinic
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: PolytrinicAcid
+              Quantity: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Тазинид)
+  id: SyringeAmmoTazinide
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: Tazinide
+              Quantity: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Лексорин)
+  id: SyringeAmmoLexorin
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: Lexorin
+              Quantity: 10
+
+- type: entity
+  name: Метательный шприц
+  parent: SyringeAmmo
+  suffix: (Норэпинефриновая кислота)
+  id: SyringeAmmoNorepinephric
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          maxVol: 10
+          reagents:
+            - ReagentId: NorepinephricAcid
+              Quantity: 10

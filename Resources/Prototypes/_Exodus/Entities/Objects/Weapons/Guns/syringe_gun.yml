@@ -1,0 +1,41 @@
+- type: entity
+  parent: WeaponImprovisedPneumaticCannon
+  name: Мультизарядный шприцемет
+  id: DSSyringeGun
+  description: Мультизарядный шприцемет, позволяющий вводить вещество на расстоянии
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/syringegun.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Huge
+  - type: PneumaticCannon
+    throwItems: false
+    gasUsage: 0
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Uploaded/DS/Sound/pew.ogg
+    soundEmpty:
+      path: /Uploaded/DS/Sound/empty.ogg
+  - type: Storage
+    storageOpenSound: /Uploaded/DS/Sound/loading2.ogg
+    storageCloseSound: /Uploaded/DS/Sound/loading3.ogg
+    storageInsertSound: /Uploaded/DS/Sound/loading.ogg
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,2
+    whitelist:
+      tags:
+        - SyringeBullet
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/syringegun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage

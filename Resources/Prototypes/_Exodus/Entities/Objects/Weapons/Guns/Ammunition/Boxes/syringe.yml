@@ -1,0 +1,98 @@
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Политриновая кислота)
+  id: BoxSyringeAmmoPolytrinic
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoPolytrinic
+        amount: 9
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Лексорин)
+  id: BoxSyringeAmmoLexorin
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoLexorin
+        amount: 9
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Хлоральгидрат)
+  id: BoxSyringeAmmoChloral
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoChloral
+        amount: 9
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Ромерол)
+  id: BoxSyringeAmmoRomerol
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoRomerol
+        amount: 9
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Свинец)
+  id: BoxSyringeAmmoLead
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoLead
+        amount: 9
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Пакс)
+  id: BoxSyringeAmmoPax
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoPax
+        amount: 9
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxCardboard
+  id: BoxSyringeAmmo
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmo
+        amount: 9
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Boxes/box_syringe.rsi
+    layers:
+      - state: box
+
+- type: entity
+  name: Коробка метательных шприцов
+  parent: BoxSyringeAmmo
+  suffix: (Норэпинефриновая кислота)
+  id: BoxSyringeAmmoNorepinephric
+  description: Полная коробка веселья
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoNorepinephric
+        amount: 9

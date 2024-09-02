@@ -1,0 +1,18 @@
+- type: reagent
+  id: Saliforsom
+  name: Салифорсом
+  group: Medicine
+  desc: Концентрированная антибиотик, лечащий все болезни и даже смерть.
+  physicalDesc: невозможное
+  flavor: flavor-complex-medicine
+  color: "#e8e8e8"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -5
+            Burn: -5
+            Airloss: -10
+            Toxin: -5
