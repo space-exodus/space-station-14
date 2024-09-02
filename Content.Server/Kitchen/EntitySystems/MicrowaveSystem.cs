@@ -39,8 +39,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Shared.Stacks;
 using Content.Server.Construction.Components;
-using Content.Shared.Chat;
-using Content.Shared.Damage;
 
 namespace Content.Server.Kitchen.EntitySystems
 {
@@ -67,7 +65,6 @@ namespace Content.Server.Kitchen.EntitySystems
         [Dependency] private readonly SharedStackSystem _stack = default!;
         [Dependency] private readonly IPrototypeManager _prototype = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-        [Dependency] private readonly SharedSuicideSystem _suicide = default!;
 
         [ValidatePrototypeId<EntityPrototype>]
         private const string MalfunctionSpark = "Spark";
@@ -86,7 +83,7 @@ namespace Content.Server.Kitchen.EntitySystems
             SubscribeLocalEvent<MicrowaveComponent, BreakageEventArgs>(OnBreak);
             SubscribeLocalEvent<MicrowaveComponent, PowerChangedEvent>(OnPowerChanged);
             SubscribeLocalEvent<MicrowaveComponent, AnchorStateChangedEvent>(OnAnchorChanged);
-            SubscribeLocalEvent<MicrowaveComponent, SuicideByEnvironmentEvent>(OnSuicideByEnvironment);
+            SubscribeLocalEvent<MicrowaveComponent, SuicideEvent>(OnSuicide);
 
             SubscribeLocalEvent<MicrowaveComponent, SignalReceivedEvent>(OnSignalReceived);
 
@@ -263,22 +260,12 @@ namespace Content.Server.Kitchen.EntitySystems
             _deviceLink.EnsureSinkPorts(ent, ent.Comp.OnPort);
         }
 
-        /// <summary>
-        /// Kills the user by microwaving their head
-        /// TODO: Make this not awful, it keeps any items attached to your head still on and you can revive someone and cogni them so you have some dumb headless fuck running around. I've seen it happen.
-        /// </summary>
-        private void OnSuicideByEnvironment(Entity<MicrowaveComponent> ent, ref SuicideByEnvironmentEvent args)
+        private void OnSuicide(Entity<MicrowaveComponent> ent, ref SuicideEvent args)
         {
             if (args.Handled)
                 return;
 
-            // The act of getting your head microwaved doesn't actually kill you
-            if (!TryComp<DamageableComponent>(args.Victim, out var damageableComponent))
-                return;
-
-            // The application of lethal damage is what kills you...
-            _suicide.ApplyLethalDamage((args.Victim, damageableComponent), "Heat");
-
+            args.SetHandled(SuicideKind.Heat);
             var victim = args.Victim;
             var headCount = 0;
 
@@ -308,7 +295,6 @@ namespace Content.Server.Kitchen.EntitySystems
             ent.Comp.CurrentCookTimerTime = 10;
             Wzhzhzh(ent.Owner, ent.Comp, args.Victim);
             UpdateUserInterfaceState(ent.Owner, ent.Comp);
-            args.Handled = true;
         }
 
         private void OnSolutionChange(Entity<MicrowaveComponent> ent, ref SolutionContainerChangedEvent args)

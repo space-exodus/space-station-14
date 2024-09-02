@@ -125,8 +125,6 @@ public abstract class SharedJetpackSystem : EntitySystem
 
     private bool CanEnableOnGrid(EntityUid? gridUid)
     {
-        // No and no again! Do not attempt to activate the jetpack on a grid with gravity disabled. You will not be the first or the last to try this.
-        // https://discord.com/channels/310555209753690112/310555209753690112/1270067921682694234
         return gridUid == null ||
                (!HasComp<GravityComponent>(gridUid));
     }
@@ -160,7 +158,7 @@ public abstract class SharedJetpackSystem : EntitySystem
 
         if (user == null)
         {
-            Container.TryGetContainingContainer((uid, null, null), out var container);
+            Container.TryGetContainingContainer(uid, out var container);
             user = container?.Owner;
         }
 

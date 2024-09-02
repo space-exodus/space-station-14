@@ -63,7 +63,7 @@ public sealed class SalvageMagnetBoundUserInterface : BoundUserInterface
             switch (offer)
             {
                 case AsteroidOffering asteroid:
-                    option.Title = Loc.GetString($"dungeon-config-proto-{asteroid.Id}");
+                    option.Title = Loc.GetString($"dungeon-config-proto-{asteroid.DungeonConfig.ID}");
                     var layerKeys = asteroid.MarkerLayers.Keys.ToList();
                     layerKeys.Sort();
 

@@ -3,15 +3,15 @@ using Content.Client.Light.Components;
 using Content.Shared.Light;
 using Content.Shared.Light.Components;
 using Content.Shared.Toggleable;
+using Robust.Client.Animations;
 using Robust.Client.GameObjects;
-using Content.Client.Light.EntitySystems;
+using Robust.Shared.Animations;
 
 namespace Content.Client.Light;
 
 public sealed class HandheldLightSystem : SharedHandheldLightSystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly LightBehaviorSystem _lightBehavior = default!;
 
     public override void Initialize()
     {
@@ -41,9 +41,9 @@ public sealed class HandheldLightSystem : SharedHandheldLightSystem
         if (TryComp<LightBehaviourComponent>(uid, out var lightBehaviour))
         {
             // Reset any running behaviour to reset the animated properties back to the original value, to avoid conflicts between resets
-            if (_lightBehavior.HasRunningBehaviours((uid, lightBehaviour)))
+            if (lightBehaviour.HasRunningBehaviours())
             {
-                _lightBehavior.StopLightBehaviour((uid, lightBehaviour), resetToOriginalSettings: true);
+                lightBehaviour.StopLightBehaviour(resetToOriginalSettings: true);
             }
 
             if (!enabled)
@@ -56,10 +56,10 @@ public sealed class HandheldLightSystem : SharedHandheldLightSystem
                 case HandheldLightPowerStates.FullPower:
                     break; // We just needed to reset all behaviours
                 case HandheldLightPowerStates.LowPower:
-                    _lightBehavior.StartLightBehaviour((uid, lightBehaviour), component.RadiatingBehaviourId);
+                    lightBehaviour.StartLightBehaviour(component.RadiatingBehaviourId);
                     break;
                 case HandheldLightPowerStates.Dying:
-                    _lightBehavior.StartLightBehaviour((uid, lightBehaviour), component.BlinkingBehaviourId);
+                    lightBehaviour.StartLightBehaviour(component.BlinkingBehaviourId);
                     break;
             }
         }

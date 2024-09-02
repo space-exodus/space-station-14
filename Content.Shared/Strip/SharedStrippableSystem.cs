@@ -28,19 +28,13 @@ public abstract class SharedStrippableSystem : EntitySystem
             args.Handled = true;
     }
 
-    /// <summary>
-    /// Modify the strip time via events. Raised directed at the item being stripped, the player stripping someone and the player being stripped.
-    /// </summary>
-    public (TimeSpan Time, bool Stealth) GetStripTimeModifiers(EntityUid user, EntityUid targetPlayer, EntityUid? targetItem, TimeSpan initialTime)
+    public (TimeSpan Time, bool Stealth) GetStripTimeModifiers(EntityUid user, EntityUid target, TimeSpan initialTime)
     {
-        var itemEv = new BeforeItemStrippedEvent(initialTime, false);
-        if (targetItem != null)
-            RaiseLocalEvent(targetItem.Value, ref itemEv);
-        var userEv = new BeforeStripEvent(itemEv.Time, itemEv.Stealth);
+        var userEv = new BeforeStripEvent(initialTime);
         RaiseLocalEvent(user, ref userEv);
-        var targetEv = new BeforeGettingStrippedEvent(userEv.Time, userEv.Stealth);
-        RaiseLocalEvent(targetPlayer, ref targetEv);
-        return (targetEv.Time, targetEv.Stealth);
+        var ev = new BeforeGettingStrippedEvent(userEv.Time, userEv.Stealth);
+        RaiseLocalEvent(target, ref ev);
+        return (ev.Time, ev.Stealth);
     }
 
     private void OnDragDrop(EntityUid uid, StrippableComponent component, ref DragDropDraggedEvent args)
@@ -67,12 +61,11 @@ public abstract class SharedStrippableSystem : EntitySystem
 
     private void OnCanDropOn(EntityUid uid, StrippingComponent component, ref CanDropTargetEvent args)
     {
-        var val = uid == args.User &&
-                  HasComp<StrippableComponent>(args.Dragged) &&
-                  HasComp<HandsComponent>(args.User) &&
-                  HasComp<StrippingComponent>(args.User);
-        args.Handled |= val;
-        args.CanDrop |= val;
+        args.Handled = true;
+        args.CanDrop |= uid == args.User &&
+                        HasComp<StrippableComponent>(args.Dragged) &&
+                        HasComp<HandsComponent>(args.User) &&
+                        HasComp<StrippingComponent>(args.User);
     }
 
     private void OnCanDrop(EntityUid uid, StrippableComponent component, ref CanDropDraggedEvent args)

@@ -1,9 +1,8 @@
-using Content.Shared.Destructible.Thresholds;
 using Content.Shared.Procedural;
-using Content.Shared.Procedural.DungeonLayers;
-using Content.Shared.Random;
+using Content.Shared.Procedural.PostGeneration;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Salvage.Magnet;
+using Content.Shared.Store;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -21,10 +20,6 @@ public abstract partial class SharedSalvageSystem
         "SwissCheeseAsteroid"
     };
 
-    private readonly ProtoId<WeightedRandomPrototype> _asteroidOreWeights = "AsteroidOre";
-
-    private readonly MinMax _asteroidOreCount = new(5, 7);
-
     public ISalvageMagnetOffering GetSalvageOffering(int seed)
     {
         var rand = new System.Random(seed);
@@ -32,40 +27,33 @@ public abstract partial class SharedSalvageSystem
         // Asteroid seed
         if (seed % 2 == 0)
         {
-            var configId = _asteroidConfigs[rand.Next(_asteroidConfigs.Count)];
-            var configProto =_proto.Index(configId);
+            var config = _asteroidConfigs[rand.Next(_asteroidConfigs.Count)];
+            var configProto = _proto.Index(config);
             var layers = new Dictionary<string, int>();
 
-            var data = new DungeonData();
-            data.Apply(configProto.Data);
-
-            var config = new DungeonConfig()
+            // If we ever add more random layers will need to Next on these.
+            foreach (var layer in configProto.Layers)
             {
-                Data = data,
-                Layers = new(configProto.Layers),
-                MaxCount = configProto.MaxCount,
-                MaxOffset = configProto.MaxOffset,
-                MinCount = configProto.MinCount,
-                MinOffset = configProto.MinOffset,
-                ReserveTiles = configProto.ReserveTiles
-            };
-
-            var count = _asteroidOreCount.Next(rand);
-            var weightedProto = _proto.Index(_asteroidOreWeights);
-            for (var i = 0; i < count; i++)
-            {
-                var ore = weightedProto.Pick(rand);
-                config.Layers.Add(_proto.Index<OreDunGenPrototype>(ore));
-
-                var layerCount = layers.GetOrNew(ore);
-                layerCount++;
-                layers[ore] = layerCount;
+                switch (layer)
+                {
+                    case BiomeDunGen:
+                        rand.Next();
+                        break;
+                    case BiomeMarkerLayerDunGen marker:
+                        for (var i = 0; i < marker.Count; i++)
+                        {
+                            var proto = _proto.Index(marker.MarkerTemplate).Pick(rand);
+                            var layerCount = layers.GetOrNew(proto);
+                            layerCount++;
+                            layers[proto] = layerCount;
+                        }
+                        break;
+                }
             }
 
             return new AsteroidOffering
             {
-                Id = configId,
-                DungeonConfig = config,
+                DungeonConfig = configProto,
                 MarkerLayers = layers,
             };
         }

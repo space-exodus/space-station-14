@@ -94,7 +94,7 @@
     mustBeEquippedToUse: true
 
 - type: entity
-  parent: [ClothingHandsBase, BaseCommandContraband]
+  parent: ClothingHandsBase
   id: ClothingHandsGlovesCaptain
   name: captain gloves
   description: Regal blue gloves, with a nice gold trim. Swanky.
@@ -103,6 +103,8 @@
     sprite: Clothing/Hands/Gloves/captain.rsi
   - type: Clothing
     sprite: Clothing/Hands/Gloves/captain.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-durathread
@@ -167,6 +169,8 @@
     sprite: Clothing/Hands/Gloves/leather.rsi
   - type: Clothing
     sprite: Clothing/Hands/Gloves/leather.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-brown
@@ -202,7 +206,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: [ClothingHandsBase, BaseToggleClothing, BaseMajorContraband]
+  parent: [ClothingHandsBase, BaseToggleClothing]
   id: ClothingHandsGlovesSpaceNinja
   name: space ninja gloves
   description: These black nano-enhanced gloves insulate from electricity and provide fire resistance.
@@ -221,6 +225,8 @@
         enum.ToggleVisuals.Layer:
           True: {state: icon-green}
           False: {state: icon}
+  - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-nanomachines
@@ -263,7 +269,7 @@
 # Corvax-HiddenDesc-End
 
 - type: entity
-  parent: [ClothingHandsGlovesColorBlack, BaseSecurityEngineeringContraband]
+  parent: ClothingHandsGlovesColorBlack
   id: ClothingHandsGlovesCombat
   name: combat gloves
   description: These tactical gloves are fireproof and shock resistant.
@@ -272,6 +278,8 @@
     sprite: Clothing/Hands/Gloves/combat.rsi
   - type: Clothing
     sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
@@ -287,6 +295,8 @@
     sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
   - type: Clothing
     sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Insulated
   - type: Fiber
     fiberColor: fibers-black
@@ -322,10 +332,6 @@
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-black
-  - type: DamageOnInteractProtection
-    damageProtection:
-      flatReductions:
-        Heat: 0 # no protection
 
 - type: entity
   parent: ClothingHandsBase
@@ -340,10 +346,6 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-yellow
-  - type: DamageOnInteractProtection
-    damageProtection:
-      flatReductions:
-        Heat: 0 # no protection
 
 - type: entity
   parent: ClothingHandsButcherable
@@ -358,10 +360,6 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-olive
-  - type: DamageOnInteractProtection
-    damageProtection:
-      flatReductions:
-        Heat: 0 # no protection
 
 - type: entity
   # Intentionally named after regular gloves, they're meant to be sneaky.
@@ -399,7 +397,7 @@
   - type: Unremoveable
 
 - type: entity
-  parent: [ClothingHandsButcherable, BaseSyndicateContraband]
+  parent: ClothingHandsButcherable
   id: ClothingHandsGlovesNorthStar
   name: gloves of the north star
   description: These gloves allow you to punch incredibly fast.

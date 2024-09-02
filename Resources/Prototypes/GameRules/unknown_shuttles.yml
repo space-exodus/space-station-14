@@ -1,28 +1,3 @@
-# Shuttle Game Rule Tables -- If you dont add your rules to these they wont be used by the games schedulers.
-
-- type: entityTable
-  id: UnknownShuttlesFriendlyTable
-  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
-    children:
-    - id: UnknownShuttleCargoLost
-    - id: UnknownShuttleTravelingCuisine
-    - id: UnknownShuttleDisasterEvacPod
-    # - id: UnknownShuttleHonki # Exodus
-
-- type: entityTable
-  id: UnknownShuttlesFreelanceTable
-  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
-    children: []
-    # - id: UnknownShuttleSyndieEvacPod # Exodus
-
-- type: entityTable
-  id: UnknownShuttlesHostileTable
-  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
-    children:
-    - id: LoneOpsSpawn
-
-# Shuttle Game Rules
-
 - type: entity
   abstract: true
   parent: BaseGameRule
@@ -59,20 +34,20 @@
   - type: LoadMapRule
     preloadedGrid: DisasterEvacPod
 
-- type: entity
-  parent: BaseUnknownShuttleRule
-  id: UnknownShuttleHonki
-  components:
-  - type: StationEvent
-    weight: 2
-  - type: LoadMapRule
-    preloadedGrid: Honki
+# - type: entity # Exodus
+#   parent: BaseUnknownShuttleRule
+#   id: UnknownShuttleHonki
+#   components:
+#   - type: StationEvent
+#     weight: 2
+#   - type: LoadMapRule
+#     preloadedGrid: Honki
 
-- type: entity
-  parent: BaseUnknownShuttleRule
-  id: UnknownShuttleSyndieEvacPod
-  components:
-  - type: StationEvent
-    weight: 2
-  - type: LoadMapRule
-    preloadedGrid: SyndieEvacPod
+# - type: entity
+#   parent: BaseUnknownShuttleRule
+#   id: UnknownShuttleSyndieEvacPod
+#   components:
+#   - type: StationEvent
+#     weight: 2
+#   - type: LoadMapRule
+#     preloadedGrid: SyndieEvacPod

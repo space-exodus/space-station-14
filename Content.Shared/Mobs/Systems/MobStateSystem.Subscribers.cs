@@ -84,6 +84,11 @@ public partial class MobStateSystem
             case MobState.Dead:
                 RemComp<CollisionWakeComponent>(target);
                 _standing.Stand(target);
+                if (!_standing.IsDown(target) && TryComp<PhysicsComponent>(target, out var physics))
+                {
+                    _physics.SetCanCollide(target, true, body: physics);
+                }
+
                 break;
             case MobState.Invalid:
                 //unused
@@ -117,6 +122,12 @@ public partial class MobStateSystem
             case MobState.Dead:
                 EnsureComp<CollisionWakeComponent>(target);
                 _standing.Down(target);
+
+                if (_standing.IsDown(target) && TryComp<PhysicsComponent>(target, out var physics))
+                {
+                    _physics.SetCanCollide(target, false, body: physics);
+                }
+
                 _appearance.SetData(target, MobStateVisuals.State, MobState.Dead);
                 break;
             case MobState.Invalid:

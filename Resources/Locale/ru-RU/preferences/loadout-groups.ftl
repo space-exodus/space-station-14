@@ -13,7 +13,6 @@ loadout-group-survival-security = Аварийный запас охраны
 loadout-group-survival-syndicate = Github заставил меня перевести текст, который игрок вообще никогда не сможет увидеть, спасите
 loadout-group-breath-tool = Расозависимое дыхательное снаряжение
 loadout-group-tank-harness = Расозависимое снаряжение для выживания
-loadout-group-EVA-tank = Расозависимый газовый баллон
 # Command
 Captain-loadout = Снаряжение капитана
 loadout-group-captain-head = Капитан, голова
@@ -38,7 +37,8 @@ loadout-group-passenger-mask = Пассажир, маска
 loadout-group-passenger-gloves = Пассажир, перчатки
 loadout-group-passenger-outerclothing = Пассажир, верхняя одежда
 loadout-group-passenger-shoes = Пассажир, обувь
-loadout-group-passenger-neck = Пассажир, шея
+
+Bartender-loadout = Снаряжение бармена
 loadout-group-bartender-head = Бармен, голова
 loadout-group-bartender-jumpsuit = Бармен, комбинезон
 loadout-group-bartender-outerclothing = Бармен, верхняя одежда
@@ -189,7 +189,6 @@ loadout-group-detective-outerclothing = Детектив, верхняя оде�
 
 SecurityCadet-loadout = Снаряжение кадета СБ
 loadout-group-security-cadet-jumpsuit = Кадет СБ, комбинезон
-loadout-group-security-star = Звезда СБ
 
 Pilot-loadout = Снаряжение пилота СБ
 
@@ -226,12 +225,11 @@ loadout-group-paramedic-jumpsuit = Парамедик, комбинезон
 loadout-group-paramedic-outerclothing = Парамедик, верхняя одежда
 loadout-group-paramedic-shoes = Парамедик, обувь
 
+Psychologist-loadout = Снаряжение психолога
+
 # Wildcards
 Reporter-loadout = Снаряжение репортёра
 loadout-group-reporter-jumpsuit = Репортёр, комбинезон
-
-Psychologist-loadout = Снаряжение психолога
-loadout-group-psychologist-jumpsuit = Психолог, комбинезон
 
 Zookeeper-loadout = Снаряжение зоотехника
 

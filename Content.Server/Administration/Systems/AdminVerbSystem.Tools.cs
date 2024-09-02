@@ -724,7 +724,15 @@ public sealed partial class AdminVerbSystem
                         if (!int.TryParse(amount, out var result))
                             return;
 
-                        _gun.SetBallisticUnspawned((args.Target, ballisticAmmo), result);
+                        if (result > 0)
+                        {
+                            ballisticAmmo.UnspawnedCount = result;
+                        }
+                        else
+                        {
+                            ballisticAmmo.UnspawnedCount = 0;
+                        }
+
                         _gun.UpdateBallisticAppearance(args.Target, ballisticAmmo);
                     });
                 },
@@ -736,11 +744,11 @@ public sealed partial class AdminVerbSystem
         }
     }
 
-    private void RefillEquippedTanks(EntityUid target, Gas gasType)
+    private void RefillEquippedTanks(EntityUid target, Gas plasma)
     {
         foreach (var held in _inventorySystem.GetHandOrInventoryEntities(target))
         {
-            RefillGasTank(held, gasType);
+            RefillGasTank(held, Gas.Plasma);
         }
     }
 

@@ -1,11 +1,19 @@
 # Brigmedic beret
 - type: loadout
   id: BrigmedicBeret
+  equipment: BrigmedicBeret
+
+- type: startingGear
+  id: BrigmedicBeret
   equipment:
     head: ClothingHeadHatBeretSecurityMedic
 
 # Medical Security Mask
 - type: loadout
+  id: MedicalSecurityMask
+  equipment: MedicalSecurityMask
+
+- type: startingGear
   id: MedicalSecurityMask
   equipment:
     mask: ClothingMaskBreathMedicalSecurity
@@ -13,11 +21,19 @@
 # AMG coat
 - type: loadout
   id: AMGCoat
+  equipment: AMGCoat
+
+- type: startingGear
+  id: AMGCoat
   equipment:
     outerClothing: ClothingOuterCoatAMG
 
 # Brigmedic coat
 - type: loadout
+  id: BrigmedicCoat
+  equipment: BrigmedicCoat
+
+- type: startingGear
   id: BrigmedicCoat
   equipment:
     outerClothing: ClothingOuterCoatLabSecurityMedic
@@ -25,11 +41,19 @@
 # Brigmedic vest
 - type: loadout
   id: BrigmedicVest
+  equipment: BrigmedicVest
+
+- type: startingGear
+  id: BrigmedicVest
   equipment:
     outerClothing: ClothingOuterVestSecurityMedic
 
 # Brigmedic jumpsuit
 - type: loadout
+  id: BrigmedicJumpsuit
+  equipment: BrigmedicJumpsuit
+
+- type: startingGear
   id: BrigmedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBrigmedic
@@ -37,11 +61,19 @@
 # Brigmedic jumpskirt
 - type: loadout
   id: BrigmedicJumpskirt
+  equipment: BrigmedicJumpskirt
+
+- type: startingGear
+  id: BrigmedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedic
 
 # Brigmedic backpack
 - type: loadout
+  id: BrigmedicBackpack
+  equipment: BrigmedicBackpack
+
+- type: startingGear
   id: BrigmedicBackpack
   equipment:
     back: ClothingBackpackBrigmedic
@@ -49,17 +81,29 @@
 # Brigmedic satchel
 - type: loadout
   id: BrigmedicSatchel
+  equipment: BrigmedicSatchel
+
+- type: startingGear
+  id: BrigmedicSatchel
   equipment:
     back: ClothingBackpackSatchelBrigmedic
 
 # Brigmedic duffel
 - type: loadout
   id: BrigmedicDuffel
+  equipment: BrigmedicDuffel
+
+- type: startingGear
+  id: BrigmedicDuffel
   equipment:
     back: ClothingBackpackDuffelBrigmedic
 
 # Red Shoes
 - type: loadout
+  id: RedShoes
+  equipment: RedShoes
+
+- type: startingGear
   id: RedShoes
   equipment:
     shoes: ClothingShoesColorRed

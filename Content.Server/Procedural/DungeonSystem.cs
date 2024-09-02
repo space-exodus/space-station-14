@@ -183,7 +183,7 @@ public sealed partial class DungeonSystem : SharedDungeonSystem
         return mapId;
     }
 
-    public void GenerateDungeon(DungeonConfig gen,
+    public void GenerateDungeon(DungeonConfigPrototype gen,
         EntityUid gridUid,
         MapGridComponent grid,
         Vector2i position,
@@ -214,7 +214,7 @@ public sealed partial class DungeonSystem : SharedDungeonSystem
     }
 
     public async Task<List<Dungeon>> GenerateDungeonAsync(
-        DungeonConfig gen,
+        DungeonConfigPrototype gen,
         EntityUid gridUid,
         MapGridComponent grid,
         Vector2i position,

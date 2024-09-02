@@ -3,6 +3,7 @@
 
 ## General
 
+shell-server-cannot = Сервер не может выполнить это.
 shell-command-success = Команда выполнена.
 shell-invalid-command = Неверная команда.
 shell-invalid-command-specific = Неверная команда { $commandName }.

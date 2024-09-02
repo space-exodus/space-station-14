@@ -93,7 +93,6 @@
         transferForensics: true
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: DnaSubstanceTrace
 
 - type: entity
   parent: BaseChemistryEmptyBottle
@@ -220,7 +219,7 @@
   id: NocturineChemistryBottle
   name: nocturine bottle
   description: This will make someone fall down almost immediately. Hard to overdose on.
-  parent: [BaseChemistryBottleFilled, BaseSyndicateContraband]
+  parent: BaseChemistryBottleFilled
   components:
   - type: SolutionContainerManager
     solutions:

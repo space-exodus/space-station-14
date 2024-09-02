@@ -1,7 +1,6 @@
-- type: jobIcon
+- type: statusIcon
   parent: JobIcon
   id: JobIconBlueshieldOfficer
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: BlueshieldOfficer
-  jobName: job-name-blueshield

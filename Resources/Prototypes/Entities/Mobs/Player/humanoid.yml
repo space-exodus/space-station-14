@@ -45,7 +45,6 @@
         settings: short
     - type: Loadout
       prototypes: [ DeathSquadGear ]
-      roleLoadout: [ RoleSurvivalEVA ]
     - type: RandomMetadata
       nameSegments:
         - NamesFirstMilitaryLeader
@@ -82,7 +81,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTLeaderGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryLeader
@@ -112,7 +110,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTLeaderGearEVA ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVALecter
@@ -134,7 +131,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTLeaderGearEVALecter ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 ## ERT Chaplain
 
@@ -170,7 +166,6 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTChaplainGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTChaplainEVA
@@ -196,7 +191,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTChaplainGearEVA ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 ## ERT Janitor
 
@@ -232,7 +226,6 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -258,7 +251,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTJanitorGearEVA ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 ## ERT Engineer
 
@@ -294,7 +286,6 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -320,7 +311,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTEngineerGearEVA ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 ## ERT Security
 
@@ -358,7 +348,6 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -384,7 +373,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTSecurityGearEVA ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVALecter
@@ -406,7 +394,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTSecurityGearEVALecter ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 ## ERT Medic
 
@@ -442,7 +429,6 @@
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
-      roleLoadout: [ RoleSurvivalExtended ]
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
@@ -468,7 +454,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ERTMedicalGearEVA ]
-      roleLoadout: [ RoleSurvivalEVA ]
 
 ## CBURN
 
@@ -491,7 +476,6 @@
   components:
     - type: Loadout
       prototypes: [CBURNGear]
-      roleLoadout: [ RoleSurvivalEVA ]
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
@@ -506,7 +490,7 @@
 ## Central Command
 
 - type: entity
-  name: CentComm official
+  name: CentCom official
   id: RandomHumanoidSpawnerCentcomOfficial
   components:
     - type: Sprite
@@ -527,7 +511,6 @@
         settings: default
     - type: Loadout
       prototypes: [ CentcomGear ]
-      roleLoadout: [ RoleSurvivalStandard ]
 
 ## Syndicate
 
@@ -550,7 +533,6 @@
       randomizeName: false
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
-      roleLoadout: [ RoleSurvivalSyndicate ]
 
 - type: entity
   id: RandomHumanoidSpawnerNukeOp
@@ -635,7 +617,6 @@
       components:
         - type: Loadout
           prototypes: [ LostCargoTechGearSuit, LostCargoTechGearCoat ]
-          roleLoadout: [ RoleSurvivalStandard ]
         - type: GhostTakeoverAvailable
 # Exodus-GhostRolesProfilesEditor-End
 
@@ -680,6 +661,8 @@
   id: ClownTroupe
   parent: EventHumanoid
   randomizeName: false
+  speciesBlacklist:
+  - Vox
   components:
     - type: GhostRole
       name: ghost-role-information-clown-troupe-name
@@ -689,7 +672,6 @@
         settings: short
     - type: Loadout
       prototypes: [ ClownTroupe ]
-      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_clown
@@ -701,7 +683,6 @@
   components:
     - type: Loadout
       prototypes: [ BananaClown ]
-      roleLoadout: [ RoleSurvivalStandard ]
 
 # Traveling exotic chef
 
@@ -727,7 +708,6 @@
       components:
         - type: Loadout
           prototypes: [ TravelingChef ]
-          roleLoadout: [ RoleSurvivalStandard ]
         - type: GhostTakeoverAvailable
 
 # Disaster victim
@@ -791,7 +771,6 @@
         - type: GhostTakeoverAvailable
         - type: Loadout
           prototypes: [ DisasterVictimCMO, DisasterVictimCMOAlt ]
-          roleLoadout: [ RoleSurvivalStandard ]
         - type: MindShield
         - type: AntagImmune
 
@@ -815,7 +794,6 @@
         - type: GhostTakeoverAvailable
         - type: Loadout
           prototypes: [ DisasterVictimCaptain, DisasterVictimCaptainAlt ]
-          roleLoadout: [ RoleSurvivalStandard ]
         - type: MindShield
         - type: AntagImmune
 
@@ -849,6 +827,8 @@
 - type: randomHumanoidSettings
   id: SyndieDisasterVictim
   parent: EventHumanoid
+  speciesBlacklist:
+  - Vox
   components:
     - type: NpcFactionMember
       factions:
@@ -861,4 +841,3 @@
         settings: short
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
-      roleLoadout: [ RoleSurvivalStandard ]

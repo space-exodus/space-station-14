@@ -8,8 +8,7 @@
       flavors:
         - meaty
     - type: Food
-      trash:
-        - FoodBowlBig
+      trash: FoodBowlBig
       utensil:
         - Spoon
         - Fork

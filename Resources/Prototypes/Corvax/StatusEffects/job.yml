@@ -1,15 +1,13 @@
-- type: jobIcon
+- type: statusIcon
   parent: JobIcon
   id: JobIconIAA
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: IAA
-  jobName: job-name-iaa
 
-- type: jobIcon
+- type: statusIcon
   parent: JobIcon
   id: JobIconPilot
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Pilot
-  jobName: job-name-pilot

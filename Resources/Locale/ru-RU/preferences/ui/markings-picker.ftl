@@ -10,7 +10,6 @@ marking-used = { $marking-name }
 marking-used-forced = { $marking-name } (Принудительно)
 marking-slot-add = Добавить
 marking-slot-remove = Удалить
-marking-slot = Slot { $number }
 
 # Categories
 
