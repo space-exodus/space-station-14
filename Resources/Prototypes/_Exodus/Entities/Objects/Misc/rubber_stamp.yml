@@ -1,0 +1,25 @@
+- type: entity
+  name: Печать ДСО
+  parent: RubberStampBase
+  id: RubberStampDSO
+  description: Печать из резины, для проставления печатей на важных документах.
+  components:
+  - type: Stamp
+    stampedName: ДЕПАРТАМЕНТ СО
+    stampedColor: "#6f6f5d"
+    stampState: "paper_stamp-detective"
+  - type: Sprite
+    state: stamp-chaplain
+
+- type: entity
+  name: Печать "Совершенно секретно"
+  parent: RubberStampBase
+  description: Печать из резины, для проставления печатей на важных документах.
+  id: RubberStampTopSecret
+  components:
+  - type: Stamp
+    stampedName: СОВЕРШЕННО СЕКРЕТНО
+    stampedColor: "#cc0000"
+    stampState: "paper_stamp-hos"
+  - type: Sprite
+    state: stamp-hos

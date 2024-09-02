@@ -1,0 +1,58 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltDS
+  name: Штурмовой пояс
+  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/assault.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/assault.rsi
+
+- type: entity
+  parent: ClothingBeltDS
+  id: ClothingBeltDSOfficer
+  name: Штурмовой пояс
+  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineMagnumSubMachineGun
+        amount: 6
+      - id: Handcuffs
+        amount: 2
+
+- type: entity
+  parent: ClothingBeltDS
+  id: ClothingBeltDSCommander
+  name: Штурмовой пояс
+  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  components:
+  - type: StorageFill
+    contents:
+    - id: GrenadeFlashBang
+    - id: TearGasGrenade
+    - id: Handcuffs
+      amount: 2
+    - id: WeaponTaser
+    - id: Tourniquet
+      amount: 2
+
+- type: entity
+  parent: ClothingBeltDS
+  id: ClothingBeltDSSpecialist
+  name: Штурмовой пояс
+  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  components:
+  - type: StorageFill
+    contents:
+      - id: EpinephrineChemistryBottle
+        amount: 2
+      - id: EphedrineChemistryBottle
+        amount: 2
+      - id: OmnizineChemistryBottle
+        amount: 2
+      - id: MedkitCombatFilled
+      - id: Hypospray
+      - id: EmergencyMedipenDS
+        amount: 4

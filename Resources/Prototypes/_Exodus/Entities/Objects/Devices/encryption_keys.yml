@@ -1,0 +1,14 @@
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyDS
+  name: Ключ шифрования эскадрона смерти
+  description: Ключ шифрования несущих смерть
+  components:
+  - type: EncryptionKey
+    channels:
+    - DS
+    defaultChannel: DS
+  - type: Sprite
+    layers:
+    - state: crypt_blue
+    - state: nano_label
