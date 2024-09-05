@@ -1,5 +1,20 @@
 - type: entity
   name: box of throwing syringes
+  parent: BoxCardboard
+  id: BoxSyringeAmmo
+  description: Box full of fun.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmo
+        amount: 9
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Boxes/box_syringe.rsi
+    layers:
+      - state: box
+
+- type: entity
+  name: box of throwing syringes
   parent: BoxSyringeAmmo
   suffix: (Polytrinic Acid)
   id: BoxSyringeAmmoPolytrinic
@@ -63,21 +78,6 @@
     contents:
       - id: SyringeAmmoPax
         amount: 9
-
-- type: entity
-  name: box of throwing syringes
-  parent: BoxCardboard
-  id: BoxSyringeAmmo
-  description: Box full of fun.
-  components:
-  - type: StorageFill
-    contents:
-      - id: SyringeAmmo
-        amount: 9
-  - type: Sprite
-    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Boxes/box_syringe.rsi
-    layers:
-      - state: box
 
 - type: entity
   name: box of throwing syringes

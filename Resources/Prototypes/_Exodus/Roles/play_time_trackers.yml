@@ -5,7 +5,7 @@
   id: JobBrigmedic
 
 - type: playTimeTracker
-  id: JobDSLeader
+  id: JobDSCommander
 
 - type: playTimeTracker
   id: JobDSOfficer

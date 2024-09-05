@@ -71,7 +71,7 @@
     - type: AntagImmune
 
 - type: randomHumanoidSettings
-  id: DSBaseRandom
+  id: DeathSquadBase
   speciesBlacklist:
     - Diona
     - Arachnid
@@ -154,8 +154,8 @@
           Toxin: -0.3
 
 - type: randomHumanoidSettings
-  id: DSLeaderRandom
-  parent: DSBaseRandom
+  id: DeathSquadCommander
+  parent: DeathSquadBase
   components:
     - type: GhostRole
       allowMovement: true
@@ -168,17 +168,17 @@
         - !type:DepartmentTimeRequirement
           department: Command
           time: 36000
-      name: ghost-role-information-deathsquad-leader-name
-      description: ghost-role-information-deathsquad-leader-description
-      rules: ghost-role-information-deathsquad-leader-rules
+      name: ghost-role-information-deathsquad-commander-name
+      description: ghost-role-information-deathsquad-commander-description
+      rules: ghost-role-information-deathsquad-commander-rules
     - type: Loadout
-      prototypes: [ DSLeaderGear ]
+      prototypes: [ DSCommanderGear ]
 
 - type: entity
-  name: death squad leader
+  name: death squad commander
   parent: RandomHumanoidSpawnerERTLeader
-  id: MobHumanDeathSquadLeader
-  suffix: DeathSquad
+  id: RandomHumanoidSpawnerDeathSquadCommander
+  suffix: ERTRole, Basic
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_commander.rsi
@@ -186,11 +186,11 @@
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: RandomHumanoidSpawner
-    settings: DSLeaderRandom
+    settings: DeathSquadCommander
 
 - type: randomHumanoidSettings
-  id: DSOfficerRandom
-  parent: DSBaseRandom
+  id: DeathSquadOfficer
+  parent: DeathSquadBase
   components:
     - type: GhostRole
       allowMovement: true
@@ -208,9 +208,9 @@
 
 - type: entity
   name: death squad officer
-  parent: RandomHumanoidSpawnerERTLeader
-  id: MobHumanDeathSquadOfficer
-  suffix: DeathSquad
+  parent: RandomHumanoidSpawnerDeathSquadCommander
+  id: RandomHumanoidSpawnerDeathSquadOfficer
+  suffix: ERTRole, Basic
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_officer.rsi
@@ -218,11 +218,11 @@
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: RandomHumanoidSpawner
-    settings: DSOfficerRandom
+    settings: DeathSquadOfficer
 
 - type: randomHumanoidSettings
-  id: DSSpecialistRandom
-  parent: DSBaseRandom
+  id: DeathSquadSpecialist
+  parent: DeathSquadBase
   components:
     - type: GhostRole
       allowMovement: true
@@ -243,9 +243,9 @@
 
 - type: entity
   name: death squad specialist
-  parent: RandomHumanoidSpawnerERTLeader
-  id: MobHumanDeathSquadSpecialist
-  suffix: DeathSquad
+  parent: RandomHumanoidSpawnerDeathSquadCommander
+  id: RandomHumanoidSpawnerDeathSquadSpecialist
+  suffix: ERTRole, Basic
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_specialist.rsi
@@ -253,4 +253,4 @@
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: RandomHumanoidSpawner
-    settings: DSSpecialistRandom
+    settings: DeathSquadSpecialist

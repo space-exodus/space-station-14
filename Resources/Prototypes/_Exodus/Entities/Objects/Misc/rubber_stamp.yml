@@ -4,7 +4,7 @@
   id: RubberStampDSO
   components:
   - type: Stamp
-    stampedName: ДЕПАРТАМЕНТ СО
+    stampedName: stamp-component-stamped-name-dso
     stampedColor: "#6f6f5d"
     stampState: "paper_stamp-detective"
   - type: Sprite
@@ -13,11 +13,10 @@
 - type: entity
   name: Тop secret rubber stamp
   parent: RubberStampBase
-  description: Печать из резины, для проставления печатей на важных документах.
   id: RubberStampTopSecret
   components:
   - type: Stamp
-    stampedName: СОВЕРШЕННО СЕКРЕТНО
+    stampedName: stamp-component-stamped-name-topsecret
     stampedColor: "#cc0000"
     stampState: "paper_stamp-hos"
   - type: Sprite

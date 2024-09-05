@@ -8,3 +8,5 @@
     sprite: Exodus/Clothing/Eyes/Hud/death_squad.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Eyes/Hud/death_squad.rsi
+  - type: SolutionScanner
+  - type: ShowSyndicateIcons

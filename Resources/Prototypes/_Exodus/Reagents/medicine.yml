@@ -1,9 +1,9 @@
 - type: reagent
   id: Saliforsom
-  name: Saliforsom
+  name: reagent-name-saliforsom
   group: Medicine
-  desc: A concentrated antibiotic that cures all disease, and even death.
-  physicalDesc: unreal
+  desc: reagent-desc-saliforsom
+  physicalDesc: reagent-physical-desc-chalky
   flavor: flavor-complex-medicine
   color: "#e8e8e8"
   metabolisms:

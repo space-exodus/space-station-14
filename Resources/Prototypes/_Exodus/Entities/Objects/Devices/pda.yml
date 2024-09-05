@@ -15,7 +15,7 @@
 - type: entity
   parent: BasePDA
   id: PDACommanderDS
-  name: death_squad_pda
+  name: death squad PDA
   description: Smells like death.
   suffix: commander
   components:
@@ -31,7 +31,7 @@
       shader: "unshaded"
       visible: false
   - type: Pda
-    id: IDCardDSLeader
+    id: IDCardDSCommander
     state: pda-death_squad
   - type: PdaBorderColor
     borderColor: "#333333"
@@ -42,7 +42,7 @@
 - type: entity
   parent: PDACommanderDS
   id: PDAOfficerDS
-  name: death_squad_pda
+  name: death squad PDA
   suffix: officer
   components:
   - type: Pda
@@ -52,7 +52,7 @@
 - type: entity
   parent: PDACommanderDS
   id: PDASpecialistDS
-  name: death_squad_pda
+  name: death squad PDA
   suffix: specialist
   components:
   - type: Pda

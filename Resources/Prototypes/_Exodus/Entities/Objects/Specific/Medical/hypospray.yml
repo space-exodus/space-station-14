@@ -18,6 +18,7 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 15
+    injectOnly: true
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
     netsync: false

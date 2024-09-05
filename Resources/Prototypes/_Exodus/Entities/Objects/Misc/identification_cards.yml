@@ -12,11 +12,11 @@
 
 - type: entity
   parent: CentcomIDCard
-  id: IDCardDSLeader
+  id: IDCardDSCommander
   name: death squad commander ID card
   components:
   - type: PresetIdCard
-    job: DSLeader
+    job: DSCommander
   - type: Sprite
     layers:
     - state: syndie
@@ -24,7 +24,7 @@
     - state: idcentcom
 
 - type: entity
-  parent: IDCardDSLeader
+  parent: IDCardDSCommander
   id: IDCardDSOfficer
   name: death squad Officer ID card
   components:
@@ -32,7 +32,7 @@
     job: DSOfficer
 
 - type: entity
-  parent: IDCardDSLeader
+  parent: IDCardDSCommander
   id: IDCardDSSpecialist
   name: death squad specialist ID card
   components:

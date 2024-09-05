@@ -57,9 +57,9 @@
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitDeathsquadCommand
+  id: ClothingOuterHardsuitDeathsquadCommander
   name: death squad commander hardsuit
-  description: A high-tech suit designed for the death squad leader.
+  description: A high-tech suit designed for the death squad commander.
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_commander.rsi
@@ -105,7 +105,7 @@
     netsync: false
 
 - type: entity
-  parent: ClothingOuterHardsuitDeathsquadCommand
+  parent: ClothingOuterHardsuitDeathsquadCommander
   id: ClothingOuterHardsuitDeathsquadOfficer
   name: death squad officer hardsuit
   description: A high-tech suit designed for the death squad officer.
@@ -132,7 +132,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquadOfficer
 
 - type: entity
-  parent: ClothingOuterHardsuitDeathsquadCommand
+  parent: ClothingOuterHardsuitDeathsquadCommander
   id: ClothingOuterHardsuitDeathsquadSpecialist
   name: death squad specialist hardsuit
   description: A high-tech suit designed for the death squad specialist.
@@ -159,7 +159,7 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitDeathsquadCommander
   name: death squad commander hardsuit helmet
-  description: A high-tech helmet designed for the death squad leader.
+  description: A high-tech helmet designed for the death squad commander.
   components:
   - type: BreathMask
   - type: Sprite
