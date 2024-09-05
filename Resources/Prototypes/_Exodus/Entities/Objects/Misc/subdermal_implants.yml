@@ -6,3 +6,7 @@
   components:
     - type: Rattle
       radioChannel: "DS"
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+      - Dead

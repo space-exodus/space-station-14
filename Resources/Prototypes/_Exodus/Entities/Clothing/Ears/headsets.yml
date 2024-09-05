@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetDS
-  name: Гарнитура эскадрона смерти
-  description: Гарнитура эскадрона смерти.
+  name: death squad headset
+  description: Death squad headset.
   components:
   - type: ContainerFill
     containers:

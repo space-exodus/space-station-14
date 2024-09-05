@@ -1,8 +1,7 @@
 - type: entity
-  name: Печать ДСО
+  name: DSO rubber stamp
   parent: RubberStampBase
   id: RubberStampDSO
-  description: Печать из резины, для проставления печатей на важных документах.
   components:
   - type: Stamp
     stampedName: ДЕПАРТАМЕНТ СО
@@ -12,7 +11,7 @@
     state: stamp-chaplain
 
 - type: entity
-  name: Печать "Совершенно секретно"
+  name: Тop secret rubber stamp
   parent: RubberStampBase
   description: Печать из резины, для проставления печатей на важных документах.
   id: RubberStampTopSecret

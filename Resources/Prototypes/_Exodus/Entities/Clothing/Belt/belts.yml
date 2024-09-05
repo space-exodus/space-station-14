@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingBeltStorageBase
   id: ClothingBeltDS
-  name: Штурмовой пояс
-  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  name: assault-belt-ds
+  description: An assault belt that can hold ammunition or other murderous items.
   components:
   - type: Sprite
     sprite: Clothing/Belt/assault.rsi
@@ -12,8 +12,7 @@
 - type: entity
   parent: ClothingBeltDS
   id: ClothingBeltDSOfficer
-  name: Штурмовой пояс
-  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  name: assault-belt-ds
   components:
   - type: StorageFill
     contents:
@@ -25,8 +24,7 @@
 - type: entity
   parent: ClothingBeltDS
   id: ClothingBeltDSCommander
-  name: Штурмовой пояс
-  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  name: assault-belt-ds
   components:
   - type: StorageFill
     contents:
@@ -41,8 +39,7 @@
 - type: entity
   parent: ClothingBeltDS
   id: ClothingBeltDSSpecialist
-  name: Штурмовой пояс
-  description: Штурмовой пояс, в котором можно хранить боеприпасы или другие убийственные вещи
+  name: assault-belt-ds
   components:
   - type: StorageFill
     contents:

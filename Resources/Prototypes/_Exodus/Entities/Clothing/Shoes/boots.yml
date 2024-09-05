@@ -50,8 +50,8 @@
 - type: entity
   parent: ClothingShoesBootsMagSyndie
   id: ClothingShoesBootsMagDS
-  name: Ботинки Эскадрона Смерти
-  description: Самые современные магнитные ботинки в узнаваемых цветах
+  name: death squad magboots
+  description: State-of-the-art magnetic boots in recognisable colours.
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Shoes/Boots/death_squad_magboots.rsi
@@ -65,7 +65,7 @@
   - type: NoSlip
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Uploaded/DS/Sound/magfootsteps.ogg
+      path: /Audio/Exodus/DeathSquad/magfootsteps.ogg
   - type: GasTank
     outputPressure: 42.6
     air:
