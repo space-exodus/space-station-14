@@ -77,3 +77,13 @@
   cost: 1000
   category: cargoproduct-category-name-security
   group: market
+
+- type: cargoProduct
+  id: SecurityMiniEnergyGun
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/MiniEnergyGun.rsi
+    state: base
+  product: CrateSecurityMiniEnergyGun
+  cost: 2500
+  category: cargoproduct-category-name-security
+  group: market
