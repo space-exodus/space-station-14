@@ -1,8 +1,8 @@
 - type: entity
   parent: EncryptionKey
   id: EncryptionKeyDS
-  name: Ключ шифрования эскадрона смерти
-  description: Ключ шифрования несущих смерть
+  name: death squad encryption key.
+  description: The encryption key of the death-bringers.
   components:
   - type: EncryptionKey
     channels:

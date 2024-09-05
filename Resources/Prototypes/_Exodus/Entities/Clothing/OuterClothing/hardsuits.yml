@@ -58,15 +58,15 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitDeathsquadCommand
-  name: Костюм командира ЭС
-  description: Высокотехнологичный костюм предназначенный для командира отряда
+  name: death squad commander hardsuit
+  description: A high-tech suit designed for the death squad leader.
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_commander.rsi
   - type: Clothing
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_commander.rsi
     equipSound:
-      path: /Uploaded/DS/Sound/suit.ogg
+      path: /Audio/Exodus/DeathSquad/suit.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
@@ -107,8 +107,8 @@
 - type: entity
   parent: ClothingOuterHardsuitDeathsquadCommand
   id: ClothingOuterHardsuitDeathsquadOfficer
-  name: Костюм офицера ЭС
-  description: Высокотехнологичный костюм предназначенный для офицеров отряда
+  name: death squad officer hardsuit
+  description: A high-tech suit designed for the death squad officer.
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_officer.rsi
@@ -134,8 +134,8 @@
 - type: entity
   parent: ClothingOuterHardsuitDeathsquadCommand
   id: ClothingOuterHardsuitDeathsquadSpecialist
-  name: Костюм специалиста ЭС
-  description: Высокотехнологичный костюм предназначенный для специалистов отряда
+  name: death squad specialist hardsuit
+  description: A high-tech suit designed for the death squad specialist.
   components:
   - type: Sprite
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_specialist.rsi
@@ -158,16 +158,16 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitDeathsquadCommander
-  name: Шлем командира ЭС
-  description: Шлем от костюм командира ЭС
+  name: death squad commander hardsuit helmet
+  description: A high-tech helmet designed for the death squad leader.
   components:
   - type: BreathMask
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
-    equipSound: /Uploaded/DS/Sound/helmet.ogg
-    unequipSound: /Uploaded/DS/Sound/helmet.ogg
+    equipSound: /Audio/Exodus/DeathSquad/helmet.ogg
+    unequipSound: /Audio/Exodus/DeathSquad/helmet.ogg
   - type: PointLight
     radius: 5
     energy: 10
@@ -187,9 +187,9 @@
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitDeathsquadCommander
-  id: ClothingHeadHelmetHardsuitDeathsquadSpecialist
-  name: Шлем специалиста ЭС
-  description: Шлем от костюма полевого специалиста ЭС
+  id: ClothingHeadHelmetHardsuitDeathsquadOfficer
+  name: death squad officer hardsuit helmet
+  description: A high-tech helmet designed for the death squad officer.
   components:
   - type: Armor
     modifiers:
@@ -203,9 +203,9 @@
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitDeathsquadCommander
-  id: ClothingHeadHelmetHardsuitDeathsquadOfficer
-  name: Шлем офицера ЭС
-  description: Шлем от костюма офицера ЭС
+  id: ClothingHeadHelmetHardsuitDeathsquadSpecialist
+  name: death squad specialist hardsuit helmet
+  description: A high-tech helmet designed for the death squad specialist.
   components:
   - type: Armor
     modifiers:
@@ -216,3 +216,5 @@
         Heat: 0.80
         Radiation: 0.85
         Caustic: 0.95
+
+

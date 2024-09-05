@@ -20,13 +20,13 @@
     - SemiAuto
     - FullAuto
     soundGunshot:
-      path: /Uploaded/DS/Sound/pew.ogg
+      path: /Audio/Exodus/DeathSquad/pew.ogg
     soundEmpty:
-      path: /Uploaded/DS/Sound/empty.ogg
+      path: /Audio/Exodus/DeathSquad/empty.ogg
   - type: Storage
-    storageOpenSound: /Uploaded/DS/Sound/loading2.ogg
-    storageCloseSound: /Uploaded/DS/Sound/loading3.ogg
-    storageInsertSound: /Uploaded/DS/Sound/loading.ogg
+    storageOpenSound: /Audio/Exodus/DeathSquad/loading2.ogg
+    storageCloseSound: /Audio/Exodus/DeathSquad/loading3.ogg
+    storageInsertSound: /Audio/Exodus/DeathSquad/loading.ogg
     maxItemSize: Normal
     grid:
     - 0,0,2,2

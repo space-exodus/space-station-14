@@ -15,11 +15,9 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesDS
-  name: Боевые перчатки ЭС
-  description: Силовые перчатки, многократно усиливающие механическую силу удара.
+  name: death squad combat gloves
+  description: Force gloves that multiply the mechanical force of impact.
   components:
-  - type: GloveHeatResistance
-    heatResistance: 1400
   - type: Insulated
   - type: Sprite
     sprite: Exodus/Clothing/Hands/Gloves/death_squad.rsi
@@ -29,10 +27,11 @@
     damage: 15
   - type: MeleeWeapon
     attackRate: 1.5
+    wideAnimationRotation: -135
     damage:
       types:
         Blunt: 30
     soundHit:
-      path: /Uploaded/DS/Sound/glovepunch.ogg
+      path: /Audio/Exodus/DeathSquad/glovepunch.ogg
   - type: Fiber
     fiberMaterial: fibers-insulative

@@ -1,8 +1,7 @@
 - type: entity
-  id: BoxFolderWhiteDS
+  id: BoxFolderCentcomDS
   parent: BoxFolderBase
-  name: папка
-  description: Папка, заполненная совершенно секретными документами.
+  name: folder
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi

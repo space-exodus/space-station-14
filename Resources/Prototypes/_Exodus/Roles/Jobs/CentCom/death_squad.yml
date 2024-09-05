@@ -1,12 +1,12 @@
 - type: job
   id: DSLeader
-  name: Командир ЭС
-  description: Командир элитного отряда зачистки НаноТрейзен - Эскадрона Смерти.
+  name: job-name-deathsquad-leader
+  description: job-description-deathsquad-leader
   playTimeTracker: JobDSLeader
   setPreference: false
   startingGear: DSLeaderGear
   icon: "JobIconNanotrasen"
-  supervisors: Офицер Специальных Операций
+  supervisors: job-supervisors-spo
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -28,17 +28,17 @@
     belt: ClothingBeltDSCommander
     suitstorage: Chainsword
     pocket1: DoorRemoteAll
-    pocket2: BoxFolderWhiteDS
+    pocket2: BoxFolderCentcomDS
 
 - type: job
   id: DSOfficer
-  name: Офицер ЭС
-  description: Офицер элитного отряда зачистки НаноТрейзен - Эскадрона Смерти.
+  name: job-name-deathsquad-officer
+  description: job-description-deathsquad-officer
   playTimeTracker: JobDSOfficer
   setPreference: false
   startingGear: DSOfficerGear
   icon: "JobIconNanotrasen"
-  supervisors: Командир ЭС
+  supervisors: job-supervisors-dsl
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -60,17 +60,17 @@
     belt: ClothingBeltDSOfficer
     pocket1: EnergySword
     suitstorage: WeaponRifleSP
-    pocket2: BoxFolderWhiteDS
+    pocket2: BoxFolderCentcomDS
 
 - type: job
   id: DSSpecialist
-  name: Специалист ЭС
-  description: Специалист элитного отряда зачистки НаноТрейзен - Эскадрона Смерти.
+  name: job-name-deathsquad-specialist
+  description: job-description-deathsquad-specialist
   playTimeTracker: JobDSSpecialist
   setPreference: false
   startingGear: DSSpecialistGear
   icon: "JobIconNanotrasen"
-  supervisors: Командир ЭС
+  supervisors: job-supervisors-dsl
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -92,4 +92,4 @@
     belt: ClothingBeltDSSpecialist
     pocket1: EnergySword
     suitstorage: DSSyringeGun
-    pocket2: BoxFolderWhiteDS
+    pocket2: BoxFolderCentcomDS

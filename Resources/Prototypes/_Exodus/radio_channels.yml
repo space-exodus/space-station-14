@@ -1,6 +1,6 @@
 - type: radioChannel
   id: DS
-  name: Эскадрон Смерти
+  name: chat-radio-deathsquad
   keycode: 'э' # Corvax-Localization
   frequency: 2654
   color: "#1700cb"

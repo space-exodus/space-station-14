@@ -49,9 +49,9 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: ClothingDeathSquadronBackpack
-  name: Рюкзак Эскадрона Смерти
-  description: Рюкзак повышенной вместимости одноименного отряда
+  id: ClothingDeathSquadBackpack
+  name: death_squad_backpack
+  description: The high-capacity backpack of the squad of the same name
   components:
   - type: Sprite
     sprite: Corvax/Back/Backpacks/deathsquad-backpack.rsi
@@ -63,17 +63,16 @@
     damageCoefficient: 0.1
 
 - type: entity
-  parent: ClothingDeathSquadronBackpack
-  id: ClothingDeathSquadronBackpackOfficer
-  name: Рюкзак Эскадрона Смерти
-  description: Рюкзак повышенной вместимости одноименного отряда
+  parent: ClothingDeathSquadBackpack
+  id: ClothingDeathSquadBackpackOfficer
+  name: death_squad_backpack
+  suffix: officer
   components:
   - type: StorageFill
     contents:
       - id: WeaponPulseRifle
       - id: Omnitool
       - id: DSEnergyShield
-      - id: BoxSurvivalEngineering
       - id: WeaponRevolverMateba
       - id: SpeedLoaderMagnumAP
         amount: 2
@@ -83,20 +82,20 @@
         amount: 2
       - id: EmergencyMedipenDS
         amount: 2
+      - id: BoxSurvivalEngineering
 
 
 - type: entity
-  parent: ClothingDeathSquadronBackpack
-  id: ClothingDeathSquadronBackpackCommander
-  name: Рюкзак Эскадрона Смерти
-  description: Рюкзак повышенной вместимости одноименного отряда
+  parent: ClothingDeathSquadBackpack
+  id: ClothingDeathSquadBackpackCommander
+  name: death_squad_backpack
+  suffix: commander
   components:
   - type: StorageFill
     contents:
       - id: WeaponPulseRifle
       - id: Omnitool
       - id: DSEnergyShield
-      - id: BoxSurvivalEngineering
       - id: WeaponRevolverMateba
       - id: SpeedLoaderMagnumAP
         amount: 2
@@ -107,19 +106,19 @@
       - id: PinpointerNuclear
       - id: EmergencyMedipenDS
         amount: 2
+      - id: BoxSurvivalEngineering
 
 - type: entity
-  parent: ClothingDeathSquadronBackpack
-  id: ClothingDeathSquadronBackpackSpecialist
-  name: Рюкзак Эскадрона Смерти
-  description: Рюкзак повышенной вместимости одноименного отряда
+  parent: ClothingDeathSquadBackpack
+  id: ClothingDeathSquadBackpackSpecialist
+  name: death_squad_backpack
+  suffix: specialist
   components:
   - type: StorageFill
     contents:
       - id: WeaponPulseRifle
       - id: Omnitool
       - id: DSEnergyShield
-      - id: BoxSurvivalEngineering
       - id: WeaponRevolverMateba
       - id: SpeedLoaderMagnumAP
         amount: 2
@@ -127,3 +126,4 @@
       - id: TearGasGrenade
       - id: EmergencyMedipenDS
         amount: 4
+      - id: BoxSurvivalEngineering

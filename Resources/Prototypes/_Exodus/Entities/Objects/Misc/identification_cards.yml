@@ -13,8 +13,7 @@
 - type: entity
   parent: CentcomIDCard
   id: IDCardDSLeader
-  name: Id Карта командира Эскадрона Смерти
-  description: Карта, необходимая для доступа в различные области станции.
+  name: death squad commander ID card
   components:
   - type: PresetIdCard
     job: DSLeader
@@ -27,8 +26,7 @@
 - type: entity
   parent: IDCardDSLeader
   id: IDCardDSOfficer
-  name: Id Карта офицера Эскадрона Смерти
-  description: Карта, необходимая для доступа в различные области станции.
+  name: death squad Officer ID card
   components:
   - type: PresetIdCard
     job: DSOfficer
@@ -36,8 +34,7 @@
 - type: entity
   parent: IDCardDSLeader
   id: IDCardDSSpecialist
-  name: Id Карта специалиста Эскадрона Смерти
-  description: Карта, необходимая для доступа в различные области станции.
+  name: death squad specialist ID card
   components:
   - type: PresetIdCard
     job: DSSpecialist

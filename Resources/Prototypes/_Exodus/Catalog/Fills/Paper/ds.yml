@@ -1,8 +1,7 @@
 - type: entity
   id: DSDocumentTango
-  name: Постановление ДСО-034-003-8563
+  name: resolution DSO-034-003-8563
   parent: Paper
-  description: Лист белой бумаги.
   components:
   - type: Paper
     stampState: paper_stamp-detective
@@ -47,9 +46,8 @@
 
 - type: entity
   id: DSDocumentFoxtrot
-  name: Постановление ДСО-034-003-8347
+  name: resolution DSO-034-003-8347
   parent: Paper
-  description: Лист белой бумаги.
   components:
   - type: Paper
     stampState: paper_stamp-detective

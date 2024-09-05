@@ -15,8 +15,9 @@
 - type: entity
   parent: BasePDA
   id: PDACommanderDS
-  name: КПК Эскадрона смерти
-  description: Пахнет смертью.
+  name: death_squad_pda
+  description: Smells like death.
+  suffix: commander
   components:
   - type: Sprite
     layers:
@@ -41,8 +42,8 @@
 - type: entity
   parent: PDACommanderDS
   id: PDAOfficerDS
-  name: КПК Эскадрона смерти
-  description: Пахнет смертью.
+  name: death_squad_pda
+  suffix: officer
   components:
   - type: Pda
     id: IDCardDSOfficer
@@ -51,10 +52,14 @@
 - type: entity
   parent: PDACommanderDS
   id: PDASpecialistDS
-  name: КПК Эскадрона смерти
-  description: Пахнет смертью.
+  name: death_squad_pda
+  suffix: specialist
   components:
   - type: Pda
     id: IDCardDSSpecialist
     state: pda-death_squad
+  - type: HealthAnalyzer
+    scanDelay: 0.5
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
 
