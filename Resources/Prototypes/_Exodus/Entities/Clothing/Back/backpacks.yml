@@ -50,7 +50,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingDeathSquadBackpack
-  name: death_squad_backpack
+  name: death squad backpack
   description: The high-capacity backpack of the squad of the same name
   components:
   - type: Sprite
@@ -65,7 +65,7 @@
 - type: entity
   parent: ClothingDeathSquadBackpack
   id: ClothingDeathSquadBackpackOfficer
-  name: death_squad_backpack
+  name: death squad backpack
   suffix: officer
   components:
   - type: StorageFill
@@ -82,13 +82,11 @@
         amount: 2
       - id: EmergencyMedipenDS
         amount: 2
-      - id: BoxSurvivalEngineering
-
 
 - type: entity
   parent: ClothingDeathSquadBackpack
   id: ClothingDeathSquadBackpackCommander
-  name: death_squad_backpack
+  name: death squad backpack
   suffix: commander
   components:
   - type: StorageFill
@@ -106,12 +104,11 @@
       - id: PinpointerNuclear
       - id: EmergencyMedipenDS
         amount: 2
-      - id: BoxSurvivalEngineering
 
 - type: entity
   parent: ClothingDeathSquadBackpack
   id: ClothingDeathSquadBackpackSpecialist
-  name: death_squad_backpack
+  name: death squad backpack
   suffix: specialist
   components:
   - type: StorageFill
@@ -126,4 +123,3 @@
       - id: TearGasGrenade
       - id: EmergencyMedipenDS
         amount: 4
-      - id: BoxSurvivalEngineering

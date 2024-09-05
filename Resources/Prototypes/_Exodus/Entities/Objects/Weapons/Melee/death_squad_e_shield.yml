@@ -21,17 +21,6 @@
       size: Small
       sprite: Exodus/Objects/Weapons/Melee/death_squad_e_shield.rsi
       heldPrefix: eshield
-    - type: UseDelay
-      delay: 0.5
-    - type: ToggleableLightVisuals
-      spriteLayer: shield
-      inhandVisuals:
-        left:
-          - state: inhand-left-shield
-            shader: unshaded
-        right:
-          - state: inhand-right-shield
-            shader: unshaded
     - type: Blocking
       passiveBlockModifier:
         coefficients:

@@ -2,6 +2,7 @@
   id: BoxFolderCentcomDS
   parent: BoxFolderBase
   name: folder
+  suffix: death squad
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi

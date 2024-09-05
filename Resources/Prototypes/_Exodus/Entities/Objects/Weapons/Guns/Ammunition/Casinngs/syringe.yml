@@ -36,7 +36,6 @@
             - ReagentId: Pax
               Quantity: 10
 
-
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo

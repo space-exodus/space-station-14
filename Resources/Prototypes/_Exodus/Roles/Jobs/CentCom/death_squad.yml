@@ -1,10 +1,10 @@
 - type: job
-  id: DSLeader
-  name: job-name-deathsquad-leader
-  description: job-description-deathsquad-leader
-  playTimeTracker: JobDSLeader
+  id: DSCommander
+  name: job-name-deathsquad-commander
+  description: job-description-deathsquad-commander
+  playTimeTracker: JobDSCommander
   setPreference: false
-  startingGear: DSLeaderGear
+  startingGear: DSCommanderGear
   icon: "JobIconNanotrasen"
   supervisors: job-supervisors-spo
   canBeAntag: false
@@ -14,7 +14,7 @@
   - CentralCommand
 
 - type: startingGear
-  id: DSLeaderGear
+  id: DSCommanderGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
     back: ClothingDeathSquadBackpackCommander
@@ -22,7 +22,7 @@
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesHudDS
     gloves: ClothingHandsGlovesDS
-    outerClothing: ClothingOuterHardsuitDeathsquadCommand
+    outerClothing: ClothingOuterHardsuitDeathsquadCommander
     id: PDACommanderDS
     ears: ClothingHeadsetDS
     belt: ClothingBeltDSCommander
@@ -38,7 +38,7 @@
   setPreference: false
   startingGear: DSOfficerGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-dsl
+  supervisors: job-supervisors-dsc
   canBeAntag: false
   accessGroups:
   - AllAccess
@@ -49,7 +49,7 @@
   id: DSOfficerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
-    back: ClothingDeathSquadBackpack
+    back: ClothingDeathSquadBackpackOfficer
     shoes: ClothingShoesBootsMagDS
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesHudDS
@@ -70,7 +70,7 @@
   setPreference: false
   startingGear: DSSpecialistGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-dsl
+  supervisors: job-supervisors-dsc
   canBeAntag: false
   accessGroups:
   - AllAccess
