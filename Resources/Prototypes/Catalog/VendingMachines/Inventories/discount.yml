@@ -2,7 +2,7 @@
   id: DiscountDansInventory
   startingInventory:
     FoodSnackCheesie: 3
-    Kirieshki: 3 # Exodus MRP - Kirieshki
+    kirieshki: 3 # Exodus-Kirieshki
     FoodSnackChips: 3
     FoodSnackBoritos: 3
     DrinkEnergyDrinkCan: 4

@@ -1,8 +1,8 @@
 - type: entity
   parent: FoodSnackBase
-  id: Kirieshki
+  id: kirieshki
   name: Kirieshki Neo
-  description:  BOMBtastic! Limited edition products from DonkCo. Find the label with the code inside.
+  description: BOMBtastic! Limited edition products from DonkCo in honour of some important person. Find the label with the code inside!
   components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/kiriehka.rsi
@@ -20,7 +20,7 @@
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
-          KirieshkiOpen:
+          kirieshkiOpen:
             min: 1
             max: 1
       - !type:ExplodeBehavior
@@ -35,15 +35,15 @@
     totalIntensity: 0.01
   - type: SpawnItemsOnUse
     items:
-      - id: KirieshkiOpen
+      - id: kirieshkiOpen
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: Kirieshki Neo
+  name: kirieshki Neo
   parent: FoodSnackBase
-  id: KirieshkiOpen
-  description: BOMBtastic! Limited edition products from DonkCo. Find the label with the code inside.
+  id: kirieshkiOpen
+  description: BOMBtastic! Limited edition products from DonkCo in honour of some important person. Find the label with the code inside!
   components:
   - type: FlavorProfile
     flavors:
@@ -55,7 +55,7 @@
     scale: 0.75,0.75
   - type: Food
     trash:
-    - KirieshkiTrash
+    - kirieshkiTrash
   - type: SolutionContainerManager
     solutions:
       food:
@@ -67,7 +67,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash
-  id: KirieshkiTrash
+  id: kirieshkiTrash
   name: Kirieshki Neo
   description: This is rubbish.
   components:
