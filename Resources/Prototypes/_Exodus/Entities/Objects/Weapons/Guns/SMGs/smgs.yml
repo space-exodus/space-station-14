@@ -20,7 +20,9 @@
   - type: Gun
     fireRate: 7
     soundGunshot:
-      path: /Audio/Exodus/DeathSquad/sp-91.ogg
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/sp-91.ogg
+      params:
+        volume: 5
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg

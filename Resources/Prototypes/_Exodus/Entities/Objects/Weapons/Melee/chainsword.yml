@@ -8,33 +8,33 @@
   - type: Sharp
   - type: ItemToggle
     soundActivate:
-      path: /Audio/Exodus/DeathSquad/start.ogg
+      path: /Audio/Exodus/Weapons/start.ogg
       params:
         volume: 5
     soundDeactivate:
-      path: /Audio/Exodus/DeathSquad/start.ogg
+      path: /Audio/Exodus/Weapons/start.ogg
       params:
         volume: 5
   - type: ItemToggleActiveSound
     activeSound:
-      path: /Audio/Exodus/DeathSquad/idle.ogg
+      path: /Audio/Exodus/Weapons/idle.ogg
       params:
         volume: -10
   - type: ItemToggleSize
     activatedSize: Huge
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
-      path: /Audio/Exodus/DeathSquad/hit.ogg
+      path: /Audio/Exodus/Weapons/Guns/Hits/hit.ogg
       params:
         variation: 0.250
         volume: -10
     activatedSoundOnHitNoDamage:
-      path: /Audio/Exodus/DeathSquad/hit.ogg
+      path: /Audio/Exodus/Weapons/Guns/Hits/hit.ogg
       params:
         variation: 0.250
         volume: -10
     activatedSoundOnSwing:
-      path: /Audio/Exodus/DeathSquad/miss.ogg
+      path: /Audio/Exodus/Weapons/Guns/Miss/miss.ogg
       params:
         volume: 5
         variation: 0.125
@@ -93,7 +93,6 @@
       - state: inhand-right-blade
         shader: unshaded
   - type: Clothing
-    sprite: Exodus/Objects/Weapons/Guns/syringegun.rsi
     quickEquip: false
     slots:
     - Back
