@@ -16,7 +16,7 @@
   - type: NoSlip
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Exodus/DeathSquad/magfootsteps.ogg
+      path: /Audio/Exodus/Clothing/magfootsteps.ogg
   - type: GasTank
     outputPressure: 42.6
     air:

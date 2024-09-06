@@ -66,7 +66,7 @@
   - type: Clothing
     sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_commander.rsi
     equipSound:
-      path: /Audio/Exodus/DeathSquad/suit.ogg
+      path: /Audio/Exodus/Clothing/suit.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
@@ -166,8 +166,8 @@
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
-    equipSound: /Audio/Exodus/DeathSquad/helmet.ogg
-    unequipSound: /Audio/Exodus/DeathSquad/helmet.ogg
+    equipSound: /Audio/Exodus/Clothing/helmet.ogg
+    unequipSound: /Audio/Exodus/Clothing/helmet.ogg
   - type: PointLight
     radius: 5
     energy: 10

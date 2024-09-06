@@ -32,6 +32,6 @@
       types:
         Blunt: 30
     soundHit:
-      path: /Audio/Exodus/DeathSquad/glovepunch.ogg
+      path: /Audio/Exodus/Weapons/glovepunch.ogg
   - type: Fiber
     fiberMaterial: fibers-insulative

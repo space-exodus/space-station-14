@@ -20,13 +20,13 @@
     - SemiAuto
     - FullAuto
     soundGunshot:
-      path: /Audio/Exodus/DeathSquad/pew.ogg
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/pew.ogg
     soundEmpty:
-      path: /Audio/Exodus/DeathSquad/empty.ogg
+      path: /Audio/Exodus/Weapons/Guns/Syringe_gun/empty.ogg
   - type: Storage
-    storageOpenSound: /Audio/Exodus/DeathSquad/loading2.ogg
-    storageCloseSound: /Audio/Exodus/DeathSquad/loading3.ogg
-    storageInsertSound: /Audio/Exodus/DeathSquad/loading.ogg
+    storageOpenSound: /Audio/Exodus/Weapons/Guns/Syringe_gun/loading2.ogg
+    storageCloseSound: /Audio/Exodus/Weapons/Guns/Syringe_gun/loading3.ogg
+    storageInsertSound: /Audio/Exodus/Weapons/Guns/Syringe_gun/loading.ogg
     maxItemSize: Normal
     grid:
     - 0,0,2,2
