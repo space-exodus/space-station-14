@@ -400,6 +400,11 @@ public abstract partial class SharedGunSystem : EntitySystem
         projectile.Weapon = gunUid;
 
         TransformSystem.SetWorldRotation(uid, direction.ToWorldAngle());
+
+        // Exodus-ShotYourself-Start
+        if (TryComp<GunComponent>(gunUid, out var gun) && gun.Target != null)
+            projectile.Target = gun.Target;
+        // Exodus-ShotYourself-End
     }
 
     protected abstract void Popup(string message, EntityUid? uid, EntityUid? user);
