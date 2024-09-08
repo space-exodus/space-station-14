@@ -2,5 +2,5 @@
   id: ClothingNeckShockCollar
   name: shock collar
   sprite:
-    sprite: Clothing/Neck/Misc/shock_collar.rsi
+    sprite: Exodus/Clothing/Neck/Misc/shock_collar.rsi
     state: icon
