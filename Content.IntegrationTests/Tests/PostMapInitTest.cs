@@ -17,6 +17,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Content.Shared.Station.Components;
+using FastAccessors;
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 
@@ -59,6 +60,7 @@ namespace Content.IntegrationTests.Tests
             "CorvaxTerra",
             "CorvaxFrame",
             "CorvaxPearl",
+            "CorvaxTushkan",
             // Corvax-End
             // Exodus-Start
             "ExodusCluster",
@@ -73,21 +75,18 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            "Cluster",
             "Omega",
             "Bagel",
-            "Origin",
             "CentComm",
             "Box",
-            "Europa",
-            "Saltern",
             "Core",
             "Marathon",
             "MeteorArena",
-            "Atlas",
+            "Saltern",
             "Reach",
             "Train",
-            "Oasis"
+            "Oasis",
+            "Cog"
         };
 
         /// <summary>
@@ -285,8 +284,8 @@ namespace Content.IntegrationTests.Tests
 
                     var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
                     //start - Exodus   //2 0.08.2024-fix-poinstmaps-and-brigmed
-                        .Where(x => x.SpawnType == SpawnPointType.Job && x.Job.HasValue)
-                        .Select(x => x.Job!.Value);
+                        .Where(x => x.SpawnType == SpawnPointType.Job && x.Job != null)
+                        .Select(x => x.Job.Value);
 
                     // Output the jobs that have spawn points
                     Console.WriteLine($"Jobs with spawn points on {mapProto}: {string.Join(", ", spawnPoints)}");
@@ -298,9 +297,14 @@ namespace Content.IntegrationTests.Tests
                     {
                         Console.WriteLine($"Jobs without spawn points on {mapProto}: {string.Join(", ", jobs)}");
                     }
-
-                    Assert.That(jobs, Is.Empty, $"There are no spawn points for {string.Join(", ", jobs)} on {mapProto}.");
                     //end - Exodus   //2 0.08.2024-fix-poinstmaps-and-brigmed
+                    spawnPoints = entManager.EntityQuery<ContainerSpawnPointComponent>()
+                        .Where(x => x.SpawnType is SpawnPointType.Job or SpawnPointType.Unset && x.Job != null)
+                        .Select(x => x.Job.Value);
+
+                    jobs.ExceptWith(spawnPoints);
+
+                    Assert.That(jobs, Is.Empty, $"There is no spawnpoints for {string.Join(", ", jobs)} on {mapProto}.");
                 }
 
                 try

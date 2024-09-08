@@ -52,15 +52,18 @@ internal sealed class ChargerSystem : EntitySystem
             if (!_container.TryGetContainer(uid, component.SlotId, out var container))
                 return;
 
+            if (HasComp<PowerCellSlotComponent>(uid))
+                return;
+
             // if charger is empty and not a power cell type charger, add empty message
             // power cells have their own empty message by default, for things like flash lights
-            if (container.ContainedEntities.Count == 0 && !HasComp<PowerCellSlotComponent>(uid))
+            if (container.ContainedEntities.Count == 0)
             {
                 args.PushMarkup(Loc.GetString("charger-empty"));
             }
             else
             {
-                // add how much each item is charged it 
+                // add how much each item is charged it
                 foreach (var contained in container.ContainedEntities)
                 {
                     if (!TryComp<BatteryComponent>(contained, out var battery))
@@ -228,7 +231,7 @@ internal sealed class ChargerSystem : EntitySystem
 
         return CellChargerStatus.Charging;
     }
-    
+
     private void TransferPower(EntityUid uid, EntityUid targetEntity, ChargerComponent component, float frameTime)
     {
         if (!TryComp(uid, out ApcPowerReceiverComponent? receiverComponent))
