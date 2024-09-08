@@ -1,7 +1,6 @@
 - type: gameMapPool
   id: ExodusClassicMapPool
   maps:
-  - Atlas
   - Bagel
   - Box
   - Core
@@ -16,7 +15,6 @@
   - Fland
   - Marathon
   - Meta
-  - Origin
   # Exodus Supported Maps
   - ExodusCluster
   - ExodusDelta
