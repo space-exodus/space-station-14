@@ -95,5 +95,4 @@
   - type: Clothing
     quickEquip: false
     slots:
-    - Back
     - suitStorage
