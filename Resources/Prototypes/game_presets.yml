@@ -88,10 +88,10 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true #4boring4vote # Exodus
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler 
+  - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -126,7 +126,7 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler 
+  - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
