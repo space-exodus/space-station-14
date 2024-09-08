@@ -164,10 +164,10 @@
       requirements:
         - !type:DepartmentTimeRequirement
           department: Security
-          time: 72000
+          time: 10800
         - !type:DepartmentTimeRequirement
           department: Command
-          time: 36000
+          time: 54000
       name: ghost-role-information-deathsquad-commander-name
       description: ghost-role-information-deathsquad-commander-description
       rules: ghost-role-information-deathsquad-commander-rules

@@ -182,7 +182,7 @@
         Slash: 0.80
         Piercing: 0.80
         Heat: 0.80
-        Radiation: 0.80
+        Radiation: 0.85
         Caustic: 0.95
 
 - type: entity
