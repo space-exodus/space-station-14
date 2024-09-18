@@ -37,5 +37,4 @@
     sprite: Exodus/Objects/Weapons/Guns/syringegun.rsi
     quickEquip: false
     slots:
-    - Back
     - suitStorage

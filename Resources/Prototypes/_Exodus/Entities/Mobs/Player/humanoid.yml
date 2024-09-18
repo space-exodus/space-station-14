@@ -171,6 +171,7 @@
       name: ghost-role-information-deathsquad-commander-name
       description: ghost-role-information-deathsquad-commander-description
       rules: ghost-role-information-deathsquad-commander-rules
+      job: DSCommander
     - type: Loadout
       prototypes: [ DSCommanderGear ]
 
@@ -203,6 +204,7 @@
       name: ghost-role-information-deathsquad-officer-name
       description: ghost-role-information-deathsquad-officer-description
       rules: ghost-role-information-deathsquad-officer-rules
+      job: DSOfficer
     - type: Loadout
       prototypes: [ DSOfficerGear ]
 
@@ -238,6 +240,7 @@
       name: ghost-role-information-deathsquad-specialist-name
       description: ghost-role-information-deathsquad-specialist-description
       rules: ghost-role-information-deathsquad-specialist-rules
+      job: DSSpecialist
     - type: Loadout
       prototypes: [ DSSpecialistGear ]
 
