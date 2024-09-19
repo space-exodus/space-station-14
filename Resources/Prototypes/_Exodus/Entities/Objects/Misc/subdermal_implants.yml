@@ -1,8 +1,9 @@
 - type: entity
   parent: TrackingImplant
   id: DSTrackingImplant
-  name: Squadron tracking implant
+  name: Death Squad tracking implant
   description: This implant has a tracking device attached to the suit sensor network, as well as a condition monitor for the Squadron radio channel.
+  categories: [ HideSpawnMenu ]
   components:
     - type: Rattle
       radioChannel: "DS"

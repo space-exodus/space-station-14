@@ -1,3 +1,3 @@
-job-supervisors-spo = special operation officer
-job-supervisors-dsc = death squad commander
+job-supervisors-spo = Special Operation Officer
+job-supervisors-dsc = Death Squad Commander
 

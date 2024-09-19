@@ -1,1 +1,1 @@
-chat-radio-deathsquad = Death squad
+chat-radio-deathsquad = Death Squad

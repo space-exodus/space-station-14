@@ -6,7 +6,7 @@
   setPreference: false
   startingGear: DSCommanderGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-spo
+  supervisors: job-supervisors-soo
   canBeAntag: false
   accessGroups:
   - AllAccess
