@@ -6,31 +6,31 @@
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Back/Backpacks/blueshield.rsi
-    
+
 - type: entity
-  noSpawn: false
+  categories: [ HideSpawnMenu ]
   parent: ClothingBackpackCentcomOfficer
   id: ClothingBackpackCentcomOfficerFilled
   name: specical operation officer's backpack
   description: Modifided backpack
   components:
-    - type: Storage
-      grid:
-      - 0,0,17,8
-    - type: StorageFill
-      contents:
-        - id: BoxSurvivalEngineering
-        - id: CombatMedipen
-        - id: CombatMedipen
-        - id: MagazineShotgun
-        - id: MagazineShotgun
-        - id: WeaponShotgunBulldog
-        - id: WeaponDisablerSMG
-        - id: GrenadeFlashBang
-        - id: WelderExperimental
-        - id: Hypospray
-        - id: DeathAcidifierImplanter
-        - id: FreedomImplanter
+  - type: Storage
+    grid:
+    - 0,0,17,8
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalEngineering
+      - id: CombatMedipen
+      - id: CombatMedipen
+      - id: MagazineShotgun
+      - id: MagazineShotgun
+      - id: WeaponShotgunBulldog
+      - id: WeaponDisablerSMG
+      - id: GrenadeFlashBang
+      - id: WelderExperimental
+      - id: Hypospray
+      - id: DeathAcidifierImplanter
+      - id: FreedomImplanter
 
 - type: entity
   parent: ClothingBackpackSatchel

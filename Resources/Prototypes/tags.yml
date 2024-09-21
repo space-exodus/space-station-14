@@ -16,6 +16,9 @@
   id: Ambrosia
 
 - type: Tag
+  id: AnomalyHost
+
+- type: Tag
   id: AppraisalTool
 
 - type: Tag
@@ -1108,8 +1111,8 @@
 - type: Tag
   id: ReinforcedGlassShard
 
-# - type: Tag # Exodus-Refactor: Why the hell is food classified not by characteristics, but by who eats it? Making it fucked up adding races that can eat it too?
-#   id: ReptilianFood
+- type: Tag
+  id: ReptilianFood
 
 - type: Tag
   id: RifleStock
@@ -1168,7 +1171,7 @@
 - type: Tag
   id: SecureWindoor
 
-- type: Tag  
+- type: Tag
   id: SecurityHelmet
 
 - type: Tag
