@@ -3,6 +3,24 @@
   name: chat-emote-name-sneeze
   category: Vocal
   chatMessages: ["chat-emote-msg-sneeze"]
+  # Exodus-EmotesSounds-Start
+  chatTriggers:
+    - чихает
+    - чихает.
+    - чихает!
+    - чихнул
+    - чихнул.
+    - чихнул!
+    - чихнула
+    - чихнула.
+    - чихнула!
+    - пчихнул
+    - пчихнул.
+    - пчихнул!
+    - пчихнула
+    - пчихнула.
+    - пчихнула!
+  # Exodus-EmotesSounds-End
 
 - type: emote
   id: Cough

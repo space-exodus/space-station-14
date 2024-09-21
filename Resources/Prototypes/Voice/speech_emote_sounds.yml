@@ -85,9 +85,19 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      path: ReptilianScreamMale # Exodus-EmotesSounds
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
+    # Exodus-EmotesSounds-Start
+    Sneeze:
+      path: /Audio/Exodus/Voice/Reptilian/m_sneeze.ogg
+    Growl:
+      collection: ReptilianGrowl
+    Rumble:
+      collection: ReptilianRumble
+    Whip:
+      collection: ReptilianWhip
+    # Exodus-EmotesSounds-End
     Honk:
       collection: BikeHorn
     Whistle:
@@ -107,9 +117,19 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      path: ReptilianScreamFemale # Exodus-EmotesSounds
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
+    # Exodus-EmotesSounds-Start
+    Sneeze:
+      path: /Audio/Exodus/Voice/Reptilian/m_sneeze.ogg
+    Growl:
+      collection: ReptilianGrowl
+    Rumble:
+      collection: ReptilianRumble
+    Whip:
+      collection: ReptilianWhip
+    # Exodus-EmotesSounds-End
     Honk:
       collection: BikeHorn
     Whistle:
