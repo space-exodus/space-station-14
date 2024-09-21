@@ -1,6 +1,6 @@
 - type: stealTargetGroup
   id: ClothingNeckShockCollar
-  name: shock collar
+  name: steal-target-groups-shock-collar
   sprite:
     sprite: Exodus/Clothing/Neck/Misc/shock_collar.rsi
     state: icon

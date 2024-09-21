@@ -4,6 +4,7 @@ using Content.Shared.Coordinates.Helpers;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Maps;
+using Content.Shared.Physics;
 using Content.Shared.Stacks;
 using Content.Shared.Whitelist;  // Exodus-FoldedPoster
 using JetBrains.Annotations;
@@ -16,6 +17,7 @@ namespace Content.Server.Engineering.EntitySystems
     {
         [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
         [Dependency] private readonly StackSystem _stackSystem = default!;
+        [Dependency] private readonly TurfSystem _turfSystem = default!;
         [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;  // Exodus-FoldedPoster
 
         public override void Initialize()
@@ -42,7 +44,7 @@ namespace Content.Server.Engineering.EntitySystems
 
             bool IsTileClear()
             {
-                return tileRef.Tile.IsEmpty == false && !tileRef.IsBlockedTurf(true);
+                return tileRef.Tile.IsEmpty == false && !_turfSystem.IsTileBlocked(tileRef, CollisionGroup.MobMask);
             }
 
             if (component.NeedClearTile && !IsTileClear())  // Exodus-FoldedPoster
