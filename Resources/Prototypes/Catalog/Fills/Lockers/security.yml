@@ -20,6 +20,8 @@
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
       - id: BookSpaceLaw
+      - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
+      - id: ClothingOuterCoatWardenAlt # Corvax-SecFashion
       # Exodus-ShockCollar-Start
       - id: ClothingNeckShockCollar
         amount: 2

@@ -1,0 +1,1255 @@
+## See also ../settings.yml and ../spawners.yml
+
+### Visitors with Visitor ID
+
+# Command
+
+# Exodus-GhostRolesHumanoidEditor-Start
+- type: entity
+  id: RandomHumanoidVisitorCaptain
+  name: visiting Captain ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: captain
+    - type: GhostRole
+      name: job-name-captain
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorCaptain, VisitorCaptainAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorCE
+  name: visiting CE ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ce
+    - type: GhostRole
+      name: job-name-ce
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorCE, VisitorCEAlt ]
+        roleLoadout: [ RoleSurvivalExtended ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorCMO
+  name: visiting CMO ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cmo
+    - type: GhostRole
+      name: job-name-cmo
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorCMO, VisitorCMOAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorHOP
+  name: visiting HOP ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: hop
+    - type: GhostRole
+      name: job-name-hop
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorHOP, VisitorHOPAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorHOS
+  name: visiting HOS ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: hos
+    - type: GhostRole
+      name: job-name-hos
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorHOS, VisitorHOSAlt ]
+        roleLoadout: [ RoleSurvivalSecurity ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorRD
+  name: visiting RD ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: rd
+    - type: GhostRole
+      name: job-name-rd
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorRD, VisitorRDAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorQM
+  name: visiting QM ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: qm
+    - type: GhostRole
+      name: job-name-qm
+      description: ghost-role-information-command-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorQM, VisitorQMAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+# Security
+
+- type: entity
+  id: RandomHumanoidVisitorSecurityCadet
+  name: visiting security cadet role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: security_cadet
+    - type: GhostRole
+      name: job-name-cadet
+      description: ghost-role-information-security-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorSecurityCadet, VisitorSecurityCadetAlt ]
+        roleLoadout: [ RoleSurvivalSecurity ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorSecurityOfficer
+  name: visiting security officer ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: security_officer
+    - type: GhostRole
+      name: job-name-security
+      description: ghost-role-information-security-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorSecurityOfficer, VisitorSecurityOfficerAlt ]
+        roleLoadout: [ RoleSurvivalSecurity ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorDetective
+  name: visiting detective role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: detective
+    - type: GhostRole
+      name: job-name-detective
+      description: ghost-role-information-security-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorDetective, VisitorDetectiveAlt ]
+        roleLoadout: [ RoleSurvivalSecurity ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidVisitorWarden
+  name: visiting warden ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: warden
+    - type: GhostRole
+      name: job-name-warden
+      description: ghost-role-information-security-description
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorWarden, VisitorWardenAlt ]
+        roleLoadout: [ RoleSurvivalSecurity ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+# Cargo
+
+- type: entity
+  id: RandomHumanoidVisitorCargoTechnician
+  name: visiting cargo technician ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cargo_tech
+    - type: GhostRole
+      name: job-name-cargotech
+      description: ghost-role-information-cargo-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorCargoTech, VisitorCargoTechAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorSalvageSpecialist
+  name: visiting salvage specialist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: salvagespecialist
+    - type: GhostRole
+      name: job-name-salvagespec
+      description: ghost-role-information-cargo-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorSalvageSpecialist, VisitorSalvageSpecialistAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+# Engineering
+
+- type: entity
+  id: RandomHumanoidVisitorAtmosTech
+  name: visiting atmospheric technician ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: atmospherics
+    - type: GhostRole
+      name: job-name-atmostech
+      description: ghost-role-information-engineering-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorAtmosTech, VisitorAtmosTechAlt ]
+        roleLoadout: [ RoleSurvivalExtended ]
+
+- type: entity
+  id: RandomHumanoidVisitorTechnicalAssistant
+  name: visiting technical assistant ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: technicalassistant
+    - type: GhostRole
+      name: job-name-technical-assistant
+      description: ghost-role-information-engineering-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorTechnicalAssistant, VisitorTechnicalAssistantAlt ]
+        roleLoadout: [ RoleSurvivalExtended ]
+
+- type: entity
+  id: RandomHumanoidVisitorEngineer
+  name: visiting engineer ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: engineer
+    - type: GhostRole
+      name: job-name-engineer
+      description: ghost-role-information-engineering-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorEngineer, VisitorEngineerAlt ]
+        roleLoadout: [ RoleSurvivalExtended ]
+
+# Medical
+
+- type: entity
+  id: RandomHumanoidVisitorMedicalIntern
+  name: visiting medical intern ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: medicalintern
+    - type: GhostRole
+      name: job-name-intern
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorMedicalIntern, VisitorMedicalInternAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorMedicalDoctor
+  name: visiting medical doctor ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: doctor
+    - type: GhostRole
+      name: job-name-doctor
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorMedicalDoctor, VisitorMedicalDoctorAlt , VisitorScrubsPurple, VisitorScrubsGreen, VisitorScrubsBlue]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorParamedic
+  name: visiting paramedic ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: paramedic
+    - type: GhostRole
+      name: job-name-paramedic
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorParamedic, VisitorParamedicAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorPsychologist
+  name: visiting psychologist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: psychologist
+    - type: GhostRole
+      name: job-name-psychologist
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorPsychologist, VisitorPsychologistAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorChemist
+  name: visiting chemist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: chemist
+    - type: GhostRole
+      name: job-name-chemist
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorChemist, VisitorChemistAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorVirologist
+  name: visiting virologist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: virologist
+    - type: GhostRole
+      name: ghost-role-information-medical-virologist-name
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorVirologist, VisitorVirologistAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorGeneticist
+  name: visiting geneticist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: geneticist
+    - type: GhostRole
+      name: ghost-role-information-medical-geneticist-name
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorGeneticist, VisitorGeneticistAlt ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+- type: entity
+  id: RandomHumanoidVisitorDentist
+  name: visiting dentist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: seniorphysician
+    - type: GhostRole
+      name: ghost-role-information-medical-dentist-name
+      description: ghost-role-information-medical-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorDentist ]
+        roleLoadout: [ RoleSurvivalMedical ]
+
+# Science
+
+- type: entity
+  id: RandomHumanoidVisitorResearchAssistant
+  name: visiting research assistant ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: researchassistant
+    - type: GhostRole
+      name: job-name-research-assistant
+      description: ghost-role-information-science-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorResearchAssistant, VisitorResearchAssistantAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorScientist
+  name: visiting scientist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: scientist
+    - type: GhostRole
+      name: job-name-scientist
+      description: ghost-role-information-science-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorScientist, VisitorScientistAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+# Civilian
+
+- type: entity
+  id: RandomHumanoidVisitorBartender
+  name: visiting bartender ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: bartender
+    - type: GhostRole
+      name: job-name-bartender
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorBartender, VisitorBartenderAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorBotanist
+  name: visiting botanist ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: botanist
+    - type: GhostRole
+      name: job-name-botanist
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorBartender, VisitorBartenderAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorBoxer
+  name: visiting boxer ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: boxer
+    - type: GhostRole
+      name: job-name-boxer
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorBartender, VisitorBartenderAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorChaplain
+  name: visiting chaplain ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: chaplain
+    - type: GhostRole
+      name: job-name-boxer
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: BibleUser
+      - type: Loadout
+        prototypes: [ VisitorChaplain, VisitorChaplainAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorChef
+  name: visiting chef ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: chef
+    - type: GhostRole
+      name: job-name-chef
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorChef, VisitorChefAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorClown
+  name: visiting clown ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: clown
+    - type: GhostRole
+      name: job-name-clown
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorClown ]
+        roleLoadout: [ RoleSurvivalClown ]
+
+- type: entity
+  id: RandomHumanoidVisitorJanitor
+  name: visiting janitor ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: janitor
+    - type: GhostRole
+      name: job-name-janitor
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorJanitor, VisitorJanitorAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorLawyer
+  name: visiting lawyer ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: lawyer
+    - type: GhostRole
+      name: job-name-lawyer
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorLawyerAltA, VisitorLawyerAltB, VisitorLawyerAltC, VisitorLawyerAltD, VisitorLawyerAltE ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorLawyerCentcom
+  name: visiting centcom lawyer ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: lawyer
+    - type: GhostRole
+      name: ghost-role-information-civilian-centcom-lawyer-name
+      description: ghost-role-information-civilian-centcom-lawyer-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorLawyerCentcom ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorLibrarian
+  name: visiting librarian ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: librarian
+    - type: GhostRole
+      name: job-name-librarian
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorLibrarian, VisitorLibrarianAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorMusician
+  name: visiting musician ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: musician
+    - type: GhostRole
+      name: job-name-musician
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorMusicianFancyAltA, VisitorMusicianFancyAltB, VisitorMusicianFancyAltC, VisitorMusicianFancyAltD, VisitorMusicianFancyAltE, VisitorMusicianFancyAltF, VisitorMusicianFancyAltG, VisitorMusicianFancyAltH, VisitorMusicianFancyAltI, VisitorMusicianRelaxedAltA, VisitorMusicianRelaxedAltB, VisitorMusicianRelaxedAltC, VisitorMusicianRelaxedAltD, VisitorMusicianRelaxedAltE, VisitorMusicianRelaxedAltF, VisitorMusicianMariachi ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorMusicianFancy
+  name: visiting fancy musician ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: musician
+    - type: GhostRole
+      name: job-name-musician
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorMusicianFancyAltA, VisitorMusicianFancyAltB, VisitorMusicianFancyAltC, VisitorMusicianFancyAltD, VisitorMusicianFancyAltE, VisitorMusicianFancyAltF, VisitorMusicianFancyAltG, VisitorMusicianFancyAltH, VisitorMusicianFancyAltI ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorMusicianRelaxed
+  name: visiting relaxed musician ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: musician
+    - type: GhostRole
+      name: job-name-musician
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorMusicianRelaxedAltA, VisitorMusicianRelaxedAltB, VisitorMusicianRelaxedAltC, VisitorMusicianRelaxedAltD, VisitorMusicianRelaxedAltE, VisitorMusicianRelaxedAltF, VisitorMusicianMariachi ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorMime
+  name: visiting mime ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: mime
+    - type: GhostRole
+      name: job-name-mime
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorMime, VisitorMimeAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorReporter
+  name: visiting reporter ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: reporter
+    - type: GhostRole
+      name: job-name-reporter
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorReporter, VisitorReporterAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorServiceWorker
+  name: visiting service worker ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: serviceworker
+    - type: GhostRole
+      name: job-name-serviceworker
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorServiceWorker, VisitorServiceWorkerAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+- type: entity
+  id: RandomHumanoidVisitorZookeeper
+  name: visiting zookeeper ghost role
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: zookeeper
+    - type: GhostRole
+      name: job-name-zookeeper
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ VisitorZookeeper, VisitorZookeeperAlt ]
+        roleLoadout: [ RoleSurvivalStandard ]
+
+# Misc
+
+- type: entity
+  id: RandomHumanoidClownTroupeBanana
+  name: banana clown troupe
+  parent: RandomHumanoidVisitorClown
+  components:
+    - type: GhostRole
+      name: job-name-clown
+      description: ghost-role-information-civilian-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ BananaClown ]
+        roleLoadout: [ RoleSurvivalClown ]
+
+### Visitors missing equipment for challenges
+
+# Command
+
+- type: entity
+  id: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim Captain ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: skull_icon
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimCaptain, ChallengeVictimCaptainAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidChallengeVictimCE
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim CE ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimCE, ChallengeVictimCEAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidChallengeVictimCMO
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim CMO ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimCMO, ChallengeVictimCMOAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidChallengeVictimHOP
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim HOP ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimHOP, ChallengeVictimHOPAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidChallengeVictimHOS
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim HOS ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimHOS, ChallengeVictimHOSAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidChallengeVictimRD
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim RD ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimRD, ChallengeVictimRDAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+- type: entity
+  id: RandomHumanoidChallengeVictimQM
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster victim QM ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-commander-name
+      description: ghost-role-information-lost-challenge-commander-description
+      rules: ghost-role-information-lost-challenge-commander-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeVictimQM, ChallengeVictimQMAlt ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+      - type: AutoImplant
+        implants:
+        - MindShieldImplant
+
+# Security
+
+# Cargo
+
+- type: entity
+  id: RandomHumanoidChallengeCargoTechnician
+  parent: RandomHumanoidChallengeVictimCaptain
+  name: disaster cargo technician ghost role
+  suffix: CHALLENGE
+  # This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-challenge-cargo-technican-name
+      description: ghost-role-information-lost-challenge-cargo-technican-description
+      rules: ghost-role-information-lost-disaster-challenge-cargo-technican-rules
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: Loadout
+        prototypes: [ ChallengeCargoTechGearSuit, ChallengeCargoTechGearCoat ] #!! This is supposed to be for challenge events. Its intentionally missing QOL gear to make interesting scenarios.
+        roleLoadout: [ RoleSurvivalVoxSupport ]
+
+# Engineering
+
+# Medical
+
+# Science
+
+# Civilian
+
+# Misc
+
+### Syndicate & Hostiles
+
+- type: entity
+  id: RandomHumanoidSyndieSoldierTeamLeader
+  name: syndicate team leader ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: GhostRole
+      name: ghost-role-information-syndie-soldier-teamlead-name
+      description: ghost-role-information-syndie-soldier-teamlead-description
+      rules: ghost-role-information-rules-team-antagonist
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: Loadout
+        prototypes: [ SyndicateFootsoldierTeamLeaderGear ]
+        roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  id: RandomHumanoidSyndieSoldier
+  name: syndicate soldier ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: GhostRole
+      name: ghost-role-information-syndie-soldier-teamlead-name
+      description: ghost-role-information-syndie-soldier-teamlead-description
+      rules: ghost-role-information-rules-team-antagonist
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: Loadout
+        prototypes: [ SyndicateFootsoldierGear ]
+        roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  id: RandomHumanoidSyndieVisitor
+  name: syndie disaster victim ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: GhostRole
+      name: ghost-role-information-syndie-disaster-victim-name
+      description: ghost-role-information-syndie-disaster-victim-description
+      rules: ghost-role-information-freeagent-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: Loadout
+        prototypes: [ SyndicateOperativeGearCivilian ]
+        roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  id: RandomHumanoidPirateScooner
+  name: pirate crewman ghost role
+  suffix: scooner
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner-red
+    - type: GhostRole
+      name: ghost-role-information-pirate-name
+      description: ghost-role-information-pirate-description
+      rules: ghost-role-information-rules-team-antagonist
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: Loadout
+        prototypes: [ PirateScoonerAltA, PirateScoonerAltB, PirateScoonerAltC, PirateScoonerAltD ]
+        roleLoadout: [ RoleSurvivalEVA ]
+
+- type: entity
+  id: RandomHumanoidPirateCaptainScooner
+  name: pirate captain ghost role
+  suffix: scooner
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner-red
+    - type: GhostRole
+      name: ghost-role-information-pirate-captain-name
+      description: ghost-role-information-pirate-captain-description
+      rules: ghost-role-information-rules-team-antagonist
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: Loadout
+        prototypes: [ PirateCaptainScooner ]
+        roleLoadout: [ RoleSurvivalEVA ]
+
+### Other
+
+- type: entity
+  id: RandomHumanoidVisitorBlackmarketeer
+  name: visiting blackmarketeer ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner-yellow
+    - type: GhostRole
+      name: ghost-role-information-blackmarketeer-name
+      description: ghost-role-information-blackmarketeer-description
+      rules: ghost-role-information-freeagent-rules
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: GhostRoleHumanoidEditor
+      components:
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: Loadout
+        prototypes: [ VisitorBlackmarketeer, VisitorBlackmarketeer ]
+        roleLoadout: [ RoleSurvivalStandard ]
+# Exodus-GhostRolesHumanoidEditor-End
+
+- type: entity
+  id: RandomHumanoidCossack
+  name: cossack ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner-yellow
+    - type: RandomHumanoidSpawner
+      settings: Cossack

@@ -238,13 +238,29 @@ namespace Content.Server.GameTicking
 
             if (lateJoin && !silent)
             {
-                _chatSystem.DispatchStationAnnouncement(station,
-                    Loc.GetString("latejoin-arrival-announcement",
-                        ("character", MetaData(mob).EntityName),
-                        ("gender", character.Gender), // Corvax-LastnameGender
-                        ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
-                    Loc.GetString("latejoin-arrival-sender"),
-                    playDefaultSound: false);
+                if (jobPrototype.JoinNotifyCrew)
+                {
+                    _chatSystem.DispatchStationAnnouncement(station,
+                        Loc.GetString("latejoin-arrival-announcement-special",
+                            ("character", MetaData(mob).EntityName),
+                            ("gender", character.Gender), // Corvax-LastnameGender
+                            ("entity", mob),
+                            ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
+                        Loc.GetString("latejoin-arrival-sender"),
+                        playDefaultSound: false,
+                        colorOverride: Color.Gold);
+                }
+                else
+                {
+                    _chatSystem.DispatchStationAnnouncement(station,
+                        Loc.GetString("latejoin-arrival-announcement",
+                            ("character", MetaData(mob).EntityName),
+                            ("gender", character.Gender), // Corvax-LastnameGender
+                            ("entity", mob),
+                            ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
+                        Loc.GetString("latejoin-arrival-sender"),
+                        playDefaultSound: false);
+                }
             }
 
             // Exodus-WeAreNotOfficials: Privelleges providen by officials should work only on official's servers
