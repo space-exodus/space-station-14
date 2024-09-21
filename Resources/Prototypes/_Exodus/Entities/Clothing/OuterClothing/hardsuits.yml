@@ -16,7 +16,8 @@
     sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: TemperatureProtection
-    coefficient: 0.60
+    heatingCoefficient: 0.6
+    coolingCoefficient: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.40
   - type: Armor
