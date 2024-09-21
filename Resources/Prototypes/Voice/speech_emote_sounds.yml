@@ -85,7 +85,7 @@
     variation: 0.125
   sounds:
     Scream:
-      path: ReptilianScreamMale # Exodus-EmotesSounds
+      collection: ReptilianScreamMale # Exodus-EmotesSounds
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
     # Exodus-EmotesSounds-Start
@@ -117,7 +117,7 @@
     variation: 0.125
   sounds:
     Scream:
-      path: ReptilianScreamFemale # Exodus-EmotesSounds
+      collection: ReptilianScreamFemale # Exodus-EmotesSounds
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
     # Exodus-EmotesSounds-Start
