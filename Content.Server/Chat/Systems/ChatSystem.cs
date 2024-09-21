@@ -69,9 +69,11 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly DamageableSystem _damageable = default!; // Exodus-Crawling
     [Dependency] private readonly IPrototypeManager _prototype = default!; // Exodus-Crawling
 
-    public const int VoiceRange = 10; // how far voice goes in world units
-    public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
-    public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    // Corvax-TTS-Start: Moved from Server to Shared
+    // public const int VoiceRange = 10; // how far voice goes in world units
+    // public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
+    // public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    // Corvax-TTS-End
     public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
     public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
 
@@ -528,7 +530,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         SendInVoiceRange(ChatChannel.Local, message, wrappedMessage, source, range);
 
-        var ev = new EntitySpokeEvent(source, message, null, null);
+        var ev = new EntitySpokeEvent(source, message, originalMessage /* Corvax-TTS */, null, null);
         RaiseLocalEvent(source, ev, true);
 
         // To avoid logging any messages sent by entities that are not players, like vendors, cloning, etc.
@@ -573,7 +575,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         var obfuscatedMessage = ObfuscateMessageReadability(message, 0.2f);
 
-        var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
+        var ev = new EntitySpokeEvent(source, message, originalMessage /* Corvax-TTS */, channel, obfuscatedMessage);
         RaiseLocalEvent(source, ev, true);
 
         string name;
@@ -683,7 +685,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             _damageable.TryChangeDamage(source, new(asphyxiation, message.Length * 1.5), true, false);
         // Exodus-CritSpeech-End
 
-        var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
+        var ev = new EntitySpokeEvent(source, message, originalMessage /* Corvax-TTS */, channel, obfuscatedMessage);
         RaiseLocalEvent(source, ev, true);
         if (!hideLog)
             if (originalMessage == message)
@@ -1091,6 +1093,7 @@ public sealed class EntitySpokeEvent : EntityEventArgs
 {
     public readonly EntityUid Source;
     public readonly string Message;
+    public readonly string OriginalMessage; // Corvax-TTS
     public readonly string? ObfuscatedMessage; // not null if this was a whisper
 
     /// <summary>
@@ -1099,10 +1102,11 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     /// </summary>
     public RadioChannelPrototype? Channel;
 
-    public EntitySpokeEvent(EntityUid source, string message, RadioChannelPrototype? channel, string? obfuscatedMessage)
+    public EntitySpokeEvent(EntityUid source, string message, string originalMessage /* Corvax-TTS */, RadioChannelPrototype? channel, string? obfuscatedMessage)
     {
         Source = source;
         Message = message;
+        OriginalMessage = originalMessage; // Corvax-TTS: Spec symbol sanitize
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
     }
