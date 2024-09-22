@@ -406,7 +406,7 @@
   sprites:
     - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_leg.rsi
       state: kneesocks_l
-    
+
 - type: marking
   id: VulpkaninRightLegLongStripes
   bodyPart: RLeg
@@ -596,7 +596,6 @@
     - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_torso.rsi
       state: jackal2_m
 
-
 - type: marking
   id: VulpkaninChestMaleMane
   bodyPart: Chest
@@ -676,26 +675,6 @@
   sprites:
     - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_torso.rsi
       state: necklace2_f
-
-- type: marking
-  id: VulpkaninChestMaleNecklac2
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Vulpkanin]
-  sexRestriction: Male
-  sprites:
-    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_torso.rsi
-      state: necklac2_m
-
-- type: marking
-  id: VulpkaninChestFemaleNecklac2
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Vulpkanin]
-  sexRestriction: Female
-  sprites:
-    - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_torso.rsi
-      state: necklac2_f
 
 - type: marking
   id: VulpkaninChestSections
@@ -888,7 +867,6 @@
   sprites:
     - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_hand.rsi
       state: gloves_l
-
 
 #region Tail
 
