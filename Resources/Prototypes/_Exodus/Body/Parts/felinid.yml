@@ -1,0 +1,13 @@
+- type: entity
+  id: LeftLegFelinid
+  parent: LeftLegHuman
+  components:
+  - type: MovementBodyPart
+    sprintSpeed: 5.175
+
+- type: entity
+  id: RightLegFelinid
+  parent: RightLegHuman
+  components:
+  - type: MovementBodyPart
+    sprintSpeed: 5.175
