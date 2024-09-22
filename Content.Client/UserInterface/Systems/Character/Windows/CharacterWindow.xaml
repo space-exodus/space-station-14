@@ -12,6 +12,9 @@
                 <BoxContainer Orientation="Vertical" VerticalAlignment="Top">
                     <Label Name="NameLabel" Access="Public"/>
                     <Label Name="SubText" VerticalAlignment="Top" StyleClasses="LabelSubText" Access="Public"/>
+                    <!-- Exodus-Mindset-Start -->
+                    <Label Name="MindsetLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" Access="Public"/>
+                    <!-- Exodus-Mindset-End -->
                 </BoxContainer>
             </BoxContainer>
             <Label Name="ObjectivesLabel" Access="Public" Text="{Loc 'character-info-objectives-label'}" HorizontalAlignment="Center"/>

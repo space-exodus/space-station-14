@@ -694,9 +694,25 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    // Exodus-Discord-Start
+                    b.Property<decimal?>("DiscordId")
+                        .HasColumnType("numeric(20,0)")
+                        .HasColumnName("discord_id");
+
+                    b.Property<string>("DiscordVerificationCode")
+                        .HasColumnType("text")
+                        .HasColumnName("discord_verification_code");
+                    // Exodus-Discord-End
+
                     b.Property<DateTime>("FirstSeenTime")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("first_seen_time");
+
+                    // Exodus-Sponsorship-Start
+                    b.Property<bool>("IsPremium")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_premium");
+                    // Exodus-Sponsorship-End
 
                     b.Property<DateTime?>("LastReadRules")
                         .HasColumnType("timestamp with time zone")

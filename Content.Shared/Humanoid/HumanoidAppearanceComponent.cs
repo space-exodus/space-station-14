@@ -31,6 +31,11 @@ public sealed partial class HumanoidAppearanceComponent : Component
     [DataField, AutoNetworkedField]
     public int Age = 18;
 
+    // Exodus-Mindset-Start
+    [DataField, AutoNetworkedField]
+    public Mindset Mindset = Mindset.TrulyNeutral;
+    // Exodus-Mindset-End
+
     /// <summary>
     ///     Any custom base layers this humanoid might have. See:
     ///     limb transplants (potentially), robotic arms, etc.

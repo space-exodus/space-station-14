@@ -134,3 +134,4 @@ guide-entry-rules-ban-types = Ban Types
 guide-entry-rules-ban-durations = Ban Durations
 guide-entry-writing = Разметка письма
 guide-entry-glossary = Словарь терминов
+guide-entry-mindset = Мировоззрения

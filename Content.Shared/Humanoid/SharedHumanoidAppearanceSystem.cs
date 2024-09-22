@@ -4,6 +4,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Corvax.TTS; // Corvax-TTS
 using Content.Shared.Decals;
 using Content.Shared.Examine;
+using Content.Shared.Ghost; // Exodus-Mindset
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
@@ -119,6 +120,13 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         var age = GetAgeRepresentation(component.Species, component.Age);
 
         args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
+
+        // Exodus-Mindset-Start
+        if (HasComp<GhostComponent>(args.Examiner))
+        {
+            args.PushText(Loc.GetString("humanoid-appearance-component-mindset-examine", ("mindset", component.Mindset)), -1);
+        }
+        // Exodus-Mindset-End
     }
 
     /// <summary>
@@ -397,6 +405,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         humanoid.Age = profile.Age;
+        humanoid.Mindset = profile.Mindset; // Exodus-Mindset
 
         Dirty(uid, humanoid);
     }
