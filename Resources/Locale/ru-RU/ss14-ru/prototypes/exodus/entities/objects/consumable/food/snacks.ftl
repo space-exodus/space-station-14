@@ -1,6 +1,6 @@
-ent-Kirieshki = кириешки c цезием
+ent-FoodSnackKirieshki = кириешки c цезием
     .desc = Бомбезно! Ограниченная версия продуктов от DonKCo в честь какой-то важной персоны. Найди этикетку с кодом внутри!
-ent-irieshkiOpen = { ent-Kirieshki }
-    .desc = { ent-Kirieshki.desc }
-ent-KirieshkiTrash = { ent-Kirieski }
+ent-FoodSnackKirieshkiOpen = { ent-FoodSnackKirieshki }
+    .desc = { ent-FoodSnackKirieshki.desc }
+ent-FoodSnackKirieshkiTrash = { ent-FoodSnackKirieshki }
     .desc = { ent-FoodPacKetTrash.desc }
