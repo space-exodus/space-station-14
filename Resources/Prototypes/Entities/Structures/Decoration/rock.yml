@@ -73,7 +73,7 @@
         - HalfWallLayer
         - Opaque
   - type: Climbable
-    climbDelay: 10
+    climbDelay: 10.0
 
 
 - type: entity
