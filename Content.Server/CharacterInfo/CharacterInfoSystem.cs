@@ -2,6 +2,7 @@
 using Content.Server.Roles;
 using Content.Server.Roles.Jobs;
 using Content.Shared.CharacterInfo;
+using Content.Shared.Humanoid; // Exodus-Mindset
 using Content.Shared.Objectives;
 using Content.Shared.Objectives.Components;
 using Content.Shared.Objectives.Systems;
@@ -56,6 +57,10 @@ public sealed class CharacterInfoSystem : EntitySystem
             briefing = _roles.MindGetBriefing(mindId);
         }
 
-        RaiseNetworkEvent(new CharacterInfoEvent(GetNetEntity(entity), jobTitle, objectives, briefing), args.SenderSession);
+        // Exodus-Mindset-Start
+        var mindset = TryComp<HumanoidAppearanceComponent>(entity, out var humanoid) ? Loc.GetString("humanoid-appearance-component-mindset-examine", ("mindset", humanoid.Mindset)) : null;
+        // Exodus-Mindset-End
+
+        RaiseNetworkEvent(new CharacterInfoEvent(GetNetEntity(entity), jobTitle, objectives, briefing, mindset /* Exodus-Mindset */), args.SenderSession);
     }
 }

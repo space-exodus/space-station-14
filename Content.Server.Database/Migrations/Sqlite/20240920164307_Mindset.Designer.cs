@@ -3,6 +3,7 @@ using System;
 using Content.Server.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    partial class SqliteServerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240920164307_Mindset")]
+    partial class Mindset
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
@@ -662,6 +665,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("player_id");
 
+                    // Exodus-Discord-Start
                     b.Property<ulong?>("DiscordId")
                         .HasColumnType("INTEGER")
                         .HasColumnName("discord_id");
@@ -669,14 +673,17 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Property<string>("DiscordVerificationCode")
                         .HasColumnType("TEXT")
                         .HasColumnName("discord_verification_code");
+                    // Exodus-Discord-End
 
                     b.Property<DateTime>("FirstSeenTime")
                         .HasColumnType("TEXT")
                         .HasColumnName("first_seen_time");
 
+                    // Exodus-Sponsorship-Start
                     b.Property<bool>("IsPremium")
                         .HasColumnType("INTEGER")
                         .HasColumnName("is_premium");
+                    // Exodus-Sponsorship-End
 
                     b.Property<DateTime?>("LastReadRules")
                         .HasColumnType("TEXT")
@@ -841,13 +848,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("species");
-
-                    // Corvax-TTS-Start
-                    b.Property<string>("Voice")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("voice");
-                    // Corvax-TTS-End
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

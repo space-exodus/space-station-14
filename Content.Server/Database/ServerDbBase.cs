@@ -245,6 +245,8 @@ namespace Content.Server.Database
                 loadouts[role.RoleName] = loadout;
             }
 
+            Enum.TryParse<Mindset>(profile.Mindset, true, out var mindset); // Exodus-Mindset
+
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
@@ -252,6 +254,7 @@ namespace Content.Server.Database
                 voice, // Corvax-TTS
                 profile.Age,
                 sex,
+                mindset, // Exodus-Mindset
                 gender,
                 new HumanoidCharacterAppearance
                 (
@@ -289,6 +292,7 @@ namespace Content.Server.Database
             profile.Voice = humanoid.Voice; // Corvax-TTS
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
+            profile.Mindset = humanoid.Mindset.ToString(); // Exodus-Mindset
             profile.Gender = humanoid.Gender.ToString();
             profile.HairName = appearance.HairStyleId;
             profile.HairColor = appearance.HairColor.ToHex();

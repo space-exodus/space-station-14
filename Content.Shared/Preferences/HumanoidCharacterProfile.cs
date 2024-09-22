@@ -89,6 +89,11 @@ namespace Content.Shared.Preferences
         [DataField]
         public Sex Sex { get; private set; } = Sex.Male;
 
+        // Exodus-Mindset-Start
+        [DataField]
+        public Mindset Mindset { get; private set; } = Mindset.TrulyNeutral;
+        // Exodus-Mindset-End
+
         [DataField]
         public Gender Gender { get; private set; } = Gender.Male;
 
@@ -138,6 +143,7 @@ namespace Content.Shared.Preferences
             string voice, // Corvax-TTS
             int age,
             Sex sex,
+            Mindset mindset, // Exodus-Mindset
             Gender gender,
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
@@ -153,6 +159,7 @@ namespace Content.Shared.Preferences
             Voice = voice; // Corvax-TTS
             Age = age;
             Sex = sex;
+            Mindset = mindset; // Exodus-Mindset
             Gender = gender;
             Appearance = appearance;
             SpawnPriority = spawnPriority;
@@ -185,6 +192,7 @@ namespace Content.Shared.Preferences
                 other.Voice, // Corvax-TTS
                 other.Age,
                 other.Sex,
+                other.Mindset, // Exodus-Mindset
                 other.Gender,
                 other.Appearance.Clone(),
                 other.SpawnPriority,
@@ -298,6 +306,13 @@ namespace Content.Shared.Preferences
         {
             return new(this) { Sex = sex };
         }
+
+        // Exodus-Mindset-Start
+        public HumanoidCharacterProfile WithMindset(Mindset mindset)
+        {
+            return new(this) { Mindset = mindset };
+        }
+        // Exodus-Mindset-End
 
         public HumanoidCharacterProfile WithGender(Gender gender)
         {
@@ -483,6 +498,7 @@ namespace Content.Shared.Preferences
             if (Name != other.Name) return false;
             if (Age != other.Age) return false;
             if (Sex != other.Sex) return false;
+            if (Mindset != other.Mindset) return false; // Exodus-Mindset
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
