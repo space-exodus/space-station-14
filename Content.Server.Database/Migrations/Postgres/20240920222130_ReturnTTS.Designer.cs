@@ -858,6 +858,11 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
 
+                    b.Property<string>("Mindset")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("mindset");
+
                     b.Property<int>("PreferenceId")
                         .HasColumnType("integer")
                         .HasColumnName("preference_id");

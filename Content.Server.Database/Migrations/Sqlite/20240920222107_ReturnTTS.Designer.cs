@@ -809,6 +809,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
 
+                    b.Property<string>("Mindset")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("mindset");
+
                     b.Property<int>("PreferenceId")
                         .HasColumnType("INTEGER")
                         .HasColumnName("preference_id");
