@@ -1,7 +1,7 @@
 - type: entity
   parent: FoodSnackBase
   id: kirieshki
-  name: Kirieshki Neo
+  name: caesium kirieshki
   description: BOMBtastic! Limited edition products from DonkCo in honour of some important person. Find the label with the code inside!
   components:
   - type: Sprite
@@ -40,7 +40,7 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: kirieshki Neo
+  name: caesium kirieshki
   parent: FoodSnackBase
   id: kirieshkiOpen
   description: BOMBtastic! Limited edition products from DonkCo in honour of some important person. Find the label with the code inside!
@@ -68,7 +68,7 @@
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash
   id: kirieshkiTrash
-  name: Kirieshki Neo
+  name: caesium kirieshki
   description: This is rubbish.
   components:
   - type: Sprite
