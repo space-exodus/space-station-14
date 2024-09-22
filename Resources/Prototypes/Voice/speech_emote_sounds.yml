@@ -12,14 +12,16 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: MaleYawn
     Snore:
@@ -52,14 +54,16 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: FemaleYawn
     Snore:
@@ -156,14 +160,16 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: MaleYawn
     Snore:
@@ -198,14 +204,16 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: FemaleYawn
     Snore:
@@ -287,14 +295,16 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: MaleYawn
     Snore:
@@ -328,14 +338,16 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: FemaleYawn
     Snore:
