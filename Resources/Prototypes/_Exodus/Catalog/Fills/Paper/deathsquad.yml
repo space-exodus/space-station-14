@@ -6,7 +6,7 @@
   - type: Paper
     stampState: paper_stamp-detective
     stampedBy:
-    - stampedName: ДЕПАРТАМЕНТ СО
+    - stampedName: stamp-component-stamped-name-dso
       stampedColor: "#6f6f5d"
     content: doc-text-deathsquad-tango
 
@@ -19,6 +19,6 @@
   - type: Paper
     stampState: paper_stamp-detective
     stampedBy:
-    - stampedName: ДЕПАРТАМЕНТ СО
+    - stampedName: stamp-component-stamped-name-dso
       stampedColor: "#6f6f5d"
     content: doc-text-deathsquad-foxtrot
