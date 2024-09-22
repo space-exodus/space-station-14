@@ -39,8 +39,8 @@
       types:
         Slash: 5
   - type: MovementSpeedModifier
-    baseWalkSpeed: 1
-    baseSprintSpeed: 1.15
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 5.175
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -50,6 +50,9 @@
     size: Ginormous
   - type: MultiHandedItem
   - type: Puller
+  - type: Body
+    prototype: Felinid
+    requiredLegs: 2
   - type: HumanoidAppearance
     species: Felinid
     hideLayersOnEquip:
