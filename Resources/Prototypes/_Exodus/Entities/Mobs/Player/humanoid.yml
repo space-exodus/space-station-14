@@ -71,7 +71,7 @@
     - type: AntagImmune
 
 - type: randomHumanoidSettings
-  id: DeathSquadBase
+  id: DeathSquadOfficer
   speciesBlacklist:
     - Diona
     - Arachnid
@@ -85,7 +85,6 @@
     - Kidan
     - Felinid
   parent: ERTLeader
-  abstract: true
   components:
     - type: RandomMetadata
       nameSegments:
@@ -152,10 +151,38 @@
           Brute: -0.3
           Burn: -0.3
           Toxin: -0.3
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 54000
+      name: ghost-role-information-deathsquad-officer-name
+      description: ghost-role-information-deathsquad-officer-description
+      rules: ghost-role-information-deathsquad-officer-rules
+      job: DSOfficer
+    - type: Loadout
+      prototypes: [ DSOfficerGear ]
+
+- type: entity
+  name: death squad officer
+  parent: RandomHumanoidSpawnerDeathSquadCommander
+  id: RandomHumanoidSpawnerDeathSquadOfficer
+  suffix: ERTRole, Basic
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_officer.rsi
+    state: icon
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomHumanoidSpawner
+    settings: DeathSquadOfficer
 
 - type: randomHumanoidSettings
   id: DeathSquadCommander
-  parent: DeathSquadBase
+  parent: DeathSquadOfficer
   components:
     - type: GhostRole
       allowMovement: true
@@ -190,41 +217,8 @@
     settings: DeathSquadCommander
 
 - type: randomHumanoidSettings
-  id: DeathSquadOfficer
-  parent: DeathSquadBase
-  components:
-    - type: GhostRole
-      allowMovement: true
-      allowSpeech: true
-      makeSentient: true
-      requirements:
-        - !type:DepartmentTimeRequirement
-          department: Security
-          time: 54000
-      name: ghost-role-information-deathsquad-officer-name
-      description: ghost-role-information-deathsquad-officer-description
-      rules: ghost-role-information-deathsquad-officer-rules
-      job: DSOfficer
-    - type: Loadout
-      prototypes: [ DSOfficerGear ]
-
-- type: entity
-  name: death squad officer
-  parent: RandomHumanoidSpawnerDeathSquadCommander
-  id: RandomHumanoidSpawnerDeathSquadOfficer
-  suffix: ERTRole, Basic
-  components:
-  - type: Sprite
-    sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_officer.rsi
-    state: icon
-  - type: RandomHumanoidAppearance
-    randomizeName: false
-  - type: RandomHumanoidSpawner
-    settings: DeathSquadOfficer
-
-- type: randomHumanoidSettings
   id: DeathSquadSpecialist
-  parent: DeathSquadBase
+  parent: DeathSquadOfficer
   components:
     - type: GhostRole
       allowMovement: true

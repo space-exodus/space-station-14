@@ -12,7 +12,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
-    enabled: false
   - type: NoSlip
   - type: FootstepModifier
     footstepSoundCollection:

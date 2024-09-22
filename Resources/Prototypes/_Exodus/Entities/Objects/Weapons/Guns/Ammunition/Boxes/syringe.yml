@@ -16,7 +16,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (Polytrinic Acid)
+  suffix: Polytrinic Acid
   id: BoxSyringeAmmoPolytrinic
   components:
   - type: StorageFill
@@ -27,7 +27,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (Lexorin)
+  suffix: Lexorin
   id: BoxSyringeAmmoLexorin
   components:
   - type: StorageFill
@@ -38,7 +38,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (ChloralHydrate)
+  suffix: ChloralHydrate
   id: BoxSyringeAmmoChloral
   components:
   - type: StorageFill
@@ -49,7 +49,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (Romerol)
+  suffix: Romerol
   id: BoxSyringeAmmoRomerol
   components:
   - type: StorageFill
@@ -60,7 +60,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (Lead)
+  suffix: Lead
   id: BoxSyringeAmmoLead
   components:
   - type: StorageFill
@@ -71,7 +71,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (Pax)
+  suffix: Pax
   id: BoxSyringeAmmoPax
   components:
   - type: StorageFill
@@ -82,7 +82,7 @@
 - type: entity
   name: box of throwing syringes
   parent: BoxSyringeAmmo
-  suffix: (Norepinephric Acid)
+  suffix: Norepinephric Acid
   id: BoxSyringeAmmoNorepinephric
   components:
   - type: StorageFill

@@ -4,7 +4,7 @@
   group: Medicine
   desc: reagent-desc-saliforsom
   physicalDesc: reagent-physical-desc-chalky
-  flavor: flavor-complex-medicine
+  flavor: medicine
   color: "#e8e8e8"
   metabolisms:
     Medicine:

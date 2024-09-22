@@ -7,7 +7,7 @@
     - PetsNT
     - Zombie
     - Revolutionary
-    - DeathSquad # Exodus MRP - Death Squad Update
+    - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: NanoTrasen
@@ -43,7 +43,7 @@
   - PetsNT
   - Zombie
   - Revolutionary
-  - DeathSquad # Exodus MRP - Death Squad Update
+  - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: SimpleNeutral
@@ -56,7 +56,7 @@
   - Xeno
   - PetsNT
   - Zombie
-  - DeathSquad # Exodus MRP - Death Squad Update
+  - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: Xeno
@@ -67,7 +67,7 @@
   - PetsNT
   - Zombie
   - Revolutionary
-  - DeathSquad # Exodus MRP - Death Squad Update
+  - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: Zombie
@@ -79,7 +79,7 @@
   - Passive
   - PetsNT
   - Revolutionary
-  - DeathSquad # Exodus MRP - Death Squad Update
+  - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: Revolutionary
@@ -88,9 +88,9 @@
   - Zombie
   - SimpleHostile
   - Dragon
-  - DeathSquad # Exodus MRP - Death Squad Update
+  - DeathSquad # Exodus-DeathSquad
 
-- type: npcFaction # Exodus MRP - Death Squad Update
+- type: npcFaction # Exodus-DeathSquad
   id: DeathSquad
   hostile:
   - SimpleHostile

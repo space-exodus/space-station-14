@@ -25,7 +25,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Pax)
+  suffix: Pax
   id: SyringeAmmoPax
   components:
     - type: SolutionContainerManager
@@ -39,7 +39,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Lead)
+  suffix: Lead
   id: SyringeAmmoLead
   components:
     - type: SolutionContainerManager
@@ -53,7 +53,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Romerol)
+  suffix: Romerol
   id: SyringeAmmoRomerol
   components:
     - type: SolutionContainerManager
@@ -67,7 +67,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (ChloralHydrate)
+  suffix: ChloralHydrate
   id: SyringeAmmoChloral
   components:
     - type: SolutionContainerManager
@@ -81,7 +81,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Polytrinic Acid)
+  suffix: Polytrinic Acid
   id: SyringeAmmoPolytrinic
   components:
     - type: SolutionContainerManager
@@ -95,7 +95,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Tazinide)
+  suffix: Tazinide
   id: SyringeAmmoTazinide
   components:
     - type: SolutionContainerManager
@@ -109,7 +109,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Lexorin)
+  suffix: Lexorin
   id: SyringeAmmoLexorin
   components:
     - type: SolutionContainerManager
@@ -123,7 +123,7 @@
 - type: entity
   name: throwing syringe
   parent: SyringeAmmo
-  suffix: (Norepinephric Acid)
+  suffix: Norepinephric Acid
   id: SyringeAmmoNorepinephric
   components:
     - type: SolutionContainerManager

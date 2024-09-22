@@ -1,7 +1,7 @@
 - type: radioChannel
   id: DS
   name: chat-radio-deathsquad
-  keycode: 'э' # Corvax-Localization
+  keycode: 'э'
   frequency: 2654
   color: "#1700cb"
   longRange: true
