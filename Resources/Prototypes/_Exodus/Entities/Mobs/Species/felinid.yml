@@ -38,6 +38,13 @@
     damage:
       types:
         Slash: 5
+  - type: Speech
+    allowedEmotes: ["Rumble"]
+  - type: Vocal
+    sounds:
+      Male: MaleFelinid
+      Female: FemaleFelinid
+      Unsexed: MaleFelinid
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5
     baseSprintSpeed: 5.175

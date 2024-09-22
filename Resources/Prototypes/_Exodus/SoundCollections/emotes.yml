@@ -107,3 +107,9 @@
   files:
     - /Audio/Exodus/Voice/Reptilian/whip_short.ogg
     - /Audio/Exodus/Voice/Reptilian/whip.ogg
+
+- type: soundCollection
+  id: CatRumble
+  files:
+    - /Audio/Exodus/Voice/Felinid/cat_purr.ogg
+    - /Audio/Exodus/Voice/Felinid/cat_purr_long.ogg

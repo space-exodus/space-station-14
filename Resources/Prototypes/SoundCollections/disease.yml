@@ -29,6 +29,9 @@
   id: CatHisses
   files:
   - /Audio/Animals/cat_hiss.ogg
+  # Exodus-EmotesSounds-Start
+  - /Audio/Exodus/Voice/Felinid/cat_hiss.ogg
+  # Exodus-EmotesSounds-End
 
 - type: soundCollection
   id: MonkeyScreeches

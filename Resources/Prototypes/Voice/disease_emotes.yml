@@ -55,6 +55,21 @@
   name: chat-emote-name-cathisses
   category: Vocal
   chatMessages: ["chat-emote-msg-cathisses"]
+  # Exodus-EmotesSounds-Start
+  chatTriggers:
+    - шипит
+    - шипит.
+    - шипит!
+    - шипение
+    - шипение.
+    - шипение!
+    - сипит
+    - сипит.
+    - сипит!
+    - шикает
+    - шикает.
+    - шикает!
+  # Exodus-EmotesSounds-End
 
 - type: emote
   id: MonkeyScreeches
