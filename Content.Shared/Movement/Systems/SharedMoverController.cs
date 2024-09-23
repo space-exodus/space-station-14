@@ -405,10 +405,13 @@ public abstract partial class SharedMoverController : VirtualController
         if (!CanSound() || !_tags.HasTag(uid, "FootstepSound"))
             return false;
 
-        // Exodus-Crawling-Start
-        if (TryComp<StandingStateComponent>(uid, out var standing) && !standing.Standing)
+        // Exodus-Crawling-And-Flying-Start
+        var ev = new FootstepsSoundAttemtEvent(uid);
+        RaiseLocalEvent(uid, ev);
+
+        if (ev.Cancelled)
             return false;
-        // Exodus-Crawling-End
+        // Exodus-Crawling-And-Flying-End
 
         var coordinates = xform.Coordinates;
         var distanceNeeded = mover.Sprinting
