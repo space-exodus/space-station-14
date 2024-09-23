@@ -1,0 +1,53 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ChemicalImplant
+  name: Chemical implant
+  description: Inject chemicats to blood stream from small capsules in itself
+  noSpawn: true
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionChemicalCapsule
+  - type: SolutionContainerManager
+  - type: TriggerImplantAction
+  - type: InjectOnTrigger
+  - type: Tag
+    tags:
+    - SubdermalImplant
+    - HideContextMenu
+
+- type: entity
+  parent: ChemicalImplant
+  id: StimulantsImplant
+  name: Stimulants implant
+  description: Inject stimulants to blood stream from small capsules in itself
+  noSpawn: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      container1:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 16
+        maxVol: 16
+        canMix: True
+      container2:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 16
+        maxVol: 16
+        canMix: True
+      container3:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 16
+        maxVol: 16
+        canMix: True
+  - type: InjectOnTrigger
+    solutions:
+    - name: container1
+      transferAmount: 16
+    - name: container2
+      transferAmount: 16
+    - name: container3
+      transferAmount: 16
+
