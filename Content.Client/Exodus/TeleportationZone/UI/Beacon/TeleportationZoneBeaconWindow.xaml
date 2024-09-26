@@ -1,0 +1,11 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:viewport="clr-namespace:Content.Client.Viewport"
+               Title="{Loc 'teleportationZone-beacon-ui-window'}"
+               Resizable="True">
+    <BoxContainer Orientation="Vertical">
+        <Label Margin="15 0 0 5" Text="{Loc 'teleportationZone-beacon-ui-label1'}" HorizontalAlignment="Center"/>
+        <Label Margin="15 0 0 5" Text="{Loc 'teleportationZone-beacon-ui-label2'}" HorizontalAlignment="Center"/>
+        <TextureRect Name="BeaconTextureRect" VerticalAlignment="Center" HorizontalAlignment="Center" TextureScale="2 2" TexturePath="/Textures/Exodus/TeleportationZone/UI/ProgressBar/progress0.png"/>
+        <Button Margin="10 5 0 0" Name="TeleportationZoneBeaconSaveUINCoreButton" Text="{Loc 'teleportationZone-beacon-ui-save-button'}" />
+    </BoxContainer>
+</DefaultWindow>
