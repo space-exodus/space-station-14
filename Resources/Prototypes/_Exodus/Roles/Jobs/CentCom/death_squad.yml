@@ -28,7 +28,6 @@
     belt: ClothingBeltDSCommander
     suitstorage: Chainsword
     pocket1: DoorRemoteAll
-    pocket2: BoxFolderCentcomDS
 
 - type: job
   id: DSOfficer
@@ -60,7 +59,6 @@
     belt: ClothingBeltDSOfficer
     pocket1: EnergySword
     suitstorage: WeaponRifleSP
-    pocket2: BoxFolderCentcomDS
 
 - type: job
   id: DSSpecialist
@@ -92,4 +90,3 @@
     belt: ClothingBeltDSSpecialist
     pocket1: EnergySword
     suitstorage: DSSyringeGun
-    pocket2: BoxFolderCentcomDS
