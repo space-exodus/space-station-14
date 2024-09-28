@@ -28,6 +28,7 @@
     belt: ClothingBeltDSCommander
     suitstorage: Chainsword
     pocket1: DoorRemoteAll
+    pocket2: DSEnergyShield
 
 - type: job
   id: DSOfficer
@@ -58,6 +59,7 @@
     ears: ClothingHeadsetDS
     belt: ClothingBeltDSOfficer
     pocket1: EnergySword
+    pocket2: DSEnergyShield
     suitstorage: WeaponRifleSP
 
 - type: job
@@ -89,4 +91,5 @@
     ears: ClothingHeadsetDS
     belt: ClothingBeltDSSpecialist
     pocket1: EnergySword
+    pocket2: DSEnergyShield
     suitstorage: DSSyringeGun
