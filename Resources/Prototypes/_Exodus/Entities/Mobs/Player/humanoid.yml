@@ -173,8 +173,7 @@
   suffix: ERTRole, Basic
   components:
   - type: Sprite
-    sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_officer.rsi
-    state: icon
+    state: deathsquadofficer
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: RandomHumanoidSpawner
@@ -209,8 +208,8 @@
   suffix: ERTRole, Basic
   components:
   - type: Sprite
-    sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_commander.rsi
-    state: icon
+    sprite: Markers/jobs.rsi
+    state: deathsquadofficercommander
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: RandomHumanoidSpawner
@@ -245,8 +244,7 @@
   suffix: ERTRole, Basic
   components:
   - type: Sprite
-    sprite: Exodus/Clothing/OuterClothing/Hardsuits/death_squad_specialist.rsi
-    state: icon
+    state: deathsquadspecialist
   - type: RandomHumanoidAppearance
     randomizeName: false
   - type: RandomHumanoidSpawner

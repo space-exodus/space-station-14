@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | cburn and cluwne made by brainfood1183 (github). brigmed made by PuroSlavKing (Github). blueshield made by tv2d (discord:700401364618182826)",
+  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | cburn and cluwne made by brainfood1183 (github). brigmed made by PuroSlavKing (Github). blueshield made by tv2d (discord:700401364618182826). deathsquad by Jidor (discord:692704105373761587)",
   "size": {
     "x": 32,
     "y": 32
@@ -69,6 +69,15 @@
     },
     {
       "name": "cyborg"
+    },
+    {
+      "name": "deathsquadofficercommander"
+    },
+    {
+      "name": "deathsquadofficer"
+    },
+    {
+      "name": "deathsquadspecialist"
     },
     {
       "name": "detective"
@@ -173,7 +182,7 @@
       "name": "scientist"
     },
     {
-      "name": "security_cadet" 
+      "name": "security_cadet"
     },
     {
       "name": "security_officer"

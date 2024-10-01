@@ -11,7 +11,7 @@
     job: BlueshieldOfficer
 
 - type: entity
-  parent: CentcomIDCard
+  parent: IDCardStandard
   id: IDCardDSCommander
   name: death squad commander ID card
   components:
@@ -21,7 +21,7 @@
     layers:
     - state: syndie
     - state: idchiefmedicalofficer
-    - state: idcentcom
+    - state: iddeathsquad
 
 - type: entity
   parent: IDCardDSCommander
