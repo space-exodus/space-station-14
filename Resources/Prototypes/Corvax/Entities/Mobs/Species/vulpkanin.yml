@@ -61,14 +61,14 @@
         Asphyxiation: -2.0
   - type: Wagging
   - type: TemperatureProtection # Exodus-MRP: Wool is a very good thermal insulator
-    coefficient: 0.1
+    coolingCoefficient: 0.1
 
 - type: entity
   save: false
   name: Urist McHands
   parent: MobHumanDummy
   id: MobVulpkaninDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: A dummy vulpkanin meant to be used in character setup.
   components:
   - type: HumanoidAppearance

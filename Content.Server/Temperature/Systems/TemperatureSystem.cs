@@ -301,7 +301,11 @@ public sealed class TemperatureSystem : EntitySystem
     private void OnTemperatureChangeAttempt(EntityUid uid, TemperatureProtectionComponent component,
         InventoryRelayedEvent<ModifyChangedTemperatureEvent> args)
     {
-        var ev = new GetTemperatureProtectionEvent(component.Coefficient);
+        var coefficient = args.Args.TemperatureDelta < 0
+            ? component.CoolingCoefficient
+            : component.HeatingCoefficient;
+
+        var ev = new GetTemperatureProtectionEvent(coefficient);
         RaiseLocalEvent(uid, ref ev);
 
         args.Args.TemperatureDelta *= ev.Coefficient;
@@ -318,7 +322,11 @@ public sealed class TemperatureSystem : EntitySystem
         if (!HasComp<TemperatureComponent>(uid) || !HasComp<MobThresholdsComponent>(uid))
             return;
 
-        var ev = new GetTemperatureProtectionEvent(component.Coefficient);
+        var coefficient = args.TemperatureDelta < 0
+            ? component.CoolingCoefficient
+            : component.HeatingCoefficient;
+
+        var ev = new GetTemperatureProtectionEvent(coefficient);
         RaiseLocalEvent(uid, ref ev);
 
         args.TemperatureDelta *= ev.Coefficient;

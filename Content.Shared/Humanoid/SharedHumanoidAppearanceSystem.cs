@@ -1,8 +1,10 @@
 using System.IO;
 using System.Linq;
 using Content.Shared.CCVar;
+using Content.Shared.Corvax.TTS; // Corvax-TTS
 using Content.Shared.Decals;
 using Content.Shared.Examine;
+using Content.Shared.Ghost; // Exodus-Mindset
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
@@ -39,6 +41,15 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [ValidatePrototypeId<SpeciesPrototype>]
     public const string DefaultSpecies = "Human";
+    // Corvax-TTS-Start
+    public const string DefaultVoice = "Illidan";
+    public static readonly Dictionary<Sex, string> DefaultSexVoice = new()
+    {
+        {Sex.Male, "Illidan"},
+        {Sex.Female, "Mana"},
+        {Sex.Unsexed, "Myron"},
+    };
+    // Corvax-TTS-End
 
     public override void Initialize()
     {
@@ -109,6 +120,13 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         var age = GetAgeRepresentation(component.Species, component.Age);
 
         args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
+
+        // Exodus-Mindset-Start
+        if (HasComp<GhostComponent>(args.Examiner))
+        {
+            args.PushText(Loc.GetString("humanoid-appearance-component-mindset-examine", ("mindset", component.Mindset)), -1);
+        }
+        // Exodus-Mindset-End
     }
 
     /// <summary>
@@ -378,6 +396,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         EnsureDefaultMarkings(uid, humanoid);
+        SetTTSVoice(uid, profile.Voice, humanoid); // Corvax-TTS
 
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))
@@ -386,6 +405,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         humanoid.Age = profile.Age;
+        humanoid.Mindset = profile.Mindset; // Exodus-Mindset
 
         Dirty(uid, humanoid);
     }
@@ -422,6 +442,18 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         if (sync)
             Dirty(uid, humanoid);
     }
+
+    // Corvax-TTS-Start
+    // ReSharper disable once InconsistentNaming
+    public void SetTTSVoice(EntityUid uid, string voiceId, HumanoidAppearanceComponent humanoid)
+    {
+        if (!TryComp<TTSComponent>(uid, out var comp))
+            return;
+
+        humanoid.Voice = voiceId;
+        comp.VoicePrototypeId = voiceId;
+    }
+    // Corvax-TTS-End
 
     private void EnsureDefaultMarkings(EntityUid uid, HumanoidAppearanceComponent? humanoid)
     {

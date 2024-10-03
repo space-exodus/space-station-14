@@ -3,6 +3,24 @@
   name: chat-emote-name-sneeze
   category: Vocal
   chatMessages: ["chat-emote-msg-sneeze"]
+  # Exodus-EmotesSounds-Start
+  chatTriggers:
+    - чихает
+    - чихает.
+    - чихает!
+    - чихнул
+    - чихнул.
+    - чихнул!
+    - чихнула
+    - чихнула.
+    - чихнула!
+    - пчихнул
+    - пчихнул.
+    - пчихнул!
+    - пчихнула
+    - пчихнула.
+    - пчихнула!
+  # Exodus-EmotesSounds-End
 
 - type: emote
   id: Cough
@@ -37,6 +55,21 @@
   name: chat-emote-name-cathisses
   category: Vocal
   chatMessages: ["chat-emote-msg-cathisses"]
+  # Exodus-EmotesSounds-Start
+  chatTriggers:
+    - шипит
+    - шипит.
+    - шипит!
+    - шипение
+    - шипение.
+    - шипение!
+    - сипит
+    - сипит.
+    - сипит!
+    - шикает
+    - шикает.
+    - шикает!
+  # Exodus-EmotesSounds-End
 
 - type: emote
   id: MonkeyScreeches

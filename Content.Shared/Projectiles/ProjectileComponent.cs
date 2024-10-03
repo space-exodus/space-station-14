@@ -73,4 +73,9 @@ public sealed partial class ProjectileComponent : Component
     /// </summary>
     [DataField]
     public bool DamagedEntity;
+
+    // Exodus-ShotYourself-Start
+    [DataField]
+    public EntityUid? Target;
+    // Exodus-ShotYourself-End
 }

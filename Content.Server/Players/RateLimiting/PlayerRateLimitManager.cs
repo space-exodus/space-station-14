@@ -51,7 +51,7 @@ public sealed class PlayerRateLimitManager
     /// OR <paramref name="key"/> is not a registered rate limit category.
     /// </exception>
     /// <seealso cref="Register"/>
-    public RateLimitStatus CountAction(ICommonSession player, string key, string message) // Exodus-ChatRestrictions
+    public RateLimitStatus CountAction(ICommonSession player, string key, string? message) // Exodus-ChatRestrictions
     {
         if (player.Status == SessionStatus.Disconnected)
             throw new ArgumentException("Player is not connected");
@@ -70,9 +70,16 @@ public sealed class PlayerRateLimitManager
         }
 
         // Exodus-ChatRestrictions-Start
-        var characters = message.Count((ch) => char.IsLetterOrDigit(ch) || char.IsWhiteSpace(ch));
+        if (message != null)
+        {
+            var characters = message.Count((ch) => char.IsLetterOrDigit(ch) || char.IsWhiteSpace(ch));
+            datum.Count += characters;
+        }
+        else
+        {
+            datum.Count++;
+        }
 
-        datum.Count += characters;
         // Exodus-ChatRestrictions-End
 
         if (datum.Count <= registration.LimitCount)

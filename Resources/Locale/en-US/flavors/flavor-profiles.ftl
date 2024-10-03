@@ -52,6 +52,7 @@ flavor-base-terrible = terrible
 flavor-base-mindful = mindful
 flavor-base-chewy = chewy
 
+
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
 
@@ -63,7 +64,6 @@ flavor-complex-honey = like honey
 flavor-complex-ketchunaise = like tomatoes and mayonnaise
 flavor-complex-mayonnaise = like mayonnaise
 flavor-complex-mustard = like mustard
-
 
 # Food-specific flavors.
 
@@ -174,6 +174,9 @@ flavor-complex-violets = like violets
 flavor-complex-pyrotton = like a burning mouth
 flavor-complex-mothballs = like mothballs
 flavor-complex-paint-thinner = like paint thinner
+flavor-complex-numbing-tranquility = like numbing tranquility
+flavor-complex-true-nature = like the true nature of reality
+flavor-complex-false-meat = not entirely unlike meat
 flavor-complex-paper = like mushy pulp
 flavor-complex-compressed-meat = like compressed meat
 
