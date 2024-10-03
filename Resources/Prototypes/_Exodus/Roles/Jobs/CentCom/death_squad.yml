@@ -1,0 +1,95 @@
+- type: job
+  id: DSCommander
+  name: job-name-deathsquad-commander
+  description: job-description-deathsquad-commander
+  playTimeTracker: JobDSCommander
+  setPreference: false
+  startingGear: DSCommanderGear
+  icon: "JobIconDeathSquad"
+  supervisors: job-supervisors-soo
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: DSCommanderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpackCommander
+    shoes: ClothingShoesBootsMagDS
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudDS
+    gloves: ClothingHandsGlovesDS
+    outerClothing: ClothingOuterHardsuitDeathsquadCommander
+    id: PDACommanderDS
+    ears: ClothingHeadsetDS
+    belt: ClothingBeltDSCommander
+    suitstorage: Chainsword
+    pocket1: DoorRemoteAll
+    pocket2: DSEnergyShield
+
+- type: job
+  id: DSOfficer
+  name: job-name-deathsquad-officer
+  description: job-description-deathsquad-officer
+  playTimeTracker: JobDSOfficer
+  setPreference: false
+  startingGear: DSOfficerGear
+  icon: "JobIconDeathSquad"
+  supervisors: job-supervisors-dsc
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: DSOfficerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpackOfficer
+    shoes: ClothingShoesBootsMagDS
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudDS
+    gloves: ClothingHandsGlovesDS
+    outerClothing: ClothingOuterHardsuitDeathsquadOfficer
+    id: PDAOfficerDS
+    ears: ClothingHeadsetDS
+    belt: ClothingBeltDSOfficer
+    pocket1: EnergySword
+    pocket2: DSEnergyShield
+    suitstorage: WeaponRifleSP
+
+- type: job
+  id: DSSpecialist
+  name: job-name-deathsquad-specialist
+  description: job-description-deathsquad-specialist
+  playTimeTracker: JobDSSpecialist
+  setPreference: false
+  startingGear: DSSpecialistGear
+  icon: "JobIconDeathSquad"
+  supervisors: job-supervisors-dsc
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: DSSpecialistGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpackSpecialist
+    shoes: ClothingShoesBootsMagDS
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudDS
+    gloves: ClothingHandsGlovesDS
+    outerClothing: ClothingOuterHardsuitDeathsquadSpecialist
+    id: PDASpecialistDS
+    ears: ClothingHeadsetDS
+    belt: ClothingBeltDSSpecialist
+    pocket1: EnergySword
+    pocket2: DSEnergyShield
+    suitstorage: DSSyringeGun

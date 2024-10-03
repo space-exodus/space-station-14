@@ -1,0 +1,23 @@
+- type: entity
+  name: DSO rubber stamp
+  parent: RubberStampBase
+  id: RubberStampDSO
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-dso
+    stampedColor: "#6f6f5d"
+    stampState: "paper_stamp-detective"
+  - type: Sprite
+    state: stamp-chaplain
+
+- type: entity
+  name: Тop secret rubber stamp
+  parent: RubberStampBase
+  id: RubberStampTopSecret
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-topsecret
+    stampedColor: "#cc0000"
+    stampState: "paper_stamp-hos"
+  - type: Sprite
+    state: stamp-hos

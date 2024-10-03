@@ -69,3 +69,183 @@
         - NamesFirstMilitaryHighLeader
         - NamesLastMilitary
     - type: AntagImmune
+
+- type: randomHumanoidSettings
+  id: DeathSquadOfficer
+  speciesBlacklist:
+    - Diona
+    - Arachnid
+    - Dwarf
+    - Moth
+    - Reptilian
+    - Skeleton
+    - SlimePerson
+    - Vulpkanin
+    - Vox
+    - Kidan
+    - Felinid
+  parent: ERTLeader
+  components:
+    - type: RandomMetadata
+      nameSegments:
+      - DSCallSigns
+      - DSNumber
+    - type: AntagImmune
+    - type: GhostTakeoverAvailable
+    - type: ZombieImmune
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Critical
+        200: Dead
+    - type: Stamina
+      critThreshold: 300
+      decay: 6
+      cooldown: 1
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        70: 0.9
+        120: 0.7
+        140: 0.5
+    - type: AutoImplant
+      implants:
+      - DSTrackingImplant
+      - DeathAcidifierImplant
+      - FreedomImplant
+      - MindShieldImplant
+    - type: NpcFactionMember
+      factions:
+      - DeathSquad
+    - type: StatusEffects
+      allowed:
+      - Stun
+      - KnockedDown
+      - SlowedDown
+      - Stutter
+      - Electrocution
+      - StaminaModifier
+    - type: Thirst
+      startingThirst: 2500
+      thresholds:
+        OverHydrated: 3500
+        Okay: 2500
+        Thirsty: 1500
+        Parched: 1000
+        Dead: 0
+      baseDecayRate: 0.0001
+    - type: Hunger
+      currentHunger: 2500
+      thresholds:
+        Overfed: 3500
+        Okay: 2500
+        Peckish: 1500
+        Starving: 1000
+        Dead: 0
+      baseDecayRate: 0.0001
+    - type: PassiveDamage
+      allowedStates:
+      - Alive
+      damageCap: 150
+      damage:
+        groups:
+          Brute: -0.3
+          Burn: -0.3
+          Toxin: -0.3
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 54000
+      name: ghost-role-information-deathsquad-officer-name
+      description: ghost-role-information-deathsquad-officer-description
+      rules: ghost-role-information-deathsquad-officer-rules
+      job: DSOfficer
+    - type: Loadout
+      prototypes: [ DSOfficerGear ]
+
+- type: entity
+  name: death squad officer
+  parent: RandomHumanoidSpawnerDeathSquadCommander
+  id: RandomHumanoidSpawnerDeathSquadOfficer
+  suffix: ERTRole, Basic
+  components:
+  - type: Sprite
+    state: deathsquadofficer
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomHumanoidSpawner
+    settings: DeathSquadOfficer
+
+- type: randomHumanoidSettings
+  id: DeathSquadCommander
+  parent: DeathSquadOfficer
+  components:
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 10800
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 54000
+      name: ghost-role-information-deathsquad-commander-name
+      description: ghost-role-information-deathsquad-commander-description
+      rules: ghost-role-information-deathsquad-commander-rules
+      job: DSCommander
+    - type: Loadout
+      prototypes: [ DSCommanderGear ]
+
+- type: entity
+  name: death squad commander
+  parent: RandomHumanoidSpawnerERTLeader
+  id: RandomHumanoidSpawnerDeathSquadCommander
+  suffix: ERTRole, Basic
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    state: deathsquadofficercommander
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomHumanoidSpawner
+    settings: DeathSquadCommander
+
+- type: randomHumanoidSettings
+  id: DeathSquadSpecialist
+  parent: DeathSquadOfficer
+  components:
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 54000
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000
+      name: ghost-role-information-deathsquad-specialist-name
+      description: ghost-role-information-deathsquad-specialist-description
+      rules: ghost-role-information-deathsquad-specialist-rules
+      job: DSSpecialist
+    - type: Loadout
+      prototypes: [ DSSpecialistGear ]
+
+- type: entity
+  name: death squad specialist
+  parent: RandomHumanoidSpawnerDeathSquadCommander
+  id: RandomHumanoidSpawnerDeathSquadSpecialist
+  suffix: ERTRole, Basic
+  components:
+  - type: Sprite
+    state: deathsquadspecialist
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomHumanoidSpawner
+    settings: DeathSquadSpecialist

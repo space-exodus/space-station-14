@@ -3,3 +3,12 @@
 
 - type: playTimeTracker
   id: JobBrigmedic
+
+- type: playTimeTracker
+  id: JobDSCommander
+
+- type: playTimeTracker
+  id: JobDSOfficer
+
+- type: playTimeTracker
+  id: JobDSSpecialist

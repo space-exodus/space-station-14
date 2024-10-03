@@ -1,0 +1,66 @@
+﻿ # Death Squad Tango laws
+- type: siliconLaw
+  id: DSTango1
+  order: 1
+  lawString: law-DSTango-1
+
+- type: siliconLaw
+  id: DSTango2
+  order: 2
+  lawString: law-DSTango-2
+
+- type: siliconLaw
+  id: DSTango3
+  order: 3
+  lawString: law-DSTango-3
+
+- type: siliconLaw
+  id: DSTango4
+  order: 4
+  lawString: law-DSTango-4
+
+- type: siliconLaw
+  id: DSTango5
+  order: 5
+  lawString: law-DSTango-5
+
+- type: siliconLawset
+  id: DSTangoLawset
+  laws:
+  - DSTango1
+  - DSTango2
+  - DSTango3
+  - DSTango4
+  - DSTango5
+  obeysTo: laws-owner-centcomm
+
+# Death Squad Foxtrot
+- type: siliconLaw
+  id: DSFoxtrot1
+  order: 1
+  lawString: law-DSFoxtrot-1
+
+- type: siliconLaw
+  id: DSFoxtrot2
+  order: 2
+  lawString: law-DSFoxtrot-2
+
+- type: siliconLaw
+  id: DSFoxtrot3
+  order: 3
+  lawString: law-DSFoxtrot-3
+
+- type: siliconLaw
+  id: DSFoxtrot4
+  order: 4
+  lawString: law-DSFoxtrot-4
+
+- type: siliconLawset
+  id: DSFoxtrot
+  laws:
+  - DSFoxtrot1
+  - DSFoxtrot2
+  - DSFoxtrot3
+  - DSFoxtrot4
+  obeysTo: laws-owner-centcomm
+

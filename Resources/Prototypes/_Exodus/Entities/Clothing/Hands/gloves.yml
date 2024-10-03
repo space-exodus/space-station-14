@@ -11,3 +11,27 @@
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesDS
+  name: death squad combat gloves
+  description: Force gloves that multiply the mechanical force of impact.
+  components:
+  - type: Insulated
+  - type: Sprite
+    sprite: Exodus/Clothing/Hands/Gloves/death_squad.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Hands/Gloves/death_squad.rsi
+  - type: StaminaDamageOnHit
+    damage: 15
+  - type: MeleeWeapon
+    attackRate: 1.5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 30
+    soundHit:
+      path: /Audio/Exodus/Weapons/glovepunch.ogg
+  - type: Fiber
+    fiberMaterial: fibers-insulative
