@@ -156,6 +156,11 @@ public sealed partial class DungeonSystem
                 if (!clearExisting && reservedTiles?.Contains(rounded) == true)
                     continue;
 
+                // Exodus-Lavaland-Start
+                if (tileRef.Tile.IsSpace())
+                    continue;
+                // Exodus-Lavaland-End
+
                 _tiles.Add((rounded, tileRef.Tile));
             }
         }

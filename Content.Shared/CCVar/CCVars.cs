@@ -2238,5 +2238,16 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> DebugPow3rDisableParallel =
             CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
+
+        // Exodus-Lavaland-Start
+        /**
+         * Lavaland
+         */
+        /// <summary>
+        /// Whether or not lavaland is enabled
+        /// </summary>
+        public static readonly CVarDef<bool> LavalandEnabled =
+            CVarDef.Create("lavaland.enabled", false, CVar.SERVERONLY);
+        // Exodus-Lavaland-End
     }
 }
