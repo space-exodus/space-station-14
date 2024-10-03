@@ -30,7 +30,6 @@
   components:
     - type: Transform
     - type: StationLavaland # Exodus-Lavaland
-      outpost: /Maps/ExodusSecrets/Lavaland/outpost.yml
 
 - type: entity
   id: NanotrasenCentralCommand

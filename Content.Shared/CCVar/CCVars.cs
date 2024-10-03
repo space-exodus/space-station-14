@@ -2248,6 +2248,12 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> LavalandEnabled =
             CVarDef.Create("lavaland.enabled", false, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Path to used outpost in lavaland
+        /// </summary>
+        public static readonly CVarDef<string> LavalandOutpost =
+            CVarDef.Create("lavaland.outpost", "/Maps/ExodusSecrets/Lavaland/outpost.yml", CVar.SERVERONLY);
         // Exodus-Lavaland-End
     }
 }

@@ -11,6 +11,4 @@ namespace Content.Server.Exodus.Lavaland;
 [RegisterComponent]
 public sealed partial class StationLavalandComponent : Component
 {
-    [DataField(required: true, customTypeSerializer: typeof(ResPathSerializer))]
-    public ResPath Outpost;
 }
