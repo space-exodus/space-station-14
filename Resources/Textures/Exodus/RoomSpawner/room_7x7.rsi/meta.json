@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created by BeatusCrow",
+  "size": {
+    "x": 224,
+    "y": 224
+  },
+  "states": [
+    {
+      "name": "room_7x7"
+    }
+  ]
+}
