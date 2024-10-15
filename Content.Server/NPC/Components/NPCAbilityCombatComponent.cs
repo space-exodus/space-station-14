@@ -1,4 +1,6 @@
 // Exodus-Lavaland
+using Content.Server.Exodus.Actions;
+
 namespace Content.Server.NPC.Components;
 
 /// <summary>
@@ -23,7 +25,10 @@ public sealed partial class NPCAbilityCombatComponent : Component
     public int UsedActionsLastUpd = 0;
 
     [ViewVariables]
-    public float ActionsTimeReload = 1.0f;
+    public float MinActionsInterval = 1.0f;
+
+    [ViewVariables]
+    public ActionList UsingActions = new();
 
 }
 

@@ -35,6 +35,8 @@ public sealed partial class NPCBlackboard : IEnumerable<KeyValuePair<string, obj
         {"RotateSpeed", float.MaxValue},
         {"VisionRadius", 10f},
         {"AggroVisionRadius", 10f},
+        {"MinActionsInterval", 1.0f},    // Exodus - Advanced AI for Lavaland
+        {"ActionsList", "AllActions"},  // Exodus - Advanced AI for Lavaland
     };
 
     /// <summary>

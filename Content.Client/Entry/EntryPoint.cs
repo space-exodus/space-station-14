@@ -127,7 +127,7 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("stationGoal"); // Corvax-StationGoal
             _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
             _prototypeManager.RegisterIgnore("spawnGroupProto"); // Exodus-Lavaland
-
+            _prototypeManager.RegisterIgnore("actionList"); // Exodus - Advanced AI for Lavaland
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
             _screenshotHook.Initialize();
