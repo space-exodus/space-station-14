@@ -1,19 +1,19 @@
 // Exodus-AdvancedAI
-using System.Numerics;
+using Content.Server.Actions;
+using Content.Server.Exodus.Actions;
 using Content.Server.NPC.Components;
+using Content.Shared.Actions;
+using Content.Shared.Actions.Events;
+using Content.Shared.ActionBlocker;
+using Content.Shared.Administration.Logs;
+using Content.Shared.Database;
+using Content.Shared.Interaction;
 using Content.Shared.NPC;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Content.Shared.ActionBlocker;
-using Content.Shared.Actions.Events;
-using Content.Shared.Administration.Logs;
-using Content.Shared.Database;
-
-using Content.Shared.Interaction;
-using Content.Shared.Actions;
-using Content.Server.Actions;
-using Content.Shared.Directions;
+using System.Numerics;
 
 namespace Content.Server.NPC.Systems;
 
@@ -23,6 +23,7 @@ public sealed partial class NPCCombatSystem
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly RotateToFaceSystem _rotateToFaceSystem = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
 
     private const float TargetAbilityLostRange = 28f;
 
@@ -45,11 +46,11 @@ public sealed partial class NPCCombatSystem
 
         while (query.MoveNext(out var uid, out var comp, out _))
         {
-            CastAction(uid, comp, curTime, physicsQuery, xformQuery);
+            CastActions(uid, comp, curTime, physicsQuery, xformQuery);
         }
     }
 
-    private void CastAction(EntityUid uid, NPCAbilityCombatComponent combatComp, TimeSpan curTime, EntityQuery<PhysicsComponent> physicsQuery, EntityQuery<TransformComponent> xformQuery)
+    private void CastActions(EntityUid uid, NPCAbilityCombatComponent combatComp, TimeSpan curTime, EntityQuery<PhysicsComponent> physicsQuery, EntityQuery<TransformComponent> xformQuery)
     {
         combatComp.Status = AbilityCombatStatus.Normal;
 
@@ -68,7 +69,7 @@ public sealed partial class NPCCombatSystem
 
         if (distance > TargetMeleeLostRange)
         {
-            combatComp.Status = AbilityCombatStatus.TargetUnreachable;
+            combatComp.Status = AbilityCombatStatus.TargetOutOfRange;
             return;
         }
 
@@ -98,10 +99,17 @@ public sealed partial class NPCCombatSystem
 
             var act = _random.PickAndTake(actions);
 
+            Log.Debug($"Picked action {actions}");
+
+            if (!IsInAvaibleList(act, combatComp.UsingActions))
+                continue;
+
             var attemptEv = new ActionAttemptEvent(uid);
             RaiseLocalEvent(act, ref attemptEv);
             if (attemptEv.Cancelled)
-                return;
+                continue;
+
+            Log.Debug($"Action {actions} is avaible to use");
 
             if (TryUseAction(uid, act, distance, combatComp, curTime))
                 combatComp.UsedActionsLastUpd++;
@@ -110,7 +118,7 @@ public sealed partial class NPCCombatSystem
         if (combatComp.UsedActionsLastUpd >= combatComp.ActionsPerUpd)
         {
             combatComp.UsedActionsLastUpd = 0;
-            combatComp.NextAction = curTime + TimeSpan.FromSeconds(combatComp.ActionsTimeReload);
+            combatComp.NextAction = curTime + TimeSpan.FromSeconds(combatComp.MinActionsInterval);
         }
     }
 
@@ -129,7 +137,7 @@ public sealed partial class NPCCombatSystem
         if (!_actions.TryGetActionData(actionUid, out var action))
             return false;
 
-        if (!action.Enabled)
+        if (!action.Enabled || !action.UsableByNPC)
             return false;
 
         // check for action use prevention
@@ -157,10 +165,7 @@ public sealed partial class NPCCombatSystem
 
         if (action.MinAIUseRange >= distance ||
             action.MaxAIUseRange <= distance)
-        {
-            Log.Error("Out");
             return false;
-        }
 
         // Validate request by checking action blockers and the like:
         switch (action)
@@ -191,8 +196,8 @@ public sealed partial class NPCCombatSystem
 
                 if (worldAction.Range <= distance)
                 {
-                    var mapTargetPos = entityCoordinatesTarget.ToMapPos(EntityManager, _transform);
-                    var mapUserPos = Transform(uid).Coordinates.ToMapPos(EntityManager, _transform);
+                    var mapTargetPos = _transform.ToMapCoordinates(entityCoordinatesTarget).Position;
+                    var mapUserPos = _transform.ToMapCoordinates(Transform(uid).Coordinates).Position;
 
                     var direction = mapTargetPos - mapUserPos;
                     var coefficient = worldAction.Range / distance;
@@ -200,7 +205,7 @@ public sealed partial class NPCCombatSystem
                     entityCoordinatesTarget = new EntityCoordinates(entityCoordinatesTarget.EntityId, mapUserPos + delta);
                 }
 
-                _rotateToFaceSystem.TryFaceCoordinates(uid, entityCoordinatesTarget.ToMapPos(EntityManager, _transform));
+                _rotateToFaceSystem.TryFaceCoordinates(uid, _transform.ToMapCoordinates(entityCoordinatesTarget).Position);
 
                 if (!_actions.ValidateWorldTarget(uid, entityCoordinatesTarget, (actionUid, worldAction)))
                     return false;
@@ -236,4 +241,12 @@ public sealed partial class NPCCombatSystem
         return true;
     }
 
+    private bool IsInAvaibleList(EntityUid action, ActionList list)
+    {
+        if (!TryComp(action, out MetaDataComponent? meta) ||
+            meta.EntityPrototype == null)
+            return false;
+
+        return list.AllAvaibleAbilities || list.Actions.Contains(meta.EntityPrototype!.ID);
+    }
 }

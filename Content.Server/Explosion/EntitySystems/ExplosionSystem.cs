@@ -392,7 +392,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
             queued.Cause);
     }
 
-    private void CameraShake(float range, MapCoordinates epicenter, float totalIntensity)
+    public void CameraShake(float range, MapCoordinates epicenter, float totalIntensity)
     {
         var players = Filter.Empty();
         players.AddInRange(epicenter, range, _playerManager, EntityManager);
