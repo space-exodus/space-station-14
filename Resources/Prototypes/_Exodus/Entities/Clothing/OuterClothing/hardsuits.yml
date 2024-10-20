@@ -72,7 +72,8 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
-    coefficient: 0.001
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: Armor
