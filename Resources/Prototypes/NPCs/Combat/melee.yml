@@ -28,7 +28,6 @@
       tasks:
       - !type:HTNPrimitiveTask
         operator: !type:StandUpOperator
-          shutdownState: TaskFinished
     # Exodus-MRP NPC-End
 
     - preconditions:

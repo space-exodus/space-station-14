@@ -1,5 +1,6 @@
 // Exodus-Crawling
 using Content.Server.DoAfter;
+using Content.Server.NPC.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Standing;
 
@@ -32,11 +33,26 @@ public sealed partial class StandUpOperator : HTNOperator
             CancelDuplicate = true,
             BreakOnDamage = true,
         };
-        _doAfter.TryStartDoAfter(doAfterArgs);
+        if (_doAfter.TryStartDoAfter(doAfterArgs, out var doAfterId))
+        {
+            var standsUp = _entManager.EnsureComponent<NPCStandsUpComponent>(owner);
+            standsUp.DoAfter = doAfterId.Value;
+        }
     }
 
     public override HTNOperatorStatus Update(NPCBlackboard blackboard, float frameTime)
     {
+        var owner = blackboard.GetValue<EntityUid>(NPCBlackboard.Owner);
+
+        if (_entManager.TryGetComponent<NPCStandsUpComponent>(owner, out var standsUp) && _doAfter.IsRunning(standsUp.DoAfter))
+            return HTNOperatorStatus.Continuing;
         return HTNOperatorStatus.Finished;
+    }
+
+    public override void TaskShutdown(NPCBlackboard blackboard, HTNOperatorStatus status)
+    {
+        var owner = blackboard.GetValue<EntityUid>(NPCBlackboard.Owner);
+        if (_entManager.HasComponent<NPCStandsUpComponent>(owner))
+            _entManager.RemoveComponentDeferred<NPCStandsUpComponent>(owner);
     }
 }
