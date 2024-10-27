@@ -1,5 +1,5 @@
 - type: entity
-  parent: TrackingImplant
+  parent: BaseSubdermalImplant
   id: DSTrackingImplant
   name: Death Squad tracking implant
   description: This implant has a tracking device attached to the suit sensor network, as well as a condition monitor for the Squadron radio channel.
@@ -11,3 +11,7 @@
       mobState:
       - Critical
       - Dead
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+    - type: WirelessNetworkConnection
+      range: 1000
