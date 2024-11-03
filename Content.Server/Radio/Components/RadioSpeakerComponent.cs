@@ -31,9 +31,6 @@ public sealed partial class RadioSpeakerComponent : Component
     // Exodus - Advanced speak control - start
     [DataField]
     public bool HideSpeaker = false;
-
-    [DataField("drawdepth", customTypeSerializer: typeof(ConstantSerializer<ChatChannel>))]
-    public ChatChannel SpeakingChat = ChatChannel.Whisper;
     // Exodus - Advanced speak control - end
 
 }

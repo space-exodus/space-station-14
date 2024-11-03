@@ -214,7 +214,7 @@ public sealed class RadioDeviceSystem : EntitySystem
         // Exodus - Advanced speak control - start
         if (component.HideSpeaker)
         {
-            _chat.TrySendInGameICMessage(uid, args.Message, component.SpeakingChat, ChatTransmitRange.GhostRangeLimit, checkRadioPrefix: false);
+            _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit, checkRadioPrefix: false);
             return;
         }
         // Exodus - Advanced speak control - end
@@ -225,7 +225,7 @@ public sealed class RadioDeviceSystem : EntitySystem
 
         // log to chat so people can identity the speaker/source, but avoid clogging ghost chat if there are many radios
         // Exodus - Advanced speak control - start
-        _chat.TrySendInGameICMessage(uid, args.Message, component.SpeakingChat, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
         // Exodus - Advanced speak control - end
     }
 
