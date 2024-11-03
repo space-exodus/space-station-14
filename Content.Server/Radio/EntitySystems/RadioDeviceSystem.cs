@@ -211,12 +211,22 @@ public sealed class RadioDeviceSystem : EntitySystem
         var nameEv = new TransformSpeakerNameEvent(args.MessageSource, Name(args.MessageSource));
         RaiseLocalEvent(args.MessageSource, nameEv);
 
+        // Exodus - Advanced speak control - start
+        if (component.HideSpeaker)
+        {
+            _chat.TrySendInGameICMessage(uid, args.Message, component.SpeakingChat, ChatTransmitRange.GhostRangeLimit, checkRadioPrefix: false);
+            return;
+        }
+        // Exodus - Advanced speak control - end
+
         var name = Loc.GetString("speech-name-relay",
             ("speaker", Name(uid)),
             ("originalName", nameEv.Name));
 
         // log to chat so people can identity the speaker/source, but avoid clogging ghost chat if there are many radios
-        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        // Exodus - Advanced speak control - start
+        _chat.TrySendInGameICMessage(uid, args.Message, component.SpeakingChat, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        // Exodus - Advanced speak control - end
     }
 
     private void OnIntercomEncryptionChannelsChanged(Entity<IntercomComponent> ent, ref EncryptionChannelsChangedEvent args)
