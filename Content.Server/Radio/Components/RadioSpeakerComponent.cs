@@ -1,10 +1,7 @@
 using Content.Server.Radio.EntitySystems;
 using Content.Shared.Chat;
-using Content.Server.Chat.Systems;
-using ChatChannel = Content.Server.Chat.Systems.InGameICChatType;
 using Content.Shared.Radio;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server.Radio.Components;
 
