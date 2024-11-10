@@ -6,7 +6,7 @@
   showInVote: false
   description: survival-description
   rules:
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # Exodus
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
@@ -62,7 +62,7 @@
     - BasicStationEventScheduler
     - KesslerSyndromeScheduler
     - MeteorSwarmMildScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # Exodus
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
@@ -78,7 +78,7 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # Exodus
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -114,7 +114,7 @@
   description: secret-description
   rules:
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # Exodus
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -152,7 +152,7 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # Exodus
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -180,7 +180,7 @@
     - Nukeops
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # Exodus
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -197,7 +197,7 @@
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    # - MeteorSwarmScheduler # Exodus
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -215,7 +215,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  # - MeteorSwarmScheduler # Exodus
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
