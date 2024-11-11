@@ -1,6 +1,6 @@
 ent-BlueshieldPDA = КПК синего щита
     .desc = Стильный и компактный.
-ent-PDACommanderDS = КПК Отряда смерти
+ent-PDACommanderDS = КПК Эскадрона Смерти
     .desc = Пахнет смертью.
     .suffix = Командир
 ent-PDAOfficerDS = { ent-PDACommanderDS }
