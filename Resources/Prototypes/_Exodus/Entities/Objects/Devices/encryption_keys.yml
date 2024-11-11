@@ -6,7 +6,7 @@
   components:
   - type: EncryptionKey
     channels:
-    - DS
+    - DeathSquad
     defaultChannel: DS
   - type: Sprite
     layers:
