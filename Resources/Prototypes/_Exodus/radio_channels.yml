@@ -1,5 +1,5 @@
 - type: radioChannel
-  id: DS
+  id: DeathSquad
   name: chat-radio-deathsquad
   keycode: 'э'
   frequency: 2654
