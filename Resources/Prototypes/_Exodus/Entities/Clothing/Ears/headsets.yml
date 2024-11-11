@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetDS
+  name: death squad headset
+  description: Death squad headset.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyDS
+      - EncryptionKeyStationMaster
+      - EncryptionKeyCentCom
+  - type: Sprite
+    sprite: Exodus/Clothing/Ears/Headsets/death_squad.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Ears/Headsets/death_squad.rsi

@@ -1,0 +1,14 @@
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyDS
+  name: death squad encryption key.
+  description: The encryption key of the death-bringers.
+  components:
+  - type: EncryptionKey
+    channels:
+    - DeathSquad
+    defaultChannel: DS
+  - type: Sprite
+    layers:
+    - state: crypt_blue
+    - state: nano_label

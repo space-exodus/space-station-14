@@ -1,0 +1,55 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltDS
+  name: death squad assault belt
+  description: An assault belt that can hold ammunition or other murderous items.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/assault.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/assault.rsi
+
+- type: entity
+  parent: ClothingBeltDS
+  id: ClothingBeltDSOfficer
+  name: death squad assault belt
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineMagnumSubMachineGunPiercing
+        amount: 6
+      - id: Handcuffs
+        amount: 2
+
+- type: entity
+  parent: ClothingBeltDS
+  id: ClothingBeltDSCommander
+  name: death squad assault belt
+  components:
+  - type: StorageFill
+    contents:
+    - id: GrenadeFlashBang
+    - id: TearGasGrenade
+    - id: Handcuffs
+      amount: 2
+    - id: WeaponTaser
+    - id: Tourniquet
+      amount: 2
+
+- type: entity
+  parent: ClothingBeltDS
+  id: ClothingBeltDSSpecialist
+  name: death squad assault belt
+  components:
+  - type: StorageFill
+    contents:
+      - id: EpinephrineChemistryBottle
+        amount: 2
+      - id: EphedrineChemistryBottle
+        amount: 2
+      - id: OmnizineChemistryBottle
+        amount: 2
+      - id: MedkitCombatFilled
+      - id: Hypospray
+      - id: EmergencyMedipenDS
+        amount: 4
