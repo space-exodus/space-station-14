@@ -6,7 +6,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Rattle
-      radioChannel: "DS"
+      radioChannel: "DeathSquad"
     - type: TriggerOnMobstateChange
       mobState:
       - Critical
