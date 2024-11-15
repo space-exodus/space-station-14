@@ -1,9 +1,0 @@
-- type: entity
-  name: frezon gas miner
-  parent: GasMinerBase
-  id: GasMinerFrezon
-  suffix: DON'T MAP
-  components:
-    - type: GasMiner
-      maxExternalPressure: 4500
-      spawnGas: Frezon

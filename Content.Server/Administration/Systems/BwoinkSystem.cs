@@ -647,7 +647,7 @@ namespace Content.Server.Administration.Systems
                 return;
             }
 
-            if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey, message.Text) != RateLimitStatus.Allowed) // Exodus-ChatRestrictions
+            if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
                 return;
 
             var escapedText = FormattedMessage.EscapeText(message.Text);

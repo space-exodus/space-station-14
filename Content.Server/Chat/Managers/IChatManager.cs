@@ -47,6 +47,6 @@ namespace Content.Server.Chat.Managers
         /// </summary>
         /// <param name="player">The player sending a chat message.</param>
         /// <returns>False if the player has violated rate limits and should be blocked from sending further messages.</returns>
-        RateLimitStatus HandleRateLimit(ICommonSession player, string message); // Exodus-ChatRestrictions
+        RateLimitStatus HandleRateLimit(ICommonSession player);
     }
 }

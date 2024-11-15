@@ -191,7 +191,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
         }
 
-        if (player != null && _chatManager.HandleRateLimit(player, message) != RateLimitStatus.Allowed) // Exodus-ChatRestrictions
+        if (player != null && _chatManager.HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // Sus
@@ -319,7 +319,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (!CanSendInGame(message, shell, player))
             return;
 
-        if (player != null && _chatManager.HandleRateLimit(player, message) != RateLimitStatus.Allowed) // Exodus-ChatRestrictions
+        if (player != null && _chatManager.HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // It doesn't make any sense for a non-player to send in-game OOC messages, whereas non-players may be sending
@@ -585,7 +585,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             var nameEv = new TransformSpeakerNameEvent(source, Name(source));
             RaiseLocalEvent(source, nameEv);
-            name = nameEv.Name;
+            name = nameEv.VoiceName;
         }
 
         name = FormattedMessage.EscapeText(name);

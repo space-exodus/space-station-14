@@ -1,16 +1,18 @@
-﻿using System.Numerics;
+﻿// Taken from https://github.com/space-exodus/space-station-14/blob/e0174a7cb79c080db69a12c0c36121830df30f9d/Content.Client/Movement/Systems/WaddleAnimationSystem.cs
+using System.Numerics;
 using Content.Client.Buckle;
 using Content.Client.Gravity;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Components;
-using Content.Shared.Movement.Systems;
 using Content.Shared.Standing; // Exodus-Crawling
 using Robust.Client.Animations;
 using Robust.Client.GameObjects;
 using Robust.Shared.Animations;
+using Content.Shared.Exodus.Movement.Components;
+using Content.Shared.Exodus.Movement.Systems;
 
-namespace Content.Client.Movement.Systems;
+namespace Content.Client.Exodus.Movement.Systems;
 
 public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
 {

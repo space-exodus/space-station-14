@@ -31,8 +31,8 @@ internal sealed partial class ChatManager
         SendAdminAlert(Loc.GetString("chat-manager-rate-limit-admin-announcement", ("player", player.Name)));
     }
 
-    public RateLimitStatus HandleRateLimit(ICommonSession player, string message) // Exodus-ChatRestrictions
+    public RateLimitStatus HandleRateLimit(ICommonSession player)
     {
-        return _rateLimitManager.CountAction(player, RateLimitKey, message); // Exodus-ChatRestrictions
+        return _rateLimitManager.CountAction(player, RateLimitKey);
     }
 }

@@ -209,7 +209,7 @@ internal sealed partial class ChatManager : IChatManager
     /// <param name="type">The type of message.</param>
     public void TrySendOOCMessage(ICommonSession player, string message, OOCChatType type)
     {
-        if (HandleRateLimit(player, message) != RateLimitStatus.Allowed) // Exodus-ChatRestrictions
+        if (HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // Check if message exceeds the character limit

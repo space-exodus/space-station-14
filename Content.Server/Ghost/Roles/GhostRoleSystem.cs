@@ -211,7 +211,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
         var newMind = _mindSystem.CreateMind(player.UserId,
             EntityManager.GetComponent<MetaDataComponent>(spawned).EntityName);
-        _roleSystem.MindAddRole(newMind, new GhostRoleMarkerRoleComponent { Name = role.RoleName });
+        _roleSystem.MindAddRole(newMind, "MindRoleGhostMarker");
 
         _mindSystem.SetUserId(newMind, player.UserId);
         _mindSystem.TransferTo(newMind, spawned);

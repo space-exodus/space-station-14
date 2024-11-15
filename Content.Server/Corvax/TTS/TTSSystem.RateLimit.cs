@@ -30,6 +30,6 @@ public sealed partial class TTSSystem
 
     private RateLimitStatus HandleRateLimit(ICommonSession player)
     {
-        return _rateLimitManager.CountAction(player, RateLimitKey, null);
+        return _rateLimitManager.CountAction(player, RateLimitKey);
     }
 }

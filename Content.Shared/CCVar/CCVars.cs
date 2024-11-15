@@ -963,7 +963,7 @@ namespace Content.Shared.CCVar
         /// </summary>
         /// <seealso cref="AhelpRateLimitPeriod"/>
         public static readonly CVarDef<int> AhelpRateLimitCount =
-            CVarDef.Create("ahelp.rate_limit_count", 2450, CVar.SERVERONLY); // Exodus-ChatRestrictions
+            CVarDef.Create("ahelp.rate_limit_count", 10, CVar.SERVERONLY);
 
         /// <summary>
         /// Should the administrator's position be displayed in ahelp.

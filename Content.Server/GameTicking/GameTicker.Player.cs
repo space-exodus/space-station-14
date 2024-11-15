@@ -1,4 +1,3 @@
-using Content.Corvax.Interfaces.Server;
 using System.Linq;
 using Content.Server.Database;
 using Content.Shared.Administration;
@@ -59,10 +58,6 @@ namespace Content.Server.GameTicking
                         }
 
                         var record = await _db.GetPlayerRecordByUserId(args.Session.UserId);
-                        var firstConnection = record != null &&
-                                              Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 1;
-
-                        var record = await _dbManager.GetPlayerRecordByUserId(args.Session.UserId);
                         var firstConnection = record != null &&
                                               Math.Abs((record.FirstSeenTime - record.LastSeenTime).TotalMinutes) < 1;
 

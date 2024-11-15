@@ -1,5 +1,4 @@
-﻿using System.Linq; // Exodus-ChatRestrictions
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 using Content.Server.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Players.RateLimiting;
@@ -22,7 +21,7 @@ public sealed class PlayerRateLimitManager : SharedPlayerRateLimitManager
     private readonly Dictionary<string, RegistrationData> _registrations = new();
     private readonly Dictionary<ICommonSession, Dictionary<string, RateLimitDatum>> _rateLimitData = new();
 
-    public override RateLimitStatus CountAction(ICommonSession player, string key, string? message) // Exodus-ChatRestrictions
+    public override RateLimitStatus CountAction(ICommonSession player, string key)
     {
         if (player.Status == SessionStatus.Disconnected)
             throw new ArgumentException("Player is not connected");
@@ -40,18 +39,7 @@ public sealed class PlayerRateLimitManager : SharedPlayerRateLimitManager
             datum.Announced = false;
         }
 
-        // Exodus-ChatRestrictions-Start
-        if (message != null)
-        {
-            var characters = message.Count((ch) => char.IsLetterOrDigit(ch) || char.IsWhiteSpace(ch));
-            datum.Count += characters;
-        }
-        else
-        {
-            datum.Count++;
-        }
-
-        // Exodus-ChatRestrictions-End
+        datum.Count += 1;
 
         if (datum.Count <= registration.LimitCount)
             return RateLimitStatus.Allowed;
