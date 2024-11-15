@@ -132,7 +132,7 @@ public sealed class TemperatureSystem : EntitySystem
     public void ChangeHeat(EntityUid uid, float heatAmount, bool ignoreHeatResistance = false,
         TemperatureComponent? temperature = null)
     {
-        if (!Resolve(uid, ref temperature))
+        if (!Resolve(uid, ref temperature, false))
             return;
 
         if (!ignoreHeatResistance)
@@ -313,7 +313,7 @@ public sealed class TemperatureSystem : EntitySystem
 
     private void ChangeTemperatureOnCollide(Entity<ChangeTemperatureOnCollideComponent> ent, ref ProjectileHitEvent args)
     {
-        _temperature.ChangeHeat(args.Target, ent.Comp.Heat, ent.Comp.IgnoreHeatResistance);// adjust the temperature 
+        _temperature.ChangeHeat(args.Target, ent.Comp.Heat, ent.Comp.IgnoreHeatResistance);// adjust the temperature
     }
 
     // Exodus-NakedTemperatureProtection-Start

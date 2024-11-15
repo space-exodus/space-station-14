@@ -121,6 +121,11 @@
   - type: Grammar
     attributes:
       gender: male
+  - type: Sharp
+# Exodus TODO: Find a cool replacement when TTS will be enabled again
+# - type: TTS # Corvax-TTS
+#    voice: Rat
+# Exodus
 
 - type: entity
   id: MobRatKingBuff

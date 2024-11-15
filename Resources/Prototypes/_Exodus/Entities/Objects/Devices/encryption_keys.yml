@@ -7,7 +7,7 @@
   - type: EncryptionKey
     channels:
     - DeathSquad
-    defaultChannel: DS
+    defaultChannel: DeathSquad
   - type: Sprite
     layers:
     - state: crypt_blue

@@ -13,6 +13,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Mind;
+using Content.Shared.Players.RateLimiting;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -208,7 +209,7 @@ internal sealed partial class ChatManager : IChatManager
     /// <param name="type">The type of message.</param>
     public void TrySendOOCMessage(ICommonSession player, string message, OOCChatType type)
     {
-        if (HandleRateLimit(player, message) != RateLimitStatus.Allowed) // Exodus-ChatRestrictions
+        if (HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // Check if message exceeds the character limit

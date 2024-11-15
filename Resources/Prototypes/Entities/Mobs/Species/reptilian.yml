@@ -30,7 +30,7 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
-    allowedEmotes: ['Growl', 'Rumble', 'Whip'] # Exodus-EmotesSounds
+    allowedEmotes: ['Thump', 'Growl', 'Rumble'] # Exodus-EmotesSounds
   - type: TypingIndicator
     proto: lizard
   - type: Vocal
@@ -38,6 +38,8 @@
       Male: MaleReptilian
       Female: FemaleReptilian
       Unsexed: MaleReptilian
+  - type: BodyEmotes
+    soundsId: ReptilianBodyEmotes
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Scale

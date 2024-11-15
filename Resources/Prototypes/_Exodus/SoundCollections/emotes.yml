@@ -103,12 +103,6 @@
     - /Audio/Exodus/Voice/Reptilian/rumble2.ogg
 
 - type: soundCollection
-  id: ReptilianWhip
-  files:
-    - /Audio/Exodus/Voice/Reptilian/whip_short.ogg
-    - /Audio/Exodus/Voice/Reptilian/whip.ogg
-
-- type: soundCollection
   id: CatRumble
   files:
     - /Audio/Exodus/Voice/Felinid/cat_purr.ogg
