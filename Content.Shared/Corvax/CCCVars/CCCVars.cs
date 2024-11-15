@@ -53,8 +53,8 @@ public sealed class CCCVars
     /// Tts rate limit values are accounted in periods of this size (seconds).
     /// After the period has passed, the count resets.
     /// </summary>
-    public static readonly CVarDef<int> TTSRateLimitPeriod =
-        CVarDef.Create("tts.rate_limit_period", 1, CVar.SERVERONLY);
+    public static readonly CVarDef<float> TTSRateLimitPeriod =
+        CVarDef.Create("tts.rate_limit_period", 2f, CVar.SERVERONLY);
 
     /// <summary>
     /// How many tts preview messages are allowed in a single rate limit period.
@@ -72,17 +72,13 @@ public sealed class CCCVars
     public static readonly CVarDef<bool>
         QueueEnabled = CVarDef.Create("queue.enabled", false, CVar.SERVERONLY);
 
-    // Exodus-DisableStationGoal-Start
-
-    /**
-     * Station goal
+    /*
+     * Station Goal
      */
 
     /// <summary>
-    ///     Controls if round start station goal sending is enabled. `sendstationgoal` command still works even if this value set to false
+    /// Send station goal on round start or not.
     /// </summary>
-    public static readonly CVarDef<bool>
-        StationGoalEnabled = CVarDef.Create("game.station_goal", true, CVar.SERVERONLY);
-
-    // Exodus-DisableStationGoal-End
+    public static readonly CVarDef<bool> StationGoal =
+        CVarDef.Create("game.station_goal", true, CVar.SERVERONLY);
 }

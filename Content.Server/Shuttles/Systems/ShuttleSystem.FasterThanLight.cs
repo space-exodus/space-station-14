@@ -226,20 +226,29 @@ public sealed partial class ShuttleSystem
     /// </summary>
     public bool CanFTL(EntityUid shuttleUid, [NotNullWhen(false)] out string? reason)
     {
+        // Currently in FTL already
         if (HasComp<FTLComponent>(shuttleUid))
         {
             reason = Loc.GetString("shuttle-console-in-ftl");
             return false;
         }
 
-        // Exodus-DynamicFTLMass-start
-        if (TryComp(shuttleUid, out PhysicsComponent? shuttlePhysics) &&
-            TryComp<ShuttleComponent>(shuttleUid, out var shuttleComp) &&
-            shuttlePhysics.Mass > CalculateFTLMassLimit(shuttleUid, shuttleComp))
-        // Exodus-DynamicFTLMass-end
+        if (TryComp<PhysicsComponent>(shuttleUid, out var shuttlePhysics))
         {
-            reason = Loc.GetString("shuttle-console-mass");
-            return false;
+            // Static physics type is set when station anchor is enabled
+            if (shuttlePhysics.BodyType == BodyType.Static)
+            {
+                reason = Loc.GetString("shuttle-console-static");
+                return false;
+            }
+
+            // Too large to FTL
+            if (TryComp<ShuttleComponent>(shuttleUid, out var shuttleComp) && shuttlePhysics.Mass > CalculateFTLMassLimit(shuttleUid, shuttleComp) && // Exodus-DynamicFTLMass
+                FTLMassLimit > 0 &&  shuttlePhysics.Mass > FTLMassLimit)
+            {
+                reason = Loc.GetString("shuttle-console-mass");
+                return false;
+            }
         }
 
         if (HasComp<PreventPilotComponent>(shuttleUid))

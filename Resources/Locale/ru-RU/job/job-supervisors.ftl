@@ -11,5 +11,5 @@ job-supervisors-engineering = Инженерам, Атмосферным тех�
 job-supervisors-medicine = Врачам, Химикам, и Главному Врачу
 job-supervisors-security = Офицерам, Смотрителю, и Главе Службы Безопасности
 job-supervisors-science = Учёным, Научному Руководителю
-job-supervisors-hire = Своим нанимателям
-job-supervisors-everyone = Вообще всем
+job-supervisors-hire = своим нанимателям
+job-supervisors-everyone = вообще всем
