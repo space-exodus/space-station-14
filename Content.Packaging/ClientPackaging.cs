@@ -87,7 +87,7 @@ public static class ClientPackaging
         var inputPass = graph.Input;
 
         // Exodus-Secrets-Start: Add Corvax interfaces to Magic ACZ
-        var assemblies = new List<string> { "Content.Client", "Content.Shared", "Content.Shared.Database", "Content.Exodus.Interfaces.Client", "Content.Exodus.Interfaces.Shared" };
+        var assemblies = new List<string> { "Content.Client", "Content.Shared", "Content.Shared.Database" };
         if (UseSecrets)
             assemblies.AddRange(["Content.Exodus.Shared", "Content.Exodus.Client"]);
         // Exodus-Secrets-End

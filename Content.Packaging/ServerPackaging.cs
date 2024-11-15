@@ -36,10 +36,6 @@ public static class ServerPackaging
 
     private static readonly List<string> ServerContentAssemblies = new()
     {
-        // Exodus-Secrets-Start
-        "Content.Exodus.Interfaces.Shared",
-        "Content.Exodus.Interfaces.Server",
-        // Exodus-Secrets-End
         "Content.Server.Database",
         "Content.Server",
         "Content.Shared",
