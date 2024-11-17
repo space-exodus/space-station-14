@@ -15,3 +15,37 @@
       deviceNetId: Wireless
     - type: WirelessNetworkConnection
       range: 1000
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ChemicalImplant
+  name: Chemical implant
+  description: Inject to the bloodstream some chemicals
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionChemicalImplant
+  - type: TriggerImplantAction
+  - type: InjectOnTrigger
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: StimulantsImplant
+  name: Stimulants implant
+  description: Inject to the bloodstream some stimulant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionChemicalImplant
+  - type: TriggerImplantAction
+  - type: SolutionContainerManager
+    solutions:
+      sol1:
+        maxVol: 30
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 30
+  - type: InjectOnTrigger
+    solutions:
+    - name: sol1
+      charges: 3
