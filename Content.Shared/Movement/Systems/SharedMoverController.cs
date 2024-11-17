@@ -406,7 +406,8 @@ public abstract partial class SharedMoverController : VirtualController
             return false;
 
         // Exodus-Crawling-And-Flying-Start
-        var ev = new FootstepsSoundAttemtEvent(uid);
+        // Using the event to check all systems
+        var ev = new FootstepsSoundAttemptEvent(uid);
         RaiseLocalEvent(uid, ev);
 
         if (ev.Cancelled)

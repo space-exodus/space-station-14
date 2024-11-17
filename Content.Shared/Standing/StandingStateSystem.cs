@@ -32,7 +32,7 @@ namespace Content.Shared.Standing
         {
             base.Initialize();
 
-            SubscribeLocalEvent<StandingStateComponent, FootstepsSoundAttemtEvent>(OnFootstepsSound);
+            SubscribeLocalEvent<StandingStateComponent, FootstepsSoundAttemptEvent>(OnFootstepsSound); // Exodus - Crawling
             SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiersEvent);
             SubscribeLocalEvent<StandingStateComponent, DownDoAfterEvent>(OnDownDoAfterEvent);
             SubscribeLocalEvent<StandingStateComponent, StandDoAfterEvent>(OnStandDoAfterEvent);
@@ -43,7 +43,7 @@ namespace Content.Shared.Standing
         // Exodus-Crawling-End
 
         // Exodus-Crawling-Start
-        private void OnFootstepsSound(EntityUid uid, StandingStateComponent component, FootstepsSoundAttemtEvent ev)
+        private void OnFootstepsSound(EntityUid uid, StandingStateComponent component, FootstepsSoundAttemptEvent ev)
         {
             if (!component.Standing)
                 return;
