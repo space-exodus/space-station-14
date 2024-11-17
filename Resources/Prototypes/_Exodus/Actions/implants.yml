@@ -1,5 +1,5 @@
 - type: entity
-  id: ActionChemicalCapsule
+  id: ActionChemicalImplant
   name: Inject chemicats into bloodstream
   description: Bring chemicats from small capsules in implant and injure it to bloodstream
   noSpawn: true
