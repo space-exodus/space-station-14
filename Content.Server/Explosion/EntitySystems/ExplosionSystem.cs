@@ -393,7 +393,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
             _map);
     }
 
-    private void CameraShake(float range, MapCoordinates epicenter, float totalIntensity)
+    public void CameraShake(float range, MapCoordinates epicenter, float totalIntensity) // Exodus - Time to fly
     {
         var players = Filter.Empty();
         players.AddInRange(epicenter, range, _playerManager, EntityManager);

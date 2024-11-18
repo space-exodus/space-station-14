@@ -188,8 +188,9 @@ public abstract partial class BaseActionComponent : Component
     [DataField("sound")] public SoundSpecifier? Sound;
 
     // Exodus-Lavaland-Start
-    [DataField("maxUseRange")] public float MaxAIUseRange = float.PositiveInfinity;
-    [DataField("minUseRange")] public float MinAIUseRange = 0;
+    [DataField("maxAIUseRange")] public float MaxAIUseRange = float.PositiveInfinity;
+    [DataField("minAIUseRange")] public float MinAIUseRange = 0;
+    [DataField("useByNPC")] public bool UsableByNPC = true;
     // Exodus-Lavaland-End
 }
 

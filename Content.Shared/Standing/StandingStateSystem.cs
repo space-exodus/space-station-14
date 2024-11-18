@@ -1,5 +1,4 @@
 using Content.Shared.ActionBlocker;
-using Content.Shared.Cuffs;
 using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Movement.Components;
@@ -8,7 +7,6 @@ using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
-using Content.Shared.Pulling;
 using Content.Shared.Rotation;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics;
@@ -34,12 +32,23 @@ namespace Content.Shared.Standing
         {
             base.Initialize();
 
+            SubscribeLocalEvent<StandingStateComponent, FootstepsSoundAttemptEvent>(OnFootstepsSound); // Exodus - Crawling
             SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiersEvent);
             SubscribeLocalEvent<StandingStateComponent, DownDoAfterEvent>(OnDownDoAfterEvent);
             SubscribeLocalEvent<StandingStateComponent, StandDoAfterEvent>(OnStandDoAfterEvent);
             SubscribeLocalEvent<StandingStateComponent, PullStartedMessage>(OnPull);
             SubscribeLocalEvent<StandingStateComponent, PullStoppedMessage>(OnPull);
             SubscribeLocalEvent<StandingStateComponent, UpdateCanMoveEvent>(OnUpdateCanMove);
+        }
+        // Exodus-Crawling-End
+
+        // Exodus-Crawling-Start
+        private void OnFootstepsSound(EntityUid uid, StandingStateComponent component, FootstepsSoundAttemptEvent ev)
+        {
+            if (!component.Standing)
+                return;
+
+            ev.Cancel();
         }
         // Exodus-Crawling-End
 
