@@ -43,6 +43,12 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: goliath
+  # Exodus-Balance-Start
+  - type: PointLight
+    color: "#FF0000"
+    energy: 0.5
+    radius: 2
+  # Exodus-Balance-End
   - type: DamageStateVisuals
     states:
       Alive:
