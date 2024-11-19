@@ -7,6 +7,11 @@
   components:
   - type: HumanoidAppearance
     species: Kidan
+    # Exodus-HideEars-Start
+    hideLayersOnEquip:
+    - HeadTop
+    - Hair
+    # Exodus-HideEars-End
   - type: Hunger
   - type: Thirst
   - type: Icon
