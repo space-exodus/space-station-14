@@ -7,6 +7,12 @@
   components:
   - type: HumanoidAppearance
     species: Vulpkanin
+    # Exodus-HideEars-Start
+    hideLayersOnEquip:
+    - HeadTop
+    - Hair
+    - Snout
+    # Exodus-HideEars-End
   - type: Hunger # on 1.5x more
     thresholds:
       Overfed: 250
