@@ -23,6 +23,7 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "рофл", "chatsan-laughs" },
         { "яхз", "chatsan-shrugs" },
         { ":0", "chatsan-surprised" },
+        // Exodus-Fix | Remove :p replacement for comfy use of default channel shortcut
         { "кек", "chatsan-laughs" },
         { "T_T", "chatsan-cries" },
         { "Т_Т", "chatsan-cries" }, // cyrillic T
