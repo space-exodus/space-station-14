@@ -18,6 +18,11 @@
     - Human
     - Moth
     - Reptilian
+  # Exodus-Emergency-Start
+    - Kidan
+    - Felinid
+    - Vulpkanin
+  # Exodus-Emergency-End
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
