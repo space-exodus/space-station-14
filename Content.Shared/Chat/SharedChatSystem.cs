@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.Text.RegularExpressions;
 using Content.Shared.Popups;
 using Content.Shared.Radio;
 using Content.Shared.Speech;
@@ -22,6 +23,11 @@ public abstract class SharedChatSystem : EntitySystem
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
     public const char DefaultChannelKey = 'р'; // Exodus-Localization
+    // Corvax-TTS-Start: Moved from Server to Shared
+    public const int VoiceRange = 10; // how far voice goes in world units
+    public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
+    public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    // Corvax-TTS-End
 
     [ValidatePrototypeId<RadioChannelPrototype>]
     public const string CommonChannel = "Common";
@@ -81,6 +87,35 @@ public abstract class SharedChatSystem : EntitySystem
 
         // if no applicable suffix verb return the normal one used by the entity
         return current ?? _prototypeManager.Index<SpeechVerbPrototype>(speech.SpeechVerb);
+    }
+
+    /// <summary>
+    /// Splits the input message into a radio prefix part and the rest to preserve it during sanitization.
+    /// </summary>
+    /// <remarks>
+    /// This is primarily for the chat emote sanitizer, which can match against ":b" as an emote, which is a valid radio keycode.
+    /// </remarks>
+    public void GetRadioKeycodePrefix(EntityUid source,
+        string input,
+        out string output,
+        out string prefix)
+    {
+        prefix = string.Empty;
+        output = input;
+
+        // If the string is less than 2, then it's probably supposed to be an emote.
+        // No one is sending empty radio messages!
+        if (input.Length <= 2)
+            return;
+
+        if (!(input.StartsWith(RadioChannelPrefix) || input.StartsWith(RadioChannelAltPrefix)))
+            return;
+
+        if (!_keyCodes.TryGetValue(char.ToLower(input[1]), out _))
+            return;
+
+        prefix = input[..2];
+        output = input[2..];
     }
 
     /// <summary>
@@ -237,6 +272,18 @@ public abstract class SharedChatSystem : EntitySystem
 
         return rawmsg;
     }
+
+    /// <summary>
+    /// Injects a tag around all found instances of a specific string in a ChatMessage.
+    /// Excludes strings inside other tags and brackets.
+    /// </summary>
+    public static string InjectTagAroundString(ChatMessage message, string targetString, string tag, string? tagParameter)
+    {
+        var rawmsg = message.WrappedMessage;
+        rawmsg = Regex.Replace(rawmsg, "(?i)(" + targetString + ")(?-i)(?![^[]*])", $"[{tag}={tagParameter}]$1[/{tag}]");
+        return rawmsg;
+    }
+
     public static string GetStringInsideTag(ChatMessage message, string tag)
     {
         var rawmsg = message.WrappedMessage;

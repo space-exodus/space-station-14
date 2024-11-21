@@ -11,6 +11,7 @@ using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
+using Content.Shared.Corvax.CCCVars; // Corvax-TTS
 using Content.Shared.GameTicking;
 using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
@@ -98,7 +99,10 @@ namespace Content.Client.Lobby.UI
 
         [ValidatePrototypeId<GuideEntryPrototype>]
         private const string DefaultSpeciesGuidebook = "Species";
-
+        // Exodus-Mindset-Start
+        [ValidatePrototypeId<GuideEntryPrototype>]
+        private const string MindsetGuidebook = "Mindset";
+        // Exodus-Mindset-End
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
         private ISawmill _sawmill;
@@ -209,6 +213,18 @@ namespace Content.Client.Lobby.UI
             };
 
             #endregion Gender
+
+            // Corvax-TTS-Start
+            #region Voice
+
+            if (configurationManager.GetCVar(CCCVars.TTSEnabled))
+            {
+                TTSContainer.Visible = true;
+                InitializeVoice();
+            }
+
+            #endregion
+            // Corvax-TTS-End
 
             RefreshSpecies();
 
@@ -371,6 +387,18 @@ namespace Content.Client.Lobby.UI
             #endregion Eyes
 
             #endregion Appearance
+
+            // Exodus-Mindset-Start
+            #region Mindset
+            MindsetButton.OnItemSelected += args =>
+            {
+                MindsetButton.SelectId(args.Id);
+                SetMindset((Mindset)args.Id);
+            };
+            MindsetInfoButton.OnPressed += OnMindsetInfoButtonPressed;
+
+            #endregion Mindset
+            // Exodus-Mindset-End
 
             #region Jobs
 
@@ -718,6 +746,9 @@ namespace Content.Client.Lobby.UI
             PreviewDummy = _controller.LoadProfileEntity(Profile, JobOverride, ShowClothes.Pressed);
             SpriteView.SetEntity(PreviewDummy);
             _entManager.System<MetaDataSystem>().SetEntityName(PreviewDummy, Profile.Name);
+
+            // Check and set the dirty flag to enable the save/reset buttons as appropriate.
+            SetDirty();
         }
 
         /// <summary>
@@ -743,6 +774,7 @@ namespace Content.Client.Lobby.UI
             UpdateNameEdit();
             UpdateFlavorTextEdit();
             UpdateSexControls();
+            UpdateMindsetControls(); // Exodus-Mindset
             UpdateGenderControls();
             UpdateSkinColor();
             UpdateSpawnPriorityControls();
@@ -750,6 +782,7 @@ namespace Content.Client.Lobby.UI
             UpdateEyePickers();
             UpdateSaveButton();
             UpdateMarkings();
+            UpdateTTSVoicesControls(); // Corvax-TTS
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
@@ -778,6 +811,9 @@ namespace Content.Client.Lobby.UI
                 return;
 
             _entManager.System<HumanoidAppearanceSystem>().LoadProfile(PreviewDummy, Profile);
+
+            // Check and set the dirty flag to enable the save/reset buttons as appropriate.
+            SetDirty();
         }
 
         private void OnSpeciesInfoButtonPressed(BaseButton.ButtonEventArgs args)
@@ -1014,7 +1050,6 @@ namespace Content.Client.Lobby.UI
                 roleLoadout.AddLoadout(loadoutGroup, loadoutProto, _prototypeManager);
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
-                SetDirty();
                 ReloadPreview();
             };
 
@@ -1023,7 +1058,6 @@ namespace Content.Client.Lobby.UI
                 roleLoadout.RemoveLoadout(loadoutGroup, loadoutProto, _prototypeManager);
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
-                SetDirty();
                 ReloadPreview();
             };
 
@@ -1033,7 +1067,6 @@ namespace Content.Client.Lobby.UI
             _loadoutWindow.OnClose += () =>
             {
                 JobOverride = null;
-                SetDirty();
                 ReloadPreview();
             };
 
@@ -1058,7 +1091,6 @@ namespace Content.Client.Lobby.UI
                 return;
 
             Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithMarkings(markings.GetForwardEnumerator().ToList()));
-            SetDirty();
             ReloadProfilePreview();
         }
 
@@ -1126,7 +1158,6 @@ namespace Content.Client.Lobby.UI
                 }
             }
 
-            SetDirty();
             ReloadProfilePreview();
         }
 
@@ -1157,7 +1188,6 @@ namespace Content.Client.Lobby.UI
         {
             Profile = Profile?.WithAge(newAge);
             ReloadPreview();
-            SetDirty();
         }
 
         private void SetSex(Sex newSex)
@@ -1178,17 +1208,45 @@ namespace Content.Client.Lobby.UI
             }
 
             UpdateGenderControls();
+            UpdateTTSVoicesControls(); // Corvax-TTS
             Markings.SetSex(newSex);
             ReloadPreview();
-            SetDirty();
         }
+
+        // Exodus-Mindset-Start
+        private void SetMindset(Mindset newMindset)
+        {
+            Profile = Profile?.WithMindset(newMindset);
+            ReloadPreview();
+        }
+
+        private void OnMindsetInfoButtonPressed(BaseButton.ButtonEventArgs args)
+        {
+            var guidebookController = UserInterfaceManager.GetUIController<GuidebookUIController>();
+
+            if (_prototypeManager.TryIndex<GuideEntryPrototype>(MindsetGuidebook, out var guideRoot))
+            {
+                var dict = new Dictionary<ProtoId<GuideEntryPrototype>, GuideEntry>();
+                dict.Add(MindsetGuidebook, guideRoot);
+                //TODO: Don't close the guidebook if its already open, just go to the correct page
+                guidebookController.OpenGuidebook(dict, includeChildren: true, selected: MindsetGuidebook);
+            }
+        }
+        // Exodus-Mindset-End
 
         private void SetGender(Gender newGender)
         {
             Profile = Profile?.WithGender(newGender);
             ReloadPreview();
-            SetDirty();
         }
+
+        // Corvax-TTS-Start
+        private void SetVoice(string newVoice)
+        {
+            Profile = Profile?.WithVoice(newVoice);
+            IsDirty = true;
+        }
+        // Corvax-TTS-End
 
         private void SetSpecies(string newSpecies)
         {
@@ -1201,7 +1259,6 @@ namespace Content.Client.Lobby.UI
             RefreshLoadouts();
             UpdateSexControls(); // update sex for new species
             UpdateSpeciesGuidebookIcon();
-            SetDirty();
             ReloadPreview();
         }
 
@@ -1298,6 +1355,24 @@ namespace Content.Client.Lobby.UI
             else
                 SexButton.SelectId((int) sexes[0]);
         }
+
+        // Exodus-Mindset-Start
+        private void UpdateMindsetControls()
+        {
+            if (Profile == null)
+                return;
+
+            MindsetButton.Clear();
+
+            // add button for each mindset
+            foreach (var mindset in Enum.GetValues<Mindset>())
+            {
+                MindsetButton.AddItem(Loc.GetString($"humanoid-profile-editor-mindset-{mindset.ToString().ToLower()}-text"), (int)mindset);
+            }
+
+            MindsetButton.SelectId((int)Profile.Mindset);
+        }
+        // Exodus-Mindset-End
 
         private void UpdateSkinColor()
         {

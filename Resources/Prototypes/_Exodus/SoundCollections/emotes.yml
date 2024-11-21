@@ -1,3 +1,4 @@
+#region Kidans
 - type: soundCollection
   id: KidanSpeaks
   files:
@@ -16,7 +17,7 @@
 - type: soundCollection
   id: KidanCough
   files:
-  - /Audio/Exodus/Voice/Kidan/cough1.ogg
+    - /Audio/Exodus/Voice/Kidan/cough1.ogg
 
 - type: soundCollection
   id: KidanScream
@@ -28,45 +29,81 @@
 - type: soundCollection
   id: KidanLaugh
   files:
-  - /Audio/Exodus/Voice/Kidan/laugh1.ogg
-  - /Audio/Exodus/Voice/Kidan/laugh2.ogg
-  - /Audio/Exodus/Voice/Kidan/laugh3.ogg
-  - /Audio/Exodus/Voice/Kidan/laugh4.ogg
-  - /Audio/Exodus/Voice/Kidan/giggles1.ogg
-  - /Audio/Exodus/Voice/Kidan/giggles2.ogg
+    - /Audio/Exodus/Voice/Kidan/laugh1.ogg
+    - /Audio/Exodus/Voice/Kidan/laugh2.ogg
+    - /Audio/Exodus/Voice/Kidan/laugh3.ogg
+    - /Audio/Exodus/Voice/Kidan/laugh4.ogg
+    - /Audio/Exodus/Voice/Kidan/giggles1.ogg
+    - /Audio/Exodus/Voice/Kidan/giggles2.ogg
 
 - type: soundCollection
   id: KidanSigh
   files:
-  - /Audio/Exodus/Voice/Kidan/sigh1.ogg
-  - /Audio/Exodus/Voice/Kidan/sigh2.ogg
+    - /Audio/Exodus/Voice/Kidan/sigh1.ogg
+    - /Audio/Exodus/Voice/Kidan/sigh2.ogg
 
 - type: soundCollection
   id: KidanCry
   files:
-  - /Audio/Exodus/Voice/Kidan/cry1.ogg
+    - /Audio/Exodus/Voice/Kidan/cry1.ogg
 
 - type: soundCollection
   id: KidanGrumble
   files:
-  - /Audio/Exodus/Voice/Kidan/grumble1.ogg
-  - /Audio/Exodus/Voice/Kidan/grumble2.ogg
-  - /Audio/Exodus/Voice/Kidan/grumble3.ogg
+    - /Audio/Exodus/Voice/Kidan/grumble1.ogg
+    - /Audio/Exodus/Voice/Kidan/grumble2.ogg
+    - /Audio/Exodus/Voice/Kidan/grumble3.ogg
 
 - type: soundCollection
   id: KidanMoan
   files:
-  - /Audio/Exodus/Voice/Kidan/moan1.ogg
+    - /Audio/Exodus/Voice/Kidan/moan1.ogg
 
 - type: soundCollection
   id: KidanWigglesAtennae
   files:
-  - /Audio/Exodus/Voice/Kidan/wiggles_antennae1.ogg
-  - /Audio/Exodus/Voice/Kidan/wiggles_antennae2.ogg
-  - /Audio/Exodus/Voice/Kidan/wiggles_antennae3.ogg
+    - /Audio/Exodus/Voice/Kidan/wiggles_antennae1.ogg
+    - /Audio/Exodus/Voice/Kidan/wiggles_antennae2.ogg
+    - /Audio/Exodus/Voice/Kidan/wiggles_antennae3.ogg
 
 - type: soundCollection
   id: KidanWavesAntennaeSharply
   files:
-  - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply1.ogg
-  - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply2.ogg
+    - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply1.ogg
+    - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply2.ogg
+
+#region Reptilian
+- type: soundCollection
+  id: ReptilianScreamFemale
+  files:
+    - /Audio/Exodus/Voice/Reptilian/f_scream.ogg
+    - /Audio/Exodus/Voice/Reptilian/f_scream2.ogg
+    - /Audio/Voice/Reptilian/reptilian_scream.ogg
+
+- type: soundCollection
+  id: ReptilianScreamMale
+  files:
+    - /Audio/Exodus/Voice/Reptilian/m_scream.ogg
+    - /Audio/Exodus/Voice/Reptilian/m_scream2.ogg
+    - /Audio/Voice/Reptilian/reptilian_scream.ogg
+
+- type: soundCollection
+  id: ReptilianGrowl
+  files:
+    - /Audio/Exodus/Voice/Reptilian/roar.ogg
+    - /Audio/Exodus/Voice/Reptilian/roar2.ogg
+    - /Audio/Exodus/Voice/Reptilian/roar3.ogg
+    - /Audio/Exodus/Voice/Reptilian/threat.ogg
+    - /Audio/Exodus/Voice/Reptilian/threat2.ogg
+
+- type: soundCollection
+  id: ReptilianRumble
+  files:
+    - /Audio/Exodus/Voice/Reptilian/rumble.ogg
+    - /Audio/Exodus/Voice/Reptilian/rumble2.ogg
+
+- type: soundCollection
+  id: CatRumble
+  files:
+    - /Audio/Exodus/Voice/Felinid/cat_purr.ogg
+    - /Audio/Exodus/Voice/Felinid/cat_purr_long.ogg

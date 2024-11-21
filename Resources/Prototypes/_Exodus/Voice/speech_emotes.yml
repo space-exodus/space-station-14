@@ -1,3 +1,4 @@
+#region General
 - type: emote
   id: Grumble
   name: chat-emote-name-grumble
@@ -17,6 +18,21 @@
     - ворчит.
     - ворчит!
 
+- type: emote
+  id: Rumble
+  name: chat-emote-name-rumble
+  category: Vocal
+  available: false
+  chatMessages: [урчит.]
+  chatTriggers:
+    - урчит
+    - урчит.
+    - урчит!
+    - мурчит
+    - мурчит.
+    - мурчит!
+
+#region Kidan
 - type: emote
   id: WigglesAntennae
   name: chat-emote-name-wiggle-antennae
@@ -59,3 +75,4 @@
     - резко машет антенками
     - резко машет антенками.
     - резко машет антенками!
+#region Reptilian

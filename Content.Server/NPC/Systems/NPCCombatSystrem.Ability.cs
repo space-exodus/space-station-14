@@ -45,11 +45,11 @@ public sealed partial class NPCCombatSystem
 
         while (query.MoveNext(out var uid, out var comp, out _))
         {
-            CastAction(uid, comp, curTime, physicsQuery, xformQuery);
+            CastActions(uid, comp, curTime, physicsQuery, xformQuery);
         }
     }
 
-    private void CastAction(EntityUid uid, NPCAbilityCombatComponent combatComp, TimeSpan curTime, EntityQuery<PhysicsComponent> physicsQuery, EntityQuery<TransformComponent> xformQuery)
+    private void CastActions(EntityUid uid, NPCAbilityCombatComponent combatComp, TimeSpan curTime, EntityQuery<PhysicsComponent> physicsQuery, EntityQuery<TransformComponent> xformQuery)
     {
         combatComp.Status = AbilityCombatStatus.Normal;
 
@@ -129,7 +129,7 @@ public sealed partial class NPCCombatSystem
         if (!_actions.TryGetActionData(actionUid, out var action))
             return false;
 
-        if (!action.Enabled)
+        if (!action.Enabled || !action.UsableByNPC)
             return false;
 
         // check for action use prevention

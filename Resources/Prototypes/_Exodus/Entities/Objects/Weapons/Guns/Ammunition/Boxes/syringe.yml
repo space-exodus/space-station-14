@@ -1,0 +1,91 @@
+- type: entity
+  name: box of throwing syringes
+  parent: BoxCardboard
+  id: BoxSyringeAmmo
+  description: Box full of fun.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmo
+        amount: 9
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Boxes/box_syringe.rsi
+    layers:
+      - state: box
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: Polytrinic Acid
+  id: BoxSyringeAmmoPolytrinic
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoPolytrinic
+        amount: 9
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: Lexorin
+  id: BoxSyringeAmmoLexorin
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoLexorin
+        amount: 9
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: ChloralHydrate
+  id: BoxSyringeAmmoChloral
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoChloral
+        amount: 9
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: Romerol
+  id: BoxSyringeAmmoRomerol
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoRomerol
+        amount: 9
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: Lead
+  id: BoxSyringeAmmoLead
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoLead
+        amount: 9
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: Pax
+  id: BoxSyringeAmmoPax
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoPax
+        amount: 9
+
+- type: entity
+  name: box of throwing syringes
+  parent: BoxSyringeAmmo
+  suffix: Norepinephric Acid
+  id: BoxSyringeAmmoNorepinephric
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyringeAmmoNorepinephric
+        amount: 9

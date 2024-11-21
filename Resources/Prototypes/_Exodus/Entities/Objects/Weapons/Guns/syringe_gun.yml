@@ -1,0 +1,40 @@
+- type: entity
+  parent: WeaponImprovisedPneumaticCannon
+  name: multi-shot syringe gun
+  id: DSSyringeGun
+  description: multi-shot syringe gun, allowing the substance to be administered at a distance.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/syringegun.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Huge
+  - type: PneumaticCannon
+    throwItems: false
+    gasUsage: 0
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/pew.ogg
+    soundEmpty:
+      path: /Audio/Exodus/Weapons/Guns/Syringe_gun/empty.ogg
+  - type: Storage
+    storageOpenSound: /Audio/Exodus/Weapons/Guns/Syringe_gun/loading2.ogg
+    storageCloseSound: /Audio/Exodus/Weapons/Guns/Syringe_gun/loading3.ogg
+    storageInsertSound: /Audio/Exodus/Weapons/Guns/Syringe_gun/loading.ogg
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,2
+    whitelist:
+      tags:
+        - SyringeBullet
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/syringegun.rsi
+    quickEquip: false
+    slots:
+    - suitStorage

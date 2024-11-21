@@ -4,45 +4,66 @@
   priority: 0
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/MrpRuleset.xml"
   children:
-  - ExodusRule0
-  - ExodusRule1
-  - ExodusRule2
-  - ExodusRule3
-  - ExodusRule4
-  - ExodusRule5
+    - ExodusRule0
+    - ExodusRule1
+    - ExodusRule2
+    - ExodusRule23
+    - ExodusRule24
+    - ExodusRule25
+    - ExodusRule3
+    - ExodusRule4
+    - ExodusRule5
 
 - type: guideEntry
   id: ExodusRule0
-  name: Правило 0
+  name: "0. Не будь мудаком"
   priority: 1
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule0.xml"
 
 - type: guideEntry
   id: ExodusRule1
-  name: Правило 1
+  name: "1. Порча игрового процесса"
   priority: 2
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule1.xml"
 
 - type: guideEntry
   id: ExodusRule2
-  name: Правило 2
+  name: "2. Отыгрыш персонажа"
   priority: 3
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule2.xml"
 
 - type: guideEntry
-  id: ExodusRule3
-  name: Правило 3
+  id: ExodusRule23
+  name: "2.3. Отыгрыш особенностей, нерегулируемых игровыми механиками"
   priority: 4
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule23.xml"
+
+- type: guideEntry
+  id: ExodusRule24
+  name: "2.4. Правила отыгрыша отдельных ролей"
+  priority: 5
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule24.xml"
+
+- type: guideEntry
+  id: ExodusRule25
+  name: "2.5. ПГ, Валидхантинг"
+  priority: 6
+  text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule25.xml"
+
+- type: guideEntry
+  id: ExodusRule3
+  name: "3. Взаимоотношения между игроками"
+  priority: 7
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule3.xml"
 
 - type: guideEntry
   id: ExodusRule4
-  name: Правило 4
-  priority: 14
+  name: "4. Обман"
+  priority: 8
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule4.xml"
 
 - type: guideEntry
   id: ExodusRule5
-  name: Правило 5
-  priority: 15
+  name: "5. Частные случаи"
+  priority: 9
   text: "/ServerInfo/Exodus/Guidebook/ServerRules/Rule5.xml"

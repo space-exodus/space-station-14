@@ -12,14 +12,16 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: MaleYawn
     Snore:
@@ -52,14 +54,16 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: FemaleYawn
     Snore:
@@ -85,9 +89,17 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      collection: ReptilianScreamMale # Exodus-EmotesSounds
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
+    # Exodus-EmotesSounds-Start
+    Sneeze:
+      path: /Audio/Exodus/Voice/Reptilian/m_sneeze.ogg
+    Growl:
+      collection: ReptilianGrowl
+    Rumble:
+      collection: ReptilianRumble
+    # Exodus-EmotesSounds-End
     Honk:
       collection: BikeHorn
     Whistle:
@@ -107,9 +119,17 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      collection: ReptilianScreamFemale # Exodus-EmotesSounds
     Laugh:
       path: /Audio/Animals/lizard_happy.ogg
+    # Exodus-EmotesSounds-Start
+    Sneeze:
+      path: /Audio/Exodus/Voice/Reptilian/m_sneeze.ogg
+    Growl:
+      collection: ReptilianGrowl
+    Rumble:
+      collection: ReptilianRumble
+    # Exodus-EmotesSounds-End
     Honk:
       collection: BikeHorn
     Whistle:
@@ -136,14 +156,16 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: MaleYawn
     Snore:
@@ -178,14 +200,16 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: FemaleYawn
     Snore:
@@ -267,14 +291,16 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: MaleYawn
     Snore:
@@ -308,14 +334,16 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
-    CatMeow:
-      collection: CatMeows
-    CatHisses:
-      collection: CatHisses
-    MonkeyScreeches:
-      collection: MonkeyScreeches
-    RobotBeep:
-      collection: RobotBeeps
+    # Exodus-EmotesSounds-Start
+    # CatMeow:
+    #   collection: CatMeows
+    # CatHisses:
+    #   collection: CatHisses
+    # MonkeyScreeches:
+    #   collection: MonkeyScreeches
+    # RobotBeep:
+    #   collection: RobotBeeps
+    # Exodus-EmotesSounds-End
     Yawn:
       collection: FemaleYawn
     Snore:
@@ -423,7 +451,23 @@
     Salute:
       path: /Audio/Voice/Diona/diona_salute.ogg
       params:
-       volume: -5
+        volume: -5
+
+- type: emoteSounds
+  id: ReptilianBodyEmotes
+  sounds:
+    Thump:
+      path: /Audio/Voice/Reptilian/reptilian_tailthump.ogg
+      params:
+        variation: 0.125
+    Clap:
+      collection: Claps
+    Snap:
+      collection: Snaps
+      params:
+        volume: -6
+    Salute:
+      collection: Salutes
 
 # mobs
 - type: emoteSounds

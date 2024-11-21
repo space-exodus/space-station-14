@@ -35,12 +35,12 @@ using Robust.Shared.Collections;
 // Exodus-GhostRolesProfilesEditor-Start
 using Content.Server.Humanoid;
 using Content.Shared.Preferences;
-using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Content.Server.IdentityManagement;
 // Exodus-GhostRolesProfilesEditor-End
 using Content.Shared.Ghost.Roles.Components;
+using Content.Shared.Roles.Jobs;
 
 namespace Content.Server.Ghost.Roles;
 
@@ -85,18 +85,22 @@ public sealed class GhostRoleSystem : EntitySystem
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(Reset);
         SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
+
         SubscribeLocalEvent<GhostTakeoverAvailableComponent, MindAddedMessage>(OnMindAdded);
         SubscribeLocalEvent<GhostTakeoverAvailableComponent, MindRemovedMessage>(OnMindRemoved);
         SubscribeLocalEvent<GhostTakeoverAvailableComponent, MobStateChangedEvent>(OnMobStateChanged);
+        SubscribeLocalEvent<GhostTakeoverAvailableComponent, TakeGhostRoleEvent>(OnTakeoverTakeRole);
+
         SubscribeLocalEvent<GhostRoleComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<GhostRoleComponent, ComponentStartup>(OnRoleStartup);
         SubscribeLocalEvent<GhostRoleComponent, ComponentShutdown>(OnRoleShutdown);
         SubscribeLocalEvent<GhostRoleComponent, EntityPausedEvent>(OnPaused);
         SubscribeLocalEvent<GhostRoleComponent, EntityUnpausedEvent>(OnUnpaused);
+
         SubscribeLocalEvent<GhostRoleRaffleComponent, ComponentInit>(OnRaffleInit);
         SubscribeLocalEvent<GhostRoleRaffleComponent, ComponentShutdown>(OnRaffleShutdown);
+
         SubscribeLocalEvent<GhostRoleMobSpawnerComponent, TakeGhostRoleEvent>(OnSpawnerTakeRole);
-        SubscribeLocalEvent<GhostTakeoverAvailableComponent, TakeGhostRoleEvent>(OnTakeoverTakeRole);
         SubscribeLocalEvent<GhostRoleHumanoidEditorComponent, TakeGhostRoleEvent>(OnHumanoidEditorTakeRole); // Exodus-GhostRolesProfilesEditor
         SubscribeLocalEvent<GhostRoleMobSpawnerComponent, GetVerbsEvent<Verb>>(OnVerb);
         SubscribeLocalEvent<GhostRoleMobSpawnerComponent, GhostRoleRadioMessage>(OnGhostRoleRadioMessage);
@@ -162,6 +166,91 @@ public sealed class GhostRoleSystem : EntitySystem
         eui.StateDirty();
     }
 
+    // Exodus-GhostRolesProfilesEditor-Start
+    public void OpenHumanoidProfileEditorEui(ICommonSession session)
+    {
+        var eui = _openHumanoidProfileEditorUis[session] = new GhostRolesHumanoidProfileEditorEui();
+
+        _euiManager.OpenEui(eui, session);
+    }
+
+    public void CloseGhostRoleHumanoidProfileEditorEui(ICommonSession session)
+    {
+        if (_openHumanoidProfileEditorUis.Remove(session, out var eui))
+        {
+            eui.Close();
+        }
+    }
+
+    public void UpdateHumanoidApperance(ICommonSession player, HumanoidCharacterProfile profile)
+    {
+        if (player.AttachedEntity is not { } uid ||
+            !TryComp<GhostRoleHumanoidEditorComponent>(uid, out var humanoidEditor) ||
+            !TryComp<GhostRoleComponent>(uid, out var role))
+            return;
+
+        if (!_prototype.TryIndex<SpeciesPrototype>(profile.Species, out var species))
+            throw new ArgumentException($"Invalid species prototype was used: {profile.Species}");
+
+        var spawned = Spawn(species.Prototype, Transform(uid).Coordinates);
+        _humanoid.LoadProfile(spawned, profile);
+        _meta.SetEntityName(spawned, profile.Name);
+
+        if (humanoidEditor.Components != null)
+        {
+            foreach (var entry in humanoidEditor.Components.Values)
+            {
+                var comp = (Component)_serialization.CreateCopy(entry.Component, notNullableOverride: true);
+                comp.Owner = spawned; // This .owner must survive for now.
+                EntityManager.RemoveComponent(spawned, comp.GetType());
+                EntityManager.AddComponent(spawned, comp);
+            }
+        }
+
+        _identity.QueueIdentityUpdate(spawned);
+
+        var newMind = _mindSystem.CreateMind(player.UserId,
+            EntityManager.GetComponent<MetaDataComponent>(spawned).EntityName);
+        _roleSystem.MindAddRole(newMind, "MindRoleGhostMarker");
+
+        _mindSystem.SetUserId(newMind, player.UserId);
+        _mindSystem.TransferTo(newMind, spawned);
+
+        QueueDel(uid);
+        CloseGhostRoleHumanoidProfileEditorEui(player);
+    }
+
+    private void OnHumanoidEditorTakeRole(EntityUid uid, GhostRoleHumanoidEditorComponent component, ref TakeGhostRoleEvent args)
+    {
+        if (!TryComp(uid, out GhostRoleComponent? ghostRole) ||
+            !CanTakeGhost(uid, ghostRole))
+        {
+            args.TookRole = false;
+            return;
+        }
+
+        ghostRole.Taken = true;
+
+        var mind = EnsureComp<MindContainerComponent>(uid);
+
+        if (mind.HasMind)
+        {
+            args.TookRole = false;
+            return;
+        }
+
+        if (ghostRole.MakeSentient)
+            MakeSentientCommand.MakeSentient(uid, EntityManager, false, false);
+
+        GhostRoleInternalCreateMindAndTransfer(args.Player, uid, uid, ghostRole);
+        UnregisterGhostRole((uid, ghostRole));
+
+        args.TookRole = true;
+
+        OpenHumanoidProfileEditorEui(args.Player);
+    }
+    // Exodus-GhostRolesProfilesEditor-End
+
     public void CloseEui(ICommonSession session)
     {
         if (!_openUis.ContainsKey(session))
@@ -215,91 +304,6 @@ public sealed class GhostRoleSystem : EntitySystem
             RaiseNetworkEvent(response, player.Channel);
         }
     }
-
-    // Exodus-GhostRolesProfilesEditor-Start
-    public void OpenHumanoidProfileEditorEui(ICommonSession session)
-    {
-        var eui = _openHumanoidProfileEditorUis[session] = new GhostRolesHumanoidProfileEditorEui();
-
-        _euiManager.OpenEui(eui, session);
-    }
-    
-    public void CloseGhostRoleHumanoidProfileEditorEui(ICommonSession session)
-    {
-        if (_openHumanoidProfileEditorUis.Remove(session, out var eui))
-        {
-            eui.Close();
-        }
-    }
-
-    public void UpdateHumanoidApperance(ICommonSession player, HumanoidCharacterProfile profile)
-    {
-        if (player.AttachedEntity is not { } uid ||
-            !TryComp<GhostRoleHumanoidEditorComponent>(uid, out var humanoidEditor) ||
-            !TryComp<GhostRoleComponent>(uid, out var role))
-            return;
-
-        if (!_prototype.TryIndex<SpeciesPrototype>(profile.Species, out var species))
-            throw new ArgumentException($"Invalid species prototype was used: {profile.Species}");
-
-        var spawned = Spawn(species.Prototype, Transform(uid).Coordinates);
-        _humanoid.LoadProfile(spawned, profile);
-        _meta.SetEntityName(spawned, profile.Name);
-
-        if (humanoidEditor.Components != null)
-        {
-            foreach (var entry in humanoidEditor.Components.Values)
-            {
-                var comp = (Component) _serialization.CreateCopy(entry.Component, notNullableOverride: true);
-                comp.Owner = spawned; // This .owner must survive for now.
-                EntityManager.RemoveComponent(spawned, comp.GetType());
-                EntityManager.AddComponent(spawned, comp);
-            }
-        }
-
-        _identity.QueueIdentityUpdate(spawned);
-
-        var newMind = _mindSystem.CreateMind(player.UserId,
-            EntityManager.GetComponent<MetaDataComponent>(spawned).EntityName);
-        _roleSystem.MindAddRole(newMind, new GhostRoleMarkerRoleComponent { Name = role.RoleName });
-
-        _mindSystem.SetUserId(newMind, player.UserId);
-        _mindSystem.TransferTo(newMind, spawned);
-
-        QueueDel(uid);
-        CloseGhostRoleHumanoidProfileEditorEui(player);
-    }
-
-    private void OnHumanoidEditorTakeRole(EntityUid uid, GhostRoleHumanoidEditorComponent component, ref TakeGhostRoleEvent args)
-    {
-        if (!TryComp(uid, out GhostRoleComponent? ghostRole) ||
-            !CanTakeGhost(uid, ghostRole))
-        {
-            args.TookRole = false;
-            return;
-        }
-
-        ghostRole.Taken = true;
-
-        var mind = EnsureComp<MindContainerComponent>(uid);
-
-        if (mind.HasMind)
-        {
-            args.TookRole = false;
-            return;
-        }
-
-        if (ghostRole.MakeSentient)
-            MakeSentientCommand.MakeSentient(uid, EntityManager, false, false);
-
-        GhostRoleInternalCreateMindAndTransfer(args.Player, uid, uid, ghostRole);
-        UnregisterGhostRole((uid, ghostRole));
-
-        args.TookRole = true;
-
-        OpenHumanoidProfileEditorEui(args.Player);
-    }
-    // Exodus-GhostRolesProfilesEditor-End
 
     /// <summary>
     /// Handles ghost role raffle logic.
@@ -460,7 +464,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
         var raffle = ent.Comp;
         raffle.Identifier = ghostRole.Identifier;
-        var countdown = _cfg.GetCVar(CCVars.GhostQuickLottery)? 1 : settings.InitialDuration;
+        var countdown = _cfg.GetCVar(CCVars.GhostQuickLottery) ? 1 : settings.InitialDuration;
         raffle.Countdown = TimeSpan.FromSeconds(countdown);
         raffle.CumulativeTime = TimeSpan.FromSeconds(settings.InitialDuration);
         // we copy these settings into the component because they would be cumbersome to access otherwise
@@ -503,8 +507,8 @@ public sealed class GhostRoleSystem : EntitySystem
         if (raffle.AllMembers.Add(player) && raffle.AllMembers.Count > 1
             && raffle.CumulativeTime.Add(raffle.JoinExtendsDurationBy) <= raffle.MaxDuration)
         {
-                raffle.Countdown += raffle.JoinExtendsDurationBy;
-                raffle.CumulativeTime += raffle.JoinExtendsDurationBy;
+            raffle.Countdown += raffle.JoinExtendsDurationBy;
+            raffle.CumulativeTime += raffle.JoinExtendsDurationBy;
         }
 
         UpdateAllEui();
@@ -609,7 +613,11 @@ public sealed class GhostRoleSystem : EntitySystem
 
         var newMind = _mindSystem.CreateMind(player.UserId,
             EntityManager.GetComponent<MetaDataComponent>(mob).EntityName);
-        _roleSystem.MindAddRole(newMind, new GhostRoleMarkerRoleComponent { Name = role.RoleName });
+
+        _roleSystem.MindAddRole(newMind, "MindRoleGhostMarker");
+
+        if(_roleSystem.MindHasRole<GhostRoleMarkerRoleComponent>(newMind!, out var markerRole))
+            markerRole.Value.Comp2.Name = role.RoleName;
 
         _mindSystem.SetUserId(newMind, player.UserId);
         _mindSystem.TransferTo(newMind, mob);
@@ -658,7 +666,7 @@ public sealed class GhostRoleSystem : EntitySystem
                 }
             }
 
-            var rafflePlayerCount = (uint?) raffle?.CurrentMembers.Count ?? 0;
+            var rafflePlayerCount = (uint?)raffle?.CurrentMembers.Count ?? 0;
             var raffleEndTime = raffle is not null
                 ? _timing.CurTime.Add(raffle.Countdown)
                 : TimeSpan.MinValue;
@@ -699,6 +707,11 @@ public sealed class GhostRoleSystem : EntitySystem
     {
         if (!TryComp(uid, out GhostRoleComponent? ghostRole))
             return;
+
+        if (ghostRole.JobProto != null)
+        {
+            _roleSystem.MindAddJobRole(args.Mind, args.Mind, silent:false,ghostRole.JobProto);
+        }
 
         ghostRole.Taken = true;
         UnregisterGhostRole((uid, ghostRole));

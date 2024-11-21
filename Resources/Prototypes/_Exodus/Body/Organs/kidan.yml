@@ -2,7 +2,7 @@
   id: OrganKidanStomach
   parent: OrganAnimalStomach
   name: kidan stomach
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Stomach
     specialDigestible:
@@ -34,7 +34,7 @@
   id: OrganKidanLiver
   parent: OrganAnimalLiver
   name: kidan liver
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Metabolizer
     maxReagents: 1
@@ -47,7 +47,7 @@
   id: OrganKidanHeart
   parent: OrganAnimalHeart
   name: kidan heart
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Organ
   - type: Metabolizer
@@ -63,7 +63,7 @@
   id: OrganKidanKidneys
   parent: OrganAnimalKidneys
   name: kidan kidneys
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Metabolizer
     maxReagents: 5

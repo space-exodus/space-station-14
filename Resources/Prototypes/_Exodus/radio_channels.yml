@@ -1,0 +1,7 @@
+- type: radioChannel
+  id: DeathSquad
+  name: chat-radio-deathsquad
+  keycode: 'э'
+  frequency: 2654
+  color: "#1700cb"
+  longRange: true

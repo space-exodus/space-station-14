@@ -13,6 +13,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Mind;
+using Content.Shared.Players.RateLimiting;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -85,9 +86,9 @@ internal sealed partial class ChatManager : IChatManager
         DispatchServerAnnouncement(Loc.GetString(val ? "chat-manager-admin-ooc-chat-enabled-message" : "chat-manager-admin-ooc-chat-disabled-message"));
     }
 
-    public void DeleteMessagesBy(ICommonSession player)
+    public void DeleteMessagesBy(NetUserId uid)
     {
-        if (!_players.TryGetValue(player.UserId, out var user))
+        if (!_players.TryGetValue(uid, out var user))
             return;
 
         var msg = new MsgDeleteChatMessagesBy { Key = user.Key, Entities = user.Entities };
@@ -208,7 +209,7 @@ internal sealed partial class ChatManager : IChatManager
     /// <param name="type">The type of message.</param>
     public void TrySendOOCMessage(ICommonSession player, string message, OOCChatType type)
     {
-        if (HandleRateLimit(player, message) != RateLimitStatus.Allowed) // Exodus-ChatRestrictions
+        if (HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // Check if message exceeds the character limit
@@ -272,7 +273,7 @@ internal sealed partial class ChatManager : IChatManager
         }
 
         Color? colorOverride = null;
-        var wrappedMessage = Loc.GetString("chat-manager-send-ooc-wrap-message", ("playerName",player.Name), ("message", FormattedMessage.EscapeText(message)));
+        var wrappedMessage = Loc.GetString("chat-manager-send-ooc-wrap-message", ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
         if (_adminManager.HasAdminFlag(player, AdminFlags.Admin))
         {
             var prefs = _preferencesManager.GetPreferences(player.UserId);

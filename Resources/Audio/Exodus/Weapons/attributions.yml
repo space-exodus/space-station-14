@@ -1,0 +1,10 @@
+- files: ["glovepunch.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from alexbruni.ru"
+  source: "https://alexbruni.ru/afx/sound/sounds-of-robots-fighting"
+
+- files: ["idle.ogg", "start.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from alexbruni.ru"
+  source: "https://alexbruni.ru/afx/sound/chainsaw-sounds"
+

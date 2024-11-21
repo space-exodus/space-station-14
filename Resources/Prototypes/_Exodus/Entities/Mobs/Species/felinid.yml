@@ -38,9 +38,16 @@
     damage:
       types:
         Slash: 5
+  - type: Speech
+    allowedEmotes: ["Rumble"]
+  - type: Vocal
+    sounds:
+      Male: MaleFelinid
+      Female: FemaleFelinid
+      Unsexed: MaleFelinid
   - type: MovementSpeedModifier
-    baseWalkSpeed: 1
-    baseSprintSpeed: 1.15
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 5.175
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -50,6 +57,9 @@
     size: Ginormous
   - type: MultiHandedItem
   - type: Puller
+  - type: Body
+    prototype: Felinid
+    requiredLegs: 2
   - type: HumanoidAppearance
     species: Felinid
     hideLayersOnEquip:
@@ -84,7 +94,7 @@
 - type: entity
   parent: BaseMobFelinid
   id: MobFelinidDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     scale: 0.8, 0.8

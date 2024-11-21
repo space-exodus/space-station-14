@@ -1,0 +1,27 @@
+- type: entity
+  name: emergency combat medipen
+  parent: ChemicalMedipen
+  id: EmergencyMedipenDS
+  description: An emergency medipen that gets you back on your feet in the shortest possible time, even with the most severe injuries. Due to the high cost and difficulty of production, it is used by death squad only.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Saliforsom
+          Quantity: 15
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: morphen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+    injectOnly: true
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    netsync: false
+    layers:
+    - state: morphen
+      map: [ "enum.SolutionContainerLayers.Fill" ]

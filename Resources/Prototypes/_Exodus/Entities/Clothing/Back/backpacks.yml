@@ -6,31 +6,30 @@
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Back/Backpacks/blueshield.rsi
-    
+
 - type: entity
-  noSpawn: false
   parent: ClothingBackpackCentcomOfficer
   id: ClothingBackpackCentcomOfficerFilled
   name: specical operation officer's backpack
   description: Modifided backpack
   components:
-    - type: Storage
-      grid:
-      - 0,0,17,8
-    - type: StorageFill
-      contents:
-        - id: BoxSurvivalEngineering
-        - id: CombatMedipen
-        - id: CombatMedipen
-        - id: MagazineShotgun
-        - id: MagazineShotgun
-        - id: WeaponShotgunBulldog
-        - id: WeaponDisablerSMG
-        - id: GrenadeFlashBang
-        - id: WelderExperimental
-        - id: Hypospray
-        - id: DeathAcidifierImplanter
-        - id: FreedomImplanter
+  - type: Storage
+    grid:
+    - 0,0,17,8
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalEngineering
+      - id: CombatMedipen
+        amount: 4
+      - id: MagazineShotgun
+        amount: 8
+      - id: WeaponShotgunBulldog
+      - id: WeaponTaser
+      - id: GrenadeFlashBang
+      - id: WelderExperimental
+      - id: Hypospray
+      - id: DeathAcidifierImplanter
+      - id: FreedomImplanter
 
 - type: entity
   parent: ClothingBackpackSatchel
@@ -39,10 +38,84 @@
   description: Modifided backpack
   components:
   - type: Sprite
-    sprite: Clothing/Back/Satchels/satchel.rsi
+    sprite: Corvax/Back/Backpacks/deathsquad-backpack.rsi
   - type: Item
     size: Ginormous
   - type: Storage
     maxItemSize: Huge
     grid:
     - 0,0,17,8
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingDeathSquadBackpack
+  name: death squad backpack
+  description: The high-capacity backpack of the squad of the same name
+  components:
+  - type: Sprite
+    sprite: Corvax/Back/Backpacks/deathsquad-backpack.rsi
+  - type: Storage
+    grid:
+    - 0,0,11,7
+    maxItemSize: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingDeathSquadBackpack
+  id: ClothingDeathSquadBackpackOfficer
+  name: death squad backpack
+  suffix: officer
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPulseRifle
+      - id: Omnitool
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnumAP
+        amount: 2
+      - id: GrenadeIncendiary
+        amount: 2
+      - id: GrenadeShrapnel
+        amount: 2
+      - id: EmergencyMedipenDS
+        amount: 2
+
+- type: entity
+  parent: ClothingDeathSquadBackpack
+  id: ClothingDeathSquadBackpackCommander
+  name: death squad backpack
+  suffix: commander
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPulseRifle
+      - id: Omnitool
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnumAP
+        amount: 2
+      - id: GrenadeIncendiary
+        amount: 2
+      - id: GrenadeShrapnel
+        amount: 2
+      - id: PinpointerNuclear
+      - id: EmergencyMedipenDS
+        amount: 2
+
+- type: entity
+  parent: ClothingDeathSquadBackpack
+  id: ClothingDeathSquadBackpackSpecialist
+  name: death squad backpack
+  suffix: specialist
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPulseRifle
+      - id: Omnitool
+      - id: WeaponRevolverMateba
+      - id: SpeedLoaderMagnumAP
+        amount: 2
+      - id: SmokeGrenade
+      - id: TearGasGrenade
+      - id: EmergencyMedipenDS
+        amount: 4

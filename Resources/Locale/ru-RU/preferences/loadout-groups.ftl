@@ -14,6 +14,8 @@ loadout-group-survival-syndicate = Github заставил меня переве
 loadout-group-breath-tool = Расозависимое дыхательное снаряжение
 loadout-group-tank-harness = Расозависимое снаряжение для выживания
 loadout-group-EVA-tank = Расозависимый газовый баллон
+loadout-group-pocket-tank-double = Расозависимый двойной аварийный газовый баллон в кармане
+loadout-group-survival-mime = Мимский аварийный запас
 # Command
 Captain-loadout = Снаряжение капитана
 loadout-group-captain-head = Капитан, голова
@@ -39,6 +41,8 @@ loadout-group-passenger-gloves = Пассажир, перчатки
 loadout-group-passenger-outerclothing = Пассажир, верхняя одежда
 loadout-group-passenger-shoes = Пассажир, обувь
 loadout-group-passenger-neck = Пассажир, шея
+
+Bartender-loadout = Снаряжение бармена
 loadout-group-bartender-head = Бармен, голова
 loadout-group-bartender-jumpsuit = Бармен, комбинезон
 loadout-group-bartender-outerclothing = Бармен, верхняя одежда
@@ -87,6 +91,7 @@ loadout-group-mime-mask = Мим, маска
 loadout-group-mime-jumpsuit = Мим, комбинезон
 loadout-group-mime-backpack = Мим, рюкзак
 loadout-group-mime-outerclothing = Мим, верхняя одежда
+loadout-group-mime-belt = Мим, пояс
 
 Musician-loadout = Снаряжение музыканта
 loadout-group-musician-jumpsuit = Музыкант, комбинезон
@@ -189,7 +194,7 @@ loadout-group-detective-outerclothing = Детектив, верхняя оде�
 
 SecurityCadet-loadout = Снаряжение кадета СБ
 loadout-group-security-cadet-jumpsuit = Кадет СБ, комбинезон
-loadout-group-security-star = Звезда СБ
+loadout-group-security-star = СБ, Звёздочка
 
 Pilot-loadout = Снаряжение пилота СБ
 
@@ -226,11 +231,11 @@ loadout-group-paramedic-jumpsuit = Парамедик, комбинезон
 loadout-group-paramedic-outerclothing = Парамедик, верхняя одежда
 loadout-group-paramedic-shoes = Парамедик, обувь
 
+Psychologist-loadout = Снаряжение психолога
+
 # Wildcards
 Reporter-loadout = Снаряжение репортёра
 loadout-group-reporter-jumpsuit = Репортёр, комбинезон
-
-Psychologist-loadout = Снаряжение психолога
 loadout-group-psychologist-jumpsuit = Психолог, комбинезон
 
 Zookeeper-loadout = Снаряжение зоотехника

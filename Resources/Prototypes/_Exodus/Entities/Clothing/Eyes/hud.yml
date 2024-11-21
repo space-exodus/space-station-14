@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingEyesHudOmni
+  id: ClothingEyesHudDS
+  name: enhanced visor
+  description: A visor that combines all the others. Due to extreme complexity and cost, it was created in single copies
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Eyes/Hud/death_squad.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Eyes/Hud/death_squad.rsi
+  - type: SolutionScanner
+  - type: ShowSyndicateIcons

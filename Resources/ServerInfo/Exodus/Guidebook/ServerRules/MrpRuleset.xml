@@ -1,14 +1,15 @@
 <Document>
-
 # Правила Exodus
 
-Здесь описаны все основные правила для основного сервера Exodus. Все дополнительные правила (например таблицу навыков или правила спец. ролей) можно найти на вики [bold]wiki.space-exodus.com[/bold].
-
+Здесь описаны все основные правила для основного сервера Exodus. Все наши правила в более удобном для чтения стиле можно найти на нашем вики [bold]wiki.space-exodus.com[/bold].
   - [textlink="0. Не будь мудаком" link="ExodusRule0"]
-  - [textlink="1. Порча игры" link="ExodusRule1"]
+  - [textlink="1. Порча игрового процесса" link="ExodusRule1"]
   - [textlink="2. Отыгрыш персонажа" link="ExodusRule2"]
-  - [textlink="3. Взаимодействия между игроками" link="ExodusRule3"]
+  - [textlink="2.3. Отыгрыш особенностей, нерегулируемых игровыми механиками" link="ExodusRule23"]
+  - [textlink="2.4. Правила отыгрыша отдельных ролей" link="ExodusRule24"]
+  - [textlink="2.5. ПГ, Валидхантинг" link="ExodusRule25"]
+  - [textlink="3. Взаимоотношения между игроками" link="ExodusRule3"]
   - [textlink="4. Обман" link="ExodusRule4"]
-  - [textlink="5. Ответственная игра за антагониста" link="ExodusRule5"]
+  - [textlink="5. Частные случаи" link="ExodusRule5"]
 
 </Document>

@@ -1,0 +1,23 @@
+- type: entity
+  id: DSFoxtrotCircuitBoard
+  parent: BaseElectronics
+  name: circuit board (Death Squad Foxtrot)
+  description: An electronics board containing the Peacekeeper lawset.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: DSFoxtrot
+
+- type: entity
+  id: DSTangoCircuitBoard
+  parent: BaseElectronics
+  name: circuit board (Death Squad Tango)
+  description: An electronics board containing the Peacekeeper lawset.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: DSTangoLawset

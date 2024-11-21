@@ -9,3 +9,32 @@
     - state: idblueshieldofficer
   - type: PresetIdCard
     job: BlueshieldOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: IDCardDSCommander
+  name: death squad commander ID card
+  components:
+  - type: PresetIdCard
+    job: DSCommander
+  - type: Sprite
+    layers:
+    - state: syndie
+    - state: idchiefmedicalofficer
+    - state: iddeathsquad
+
+- type: entity
+  parent: IDCardDSCommander
+  id: IDCardDSOfficer
+  name: death squad Officer ID card
+  components:
+  - type: PresetIdCard
+    job: DSOfficer
+
+- type: entity
+  parent: IDCardDSCommander
+  id: IDCardDSSpecialist
+  name: death squad specialist ID card
+  components:
+  - type: PresetIdCard
+    job: DSSpecialist
