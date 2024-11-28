@@ -33,6 +33,6 @@
               icon:
                 sprite: "Objects/Misc/stock_parts.rsi"
                 state: "capacitor"
-          doAfter: 0.5
+              doAfter: 5
     - node: medsecHud
       entity: ClothingEyesHudMedSec
