@@ -5,5 +5,5 @@
     state: harvest
   product: CrateHydroponicsSeedsFlower
   cost: 500
-  category: Hydroponics
+  category: cargoproduct-category-name-hydroponics
   group: market
