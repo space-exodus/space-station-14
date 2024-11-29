@@ -1,16 +1,15 @@
 using Content.Shared.Eui;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared.Exodus.Audio;
+namespace Content.Shared.Exodus.Administration.UI.Audio;
 
 [Serializable, NetSerializable]
-public sealed partial class AdminAudioPanelEuiState(bool playing, Queue<string> queue, float volume, float currentTrackLength, float playbackPosition, bool global, Dictionary<Guid, string> players, HashSet<Guid> selectedPlayers) : EuiStateBase
+public sealed partial class AdminAudioPanelEuiState(bool playing, NetEntity audio, float volume, Queue<string> queue, bool global, Dictionary<Guid, string> players, HashSet<Guid> selectedPlayers) : EuiStateBase
 {
     public bool Playing = playing;
-    public Queue<string> Queue = queue;
+    public NetEntity Audio = audio;
     public float Volume = volume;
-    public float CurrentTrackLength = currentTrackLength;
-    public float PlaybackPosition = playbackPosition;
+    public Queue<string> Queue = queue;
     public bool Global = global;
     public Dictionary<Guid, string> Players = players;
     public HashSet<Guid> SelectedPlayers = selectedPlayers;

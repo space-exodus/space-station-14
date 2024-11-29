@@ -1,19 +1,23 @@
 using System.Linq;
-using Robust.Server.Audio;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Robust.Shared.Timing;
 
-namespace Content.Server.Exodus.Audio;
+namespace Content.Server.Exodus.Administration.UI.Audio;
 
 public sealed partial class AdminAudioPanelSystem : EntitySystem
 {
-    [Dependency] private readonly AudioSystem _audio = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     private (EntityUid Entity, AudioComponent Audio)? _audioStream;
     private List<ICommonSession> _selectedPlayers = new();
+
+    public Action? AudioUpdated;
 
     public override void Update(float frameTime)
     {
@@ -22,21 +26,23 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
         if (!Playing)
             return;
 
-        if (_audioStream is { } audioStream &&
-            audioStream.Entity.IsValid() &&
-            (audioStream.Audio.State == AudioState.Playing || audioStream.Audio.State == AudioState.Paused))
-            return;
-
-        Queue.TryDequeue(out _);
+        if (_audioStream is { } audioStream)
+        {
+            if (Exists(audioStream.Entity) &&
+                (audioStream.Audio.State == AudioState.Playing || audioStream.Audio.State == AudioState.Paused))
+                return;
+            else
+            {
+                _audioStream = null;
+                Queue.TryDequeue(out _);
+                AudioUpdated?.Invoke();
+            }
+        }
 
         if (CurrentTrack != null)
         {
-            var newStream = _audio.PlayGlobal(CurrentTrack, Global ? Filter.Broadcast() : Filter.Empty().AddPlayers(_selectedPlayers), Global, AudioParams);
-
-            if (newStream != null)
-            {
-                _audioStream = newStream.Value;
-            }
+            _audioStream = _audio.PlayGlobal(CurrentTrack, Global ? Filter.Broadcast() : Filter.Empty().AddPlayers(_selectedPlayers), Global, AudioParams);
+            AudioUpdated?.Invoke();
         }
     }
 
@@ -44,6 +50,7 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
     {
         if (_audioStream != null)
             _audio.SetState(_audioStream.Value.Entity, state, true, _audioStream.Value.Audio);
+        AudioUpdated?.Invoke();
     }
 
     /// <summary>
@@ -52,12 +59,15 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
     /// </summary>
     private void RecreateSound()
     {
+        if (!Playing)
+            return;
+
         if (_audioStream is not { } audioStream)
             return;
 
         Playing = false;
 
-        var playback = audioStream.Audio.PlaybackPosition;
+        var playback = (float)((audioStream.Audio.PauseTime ?? _timing.CurTime) - audioStream.Audio.AudioStart).TotalSeconds;
 
         _audio.Stop(audioStream.Entity, audioStream.Audio);
 
@@ -65,6 +75,7 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
         _audio.SetPlaybackPosition(_audioStream, playback);
 
         Playing = true;
+        AudioUpdated?.Invoke();
     }
 
     #region Public API
@@ -78,33 +89,16 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
             return null;
         }
     }
-    public AudioParams AudioParams { get; private set; }
+    public AudioParams AudioParams { get; private set; } = AudioParams.Default;
     public bool Playing { get; private set; } = false;
-    public bool Global { get; private set; } = false;
+    public bool Global { get; private set; } = true;
     public HashSet<Guid> SelectedPlayers => _selectedPlayers.Select(player => player.UserId.UserId).ToHashSet();
-    public float CurrentTrackPlaybackPosition
-    {
-        get
-        {
-            if (_audioStream is not { } stream)
-                return 0f;
-            return stream.Audio.PlaybackPosition;
-        }
-    }
-    public TimeSpan CurrentTrackLength
-    {
-        get
-        {
-            if (CurrentTrack == null)
-                return new();
-
-            return _audio.GetAudioLength(CurrentTrack);
-        }
-    }
+    public EntityUid AudioEntity => _audioStream?.Entity ?? EntityUid.Invalid;
 
     public void AddToQueue(string filename)
     {
         Queue.Enqueue(filename);
+        AudioUpdated?.Invoke();
     }
 
     public bool Play()
@@ -115,6 +109,7 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
         }
 
         Playing = true;
+        AudioUpdated?.Invoke();
         return Playing;
     }
 
@@ -124,6 +119,7 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
             SetStreamState(AudioState.Paused);
 
         Playing = false;
+        AudioUpdated?.Invoke();
     }
 
     public bool Resume()
@@ -132,15 +128,21 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
             SetStreamState(AudioState.Playing);
 
         Playing = true;
+        AudioUpdated?.Invoke();
         return Playing;
     }
 
     public bool Stop()
     {
         if (_audioStream != null && _audioStream.Value.Audio.State != AudioState.Stopped)
+        {
             _audio.Stop(_audioStream.Value.Entity, _audioStream.Value.Audio);
+            _audioStream = null;
+            Queue.TryDequeue(out _);
+        }
 
         Playing = false;
+        AudioUpdated?.Invoke();
         return !Playing;
     }
 
@@ -149,6 +151,7 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
         AudioParams = AudioParams.WithVolume(volume);
         if (_audioStream != null)
             _audio.SetVolume(_audioStream.Value.Entity, volume, _audioStream.Value.Audio);
+        AudioUpdated?.Invoke();
     }
 
     public void SelectPlayer(Guid player)
@@ -163,6 +166,7 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
 
         _selectedPlayers.Add(session);
         RecreateSound();
+        AudioUpdated?.Invoke();
     }
 
     public void UnselectPlayer(Guid player)
@@ -177,20 +181,23 @@ public sealed partial class AdminAudioPanelSystem : EntitySystem
 
         _selectedPlayers.Remove(session);
         RecreateSound();
+        AudioUpdated?.Invoke();
     }
 
-    /// <summary>
-    /// Sets playback position for currently playing sound
-    /// </summary>
-    /// <param name="position">Is a ratio of desired positon and track length</param>
     public void SetPlaybackPosition(float position)
     {
         if (CurrentTrack != null && _audioStream is { } audioStream)
         {
-            var length = (float)_audio.GetAudioLength(CurrentTrack).TotalSeconds;
-            var desiredPosition = position * length;
-            _audio.SetPlaybackPosition(audioStream, desiredPosition);
+            _audio.SetPlaybackPosition(audioStream, position);
         }
+        AudioUpdated?.Invoke();
+    }
+
+    public void SetGlobal(bool global)
+    {
+        Global = global;
+        RecreateSound();
+        AudioUpdated?.Invoke();
     }
 
     #endregion

@@ -3,7 +3,7 @@ using Content.Server.EUI;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 
-namespace Content.Server.Exodus.Audio.Commands;
+namespace Content.Server.Exodus.Administration.UI.Audio.Commands;
 
 [AdminCommand(AdminFlags.Fun)]
 public sealed class OpenAudioPanelCommand : IConsoleCommand

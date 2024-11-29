@@ -2,17 +2,21 @@ using Content.Server.Administration.Managers;
 using Content.Server.EUI;
 using Content.Shared.Administration;
 using Content.Shared.Eui;
-using Content.Shared.Exodus.Audio;
+using Content.Shared.Exodus.Administration.UI.Audio;
 using Robust.Server.Player;
+using Robust.Shared.ContentPack;
 using Robust.Shared.Enums;
 using Robust.Shared.Player;
 
-namespace Content.Server.Exodus.Audio;
+namespace Content.Server.Exodus.Administration.UI.Audio;
 
 public sealed partial class AdminAudioPanelEui : BaseEui
 {
     [Dependency] private readonly IAdminManager _adminManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private readonly IEntityManager _entityManager = default!;
+    [Dependency] private readonly IResourceManager _resourceManager = default!;
+
     private Dictionary<Guid, string> _availablePlayers = new();
 
     private readonly AdminAudioPanelSystem _audioPanel;
@@ -27,6 +31,8 @@ public sealed partial class AdminAudioPanelEui : BaseEui
         {
             _availablePlayers.Add(player.UserId.UserId, player.Name);
         }
+
+        _audioPanel.AudioUpdated += () => StateDirty();
 
         _playerManager.PlayerStatusChanged += (object? sender, SessionStatusEventArgs args) =>
         {
@@ -53,10 +59,9 @@ public sealed partial class AdminAudioPanelEui : BaseEui
     {
         return new(
             _audioPanel.Playing,
-            _audioPanel.Queue,
+            _entityManager.GetNetEntity(_audioPanel.AudioEntity),
             _audioPanel.AudioParams.Volume,
-            (float)_audioPanel.CurrentTrackLength.TotalSeconds,
-            _audioPanel.CurrentTrackPlaybackPosition,
+            _audioPanel.Queue,
             _audioPanel.Global,
             _availablePlayers,
             _audioPanel.SelectedPlayers
@@ -88,7 +93,9 @@ public sealed partial class AdminAudioPanelEui : BaseEui
                 _audioPanel.Stop();
                 break;
             case AdminAudioPanelEuiMessage.AddTrack addTrack:
-                _audioPanel.AddToQueue(addTrack.Filename);
+                var filename = addTrack.Filename.Trim();
+                if (_resourceManager.ContentFileExists(filename))
+                    _audioPanel.AddToQueue(filename);
                 break;
             case AdminAudioPanelEuiMessage.SetVolume setVolume:
                 _audioPanel.SetVolume(setVolume.Volume);
@@ -101,6 +108,9 @@ public sealed partial class AdminAudioPanelEui : BaseEui
                 break;
             case AdminAudioPanelEuiMessage.UnselectPlayer unselectPlayer:
                 _audioPanel.UnselectPlayer(unselectPlayer.Player);
+                break;
+            case AdminAudioPanelEuiMessage.GlobalToggled globalToggled:
+                _audioPanel.SetGlobal(globalToggled.Toggled);
                 break;
             default:
                 return;

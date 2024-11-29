@@ -7,3 +7,4 @@ admin-audio-panel-volume-line-placeholder = Громкость
 admin-audio-panel-toggle-global-checkbox-label = Слышат все
 admin-audio-panel-trackpath-line-placeholder = Путь к файлу OGG
 admin-audio-panel-add-track-button-text = Добавить трек
+admin-audio-panel-track-name-nothing-playing = Ничего не играет
