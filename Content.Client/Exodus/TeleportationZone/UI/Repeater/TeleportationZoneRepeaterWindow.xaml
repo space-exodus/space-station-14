@@ -1,0 +1,9 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:viewport="clr-namespace:Content.Client.Viewport"
+               Title="{Loc 'teleportationZone-repeater-ui-window'}"
+               Resizable="True">
+    <BoxContainer Orientation="Vertical">
+        <Label Text="{Loc 'teleportationZone-repeater-ui-label'}" VerticalAlignment="Center"/>
+        <LineEdit Name="MessageEdit" SetWidth="200" VerticalAlignment="Center"/>
+    </BoxContainer>
+</DefaultWindow>

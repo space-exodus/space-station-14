@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by neo33o1(Discrod)",
+    "size": {
+        "x": 96,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "console"
+        },
+        {
+            "name": "console-on",
+            "directions": 1,
+            "delays": [
+                [
+                    0.4,
+                    0.4,
+                    0.4,
+                    0.4
+                ]
+            ]
+        }
+    ]
+}
