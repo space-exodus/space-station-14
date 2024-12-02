@@ -24,4 +24,10 @@ public sealed partial class RadioSpeakerComponent : Component
 
     [DataField("enabled")]
     public bool Enabled;
+
+    // Exodus - Advanced speak control - start
+    [DataField]
+    public bool HideSpeaker = false;
+    // Exodus - Advanced speak control - end
+
 }
