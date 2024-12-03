@@ -29,6 +29,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
+    - type: StationLavaland # Exodus-Lavaland
 
 - type: entity
   id: NanotrasenCentralCommand
