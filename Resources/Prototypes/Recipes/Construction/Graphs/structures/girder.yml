@@ -6,8 +6,9 @@
       edges:
         - to: girder
           completed:
-            - !type:SnapToGrid
-              southRotation: true
+            # Exodus-Construction-Rotate-Fix-Start
+            - !type:SnapToGrid { }
+            # Exodus-Construction-Rotate-Fix-End
           steps:
             - material: Steel
               amount: 2
@@ -31,8 +32,9 @@
 
         - to: wall
           completed:
-            - !type:SnapToGrid
-              southRotation: true
+            # Exodus-Construction-Rotate-Fix-Start
+            - !type:SnapToGrid { }
+            # Exodus-Construction-Rotate-Fix-End
           conditions:
             - !type:EntityAnchored {}
           steps:
@@ -42,8 +44,9 @@
 
         - to: reinforcedGirder
           completed:
-            - !type:SnapToGrid
-              southRotation: false
+            # Exodus-Construction-Rotate-Fix-Start
+            - !type:SnapToGrid { }
+            # Exodus-Construction-Rotate-Fix-End
           conditions:
             - !type:EntityAnchored {}
           steps:
@@ -328,8 +331,9 @@
 
         - to: diagonalshuttleWall
           completed:
-            - !type:SnapToGrid
-              southRotation: false
+            # Exodus-Construction-Rotate-Fix-Start
+            - !type:SnapToGrid { }
+            # Exodus-Construction-Rotate-Fix-End
           conditions:
             - !type:EntityAnchored { }
           steps:
