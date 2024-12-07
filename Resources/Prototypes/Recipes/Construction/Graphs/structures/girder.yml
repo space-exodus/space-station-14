@@ -29,6 +29,19 @@
           steps:
             - tool: Screwing
               doAfter: 2
+       # Exodus-Wall-Diagonal-Craft-Start
+        - to: diagonalWall
+          completed:
+            - !type:SnapToGrid { }
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+            - tool: Cutting
+              doAfter: 4
+       # Exodus-Wall-Diagonal-Craft-End
 
         - to: wall
           completed:
@@ -163,6 +176,19 @@
             - material: Steel
               amount: 2
               doAfter: 1
+   # Exodus-Wall-Diagonal-Craft-Start
+    - node: diagonalWall
+      entity: WallSolidDiagonal
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 1
+          steps:
+            - tool: Welding
+              doAfter: 10
+   # Exodus-Wall-Diagonal-Craft-End
 
     - node: wall
       entity: WallSolid
