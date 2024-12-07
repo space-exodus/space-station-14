@@ -30,7 +30,7 @@
             - tool: Screwing
               doAfter: 2
        # Exodus-Wall-Diagonal-Craft-Start
-        - to: diagonalWall
+        - to: girder
           completed:
             - !type:SnapToGrid { }
           conditions:
