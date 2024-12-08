@@ -457,6 +457,10 @@
     layers:
     - state: default
     - state: idbrigmedic
+  # Exodus-Brigmedic-Start
+  - type: PresetIdCard
+    job: Brigmedic
+  # Exodus-Brigmedic-End
 
 - type: entity
   parent: IDCardStandard
