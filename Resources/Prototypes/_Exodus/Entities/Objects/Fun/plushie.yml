@@ -1,11 +1,11 @@
 - type: entity
   parent: PlushieLizard
-  id: PlushieLizardLokilife
+  id: PlushLokilife
   name: Lokilife
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: plushie-lizard-lokilife
+    state: plush_lokilife
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -16,12 +16,12 @@
 
 - type: entity
   parent: PlushieMoth
-  id: PlushieMothFragoler
+  id: PlushFragoler
   name: Fragoler
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: plushie-moth-fragoler
+    state: plush_fragoler
   - type: PointLight
     enabled: true
     radius: 12
@@ -30,20 +30,82 @@
 
 - type: entity
   parent: BasePlushie
-  id: PlushieDogAskolot
+  id: PlushAsler
   name: Askolot
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: dog-evil
-    scale: 0.75, 0.75
+    state: plush_asler
 
 - type: entity
   parent: BasePlushie
-  id: PlushieDogLoxmat
+  id: Plushloxmat
   name: Loxmat
   components:
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
-    state: dog-good
+    state: plush_loxmat
     scale: 0.75, 0.75
+
+- type: entity
+  parent: BasePlushie
+  id: PlushCeaser
+  name: Ceaser
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plush_ceaser
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Exodus/Items/Toys/ceaser.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Exodus/Items/Toys/ceaser.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Exodus/Items/Toys/ceaser.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Exodus/Items/Toys/ceaser.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushAtima
+  name: Atima
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plush_atima
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Omnizine
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Omnizine
+          Quantity: 10
+
+- type: entity
+  parent: PlushieMoth
+  id: PlushJidor
+  name: Jidor
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Fun/toys.rsi
+    state: plush_jidor
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 10
+  - type: StaminaDamageOnHit
+    damage: 50
+    sound: /Audio/Weapons/egloves.ogg
