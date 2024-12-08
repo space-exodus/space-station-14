@@ -155,13 +155,13 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSalvage
- # Exodus-Maximal-HardSiut-Craft-Start
+ # Exodus-Maximal-HardSuit-Craft-Start
   - type: Tag
     tags:
     - Hardsuit
     - WhitelistChameleon
     - HardsuitMining
- # Exodus-Maximal-HardSiut-Craft-End
+ # Exodus-Maximal-HardSuit-Craft-End
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
