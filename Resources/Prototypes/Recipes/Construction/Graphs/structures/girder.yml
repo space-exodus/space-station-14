@@ -30,17 +30,17 @@
             - tool: Screwing
               doAfter: 2
        # Exodus-Wall-Diagonal-Craft-Start
-        - to: girder
+        - to: diagonalWall
           completed:
             - !type:SnapToGrid { }
           conditions:
             - !type:EntityAnchored { }
           steps:
+            - tool: Cutting
+              doAfter: 4
             - material: Steel
               amount: 1
               doAfter: 1
-            - tool: Cutting
-              doAfter: 4
        # Exodus-Wall-Diagonal-Craft-End
 
         - to: wall
