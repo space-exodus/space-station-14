@@ -145,6 +145,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-SadTromboneImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -171,6 +172,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-LightImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -197,6 +199,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-BikeHornImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -225,6 +228,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-TrackingImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -253,6 +257,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-StorageImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -279,6 +284,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-FreedomImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -305,6 +311,7 @@
         - ChiefMedicalOfficer
     - label: corvax-hidden-desc-UplinkImplanter-research
       jobRequired:
+        - Brigmedic # Exodus-Brigmedic
         - ResearchAssistant
         - ResearchDirector
         - Scientist
@@ -331,6 +338,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-EmpImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -357,6 +365,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-ScramImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -383,6 +392,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-DnaScramblerImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -411,6 +421,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-MicroBombImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -437,6 +448,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-MacroBombImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -463,6 +475,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-DeathRattleImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
@@ -489,6 +502,7 @@
         - ChiefMedicalOfficer
     - label: corvax-hidden-desc-DeathAcidifierImplanter-research
       jobRequired:
+        - Brigmedic # Exodus-Brigmedic
         - ResearchAssistant
         - ResearchDirector
         - Scientist
@@ -517,6 +531,7 @@
           - ChiefMedicalOfficer
       - label: corvax-hidden-desc-MindShieldImplanter-research
         jobRequired:
+          - Brigmedic # Exodus-Brigmedic
           - ResearchAssistant
           - ResearchDirector
           - Scientist
