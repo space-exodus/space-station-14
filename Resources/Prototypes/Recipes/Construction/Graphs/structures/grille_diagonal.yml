@@ -6,17 +6,15 @@
       edges:
         - to: grilleDiagonal
           completed:
-            - !type:SnapToGrid
-              southRotation: true
+            - !type:SnapToGrid { }
           steps:
             - material: MetalRod
               amount: 2
               doAfter: 1
-              
+
         - to: clockworkGrilleDiagonal
           completed:
-            - !type:SnapToGrid
-              southRotation: true
+            - !type:SnapToGrid { }
           steps:
             - material: MetalRod
               amount: 2
@@ -36,7 +34,7 @@
           steps:
             - tool: Cutting
               doAfter: 0.25
-              
+
     - node: clockworkGrilleDiagonal
       entity: ClockworkGrilleDiagonal
       edges:
