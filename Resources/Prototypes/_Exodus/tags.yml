@@ -6,3 +6,9 @@
 
 - type: Tag
   id: SyringeBullet
+
+- type: Tag
+  id: AASElectronics
+
+- type: Tag
+  id: HardsuitMining
