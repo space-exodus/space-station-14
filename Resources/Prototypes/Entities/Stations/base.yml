@@ -47,6 +47,7 @@
     - type: GridSpawn
       groups:
         trade: !type:GridSpawnGroup
+          nameGrid: false # Exodus | Normal name for trading outpost grid
           addComponents:
             - type: ProtectedGrid
             - type: TradeStation
@@ -86,11 +87,12 @@
             inherent: true
           protos:
           - VGRoid
-        # Corvax-start
+        # Exodus-SalvageShuttle-start
         mining: !type:GridSpawnGroup
+          nameGrid: false
           paths:
-          - /Maps/Shuttles/corvax_mining.yml
-        # Corvax-end
+          - /Maps/Exodus/Shuttles/mining.yml
+        # Exodus-SalvageShuttle-end
 
 - type: entity
   id: BaseStationCentcomm
