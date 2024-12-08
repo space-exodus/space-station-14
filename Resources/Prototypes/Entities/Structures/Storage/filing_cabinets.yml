@@ -125,6 +125,8 @@
   abstract: true
   id: BaseBureaucraticStorageFill
   suffix: Filled
+  name: filing cabinet
+  description: A cabinet for all your filing needs.
   components:
   - type: StorageFill
     contents:

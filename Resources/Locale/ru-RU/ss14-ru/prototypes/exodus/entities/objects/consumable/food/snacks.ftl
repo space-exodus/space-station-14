@@ -3,4 +3,4 @@ ent-FoodSnackKirieshki = кириешки c цезием
 ent-FoodSnackKirieshkiOpen = { ent-FoodSnackKirieshki }
     .desc = { ent-FoodSnackKirieshki.desc }
 ent-FoodSnackKirieshkiTrash = { ent-FoodSnackKirieshki }
-    .desc = { ent-FoodPacKetTrash.desc }
+    .desc = { ent-FoodPacketTrash.desc }

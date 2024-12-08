@@ -46,9 +46,7 @@ namespace Content.Shared.Standing
         private void OnFootstepsSound(EntityUid uid, StandingStateComponent component, FootstepsSoundAttemptEvent ev)
         {
             if (!component.Standing)
-                return;
-
-            ev.Cancel();
+                ev.Cancel();
         }
         // Exodus-Crawling-End
 

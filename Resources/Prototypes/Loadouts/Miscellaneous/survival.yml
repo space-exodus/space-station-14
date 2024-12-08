@@ -18,7 +18,11 @@
     - Human
     - Moth
     - Reptilian
-    - Vulpkanin # Corvax-MRP
+  # Exodus-Races-Start
+    - Kidan
+    - Felinid
+    - Vulpkanin
+  # Exodus-Races-End
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

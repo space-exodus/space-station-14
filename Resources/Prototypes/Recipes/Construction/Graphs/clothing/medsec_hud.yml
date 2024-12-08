@@ -28,16 +28,11 @@
                 state: walkietalkie
               doAfter: 5
             - tag: CapacitorStockPart
-              name: capacitor
+              name: a capacitor
+              store: capacitor
               icon:
-                sprite: Objects/Misc/stock_parts.rsi
-                state: capacitor
-              doAfter: 5
-            - tag: CapacitorStockPart
-              name: capacitor
-              icon:
-                sprite: Objects/Misc/stock_parts.rsi
-                state: capacitor
+                sprite: "Objects/Misc/stock_parts.rsi"
+                state: "capacitor"
               doAfter: 5
     - node: medsecHud
       entity: ClothingEyesHudMedSec
