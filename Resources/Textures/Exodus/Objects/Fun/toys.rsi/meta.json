@@ -8,16 +8,25 @@
     },
     "states": [
         {
-            "name": "dog-evil"
+            "name": "plush_loxmat"
         },
         {
-            "name": "dog-good"
+            "name": "plush_fragoler"
         },
         {
-            "name": "plushie-lizard-lokilife"
+            "name": "plush_lokilife"
         },
         {
-            "name": "plushie-moth-fragoler"
+            "name": "plush_asler"
+        },
+        {
+            "name": "plush_atima"
+        },
+        {
+            "name": "plush_ceaser"
+        },
+        {
+            "name": "plush_jidor"
         }
     ]
 }
