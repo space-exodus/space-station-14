@@ -1,6 +1,8 @@
 @echo off
 set configuration=%1
 
+cd ../..
+
 if exist Secrets (
     rm -r Resources/Prototypes/ExodusSecrets
     rm -r Resources/Locale/ru-RU/exodus-secrets

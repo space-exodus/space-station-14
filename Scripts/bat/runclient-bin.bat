@@ -1,4 +1,7 @@
 @echo off
+
+cd ../..
+
 if exist Secrets (
     rm -r Resources/Prototypes/ExodusSecrets
     rm -r Resources/Locale/ru-RU/exodus-secrets
