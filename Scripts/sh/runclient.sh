@@ -1,3 +1,5 @@
 #!/bin/sh
-dotnet run --project Content.Client
+
+./bin/Content.Server/Content.Server
+
 read -p "Press enter to continue"
