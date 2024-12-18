@@ -1,4 +1,5 @@
 <Document>
+
   # Расы
 
   Нанотразен нанимает разнообразные разумные виды.
@@ -7,6 +8,7 @@
   <GuideEntityEmbed Entity="MobArachnid" Caption="Арахнид"/>
   <GuideEntityEmbed Entity="MobDiona" Caption="Диона"/>
   <GuideEntityEmbed Entity="MobDwarf" Caption="Дворф"/>
+  <GuideEntityEmbed Entity="MobFelinid" Caption="Фелинид"/>
   <GuideEntityEmbed Entity="MobHuman" Caption="Человек"/>
   </Box>
   <Box>
@@ -14,6 +16,7 @@
   <GuideEntityEmbed Entity="MobReptilian" Caption="Унатх"/>
   <GuideEntityEmbed Entity="MobVulpkanin" Caption="Вульпканин"/>
   <GuideEntityEmbed Entity="MobSlimePerson" Caption="Слаймолюд"/>
+  <GuideEntityEmbed Entity="MobKidan" Caption="Кидан"/>
   </Box>
-
+[color=red]Актуальную и полную информацию о расах и их особенностях можно найти на вики проекта.[/color] 
 </Document>

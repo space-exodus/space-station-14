@@ -10,11 +10,13 @@
 <GuideEntityEmbed Entity="ChemDispenser"/>
 <GuideEntityEmbed Entity="ChemBag"/>
 <GuideEntityEmbed Entity="KitchenReagentGrinder"/>
-<GuideEntityEmbed Entity="ChemMaster"/>
 </Box>
 <Box>
+<GuideEntityEmbed Entity="ChemMaster"/>
 <GuideEntityEmbed Entity="LargeBeaker"/>
 <GuideEntityEmbed Entity="ChemistryEmptyBottle01"/>
+</Box>
+<Box>
 <GuideEntityEmbed Entity="HandLabeler"/>
 <GuideEntityEmbed Entity="Syringe"/>
 <GuideEntityEmbed Entity="PillCanister"/>
@@ -43,6 +45,8 @@
 <Box>
 <GuideEntityEmbed Entity="ModularGrenade"/>
 <GuideEntityEmbed Entity="CableApcStack"/>
+</Box>
+<Box>
 <GuideEntityEmbed Entity="ChemicalPayload"/>
 <GuideEntityEmbed Entity="TimerTrigger"/>
 </Box>
