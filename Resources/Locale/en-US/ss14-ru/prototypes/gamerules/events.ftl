@@ -50,3 +50,5 @@ ent-IonStorm = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-MimicVendorRule = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
+ent-GreytideVirus = { ent-BaseStationEventShortDelay }
+    .desc = { ent-BaseStationEventShortDelay.desc }

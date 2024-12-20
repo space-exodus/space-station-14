@@ -1,4 +1,3 @@
-using System.Collections.Immutable;
 using System.Net;
 using Content.Shared.Database;
 using Robust.Shared.Network;
@@ -121,7 +120,7 @@ public sealed record PlayerRecord(
     string LastSeenUserName,
     DateTimeOffset LastSeenTime,
     IPAddress LastSeenAddress,
-    ImmutableArray<byte>? HWId,
+    ImmutableTypedHwid? HWId,
     ulong? DiscordId, // Exodus-Discord
     bool IsPremium, // Exodus-Sponsorship
     string? PremiumOOCColor // Exodus-Sponsorship

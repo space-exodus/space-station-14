@@ -16,5 +16,5 @@ ent-ClothingHeadHelmetHardsuitDeathsquadSpecialist = шлем скафандра
     .desc = Высокотехнологичный шлем, предназначенный для Специалиста Эскадрона Смерти.
 ent-ClothingOuterHardsuitSalvageMaximal = { ent-ClothingOuterHardsuitMaxim }
     .desc = { ent-ClothingOuterHardsuitMaxim.desc }
-ent-ClothingHeadHelmetHardsuitSalvageMaximal = { ent-ClothingHeadHelmetHardsuitSalvage }
-    .desc = { ent-ClothingHeadHelmetHardsuitSalvage.desc }
+ent-ClothingHeadHelmetHardsuitSalvageMaximal = { ent-ClothingHeadHelmetHardsuitMaxim }
+    .desc = { ent-ClothingHeadHelmetHardsuitMaxim.desc }
