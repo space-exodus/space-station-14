@@ -1,5 +1,5 @@
 - type: gameMapPool
-  id: ExodusClassicMapPool
+  id: ExodusNewYearMapPool
   maps:
     - Amber
     - Cog
@@ -24,6 +24,6 @@
     - Omega
     - Oasis
     # Exodus Supported Maps
-    - ExodusCluster
+    - ExodusClusterNewYear
     - ExodusPacked
     - ExodusSaltern
