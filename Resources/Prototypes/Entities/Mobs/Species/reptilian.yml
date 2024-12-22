@@ -68,6 +68,13 @@
       295: 0.6
       285: 0.4
   - type: Wagging
+  # Exodus-ThickSyringes-Start
+  - type: InjectableSolution
+    solution: chemicals
+    whitelist:
+      tags:
+        - ThickSyringe
+  # Exodus-ThickSyringes-End
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:
