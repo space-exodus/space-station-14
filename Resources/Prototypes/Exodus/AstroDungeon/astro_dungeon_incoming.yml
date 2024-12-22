@@ -1,0 +1,4 @@
+- type: preloadedGrid
+  id: DungLab31
+  path: /Maps/Exodus/TeleportationObjects/lab_31.yml
+  copies: 1

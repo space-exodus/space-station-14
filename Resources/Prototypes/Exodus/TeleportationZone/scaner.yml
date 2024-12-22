@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseItem
+  id: TeleportationZoneInfoPortConsole
+  name: Information console
+  description: Receives important information from the central command.
+  components:
+    - type: Sprite
+      sprite: Exodus/TeleportationZone/scaner.rsi
+      state: console
+    - type: TeleportationZoneScaner
+    - type: ActivatableUI
+      key: enum.TeleportationZoneScanerUiKey.Key
+    - type: UserInterface
+      interfaces:
+        enum.TeleportationZoneScanerUiKey.Key:
+          type: TeleportationZoneScanerBoundUi

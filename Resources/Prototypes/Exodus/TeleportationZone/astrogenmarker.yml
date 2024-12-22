@@ -1,0 +1,17 @@
+- type: entity
+  id: AstroGenMarkerBase
+  name: AstroGenMarkerBase
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: AstroGenMarker
+  - type: Marker
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: Markers/cross.rsi
+    layers:
+      - state: green
