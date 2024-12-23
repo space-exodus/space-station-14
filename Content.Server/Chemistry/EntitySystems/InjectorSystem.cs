@@ -15,6 +15,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Stacks;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Whitelist; // Exodus-ThickSyringes
+using Content.Shared.Damage; // Exodus-ThickSyringes
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -24,6 +25,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!; // Exodus-ThickSyringes
+    [Dependency] private readonly DamageableSystem _damageable = default!; // Exodus-ThickSyringes
 
     public override void Initialize()
     {
@@ -79,6 +81,13 @@ public sealed class InjectorSystem : SharedInjectorSystem
             return;
 
         args.Handled = TryUseInjector(entity, args.Args.Target.Value, args.Args.User);
+
+        // Exodus-ThickSyringes-Start
+        if (args.Handled && _whitelist.IsWhitelistFail(entity.Comp.DamageIgnore, args.Args.Target.Value) && entity.Comp.Damage != null)
+        {
+            _damageable.TryChangeDamage(args.Args.Target.Value, entity.Comp.Damage, true, false);
+        }
+        // Exodus-ThickSyringes-End
     }
 
     private void OnInjectorAfterInteract(Entity<InjectorComponent> entity, ref AfterInteractEvent args)
