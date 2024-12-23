@@ -74,6 +74,13 @@
     whitelist:
       tags:
         - ThickSyringe
+  - type: Tag
+    tags:
+      - ThickSkin
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - AnomalyHost
   # Exodus-ThickSyringes-End
   - type: Inventory
     speciesId: reptilian

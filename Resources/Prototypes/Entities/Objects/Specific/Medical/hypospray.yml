@@ -52,6 +52,12 @@
     onlyAffectsMobs: false
   - type: UseDelay
     delay: 0.5
+  # Exodus-ThickSyringe-Start | Needed for balance
+  - type: Tag
+    tags:
+    - Syringe
+    - ThickSyringe
+  # Exodus-ThickSyringe-End
 
 - type: entity
   name: borghypo
@@ -90,11 +96,6 @@
           maxVol: 3000
     - type: UseDelay
       delay: 0.0
-    # Exodus-ThickSyringes-Start
-    - type: Tag
-      tags:
-        - ThickSyringe
-    # Exodus-ThickSyringes-End
 
 - type: entity
   name: chemical medipen

@@ -9,9 +9,12 @@
 
 - type: Tag
   id: AASElectronics
-  
+
 - type: Tag
   id: HardsuitMining
 
 - type: Tag
   id: ThickSyringe
+
+- type: tag
+  id: ThickSkin
