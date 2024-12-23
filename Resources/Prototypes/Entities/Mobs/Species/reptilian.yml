@@ -68,6 +68,20 @@
       295: 0.6
       285: 0.4
   - type: Wagging
+  # Exodus-ThickSyringes-Start
+  - type: InjectableSolution
+    solution: chemicals
+    whitelist:
+      tags:
+        - ThickSyringe
+  - type: Tag
+    tags:
+      - ThickSkin
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - AnomalyHost
+  # Exodus-ThickSyringes-End
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:

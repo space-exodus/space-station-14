@@ -1,7 +1,9 @@
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Damage; // Exodus-ThickSyringes
 using Content.Shared.DoAfter;
 using Content.Shared.FixedPoint;
+using Content.Shared.Whitelist; // Exodus-ThickSyringes
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -122,6 +124,20 @@ public sealed partial class InjectorComponent : Component
     public float MovementThreshold = 0.1f;
 
     #endregion
+
+    // Exodus-ThickSyringe-Start
+    /// <summary>
+    /// Damage which is applied to target on injection
+    /// </summary>
+    [DataField]
+    public DamageSpecifier? Damage = null;
+
+    /// <summary>
+    /// Which entities will not get damage on injection
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? DamageIgnore = null;
+    // Exodus-ThickSyringe-End
 }
 
 /// <summary>
