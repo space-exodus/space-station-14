@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: [ClothingOuterBase, AllowSuitStorageClothing]
   id: ClothingOuterHardsuitRnd
   name: scientist's hardsuit
   description: A sturdy brand-new hardsuit. Will protect you from most of your work. It does not protect against mental breakdown.
@@ -15,6 +15,10 @@
     walkModifier: 0.85
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+  - type: Item
+    size: Ginormous
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET
   - type: TemperatureProtection
     heatingCoefficient: 0.6
     coolingCoefficient: 0.6
@@ -38,6 +42,11 @@
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10 # the average lightbulb only does around four damage!
+    slots: OUTERCLOTHING
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
