@@ -21,3 +21,6 @@ ent-SyringeAmmoPax = { ent-SyringeAmmo }
 ent-SyringeAmmoNorepinephric = { ent-SyringeAmmo }
     .desc = { ent-SyringeAmmo.desc }
     .suffix = Норэпинефриновая кислота
+ent-SyringeAmmoTazinide = { ent-SyringeAmmo }
+    .desc = { ent-SyringeAmmo.desc }
+    .suffix = Тазинид
