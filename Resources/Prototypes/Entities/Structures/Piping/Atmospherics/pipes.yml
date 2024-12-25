@@ -54,6 +54,7 @@
   # - type: PipeRestrictOverlap # Exodus
   - type: AtmosUnsafeUnanchor
   - type: AtmosPipeColor
+  - type: AtmosMonitoringConsoleDevice
   - type: Tag
     tags:
     - Pipe

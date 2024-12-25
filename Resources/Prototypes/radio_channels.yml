@@ -85,7 +85,7 @@
   name: chat-radio-binary
   keycode: 'д' # Corvax-Localization
   frequency: 1001
-  color: "#2ed2fd"
+  color: "#5ed7aa"
   # Exodus-LocalizedChannels-Start
   localized: true
   range: 5000

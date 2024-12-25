@@ -134,7 +134,6 @@
         Dead: 0
       baseDecayRate: 0.0001
     - type: Hunger
-      currentHunger: 2500
       thresholds:
         Overfed: 3500
         Okay: 2500
