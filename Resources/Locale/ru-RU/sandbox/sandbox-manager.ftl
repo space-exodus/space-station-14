@@ -1,5 +1,5 @@
 sandbox-window-title = Панель песочницы
-sandbox-window-map-editing-label = Редактирование
+sandbox-window-map-editing-label = Маппинг
 sandbox-window-visibility-label = Видимость
 sandbox-window-your-character-label = Ваш персонаж
 sandbox-window-ai-overlay-button = Оверлей ИИ
