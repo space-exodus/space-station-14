@@ -15,7 +15,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Stacks;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Whitelist; // Exodus-ThickSyringes
-using Content.Shared.Damage; // Exodus-ThickSyringes
+using Content.Shared.EntityEffects; // Exodus-ThickSyringes
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -25,7 +25,6 @@ public sealed class InjectorSystem : SharedInjectorSystem
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!; // Exodus-ThickSyringes
-    [Dependency] private readonly DamageableSystem _damageable = default!; // Exodus-ThickSyringes
 
     public override void Initialize()
     {
@@ -33,6 +32,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
 
         SubscribeLocalEvent<InjectorComponent, InjectorDoAfterEvent>(OnInjectDoAfter);
         SubscribeLocalEvent<InjectorComponent, AfterInteractEvent>(OnInjectorAfterInteract);
+        SubscribeLocalEvent<InjectorComponent, InjectorUsedEvent>(OnInjectorUsed); // Exodus-ThickSyringes
     }
 
     private bool TryUseInjector(Entity<InjectorComponent> injector, EntityUid target, EntityUid user)
@@ -80,15 +80,37 @@ public sealed class InjectorSystem : SharedInjectorSystem
         if (args.Cancelled || args.Handled || args.Args.Target == null)
             return;
 
-        args.Handled = TryUseInjector(entity, args.Args.Target.Value, args.Args.User);
-
         // Exodus-ThickSyringes-Start
-        if (args.Handled && _whitelist.IsWhitelistFail(entity.Comp.DamageIgnore, args.Args.Target.Value) && entity.Comp.Damage != null)
+        if (TryComp<InjectableSolutionComponent>(args.Args.Target.Value, out var injectable))
         {
-            _damageable.TryChangeDamage(args.Args.Target.Value, entity.Comp.Damage, true, false);
+            if (_whitelist.IsWhitelistFail(injectable.Whitelist, entity))
+            {
+                Popup.PopupEntity(
+                    Loc.GetString("injector-component-target-injectable-whitelist-failed-message",
+                        ("target", Identity.Entity(args.Args.Target.Value, EntityManager))),
+                    args.Args.Target.Value, args.Args.User
+                );
+                return;
+            }
         }
         // Exodus-ThickSyringes-End
+
+        args.Handled = TryUseInjector(entity, args.Args.Target.Value, args.Args.User);
     }
+
+    // Exodus-ThickSyringes-Start
+    private void OnInjectorUsed(EntityUid uid, InjectorComponent injector, InjectorUsedEvent args)
+    {
+        Log.Info("OnInjectorUsed called!");
+        foreach (var effect in injector.EffectsAfterInjection)
+        {
+            if (!effect.ShouldApply(new(args.Target, EntityManager)))
+                continue;
+
+            effect.Effect(new(args.Target, EntityManager));
+        }
+    }
+    // Exodus-ThickSyringes-End
 
     private void OnInjectorAfterInteract(Entity<InjectorComponent> entity, ref AfterInteractEvent args)
     {
@@ -212,7 +234,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
             }
         }
 
-        DoAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, user, actualDelay, new InjectorDoAfterEvent(), injector.Owner, target: target, used: injector.Owner)
+        var doAfterStarted = DoAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, user, actualDelay, new InjectorDoAfterEvent(), injector.Owner, target: target, used: injector.Owner) // Exodus-ThickSyringes
         {
             BreakOnMove = true,
             BreakOnWeightlessMove = false,
@@ -221,6 +243,18 @@ public sealed class InjectorSystem : SharedInjectorSystem
             BreakOnHandChange = injector.Comp.BreakOnHandChange,
             MovementThreshold = injector.Comp.MovementThreshold,
         });
+        // Exodus-ThickSyringes-Start
+        if (doAfterStarted)
+        {
+            foreach (var effect in injector.Comp.EffectsOnInjectionStart)
+            {
+                if (!effect.ShouldApply(new(target, EntityManager)))
+                    continue;
+
+                effect.Effect(new(target, EntityManager));
+            }
+        }
+        // Exodus-ThickSyringes-End
     }
 
     private bool TryInjectIntoBloodstream(Entity<InjectorComponent> injector, Entity<BloodstreamComponent> target,
@@ -261,24 +295,9 @@ public sealed class InjectorSystem : SharedInjectorSystem
         return true;
     }
 
-    private bool TryInject(Entity<InjectorComponent> injector, Entity<InjectableSolutionComponent?> targetEntity, // Exodus-ThickSyringes | need InjectableSolutionComponent
+    private bool TryInject(Entity<InjectorComponent> injector, EntityUid targetEntity,
         Entity<SolutionComponent> targetSolution, EntityUid user, bool asRefill)
     {
-        // Exodus-ThickSyringes-Start
-        if (Resolve(targetEntity, ref targetEntity.Comp, logMissing: false))
-        {
-            if (_whitelist.IsWhitelistFail(targetEntity.Comp.Whitelist, injector))
-            {
-                Popup.PopupEntity(
-                    Loc.GetString("injector-component-target-injectable-whitelist-failed-message",
-                        ("target", Identity.Entity(targetEntity, EntityManager))),
-                    injector.Owner, user
-                );
-                return false;
-            }
-        }
-        // Exodus-ThickSyringes-End
-
         if (!SolutionContainers.TryGetSolution(injector.Owner, injector.Comp.SolutionName, out var soln,
                 out var solution) || solution.Volume == 0)
             return false;
@@ -306,9 +325,9 @@ public sealed class InjectorSystem : SharedInjectorSystem
         _reactiveSystem.DoEntityReaction(targetEntity, removedSolution, ReactionMethod.Injection);
 
         if (!asRefill)
-            SolutionContainers.Inject(targetEntity.Owner, targetSolution, removedSolution); // Exodus-ThickSyringes
+            SolutionContainers.Inject(targetEntity, targetSolution, removedSolution);
         else
-            SolutionContainers.Refill(targetEntity.Owner, targetSolution, removedSolution); // Exodus-ThickSyringes
+            SolutionContainers.Refill(targetEntity, targetSolution, removedSolution);
 
         Popup.PopupEntity(Loc.GetString("injector-component-transfer-success-message",
             ("amount", removedSolution.Volume),
@@ -331,6 +350,15 @@ public sealed class InjectorSystem : SharedInjectorSystem
         // Leave some DNA from the injectee on it
         var ev = new TransferDnaEvent { Donor = target, Recipient = injector };
         RaiseLocalEvent(target, ref ev);
+
+        // Exodus-ThickSyringes-Start
+        var usedEv = new InjectorUsedEvent()
+        {
+            Injector = injector,
+            Target = target,
+        };
+        RaiseLocalEvent(injector, usedEv);
+        // Exodus-ThickSyringes-End
     }
 
     private void AfterDraw(Entity<InjectorComponent> injector, EntityUid target)
@@ -345,6 +373,15 @@ public sealed class InjectorSystem : SharedInjectorSystem
         // Leave some DNA from the drawee on it
         var ev = new TransferDnaEvent { Donor = target, Recipient = injector };
         RaiseLocalEvent(target, ref ev);
+
+        // Exodus-ThickSyringes-Start
+        var usedEv = new InjectorUsedEvent()
+        {
+            Injector = injector,
+            Target = target,
+        };
+        RaiseLocalEvent(injector, usedEv);
+        // Exodus-ThickSyringes-End
     }
 
     private bool TryDraw(Entity<InjectorComponent> injector, Entity<BloodstreamComponent?> target,
