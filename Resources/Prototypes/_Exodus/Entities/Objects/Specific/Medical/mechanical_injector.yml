@@ -7,12 +7,35 @@
     - type: Injector
       transferAmount: 15
       toggleState: Draw
-      damageIgnore:
-        tags:
-          - ThickSkin
-      damage:
-        types:
-          Piercing: 5
+      effectsAfterInjection:
+        - !type:Emote
+          conditions:
+            - !type:HasTag
+              tag: ThickSkin
+              invert: true
+          emote: Scream
+          showInChat: true
+        - !type:HealthChange
+          conditions:
+            - !type:HasTag
+              tag: ThickSkin
+              invert: true
+          damage:
+            types:
+              Piercing: 10
+        - !type:ModifyBleedAmount
+          conditions:
+            - !type:HasTag
+              tag: ThickSkin
+              invert: true
+          amount: 5
+        - !type:PopupMessage
+          conditions:
+            - !type:HasTag
+              tag: ThickSkin
+              invert: true
+          visualType: MediumCaution
+          messages: ["mechanical-injector-effect-pain-message"]
     - type: Sprite
       sprite: Exodus/Objects/Specific/Medical/mechanical_injector.rsi
       layers:

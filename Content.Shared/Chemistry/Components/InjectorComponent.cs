@@ -1,9 +1,8 @@
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
-using Content.Shared.Damage; // Exodus-ThickSyringes
 using Content.Shared.DoAfter;
+using Content.Shared.EntityEffects; // Exodus-ThickSyringes
 using Content.Shared.FixedPoint;
-using Content.Shared.Whitelist; // Exodus-ThickSyringes
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -14,6 +13,14 @@ namespace Content.Shared.Chemistry.Components;
 public sealed partial class InjectorDoAfterEvent : SimpleDoAfterEvent
 {
 }
+
+// Exodus-ThickSyringes-Start
+public sealed partial class InjectorUsedEvent : EntityEventArgs
+{
+    public EntityUid Target;
+    public EntityUid Injector;
+}
+// Exodus-ThickSyringes-End
 
 /// <summary>
 /// Implements draw/inject behavior for droppers and syringes.
@@ -127,16 +134,16 @@ public sealed partial class InjectorComponent : Component
 
     // Exodus-ThickSyringe-Start
     /// <summary>
-    /// Damage which is applied to target on injection
+    /// Which effects is applied to target after injection
     /// </summary>
-    [DataField]
-    public DamageSpecifier? Damage = null;
+    [DataField(serverOnly: true)]
+    public EntityEffect[] EffectsAfterInjection = [];
 
     /// <summary>
-    /// Which entities will not get damage on injection
+    /// Which effects is applied to target when injection do after starts
     /// </summary>
-    [DataField]
-    public EntityWhitelist? DamageIgnore = null;
+    [DataField(serverOnly: true)]
+    public EntityEffect[] EffectsOnInjectionStart = [];
     // Exodus-ThickSyringe-End
 }
 
