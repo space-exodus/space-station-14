@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+scriptDir="$(cd "$(dirname "$0")" && pwd)"
 
 exodusSecretsPath="$scriptDir/Resources/Prototypes/ExodusSecrets"
 secretsPrototypesPath="$scriptDir/Secrets/Resources/Prototypes"
@@ -22,7 +22,9 @@ process_folder() {
         rm -rf "$targetPath"
     fi
 
-    cp -r "$sourcePath" "$targetPath"
+    if [ -d "$sourcePath" ]; then
+        cp -r "$sourcePath" "$targetPath"
+    fi
 }
 
 process_folder "$exodusSecretsPath" "$secretsPrototypesPath"

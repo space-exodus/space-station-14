@@ -26,13 +26,9 @@ set targetPath=%1
 set sourcePath=%2
 
 if exist "%targetPath%" (
-    rd /s /q "%targetPath%"
+    rmdir /s /q "%targetPath%"
 )
 
 if exist "%sourcePath%" (
-    if not exist "%targetPath%" (
-        mkdir "%targetPath%"
-    )
-    xcopy "%sourcePath%\*" "%targetPath%\" /E /H /C /I >nul 2>nul
+    xcopy /e /i /q "%sourcePath%" "%targetPath%" >nul
 )
-exit /b

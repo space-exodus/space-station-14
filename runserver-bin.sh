@@ -2,27 +2,15 @@
 
 scriptDir="$(cd "$(dirname "$0")" && pwd)"
 
+contentServerExePath="$scriptDir/bin/Content.Server/Content.Server.exe"
+contentServerPath="$scriptDir/bin/Content.Server/Content.Server"
+
 "$scriptDir/sync-secrets.sh"
 
-contentExePath="$scriptDir/bin/Content.Server/Content.Server.exe"
-contentPath="$scriptDir/bin/Content.Server/Content.Server"
+source "$scriptDir/functions.sh"
 
-if [ ! -f "$contentExePath" ] && [ ! -f "$contentPath" ]; then
-    if [ -d "$scriptDir/Secrets" ]; then
-        echo "Content.Server не найден. Запуск сборки проекта через dotnet build -c Release Secrets/Content.Exodus.Server."
-        dotnet build -c Release Secrets/Content.Exodus.Server
-    else
-        echo "Content.Server не найден. Запуск сборки проекта через dotnet build -c Release Content.Server."
-        dotnet build -c Release Content.Server
-    fi
+if [ ! -f "$contentServerExePath" ] && [ ! -f "$contentServerPath" ]; then
+    build_component "Content.Server" "Content.Exodus.Server"
 fi
 
-if [ -f "$contentExePath" ] || [ -f "$contentPath" ]; then
-    if [ "$(uname -s)" = "Windows_NT" ] || [ -n "$MSYSTEM" ]; then
-        start "" "$contentExePath"
-    else
-        "$contentPath" &
-    fi
-else
-    echo "Не удалось найти Content.Server после сборки."
-fi
+run_component "Content.Server"
