@@ -1,3 +1,7 @@
+#!/bin/bash
+
+scriptDir="$(cd "$(dirname "$0")" && pwd)"
+
 build_component() {
     local component
 
