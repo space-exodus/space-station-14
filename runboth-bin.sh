@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
-scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+scriptDir="$(cd "$(dirname "$0")" && pwd)"
+
+"$scriptDir/sync-secrets.sh"
 
 contentServerExePath="$scriptDir/bin/Content.Server/Content.Server.exe"
 contentClientExePath="$scriptDir/bin/Content.Client/Content.Client.exe"
@@ -8,17 +10,27 @@ contentServerPath="$scriptDir/bin/Content.Server/Content.Server"
 contentClientPath="$scriptDir/bin/Content.Client/Content.Client"
 
 if [ ! -f "$contentServerExePath" ] && [ ! -f "$contentServerPath" ]; then
-    echo "Content.Server не найден. Запуск сборки проекта через dotnet build -c Release Content.Server."
-    dotnet build -c Release Content.Server
+    if [ -d "$scriptDir/Secrets" ]; then
+        echo "Content.Server не найден. Запуск сборки проекта через dotnet build -c Release Secrets/Content.Exodus.Server."
+        dotnet build -c Release Secrets/Content.Exodus.Server
+    else
+        echo "Content.Server не найден. Запуск сборки проекта через dotnet build -c Release Content.Server."
+        dotnet build -c Release Content.Server
+    fi
 fi
 
 if [ ! -f "$contentClientExePath" ] && [ ! -f "$contentClientPath" ]; then
-    echo "Content.Client не найден. Запуск сборки проекта через dotnet build -c Release Content.Client."
-    dotnet build -c Release Content.Client
+    if [ -d "$scriptDir/Secrets" ]; then
+        echo "Content.Client не найден. Запуск сборки проекта через dotnet build -c Release Secrets/Content.Exodus.Client."
+        dotnet build -c Release Secrets/Content.Exodus.Client
+    else
+        echo "Content.Client не найден. Запуск сборки проекта через dotnet build -c Release Content.Client."
+        dotnet build -c Release Content.Client
+    fi
 fi
 
 if [ -f "$contentServerExePath" ] || [ -f "$contentServerPath" ]; then
-    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    if [ "$(uname -s)" = "Windows_NT" ] || [ -n "$MSYSTEM" ]; then
         start "" "$contentServerExePath"
     else
         "$contentServerPath" &
@@ -28,7 +40,7 @@ else
 fi
 
 if [ -f "$contentClientExePath" ] || [ -f "$contentClientPath" ]; then
-    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
+    if [ "$(uname -s)" = "Windows_NT" ] || [ -n "$MSYSTEM" ]; then
         start "" "$contentClientExePath"
     else
         "$contentClientPath" &

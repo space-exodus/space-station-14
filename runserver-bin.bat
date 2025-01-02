@@ -5,10 +5,18 @@ call ./sync-secrets.bat
 
 set contentExePath=%scriptDir%bin\Content.Server\Content.Server.exe
 
+if not exist "%contentExePath%" (
+    if exist "%scriptDir%Secrets" (
+        echo Content.Server.exe не найден. Запуск сборки проекта через dotnet build -c Release Secrets/Content.Exodus.Server.
+        dotnet build -c Release Secrets/Content.Exodus.Server
+    ) else (
+        echo Content.Server.exe не найден. Запуск сборки проекта через dotnet build -c Release Content.Server.
+        dotnet build -c Release Content.Server
+    )
+)
+
 if exist "%contentExePath%" (
     start "" "%contentExePath%"
 ) else (
-    echo EXE-файл не найден. Запуск сборки проекта с помощью "dotnet build -c Release".
-    cd /d "%scriptDir%"
-    dotnet build -c Release
+    echo Не удалось найти Content.Server.exe после сборки.
 )
