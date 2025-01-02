@@ -1,11 +1,14 @@
 @echo off
-if exist Secrets (
-    rm -r Resources/Prototypes/ExodusSecrets
-    rm -r Resources/Locale/ru-RU/exodus-secrets
-    rm -r Resources/Textures/ExodusSecrets
+setlocal
 
-    cp -R Secrets/Resources/Prototypes Resources/Prototypes/ExodusSecrets
-    cp -R Secrets/Resources/Locale Resources/Locale/ru-RU/exodus-secrets
-    cp -R Secrets/Resources/Textures Resources/Textures/ExodusSecrets
+set scriptDir=%~dp0
+
+call %scriptDir%sync-secrets.bat
+
+if not exist "%scriptDir%bin\Content.Server\Content.Server.exe" if not exist "%scriptDir%bin\Content.Server\Content.Server" (
+    call "%scriptDir%functions.bat" BuildComponent Content.Server Content.Exodus.Server
 )
-start ./bin/Content.Server/Content.Server.exe
+
+call "%scriptDir%functions.bat" RunComponent Content.Server
+
+endlocal
