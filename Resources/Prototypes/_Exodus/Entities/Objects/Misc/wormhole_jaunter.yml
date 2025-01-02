@@ -1,0 +1,12 @@
+- type: entity
+  id: WormholeJaunter
+  name: джаунтер червоточины
+  description: При активации он перенесёт вас в случайную позицию на станции или планете. Не поможет, если вы находитесь в космосе.
+  parent: BaseItem
+  components:
+    - type: Sprite
+      sprite: Exodus/Objects/Misc/jaunter.rsi
+      state: jaunter
+    - type: TriggerOnActivate
+    - type: TeleportOnTrigger
+    - type: DeleteOnTrigger

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from /tg/station https://github.com/tgstation/tgstation/commit/366d703c5b966da200028dbe394203c0f87eb281",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "jaunter"
+        }
+    ]
+}
