@@ -1,11 +1,14 @@
 @echo off
-if exist Secrets (
-    rm -r Resources/Prototypes/ExodusSecrets
-    rm -r Resources/Locale/ru-RU/exodus-secrets
-    rm -r Resources/Textures/ExodusSecrets
+set scriptDir=%~dp0
 
-    cp -R Secrets/Resources/Prototypes Resources/Prototypes/ExodusSecrets
-    cp -R Secrets/Resources/Locale Resources/Locale/ru-RU/exodus-secrets
-    cp -R Secrets/Resources/Textures Resources/Textures/ExodusSecrets
+call ./sync-secrets.bat
+
+set contentExePath=%scriptDir%bin\Content.Server\Content.Server.exe
+
+if exist "%contentExePath%" (
+    start "" "%contentExePath%"
+) else (
+    echo EXE-файл не найден. Запуск сборки проекта с помощью "dotnet build -c Release".
+    cd /d "%scriptDir%"
+    dotnet build -c Release
 )
-start ./bin/Content.Server/Content.Server.exe
