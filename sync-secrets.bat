@@ -3,7 +3,7 @@
 set scriptDir=%~dp0
 
 set exodusSecretsPath=%scriptDir%Resources\Prototypes\ExodusSecrets
-set secretsPrototypesPath=%scriptDir%Secrets\Prototypes
+set secretsPrototypesPath=%scriptDir%Secrets\Resources\Prototypes
 
 set mapsPath=%scriptDir%Resources\Maps\ExodusSecrets
 set secretsMapsPath=%scriptDir%Secrets\Resources\Maps
@@ -33,6 +33,6 @@ if exist "%sourcePath%" (
     if not exist "%targetPath%" (
         mkdir "%targetPath%"
     )
-    xcopy "%sourcePath%\*" "%targetPath%\" /E /H /C /I
+    xcopy "%sourcePath%\*" "%targetPath%\" /E /H /C /I >nul 2>nul
 )
 exit /b

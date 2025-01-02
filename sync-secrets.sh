@@ -3,7 +3,7 @@
 scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 exodusSecretsPath="$scriptDir/Resources/Prototypes/ExodusSecrets"
-secretsPrototypesPath="$scriptDir/Secrets/Prototypes"
+secretsPrototypesPath="$scriptDir/Secrets/Resources/Prototypes"
 
 mapsPath="$scriptDir/Resources/Maps/ExodusSecrets"
 secretsMapsPath="$scriptDir/Secrets/Resources/Maps"
