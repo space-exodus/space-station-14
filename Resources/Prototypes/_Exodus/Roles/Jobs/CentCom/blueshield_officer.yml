@@ -25,19 +25,7 @@
     id: BlueshieldPDA
     ears: ClothingHeadsetAltBlueshield
     belt: ClothingBeltSecurityFilled
-    back: ClothingBackpackSatchelBlueshield
+    back: ClothingBackpackSatchelBlueshieldFilled
     neck: ClothingNeckCloakBlueshield
     pocket1: WeaponAdvancedPulsePistol
-  storage:
-    back:
-    - WeaponSubMachineGunVector
-    - MagazineMagnumSubMachineGun
-    - MagazineMagnumSubMachineGun
-    - MagazineMagnumSubMachineGun
-    - MagazineMagnumSubMachineGun
-    - MedicatedSuture
-    - MedicatedSuture
-    - RegenerativeMesh
-    - RegenerativeMesh
-    - CombatMedipen
-    - CombatMedipen
+    suitstorage: WeaponSubMachineGunVector

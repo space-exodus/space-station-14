@@ -1,0 +1,23 @@
+- type: entity
+  id: ClothingBackpackSatchelBlueshieldFilled
+  parent: ClothingBackpackSatchelBlueshield
+  suffix: Filled
+  components:
+    - type: StorageFill
+      contents:
+        - id: ClothingOuterHardsuitBlueshield
+        - id: MagazineMagnumSubMachineGunPiercing
+          amount: 2
+        - id: MedicatedSuture
+          amount: 2
+        - id: RegenerativeMesh
+          amount: 2
+        - id: CombatMedipen
+          amount: 2
+        - id: DoubleEmergencyOxygenTankFilled
+          amount: 2
+        - id: ClothingMaskGasSecurity
+        - id: MechanicalInjector
+        - id: Syringe
+        - id: OmnizineChemistryBottle
+          amount: 2
