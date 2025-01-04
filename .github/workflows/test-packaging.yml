@@ -60,9 +60,8 @@ jobs:
           echo "HOST *" > ~/.ssh/config
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           git clone git@github.com:space-exodus/secrets.git Secrets
-          cp -R Secrets/Resources/Prototypes Resources/Prototypes/ExodusSecrets
-          cp -R Secrets/Resources/Locale Resources/Locale/ru-RU/exodus-secrets
-          cp -R Secrets/Resources/Textures Resources/Textures/ExodusSecrets
+          chmod +x ./sync-secrets.sh
+          ./sync-secrets.sh
       # Exodus-Secrets-End
 
       - name: Setup .NET Core
