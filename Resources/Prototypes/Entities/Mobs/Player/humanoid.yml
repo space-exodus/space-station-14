@@ -73,6 +73,8 @@
   id: ERTLeader
   parent: EventHumanoidMindShielded
   randomizeName: false
+  speciesBlacklist: # Exodus-MRP
+    - Vox
   components:
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
@@ -355,6 +357,7 @@
   id: ERTSecurity
   speciesBlacklist: # Corvax-MRP
     - Diona
+    - Vox # Exodus-MRP
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -502,6 +505,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: # Corvax-MRP
     - Diona
+    - Vox # Exodus-MRP
   id: CBURNAgent
   parent: EventHumanoidMindShielded
   components:
@@ -534,6 +538,8 @@
 - type: randomHumanoidSettings
   id: CentcomOfficial
   parent: EventHumanoidMindShielded
+  speciesBlacklist: # Exodus-MRP
+    - Vox
   components:
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
@@ -561,6 +567,8 @@
 
 - type: randomHumanoidSettings
   id: SyndicateAgent
+  speciesBlacklist: # Exodus-MRP
+    - Vox
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
@@ -580,6 +588,8 @@
 
 - type: randomHumanoidSettings
   id: NukeOp
+  speciesBlacklist: # Exodus-MRP
+    - Vox
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
