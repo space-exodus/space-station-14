@@ -15,7 +15,7 @@ texturesPath="$scriptDir/Resources/Textures/ExodusSecrets"
 secretsTexturesPath="$scriptDir/Secrets/Resources/Textures"
 
 audioPath="$scriptDir/Resources/Audio/ExodusSecrets"
-secretsAudioPath="$scriptDir/Secrets/Resources/Textures"
+secretsAudioPath="$scriptDir/Secrets/Resources/Audio"
 
 process_folder() {
     local targetPath="$1"
