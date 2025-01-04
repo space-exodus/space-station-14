@@ -33,8 +33,17 @@ jobs:
         echo "HOST *" > ~/.ssh/config
         echo "StrictHostKeyChecking no" >> ~/.ssh/config
         git clone git@github.com:space-exodus/secrets.git Secrets
-        chmod +x ./sync-secrets.sh
-        ./sync-secrets.sh
+
+        if [ -f "./sync-secrets.sh" ]; then
+            chmod +x ./sync-secrets.sh
+            if ! ./sync-secrets.sh; then
+              echo "Error when execute sync-secrets.sh"
+              exit 1
+            fi
+          else
+            echo "sync-secrets.sh don't find"
+            exit 1
+          fi
     # Exodus-Secrets-End
 
     - name: Setup .NET Core
