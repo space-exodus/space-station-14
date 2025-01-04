@@ -2,8 +2,8 @@
 
 scriptDir="$(cd "$(dirname "$0")" && pwd)"
 
-exodusSecretsPath="$scriptDir/Resources/Prototypes/ExodusSecrets"
-secretsPrototypesPath="$scriptDir/Secrets/Resources/Prototypes"
+protoPath="$scriptDir/Resources/Prototypes/ExodusSecrets"
+secretsProtoPath="$scriptDir/Secrets/Resources/Prototypes"
 
 mapsPath="$scriptDir/Resources/Maps/ExodusSecrets"
 secretsMapsPath="$scriptDir/Secrets/Resources/Maps"
@@ -13,6 +13,9 @@ secretsLocalePath="$scriptDir/Secrets/Resources/Locale/ru-RU"
 
 texturesPath="$scriptDir/Resources/Textures/ExodusSecrets"
 secretsTexturesPath="$scriptDir/Secrets/Resources/Textures"
+
+audioPath="$scriptDir/Resources/Audio/ExodusSecrets"
+secretsAudioPath="$scriptDir/Secrets/Resources/Textures"
 
 process_folder() {
     local targetPath="$1"
@@ -27,7 +30,8 @@ process_folder() {
     fi
 }
 
-process_folder "$exodusSecretsPath" "$secretsPrototypesPath"
+process_folder "$protoPath" "$secretsProtoPath"
 # process_folder "$mapsPath" "$secretsMapsPath"
 process_folder "$localePath" "$secretsLocalePath"
 process_folder "$texturesPath" "$secretsTexturesPath"
+process_folder "$audioPath" "$secretsAudioPath"
