@@ -297,11 +297,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-        Radiation: 0.5
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: TemperatureProtection
@@ -310,8 +311,8 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
+    walkModifier: 0.9
+    sprintModifier: 0.9
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
