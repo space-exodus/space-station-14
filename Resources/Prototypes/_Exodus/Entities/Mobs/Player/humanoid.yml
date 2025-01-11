@@ -56,6 +56,7 @@
   randomizeName: false
   speciesBlacklist:
     - Diona
+    - Vox
   components:
     - type: MindShield
     - type: GhostRole

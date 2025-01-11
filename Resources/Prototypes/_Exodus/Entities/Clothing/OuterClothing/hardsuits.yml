@@ -280,3 +280,52 @@
     radius: 7
     energy: 3
     color: "#fff089"
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitBlueshield
+  name: blueshield hardsuit
+  description: A brand new spacesuit exclusively designed for employees of the Blue Shield Department. This is the most beautiful spacesuit you know.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/OuterClothing/Hardsuits/blueshield.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: Item
+    size: Large
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitBlueshield
+  name: blueshield hardsuit helmet
+  description: Element of blueshield's hardsuit. It's beautiful.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Head/Hardsuits/blueshield.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: PointLight
+    radius: 7
+    energy: 5
+    color: "#639bff"
