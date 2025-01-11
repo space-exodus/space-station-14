@@ -2,8 +2,8 @@
 
 set scriptDir=%~dp0
 
-set exodusSecretsPath=%scriptDir%Resources\Prototypes\ExodusSecrets
-set secretsPrototypesPath=%scriptDir%Secrets\Resources\Prototypes
+set protoPath=%scriptDir%Resources\Prototypes\ExodusSecrets
+set secretsProtoPath=%scriptDir%Secrets\Resources\Prototypes
 
 set mapsPath=%scriptDir%Resources\Maps\ExodusSecrets
 set secretsMapsPath=%scriptDir%Secrets\Resources\Maps
@@ -14,10 +14,14 @@ set secretsLocalePath=%scriptDir%Secrets\Resources\Locale\ru-RU
 set texturesPath=%scriptDir%Resources\Textures\ExodusSecrets
 set secretsTexturesPath=%scriptDir%Secrets\Resources\Textures
 
-call :ProcessFolder "%exodusSecretsPath%" "%secretsPrototypesPath%"
+set audioPath=%scriptDir%Resources\Audio\ExodusSecrets
+set secretsAudioPath=%scriptDir%Secrets\Resources\Audio
+
+call :ProcessFolder "%protoPath%" "%secretsProtoPath%"
 @REM call :ProcessFolder "%mapsPath%" "%secretsMapsPath%"
 call :ProcessFolder "%localePath%" "%secretsLocalePath%"
 call :ProcessFolder "%texturesPath%" "%secretsTexturesPath%"
+call :ProcessFolder "%audioPath%" "%secretsAudioPath%"
 
 exit /b
 
