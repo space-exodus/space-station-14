@@ -138,6 +138,7 @@
     - RadiationProtection
     - Drowsiness
     - Adrenaline
+  - type: Rush # Exodus - Stamina rush
   - type: Body
     prototype: Human
     requiredLegs: 2
