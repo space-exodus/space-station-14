@@ -1,8 +1,7 @@
 <Document>
+# Foods
 
-# Питание
-
-Данные реагенты чаще всего используются на кухне. Полезно для поваров и/или сервисных работников.
+These reagents are mostly used in the kitchen. Very helpful for Chefs and/or Service Workers.
 
 <GuideReagentGroupEmbed Group="Foods"/>
 

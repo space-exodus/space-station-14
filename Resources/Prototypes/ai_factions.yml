@@ -1,14 +1,15 @@
 - type: npcFaction
   id: Dragon
   hostile:
-    - NanoTrasen
-    - Syndicate
-    - Xeno
-    - PetsNT
-    - Zombie
-    - Revolutionary
-    - AllHostile
-    - DeathSquad # Exodus-DeathSquad
+  - NanoTrasen
+  - Syndicate
+  - Xeno
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - AllHostile
+  - Wizard
+  - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: NanoTrasen
@@ -20,12 +21,14 @@
   - Revolutionary
   - Dragon
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: Mouse
   hostile:
-    - PetsNT
-    - AllHostile
+  - PetsNT
+  - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: Passive
@@ -38,6 +41,8 @@
   - Zombie
   - Xeno
   - AllHostile
+  - Wizard
+  - Dragon
 
 - type: npcFaction
   id: SimpleHostile
@@ -49,6 +54,8 @@
   - Zombie
   - Revolutionary
   - AllHostile
+  - Wizard
+  - Dragon
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -64,6 +71,7 @@
   - Zombie
   - Dragon
   - AllHostile
+  - Wizard
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -76,6 +84,8 @@
   - Zombie
   - Revolutionary
   - AllHostile
+  - Wizard
+  - Dragon
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -89,6 +99,8 @@
   - PetsNT
   - Revolutionary
   - AllHostile
+  - Wizard
+  - Dragon
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -99,10 +111,28 @@
   - SimpleHostile
   - Dragon
   - AllHostile
+  - Wizard
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
   id: AllHostile
+  hostile:
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Wizard
+  - DeathSquad # Exodus-DeathSquad
+
+- type: npcFaction
+  id: Wizard
   hostile:
   - NanoTrasen
   - Dragon

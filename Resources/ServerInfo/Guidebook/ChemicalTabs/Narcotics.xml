@@ -1,9 +1,5 @@
 <Document>
-
-# Наркотики
-
-Реагенты данной категории, являются: стимуляторами, галлюциногенами и другими веществами с наркотическими эффектами.
-
+# Narcotics
+The reagents listed in this category includes stimulants, hallucinogens and other drug-like effects.
 <GuideReagentGroupEmbed Group="Narcotics"/>
-
 </Document>

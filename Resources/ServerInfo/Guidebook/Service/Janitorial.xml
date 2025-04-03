@@ -8,29 +8,24 @@
 <GuideEntityEmbed Entity="MopItem"/>
 <GuideEntityEmbed Entity="JanitorialTrolley"/>
 <GuideEntityEmbed Entity="MopBucket"/>
-<GuideEntityEmbed Entity="SprayBottleSpaceCleaner"/>
-</Box>
-
-<Box>
 <GuideEntityEmbed Entity="Bucket"/>
 <GuideEntityEmbed Entity="TrashBag"/>
-<GuideEntityEmbed Entity="Mousetrap"/>
-<GuideEntityEmbed Entity="SoapNT"/>
 </Box>
-
 <Box>
+<GuideEntityEmbed Entity="SprayBottleSpaceCleaner"/>
 <GuideEntityEmbed Entity="BoxLightMixed"/>
+<GuideEntityEmbed Entity="SoapNT"/>
+<GuideEntityEmbed Entity="Mousetrap"/>
 </Box>
 
 ## Дополнительное оборудование
 <Box>
 <GuideEntityEmbed Entity="WetFloorSign"/>
-<GuideEntityEmbed Entity="Holoprojector"/>
+<GuideEntityEmbed Entity="Holoprojector" Caption="holosign projector"/>
 <GuideEntityEmbed Entity="LightReplacer"/>
 </Box>
-
 <Box>
-<GuideEntityEmbed Entity="AdvMopItem"/>
+<GuideEntityEmbed Entity="AdvMopItem" Caption="Advanced mop, ask in R&D"/>
 </Box>
 
 ## Сбор и ликвидация жидкостей

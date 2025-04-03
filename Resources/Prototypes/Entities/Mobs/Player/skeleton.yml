@@ -17,7 +17,7 @@
   - type: GhostRole
     name: ghost-role-information-skeleton-pirate-name
     description: ghost-role-information-skeleton-pirate-description
-    rules: ghost-role-information-freeagent-rules
+    rules: ghost-role-information-nonantagonist-rules # Exodus-MRP
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -34,7 +34,7 @@
   - type: GhostRole
     name: ghost-role-information-skeleton-biker-name
     description: ghost-role-information-skeleton-biker-description
-    rules: ghost-role-information-freeagent-rules
+    rules: ghost-role-information-nonantagonist-rules # Exodus-MRP
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

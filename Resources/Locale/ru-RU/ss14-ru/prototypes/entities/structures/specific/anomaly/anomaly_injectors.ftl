@@ -31,5 +31,5 @@ ent-AnomalyTrapRock = { ent-BaseAnomalyInjector }
     .suffix = Камень
     .desc = { ent-BaseAnomalyInjector.desc }
 ent-AnomalyTrapSanta = { ent-BaseAnomalyInjector }
-    .suffix = Рождественская
+    .suffix = Санта
     .desc = { ent-BaseAnomalyInjector.desc }

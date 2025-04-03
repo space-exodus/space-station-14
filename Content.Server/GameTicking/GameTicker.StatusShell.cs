@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Text.Json.Nodes;
 using Content.Server.Corvax.JoinQueue;
 using Content.Shared.CCVar;
@@ -43,18 +44,20 @@ namespace Content.Server.GameTicking
             // This method is raised from another thread, so this better be thread safe!
             lock (_statusShellLock)
             {
+                // Corvax-Queue-Start
+                var players = _queueManager.ActualPlayersCount;
+
+                players = _cfg.GetCVar(CCVars.AdminsCountInReportedPlayerCount)
+                    ? players
+                    : players - _adminManager.ActiveAdmins.Count();
+                // Corvax-Queue-End
+
                 jObject["name"] = _baseServer.ServerName;
                 jObject["players"] = _queueManager.ActualPlayersCount; // Corvax-Queue
                 jObject["map"] = _gameMapManager.GetSelectedMap()?.MapName;
                 jObject["round_id"] = _gameTicker.RoundId;
                 jObject["soft_max_players"] = _cfg.GetCVar(CCVars.SoftMaxPlayers);
                 jObject["panic_bunker"] = _cfg.GetCVar(CCVars.PanicBunkerEnabled);
-
-                /*
-                 * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
-                 */
-
-                jObject["baby_jail"] = _cfg.GetCVar(CCVars.BabyJailEnabled);
                 jObject["run_level"] = (int) _runLevel;
                 if (preset != null)
                     jObject["preset"] = Loc.GetString(preset.ModeTitle);

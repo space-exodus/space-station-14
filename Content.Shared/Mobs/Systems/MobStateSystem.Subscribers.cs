@@ -49,6 +49,8 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
         SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers); // Exodus-Crawling
+        SubscribeLocalEvent<MobStateComponent, DamageModifyEvent>(OnDamageModify);
+
         SubscribeLocalEvent<MobStateComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
     }
 
@@ -229,5 +231,11 @@ public partial class MobStateSystem
         }
     }
     // Exodus-Crawling-End
+
+    private void OnDamageModify(Entity<MobStateComponent> ent, ref DamageModifyEvent args)
+    {
+        args.Damage *= _damageable.UniversalMobDamageModifier;
+    }
+
     #endregion
 }
