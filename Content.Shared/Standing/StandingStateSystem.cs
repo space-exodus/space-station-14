@@ -251,19 +251,19 @@ public sealed class StandingStateSystem : EntitySystem
             ev.Cancel();
     }
     // Exodus-Crawling-End
-
-    // Exodus-Crawling-Start
-    [Serializable, NetSerializable]
-    public sealed partial class DownDoAfterEvent : SimpleDoAfterEvent
-    {
-    }
-
-    [Serializable, NetSerializable]
-    public sealed partial class StandDoAfterEvent : SimpleDoAfterEvent
-    {
-    }
-    // Exodus-Crawling-End
 }
+
+// Exodus-Crawling-Start
+[Serializable, NetSerializable]
+public sealed partial class DownDoAfterEvent : SimpleDoAfterEvent
+{
+}
+
+[Serializable, NetSerializable]
+public sealed partial class StandDoAfterEvent : SimpleDoAfterEvent
+{
+}
+// Exodus-Crawling-End
 
 [ByRefEvent]
 public record struct DropHandItemsEvent();

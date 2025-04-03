@@ -1,7 +1,7 @@
 - type: species
   id: Kidan
   name: species-name-kidan
-  roundStart: true
+  roundStart: false
   prototype: MobKidan
   sprites: MobKidanSprites
   defaultSkinTone: "#FF69B4"

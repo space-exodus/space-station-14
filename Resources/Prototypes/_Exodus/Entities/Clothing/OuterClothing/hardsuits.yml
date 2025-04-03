@@ -49,7 +49,7 @@
     slots: OUTERCLOTHING
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitRnd
   name: scientist's hardsuit helmet
   description: Pretty strong.
@@ -167,7 +167,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquadSpecialist
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitDeathsquadCommander
   name: death squad commander hardsuit helmet
   description: A high-tech helmet designed for the death squad commander.
@@ -264,7 +264,7 @@
     node: ClothingOuterHardsuitSalvageMaximal
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitSalvageMaximal
   name: salvager maxim helmet
   description: A predication of decay washes over your mind.
