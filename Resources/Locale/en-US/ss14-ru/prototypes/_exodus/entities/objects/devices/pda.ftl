@@ -1,0 +1,11 @@
+ent-BlueshieldPDA = blueshield PDA
+    .desc = Stylish and compact.
+ent-PDACommanderDS = death squad PDA
+    .desc = Smells like death.
+    .suffix = commander
+ent-PDAOfficerDS = death squad PDA
+    .suffix = officer
+    .desc = { ent-PDACommanderDS.desc }
+ent-PDASpecialistDS = death squad PDA
+    .suffix = specialist
+    .desc = { ent-PDACommanderDS.desc }

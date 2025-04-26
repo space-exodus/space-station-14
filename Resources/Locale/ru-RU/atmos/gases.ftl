@@ -8,7 +8,6 @@ gas-plasma-abbreviation = P
 gas-tritium-abbreviation = T
 gas-water-vapor-abbreviation = H₂O
 gas-unknown-abbreviation = X
-
 atmos-gas-Oxygen = { gas-oxygen-abbreviation }
 atmos-gas-Nitrogen = { gas-nitrogen-abbreviation }
 atmos-gas-CarbonDioxide = { gas-carbon-dioxide-abbreviation }

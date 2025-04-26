@@ -1,0 +1,17 @@
+ent-ClothingBackpackBlueshield = blueshield backpack
+    .desc = A stylish bag made of very high quality and durable material.
+ent-ClothingBackpackCentcomOfficerFilled = specical operation officer's backpack
+    .desc = Modifided backpack
+ent-ClothingBackpackCentcomOfficer = specical operation officer's backpack
+    .desc = Modifided backpack
+ent-ClothingDeathSquadBackpack = death squad backpack
+    .desc = The high-capacity backpack of the squad of the same name
+ent-ClothingDeathSquadBackpackOfficer = death squad backpack
+    .suffix = officer
+    .desc = { ent-ClothingDeathSquadBackpack.desc }
+ent-ClothingDeathSquadBackpackCommander = death squad backpack
+    .suffix = commander
+    .desc = { ent-ClothingDeathSquadBackpack.desc }
+ent-ClothingDeathSquadBackpackSpecialist = death squad backpack
+    .suffix = specialist
+    .desc = { ent-ClothingDeathSquadBackpack.desc }

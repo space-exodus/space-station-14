@@ -1,0 +1,10 @@
+ent-BaseExodusStatue = { ent-BaseStructure }
+    .desc = { ent-BaseStructure.desc }
+ent-DrakeStatue = stone guardian
+    .desc = An ancient replica of a powerful creature. Too lifelike to be a mere imitator.
+ent-DrakeStatueOld = old stone guardian
+    .desc = Desecrated and disfigured. Looks at you with hatred.
+ent-ObedientStatue = obedient statue
+    .desc = Nobody knows who he is. Maybe someone important.
+ent-AdeptStatue = adept statue
+    .desc = Knowing the other side of the coin. Covered in an unpleasant sticky substance.

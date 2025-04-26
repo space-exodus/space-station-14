@@ -9,4 +9,3 @@ ent-ClothingBeltDSCommander = { ent-ClothingBeltDS }
 ent-ClothingBeltDSSpecialist = { ent-ClothingBeltDS }
     .desc = { ent-ClothingBeltDS.desc }
     .suffix = Специалист
-

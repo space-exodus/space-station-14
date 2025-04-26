@@ -1,0 +1,10 @@
+ent-BaseDecorativeBone = rib
+    .desc = Dried by wind and time. It seems to be inside...
+ent-DecorativeOldBone = { ent-BaseDecorativeBone }
+    .desc = { ent-BaseDecorativeBone.desc }
+ent-DecorativeOldBoneAlt1 = { ent-BaseDecorativeBone }
+    .desc = { ent-BaseDecorativeBone.desc }
+ent-DecorativeOldBones = ribs
+    .desc = Dried by wind and time. They seem to be inside...
+ent-DecorativeOldBonesAlt1 = { ent-DecorativeOldBones }
+    .desc = { ent-DecorativeOldBones.desc }

@@ -1,0 +1,12 @@
+ent-FloorTrapSpikes = maybe it could be dangerous...
+    .desc = You're not going to try this with your feet, are you?
+    .suffix = Trap, Spikes
+ent-FloorTrapSpikesActivated = spike trap
+    .desc = You're not going to try this with your feet, are you?
+    .suffix = Trap, Spikes, Activated
+ent-FloorTrapSpikesPoison = { ent-FloorTrapSpikes }
+    .suffix = Trap, Spikes, Poison
+    .desc = { ent-FloorTrapSpikes.desc }
+ent-FloorTrapSpikesPoisonActivated = { ent-FloorTrapSpikesActivated }
+    .suffix = Trap, Spikes, Poison, Activated
+    .desc = { ent-FloorTrapSpikesActivated.desc }

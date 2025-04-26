@@ -1,3 +1,6 @@
+ent-RandomHumanoidSpawnerSpecicalOperationOfficer = Офицер специальных операций
+    .suffix = ЦентКомм
+    .desc = { "" }
 ent-RandomHumanoidSpawnerBlueshieldOfficer = Офицер Синего Щита
     .suffix = Роль ОБР, Базовый
     .desc = { "" }

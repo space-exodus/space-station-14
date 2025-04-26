@@ -21,6 +21,8 @@ job-name-hop = Глава Персонала
 job-name-captain = Капитан
 job-name-serviceworker = Сервисный работник
 job-name-centcomoff = Представитель Центкома
+job-name-cburn = Centcomm Quarantine Officer
+job-name-deathsquad = Centcomm Agent
 job-name-reporter = Репортёр
 job-name-musician = Музыкант
 job-name-librarian = Библиотекарь
@@ -47,6 +49,17 @@ job-name-ertjanitor = Уборщик Обр
 job-name-boxer = Боксёр
 job-name-zookeeper = Зоотехник
 job-name-visitor = Посетитель
+# unused jobs
+# these are required for the agent ID job icon tooltips
+# I am keeping them for roleplaying opportunities
+job-name-geneticist = Geneticist
+job-name-no-id = No ID
+job-name-prisoner = Prisoner
+job-name-roboticist = Roboticist
+job-name-syndicate = Syndicate
+job-name-unknown = Unknown
+job-name-virologist = Virologist
+job-name-zombie = Zombie
 # unused jobs
 # these are required for the agent ID job icon tooltips
 # I am keeping them for roleplaying opportunities
