@@ -23,6 +23,8 @@ job-name-serviceworker = Сервисный работник
 job-name-centcomoff = Представитель Центкома
 job-name-cburn = Centcomm Quarantine Officer
 job-name-deathsquad = Centcomm Agent
+job-name-cburn = Агент РХБЗЗ
+job-name-deathsquad = Агент ДСО
 job-name-reporter = Репортёр
 job-name-musician = Музыкант
 job-name-librarian = Библиотекарь
@@ -52,17 +54,14 @@ job-name-visitor = Посетитель
 # unused jobs
 # these are required for the agent ID job icon tooltips
 # I am keeping them for roleplaying opportunities
-job-name-geneticist = Geneticist
-job-name-no-id = No ID
-job-name-prisoner = Prisoner
-job-name-roboticist = Roboticist
-job-name-syndicate = Syndicate
-job-name-unknown = Unknown
-job-name-virologist = Virologist
-job-name-zombie = Zombie
-# unused jobs
-# these are required for the agent ID job icon tooltips
-# I am keeping them for roleplaying opportunities
+job-name-geneticist = Генетик
+job-name-no-id = Нет ID
+job-name-prisoner = Заключённый
+job-name-roboticist = Робототехник
+job-name-syndicate = Синдикат
+job-name-unknown = Неизвестно
+job-name-virologist = Вирусолог
+job-name-zombie = Зомби
 # Job titles
 job-title-visitor = Посетитель
 job-title-cluwne = Клувень
@@ -75,7 +74,7 @@ JobBotanist = Ботаник
 JobBoxer = Боксёр
 JobCaptain = Капитан
 JobCargoTechnician = Грузчик
-JobCentralCommandOfficial = Представитель Центком
+JobCentralCommandOfficial = Представитель ЦентКома
 JobChaplain = Священник
 JobChef = Шеф-Повар
 JobChemist = Химик

@@ -11,4 +11,4 @@ damage-type-radiation = Радиация
 damage-type-shock = Электрические
 damage-type-slash = Порезы
 damage-type-structural = Структурные
-damage-type-holy = Святые
+damage-type-holy = Святой

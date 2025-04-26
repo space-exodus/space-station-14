@@ -16,4 +16,3 @@ admin-verb-text-make-head-rev = Сделать Главой революции
 admin-verb-text-make-thief = Сделать вором
 admin-verb-text-make-paradox-clone = Создать парадоксального клона
 admin-overlay-antag-classic = АНТАГ
-

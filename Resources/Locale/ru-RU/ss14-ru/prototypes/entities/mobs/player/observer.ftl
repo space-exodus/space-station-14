@@ -1,11 +1,11 @@
 ent-Incorporeal = { "" }
-    .desc = Мобы без физических тел
+    .desc = Мобы без физических тел.
 ent-MobObserverBase = наблюдатель
     .desc = Буу!
 ent-MobObserver = { ent-MobObserverBase }
     .desc = { ent-MobObserverBase.desc }
 ent-ActionGhostBoo = Бу!
-    .desc = Пугайте членов своей команды со скуки!
+    .desc = Пугайте существ вокруг со скуки!
 ent-ActionToggleLighting = Переключить освещение
     .desc = Переключить рендеринг света, чтобы лучше видеть затенённые области.
 ent-ActionToggleFov = Переключить поле зрения

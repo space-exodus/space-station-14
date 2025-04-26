@@ -30,3 +30,7 @@ ent-BaseStationDeliveries = { "" }
     .desc = { "" }
 ent-BaseStationAllEventsEligible = { "" }
     .desc = { "" }
+ent-BaseStationCrewMembersSalary = { "" }
+    .desc = { "" }
+ent-BaseCCOConsoleTargetStation = { "" }
+    .desc = { "" }

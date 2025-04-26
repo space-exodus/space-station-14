@@ -19,7 +19,7 @@ steal-target-groups-stamps = печати
 steal-target-groups-door-remotes = пульты от шлюзов
 steal-target-groups-encryption-keys = ключи шифрования
 steal-target-groups-technology-disks = технологические диски
-steal-target-groups-mail = mail
+steal-target-groups-mail = почта
 steal-target-groups-id-cards = ID-карты
 steal-target-groups-lamps = ЛАМПЫ
 # Thief single item
@@ -40,7 +40,6 @@ steal-target-groups-bible = библия
 steal-target-groups-clothing-neck-goldmedal = золотая медаль мастерства экипажа
 steal-target-groups-clothing-neck-clownmedal = медаль клоуна
 steal-target-groups-wanted-list-cartridge = картридж Список разыскиваемых
-steal-target-groups-shock-collar = электрический ошейник
 # Thief structures
 steal-target-groups-teg = часть термоэлектрического генератора
 steal-target-groups-freezer-heater = нагреватель или охладитель
