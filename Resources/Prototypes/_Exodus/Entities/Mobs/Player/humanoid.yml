@@ -113,6 +113,9 @@
       - DeathAcidifierImplant
       - FreedomImplant
       - MindShieldImplant
+      - DSStimulantsImplant
+      - DSCombatInjectorImplant
+      - DSRadioImplant
     - type: NpcFactionMember
       factions:
       - DeathSquad
@@ -161,6 +164,8 @@
       name: ghost-role-information-deathsquad-officer-name
       description: ghost-role-information-deathsquad-officer-description
       rules: ghost-role-information-deathsquad-officer-rules
+      raffle:
+        settings: default
       job: DSOfficer
     - type: Loadout
       prototypes: [ DSOfficerGear ]

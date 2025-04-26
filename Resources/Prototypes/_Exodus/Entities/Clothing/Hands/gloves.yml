@@ -27,11 +27,13 @@
     damage: 15
   - type: MeleeWeapon
     attackRate: 1.5
-    wideAnimationRotation: -135
+    animation: WeaponArcFist
+    wideAnimationRotation: 90
     damage:
       types:
         Blunt: 30
     soundHit:
       path: /Audio/Exodus/Weapons/glovepunch.ogg
+    mustBeEquippedToUse: true
   - type: Fiber
     fiberMaterial: fibers-insulative
