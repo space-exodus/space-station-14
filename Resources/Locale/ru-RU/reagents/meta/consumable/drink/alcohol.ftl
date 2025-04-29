@@ -215,4 +215,4 @@ reagent-desc-rubberneck = Популярный напиток среди тех,
 reagent-name-bacchus-blessing = Благословение Бахуса
 reagent-desc-bacchus-blessing = Вы не думали, что эта жидкость может быть отвратительной. Вы точно уверены что это стоит пить...?
 reagent-name-zombiecocktail = зомби-коктейль
-reagent-desc-zombiecocktail = Он проникает в вашу голову. Вашу го-о-олову.
+reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.

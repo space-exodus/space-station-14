@@ -27,11 +27,11 @@ ghost-role-information-antagonist-rules =
     Вам разрешено помнить знания об игре в целом, например, как готовить, как использовать предметы и т. д.
     Вам абсолютно [color=red]НЕ[/color] разрешено помнить, скажем, имя, внешность и т. д. вашего предыдущего персонажа.
 ghost-role-information-rules-team-antagonist =
-    You are a [color=red][bold]Team Antagonist[/bold][/color]. Your intentions are clear, and harmful to the station and its crew.
-    You must [bold]work with your team[/bold] or follow reasonable directions from your team leaders.
-    You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
-    You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
-    You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
+    Вы - [color=red][bold]Командный антагонист[/bold][/color]. Ваши намерения ясны, и они несут вред станции и её экипажу.
+    Вы должны [bold]работать сообща со своей командой[/bold] или следовать разумным указаниям лидеров вашей команды.
+    Вы не помните ничего из своей предыдущей жизни и не помните ничего из того, что узнали, будучи призраком.
+    Вам разрешено помнить знания об игре в целом, например, как готовить, как использовать предметы и т.д.
+    Вам [color=red]НЕ[/color] разрешается помнить или говорить имя, внешность и т.д. вашего предыдущего персонажа.
 ghost-role-information-familiar-rules =
     Вы - [color=#6495ed][bold]Фамильяр[/bold][/color]. Служите интересам своего хозяина, какими бы они ни были.
     Вы не помните ничего из своей предыдущей жизни и не помните ничего из того, что узнали, будучи призраком.
