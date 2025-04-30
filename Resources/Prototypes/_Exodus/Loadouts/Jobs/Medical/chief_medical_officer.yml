@@ -1,0 +1,10 @@
+#Ears
+- type: loadout
+  id: ChiefMedicalOfficerAltHeadset
+  equipment:
+    ears: ClothingHeadsetAltMedical
+
+- type: loadout
+  id: ChiefMedicalOfficerHeadset
+  equipment:
+    ears: ClothingHeadsetCMO

@@ -1,0 +1,78 @@
+# Masks
+- type: loadout
+  id: ClownMaskBanana
+  equipment:
+    mask: ClothingMaskClownBanana
+
+- type: loadout
+  id: ClownMask
+  equipment:
+    mask: ClothingMaskClown
+
+- type: loadout
+  id: ClownMaskSecurity
+  equipment:
+    mask: ClothingMaskClownSecurity
+
+- type: loadout
+  id: ClownMaskBlushing
+  equipment:
+    mask: ClothingMaskBlushingClown
+
+# Jumpsuit
+- type: loadout
+  id: ClownSuitBanana
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitClownBanana
+
+- type: loadout
+  id: ClownSuiPriest
+  equipment:
+    jumpsuit: ClothingOuterClownPriest
+
+# Shoes
+- type: loadout
+  id: ClownShoesLarge
+  equipment:
+    shoes: ClothingShoesClownLarge
+
+- type: loadout
+  id: ClownShoesBanana
+  equipment:
+    shoes: ClothingShoesClownBanana
+
+# Other
+- type: loadout
+  id: ClownCapGun
+  dummyEntity: LoadoutDummyClownCapGun
+  storage:
+    back:
+    - RevolverCapGun
+    - SpeedLoaderCap
+    - SpeedLoaderCap
+
+- type: loadout
+  id: ClownFoamRifle
+  dummyEntity: LoadoutDummyClownFoamRifle
+  storage:
+    back:
+    - WeaponRifleFoam
+    - MagazineFoamBox
+
+- type: loadout
+  id: ToySword
+  storage:
+    back:
+    - ToySword
+
+- type: loadout
+  id: FoamCutlass
+  storage:
+    back:
+    - FoamCutlass
+
+- type: loadout
+  id: GrenadeFoamDart
+  storage:
+    back:
+    - GrenadeFoamDart
