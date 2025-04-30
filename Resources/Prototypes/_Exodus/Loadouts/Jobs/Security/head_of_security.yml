@@ -1,0 +1,50 @@
+# Jumpsuit
+# Head
+- type: loadout
+  id: HeadofSecurityHeadCap
+  equipment:
+    head: ClothingHeadHatCapHoS
+
+# Neck
+- type: loadout
+  id: HeadofSecurityMantleShoulder
+  equipment:
+    neck: ClothingNeckMantleHOSShoulder
+
+# OuterClothing
+- type: loadout
+  id: HeadofSecurityOvercoat
+  equipment:
+    outerClothing: ClothingOuterCoatSecurityOvercoat
+
+# Gun
+- type: loadout
+  id: SecurityGunMateba
+  equipment:
+    pocket1: WeaponRevolverMateba
+
+- type: loadout
+  id: SecurityGunDeckard
+  equipment:
+    pocket1: WeaponRevolverDeckard
+
+- type: loadout
+  id: SecurityGunInspector
+  equipment:
+    pocket1: WeaponRevolverInspector
+
+- type: loadout
+  id: SecurityGunMk58
+  equipment:
+    pocket1: WeaponPistolMk58
+
+#Ears
+- type: loadout
+  id: HeadofSecurityAltHeadset
+  equipment:
+    ears: ClothingHeadsetAltSecurity
+
+- type: loadout
+  id: HeadofSecurityHeadset
+  equipment:
+    ears: ClothingHeadsetSecurityHOS

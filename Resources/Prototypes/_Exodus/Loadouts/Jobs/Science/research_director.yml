@@ -1,0 +1,10 @@
+#Ears
+- type: loadout
+  id: ResearchDirectorAltHeadset
+  equipment:
+    ears: ClothingHeadsetAltScience
+
+- type: loadout
+  id: ResearchDirectorHeadset
+  equipment:
+    ears: ClothingHeadsetRD

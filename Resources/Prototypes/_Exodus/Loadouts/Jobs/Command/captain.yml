@@ -1,0 +1,16 @@
+# Outer clothing
+- type: loadout
+  id: Captaincoat
+  equipment:
+    outerClothing: ClothingOuterCoatCaptain
+
+#Ears
+- type: loadout
+  id: HeadsetAltCaptain
+  equipment:
+    ears: ClothingHeadsetAltCaptain
+
+- type: loadout
+  id: HeadsetCaptain
+  equipment:
+    ears: ClothingHeadsetCaptain
