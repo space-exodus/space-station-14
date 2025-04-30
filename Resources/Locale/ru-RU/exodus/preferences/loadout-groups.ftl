@@ -3,6 +3,7 @@ loadout-group-brigmedic-mask = БригМедик, маска
 loadout-group-brigmedic-head = БригМедик, голова
 loadout-group-brigmedic-jumpsuit = БригМедик, комбинезон
 loadout-group-brigmedic-gloves = БригМедик, перчатки
+loadout-group-brigmedic-gloves = БригМедик, перчатки
 loadout-group-brigmedic-outerclothing = БригМедик, верхняя одежда
 loadout-group-brigmedic-shoes = БригМедик, обувь
 loadout-group-brigmedic-backpack = БригМедик, рюкзак
