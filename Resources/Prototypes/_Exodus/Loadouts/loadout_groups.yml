@@ -1,5 +1,4 @@
 # Brigmedic
-
 - type: loadoutGroup
   id: BrigmedicHead
   name: loadout-group-brigmedic-head
@@ -36,6 +35,14 @@
   - BrigmedicJumpskirt
 
 - type: loadoutGroup
+  id: BrigmedicGloves
+  name: loadout-group-brigmedic-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
   id: BrigmedicBackpack
   name: loadout-group-brigmedic-backpack
   loadouts:
@@ -49,3 +56,217 @@
   loadouts:
   - RedShoes
   - SecurityWinterBoots
+
+# Medical
+- type: loadoutGroup
+  id: ChiefMedicalOfficerBackpack
+  name: loadout-group-chief-medical-officer-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerGloves
+  name: loadout-group-chief-medical-officer-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerMask
+  name: loadout-group-chief-medical-officer-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerHeadset
+  name: loadout-group-chief-engineer-headset
+  loadouts:
+  - ChiefMedicalOfficerHeadset
+  - ChiefMedicalOfficerAltHeadset
+
+# Cargo
+- type: loadoutGroup
+  id: QuartermasterBackpack
+  name: loadout-group-quartermaster-backpack
+  loadouts:
+  - CargoTechnicianBackpack
+  - CargoTechnicianSatchel
+  - CargoTechnicianDuffel
+
+- type: loadoutGroup
+  id: QuartermasterHeadset
+  name: loadout-group-quartermaster-headset
+  loadouts:
+  - QuartermasterHeadset
+  - QuartermasterAltHeadset
+
+# Security
+- type: loadoutGroup
+  id: WardenHeadset
+  name: loadout-group-warden-headset
+  loadouts:
+  - HeadsetWarden
+  - HeadsetAltWarden
+
+- type: loadoutGroup
+  id: WardenBackpack
+  name: loadout-group-warden-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+- type: loadoutGroup
+  id: WardenBelt
+  name: loadout-group-warden-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+
+- type: loadoutGroup
+  id: WardenShoes
+  name: loadout-group-warden-shoes
+  loadouts:
+  - CombatBoots
+  - JackBoots
+  - JackSecBoots
+  - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: HeadofSecurityGun
+  name: loadout-group-head-of-security-gun
+  loadouts:
+  - SecurityGunInspector
+  - SecurityGunMateba
+  - SecurityGunDeckard
+  - SecurityGunMk58
+
+- type: loadoutGroup
+  id: HeadofSecurityBackpack
+  name: loadout-group-head-of-security-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+- type: loadoutGroup
+  id: HeadofSecurityBelt
+  name: loadout-group-head-of-security-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+
+- type: loadoutGroup
+  id: HeadofSecurityShoes
+  name: loadout-group-head-of-security-shoes
+  loadouts:
+  - CombatBoots
+  - JackBoots
+  - JackSecBoots
+  - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: HeadofSecurityHeadset
+  name: loadout-group-head-of-security-headset
+  loadouts:
+  - HeadofSecurityHeadset
+  - HeadofSecurityAltHeadset
+
+- type: loadoutGroup
+  id: DetectiveBackpack
+  name: loadout-group-detective-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+- type: loadoutGroup
+  id: DetectiveShoes
+  name: loadout-group-detective-shoes
+  loadouts:
+  - CombatBoots
+  - JackBoots
+  - JackSecBoots
+  - SecurityWinterBoots
+  - AerostaticShoes
+  - ShoesGreenLizardskin
+
+- type: loadoutGroup
+  id: SecurityCadetBackpack
+  name: loadout-group-security-cadet-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+# Sciense
+- type: loadoutGroup
+  id: ResearchDirectorHeadset
+  name: loadout-group-research-director-headset
+  loadouts:
+  - ResearchDirectorHeadset
+  - ResearchDirectorAltHeadset
+
+- type: loadoutGroup
+  id: ResearchDirectorBackpack
+  name: loadout-group-research-director-backpack
+  loadouts:
+  - ScientistBackpack
+  - ScientistSatchel
+  - ScientistDuffel
+
+- type: loadoutGroup
+  id: ResearchDirectorGloves
+  name: loadout-group-research-director-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - PurpleGloves
+  - RobohandsGloves
+
+# Engineering
+- type: loadoutGroup
+  id: ChiefEngineerHeadset
+  name: loadout-group-chief-engineer-headset
+  loadouts:
+  - ChiefEngineerHeadset
+  - ChiefEngineerAltHeadset
+
+#Civilian
+- type: loadoutGroup
+  id: ClownOther
+  name: loadout-group-clown-other
+  loadouts:
+  - ClownCapGun
+  - ClownFoamRifle
+  - ToySword
+  - FoamCutlass
+  - GrenadeFoamDart
+
+- type: loadoutGroup
+  id: ClownMask
+  name: loadout-group-clown-mask
+  loadouts:
+  - ClownMask
+  - ClownMaskBanana
+  - ClownMaskBlushing
+  - ClownMaskSecurity
+
+# Command
+- type: loadoutGroup
+  id: CaptainHeadset
+  name: loadout-group-captain-headset
+  loadouts:
+  - HeadsetCaptain
+  - HeadsetAltCaptain
+
+- type: loadoutGroup
+  id: HOPHeadset
+  name: loadout-group-hop-headset
+  loadouts:
+  - HeadsetHOP
+  - HeadsetAltHOP

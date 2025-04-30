@@ -1,0 +1,10 @@
+#Ears
+- type: loadout
+  id: HeadsetWarden
+  equipment:
+    ears: ClothingHeadsetWarden
+
+- type: loadout
+  id: HeadsetAltWarden
+  equipment:
+    ears: ClothingHeadsetAltWarden
