@@ -1,0 +1,16 @@
+# Outerclothing
+- type: loadout
+  id: HoPCoat
+  equipment:
+    outerClothing: ClothingOuterCoatHOP
+
+#Ears
+- type: loadout
+  id: HeadsetAltHOP
+  equipment:
+    ears: ClothingHeadsetAltHOP
+
+- type: loadout
+  id: HeadsetHOP
+  equipment:
+    ears: ClothingHeadsetHOP

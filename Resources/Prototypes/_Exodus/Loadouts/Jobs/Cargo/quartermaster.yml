@@ -1,0 +1,10 @@
+#Ears
+- type: loadout
+  id: QuartermasterAltHeadset
+  equipment:
+    ears: ClothingHeadsetAltCargo
+
+- type: loadout
+  id: QuartermasterHeadset
+  equipment:
+    ears: ClothingHeadsetQM

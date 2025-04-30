@@ -1,0 +1,13 @@
+- type: loadout
+  id: PersonalAI
+  storage:
+    back:
+    - PersonalAI
+
+- type: loadout
+  id: Eyepatch
+  storage:
+    back:
+    - ClothingEyesEyepatch
+
+

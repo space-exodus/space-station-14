@@ -63,7 +63,7 @@
     shoes: ClothingShoesColorBrown
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
-    ears: ClothingHeadsetAltCommand
+#    ears: ClothingHeadsetAltCommand #Exodus-Loadouts-Update
     belt: BoxFolderClipboard
   storage:
     back:

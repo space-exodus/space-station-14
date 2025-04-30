@@ -1,0 +1,19 @@
+- type: entity
+  id: LoadoutDummyClownCapGun
+  categories: [ HideSpawnMenu ]
+  name: cap gun
+  description: Cap gun for clown crimes!
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toys.rsi
+    state: base
+
+- type: entity
+  id: LoadoutDummyClownFoamRifle
+  categories: [ HideSpawnMenu ]
+  name: Foam Force Astro Ace
+  description: A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
+    state: icon
