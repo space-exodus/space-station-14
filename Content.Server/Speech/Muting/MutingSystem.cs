@@ -49,6 +49,11 @@ namespace Content.Server.Speech.Muting
         {
             // TODO something better than this.
 
+            // Exodus-Kidans-Start | Don't block intrinsic speech
+            if (args.Intrinsic)
+                return;
+            // Exodus-Kidans-End
+
             if (HasComp<MimePowersComponent>(uid))
                 _popupSystem.PopupEntity(Loc.GetString("mime-cant-speak"), uid, uid);
             else if (HasComp<VentriloquistPuppetComponent>(uid))

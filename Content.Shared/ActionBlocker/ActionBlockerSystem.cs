@@ -150,10 +150,10 @@ namespace Content.Shared.ActionBlocker
             return !itemEv.Cancelled;
         }
 
-        public bool CanSpeak(EntityUid uid)
+        public bool CanSpeak(EntityUid uid, bool intrinsic = false) // Exodus-Kidans | Add intrinsic arg
         {
             // This one is used as broadcast
-            var ev = new SpeakAttemptEvent(uid);
+            var ev = new SpeakAttemptEvent(uid, intrinsic); // Exodus-Kidans | Add intrinsic arg
             RaiseLocalEvent(uid, ev, true);
 
             return !ev.Cancelled;
