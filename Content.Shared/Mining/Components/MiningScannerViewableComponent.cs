@@ -1,13 +1,3 @@
-using Robust.Shared.GameStates;
-using Robust.Shared.Serialization;
-
-namespace Content.Shared.Mining.Components;
-
-[RegisterComponent, NetworkedComponent, Access(typeof(MiningScannerSystem))]
-public sealed partial class MiningScannerViewableComponent : Component;
-
-[Serializable, NetSerializable]
-public enum MiningScannerVisualLayers : byte
-{
-    Overlay
-}
+// Exodus | Moved to Content.Shared.Exodus.Mining.Components
+// Due to the fact that most of the initial code of this system has been rewritten,
+// it has become easier to move this system to full Exodus support than to try to combine it with the Space Wizards solution.
