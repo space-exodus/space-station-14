@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "by Askolot (discord:788252896016990219), owned by Space Exodus",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "feromons"
+        },
+        {
+            "name": "light_off"
+        },
+        {
+            "name": "light_on"
+        },
+        {
+            "name": "snaps_jaws"
+        }
+    ]
+}
