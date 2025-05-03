@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "by Askolot (discord:788252896016990219), owned by Space Exodus",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "fbrain_kidans"
+        },
+        {
+            "name": "eye1_kidans"
+        },
+        {
+            "name": "eye2_kidans"
+        },
+        {
+            "name": "kidneys_kidans"
+        },
+        {
+            "name": "liver_kidans"
+        },
+        {
+            "name": "pheromone_glands_kidans"
+        },
+        {
+            "name": "stomach_kidans"
+        },
+        {
+            "name": "tracheal_tubes_kidans"
+        },
+        {
+            "name": "heard_kidans",
+            "delays": [
+                [
+                    0.3,
+                    0.12,
+                    0.12
+                ]
+            ]
+        }
+    ]
+}
