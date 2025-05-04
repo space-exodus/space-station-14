@@ -11,3 +11,9 @@ ent-StimulantsImplant = Имплант стимулятора
 ent-ActionChemicalImplant = Ввести реактивы в кровь
     .desc = Вводит в кровь вещества из заранее установленных в имплант капсул
 ent-DSTrackingImplant = Имплант Трекер Эскадрона Смерти
+ent-MindSlaveImplanter = { ent-BaseImplantOnlyImplanterSyndi }
+    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
+    .suffix = Подчинение
+ent-MindSlaveImplant = Имплант "подчинение"
+    .desc = Этот имплант заставляет носителя полностью подчиняться хозяину, пока имплант активен
+

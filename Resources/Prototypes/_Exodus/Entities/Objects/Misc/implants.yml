@@ -13,3 +13,11 @@
   components:
     - type: Implanter
       implant: StimulantsImplant
+
+- type: entity
+  id: MindSlaveImplanter
+  parent: BaseImplantOnlyImplanterSyndi
+  suffix: MindSlave
+  components:
+    - type: Implanter
+      implant: MindSlaveImplant

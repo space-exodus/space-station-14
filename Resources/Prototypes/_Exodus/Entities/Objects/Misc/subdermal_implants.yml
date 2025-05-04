@@ -49,3 +49,16 @@
     solutions:
     - name: sol1
       charges: 3
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: MindSlaveImplant
+  name: Mindslave implant
+  description: Forces the user to be completely subservient to the installed implant while the implant is active.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+  - type: MindSlaveImplant
+  - type: Tag
+    tags:
+      - MindSlave
