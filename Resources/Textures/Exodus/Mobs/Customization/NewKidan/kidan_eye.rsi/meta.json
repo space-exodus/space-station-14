@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "by Askolot (discord:788252896016990219), owned by Space Exodus",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "empty-eyes",
+            "directions": 4
+        },
+        {
+            "name": "eye-l",
+            "directions": 4
+        },
+        {
+            "name": "eye-r",
+            "directions": 4
+        }
+    ]
+}
