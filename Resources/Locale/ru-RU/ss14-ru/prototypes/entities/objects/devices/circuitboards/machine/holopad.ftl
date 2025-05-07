@@ -1,2 +1,2 @@
-ent-HolopadMachineCircuitboard = машинная плата голопада
+ent-HolopadMachineCircuitboard = голопад (машинная плата)
     .desc = Печатная плата голопада.
