@@ -1,5 +1,5 @@
-ent-BookSecretDocumentsExodus = { ent-BookSecretDocuments }
+ent-BookSecretDocumentsExodus =  чрезвычайные приказы по безопасности
     .suffix = Exodus
-    .desc = { ent-BookSecretDocuments.desc }
+    .desc = СОВЕРШЕННО СЕКРЕТНО. В этих документах содержатся Чрезвычайные Приказы, которые ГСБ должен выполнить по требованию Центрального командования.
 ent-NuclearCodeRecord = запись кода ядерного устройства
     .desc = { ent-BaseItem.desc }
