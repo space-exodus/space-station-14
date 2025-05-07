@@ -40,8 +40,12 @@ loadout-group-warden-belt = Смотритель, пояс
 loadout-group-warden-shoes = Смотритель, обувь
 
 # Security Detective
+loadout-group-detective-gun = Детектив, оружие
 loadout-group-detective-backpack = Детектив, рюкзак
 loadout-group-detective-shoes = Детектив, обувь
+
+# Security Officer
+loadout-group-security-gun = Офицер СБ, оружие
 
 # Security Cadet
 loadout-group-security-cadet-backpack = Кадет СБ, рюкзак

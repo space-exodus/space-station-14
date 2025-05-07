@@ -17,3 +17,43 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
     state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolMk58
+  categories: [ HideSpawnMenu ]
+  name: mk 58
+  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverInspector
+  categories: [ HideSpawnMenu ]
+  name: Inspector
+  description:  A detective's best friend. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverDeckard
+  categories: [ HideSpawnMenu ]
+  name: Deckard
+  description: A rare, custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    state: base
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverMateba
+  categories: [ HideSpawnMenu ]
+  name: Mateba
+  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+    state: icon
