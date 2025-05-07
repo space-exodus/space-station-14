@@ -77,7 +77,11 @@ ent-PoweredlightBlack = { ent-Poweredlight }
     .suffix = Чёрный
     .desc = { ent-Poweredlight.desc }
 ent-AlwaysPoweredlightBlack = { ent-AlwaysPoweredWallLight }
+<<<<<<< HEAD
     .suffix = Всегда запитанный, Черный
+=======
+    .suffix = Всегда запитанный, Чёрный
+>>>>>>> space-syndicate/master
     .desc = { ent-AlwaysPoweredWallLight.desc }
 ent-PoweredlightRed = { ent-Poweredlight }
     .suffix = Красный

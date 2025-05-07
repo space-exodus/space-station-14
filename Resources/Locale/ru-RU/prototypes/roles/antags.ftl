@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 roles-antag-generic-solo-antagonist-name = Соло Антагонист
 roles-antag-generic-free-agent-name = Свободный агент
 roles-antag-generic-team-antagonist-name = Командный Антагонист
 roles-antag-generic-silicon-antagonist-name = Синтетик Антагонист
+=======
+roles-antag-generic-solo-antagonist-name = Соло-антагонист
+roles-antag-generic-free-agent-name = Свободный агент
+roles-antag-generic-team-antagonist-name = Командный антагонист
+roles-antag-generic-silicon-antagonist-name = Синтетик антагонист
+>>>>>>> space-syndicate/master
 roles-antag-syndicate-agent-name = Агент Синдиката
 roles-antag-syndicate-agent-objective = Выполните свои задачи и не попадитесь.
 roles-antag-syndicate-agent-sleeper-name = Спящий агент Синдиката
@@ -25,7 +32,11 @@ roles-antag-subverted-silicon-objective = Следуйте своим новым
 roles-antag-space-ninja-name = Космический ниндзя
 roles-antag-space-ninja-objective = Используйте свою скрытность, чтобы устроить диверсию на станции, подпитывайтесь от электрических проводов.
 roles-antag-paradox-clone-name = Парадоксальный клон
+<<<<<<< HEAD
 roles-antag-paradox-clone-objective = Странная аномалия пространственно-временного континуума перенесла вас в другую реальность! Теперь вам нужно найти свою копию, убить её и занять её место. Только один из вас сможет выжить!
+=======
+roles-antag-paradox-clone-objective = Странная пространственно-временная аномалия телепортировала вас в другую реальность! Теперь вам предстоит найти своего двойника, убить и заменить его.
+>>>>>>> space-syndicate/master
 roles-antag-thief-name = Вор
 roles-antag-thief-objective = Пополните свою личную коллекцию имуществом Nanotrasen, не прибегая к насилию.
 roles-antag-dragon-name = Космический дракон

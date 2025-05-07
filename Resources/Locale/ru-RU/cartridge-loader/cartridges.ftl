@@ -1,7 +1,11 @@
 device-pda-slot-component-slot-name-cartridge = Картридж
 default-program-name = Программа
 notekeeper-program-name = Заметки
+<<<<<<< HEAD
 nano-task-program-name = НаноЗаметки
+=======
+nano-task-program-name = НаноДела
+>>>>>>> space-syndicate/master
 news-read-program-name = Новости станции
 crew-manifest-program-name = Манифест экипажа
 crew-manifest-cartridge-loading = Загрузка...
@@ -17,11 +21,16 @@ log-probe-label-time = Время
 log-probe-label-accessor = Использовано:
 log-probe-label-number = #
 log-probe-print-button = Распечатать логи
+<<<<<<< HEAD
 log-probe-printout-device = Просканированное устройство: { $name }
+=======
+log-probe-printout-device = Сканированное устройство: { $name }
+>>>>>>> space-syndicate/master
 log-probe-printout-header = Последние логи:
 log-probe-printout-entry = #{ $number } / { $time } / { $accessor }
 astro-nav-program-name = АстроНав
 med-tek-program-name = МедТек
+<<<<<<< HEAD
 # Nanotask cartridge
 nano-task-ui-heading-high-priority-tasks =
     { $amount ->
@@ -43,21 +52,62 @@ nano-task-ui-heading-low-priority-tasks =
     }
 nano-task-ui-done = Готово
 nano-task-ui-revert-done = Отменить
+=======
+
+# NanoTask cartridge
+
+nano-task-ui-heading-high-priority-tasks =
+    { $amount ->
+        [zero] Нет задач высокого приоритета
+        [one] 1 задача высокого приоритета
+        [few] { $amount } задачи высокого приоритета
+       *[other] { $amount } задач высокого приоритета
+    }
+nano-task-ui-heading-medium-priority-tasks =
+    { $amount ->
+        [zero] Нет задач среднего приоритета
+        [one] 1 задача среднего приоритета
+        [few] { $amount } задачи среднего приоритета
+       *[other] { $amount } задач среднего приоритета
+    }
+nano-task-ui-heading-low-priority-tasks =
+    { $amount ->
+        [zero] Нет задач низкого приоритета
+        [one] 1 задача низкого приоритета
+        [few] { $amount } задачи низкого приоритета
+       *[other] { $amount } задач низкого приоритета
+    }
+nano-task-ui-done = Готово
+nano-task-ui-revert-done = Отмена
+>>>>>>> space-syndicate/master
 nano-task-ui-priority-low = Низкий
 nano-task-ui-priority-medium = Средний
 nano-task-ui-priority-high = Высокий
 nano-task-ui-cancel = Отмена
+<<<<<<< HEAD
 nano-task-ui-print = Печать
+=======
+nano-task-ui-print = Распечатать
+>>>>>>> space-syndicate/master
 nano-task-ui-delete = Удалить
 nano-task-ui-save = Сохранить
 nano-task-ui-new-task = Новая задача
 nano-task-ui-description-label = Описание:
+<<<<<<< HEAD
 nano-task-ui-description-placeholder = Сделать что-то важное
 nano-task-ui-requester-label = Запросил:
 nano-task-ui-requester-placeholder = Джон Нанотрейзен
 nano-task-ui-item-title = Редактирование задачи
 nano-task-printed-description = Описание: { $description }
 nano-task-printed-requester = Запросил: { $requester }
+=======
+nano-task-ui-description-placeholder = Взять что-то важное
+nano-task-ui-requester-label = Заявитель:
+nano-task-ui-requester-placeholder = Джон Нанотрейзен
+nano-task-ui-item-title = Редактировать задачу
+nano-task-printed-description = Описание: { $description }
+nano-task-printed-requester = Заявитель: { $requester }
+>>>>>>> space-syndicate/master
 nano-task-printed-high-priority = Приоритет: Высокий
 nano-task-printed-medium-priority = Приоритет: Средний
 nano-task-printed-low-priority = Приоритет: Низкий

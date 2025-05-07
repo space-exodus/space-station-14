@@ -95,4 +95,8 @@ reagent-physical-desc-alkaline = щелочное
 reagent-physical-desc-holy = святое
 reagent-physical-desc-slimy = склизкое
 reagent-physical-desc-neural = нейронное
+<<<<<<< HEAD
 reagent-physical-desc-unidentifiable = неопознанное
+=======
+reagent-physical-desc-unidentifiable = неидентифицируемое
+>>>>>>> space-syndicate/master

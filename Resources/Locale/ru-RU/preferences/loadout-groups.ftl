@@ -14,7 +14,11 @@ loadout-group-survival-syndicate = Github заставил меня переве
 loadout-group-breath-tool = Расозависимое дыхательное снаряжение
 loadout-group-tank-harness = Расозависимое снаряжение для выживания
 loadout-group-EVA-tank = Расозависимый газовый баллон
+<<<<<<< HEAD
 loadout-group-vox-tank = Газовый баллон, предназначенный для Воксов
+=======
+loadout-group-vox-tank = Газовый баллон для воксов
+>>>>>>> space-syndicate/master
 loadout-group-pocket-tank-double = Расозависимый двойной аварийный газовый баллон в кармане
 loadout-group-survival-mime = Мимский аварийный запас
 # Command

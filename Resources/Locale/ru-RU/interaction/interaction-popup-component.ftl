@@ -88,6 +88,12 @@ hugging-success-generic-others = { CAPITALIZE($user) } обнимает { $targe
 fence-rattle-success = *бдзынь*
 hugging-success-generic-target = { CAPITALIZE($user) } обнимает вас.
 petting-success-tesla = Вы гладите { $target }, попутно нарушая законы природы и физики.
+<<<<<<< HEAD
 petting-failure-tesla = Вы тянетесь погладить { $target }, но разряд заставляет вас отдёрнуть руку.
 petting-success-mail-teleporter = Вы гладите { $target } по его преданному, холодному { POSS-ADJ($target) } корпусу.
 petting-failure-mail-teleporter = Вы тянетесь, чтобы погладить { $target }, но { SUBJECT($target) } { CONJUGATE-BE($target) } слишком занят сортировкой почты!!
+=======
+petting-failure-tesla = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } разряд заставляет вас отдёрнуть руку.
+petting-success-mail-teleporter = Вы гладите { $target } по { POSS-ADJ($target) } послушной, холодной обшивке.
+petting-failure-mail-teleporter = Вы тянетесь погладить { $target }, но { SUBJECT($target) } занимается сортировкой почты!
+>>>>>>> space-syndicate/master

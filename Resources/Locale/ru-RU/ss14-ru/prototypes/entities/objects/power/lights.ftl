@@ -31,22 +31,39 @@ ent-ExteriorLightTube = экстерьерная лампа-трубка
 ent-SodiumLightTube = натриевая лампа-трубка
     .desc = Мощная энергосберегающая лампа для космических глубин. Солёная.
 ent-BaseLightTubeCrystal = кристальная лампа-трубка
+<<<<<<< HEAD
     .desc = Мощная лампа, внутри которой находится маленький цветной кристалл.
 ent-LightTubeCrystalCyan = голубая кристальная лампа-трубка
+=======
+>>>>>>> space-syndicate/master
     .desc = Мощная лампа, внутри которой находится маленький цветной кристалл.
+ent-LightTubeCrystalCyan = голубая кристальная лампа-трубка
+    .desc = { ent-BaseLightTubeCrystal.desc }
 ent-LightTubeCrystalBlue = синяя кристальная лампа-трубка
+<<<<<<< HEAD
     .desc = { ent-LightTubeCrystalCyan.desc }
 ent-LightTubeCrystalYellow = желтая кристальная лампа-трубка
+=======
+    .desc = { ent-BaseLightTubeCrystal.desc }
+ent-LightTubeCrystalYellow = жёлтая кристальная лампа-трубка
+>>>>>>> space-syndicate/master
     .desc = { ent-BaseLightTubeCrystal.desc }
 ent-LightTubeCrystalPink = розовая кристальная лампа-трубка
-    .desc = { ent-LightTubeCrystalCyan.desc }
+    .desc = { ent-BaseLightTubeCrystal.desc }
 ent-LightTubeCrystalOrange = оранжевая кристальная лампа-трубка
+<<<<<<< HEAD
     .desc = { ent-LightTubeCrystalCyan.desc }
 ent-LightTubeCrystalBlack = черная кристальная лампа-трубка
     .desc = { ent-LightTubeCrystalCyan.desc }
+=======
+    .desc = { ent-BaseLightTubeCrystal.desc }
+ent-LightTubeCrystalBlack = чёрная кристальная лампа-трубка
+    .desc = Мощная лампа, внутри которой находится маленький цветной кристалл. Не очень яркая.
+>>>>>>> space-syndicate/master
 ent-LightTubeCrystalRed = красная кристальная лампа-трубка
-    .desc = { ent-LightTubeCrystalCyan.desc }
+    .desc = { ent-BaseLightTubeCrystal.desc }
 ent-LightTubeCrystalGreen = зелёная кристальная лампа-трубка
+<<<<<<< HEAD
     .desc = { ent-LightTubeCrystalCyan.desc }
 ent-BaseLightbulbCrystal = кристальная лампа-трубка
     .desc = Мощная лампа, внутри которой находится маленький цветной кристалл.
@@ -65,4 +82,24 @@ ent-LightBulbCrystalBlack = черная кристальная лампа-тр�
 ent-LightBulbCrystalRed = красная кристальная лампа-трубка
     .desc = { ent-BaseLightbulbCrystal.desc }
 ent-LightBulbCrystalGreen = зеленая кристальная лампа-трубка
+=======
+    .desc = { ent-BaseLightTubeCrystal.desc }
+ent-BaseLightbulbCrystal = кристальная лампа накаливания
+    .desc = Мощная лампа, внутри которой находится маленький цветной кристалл.
+ent-LightBulbCrystalCyan = голубая кристальная лампа накаливания
+    .desc = { ent-BaseLightbulbCrystal.desc }
+ent-LightBulbCrystalBlue = синяя кристальная лампа накаливания
+    .desc = { ent-BaseLightbulbCrystal.desc }
+ent-LightBulbCrystalYellow = жёлтая кристальная лампа накаливания
+    .desc = { ent-BaseLightbulbCrystal.desc }
+ent-LightBulbCrystalPink = розовая кристальная лампа накаливания
+    .desc = { ent-BaseLightbulbCrystal.desc }
+ent-LightBulbCrystalOrange = оранжевая кристальная лампа накаливания
+    .desc = { ent-BaseLightbulbCrystal.desc }
+ent-LightBulbCrystalBlack = чёрная кристальная лампа накаливания
+    .desc = Мощная лампа, внутри которой находится маленький цветной кристалл. Не очень яркая.
+ent-LightBulbCrystalRed = красная кристальная лампа накаливания
+    .desc = { ent-BaseLightbulbCrystal.desc }
+ent-LightBulbCrystalGreen = зелёная кристальная лампа накаливания
+>>>>>>> space-syndicate/master
     .desc = { ent-BaseLightbulbCrystal.desc }

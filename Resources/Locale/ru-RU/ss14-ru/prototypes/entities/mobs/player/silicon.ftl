@@ -55,14 +55,18 @@ ent-PlayerStationAi = { ent-PlayerStationAiEmpty }
     .suffix = Спавн должности
     .desc = { ent-PlayerStationAiEmpty.desc }
 ent-StationAiBrain = { ent-PositronicBrain }
-    .suffix = НЕ МАППИТЬ
     .desc = { ent-PositronicBrain.desc }
 ent-StationAiHoloLocal = голограмма ИИ
     .desc = Голографическая визуализация ИИ.
     .suffix = НЕ МАППИТЬ
 ent-StationAiHolo = око ИИ
     .desc = Обозреватель ИИ.
+<<<<<<< HEAD
     .suffix = НЕ МАППИТЬ
+=======
+ent-StationAiHoloLocal = голограмма ИИ
+    .desc = Голографическое представление ИИ.
+>>>>>>> space-syndicate/master
 ent-PlayerBorgBattery = { ent-BorgChassisSelectable }
     .suffix = Батарея
     .desc = { ent-BorgChassisSelectable.desc }

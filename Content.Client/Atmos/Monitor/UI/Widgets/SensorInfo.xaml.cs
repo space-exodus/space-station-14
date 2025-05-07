@@ -27,11 +27,11 @@ public sealed partial class SensorInfo : BoxContainer
 
         _address = address;
 
-        SensorAddress.Title = $"{address} : {Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))}"; // Exodus-Localization
+        SensorAddress.Title = Loc.GetString("air-alarm-ui-window-listing-title", ("address", _address), ("state", data.AlarmState));
 
         AlarmStateLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-alarm-state-indicator",
                     ("color", AirAlarmWindow.ColorForAlarm(data.AlarmState)),
-                    ("state", Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))))); // Exodus-Localization
+                    ("state", Loc.GetString("-air-alarm-state-name", ("type", $"{data.AlarmState}"))))); // Exodus-Localization
         PressureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-pressure-indicator",
                     ("color", AirAlarmWindow.ColorForThreshold(data.Pressure, data.PressureThreshold)),
                     ("pressure", $"{data.Pressure:0.##}")));
@@ -90,11 +90,11 @@ public sealed partial class SensorInfo : BoxContainer
 
     public void ChangeData(AtmosSensorData data)
     {
-        SensorAddress.Title = $"{_address} : {Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))}"; // Exodus-Localization
+        SensorAddress.Title = Loc.GetString("air-alarm-ui-window-listing-title", ("address", _address), ("state", data.AlarmState));
 
         AlarmStateLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-alarm-state-indicator",
                     ("color", AirAlarmWindow.ColorForAlarm(data.AlarmState)),
-                    ("state", Loc.GetString("air-alarm-ui-window-alarm-type", ("type", $"{data.AlarmState}"))))); // Exodus-Localization
+                    ("state", Loc.GetString("-air-alarm-state-name", ("type", $"{data.AlarmState}"))))); // Exodus-Localization
 
         PressureLabel.SetMarkup(Loc.GetString("air-alarm-ui-window-pressure-indicator",
                     ("color", AirAlarmWindow.ColorForThreshold(data.Pressure, data.PressureThreshold)),

@@ -109,6 +109,7 @@ ent-ChemistryBottleSugar = { ent-BaseChemistryBottleFilled }
 ent-ChemistryBottleSulfur = { ent-BaseChemistryBottleFilled }
     .suffix = Сера
     .desc = { ent-BaseChemistryBottleFilled.desc }
+<<<<<<< HEAD
 ent-EpinephrineChemistryBottle = { ent-BaseChemistryBottleFilled }
     .suffix = Эпинефрин
     .desc = { ent-BaseChemistryBottleFilled.desc }
@@ -163,3 +164,5 @@ ent-LeadChemistryBottle = { ent-BaseChemistryBottleFilled }
 ent-ToxinChemistryBottle = { ent-BaseChemistryBottleFilled }
     .suffix = Токсин
     .desc = { ent-BaseChemistryBottleFilled.desc }
+=======
+>>>>>>> space-syndicate/master

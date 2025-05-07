@@ -5,13 +5,21 @@ ent-AsteroidRockCoal = { ent-AsteroidRock }
     .desc = Рудная жила, богатая углём.
     .suffix = Уголь
 ent-AsteroidRockCoalCrab = { ent-AsteroidRock }
+<<<<<<< HEAD
     .desc = { ent-AsteroidRockCoal }
+=======
+    .desc = { ent-AsteroidRockCoalCrab.desc }
+>>>>>>> space-syndicate/master
     .suffix = Уголь, Рудокраб
 ent-AsteroidRockGold = { ent-AsteroidRock }
     .desc = Рудная жила, богатая золотом.
     .suffix = Золото
 ent-AsteroidRockGoldCrab = { ent-AsteroidRock }
+<<<<<<< HEAD
     .desc = { ent-AsteroidRockGold }
+=======
+    .desc = { ent-AsteroidRockGold.desc }
+>>>>>>> space-syndicate/master
     .suffix = Золото, Рудокраб
 ent-AsteroidRockDiamond = { ent-AsteroidRock }
     .desc = Рудная жила, богатая алмазами.
@@ -23,7 +31,7 @@ ent-AsteroidRockQuartz = { ent-AsteroidRock }
     .desc = Рудная жила, богатая кварцем.
     .suffix = Кварц
 ent-AsteroidRockQuartzCrab = { ent-AsteroidRock }
-    .desc = Рудная жила, богатая кварцем.
+    .desc = { ent-AsteroidRockQuartz.desc }
     .suffix = Кварц, Рудокраб
 ent-AsteroidRockSilver = { ent-AsteroidRock }
     .desc = Рудная жила, богатая серебром.

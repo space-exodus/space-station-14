@@ -15,10 +15,10 @@
     - type: MothAccent
     - type: ReplacementAccent
       accent: dwarf
-    # Exodus-Races-Start
+    - type: GrowlingAccent # Corvax-Vulps
+    # Exodus-Species-Start
     - type: KidanAccent
-    - type: GrowlingAccent
-    # Exodus-Races-End
+    # Exodus-Species-End
 
 # 1 Cost
 

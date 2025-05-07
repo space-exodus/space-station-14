@@ -486,6 +486,8 @@
       - state: green
       - state: detective
 
+# Exodus-Brigmedic | Moved to Exodus folder
+
 # SPECIAL
 # ERT
 - type: entity
