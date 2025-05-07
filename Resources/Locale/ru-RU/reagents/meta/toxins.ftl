@@ -1,5 +1,11 @@
 reagent-name-toxin = токсин
 reagent-desc-toxin = Как ни странно, токсичный химикат. Доступен в емагнутом химическом раздатчике.
+reagent-name-astrotamefake = астротем
+reagent-desc-astrotamefake = Атстротем, изготовленный по заказу CyberSun. Вызывает рак, слащу любых снов.
+reagent-name-frostoilfake = холодный соус
+reagent-desc-frostoilfake = Реально морозит, даже куртка не поможет.
+reagent-name-bbqsaucefake = соус барбекю
+reagent-desc-bbqsaucefake = Горячо, прям сильно горячо.
 reagent-name-carpotoxin = карпотоксин
 reagent-desc-carpotoxin = Высокотоксичный химикат, содержащийся в космических карпах. Вызывает болезненное чувство жжения.
 reagent-name-mold = плесень

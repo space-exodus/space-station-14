@@ -1,2 +1,2 @@
-ent-TurnBioluminescenceAction = Биолюминесценция
-    .desc = Начать или прекратить светится
+ent-TurnBioluminescenceAction = Bioluminescence
+    .desc = Start or stop glowing.

@@ -42,11 +42,11 @@ holopad-general-tools = Общий - Инструменты
 holopad-general-cryosleep = Общий - Криосон
 holopad-general-theater = Общий - Театр
 holopad-general-disposals = Общий - Мусоросброс
-holopad-general-eva = Общий - хранилище ВКД
 holopad-general-lounge = Общий - Зона отдыха
 holopad-general-arcade = Общий - Аркады
 holopad-general-evac = Общий - Эвак
 holopad-general-arrivals = Общий - Прибытие
+holopad-general-eva = Общие - Хранилище EVA
 # Command
 holopad-command-bridge = Командование - Мостик
 holopad-command-vault = Командование - Хранилище

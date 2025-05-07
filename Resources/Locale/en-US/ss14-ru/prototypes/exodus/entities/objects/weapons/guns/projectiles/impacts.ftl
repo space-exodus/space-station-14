@@ -1,0 +1,2 @@
+ent-BulletImpactEffectPurpleLaser = { "" }
+    .desc = { "" }

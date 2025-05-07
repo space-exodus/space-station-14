@@ -1,2 +1,2 @@
-ent-BaseRoomMarker = спавнер комната
+ent-BaseRoomMarker = маркер комнаты
     .desc = { ent-MarkerBase.desc }

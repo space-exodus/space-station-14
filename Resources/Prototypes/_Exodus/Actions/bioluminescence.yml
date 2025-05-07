@@ -1,7 +1,7 @@
 - type: entity
   id: TurnBioluminescenceAction
-  name: Биолюминесценция
-  description: Начать или прекратить светится
+  name: Bioluminescence
+  description: Start or stop glowing.
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
