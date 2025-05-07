@@ -10,4 +10,8 @@
     back:
     - ClothingEyesEyepatch
 
-
+- type: loadout
+  id: MedkitLoadout
+  storage:
+    back:
+    - MedkitLoadout

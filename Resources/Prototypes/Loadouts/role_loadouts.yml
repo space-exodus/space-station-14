@@ -252,8 +252,8 @@
   groups:
   - GroupTankHarness
   - ChiefEngineerHead
-  - ChiefEngineerJumpsuit
   - ChiefEngineerHeadset
+  - ChiefEngineerJumpsuit
   - ChiefEngineerBackpack # Corvax-Loadouts
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
@@ -365,6 +365,7 @@
 - type: roleLoadout
   id: JobWarden
   groups:
+  - WardenGun
   - WardenHead
   - WardenHeadset
   - WardenJumpsuit
@@ -380,6 +381,7 @@
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
+  - SecurityGun
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
@@ -395,6 +397,7 @@
 - type: roleLoadout
   id: JobDetective
   groups:
+  - DetectiveGun
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit

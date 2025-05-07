@@ -113,6 +113,14 @@
   - HeadsetAltWarden
 
 - type: loadoutGroup
+  id: WardenGun
+  name: loadout-group-warden-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunMk58
+
+- type: loadoutGroup
   id: WardenBackpack
   name: loadout-group-warden-backpack
   loadouts:
@@ -139,6 +147,8 @@
 - type: loadoutGroup
   id: HeadofSecurityGun
   name: loadout-group-head-of-security-gun
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - SecurityGunInspector
   - SecurityGunMateba
@@ -177,6 +187,16 @@
   - HeadofSecurityAltHeadset
 
 - type: loadoutGroup
+  id: DetectiveGun
+  name: loadout-group-detective-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunInspector
+  - SecurityGunMateba
+  - SecurityGunDeckard
+
+- type: loadoutGroup
   id: DetectiveBackpack
   name: loadout-group-detective-backpack
   loadouts:
@@ -194,6 +214,14 @@
   - SecurityWinterBoots
   - AerostaticShoes
   - ShoesGreenLizardskin
+
+- type: loadoutGroup
+  id: SecurityGun
+  name: loadout-group-security-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunMk58
 
 - type: loadoutGroup
   id: SecurityCadetBackpack
