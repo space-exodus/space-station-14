@@ -20,23 +20,31 @@
 # Gun
 - type: loadout
   id: SecurityGunMateba
+  dummyEntity: LoadoutDummyWeaponRevolverMateba
   equipment:
     pocket1: WeaponRevolverMateba
+    pocket2: SpeedLoaderMagnum
 
 - type: loadout
   id: SecurityGunDeckard
+  dummyEntity: LoadoutDummyWeaponRevolverDeckard
   equipment:
     pocket1: WeaponRevolverDeckard
+    pocket2: SpeedLoaderMagnum
 
 - type: loadout
   id: SecurityGunInspector
+  dummyEntity: LoadoutDummyWeaponRevolverInspector
   equipment:
     pocket1: WeaponRevolverInspector
+    pocket2: SpeedLoaderMagnum
 
 - type: loadout
   id: SecurityGunMk58
+  dummyEntity: LoadoutDummyWeaponPistolMk58
   equipment:
     pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
 
 #Ears
 - type: loadout

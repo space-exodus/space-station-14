@@ -5,7 +5,7 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
-  # - SpaceLaw # Corvax-HyperLink
+  # - SpaceLaw # Exodus-Corvax-Hyperlink-Remove
   - FlowerWreath
   - Hairflower
   - Headphones
@@ -14,6 +14,15 @@
   - CigPackRed
   - CigPackBlue
   - CigPackBlack
+  - PlushieLizard
+  - PlushieSpaceLizard
+  # Exodus-Loadouts-Update-Start
+  - Harmonica
+  - PersonalAI
+  - Eyepatch
+  - MimeSuspendersBlack
+  - MedkitLoadout
+  # - ThreeCandles
   # - ClothingNeckLGBTPin
   # - ClothingNeckAllyPin
   # - ClothingNeckAromanticPin
