@@ -24,6 +24,9 @@ device-frequency-prototype-name-surveillance-camera-service = Камеры (Се
 device-frequency-prototype-name-surveillance-camera-medical = Камеры (Медицинский)
 device-frequency-prototype-name-surveillance-camera-general = Камеры (Общие)
 device-frequency-prototype-name-surveillance-camera-entertainment = Камеры (Развлечения)
+# prefixes for randomly generated device addresses
+device-address-prefix-vent = Вен-
+device-address-prefix-scrubber = СКР-
 device-address-prefix-sensor = Сенс-
 device-address-prefix-fire-alarm = Пож-
 # Damn bet you couldn't see this one coming.
