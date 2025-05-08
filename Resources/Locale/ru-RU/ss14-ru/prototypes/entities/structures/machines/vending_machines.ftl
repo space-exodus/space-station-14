@@ -141,13 +141,9 @@ ent-VendingMachineViroDrobe = ВироШкаф
 ent-VendingMachineCentDrobe = ЦентШкаф
     .desc = Единственный в своём роде торговый автомат для удовлетворения всех ваших командных эстетических потребностей!
 ent-VendingMachineHappyHonk = Хэппи Хонк
-<<<<<<< HEAD
-    .desc = Раздатчик коробок обедов Хэппи Хонк, разработаный компанией «Honk! co.».
-=======
     .desc = Раздатчик коробок обедов Хэппи Хонк, разработанный компанией «Honk! co.».
 ent-VendingMachinePride = Прайд-О-Мат
     .desc = Торговый автомат, наполненный гордостью.
->>>>>>> space-syndicate/master
 ent-VendingMachineTankDispenserEVA = раздатчик газовых баллонов
     .desc = Автомат по выдаче газовых баллонов.
     .suffix = EVA [O2, N2]

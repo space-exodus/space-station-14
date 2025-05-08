@@ -78,19 +78,11 @@ ent-GrapplingHook = якорь
     .desc = { "" }
 ent-BulletDisablerSmg = заряд станнера-пулемёта
     .desc = { ent-BaseBullet.desc }
-<<<<<<< HEAD
-ent-BulletEnergyTurretBase = энергетический болт
-    .desc = { ent-BaseBullet.desc }
-ent-BulletEnergyTurretLaser = лазерный болт
-    .desc = { ent-BulletEnergyTurretBase.desc }
-ent-BulletEnergyTurretDisabler = оглущающий болт
-=======
 ent-BulletEnergyTurretBase = энергетический заряд
     .desc = { ent-BaseBullet.desc }
 ent-BulletEnergyTurretLaser = лазерный заряд
     .desc = { ent-BulletEnergyTurretBase.desc }
 ent-BulletEnergyTurretDisabler = заряд станнера
->>>>>>> space-syndicate/master
     .desc = { ent-BulletEnergyTurretBase.desc }
 ent-TeslaGunBullet = молния Тесла-пушки
     .desc = { ent-BaseBullet.desc }

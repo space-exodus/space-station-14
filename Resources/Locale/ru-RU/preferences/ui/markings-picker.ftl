@@ -21,13 +21,8 @@ markings-category-Head = Голова
 markings-category-HeadTop = Голова (верх)
 markings-category-HeadSide = Голова (бок)
 markings-category-Snout = Морда
-<<<<<<< HEAD
 markings-category-UndergarmentTop = Нижнее бельё (верх)
 markings-category-UndergarmentBottom = Нижнее бельё (низ)
-=======
-markings-category-UndergarmentTop = Нижнее бельё (Верх)
-markings-category-UndergarmentBottom = Нижнее бельё (Низ)
->>>>>>> space-syndicate/master
 markings-category-Chest = Грудь
 markings-category-Arms = Руки
 markings-category-Legs = Ноги

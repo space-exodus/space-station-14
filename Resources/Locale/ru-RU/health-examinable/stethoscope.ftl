@@ -1,10 +1,7 @@
 stethoscope-verb = Прослушать стетоскопом
 stethoscope-nothing = Вы ничего не слышите.
-<<<<<<< HEAD
 stethoscope-dead = Вы не слышите ничего.
 stethoscope-raggedy = Вы слышите хриплое, неровное дыхание.
-=======
->>>>>>> space-syndicate/master
 stethoscope-normal = Вы слышите нормальное дыхание.
 stethoscope-raggedy = Вы слышите прерывистое дыхание.
 stethoscope-hyper = Вы слышите гипервентиляцию.

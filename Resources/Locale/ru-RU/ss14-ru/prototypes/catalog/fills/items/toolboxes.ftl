@@ -13,13 +13,8 @@ ent-ToolboxArtisticFilled = художественный ящик для инс�
 ent-ToolboxMechanicalFilled = технический ящик для инструментов
     .suffix = Заполненный
     .desc = { ent-ToolboxMechanical.desc }
-<<<<<<< HEAD
 ent-ToolboxMechanicalFilledAllTools = технический ящик для инструментов
     .suffix = Заполненный, Все инструменты
-=======
-ent-ToolboxMechanicalFilledAllTools = механический ящик для инструментов
-    .suffix = Заполненный, все инструменты
->>>>>>> space-syndicate/master
     .desc = { ent-ToolboxMechanical.desc }
 ent-ToolboxSyndicateFilled = { ent-ToolboxSyndicate }
     .suffix = Заполненный

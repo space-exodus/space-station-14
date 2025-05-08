@@ -14,15 +14,8 @@ lathe-category-materials = Материалы
 # Uniform
 lathe-category-bedsheets = Одеяла
 lathe-category-carpets = Ковры
-<<<<<<< HEAD
 lathe-category-coats = Куртки
 lathe-category-command = Командование
 lathe-category-hats = Шляпы
-lathe-category-jumpsuits = Униформы
-=======
-lathe-category-coats = Халаты
-lathe-category-command = Командование
-lathe-category-hats = Шляпы
 lathe-category-jumpsuits = Комбинезоны
->>>>>>> space-syndicate/master
 lathe-category-neck = Шея

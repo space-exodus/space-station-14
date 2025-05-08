@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-delivery-recipient-examine = Это предназначено для { $recipient }, { $job }.
-delivery-already-opened-examine = Он уже открыт.
-delivery-recipient-no-name = Безымянный
-delivery-recipient-no-job = Неизвестный
-delivery-unlocked-self = Вы разблокировали { $delivery } своим отпечатком.
-delivery-opened-self = Вы открыли { $delivery }.
-delivery-unlocked-others = { CAPITALIZE($recipient) } разблокировал { $delivery } с помощью { POSS-ADJ($possadj) } отпечатка.
-delivery-opened-others = { CAPITALIZE($recipient) } открыл { $delivery }.
-delivery-unlock-verb = Разблокировать
-delivery-open-verb = Открыть
-=======
 delivery-recipient-examine = Адресовано: { $recipient }, { $job }.
 delivery-already-opened-examine = Уже вскрыто.
 delivery-recipient-no-name = Безымянный
@@ -32,4 +20,3 @@ delivery-opened-others =
     } { $delivery }.
 delivery-unlock-verb = Разблокировать
 delivery-open-verb = Вскрыть
->>>>>>> space-syndicate/master

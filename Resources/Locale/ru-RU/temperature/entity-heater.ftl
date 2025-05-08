@@ -1,20 +1,11 @@
 -entity-heater-setting-name =
     { $setting ->
-<<<<<<< HEAD
-        [off] выключено
-=======
         [off] выкл
->>>>>>> space-syndicate/master
         [low] низкий
         [medium] средний
         [high] высокий
        *[other] неизвестно
     }
-<<<<<<< HEAD
-entity-heater-examined = Выбран режим [color=gray]{ $setting }[/color]
-entity-heater-switch-setting = Переключить на { $setting }
-entity-heater-switched-setting = Переключён на { $setting }
-=======
 
 entity-heater-examined = Выбран режим { $setting ->
     [off] [color=gray]{ -entity-heater-setting-name(setting: "off") }[/color]
@@ -25,4 +16,3 @@ entity-heater-examined = Выбран режим { $setting ->
 }.
 entity-heater-switch-setting = Переключить на { -entity-heater-setting-name(setting: $setting) }
 entity-heater-switched-setting = Переключён на { -entity-heater-setting-name(setting: $setting) }.
->>>>>>> space-syndicate/master

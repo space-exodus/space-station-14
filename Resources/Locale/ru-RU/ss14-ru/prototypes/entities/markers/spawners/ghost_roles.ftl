@@ -28,11 +28,6 @@ ent-SpawnPointGhostParadoxClone = { ent-BaseAntagSpawner }
     .desc = { ent-BaseAntagSpawner.desc }
 ent-SpawnPointGhostDerelictCyborg = { ent-BaseAntagSpawner }
     .desc = { ent-BaseAntagSpawner.desc }
-<<<<<<< HEAD
 ent-SpawnPointGhostWizard = { ent-BaseAntagSpawner }
     .suffix = Волшебник
-=======
-ent-SpawnPointGhostWizard = спавнер роли призрак
-    .suffix = волшебник
->>>>>>> space-syndicate/master
     .desc = { ent-BaseAntagSpawner.desc }

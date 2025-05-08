@@ -10,19 +10,6 @@ ent-MindRoleGhostRoleFamiliar = Роль призрака (Фамильяр)
     .desc = { ent-MindRoleGhostRoleNeutral.desc }
 ent-MindRoleGhostRoleFreeAgent = Роль призрака (Свободный агент)
     .desc = { ent-BaseMindRole.desc }
-<<<<<<< HEAD
-ent-MindRoleGhostRoleFreeAgentHarmless = { ent-MindRoleGhostRoleFreeAgent }
-    .desc = { ent-MindRoleGhostRoleNeutral.desc }
-ent-MindRoleGhostRoleSilicon = Роль призрака (Синтетик)
-    .desc = { ent-BaseMindRole.desc }
-ent-MindRoleGhostRoleSiliconAntagonist = Роль призрака (Синтетик Антагонист)
-    .desc = { ent-BaseMindRole.desc }
-ent-MindRoleGhostRoleSoloAntagonist = Роль призрака (Соло Антагонист)
-    .desc = { ent-BaseMindRole.desc }
-ent-MindRoleGhostRoleTeamAntagonist = Роль призрака (Командный Антагонист)
-    .desc = { ent-BaseMindRole.desc }
-ent-MindRoleGhostRoleTeamAntagonistFlock = { ent-MindRoleGhostRoleTeamAntagonist }
-=======
 ent-MindRoleGhostRoleFreeAgentHarmless = Роль призрака (Свободный агент)
     .desc = { ent-MindRoleGhostRoleNeutral.desc }
 ent-MindRoleGhostRoleSilicon = Роль призрака (Синтетик)
@@ -34,7 +21,6 @@ ent-MindRoleGhostRoleSoloAntagonist = Роль призрака (Соло-ант
 ent-MindRoleGhostRoleTeamAntagonist = Роль призрака (Командный антагонист)
     .desc = { ent-MindRoleGhostRoleNeutral.desc }
 ent-MindRoleGhostRoleTeamAntagonistFlock = Роль призрака (Командный антагонист)
->>>>>>> space-syndicate/master
     .desc = { ent-MindRoleGhostRoleTeamAntagonist.desc }
 ent-MindRoleSiliconBrain = Роль мозг киборга
     .desc = { ent-BaseMindRole.desc }

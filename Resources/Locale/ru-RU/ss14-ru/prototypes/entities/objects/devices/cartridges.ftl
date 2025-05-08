@@ -1,13 +1,7 @@
 ent-NotekeeperCartridge = картридж Заметки
-<<<<<<< HEAD
     .desc = Программа для хранения заметок
 ent-NanoTaskCartridge = картридж НаноЗаметки
     .desc = Программа, которая позволяет вести список задач.
-=======
-    .desc = Программа для хранения заметок.
-ent-NanoTaskCartridge = картридж НаноДела
-    .desc = Программа для управления списками дел и отслеживания их выполнения.
->>>>>>> space-syndicate/master
 ent-NewsReaderCartridge = картридж Новости
     .desc = Программа для чтения новостей.
 ent-CrewManifestCartridge = картридж Манифест экипажа

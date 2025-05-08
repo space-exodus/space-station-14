@@ -1,10 +1,6 @@
 ent-MobBat = летучая мышь
-<<<<<<< HEAD
     .desc = В одних культурах они вызывают ужас, в других - хрустят на зубах.
     .suffix = ИИ
-=======
-    .desc = В одних культурах они вызывают ужас, в других — хрустят на зубах.
->>>>>>> space-syndicate/master
 ent-MobBee = пчела
     .desc = Приятно иметь, но нельзя построить цивилизацию на фундаменте из одного только мёда.
     .suffix = ИИ
@@ -56,12 +52,8 @@ ent-MobGoat = коза
     .desc = Её позвоночник состоит из длинных острых сегментов, неудивительно, что она такая ворчливая.
     .suffix = ИИ
 ent-MobGoose = гусь
-<<<<<<< HEAD
     .desc = Его желудок и разум - загадка, недоступная человеческому пониманию.
     .suffix = ИИ
-=======
-    .desc = Его желудок и разум — загадка, недоступная человеческому пониманию.
->>>>>>> space-syndicate/master
 ent-MobGorilla = горилла
     .desc = Крушит, ревёт, выглядит круто. Не стойте рядом с ней.
     .suffix = ИИ
@@ -130,17 +122,11 @@ ent-MobParrot = попугай
     .desc = Проникает в ваши владения, шпионит за вами и при этом остаётся классным питомцем.
     .suffix = ИИ
 ent-MobPenguin = пингвин
-<<<<<<< HEAD
     .desc = Их жизнь - это постоянная боль из-за коленных суставов внутри тела.
     .suffix = ИИ
 ent-MobGrenadePenguin = пингвин гренадёр
     .desc = Маленький пингвин с гранатой на шее. Заготавливаются Синдикатом на неблагоприятных ледяных планетах.
     .suffix = ИИ
-=======
-    .desc = Их жизнь — это постоянная боль из-за коленных суставов внутри тела.
-ent-MobGrenadePenguin = пингвин гренадёр
-    .desc = Маленький пингвин с гранатой на шее. Заготавливается Синдикатом на неблагоприятных ледяных планетах.
->>>>>>> space-syndicate/master
 ent-MobSnake = змея
     .desc = Хиссс! Укусы не ядовиты.
     .suffix = ИИ
@@ -152,7 +138,6 @@ ent-MobSpiderAngryBase = { ent-MobSpiderBase }
     .suffix = ИИ
 ent-MobGiantSpider = тарантул
     .desc = Общепризнанно, что это буквально худшее существо на свете.
-<<<<<<< HEAD
     .suffix = ИИ
 ent-MobGiantSpiderAngry = тарантул
     .desc = { ent-MobGiantSpider.desc }
@@ -160,23 +145,12 @@ ent-MobGiantSpiderAngry = тарантул
 ent-MobClownSpider = клоун-паук
     .desc = Сочетает в себе две самые страшные вещи на свете - пауков и клоунов.
     .suffix = ИИ
-=======
-ent-MobGiantSpiderAngry = { ent-MobGiantSpider }
-    .desc = { ent-MobGiantSpider.desc }
-    .suffix = Злой
-ent-MobClownSpider = клоун-паук
-    .desc = Сочетает в себе две самые страшные вещи на свете — пауков и клоунов.
->>>>>>> space-syndicate/master
 ent-MobGiantSpiderWizard = паук-волшебник
     .desc = Этот паук выглядит немного волшебным.
     .suffix = Волшебник
 ent-MobPossum = поссум
-<<<<<<< HEAD
     .desc = "О поссум! Мой поссум!" -- Уолт Уитмен, 1865
     .suffix = ИИ
-=======
-    .desc = "О поссум! Мой поссум!" -- Уолт Уитмен, 1865.
->>>>>>> space-syndicate/master
 ent-MobPossumOld = поссум
     .suffix = Старый спрайт, ИИ
     .desc = { ent-MobPossum.desc }
@@ -215,12 +189,8 @@ ent-MobFerret = хорёк
     .desc = Просто маленький глупый парнишка!
     .suffix = ИИ
 ent-MobFox = лиса
-<<<<<<< HEAD
     .desc = Они - лисы.
     .suffix = ИИ
-=======
-    .desc = Они — лисы.
->>>>>>> space-syndicate/master
 ent-MobHamster = хомяк
     .desc = Милый, пушистый, робастный хомяк.
     .suffix = ИИ

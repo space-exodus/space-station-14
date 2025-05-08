@@ -119,11 +119,7 @@ ui-options-header-text-cursor = Текстовый курсор
 ui-options-header-text-cursor-select = Выделение текста
 ui-options-header-text-edit = Редактирование текста
 ui-options-header-text-chat = Чат
-<<<<<<< HEAD
 ui-options-header-text-other = Ввод текста (прочее)
-=======
-ui-options-header-text-other = Прочий ввод текста
->>>>>>> space-syndicate/master
 ui-options-hotkey-keymap = Использовать клавиши QWERTY (США)
 ui-options-hotkey-toggle-walk = Переключать шаг\бег
 ui-options-function-move-up = Двигаться вверх
@@ -345,24 +341,6 @@ ui-options-reduced-motion = Снижение интенсивности визу
 ui-options-accessability-header-visuals = Изображение
 ui-options-accessability-header-content = Содержимое
 ui-options-screen-shake-intensity = Интенсивность дрожания экрана
-<<<<<<< HEAD
-ui-options-speech-bubble-text-opacity = Непрозрачность текста облака речи
-ui-options-speech-bubble-speaker-opacity = Непрозрачность автора текста облака речи
-ui-options-speech-bubble-background-opacity = Непрозрачность фона облака речи
-ui-options-enable-classic-overlay = Вернуть оверлей антагов в классический режим
-ui-options-censor-nudity = Включить цензуру наготы персонажей
-ui-options-admin-player-panel = Панель Администратора — Список Игроков
-ui-options-admin-playerlist-separate-symbols = Показывать отдельные символы для каждого типа антагониста
-ui-options-admin-playerlist-character-color = Цветные имена антагонистов
-ui-options-admin-playerlist-roletype-color = Цветные типы ролей
-ui-options-admin-overlay-title = Админский оверлей
-ui-options-enable-overlay-symbols = Добавлять символ антагониста к тексту
-ui-options-enable-overlay-playtime = Показывать игровое время
-ui-options-enable-overlay-starting-job = Показывать начальную профессию
-ui-options-overlay-merge-distance = Расстояние для слияния стеков
-ui-options-overlay-ghost-fade-distance = Диапазон исчезновения оверлея призрака от мышки
-ui-options-overlay-ghost-hide-distance = Диапазон скрытия оверлея призрака от мышки
-=======
 ui-options-chat-window-opacity = Непрозрачность окна чата
 ui-options-speech-bubble-text-opacity = Непрозрачность текста речевого пузыря
 ui-options-speech-bubble-speaker-opacity = Непрозрачность диктора речевого пузыря
@@ -377,7 +355,6 @@ ui-options-admin-overlay-title = Админ оверлей
 ui-options-enable-overlay-symbols = Добавить символ антага к тексту
 ui-options-enable-overlay-playtime = Отображать наигранное время
 ui-options-enable-overlay-starting-job = Показывать начальную должность
-ui-options-overlay-merge-distance = Stack merge distance
-ui-options-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
-ui-options-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
->>>>>>> space-syndicate/master
+ui-options-overlay-merge-distance = Расстояние для слияния стеков
+ui-options-overlay-ghost-fade-distance = Диапазон исчезновения оверлея призрака от мышки
+ui-options-overlay-ghost-hide-distance = Диапазон скрытия оверлея призрака от мышки

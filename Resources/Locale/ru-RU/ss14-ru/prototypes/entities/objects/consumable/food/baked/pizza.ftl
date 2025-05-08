@@ -48,14 +48,7 @@ ent-FoodPizzaCotton = хлопковая пицца
     .desc = Плоское хлопковое тесто с хлопковой начинкой. Невероятно.
 ent-FoodPizzaCottonSlice = кусок хлопковой пиццы
     .desc = Кусочек хлопковой пиццы. Хлопок присутствует.
-<<<<<<< HEAD
 ent-FoodPizzaWorldpeas = пицца "Мир"
     .desc = Современная дипломатия в форме диска.
 ent-FoodPizzaWorldpeasSlice = кусок пиццы "Мир"
     .desc = Разделить мир — небольшая плата за гармонию.
-=======
-ent-FoodPizzaWorldpeas = мировая пицца
-    .desc = Современная дипломатия в форме диска.
-ent-FoodPizzaWorldpeasSlice = кусок мировой пиццы
-    .desc = Разделение мира на части - небольшая цена за гармонию.
->>>>>>> space-syndicate/master

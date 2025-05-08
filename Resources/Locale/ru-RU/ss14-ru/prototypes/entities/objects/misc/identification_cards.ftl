@@ -70,7 +70,6 @@ ent-BrigmedicIDCard = ID-карта бригмедика
     .desc = { ent-IDCardStandard.desc }
 ent-CentcomIDCard = ID-карта старшего офицера
     .desc = { ent-IDCardStandard.desc }
-<<<<<<< HEAD
 ent-ERTLeaderIDCard = ID карта лидера ОБР
     .desc = { ent-CentcomIDCard.desc }
 ent-ERTChaplainIDCard = ID карта священника ОБР
@@ -91,28 +90,6 @@ ent-AgentIDCard = { ent-PassengerIDCard }
     .suffix = Агентская
     .desc = { ent-PassengerIDCard.desc }
 ent-NukieAgentIDCard = ID карта пассажира
-=======
-ent-ERTLeaderIDCard = ID-карта лидера ОБР
-    .desc = { ent-IDCardStandard.desc }
-ent-ERTChaplainIDCard = ID-карта священника ОБР
-    .desc = { ent-IDCardStandard.desc }
-ent-ERTEngineerIDCard = ID-карта инженера ОБР
-    .desc = { ent-IDCardStandard.desc }
-ent-ERTJanitorIDCard = ID-карта уборщика ОБР
-    .desc = { ent-IDCardStandard.desc }
-ent-ERTMedicIDCard = ID-карта врача ОБР
-    .desc = { ent-IDCardStandard.desc }
-ent-ERTSecurityIDCard = ID-карта офицера ОБР
-    .desc = { ent-IDCardStandard.desc }
-ent-MusicianIDCard = ID-карта музыканта
-    .desc = { ent-IDCardStandard.desc }
-ent-CentcomIDCardDeathsquad = ID-карта эскадрона смерти
-    .desc = { ent-IDCardStandard.desc }
-ent-AgentIDCard = { ent-PassengerIDCard }
-    .suffix = Агентская
-    .desc = { ent-IDCardStandard.desc }
-ent-NukieAgentIDCard = ID-карта пассажира
->>>>>>> space-syndicate/master
     .suffix = Оперативники
     .desc = { ent-AgentIDCard.desc }
 ent-AtmosIDCard = ID-карта атмосферного техника
@@ -145,15 +122,8 @@ ent-SeniorPhysicianIDCard = ID-карта ведущего врача
     .desc = { ent-MedicalIDCard.desc }
 ent-SeniorOfficerIDCard = ID-карта инструктора СБ
     .desc = { ent-SecurityIDCard.desc }
-<<<<<<< HEAD
 ent-WizardIDCard = ID карта волшебника
     .desc = { ent-IDCardStandard.desc }
 ent-UniversalIDCard = универсальная ID карта
     .desc = ID карта, которая позволит вам осуществить свои самые сокровенные желания.
-=======
-ent-WizardIDCard = ID-карта волшебника
-    .desc = { ent-IDCardStandard.desc }
-ent-UniversalIDCard = универсальная ID-карта
-    .desc = ID-карта, которая позволит вам осуществить свои самые сокровенные желания.
->>>>>>> space-syndicate/master
     .suffix = Админ
