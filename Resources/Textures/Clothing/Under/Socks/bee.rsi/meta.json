@@ -17,6 +17,10 @@
     {
       "name": "equipped-FEET",
       "directions": 4
+    },
+    {
+      "name": "equipped-FEET-kidan",
+      "directions": 4
     }
   ]
 }

@@ -3514,10 +3514,35 @@
       Male: UnisexDiona
       Female: UnisexDiona
       Unsexed: UnisexDiona
+  # Exodus-EatableNymps-Start
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Sap
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 20
+  - type: Item
+    size: Huge
+  - type: Food
+    requireDead: false # Exodus-MRP
+    requiresSpecialDigestion: true
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: CanEscapeInventory
+    baseResistTime: 3
+  # Exodus-EatableNymps-End
   - type: Tag
     tags:
     - DoorBumpOpener
     - VimPilot
+    # Exodus-EatableNymphs-Start
+    - DionaNymph
+    # Exodus-EatableNymphs-End
   - type: Emoting
   - type: BodyEmotes
     soundsId: Nymph

@@ -1,0 +1,42 @@
+- type: entity
+  name: raw kidan meat
+  parent: FoodMeat
+  id: FoodMeatKidan
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Consumable/Food/meat.rsi
+    state: kidan
+  - type: RotInto
+    entity: FoodMeatKidanRotten
+  - type: SliceableFood
+    count: 3
+    slice: FoodMeatKidanCutlet
+
+- type: entity
+  name: rotten kidan meat
+  parent: FoodMeatRotten
+  id: FoodMeatKidanRotten
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Consumable/Food/meat.rsi
+    state: kidan-rotten
+
+- type: entity
+  name: raw kidan cutlet
+  id: FoodMeatKidanCutlet
+  parent: FoodMeatCutlet
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Consumable/Food/meat.rsi
+    state: kidan-cutlet
+  - type: RotInto
+    entity: FoodMeatKidanCutletRotten
+
+- type: entity
+  name: rotten kidan cutlet
+  id: FoodMeatKidanCutletRotten
+  parent: FoodMeatRotten
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Consumable/Food/meat.rsi
+    state: kidan-rotten

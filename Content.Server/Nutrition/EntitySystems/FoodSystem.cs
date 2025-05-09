@@ -448,7 +448,7 @@ public sealed class FoodSystem : EntitySystem
             if (ent.Comp1.SpecialDigestible == null)
                 continue;
             // Check if the food is in the whitelist
-            if (_whitelistSystem.IsWhitelistPass(ent.Comp1.SpecialDigestible, food))
+            if ((ent.Comp1.SpecialDigestibleOnly || component.RequiresSpecialDigestion) && _whitelistSystem.IsWhitelistPass(ent.Comp1.SpecialDigestible, food)) // Exodus-Species
                 return true;
             // They can only eat whitelist food and the food isn't in the whitelist. It's not edible.
             return false;
