@@ -39,4 +39,4 @@
   components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/meat.rsi
-    state: kidan-cutlet-rotten
+    state: kidan-rotten

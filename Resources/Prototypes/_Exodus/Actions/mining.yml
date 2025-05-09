@@ -6,7 +6,7 @@
   components:
   - type: InstantAction
     useDelay: 5
-    icon: { sprite: Exodus/Actions/mining.rsi, state: mineral_resonance }
+    icon: { sprite: Exodus/Interface/Actions/kidans.rsi, state: mineral-resonance }
     itemIconStyle: NoItem
     priority: -11
     event: !type:MineralResonanceUseEvent {}

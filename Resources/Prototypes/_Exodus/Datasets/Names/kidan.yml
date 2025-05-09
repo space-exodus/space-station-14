@@ -1,4 +1,4 @@
-- type: dataset
+- type: localizedDataset
   id: NamesKidan
   values:
     prefix: names-kidan-dataset-
