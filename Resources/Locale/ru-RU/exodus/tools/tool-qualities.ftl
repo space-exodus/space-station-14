@@ -1,2 +1,2 @@
-tool-quality-axing-name = Axing
-tool-quality-axing-tool-name = Fireaxe
+tool-quality-axing-name = Демонтаж пола
+tool-quality-axing-tool-name = Пожарный топор

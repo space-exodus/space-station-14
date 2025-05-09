@@ -3,14 +3,14 @@ spellbook-fireball-name = Огненный шар
 spellbook-fireball-desc = Пусть большинство членов экипажа взорвутся от ярости, когда увидят летящий в них огненный шар!
 spellbook-blink-name = Прыжок
 spellbook-blink-desc = Не моргайте, иначе вы не заметите, как телепортируетесь.
-spellbook-voidapplause-name = Хлопок пустоты
-spellbook-voidapplause-desc = Поменяйтесь местами с целью, разве вам не захотелось потанцевать буги?
+spellbook-voidapplause-name = Аплодисменты пустоты
+spellbook-voidapplause-desc = Поменяйтесь местами с целью, разве вам не хочется сделать буги?
 spellbook-force-wall-name = Силовой барьер
 spellbook-force-wall-desc = Создайте три стены чистой энергии, через которые вы можете пройти, а другие - нет.
-spellbook-repulse-name = Оттолкнуть
-spellbook-repulse-desc = Скажите людям, чтобы они НАБРАЛИ`ВЕС и оттолкните их от себя.
+spellbook-repulse-name = Толчок
+spellbook-repulse-desc = Я говорю GITTAH`WEIGH и оттолкиваю их от себя.
 spellbook-smoke-name = Дым
-spellbook-smoke-desc = Вызывает облако дыма, это довольно очевидно.
+spellbook-smoke-desc = Создает вокруг клубы дыма
 spellbook-polymorph-spider-name = Полиморф-паук
 spellbook-polymorph-spider-desc = Превращает вас в паука!
 spellbook-polymorph-rod-name = Полиморф-жезл
@@ -19,18 +19,18 @@ spellbook-charge-name = Зарядка
 spellbook-charge-desc = Добавляет заряд вашей палочке!
 spellbook-ethereal-jaunt-name = Эфирная прогулка
 spellbook-ethereal-jaunt-description = Перейдите на Эфирный план чтобы ускользнуть от врагов!
-spellbook-mind-swap-name = Обмен разумом
+spellbook-mind-swap-name = Обмен разумами
+spellbook-animate-name = Одушевление
+spellbook-animate-description = Оживите неодушевленный предмет!
 spellbook-mind-swap-description = Обменяйтесь телами с другим человеком!
-spellbook-animate-name = Оживление
-spellbook-animate-description = Оживите неодушевлённый предмет!
 spellbook-smite-name = Кара
-spellbook-smite-desc = Не любите кого-то? РАЗОРВИТЕ его на кусочки! Необходимо иметь шляпу и робу волшебника.
-spellbook-cluwne-name = Проклятие клувня
-spellbook-cluwne-desc = Для случаев, когда вы кого-то по настоящему ненавидите и кары недостаточно. Необходимо иметь шляпу и робу волшебника.
+spellbook-smite-desc = Они тебе не нравятся? ВЗОРВИ ИХ, оставив только потроха. Требуется магическая шляпа и мантия волшебника.
+spellbook-cluwne-name = Проклятия клувня
+spellbook-cluwne-desc = Для случаев, когда вы действительно ненавидите кого-то, а кары недостаточно. Требуется магическая шляпа и мантия волшебника.
 spellbook-slip-name = Скользкая дорожка
-spellbook-slip-desc = Изучите древние приёмы уборщиков и прокляните вашу цель, чтобы та была скользкой. Необходимо иметь шляпу и робу волшебника.
-spellbook-item-recall-name = Отозвать предмет
-spellbook-item-recall-description = Пометьте удерживаемый предмет и призывайте его обратно в любое время по щелчку пальцев.
+spellbook-item-recall-name = Призыв предмета
+spellbook-item-recall-description = Пометьте удерживаемый предмет и вызовите его обратно в любой момент, одним щелчком пальцев!
+spellbook-slip-desc = Изучите древние приемы уборщика и прокляните свою цель, чтобы она подскальзывалась. Требуется магическая шляпа и мантия волшебника.
 
 # Equipment
 
@@ -39,13 +39,13 @@ spellbook-wand-polymorph-door-description = На случай, когда нуж
 spellbook-wand-polymorph-carp-name = Волшебная палочка полиморфа карпа
 spellbook-wand-polymorph-carp-description = На случай, когда вам срочно нужно филе карпа, а клоун выглядит уж очень аппетитно.
 spellbook-wand-locker-name = Волшебная палочка шкафчика
+spellbook-hammer-mjollnir-name = Мьёльнир
+spellbook-hammer-mjollnir-description = В ваших руках мощь ГРОМА. Отправляйте врагов в полет с помощью мощного взмаха или броска прямо в них!
+spellbook-hammer-singularity-name = Молот Сингулярности
+spellbook-hammer-singularity-description = Вы когда-нибудь задумывались, каково это - быть сингулярностью? Размахивайте этим молотком, чтобы повлиять на свое окружение, даже если вы промахнетесь!
+spellbook-staff-animation-name = Посох Одушевления
+spellbook-staff-animation-description = Оживите неодушевленный предмет!
 spellbook-wand-locker-description = Стреляйте в своих врагов проклятыми шкафчиками и запирайте их!
-spellbook-hammer-mjollnir-name = Мьелльнир
-spellbook-hammer-mjollnir-description = Возьми силу ГРОМА в свои руки. Отправляй врагов в полет мощным взмахом или бросая его прямо в них!
-spellbook-hammer-singularity-name = Молот сингулярности
-spellbook-hammer-singularity-description = Хотели бы вы почувствовать себя сингулярностью? Размахивайте этим молотом, чтобы притягивать всё вокруг, даже если вы промахнётесь!
-spellbook-staff-animation-name = Посох оживления
-spellbook-staff-animation-description = Оживите неодушевлённые предметы!
 
 # Events
 

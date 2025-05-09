@@ -1,0 +1,10 @@
+ent-BaseDungeonArc = old faith arch
+    .desc = A fancy arch with multiple patterns. It seems to be made of bone. It seems it shouldn't be here...
+ent-DungeonArc = { ent-BaseDungeonArc }
+    .desc = { ent-BaseDungeonArc.desc }
+ent-DungeonArcAlt1 = { ent-BaseDungeonArc }
+    .desc = { ent-BaseDungeonArc.desc }
+ent-DungeonArcAlt2 = { ent-BaseDungeonArc }
+    .desc = { ent-BaseDungeonArc.desc }
+ent-DungeonArcBlockage = blockage
+    .desc = Deaf. Dead end. It's worth looking for another road.

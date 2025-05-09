@@ -1,4 +1,4 @@
-ent-DSFoxtrotCircuitBoard = плата законов (Эскадрон Смерти, Фокстрот)
-    .desc = Электронная плата, хранящая набор законов ИИ 'Эскадрона Смерти, директива Фокстрот'.
-ent-DSTangoCircuitBoard = плата законов (Эскадрон Смерти, Танго)
-    .desc = Электронная плата, хранящая набор законов ИИ 'Эскадрона Смерти, директива Танго'.
+ent-DSFoxtrotCircuitBoard = circuit board (Death Squad Foxtrot)
+    .desc = An electronics board containing the Peacekeeper lawset.
+ent-DSTangoCircuitBoard = circuit board (Death Squad Tango)
+    .desc = An electronics board containing the Peacekeeper lawset.

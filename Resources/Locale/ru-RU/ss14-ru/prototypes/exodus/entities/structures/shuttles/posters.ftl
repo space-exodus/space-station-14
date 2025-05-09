@@ -1,5 +1,4 @@
 ent-RandomPosterMiners = спавнер копать плакат
-
 ent-PosterMinerWithBelt = Работать без ремня опасно!
 ent-PosterMinerToWork = Работа в лес не убежит!
 ent-PosterMinerToCull = Отбирай грунт своевременно!
