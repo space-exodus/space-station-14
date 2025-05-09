@@ -166,8 +166,6 @@ ghost-role-information-space-ninja-name = Космический ниндзя
 ghost-role-information-paradox-clone-name = Парадоксальный клон
 ghost-role-information-paradox-clone-description = Странная аномалия пространственно-временного континуума перенесла вас в другую реальность! Теперь вам нужно найти свою копию, убить её и занять её место. Только один из вас сможет выжить!
 ghost-role-information-space-ninja-description = Используйте хитрость и скрытность, чтобы устроить диверсию на станции.
-ghost-role-information-paradox-clone-name = Парадоксальный клон
-ghost-role-information-paradox-clone-description = Странная пространственно-временная аномалия телепортировала вас в другую реальность! Теперь вам предстоит найти своего двойника, убить и заменить его.
 ghost-role-information-syndicate-reinforcement-name = Агент Синдиката
 ghost-role-information-syndicate-reinforcement-description = Кому-то нужно подкрепление. Вы первый, кого Синдикат смог найти и послать на помощь.
 ghost-role-information-syndicate-reinforcement-rules = Вы [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color], в команде с агентом, который вас призвал.

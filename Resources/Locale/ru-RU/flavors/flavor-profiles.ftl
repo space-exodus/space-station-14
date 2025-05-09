@@ -218,7 +218,6 @@ flavor-complex-sake = как сладкий, алкогольный рис
 flavor-complex-rum = как забродивший сахар
 flavor-complex-coffee-liquor = как крепкий, горький кофе
 flavor-complex-whiskey = как патока
-flavor-complex-coconut-rum = как ореховый ферментированный сахар
 flavor-complex-shitty-wine = как виноградная кожура
 flavor-complex-iced-tea = как холодный чай
 flavor-complex-champagne = как свежеиспечённый хлеб
