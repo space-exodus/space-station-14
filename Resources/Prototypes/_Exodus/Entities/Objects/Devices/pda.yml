@@ -6,7 +6,6 @@
   components:
   - type: Pda
     id: BlueshieldOfficierIDCard
-    state: pda-blueshield
   - type: PdaBorderColor
     borderColor: "#3E3692"
   - type: Icon
@@ -48,7 +47,6 @@
       visible: false
   - type: Pda
     id: IDCardDSCommander
-    state: pda-death_squad
   - type: PdaBorderColor
     borderColor: "#333333"
     accentVColor: "#390504"
