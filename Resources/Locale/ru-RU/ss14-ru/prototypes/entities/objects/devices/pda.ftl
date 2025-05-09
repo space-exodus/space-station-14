@@ -160,5 +160,5 @@ ent-SyndiAgentPDA = медицинский кроваво-красный КПК
 ent-ChameleonPDA = КПК пассажира
     .desc = Почему он не серый?
     .suffix = Хамелеон
-ent-WizardPDA = КПК волшебника
+ent-WizardPDA = КПК мага
     .desc = Вы слышите слабый шепот, доносящийся из него.

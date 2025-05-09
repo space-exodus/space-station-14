@@ -29,5 +29,5 @@ ent-SpawnPointGhostParadoxClone = { ent-BaseAntagSpawner }
 ent-SpawnPointGhostDerelictCyborg = { ent-BaseAntagSpawner }
     .desc = { ent-BaseAntagSpawner.desc }
 ent-SpawnPointGhostWizard = { ent-BaseAntagSpawner }
-    .suffix = Волшебник
+    .suffix = Маг
     .desc = { ent-BaseAntagSpawner.desc }

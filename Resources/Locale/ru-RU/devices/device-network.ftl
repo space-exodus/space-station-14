@@ -16,7 +16,7 @@ device-frequency-prototype-name-turret-control = Управление охран
 
 device-frequency-prototype-name-surveillance-camera-test = Тест подсети
 device-frequency-prototype-name-surveillance-camera-engineering = Камеры (Инженерный)
-device-frequency-prototype-name-surveillance-camera-security = Камеры (Охрана)
+device-frequency-prototype-name-surveillance-camera-security = Камеры (Служба безопасности)
 device-frequency-prototype-name-surveillance-camera-science = Камеры (Научный)
 device-frequency-prototype-name-surveillance-camera-supply = Камеры (Снабжение)
 device-frequency-prototype-name-surveillance-camera-command = Камеры (Командование)

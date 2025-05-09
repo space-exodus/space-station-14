@@ -8,8 +8,9 @@
       state: blueshieldofficer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
+      nameFormat: name-format-ert
     - type: RandomHumanoidSpawner
       settings: BlueshieldOfficer
 
@@ -30,10 +31,6 @@
         settings: short
     - type: Loadout
       prototypes: [ BlueshieldOfficerGear ]
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
 
 - type: entity
   id: RandomHumanoidSpawnerSpecicalOperationOfficer
@@ -86,10 +83,6 @@
     - Felinid
   parent: ERTLeader
   components:
-    - type: RandomMetadata
-      nameSegments:
-      - DSCallSigns
-      - DSNumber
     - type: AntagImmune
     - type: GhostTakeoverAvailable
     - type: ZombieImmune
@@ -182,6 +175,11 @@
     randomizeName: false
   - type: RandomHumanoidSpawner
     settings: DeathSquadOfficer
+  - type: RandomMetadata
+    nameSegments:
+    - DSCallSigns
+    - DSNumber
+    nameFormat: name-format-ds
 
 - type: randomHumanoidSettings
   id: DeathSquadCommander
@@ -218,6 +216,11 @@
     randomizeName: false
   - type: RandomHumanoidSpawner
     settings: DeathSquadCommander
+  - type: RandomMetadata
+    nameSegments:
+    - DSCallSigns
+    - DSNumber
+    nameFormat: name-format-ds
 
 - type: randomHumanoidSettings
   id: DeathSquadSpecialist
@@ -253,3 +256,8 @@
     randomizeName: false
   - type: RandomHumanoidSpawner
     settings: DeathSquadSpecialist
+  - type: RandomMetadata
+    nameSegments:
+    - DSCallSigns
+    - DSNumber
+    nameFormat: name-format-ds

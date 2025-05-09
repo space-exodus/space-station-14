@@ -115,7 +115,7 @@
   - Brigmedic # Exodus-Brigmedic
   - Detective
   - Warden
-  - Brigmedic # Corvax-Brigmedic
+#  - Brigmedic # Corvax-Brigmedic | Exodus | Brigmedic is our job
 
 - type: department
   id: Science
