@@ -81,6 +81,7 @@
     - Vox
     - Kidan
     - Felinid
+    - Tajaran
   parent: ERTLeader
   components:
     - type: AntagImmune
@@ -162,6 +163,11 @@
       job: DSOfficer
     - type: Loadout
       prototypes: [ DSOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - DSCallSigns
+      - DSNumber
+      nameFormat: name-format-ds
 
 - type: entity
   name: death squad officer

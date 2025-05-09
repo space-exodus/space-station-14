@@ -5,7 +5,7 @@
     count: 16
 
 - type: localizedDataset
-  id: DSCallSigns
+  id: DSNumber
   values:
     prefix: names-ds-numbers-dataset-
     count: 99
