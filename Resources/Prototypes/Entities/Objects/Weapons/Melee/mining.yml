@@ -195,10 +195,6 @@
   name: crusher glaive
   description: An early design of the proto-kinetic accelerator, in glaive form.
   components:
-  # Exodus-MRP-Start
-  - type: Clothing
-    slots: SUITSTORAGE
-  # Exodus-MRP-End
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_glaive.rsi
     state: icon

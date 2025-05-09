@@ -4,8 +4,8 @@
 - type: playTimeTracker
   id: JobPilot
 
-- type: playTimeTracker
-  id: JobBrigmedic
+# - type: playTimeTracker # Exodus | Brigmedic is our job
+#   id: JobBrigmedic
   
 - type: playTimeTracker
   id: JobEvent1

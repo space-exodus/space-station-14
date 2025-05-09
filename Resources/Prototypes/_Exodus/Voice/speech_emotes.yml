@@ -3,34 +3,21 @@
   id: Grumble
   name: chat-emote-name-grumble
   category: Vocal
-  chatMessages: [ворчит.]
+  chatMessages: [ворчит]
   chatTriggers:
     - grumble
-    - grumble.
-    - grumble!
     - grumbles
-    - grumbles.
-    - grumbles!
     - grumbled
-    - grumbled.
-    - grumbled!
     - ворчит
-    - ворчит.
-    - ворчит!
 
 - type: emote
   id: Rumble
   name: chat-emote-name-rumble
   category: Vocal
   available: false
-  chatMessages: [урчит.]
+  chatMessages: [урчит]
   chatTriggers:
     - урчит
-    - урчит.
-    - урчит!
-    - мурчит
-    - мурчит.
-    - мурчит!
 
 #region Kidan
 - type: emote
@@ -38,41 +25,23 @@
   name: chat-emote-name-wiggle-antennae
   category: Vocal
   available: false
-  chatMessages: [шевелит антенками.]
+  chatMessages: [шевелит антенками]
   chatTriggers:
     - waves antennae
-    - waves antennae.
-    - waves antennae!
     - wiggles antennae
-    - wiggles antennae.
-    - wiggles antennae!
     - шевелит антенками
-    - шевелит антенками.
-    - шевелит антенками!
     - машет антенками
-    - машет антенками.
-    - машет антенками!
     - шевелит усиками
-    - шевелит усиками.
-    - шевелит усиками!
     - машет усиками
-    - машет усиками.
-    - машет усиками!
 
 - type: emote
   id: WavesAntennaeSharply
   name: chat-emote-name-wave-antennae-sharply
   category: Vocal
   available: false
-  chatMessages: [резко машет антенками.]
+  chatMessages: [резко машет антенками]
   chatTriggers:
     - waves antennae sharply
-    - waves antennae sharply.
-    - waves antennae sharply!
     - резко машет усиками
-    - резко машет усиками.
-    - резко машет усиками!
     - резко машет антенками
-    - резко машет антенками.
-    - резко машет антенками!
 #region Reptilian
