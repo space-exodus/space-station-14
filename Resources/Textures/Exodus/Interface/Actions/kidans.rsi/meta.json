@@ -8,16 +8,16 @@
     },
     "states": [
         {
-            "name": "feromons"
+            "name": "pheromones"
         },
         {
-            "name": "light_off"
+            "name": "light-off"
         },
         {
-            "name": "light_on"
+            "name": "light-on"
         },
         {
-            "name": "snaps_jaws"
+            "name": "snaps-jaws"
         }
     ]
 }
