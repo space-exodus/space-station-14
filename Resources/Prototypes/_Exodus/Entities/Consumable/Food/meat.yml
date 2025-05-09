@@ -2,7 +2,7 @@
   name: raw kidan meat
   parent: FoodMeat
   id: FoodMeatKidan
-  component:
+  components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/meat.rsi
     state: kidan
@@ -25,7 +25,7 @@
   name: raw kidan cutlet
   id: FoodMeatKidanCutlet
   parent: FoodMeatCutlet
-  component:
+  components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/meat.rsi
     state: kidan-cutlet
@@ -36,7 +36,7 @@
   name: rotten kidan cutlet
   id: FoodMeatKidanCutletRotten
   parent: FoodMeatRotten
-  component:
+  components:
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/meat.rsi
     state: kidan-cutlet-rotten

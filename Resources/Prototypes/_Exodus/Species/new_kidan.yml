@@ -7,6 +7,8 @@
   dollPrototype: MobNewKidanDummy
   skinColoration: KidanChitin
   markingLimits: MobNewKidanMarkingLimits
+  maleFirstNames: NamesKidan
+  femaleFirstNames: NamesKidan
   sexes:
   - Unsexed
 
