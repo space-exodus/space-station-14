@@ -130,6 +130,7 @@
         mask:
         - FullTileMask
         - Opaque
+        - GasImpassable # Exodus-Pheromones
   - type: Appearance
   - type: VaporVisuals
 
