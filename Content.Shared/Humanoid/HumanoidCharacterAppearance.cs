@@ -99,6 +99,7 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
             HumanoidSkinColor.Hues => speciesPrototype.DefaultSkinTone,
             HumanoidSkinColor.TintedHues => Humanoid.SkinColor.TintedHues(speciesPrototype.DefaultSkinTone),
             HumanoidSkinColor.VoxFeathers => Humanoid.SkinColor.ClosestVoxColor(speciesPrototype.DefaultSkinTone),
+            HumanoidSkinColor.KidanChitin => Humanoid.SkinColor.ClosestKidanColor(speciesPrototype.DefaultSkinTone), // Exodus-Kidans
             _ => Humanoid.SkinColor.ValidHumanSkinTone,
         };
 
@@ -164,6 +165,11 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
             case HumanoidSkinColor.VoxFeathers:
                 newSkinColor = Humanoid.SkinColor.ProportionalVoxColor(newSkinColor);
                 break;
+            // Exodus-Kidans-Start
+            case HumanoidSkinColor.KidanChitin:
+                newSkinColor = Humanoid.SkinColor.ProportionalKidanColor(newSkinColor);
+                break;
+            // Exodus-Kidans-End
         }
 
         return new HumanoidCharacterAppearance(newHairStyle, newHairColor, newFacialHairStyle, newHairColor, newEyeColor, newSkinColor, new ());

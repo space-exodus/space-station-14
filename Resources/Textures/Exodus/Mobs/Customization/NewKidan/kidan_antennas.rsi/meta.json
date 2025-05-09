@@ -8,19 +8,27 @@
     },
     "states": [
         {
-            "name": "a-cap",
+            "name": "classic_ones",
             "directions": 4
         },
         {
-            "name": "spot",
+            "name": "fan",
             "directions": 4
         },
         {
-            "name": "stripes-thin",
+            "name": "long",
             "directions": 4
         },
         {
-            "name": "stripes",
+            "name": "may_bug",
+            "directions": 4
+        },
+        {
+            "name": "short",
+            "directions": 4
+        },
+        {
+            "name": "very_long",
             "directions": 4
         }
     ]

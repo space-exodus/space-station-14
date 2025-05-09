@@ -8,11 +8,11 @@
     },
     "states": [
         {
-            "name": "claw-l",
+            "name": "claw_l",
             "directions": 4
         },
         {
-            "name": "claw-r",
+            "name": "claw_r",
             "directions": 4
         }
     ]

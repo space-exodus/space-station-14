@@ -2,10 +2,12 @@
 
 using Content.Shared.Actions;
 using Content.Shared.Chat.Prototypes;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Exodus.Traits.Species.MineralResonance;
 
+[RegisterComponent, NetworkedComponent]
 public sealed partial class MineralResonanceComponent : Component
 {
     [DataField]

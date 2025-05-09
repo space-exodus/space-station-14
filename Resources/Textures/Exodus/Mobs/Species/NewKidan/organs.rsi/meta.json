@@ -8,31 +8,31 @@
     },
     "states": [
         {
-            "name": "fbrain_kidans"
+            "name": "brain"
         },
         {
-            "name": "eye1_kidans"
+            "name": "eyeball-l"
         },
         {
-            "name": "eye2_kidans"
+            "name": "eyeball-r"
         },
         {
-            "name": "kidneys_kidans"
+            "name": "kidneys"
         },
         {
-            "name": "liver_kidans"
+            "name": "liver"
         },
         {
-            "name": "pheromone_glands_kidans"
+            "name": "pheromone-glands"
         },
         {
-            "name": "stomach_kidans"
+            "name": "stomach"
         },
         {
-            "name": "tracheal_tubes_kidans"
+            "name": "tracheal-tubes"
         },
         {
-            "name": "heard_kidans",
+            "name": "heart",
             "delays": [
                 [
                     0.3,

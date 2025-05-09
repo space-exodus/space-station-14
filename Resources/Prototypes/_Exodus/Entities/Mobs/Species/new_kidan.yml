@@ -1,0 +1,123 @@
+- type: entity
+  id: BaseMobNewKidan
+  parent: BaseMobSpeciesOrganic
+  name: Urisst' McKidan
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: NewKidan
+  - type: Hunger
+  - type: Thirst
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatKidan
+      amount: 5
+  - type: Icon
+    sprite: Exodus/Mobs/Species/Kidan/parts.rsi
+    state: full
+  - type: PheromonesCommunication
+  - type: Body
+    prototype: NewKidan
+    requiredLegs: 2
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    emoteId: WigglesAntennae
+    channels:
+    - Chitine
+  - type: ActiveRadio
+    channels:
+    - Chitine
+  - type: Bioluminescence
+  - type: Temperature
+    heatDamageThreshold: 370
+    coldDamageThreshold: 268
+  - type: Inventory
+    speciesId: kidan
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: jumpsuit-female
+    # Corvax-Digitigrade-Start
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+    # Corvax-Displacements-End
+  - type: PointLight
+    energy: 1.5
+    radius: 3
+    color: "#556b2f"
+    enabled: false
+  - type: SensitiveEyes
+  - type: Damageable
+    damageModifierSet: NewKidan
+  - type: PassiveEffects
+    effects:
+    - !type:Emote
+      conditions:
+        - !type:Temperature
+          max: 283
+      emote: Yawn
+      showInChat: true
+      probability: 0.2
+    - !type:GenericStatusEffect
+      conditions:
+        - !type:Temperature
+          max: 283
+      key: Drowsiness
+      component: Drowsiness
+      time: 4
+      type: Add
+      refresh: false
+
+- type: entity
+  save: false
+  name: Urist McKidan
+  parent: BaseSpeciesDummy
+  id: MobNewKidanDummy
+  categories: [ HideSpawnMenu ]
+  description: A dummy kidan meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Kidan
+  - type: Inventory
+    speciesId: kidan
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: jumpsuit-female
+    # Corvax-Digitigrade-Start
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+    # Corvax-Displacements-End

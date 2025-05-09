@@ -8,15 +8,15 @@
     },
     "states": [
         {
-            "name": "empty-eyes",
+            "name": "empty_eyes",
             "directions": 4
         },
         {
-            "name": "eye-l",
+            "name": "eye_l",
             "directions": 4
         },
         {
-            "name": "eye-r",
+            "name": "eye_r",
             "directions": 4
         }
     ]
