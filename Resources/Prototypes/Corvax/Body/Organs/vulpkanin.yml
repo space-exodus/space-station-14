@@ -5,6 +5,7 @@
   components:
   - type: Stomach
     # Exodus-MRP-Start
+    specialDigestibleOnly: true # Exodus-Species
     specialDigestible:
       tags:
       - Fruit

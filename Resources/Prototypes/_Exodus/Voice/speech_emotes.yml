@@ -44,4 +44,18 @@
     - waves antennae sharply
     - резко машет усиками
     - резко машет антенками
+
+- type: emote
+  id: JawsSnap
+  name: chat-emote-name-jaws-snap
+  category: Vocal
+  available: false
+  chatMessages: [щёлкает челюстями.]
+  chatTriggers:
+    - snaps his jaws
+    - snaps jaws
+    - щёлкает челюстями
+    - щелкает челюстями
+    - трещит челюстями
+
 #region Reptilian

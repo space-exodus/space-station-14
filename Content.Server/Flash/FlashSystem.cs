@@ -49,10 +49,10 @@ namespace Content.Server.Flash
             SubscribeLocalEvent<FlashComponent, MeleeHitEvent>(OnFlashMeleeHit);
             // ran before toggling light for extra-bright lantern
             SubscribeLocalEvent<FlashComponent, UseInHandEvent>(OnFlashUseInHand, before: new[] { typeof(HandheldLightSystem) });
-            SubscribeLocalEvent<InventoryComponent, FlashAttemptEvent>(OnInventoryFlashAttempt);
-            SubscribeLocalEvent<FlashImmunityComponent, FlashAttemptEvent>(OnFlashImmunityFlashAttempt);
-            SubscribeLocalEvent<PermanentBlindnessComponent, FlashAttemptEvent>(OnPermanentBlindnessFlashAttempt);
-            SubscribeLocalEvent<TemporaryBlindnessComponent, FlashAttemptEvent>(OnTemporaryBlindnessFlashAttempt);
+            SubscribeLocalEvent<InventoryComponent, FlashModifiersEvent>(OnInventoryFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
+            SubscribeLocalEvent<FlashImmunityComponent, FlashModifiersEvent>(OnFlashImmunityFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
+            SubscribeLocalEvent<PermanentBlindnessComponent, FlashModifiersEvent>(OnPermanentBlindnessFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
+            SubscribeLocalEvent<TemporaryBlindnessComponent, FlashModifiersEvent>(OnTemporaryBlindnessFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
         }
 
         private void OnFlashMeleeHit(EntityUid uid, FlashComponent comp, MeleeHitEvent args)
@@ -119,11 +119,15 @@ namespace Content.Server.Flash
             bool melee = false,
             TimeSpan? stunDuration = null)
         {
-            var attempt = new FlashAttemptEvent(target, user, used);
-            RaiseLocalEvent(target, attempt, true);
+            // Exodus-SensitiveEyes-Start
+            var modifiers = new FlashModifiersEvent(target, user, used); // Exodus | FlashAttemptEvent -> FlashModifiersEvent
+            RaiseLocalEvent(target, modifiers, true);
 
-            if (attempt.Cancelled)
+            if (modifiers.Cancelled || modifiers.DurationModifier == 0)
                 return;
+
+            flashDuration *= modifiers.DurationModifier.Value;
+            // Exodus-SensitiveEyes-End
 
             // don't paralyze, slowdown or convert to rev if the target is immune to flashes
             if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, TimeSpan.FromSeconds(flashDuration / 1000f), true))
@@ -183,7 +187,7 @@ namespace Content.Server.Flash
             _audio.PlayPvs(sound, source, AudioParams.Default.WithVolume(1f).WithMaxDistance(3f));
         }
 
-        private void OnInventoryFlashAttempt(EntityUid uid, InventoryComponent component, FlashAttemptEvent args)
+        private void OnInventoryFlashAttempt(EntityUid uid, InventoryComponent component, FlashModifiersEvent args) // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
         {
             foreach (var slot in new[] { "head", "eyes", "mask" })
             {
@@ -194,42 +198,45 @@ namespace Content.Server.Flash
             }
         }
 
-        private void OnFlashImmunityFlashAttempt(EntityUid uid, FlashImmunityComponent component, FlashAttemptEvent args)
+        private void OnFlashImmunityFlashAttempt(EntityUid uid, FlashImmunityComponent component, FlashModifiersEvent args) // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
         {
             if (component.Enabled)
                 args.Cancel();
         }
 
-        private void OnPermanentBlindnessFlashAttempt(EntityUid uid, PermanentBlindnessComponent component, FlashAttemptEvent args)
+        private void OnPermanentBlindnessFlashAttempt(EntityUid uid, PermanentBlindnessComponent component, FlashModifiersEvent args) // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
         {
             // check for total blindness
             if (component.Blindness == 0)
                 args.Cancel();
         }
 
-        private void OnTemporaryBlindnessFlashAttempt(EntityUid uid, TemporaryBlindnessComponent component, FlashAttemptEvent args)
+        private void OnTemporaryBlindnessFlashAttempt(EntityUid uid, TemporaryBlindnessComponent component, FlashModifiersEvent args) // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
         {
             args.Cancel();
         }
     }
 
-    /// <summary>
-    ///     Called before a flash is used to check if the attempt is cancelled by blindness, items or FlashImmunityComponent.
-    ///     Raised on the target hit by the flash, the user of the flash and the flash used.
-    /// </summary>
-    public sealed class FlashAttemptEvent : CancellableEntityEventArgs
-    {
-        public readonly EntityUid Target;
-        public readonly EntityUid? User;
-        public readonly EntityUid? Used;
+    // Exodus-SensitiveEyes-Start | Moved to shared as "FlashModifiersEvent"
+    // /// <summary>
+    // ///     Called before a flash is used to check if the attempt is cancelled by blindness, items or FlashImmunityComponent.
+    // ///     Raised on the target hit by the flash, the user of the flash and the flash used.
+    // /// </summary>
+    // public sealed class FlashAttemptEvent : CancellableEntityEventArgs
+    // {
+    //     public readonly EntityUid Target;
+    //     public readonly EntityUid? User;
+    //     public readonly EntityUid? Used;
 
-        public FlashAttemptEvent(EntityUid target, EntityUid? user, EntityUid? used)
-        {
-            Target = target;
-            User = user;
-            Used = used;
-        }
-    }
+    //     public FlashAttemptEvent(EntityUid target, EntityUid? user, EntityUid? used)
+    //     {
+    //         Target = target;
+    //         User = user;
+    //         Used = used;
+    //     }
+    // }
+    // Exodus-SensitiveEyes-End
+
     /// <summary>
     ///     Called after a flash is used via melee on another person to check for rev conversion.
     ///     Raised on the target hit by the flash, the user of the flash and the flash used.
