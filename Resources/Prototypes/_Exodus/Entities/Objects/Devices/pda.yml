@@ -77,7 +77,6 @@
   components:
   - type: Pda
     id: IDCardDSOfficer
-    state: pda-death_squad
 
 - type: entity
   parent: PDACommanderDS
@@ -87,7 +86,6 @@
   components:
   - type: Pda
     id: IDCardDSSpecialist
-    state: pda-death_squad
   - type: HealthAnalyzer
     scanDelay: 0.5
     scanningEndSound:
