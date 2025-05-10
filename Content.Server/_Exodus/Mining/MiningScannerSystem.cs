@@ -8,10 +8,11 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
+using Content.Shared.Exodus.Mining;
 
-namespace Content.Shared.Exodus.Mining;
+namespace Content.Server.Exodus.Mining;
 
-public sealed class MiningScannerSystem : EntitySystem
+public sealed class MiningScannerSystem : SharedMiningScannerSystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -62,21 +63,18 @@ public sealed class MiningScannerSystem : EntitySystem
                 scannerEnt = (ent, scannerComponent);
         }
 
-        if (_net.IsServer)
+        if (scannerEnt == null)
         {
-            if (scannerEnt == null)
-            {
-                if (TryComp<MiningScannerUserComponent>(uid, out var scannerUser))
-                    scannerUser.QueueRemoval = true;
-            }
-            else
-            {
-                var scannerUser = EnsureComp<MiningScannerUserComponent>(uid);
-                scannerUser.ViewRange = scannerEnt.Value.Comp.Range;
-                scannerUser.QueueRemoval = false;
-                scannerUser.NextPingTime = _timing.CurTime + scannerUser.PingDelay;
-                Dirty(uid, scannerUser);
-            }
+            if (TryComp<MiningScannerUserComponent>(uid, out var scannerUser))
+                scannerUser.QueueRemoval = true;
+        }
+        else
+        {
+            var scannerUser = EnsureComp<MiningScannerUserComponent>(uid);
+            scannerUser.ViewRange = scannerEnt.Value.Comp.Range;
+            scannerUser.QueueRemoval = false;
+            scannerUser.NextPingTime = _timing.CurTime + scannerUser.PingDelay;
+            Dirty(uid, scannerUser);
         }
     }
 
@@ -98,8 +96,7 @@ public sealed class MiningScannerSystem : EntitySystem
 
             scannerUser.NextPingTime = _timing.CurTime + scannerUser.PingDelay + TimeSpan.FromSeconds(scannerUser.AnimationDuration);
             _viewer.CreateScan(uid, scannerUser.ViewRange, scannerUser.PingDelay, scannerUser.AnimationDuration);
-            if (_net.IsClient && _timing.IsFirstTimePredicted)
-                _audio.PlayEntity(scannerUser.PingSound, uid, uid);
+            _audio.PlayEntity(scannerUser.PingSound, uid, uid);
         }
     }
 }

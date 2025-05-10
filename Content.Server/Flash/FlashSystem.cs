@@ -126,7 +126,7 @@ namespace Content.Server.Flash
             if (modifiers.Cancelled || modifiers.DurationModifier == 0)
                 return;
 
-            flashDuration *= modifiers.DurationModifier.Value;
+            flashDuration *= modifiers.DurationModifier;
             // Exodus-SensitiveEyes-End
 
             // don't paralyze, slowdown or convert to rev if the target is immune to flashes

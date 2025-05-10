@@ -23,7 +23,7 @@
 - type: emote
   id: WigglesAntennae
   name: chat-emote-name-wiggle-antennae
-  category: Vocal
+  category: General
   available: false
   chatMessages: [шевелит антенками]
   chatTriggers:
@@ -37,7 +37,7 @@
 - type: emote
   id: WavesAntennaeSharply
   name: chat-emote-name-wave-antennae-sharply
-  category: Vocal
+  category: General
   available: false
   chatMessages: [резко машет антенками]
   chatTriggers:
