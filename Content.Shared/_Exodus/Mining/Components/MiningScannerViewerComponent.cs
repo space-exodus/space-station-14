@@ -3,21 +3,22 @@
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Exodus.Mining.Components;
 
-[RegisterComponent, NetworkedComponent, Access(typeof(MiningScannerViewerSystem))]
+[RegisterComponent, NetworkedComponent, Access(typeof(SharedMiningScannerViewerSystem))]
 public sealed partial class MiningScannerViewerComponent : Component
 {
     [DataField]
     public List<MiningScannerRecord> Records = new();
 }
 
-[DataDefinition]
+[DataDefinition, Serializable, NetSerializable]
 public sealed partial class MiningScannerRecord
 {
     [DataField]
-    public EntityCoordinates PingLocation;
+    public MapCoordinates PingLocation;
 
     [DataField]
     public float ViewRange;
@@ -33,4 +34,11 @@ public sealed partial class MiningScannerRecord
     /// </summary>
     [DataField]
     public TimeSpan Delay = TimeSpan.FromSeconds(3.5f);
+}
+
+[Serializable, NetSerializable]
+public sealed partial class MiningScannerViewerComponentState : ComponentState
+{
+    [DataField]
+    public List<MiningScannerRecord> Records = new();
 }

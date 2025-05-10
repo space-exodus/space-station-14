@@ -2,3 +2,8 @@
   license: "CC-BY-SA-3.0"
   copyright: "Taken from Parsdise SS13"
   source: "https://github.com/ParadiseSS13/Paradise/blob/master/sound/"
+
+- files: ["clicking, clicking2, clicking3, whistle_k, yawn_k"]
+  license: "CLA"
+  copyright: "by Lljk (discord:800772178073092116)"
+  source: "https://github.com/space-exodus/space-station-14"

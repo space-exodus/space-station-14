@@ -5,8 +5,8 @@
   components:
   # Exodus-FoldedPoster-Start
   - type: DisassembleOnAltVerb
-    prototype: FoldedPoster
-    doAfter: 1
+    prototypeToSpawn: FoldedPoster
+    disassembleTime: 1
   # Exodus-FoldedPoster-End
   - type: WallMount
     arc: 360

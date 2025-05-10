@@ -6,11 +6,26 @@
   components:
   - type: Pda
     id: BlueshieldOfficierIDCard
-    state: pda-blueshield
   - type: PdaBorderColor
     borderColor: "#3E3692"
   - type: Icon
     state: pda-blueshield
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-blueshield
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - LogProbeCartridge
+      - WantedListCartridge
+      - MedTekCartridge
+      - AstroNavCartridge
 
 - type: entity
   parent: BasePDA
@@ -32,12 +47,27 @@
       visible: false
   - type: Pda
     id: IDCardDSCommander
-    state: pda-death_squad
   - type: PdaBorderColor
     borderColor: "#333333"
     accentVColor: "#390504"
   - type: Icon
     state: pda-death_squad
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-death_squad
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - LogProbeCartridge
+      - WantedListCartridge
+      - MedTekCartridge
+      - AstroNavCartridge
 
 - type: entity
   parent: PDACommanderDS
@@ -47,7 +77,6 @@
   components:
   - type: Pda
     id: IDCardDSOfficer
-    state: pda-death_squad
 
 - type: entity
   parent: PDACommanderDS
@@ -57,7 +86,6 @@
   components:
   - type: Pda
     id: IDCardDSSpecialist
-    state: pda-death_squad
   - type: HealthAnalyzer
     scanDelay: 0.5
     scanningEndSound:

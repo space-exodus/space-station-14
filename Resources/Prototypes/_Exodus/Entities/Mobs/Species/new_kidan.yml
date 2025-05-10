@@ -13,10 +13,14 @@
     spawned:
     - id: FoodMeatKidan
       amount: 5
+  - type: MineralResonance
   - type: Icon
     sprite: Exodus/Mobs/Species/Kidan/parts.rsi
     state: full
   - type: PheromonesCommunication
+  - type: Speech
+    speechVerb: Kidan
+    allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply', 'JawsSnap', 'Grumble']
   - type: Body
     prototype: NewKidan
     requiredLegs: 2

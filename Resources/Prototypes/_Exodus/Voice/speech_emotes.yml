@@ -3,7 +3,7 @@
   id: Grumble
   name: chat-emote-name-grumble
   category: Vocal
-  chatMessages: [ворчит.]
+  chatMessages: [ворчит]
   chatTriggers:
     - grumble
     - grumbles
@@ -15,18 +15,17 @@
   name: chat-emote-name-rumble
   category: Vocal
   available: false
-  chatMessages: [урчит.]
+  chatMessages: [урчит]
   chatTriggers:
     - урчит
-    - мурчит
 
 #region Kidan
 - type: emote
   id: WigglesAntennae
   name: chat-emote-name-wiggle-antennae
-  category: Vocal
+  category: General
   available: false
-  chatMessages: [шевелит антенками.]
+  chatMessages: [шевелит антенками]
   chatTriggers:
     - waves antennae
     - wiggles antennae
@@ -38,9 +37,9 @@
 - type: emote
   id: WavesAntennaeSharply
   name: chat-emote-name-wave-antennae-sharply
-  category: Vocal
+  category: General
   available: false
-  chatMessages: [резко машет антенками.]
+  chatMessages: [резко машет антенками]
   chatTriggers:
     - waves antennae sharply
     - резко машет усиками
@@ -58,4 +57,5 @@
     - щёлкает челюстями
     - щелкает челюстями
     - трещит челюстями
+
 #region Reptilian

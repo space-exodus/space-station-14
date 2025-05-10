@@ -5,23 +5,27 @@
     variation: 0.125
   sounds:
     Sneeze:
-      collection: KidanSneeze
+      collection: NewKidanSneeze
     Cough:
-      collection: KidanCough
+      collection: NewKidanCough
     Scream:
-      collection: KidanScream
+      collection: NewKidanScream
     Laugh:
-      collection: KidanLaugh
+      collection: NewKidanLaugh
     Sigh:
-      collection: KidanSigh
+      collection: NewKidanSigh
     Crying:
-      collection: KidanCry
+      collection: NewKidanCry
     Grumble:
-      collection: KidanGrumble
+      collection: NewKidanGrumble
     WigglesAntennae:
-      collection: KidanWigglesAtennae
+      collection: NewKidanWigglesAtennae
     WavesAntennaeSharply:
-      collection: KidanWavesAntennaeSharply
+      collection: NewKidanWavesAntennaeSharply
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
 
 - type: emoteSounds
   id: MaleFelinid

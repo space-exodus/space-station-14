@@ -50,5 +50,5 @@ ent-HappyHonkCluwne = обед Жалкий Клувень
 ent-FoodMealHappyHonkClown = { ent-HappyHonk }
     .suffix = Спавнер случайный обед
     .desc = { ent-HappyHonk.desc }
-ent-FoodBoxCloth = коробка с тканью марки FlutterSoft
-    .desc = Волокно - самая важная еда для мотылька в день! Не используйте второсортную ткань, а покупайте высококачественную ткань марки FlutterSoft.
+ent-FoodBoxCloth = коробка ткани бренда FlutterSoft
+    .desc = Волокно — это самая важная порция пищи для моли! Не пропускайте её и не используйте хлам из нижних ящиков, а покупайте высококачественную ткань бренда FlutterSoft.
