@@ -26,9 +26,9 @@ public sealed class FlashModifiersEvent : CancellableEntityEventArgs
     public readonly EntityUid? User;
     public readonly EntityUid? Used;
 
-    public FixedPoint2 DurationModifier { get; private set; } = 1.0f;
+    public float DurationModifier { get; private set; } = 1.0f;
 
-    public void ModifyDuration(FixedPoint2 duration)
+    public void ModifyDuration(float duration)
     {
         DurationModifier *= duration;
     }

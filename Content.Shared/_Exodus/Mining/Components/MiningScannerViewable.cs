@@ -6,7 +6,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared.Exodus.Mining.Components;
 
-[RegisterComponent, NetworkedComponent, Access(typeof(MiningScannerViewerSystem))]
+[RegisterComponent, NetworkedComponent, Access(typeof(SharedMiningScannerViewerSystem))]
 public sealed partial class MiningScannerViewableComponent : Component;
 
 [Serializable, NetSerializable]

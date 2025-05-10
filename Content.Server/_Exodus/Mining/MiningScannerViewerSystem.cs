@@ -1,25 +1,26 @@
 // © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 
 using System.Linq;
+using Content.Shared.Exodus.Mining;
 using Content.Shared.Exodus.Mining.Components;
+using Robust.Shared.GameStates;
 using Robust.Shared.Timing;
 
-namespace Content.Shared.Exodus.Mining;
+namespace Content.Server.Exodus.Mining;
 
-public sealed partial class MiningScannerViewerSystem : EntitySystem
+public sealed partial class MiningScannerViewerSystem : SharedMiningScannerViewerSystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
 
     public void CreateScan(EntityUid uid, float range, TimeSpan delay, float animationDuration = 1.5f)
     {
-        var xform = Transform(uid);
-
         var scan = new MiningScannerRecord()
         {
             AnimationDuration = TimeSpan.FromSeconds(animationDuration),
             ViewRange = range,
             CreatedAt = _timing.CurTime,
-            PingLocation = xform.Coordinates,
+            PingLocation = _transform.GetMapCoordinates(uid),
             Delay = delay,
         };
 

@@ -9,5 +9,5 @@ namespace Content.Shared.Exodus.Traits.Species.SensitiveEyes;
 public sealed partial class SensitiveEyesComponent : Component
 {
     [DataField]
-    public FixedPoint2 DurationModifier = 1f;
+    public float DurationModifier = 1.2f;
 }
