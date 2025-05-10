@@ -218,7 +218,6 @@ flavor-complex-sake = как сладкий, алкогольный рис
 flavor-complex-rum = как забродивший сахар
 flavor-complex-coffee-liquor = как крепкий, горький кофе
 flavor-complex-whiskey = как патока
-flavor-complex-coconut-rum = как ореховый ферментированный сахар
 flavor-complex-shitty-wine = как виноградная кожура
 flavor-complex-iced-tea = как холодный чай
 flavor-complex-champagne = как свежеиспечённый хлеб
@@ -271,20 +270,6 @@ flavor-complex-irish-car-bomb = как шипучая пенка колы
 ### This is exactly what pilk tastes like. I'm not even joking. I might've been a little drunk though
 
 flavor-complex-white-gilgamesh = как слегка газированные сливки
-<<<<<<< HEAD
-flavor-complex-caipirinha = как Бразилия
-flavor-complex-daiquiri = как ром, лайм и сахар
-flavor-complex-deathintheafternoon = как анис и шампанское
-flavor-complex-empress75 = как тирский пурпур
-flavor-complex-espressomartini = как водка и кофе
-flavor-complex-mayojito = как желудочные мучения
-flavor-complex-mimeosa = как тишина и апельсины
-flavor-complex-mimosa = как ранний бранч
-flavor-complex-moscowmule = как водка и имбирный эль
-flavor-complex-thesunalsorises = как абсентный дайкири
-flavor-complex-whiskeysour = как виски и яйцо
-flavor-complex-antifreeze = как тепло
-=======
 flavor-complex-antifreeze = тепло
 flavor-complex-caipirinha = как Бразилия
 flavor-complex-daiquiri = как ром, лайм и сахар
@@ -297,7 +282,6 @@ flavor-complex-mimosa = как ранний бранч
 flavor-complex-moscowmule = как водка и имбирный эль
 flavor-complex-thesunalsorises = как абсент дайкири
 flavor-complex-whiskeysour = как виски и яйцо
->>>>>>> space-syndicate/master
 flavor-complex-zombiecocktail = как поедание мозгов
 flavor-complex-absinthe = как анис
 flavor-complex-blue-curacao = как цветы апельсина
@@ -334,15 +318,11 @@ flavor-complex-sui-dream = как изображение Альп
 flavor-complex-toxins-special = как космические исследования
 flavor-complex-vodka-martini = как шпионский фильм из России
 flavor-complex-vodka-tonic = освежающе горько
-<<<<<<< HEAD
-flavor-complex-bacchus-blessing = как стена из кирпичей
-=======
 flavor-complex-coconut-rum = как орехово-ферментированный сахар
 flavor-complex-bacchus-blessing = как кирпичная стена
 
 ### This is exactly what pilk tastes как. I'm not even joking. I might've been a little drunk though
 
->>>>>>> space-syndicate/master
 flavor-complex-pilk = как сладкое молоко
 
 # Medicine/chemical-specific flavors.

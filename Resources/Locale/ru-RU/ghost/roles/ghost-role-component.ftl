@@ -143,20 +143,6 @@ ghost-role-information-ert-medical-description = Оказывайте содей
 ghost-role-information-cburn-agent-name = РХБЗЗ Оперативник
 ghost-role-information-cburn-agent-description = Высококвалифицированный агент Центком, способный справиться с любыми угрозами.
 ghost-role-information-centcom-official-name = Представитель Центком
-<<<<<<< HEAD
-ghost-role-information-centcom-official-description = Инспектируйте станцию, пишите служебные характеристики на руководителей, орудуйте факсом.
-ghost-role-information-behonker-name = Бехонкер
-ghost-role-information-behonker-description = Вы - антагонист, несущий смерть и хонки всем, кто не следует за хонкоматерью.
-ghost-role-information-nukeop-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с другими Ядерными оперативниками. Помощь агентов на станции не гарантируется.
-ghost-role-information-loneop-name = Одинокий оперативник
-ghost-role-information-loneop-description = Вы - одинокий ядерный оперативник. Уничтожьте станцию.
-ghost-role-information-loneop-rules = Вы [color=red][bold]Соло-антагонист[/bold][/color]. Помощь агентов на станции не гарантируется.
-ghost-role-information-hellspawn-name = Адское отродье
-ghost-role-information-hellspawn-description = Несите смерть всем, кто не повинуется великой богине Нар'Си.
-ghost-role-information-Death-Squad-name = Оперативник Эскадрона смерти
-ghost-role-information-Death-Squad-description = Приготовьтесь к массированному наступлению на станцию. Ваша задача как тяжеловооружённого оперативника - уничтожить всё живое на своём пути. И никаких свидетелей.
-ghost-role-information-Death-Squad-rules = Вы обязаны подчиняться приказам своего командира, вы фактически являетесь его [color=#6495ed][bold]фамильяром[/bold][/color].
-=======
 ghost-role-information-centcom-official-description = Выполняйте обязанности, связанные с Центком, такие как инспекция станции, составление служебных характеристик на руководителей и работа с факсом.
 ghost-role-information-nukeop-rules = Вы [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color], в команде с другими Ядерными оперативниками. Помощь агентов на станции не гарантируется.
 ghost-role-information-loneop-name = Одинокий оперативник
@@ -169,7 +155,6 @@ ghost-role-information-hellspawn-description = Несите смерть все�
 ghost-role-information-Death-Squad-name = Оперативник Эскадрона смерти
 ghost-role-information-Death-Squad-description = Один из лучших агентов внутренних дел Nanotrasen. Ожидайте приказов от Центкома или представителя Центкома.
 ghost-role-information-Death-Squad-rules = Вы обязаны подчиняться приказам своего командира, вы фактически его [color={role-type-familiar-color}][bold]{role-type-familiar-name}[/bold][/color].
->>>>>>> space-syndicate/master
 ghost-role-information-SyndiCat-name = СиндиКот
 ghost-role-information-SyndiCat-description = Вы - верный дрессированный питомец ядерных оперативников с микробомбой. Служите своему хозяину до самой смерти!
 ghost-role-information-SyndiCat-rules = Вы [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color], в команде с агентом, который вас призвал.
@@ -181,8 +166,6 @@ ghost-role-information-space-ninja-name = Космический ниндзя
 ghost-role-information-paradox-clone-name = Парадоксальный клон
 ghost-role-information-paradox-clone-description = Странная аномалия пространственно-временного континуума перенесла вас в другую реальность! Теперь вам нужно найти свою копию, убить её и занять её место. Только один из вас сможет выжить!
 ghost-role-information-space-ninja-description = Используйте хитрость и скрытность, чтобы устроить диверсию на станции.
-ghost-role-information-paradox-clone-name = Парадоксальный клон
-ghost-role-information-paradox-clone-description = Странная пространственно-временная аномалия телепортировала вас в другую реальность! Теперь вам предстоит найти своего двойника, убить и заменить его.
 ghost-role-information-syndicate-reinforcement-name = Агент Синдиката
 ghost-role-information-syndicate-reinforcement-description = Кому-то нужно подкрепление. Вы первый, кого Синдикат смог найти и послать на помощь.
 ghost-role-information-syndicate-reinforcement-rules = Вы [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color], в команде с агентом, который вас призвал.
@@ -193,13 +176,8 @@ ghost-role-information-syndicate-reinforcement-spy-description = Кому-то �
 ghost-role-information-syndicate-reinforcement-thief-name = Вор Синдиката
 ghost-role-information-syndicate-reinforcement-thief-description = Кому-то нужно подкрепление. Ваша задача - проникнуть и забрать что-то ценное для своего агента.
 ghost-role-information-nukeop-reinforcement-name = Ядерный оперативник
-<<<<<<< HEAD
-ghost-role-information-nukeop-reinforcement-description = Ядерному оперативнику нужно подкрепление. Вы, резервный агент, поможете им.
-ghost-role-information-nukeop-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с ядерным оперативником, который вас призвал.
-=======
 ghost-role-information-nukeop-reinforcement-description = Ядерным оперативникам нужно подкрепление. Вы, резервный агент, поможете им.
 ghost-role-information-nukeop-reinforcement-rules = Вы [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color], в команде с ядернымы оперативниками, которые призвали вас.
->>>>>>> space-syndicate/master
 ghost-role-information-syndicate-monkey-reinforcement-name = Агент Синдиката-обезьяна
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
 ghost-role-information-syndicate-monkey-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.
@@ -263,12 +241,11 @@ ghost-role-information-syndie-disaster-victim-description = Вы - обычны�
 ghost-role-information-artifact-name = Разумный артефакт
 ghost-role-information-artifact-description = Осуществляйте свои инопланетные прихоти. Принудительно активируйте свои узлы во благо или во зло.
 ghost-role-information-gingerbread-name = Пряничный человечек
-ghost-role-information-wizard-name = Волшебник
-ghost-role-information-wizard-desc = ВЫ - ВОЛШЕБНИК! Покажите станции, из чего состоит ваше волшебство.
+ghost-role-information-wizard-name = Маг
+ghost-role-information-wizard-desc = ВЫ - МАГ! Покажите станции, из чего состоит ваше волшебство.
 ghost-role-information-gingerbread-description =
     Существо чистого праздничного духа.
     Распространяйте паточную вкуснятину и хорошее настроение.
-<<<<<<< HEAD
 ghost-role-information-tomatokiller-name = Томат-убийца
 ghost-role-information-tomatokiller-description = Этот маленький помидор будет служить ботанику до конца своей жизни... то есть пару минут.
 # Corvax-start
@@ -277,7 +254,3 @@ ghost-role-information-syndicate-smuggler-description = Вы - специаль�
 
 # Corvax-end
 
-=======
-ghost-role-information-wizard-name = Волшебник
-ghost-role-information-wizard-desc = ТЫ ВОЛШЕБНИК! Покажи станции, из чего сделана твоя магия.
->>>>>>> space-syndicate/master

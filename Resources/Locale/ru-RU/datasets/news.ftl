@@ -63,10 +63,6 @@ news-dataset-62 = Брокколи оказалась колонией крош�
 
 ## Commented
 
-<<<<<<< HEAD
-=======
-
->>>>>>> space-syndicate/master
 # {{AFFECTED}} clerk first person able to pronounce '@*$%!'.
 # {{AFFECTED}} delis serving boiled paperback dictionaries, 'Adjectives chewy' customers declare.
 # {{AFFECTED}} weather deemed 'boring'; meteors and rad storms to be imported.

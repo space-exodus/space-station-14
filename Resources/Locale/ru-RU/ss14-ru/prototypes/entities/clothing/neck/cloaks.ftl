@@ -38,13 +38,8 @@ ent-ClothingNeckCloakAce = плащ пилота
     .desc = Плащ, вручаемый лучшим космическим асам Nanotrasen.
 ent-ClothingNeckCloakAro = плащ вервольфа
     .desc = Этот плащ позволяет окружающим понять, что вы - одинокий волк.
-<<<<<<< HEAD
-ent-ClothingNeckCloakAroace = плащ аэро-пилота
-    .desc = Плащ, выдаваемый лучшим пилотам Nanotrasen на планетах с пригодными для жизни атмосферой.
-=======
 ent-ClothingNeckCloakAroace = плащ аэропилота
     .desc = Почётный плащ, вручаемый лучшим пилотам Nanotrasen, служившим на обитаемых планетах.
->>>>>>> space-syndicate/master
 ent-ClothingNeckCloakBi = ядовитый плащ
     .desc = Пурпурный цвет — явный признак того, что вы ядовиты.
 ent-ClothingNeckCloakIntersex = плащ циклопа

@@ -8,14 +8,9 @@ lathe-menu-search-filter = Фильтр
 lathe-menu-amount = Кол-во:
 lathe-menu-recipe-count =
     { $count ->
-<<<<<<< HEAD
-        [1] { $count } рецепт
-       *[other] { $count } рецептов
-=======
         [1] { $count } Рецепт
         [few] { $count } Рецепта
        *[other] { $count } Рецептов
->>>>>>> space-syndicate/master
     }
 lathe-menu-reagent-slot-examine = Сбоку имеется отверстие для мензурки.
 lathe-reagent-dispense-no-container = Жидкость выливается из { $name } на пол!

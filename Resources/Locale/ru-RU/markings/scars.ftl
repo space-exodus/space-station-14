@@ -10,16 +10,6 @@ marking-ScarChest-scar_chest = Шрам на груди
 marking-ScarChest = Шрам на груди
 marking-ScarNeck-scar_neck = Шрам на шее
 marking-ScarNeck = Шрам на шее
-<<<<<<< HEAD
-marking-ScarChestBullets-scar_chest_bullets = Шрамы от пуль на груди
-marking-ScarChestBullets = Шрам на груди (пули)
-marking-ScarStomachBullets-scar_stomach_bullets = Шрамы от пуль на животе
-marking-ScarStomachBullets = Шрам на животе (пули)
-marking-ScarFace1-scar_face_1 = Шрам на лице
-marking-ScarFace1 = Шрам на лице (большой)
-marking-ScarFace2-scar_face_2 = Шрам на лице
-marking-ScarFace2 = Шрам на лице (малый)
-=======
 marking-ScarChestBullets-scar_chest_bullets = Шрам, пулевые отверстия
 marking-ScarChestBullets = Шрам на груди (Пули)
 marking-ScarStomachBullets-scar_stomach_bullets = Шрам, пулевые отверстия
@@ -28,4 +18,3 @@ marking-ScarFace1-scar_face_1 = Шрам на лице
 marking-ScarFace1 = Шрам на лице (Большой)
 marking-ScarFace2-scar_face_2 = Шрам на лице
 marking-ScarFace2 = Шрам на лице (Маленький)
->>>>>>> space-syndicate/master

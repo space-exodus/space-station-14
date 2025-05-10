@@ -559,9 +559,9 @@ ClothingMaskSexyMime: ClothingMaskBlushingMime
 # 2025-01-27
 FoodCondimentPacketFrostoil: FoodCondimentPacketColdsauce
 
-#2025-02-05
-WeaponSubMachineGunVector: null
-WeaponSubMachineGunVectorRubber: null
+#2025-02-05 Exodus-Vector-Return
+# WeaponSubMachineGunVector: null
+# WeaponSubMachineGunVectorRubber: null
 
 # 2025-02-20
 MagazineBoxAntiMaterielBig: null

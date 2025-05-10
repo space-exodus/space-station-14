@@ -3,9 +3,5 @@ entity-category-name-game-rules = Игровые режимы
 entity-category-name-objectives = Цели
 entity-category-name-roles = Роли сознания
 entity-category-name-mapping = Маппинг
-<<<<<<< HEAD
 entity-category-name-donotmap = Не маппить
-=======
-entity-category-name-donotmap = не маппить
->>>>>>> space-syndicate/master
 entity-category-suffix-donotmap = НЕ МАППИТЬ

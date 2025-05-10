@@ -46,15 +46,10 @@ ent-CommsComputerCircuitboard = консоль связи (консольная 
     .desc = Консольная плата для консоли связи.
 ent-SyndicateCommsComputerCircuitboard = консоль связи Синдиката (консольная плата)
     .desc = Консольная плата для консоли связи Синдиката.
-ent-WizardCommsComputerCircuitboard = консоль связи волшебника (консольная плата)
-    .desc = Консольная плата для консоли связи волшебника.
-<<<<<<< HEAD
+ent-WizardCommsComputerCircuitboard = консоль связи мага (консольная плата)
+    .desc = Консольная плата для консоли связи мага.
 ent-CentcommCommsComputerCircuitboard = консоль связи Центрального Командования (консольная плата)
     .desc = Консольная плата для консоли связи Центрального Командования.
-=======
-ent-CentcommCommsComputerCircuitboard = консоль связи Центрального командования (консольная плата)
-    .desc = Консольная плата для консоли связи Центрального командования.
->>>>>>> space-syndicate/master
 ent-RadarConsoleCircuitboard = консоль сканера массы (консольная плата)
     .desc = { ent-BaseComputerCircuitboard.desc }
 ent-SolarControlComputerCircuitboard = консоль контроля солнечных батарей (консольная плата)

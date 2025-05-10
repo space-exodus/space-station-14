@@ -61,12 +61,6 @@ ent-StationAiHoloLocal = голограмма ИИ
     .suffix = НЕ МАППИТЬ
 ent-StationAiHolo = око ИИ
     .desc = Обозреватель ИИ.
-<<<<<<< HEAD
-    .suffix = НЕ МАППИТЬ
-=======
-ent-StationAiHoloLocal = голограмма ИИ
-    .desc = Голографическое представление ИИ.
->>>>>>> space-syndicate/master
 ent-PlayerBorgBattery = { ent-BorgChassisSelectable }
     .suffix = Батарея
     .desc = { ent-BorgChassisSelectable.desc }

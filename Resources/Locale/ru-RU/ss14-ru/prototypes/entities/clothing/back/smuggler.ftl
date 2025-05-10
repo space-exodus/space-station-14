@@ -3,24 +3,6 @@ ent-BaseSubfloorAnchorStorage = { "" }
 ent-BaseSubfloorAnchorStorageAnchored = { ent-BaseSubfloorAnchorStorage }
     .desc = { ent-BaseSubfloorAnchorStorage.desc }
 ent-ClothingBackpackSatchelSmuggler = сумка контрабандиста
-<<<<<<< HEAD
-    .desc = Потрёпанная, подозрительно выглядящая сумка.
-    .suffix = Пустая
-ent-ClothingBackpackSatchelSmugglerUnanchored = { ent-ClothingBackpackSatchelSmuggler }
-    .desc = { ent-ClothingBackpackSatchelSmuggler.desc }
-    .suffix = Пустая, Не закреплено
-ent-BriefcaseSmugglerCash = чемодан контрабандиста
-    .suffix = Контрабандист, НЕ МАППИТЬ
-    .desc = { ent-BaseSubfloorAnchorStorageAnchored.desc }
-ent-ClothingBackpackDuffelClownSmuggler = клоунская сумка контрабандиста
-    .suffix = Контрабандист, НЕ МАППИТЬ
-    .desc = { ent-BaseSubfloorAnchorStorageAnchored.desc }
-ent-ClothingBackpackSatchelSmugglerFilled = { ent-ClothingBackpackSatchelSmuggler }
-    .suffix = Контрабандист, НЕ МАППИТЬ
-    .desc = { ent-ClothingBackpackSatchelSmuggler.desc }
-ent-RandomSatchelSpawner = спавнер случайной сумки контрабандиста
-    .suffix = НЕ МАППИТЬ
-=======
     .desc = Удобная, подозрительная на вид сумка. Достаточно плоская, чтобы поместиться под напольной плиткой.
     .suffix = Пустой
 ent-ClothingBackpackSatchelSmugglerUnanchored = сумка контрабандиста
@@ -37,5 +19,4 @@ ent-ClothingBackpackSatchelSmugglerFilled = { ent-ClothingBackpackSatchelSmuggle
     .desc = { ent-ClothingBackpackSatchelSmuggler.desc }
 ent-RandomSatchelSpawner = спавнер случайная сумка контрабандиста
     .suffix = Не Маппить
->>>>>>> space-syndicate/master
     .desc = { ent-MarkerBase.desc }

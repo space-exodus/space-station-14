@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-ent-SpawnPointWizard = Волшебник
-=======
-ent-SpawnPointWizard = волшебник
->>>>>>> space-syndicate/master
+ent-SpawnPointWizard = Маг
     .desc = { ent-MarkerBase.desc }
