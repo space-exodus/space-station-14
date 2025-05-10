@@ -1,5 +1,5 @@
 - type: speechSounds
-  id: Kidan
+  id: NewKidan
   saySound:
     path: /Audio/Exodus/Voice/Kidan/speak1.ogg
   askSound:
