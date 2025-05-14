@@ -3,12 +3,12 @@ humanoid-appearance-component-examine = { CAPITALIZE(SUBJECT($user)) } { $specie
 humanoid-appearance-component-mindset-examine =
     Мировозрение: { $mindset ->
         [orderlykind] Порядочно-добрый
-       *[ordered] Порядочный
+       *[ordered] Порядочно-нейтральный
         [orderlyangry] Порядочно-злой
-        [good] Добрый
-        [trulyneutral] Истинно нейтральный
-        [evil] Злой
+        [good] Нейтрально-добрый
+        [trulyneutral] Нейтральный
+        [evil] Нейтрально-злой
         [chaoticallykind] Хаотично-добрый
-        [chaotic] Хаотичный
+        [chaotic] Хаотично-нейтральный
         [chaoticallyangry] Хаотично-злой
     }
