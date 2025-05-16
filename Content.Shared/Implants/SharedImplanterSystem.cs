@@ -123,7 +123,9 @@ public abstract class SharedImplanterSystem : EntitySystem
 
         var evOnImplant = new ImplantInjectEvent(user, target, implant.Value, implanter);
         RaiseLocalEvent(implant.Value, evOnImplant);
-
+        // Уважить возможную отмену
+        if (evOnImplant.Cancelled)
+            return;
         // Check if we are trying to implant a implant which is already implanted
         // Check AFTER the doafter to prevent "is it a fake?" metagaming against deceptive implants
         if (!component.AllowMultipleImplants && CheckSameImplant(target, implant.Value))
