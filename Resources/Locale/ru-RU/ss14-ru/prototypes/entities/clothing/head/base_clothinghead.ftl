@@ -10,5 +10,7 @@ ent-ClothingHeadHardsuitBase = базовый шлем скафандра
     .desc = { ent-ClothingHeadBase.desc }
 ent-ClothingHeadSuitWithLightBase = базовый шлем скафандра с фонарём
     .desc = { "" }
+ent-ClothingHeadHardsuitWithLightBase = базовый шлем скафандра с фонарём
+    .desc = { ent-ClothingHeadHardsuitBase.desc }
 ent-ClothingHeadHatHoodWinterBase = базовый капюшон зимней куртки
     .desc = Капюшон, чтобы держать голову в тепле.

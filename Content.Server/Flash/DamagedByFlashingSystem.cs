@@ -1,5 +1,6 @@
 using Content.Server.Flash.Components;
 using Content.Shared.Damage;
+using Content.Shared.Flash;
 
 namespace Content.Server.Flash;
 public sealed class DamagedByFlashingSystem : EntitySystem
@@ -10,9 +11,9 @@ public sealed class DamagedByFlashingSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<DamagedByFlashingComponent, FlashAttemptEvent>(OnFlashAttempt);
+        SubscribeLocalEvent<DamagedByFlashingComponent, FlashModifiersEvent>(OnFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEVent
     }
-    private void OnFlashAttempt(Entity<DamagedByFlashingComponent> ent, ref FlashAttemptEvent args)
+    private void OnFlashAttempt(Entity<DamagedByFlashingComponent> ent, ref FlashModifiersEvent args) // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEVent
     {
         _damageable.TryChangeDamage(ent, ent.Comp.FlashDamage);
 

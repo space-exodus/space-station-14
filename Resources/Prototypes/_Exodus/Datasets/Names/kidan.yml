@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: NamesKidan
+  values:
+    prefix: names-kidan-dataset-
+    count: 120

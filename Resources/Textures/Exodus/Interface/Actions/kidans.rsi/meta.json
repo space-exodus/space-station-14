@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "by Askolot (discord:788252896016990219), owned by Space Exodus",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "pheromones"
+        },
+        {
+            "name": "light-off"
+        },
+        {
+            "name": "light-on"
+        },
+        {
+            "name": "mineral-resonance"
+        }
+    ]
+}

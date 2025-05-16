@@ -1,4 +1,4 @@
-using Content.Shared.Mining.Components;
+using Content.Shared.Exodus.Mining.Components;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Player;

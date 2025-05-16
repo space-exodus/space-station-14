@@ -1,4 +1,15 @@
-ent-RandomHumanoidSpawnerSpecicalOperationOfficer = Офицер специальных операций
-    .suffix = ЦентКомм
+ent-RandomHumanoidSpawnerBlueshieldOfficer = Blueshield Officer
+    .suffix = ERTRole, Basic
     .desc = { "" }
-
+ent-RandomHumanoidSpawnerSpecicalOperationOfficer = specical operation officer
+    .suffix = Centcomm
+    .desc = { "" }
+ent-RandomHumanoidSpawnerDeathSquadOfficer = death squad officer
+    .suffix = ERTRole, Basic
+    .desc = { ent-RandomHumanoidSpawnerDeathSquadCommander.desc }
+ent-RandomHumanoidSpawnerDeathSquadCommander = death squad commander
+    .suffix = ERTRole, Basic
+    .desc = { ent-RandomHumanoidSpawnerERTLeader.desc }
+ent-RandomHumanoidSpawnerDeathSquadSpecialist = death squad specialist
+    .suffix = ERTRole, Basic
+    .desc = { ent-RandomHumanoidSpawnerDeathSquadCommander.desc }

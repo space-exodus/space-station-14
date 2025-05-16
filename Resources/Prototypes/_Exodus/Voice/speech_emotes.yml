@@ -6,17 +6,9 @@
   chatMessages: [ворчит.]
   chatTriggers:
     - grumble
-    - grumble.
-    - grumble!
     - grumbles
-    - grumbles.
-    - grumbles!
     - grumbled
-    - grumbled.
-    - grumbled!
     - ворчит
-    - ворчит.
-    - ворчит!
 
 - type: emote
   id: Rumble
@@ -26,11 +18,7 @@
   chatMessages: [урчит.]
   chatTriggers:
     - урчит
-    - урчит.
-    - урчит!
     - мурчит
-    - мурчит.
-    - мурчит!
 
 #region Kidan
 - type: emote
@@ -41,23 +29,11 @@
   chatMessages: [шевелит антенками.]
   chatTriggers:
     - waves antennae
-    - waves antennae.
-    - waves antennae!
     - wiggles antennae
-    - wiggles antennae.
-    - wiggles antennae!
     - шевелит антенками
-    - шевелит антенками.
-    - шевелит антенками!
     - машет антенками
-    - машет антенками.
-    - машет антенками!
     - шевелит усиками
-    - шевелит усиками.
-    - шевелит усиками!
     - машет усиками
-    - машет усиками.
-    - машет усиками!
 
 - type: emote
   id: WavesAntennaeSharply
@@ -67,12 +43,19 @@
   chatMessages: [резко машет антенками.]
   chatTriggers:
     - waves antennae sharply
-    - waves antennae sharply.
-    - waves antennae sharply!
     - резко машет усиками
-    - резко машет усиками.
-    - резко машет усиками!
     - резко машет антенками
-    - резко машет антенками.
-    - резко машет антенками!
+
+- type: emote
+  id: JawsSnap
+  name: chat-emote-name-jaws-snap
+  category: Vocal
+  available: false
+  chatMessages: [щёлкает челюстями.]
+  chatTriggers:
+    - snaps his jaws
+    - snaps jaws
+    - щёлкает челюстями
+    - щелкает челюстями
+    - трещит челюстями
 #region Reptilian

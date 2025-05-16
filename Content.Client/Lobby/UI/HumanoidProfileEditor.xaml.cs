@@ -1163,6 +1163,22 @@ namespace Content.Client.Lobby.UI
                     Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
                     break;
                 }
+                // Exodus-Kidans-Start
+                case HumanoidSkinColor.KidanChitin:
+                {
+                    if (!RgbSkinColorContainer.Visible)
+                    {
+                        Skin.Visible = false;
+                        RgbSkinColorContainer.Visible = true;
+                    }
+
+                    var color = SkinColor.ClosestKidanColor(_rgbSkinColorSelector.Color);
+
+                    Markings.CurrentSkinColor = color;
+                    Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
+                    break;
+                }
+                // Exodus-Kidans-End
             }
 
             ReloadProfilePreview();
@@ -1438,6 +1454,20 @@ namespace Content.Client.Lobby.UI
 
                     break;
                 }
+                // Exodus-Kidans-Start
+                case HumanoidSkinColor.KidanChitin:
+                {
+                    if (!RgbSkinColorContainer.Visible)
+                    {
+                        Skin.Visible = false;
+                        RgbSkinColorContainer.Visible = true;
+                    }
+
+                    _rgbSkinColorSelector.Color = SkinColor.ClosestKidanColor(Profile.Appearance.SkinColor);
+
+                    break;
+                }
+                // Exodus-Kidans-End
             }
 
         }
