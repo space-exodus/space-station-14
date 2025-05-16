@@ -5,23 +5,31 @@
     variation: 0.125
   sounds:
     Sneeze:
-      collection: NewKidanSneeze
+      collection: KidanSneeze
     Cough:
-      collection: NewKidanCough
+      collection: KidanCough
     Scream:
-      collection: NewKidanScream
+      collection: KidanScream
     Laugh:
-      collection: NewKidanLaugh
+      collection: KidanLaugh
     Sigh:
-      collection: NewKidanSigh
+      collection: KidanSigh
     Crying:
-      collection: NewKidanCry
+      collection: KidanCry
     Grumble:
-      collection: NewKidanGrumble
+      collection: KidanGrumble
     WigglesAntennae:
-      collection: NewKidanWigglesAtennae
+      collection: KidanWigglesAtennae
     WavesAntennaeSharply:
-      collection: NewKidanWavesAntennaeSharply
+      collection: KidanWavesAntennaeSharply
+    JawsSnap:
+      collection: KidanJawsSnap
+    Yawn:
+      collection: KidanYawn
+    Whistle:
+      collection: KidanWhistle
+    Groan:
+      collection: KidanGroan
     Weh:
       collection: Weh
     Hew:

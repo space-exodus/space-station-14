@@ -20,7 +20,14 @@
   - type: PheromonesCommunication
   - type: Speech
     speechVerb: Kidan
-    allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply', 'JawsSnap', 'Grumble']
+    allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply', 'JawsSnap', 'Grumble', 'Groan']
+  - type: TypingIndicator
+    proto: kidan
+  - type: Vocal
+    sounds:
+      Male: UnsexedKidan
+      Female: UnsexedKidan
+      Unsexed: UnsexedKidan
   - type: Body
     prototype: NewKidan
     requiredLegs: 2
@@ -33,6 +40,11 @@
     channels:
     - Chitine
   - type: Bioluminescence
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.35
+        Heat: 0.1
   - type: Temperature
     heatDamageThreshold: 370
     coldDamageThreshold: 268
@@ -88,6 +100,23 @@
       time: 4
       type: Add
       refresh: false
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+    - reagents: [Water, SpaceCleaner]
+      methods: [Touch]
+      effects:
+      - !type:WashCreamPieReaction
+    - reagents: [PestKiller]
+      methods: [Touch, Ingestion]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 17
 
 - type: entity
   save: false
