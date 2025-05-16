@@ -58,14 +58,18 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                 );
             }
 
+            // guard against missing master entry
+-           EnsureComp<MindSlaveMasterComponent>(_mindSlaveImplantUsers[ev.Implanted.Value]);
++           if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var master))
++               return; // безопасность: нет мастера
++           EnsureComp<MindSlaveMasterComponent>(master);
 
-            EnsureComp<MindSlaveMasterComponent>(_mindSlaveImplantUsers[ev.Implanted.Value]);
             _playerManager.TryGetSessionByEntity(_mindSlaveImplantUsers[ev.Implanted.Value], out var playerMasterSession);
             if (playerMasterSession != null)
             {
                 _chatManager.DispatchServerMessage(
-                playerMasterSession,
-                Loc.GetString("mindslave-implant-master-success")
+                    playerMasterSession,
+                    Loc.GetString("mindslave-implant-master-success")
                 );
             }
 
