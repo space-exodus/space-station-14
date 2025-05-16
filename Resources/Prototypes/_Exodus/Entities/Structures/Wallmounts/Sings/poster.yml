@@ -1,0 +1,90 @@
+# Miners
+- type: entity
+  parent: PosterBase
+  id: PosterMinerWithBelt
+  name: "With Belt"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: withbelt
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerToWork
+  name: "To Work"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: towork
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerToCull
+  name: "To Cull"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: tocull
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerThrowbins
+  name: "Throw into bins"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: throwbins
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerNotOpen
+  name: "Not to open"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: notopen
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerNotConnect
+  name: "Not to connect"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: notconnect
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerNotClear
+  name: "Not to clear"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: notclear
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerForward
+  name: "Move forward"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: forward
+
+- type: entity
+  parent: PosterBase
+  id: PosterMinerCollapsed
+  name: "Collapsed"
+  components:
+  - type: Sprite
+    scale: 0.5,0.5
+    sprite: Exodus/Structures/Wallmount/miner_posters.rsi
+    state: collapsed
