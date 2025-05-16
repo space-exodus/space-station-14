@@ -27,6 +27,13 @@ namespace Content.Shared.Whitelist;
 public sealed partial class EntityWhitelist
 {
     /// <summary>
+    /// EntityUid that are allowed in the whitelist.
+    /// <summary>
+    [ViewVariables]
+    [DataField(required: false), Access(typeof(EntitySystem))]
+    public List<NetEntity> NetEntities = new();
+
+    /// <summary>
     ///     Component names that are allowed in the whitelist.
     /// </summary>
     [DataField] public string[]? Components;

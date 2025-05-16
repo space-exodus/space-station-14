@@ -17,3 +17,19 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing
+  id: UplinkMindSLaveImplant
+  name: uplink-mindslave-implant-name
+  description: uplink-mindslave-implant-desc
+  productEntity: MindSlaveImplanter
+  icon: { sprite: /Textures/Exodus/Interface/misc/mindslave_icon.rsi, state: icon }
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkImplants
+  conditions:
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

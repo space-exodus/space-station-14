@@ -47,6 +47,15 @@ public sealed class EntityWhitelistSystem : EntitySystem
     /// </summary>
     public bool IsValid(EntityWhitelist list, EntityUid uid)
     {
+        if (list.NetEntities != null)
+        {
+            var inEntities = list.NetEntities.Contains(EntityManager.GetNetEntity(uid));
+            if (!inEntities && list.RequireAll)
+                return false;
+            if (inEntities && !list.RequireAll)
+                return true;
+        }
+
         if (list.Components != null)
         {
             if (list.Registrations == null)
@@ -63,7 +72,7 @@ public sealed class EntityWhitelistSystem : EntitySystem
 
             foreach (var role in regs)
             {
-                if ( _roles.MindHasRole(uid, role.Type, out _))
+                if (_roles.MindHasRole(uid, role.Type, out _))
                 {
                     if (!list.RequireAll)
                         return true;

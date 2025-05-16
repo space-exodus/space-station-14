@@ -14,6 +14,6 @@ ent-DSTrackingImplant = Имплант Трекер Эскадрона Смер�
 ent-MindSlaveImplanter = { ent-BaseImplantOnlyImplanterSyndi }
     .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
     .suffix = Подчинение
-ent-MindSlaveImplant = Имплант "подчинение"
+ent-MindSlaveImplant = имплант "подчинение"
     .desc = Этот имплант заставляет носителя полностью подчиняться хозяину, пока имплант активен
 
