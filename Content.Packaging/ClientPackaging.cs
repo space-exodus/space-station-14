@@ -92,7 +92,7 @@ public static class ClientPackaging
 
         var inputPass = graph.Input;
 
-        // Exodus-Secrets-Start: Add Corvax interfaces to Magic ACZ
+        // Exodus-Secrets-Start: Add Exodus assemblies to Magic ACZ
         var assemblies = new List<string> { "Content.Client", "Content.Shared", "Content.Shared.Database" };
         if (UseSecrets)
             assemblies.AddRange(["Content.Exodus.Shared", "Content.Exodus.Client"]);
@@ -113,7 +113,7 @@ public static class ClientPackaging
     // Exodus-Secrets-Start
     public static IReadOnlySet<string> ContentClientIgnoredResources { get; } = new HashSet<string>
     {
-        "ExodusSecretsServer"
+        "ServerOnly"
     };
 
     private static async Task WriteClientResources(

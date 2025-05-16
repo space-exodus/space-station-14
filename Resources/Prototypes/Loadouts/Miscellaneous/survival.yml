@@ -18,11 +18,14 @@
     - Human
     - Moth
     - Reptilian
-  # Exodus-Races-Start
+    #Corvax-Species-Start
+    - Vulpkanin
+    - Tajaran
+    #Corvax-Species-End
+  # Exodus-Species-Start
     - Kidan
     - Felinid
-    - Vulpkanin
-  # Exodus-Races-End
+  # Exodus-Species-End
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

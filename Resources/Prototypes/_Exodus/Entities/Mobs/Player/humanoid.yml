@@ -8,8 +8,9 @@
       state: blueshieldofficer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
+      - NamesMilitaryFirstLeader
+      - NamesMilitaryLast
+      nameFormat: name-format-ert
     - type: RandomHumanoidSpawner
       settings: BlueshieldOfficer
 
@@ -30,45 +31,41 @@
         settings: short
     - type: Loadout
       prototypes: [ BlueshieldOfficerGear ]
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstMilitaryLeader
-      - NamesLastMilitary
 
-- type: entity
-  id: RandomHumanoidSpawnerSpecicalOperationOfficer
-  name: specical operation officer
-  suffix: Centcomm
-  components:
-    - type: Sprite
-      sprite: Corvax/Clothing/Neck/Cloaks/centcom_officer_black.rsi
-      state: icon
-    - type: RandomMetadata
-      nameSegments:
-        - NamesFirstMilitaryHighLeader
-        - NamesLastMilitary
-    - type: RandomHumanoidSpawner
-      settings: SpecicalOperationOfficerSettings
-    - type: AntagImmune
+# - type: entity
+#   id: RandomHumanoidSpawnerSpecicalOperationOfficer
+#   name: specical operation officer
+#   suffix: Centcomm
+#   components:
+#     - type: Sprite
+#       sprite: Corvax/Clothing/Neck/Cloaks/centcom_officer_black.rsi
+#       state: icon
+#     - type: RandomMetadata
+#       nameSegments:
+#         - NamesFirstMilitaryHighLeader
+#         - NamesLastMilitary
+#     - type: RandomHumanoidSpawner
+#       settings: SpecicalOperationOfficerSettings
+#     - type: AntagImmune
 
-- type: randomHumanoidSettings
-  id: SpecicalOperationOfficerSettings
-  randomizeName: false
-  speciesBlacklist:
-    - Diona
-  components:
-    - type: MindShield
-    - type: GhostRole
-      name: ghost-role-information-Specical-Operation-Officer-name
-      description: ghost-role-information-Specical-Operation-Officer-description
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ SpecicalOperationOfficerGear ]
-    - type: RandomMetadata
-      nameSegments:
-        - NamesFirstMilitaryHighLeader
-        - NamesLastMilitary
-    - type: AntagImmune
+# - type: randomHumanoidSettings
+#   id: SpecicalOperationOfficerSettings
+#   randomizeName: false
+#   speciesBlacklist:
+#     - Diona
+#   components:
+#     - type: MindShield
+#     - type: GhostRole
+#       name: ghost-role-information-Specical-Operation-Officer-name
+#       description: ghost-role-information-Specical-Operation-Officer-description
+#     - type: GhostTakeoverAvailable
+#     - type: Loadout
+#       prototypes: [ SpecicalOperationOfficerGear ]
+#     - type: RandomMetadata
+#       nameSegments:
+#         - NamesFirstMilitaryHighLeader
+#         - NamesLastMilitary
+#     - type: AntagImmune
 
 - type: randomHumanoidSettings
   id: DeathSquadOfficer
@@ -84,12 +81,9 @@
     - Vox
     - Kidan
     - Felinid
+    - Tajaran
   parent: ERTLeader
   components:
-    - type: RandomMetadata
-      nameSegments:
-      - DSCallSigns
-      - DSNumber
     - type: AntagImmune
     - type: GhostTakeoverAvailable
     - type: ZombieImmune
@@ -113,6 +107,9 @@
       - DeathAcidifierImplant
       - FreedomImplant
       - MindShieldImplant
+      - DSStimulantsImplant
+      - DSCombatInjectorImplant
+      - DSRadioImplant
     - type: NpcFactionMember
       factions:
       - DeathSquad
@@ -161,9 +158,16 @@
       name: ghost-role-information-deathsquad-officer-name
       description: ghost-role-information-deathsquad-officer-description
       rules: ghost-role-information-deathsquad-officer-rules
+      raffle:
+        settings: default
       job: DSOfficer
     - type: Loadout
       prototypes: [ DSOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - DSCallSigns
+      - DSNumber
+      nameFormat: name-format-ds
 
 - type: entity
   name: death squad officer
@@ -177,6 +181,11 @@
     randomizeName: false
   - type: RandomHumanoidSpawner
     settings: DeathSquadOfficer
+  - type: RandomMetadata
+    nameSegments:
+    - DSCallSigns
+    - DSNumber
+    nameFormat: name-format-ds
 
 - type: randomHumanoidSettings
   id: DeathSquadCommander
@@ -213,6 +222,11 @@
     randomizeName: false
   - type: RandomHumanoidSpawner
     settings: DeathSquadCommander
+  - type: RandomMetadata
+    nameSegments:
+    - DSCallSigns
+    - DSNumber
+    nameFormat: name-format-ds
 
 - type: randomHumanoidSettings
   id: DeathSquadSpecialist
@@ -248,3 +262,8 @@
     randomizeName: false
   - type: RandomHumanoidSpawner
     settings: DeathSquadSpecialist
+  - type: RandomMetadata
+    nameSegments:
+    - DSCallSigns
+    - DSNumber
+    nameFormat: name-format-ds

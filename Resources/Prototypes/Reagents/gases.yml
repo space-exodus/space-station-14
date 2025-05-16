@@ -26,6 +26,12 @@
         conditions:
         - !type:OrganType
           type: Plant
+      # Exodus-Kidans-Start
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Kidan
+      # Exodus-Kidans-End
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:

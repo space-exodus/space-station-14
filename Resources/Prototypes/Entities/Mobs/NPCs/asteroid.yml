@@ -95,8 +95,10 @@
     spawned:
     - id: FoodMeatGoliath
       amount: 3
+# Exodus-Our-Maximal-HardSuit-Start
     - id: MaterialGoliathHide1
-      amount: 3
+      amount: 1
+# Exodus-Our-Maximal-HardSuit-End
 
 - type: entity
   id: ActionGoliathTentacle

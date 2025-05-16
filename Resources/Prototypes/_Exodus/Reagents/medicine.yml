@@ -7,6 +7,13 @@
   flavor: medicine
   color: "#e8e8e8"
   metabolisms:
+    Poison:
+      effects:
+      - !type:GenericStatusEffect
+        key: Pacified
+        component: Pacified
+        type: Remove
+        time: 4
     Medicine:
       effects:
       - !type:HealthChange
@@ -16,3 +23,11 @@
             Burn: -5
             Airloss: -10
             Toxin: -5
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 15
+    Drink:
+      effects:
+      - !type:ModifyBloodLevel
+        amount: 6

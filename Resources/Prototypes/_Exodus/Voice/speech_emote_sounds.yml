@@ -22,6 +22,18 @@
       collection: KidanWigglesAtennae
     WavesAntennaeSharply:
       collection: KidanWavesAntennaeSharply
+    JawsSnap:
+      collection: KidanJawsSnap
+    Yawn:
+      collection: KidanYawn
+    Whistle:
+      collection: KidanWhistle
+    Groan:
+      collection: KidanGroan
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
 
 - type: emoteSounds
   id: MaleFelinid

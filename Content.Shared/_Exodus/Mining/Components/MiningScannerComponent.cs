@@ -9,7 +9,7 @@ namespace Content.Shared.Exodus.Mining.Components;
 /// <summary>
 /// This is a component that, when held in the inventory or pocket of a player, gives the the MiningOverlay.
 /// </summary>
-[RegisterComponent, NetworkedComponent, Access(typeof(MiningScannerSystem)), AutoGenerateComponentState, AutoGenerateComponentPause]
+[RegisterComponent, NetworkedComponent, Access(typeof(SharedMiningScannerSystem)), AutoGenerateComponentState, AutoGenerateComponentPause]
 public sealed partial class MiningScannerComponent : Component
 {
     [DataField]
