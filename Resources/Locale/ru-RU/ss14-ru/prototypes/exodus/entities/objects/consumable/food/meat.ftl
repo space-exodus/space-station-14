@@ -1,7 +1,11 @@
-ent-FoodMeatKidanCutlet = сырая котлета кидана
-    .desc = { ent-FoodMeatCutlet.desc }
-ent-FoodMeatKidan = сырое мясо кидана
-    .desc = { ent-FoodMeat.desc }
+ent-FoodMeatKidanCutlet = сырая киданья котлета
+    .desc = Практически не пахнет.
+ent-FoodMeatKidan = сырое киданье мясо
+    .desc = По консистенции как вата. Он растягивается. Ты уверен, что они это едят?
+ent-FoodMeatKidanCutletCooked = приготовленная киданья котлета
+    .desc =  Говорят, в мясе содержится волшебный элексир. Именно он сделает вас самым сильным волшебником в мире.
+ent-FoodMeatKidanCooked = приготовленная киданья вырезка
+    .desc = Диетологи рекомендуют.
 ent-FoodMeatKidanCutletRotten = тухлая котлета кидана
     .desc = { ent-FoodMeatCutletRotten }
 ent-FoodMeatKidanRotten = тухлое мясо кидана
