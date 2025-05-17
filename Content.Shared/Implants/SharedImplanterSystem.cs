@@ -123,7 +123,6 @@ public abstract class SharedImplanterSystem : EntitySystem
 
         var evOnImplant = new ImplantInjectEvent(user, target, implant.Value, implanter);
         RaiseLocalEvent(implant.Value, evOnImplant);
-        // Уважить возможную отмену
         if (evOnImplant.Cancelled)
             return;
         // Check if we are trying to implant a implant which is already implanted

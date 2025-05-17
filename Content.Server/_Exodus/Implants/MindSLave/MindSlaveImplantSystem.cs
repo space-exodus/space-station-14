@@ -58,11 +58,12 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                 );
             }
 
-            // guard against missing master entry
--           EnsureComp<MindSlaveMasterComponent>(_mindSlaveImplantUsers[ev.Implanted.Value]);
-+           if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var master))
-+               return; // безопасность: нет мастера
-+           EnsureComp<MindSlaveMasterComponent>(master);
+
+            EnsureComp<MindSlaveMasterComponent>(_mindSlaveImplantUsers[ev.Implanted.Value]);
+            if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var master))
+                return;
+
+            EnsureComp<MindSlaveMasterComponent>(master);
 
             _playerManager.TryGetSessionByEntity(_mindSlaveImplantUsers[ev.Implanted.Value], out var playerMasterSession);
             if (playerMasterSession != null)
@@ -103,6 +104,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             };
 
             masterComp.SlavesWhiteList = whitelistSlaves;
+
             Dirty(_mindSlaveImplantUsers[ev.Implanted.Value], masterComp);
 
         }
@@ -116,6 +118,11 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
     public bool MindSlaveRemovalCheck(EntityUid implanted, EntityUid implant)
     {
+        if (!_mindSlaveImplantUsers.TryGetValue(implanted, out var master))
+        {
+            return true;
+        }
+
         if (HasComp<MindShieldComponent>(implanted))
         {
             _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-implant-failed"), implanted, PopupType.Large);
@@ -123,14 +130,14 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             _mindSlaveImplantUsers.Remove(implanted);
             return true;
         }
-        else if (_mindSlaveImplantUsers[implanted] == implanted)
+        else if (master == implanted)
         {
             _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-implant-for-master-failed"), implanted, PopupType.Medium);
             _mindSlaveImplantUsers.Remove(implanted);
             QueueDel(implant);
             return true;
         }
-        else if (HasComp<MindSlaveComponent>(_mindSlaveImplantUsers[implanted]))
+        else if (HasComp<MindSlaveComponent>(master))
         {
             _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-implant-for-slave-failed"), implanted, PopupType.Medium);
             _mindSlaveImplantUsers.Remove(implanted);
@@ -144,7 +151,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             QueueDel(implant);
             return true;
         }
-        else if (HasComp<GhostComponent>(_mindSlaveImplantUsers[implanted]))
+        else if (HasComp<GhostComponent>(master))
         {
             _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-user-ghost"), implanted, PopupType.Medium);
             _mindSlaveImplantUsers.Remove(implanted);
@@ -205,7 +212,10 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
             RemComp<MindSlaveComponent>(ev.Implanted.Value);
 
-            QueueDel(_mindSLaveImplantMap[ev.Implanted.Value]);
+            if (!_mindSLaveImplantMap.TryGetValue(ev.Implanted.Value, out var implantUid))
+                return;
+
+            QueueDel(implantUid);
         }
     }
 
@@ -224,18 +234,21 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             );
         }
 
-        var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(_mindSlaveImplantUsers[args.Container.Owner]);
+        if (!_mindSlaveImplantUsers.TryGetValue(args.Container.Owner, out var masterUid))
+            return;
+
+        var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(masterUid);
 
         if (masterComp.Slaves.Contains(args.Container.Owner))
         {
             masterComp.Slaves.Remove(args.Container.Owner);
-            Dirty(_mindSlaveImplantUsers[args.Container.Owner], masterComp);
+            Dirty(masterUid, masterComp);
         }
 
         if (masterComp.SlavesWhiteList.NetEntities.Contains(EntityManager.GetNetEntity(args.Container.Owner)))
         {
             masterComp.SlavesWhiteList.NetEntities.Remove(EntityManager.GetNetEntity(args.Container.Owner));
-            Dirty(_mindSlaveImplantUsers[args.Container.Owner], masterComp);
+            Dirty(masterUid, masterComp);
         }
 
         if (masterComp.Slaves.Count == 0)
@@ -248,7 +261,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                 Loc.GetString("mindslave-implant-master-noslaves")
                 );
             }
-            RemComp<MindSlaveMasterComponent>(_mindSlaveImplantUsers[args.Container.Owner]);
+            RemComp<MindSlaveMasterComponent>(masterUid);
         }
 
         RemComp<MindSlaveComponent>(args.Container.Owner);

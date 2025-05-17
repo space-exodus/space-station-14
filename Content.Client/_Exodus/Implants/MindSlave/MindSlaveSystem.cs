@@ -21,7 +21,7 @@ public sealed class MindSlaveSystem : EntitySystem
         if (!HasComp<MindSlaveComponent>(ent.Owner))
             return;
 
-        if (!TryComp<MindSlaveMasterComponent>(EntityManager.GetEntity(ent.Comp.Master), out var masterComp))
+        if (!TryGetEntity(ent.Comp.Master, out var masterEntity) || !TryComp<MindSlaveMasterComponent>(masterEntity, out var masterComp))
         {
             return;
         }
