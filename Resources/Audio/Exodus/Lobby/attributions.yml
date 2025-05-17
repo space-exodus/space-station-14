@@ -49,26 +49,26 @@
   source: "https://www.youtube.com/watch?v=x4uatkFdZoU"
 
 - files: ["nothing-wrong-with-megacorpos.ogg"]
-  license: "CC0 1.0 Universal"
+  license: "CC0 1.0"
   copyright: "Made by A-Guy"
   source: "https://github.com/A-Guy173/Music?tab=CC0-1.0-1-ov-file"
 
 - files: ["nuclearoperations_remake.ogg"]
-  license: "CC0 1.0 Universal"
+  license: "CC0 1.0"
   copyright: "Original taken from /tg/station, Remix by A-Guy"
   source: "https://github.com/A-Guy173/Music?tab=CC0-1.0-1-ov-file"
 
 - files: ["revolution_A-Guy.ogg"]
-  license: "CC0 1.0 Universal"
+  license: "CC0 1.0"
   copyright: "Made by A-Guy"
   source: "https://github.com/A-Guy173/Music?tab=CC0-1.0-1-ov-file"
 
 - files: ["lavaland.ogg"]
-  license: "CC0 1.0 Universal"
+  license: "CC0 1.0"
   copyright: "Made by A-Guy"
   source: "https://github.com/A-Guy173/Music?tab=CC0-1.0-1-ov-file"
 
-- files: ["corporate_rats.ogg"]
+- files: ["corporate-rats.ogg"]
   license: "CC-BY-3.0"
   copyright: "Made by Bolgarich"
   source: "https://youtu.be/F4OkYAPaqeI?si=o6EtMBJQ8jYLC0bL"
@@ -128,12 +128,12 @@
   copyright: "Made by Andreas Rönnberg"
   source: "https://youtu.be/Si8pLbB25zA?si=saTfa9_l6fqzOXji"
 
-- files: ["jumping_strings.ogg"]
+- files: ["jumping-strings.ogg"]
   license: "CC-BY-3.0"
   copyright: "Made by Andreas Rönnberg"
   source: "https://youtu.be/MIA0H46fBRg?si=5CfnYxExVIgXzgRP"
 
-- files: ["chainsaw_reaction.ogg"]
+- files: ["chainsaw-reaction.ogg"]
   license: "CC-BY-3.0"
   copyright: "Made by Muddasheep"
   source: "https://youtu.be/CRTQo23sse0?si=yV2YBlvfFHdfBf_O"
@@ -167,3 +167,43 @@
   license: "CC-BY-3.0"
   copyright: "Made by DM DOKURO"
   source: "https://youtu.be/QRuwCLF6rBM?si=kRAwD3t8quZz_uka"
+
+- files: ["erased-one.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/nWHQSi1j4zU?si=qItaifiLtxK274Sd"
+
+- files: ["exodus.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/kElDkXwngqI?si=YVYfxkjEJUV_8s9a"
+
+- files: ["seven-summer-days.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/T7sas95Qqo4?si=IRh9X7WjZf_AzLsC"
+
+- files: ["sanati.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/g4SZSI2cM3w?si=RPc03S3axcfhSpHy"
+
+- files: ["tabula-rasa.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/Y7DUFyDiOQI?si=g5iugR_SFe8OPT3K"
+
+- files: ["will-we-meet-again.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/xvjtrxg49kg?si=MMkIg3aAsv6oO5uK"
+
+- files: ["deadman-on-vacation.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/P7Areym8sls?si=Nr5cLkaIv1gJr595"
+
+- files: ["my-silent-angel.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Made by April Rain"
+  source: "https://youtu.be/-qjADANNHEY?si=qQpnxu_1ii1z5tma"
