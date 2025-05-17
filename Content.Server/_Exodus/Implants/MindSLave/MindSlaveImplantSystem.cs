@@ -22,7 +22,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
     [ValidatePrototypeId<TagPrototype>]
     public const string MindSlaveTag = "MindSlave";
-    private readonly Dictionary<EntityUid, EntityUid> _mindSLaveImplantMap = new();
+    private readonly Dictionary<EntityUid, EntityUid> _mindSlaveImplantMap = new();
     private readonly Dictionary<EntityUid, EntityUid> _mindSlaveImplantUsers = new();
 
     public override void Initialize()
@@ -45,7 +45,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             if (MindSlaveRemovalCheck(ev.Implanted.Value, ev.Implant))
                 return;
 
-            _mindSLaveImplantMap[ev.Implanted.Value] = ev.Implant;
+            _mindSlaveImplantMap[ev.Implanted.Value] = ev.Implant;
 
             EnsureComp<MindSlaveComponent>(ev.Implanted.Value);
 
@@ -58,14 +58,11 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                 );
             }
 
-
-            EnsureComp<MindSlaveMasterComponent>(_mindSlaveImplantUsers[ev.Implanted.Value]);
             if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var master))
                 return;
-
             EnsureComp<MindSlaveMasterComponent>(master);
 
-            _playerManager.TryGetSessionByEntity(_mindSlaveImplantUsers[ev.Implanted.Value], out var playerMasterSession);
+            _playerManager.TryGetSessionByEntity(master, out var playerMasterSession);
             if (playerMasterSession != null)
             {
                 _chatManager.DispatchServerMessage(
@@ -85,7 +82,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             if (!masterComp.Slaves.Contains(ev.Implanted.Value))
             {
                 masterComp.Slaves.Add(ev.Implanted.Value);
-                Dirty(_mindSlaveImplantUsers[ev.Implanted.Value], masterComp);
+                Dirty(master, masterComp);
             }
 
             var iconWhiteList = new List<NetEntity>();
@@ -96,7 +93,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                     iconWhiteList.Add(EntityManager.GetNetEntity(slave));
                 }
             }
-            iconWhiteList.Add(EntityManager.GetNetEntity(_mindSlaveImplantUsers[ev.Implanted.Value]));
+            iconWhiteList.Add(EntityManager.GetNetEntity(master));
 
             var whitelistSlaves = new EntityWhitelist
             {
@@ -105,7 +102,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
             masterComp.SlavesWhiteList = whitelistSlaves;
 
-            Dirty(_mindSlaveImplantUsers[ev.Implanted.Value], masterComp);
+            Dirty(master, masterComp);
 
         }
 
@@ -196,6 +193,9 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                 Dirty(masterUid, masterComp);
             }
 
+            if (_mindSlaveImplantUsers.ContainsKey(ev.Implanted.Value))
+                _mindSlaveImplantUsers.Remove(ev.Implanted.Value);
+
             if (masterComp.Slaves.Count == 0)
             {
                 _playerManager.TryGetSessionByEntity(masterUid, out var playerMasterSession);
@@ -212,7 +212,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
             RemComp<MindSlaveComponent>(ev.Implanted.Value);
 
-            if (!_mindSLaveImplantMap.TryGetValue(ev.Implanted.Value, out var implantUid))
+            if (!_mindSlaveImplantMap.TryGetValue(ev.Implanted.Value, out var implantUid))
                 return;
 
             QueueDel(implantUid);
@@ -251,9 +251,12 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             Dirty(masterUid, masterComp);
         }
 
+        if (_mindSlaveImplantUsers.ContainsKey(args.Container.Owner))
+            _mindSlaveImplantUsers.Remove(args.Container.Owner);
+
         if (masterComp.Slaves.Count == 0)
         {
-            _playerManager.TryGetSessionByEntity(_mindSlaveImplantUsers[args.Container.Owner], out var playerMasterSession);
+            _playerManager.TryGetSessionByEntity(masterUid, out var playerMasterSession);
             if (playerMasterSession != null)
             {
                 _chatManager.DispatchServerMessage(
