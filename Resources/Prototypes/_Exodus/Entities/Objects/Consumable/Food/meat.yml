@@ -66,6 +66,16 @@
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/meat.rsi
     state: kidan-rotten
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Mold
+          Quantity: 15
 
 - type: entity
   name: raw kidan cutlet
@@ -76,8 +86,6 @@
   - type: Sprite
     sprite: Exodus/Objects/Consumable/Food/meat.rsi
     state: kidan-cutlet
-  - type: RotInto
-    entity: FoodMeatKidanCutletRotten
   - type: SolutionContainerManager
     solutions:
       food:
@@ -118,14 +126,3 @@
     entries:
       Burger: KidanCutlet
       Taco: KidanCutlet
-
-- type: entity
-  name: rotten kidan cutlet
-  id: FoodMeatKidanCutletRotten
-  parent: FoodMeatRotten
-  components:
-  - type: Sprite
-    sprite: Exodus/Objects/Consumable/Food/meat.rsi
-    state: kidan-rotten
-
-

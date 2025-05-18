@@ -2,3 +2,23 @@
   id: caesium
   flavorType: Complex
   description: flavor-complex-caesium
+
+- type: flavor
+  id: friday
+  flavorType: Complex
+  description: flavor-complex-friday
+
+- type: flavor
+  id: greedily
+  flavorType: Base
+  description: flavor-base-greedily
+
+- type: flavor
+  id: invigoratingly
+  flavorType: Base
+  description: flavor-base-invigoratingly
+
+- type: flavor
+  id: pain
+  flavorType: Base
+  description: flavor-base-pain
