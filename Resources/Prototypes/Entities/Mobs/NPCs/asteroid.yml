@@ -198,8 +198,20 @@
   - type: Sprite
     sprite: Mobs/Aliens/Asteroid/hivelord.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
+    - map: ["calm"]
       state: hivelord
+    - state: hivelord_alert
+      visible: false
+      map: ["attack"]
+  - type: GenericVisualizer
+    visuals:
+      enum.AmmoVisuals.HasAmmo:
+        attack:
+          True: { visible: False }
+          False: { visible: True }
+        calm:
+          True: { visible: True }
+          False: { visible: False }
   - type: DamageStateVisuals
     states:
       Alive:
@@ -226,7 +238,7 @@
     soundGunshot: null
   - type: RechargeBasicEntityAmmo
     showExamineText: false
-    rechargeCooldown: 0
+    rechargeCooldown: 1
     rechargeSound: null
   - type: BasicEntityAmmoProvider
     proto: MobHivelordBrood
