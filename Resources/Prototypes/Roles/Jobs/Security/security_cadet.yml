@@ -10,6 +10,14 @@
       department: Security
       time: 72000 #20 hrs # Corvax-RoleTime
       inverted: true # stop playing intern if you're good at security!
+    # Exodus-Better-Sec-Hiring-Start
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+    # Exodus-Better-Sec-Hiring-End
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security
