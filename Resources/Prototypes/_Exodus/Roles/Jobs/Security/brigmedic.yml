@@ -16,6 +16,7 @@
       - Muted
       - Blindness
       - Narcolepsy
+      - Pacifist
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

@@ -7,6 +7,14 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 7200 #2 hrs # Corvax-RoleTime
+    # Exodus-Better-Med-Hiring-Start
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+    # Exodus-Better-Med-Hiring-End
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
