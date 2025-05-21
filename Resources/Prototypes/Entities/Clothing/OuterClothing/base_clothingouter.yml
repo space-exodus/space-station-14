@@ -101,19 +101,10 @@
 
 - type: entity
   abstract: true
-  parent: [ClothingOuterBase, GeigerCounterClothing, AllowSuitStorageClothing]
+  parent: [ClothingOuterBase, GeigerCounterClothing, AllowSuitStorageClothing, ClothingOuterRadioSlot ] # Exodus-Armor-Tweak-Radio
   id: ClothingOuterHardsuitBase
   name: base hardsuit
   components:
-  # Exodus-Hardsuit-Tweak-Start
-  - type: ItemSlots
-    slots:
-      item:
-        name: clothing-hardsuit-radio
-        whitelist:
-          tags:
-          - Radio
-  # Exodus-Hardsuit-Tweak-End
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
