@@ -555,6 +555,10 @@
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
+  # Exodus-CentCom-Lore-Start
+  speciesBlacklist:
+    - Vox
+  # Exodus-CentCom-Lore-End
   parent: EventHumanoidMindShielded
   components:
     - type: GhostRole
