@@ -550,3 +550,17 @@
       - id: OrganHumanKidneys
         prob: 0.00001
         orGroup: dressersecondloot
+      # Exodus-Nya-Paws-Start
+      - id: ClothingHandsCatPawsBrown
+        prob: 0.005
+        orGroup: dressermainloot
+      - id: ClothingHandsCatPawsBlack
+        prob: 0.005
+        orGroup: dressermainloot
+      - id: ClothingHandsCatPawsBlackWhite
+        prob: 0.005
+        orGroup: dressermainloot
+      - id: ClothingHandsCatPawsWhite
+        prob: 0.005
+        orGroup: dressermainloot
+      # Exodus-Nya-Paws-End
