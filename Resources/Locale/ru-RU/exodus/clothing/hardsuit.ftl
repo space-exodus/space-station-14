@@ -1,1 +1,1 @@
-clothing-hardsuit-radio = Снять рацию
+clothing-armor-radio = Снять рацию

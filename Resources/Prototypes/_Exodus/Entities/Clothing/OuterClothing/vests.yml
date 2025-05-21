@@ -18,3 +18,16 @@
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
+
+- type: entity
+  id: ClothingOuterRadioSlot
+  name: base armor with radio
+  abstract: true
+  components:
+  - type: ItemSlots
+    slots:
+      item:
+        name: clothing-armor-radio
+        whitelist:
+          tags:
+          - Radio
