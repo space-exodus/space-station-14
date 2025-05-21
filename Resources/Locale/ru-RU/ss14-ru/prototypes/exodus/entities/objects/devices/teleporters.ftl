@@ -1,0 +1,15 @@
+ent-BigCarpHandTeleporter = странный ручной телепортер
+    .suffix = Адмемы, Большие порталы карпов
+ent-BigPortalCarp = ???
+    .desc = Активное проявление блюспейс активности... Или нет?
+    .suffix = Адмемы
+ent-SmallCarpHandTeleporter = загадочный ручной телепортер
+    .suffix = Адмемы, Маленькие порталы карпов
+ent-SmallPortalCarp = ???
+    .desc = Активное проявление блюспейс активности... Или нет?
+    .suffix = Адмемы
+ent-HandTeleporterInvisible = прозрачный ручной телепортер
+    .suffix = Адмемы, Невидимые Порталы
+ent-PortalAdmemeInvisible = ???
+    .desc = Активное проявление блюспейс активности... Или нет?
+    .suffix = Адмемы
