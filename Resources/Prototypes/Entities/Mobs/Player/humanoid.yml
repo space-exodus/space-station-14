@@ -35,7 +35,21 @@
   id: DeathSquad
   parent: EventHumanoidMindShielded
   randomizeName: false
-  speciesBlacklist: ['Diona'] # Corvax-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
+    - Diona
+    - Arachnid
+    - Dwarf
+    - Moth
+    - Reptilian
+    - Skeleton
+    - SlimePerson
+    - Vulpkanin
+    - Vox
+    - Kidan
+    - Felinid
+    - NewKidan
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: GhostRole
       name: ghost-role-information-Death-Squad-name
@@ -75,6 +89,11 @@
   id: ERTLeader
   parent: EventHumanoidMindShielded
   randomizeName: false
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
+    - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
@@ -355,8 +374,6 @@
 
 - type: randomHumanoidSettings
   id: ERTSecurity
-  speciesBlacklist: # Corvax-MRP
-    - Diona
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -502,8 +519,11 @@
       settings: CBURNAgent
 
 - type: randomHumanoidSettings
-  speciesBlacklist: # Corvax-MRP
-    - Diona
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
+    - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   id: CBURNAgent
   parent: EventHumanoidMindShielded
   components:
@@ -582,6 +602,11 @@
 
 - type: randomHumanoidSettings
   id: NukeOp
+  # Exodus-Nukie-Balance-and-Lore-Start
+  speciesBlacklist:
+    - Vox
+    - Felinid
+  # Exodus-Nukie-Balance-and-Lore-End
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
