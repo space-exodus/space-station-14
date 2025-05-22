@@ -7,6 +7,15 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 #10 hrs # Corvax-RoleTime
+    # Exodus-Better-Sec-Hiring-Start
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+      - Pacifist
+    # Exodus-Better-Sec-Hiring-End
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

@@ -17,6 +17,14 @@
       time: 54000 #15 hrs # Corvax-RoleTime
 #    - !type:OverallPlaytimeRequirement
 #      time: 144000 #40 hrs
+    # Exodus-Better-Med-Hiring-Start
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+    # Exodus-Better-Med-Hiring-End
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

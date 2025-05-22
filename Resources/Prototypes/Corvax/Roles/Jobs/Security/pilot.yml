@@ -7,6 +7,15 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 72000 #20 hrs
+  # Exodus-Better-Sec-Hiring-Start
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Muted
+    - Blindness
+    - Narcolepsy
+    - Pacifist
+  # Exodus-Better-Sec-Hiring-End
   startingGear: PilotGear
   icon: "JobIconPilot"
   supervisors: job-supervisors-hos

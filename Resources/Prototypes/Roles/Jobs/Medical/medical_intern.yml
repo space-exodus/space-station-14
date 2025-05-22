@@ -8,6 +8,14 @@
       department: Medical
       time: 36000 #10 hrs # Corvax-RoleTime
       inverted: true # stop playing intern if you're good at med!
+    # Exodus-Better-Med-Hiring-Start
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+    # Exodus-Better-Med-Hiring-End
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"
   supervisors: job-supervisors-medicine
