@@ -28,6 +28,10 @@
     slots:
       item:
         name: clothing-armor-radio
+        insertVerbText: armor-radio-insert-verb
+        ejectVerbText: armor-radio-eject-verb
+        insertSound: /Audio/Exodus/Clothing/radio_equip.ogg
+        ejectSound: /Audio/Exodus/Clothing/radio_equip_2.ogg
         whitelist:
           tags:
           - Radio
