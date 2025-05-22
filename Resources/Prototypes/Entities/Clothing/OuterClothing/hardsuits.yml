@@ -199,9 +199,11 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitGoliath
-  - type: Construction
-    graph: HardsuitGoliath
-    node: hardsuitGoliath
+# Exodus-Our-Maximal-HardSuit-Start
+  # - type: Construction
+  #   graph: HardsuitGoliath
+  #   node: hardsuitGoliath
+# Exodus-Our-Maximal-HardSuit-Start
 
 #Maxim Hardsuit
 - type: entity

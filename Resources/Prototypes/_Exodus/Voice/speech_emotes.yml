@@ -3,7 +3,7 @@
   id: Grumble
   name: chat-emote-name-grumble
   category: Vocal
-  chatMessages: [ворчит.]
+  chatMessages: [ворчит]
   chatTriggers:
     - grumble
     - grumbles
@@ -15,18 +15,18 @@
   name: chat-emote-name-rumble
   category: Vocal
   available: false
-  chatMessages: [урчит.]
+  chatMessages: [урчит]
   chatTriggers:
     - урчит
-    - мурчит
 
 #region Kidan
 - type: emote
   id: WigglesAntennae
   name: chat-emote-name-wiggle-antennae
-  category: Vocal
+  category: General
   available: false
-  chatMessages: [шевелит антенками.]
+  icon: Exodus/Interface/Emotes/wiggles_antennae.png
+  chatMessages: [шевелит антенками]
   chatTriggers:
     - waves antennae
     - wiggles antennae
@@ -38,9 +38,10 @@
 - type: emote
   id: WavesAntennaeSharply
   name: chat-emote-name-wave-antennae-sharply
-  category: Vocal
+  category: General
   available: false
-  chatMessages: [резко машет антенками.]
+  icon: Exodus/Interface/Emotes/moves_wiggles_antennae.png
+  chatMessages: [резко машет антенками]
   chatTriggers:
     - waves antennae sharply
     - резко машет усиками
@@ -51,11 +52,25 @@
   name: chat-emote-name-jaws-snap
   category: Vocal
   available: false
-  chatMessages: [щёлкает челюстями.]
+  icon: Exodus/Interface/Emotes/snaps_jaws.png
+  chatMessages: [щёлкает челюстями]
   chatTriggers:
     - snaps his jaws
     - snaps jaws
     - щёлкает челюстями
     - щелкает челюстями
     - трещит челюстями
+
+- type: emote
+  id: Groan
+  name: chat-emote-name-groan
+  category: Vocal
+  available: false
+  icon: Exodus/Interface/Emotes/groan.png
+  chatMessages: [устало стонет]
+  chatTriggers:
+    - groans
+    - стонет
+    - устало стонет
+
 #region Reptilian

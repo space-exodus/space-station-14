@@ -49,29 +49,6 @@
 
 - type: entity
   parent: BasePlushie
-  id: PlushCeaser
-  name: Ceaser
-  components:
-  - type: Item
-    size: Normal
-  - type: Sprite
-    sprite: Exodus/Objects/Fun/toys.rsi
-    state: plush_ceaser
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Exodus/Items/Toys/ceaser.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Exodus/Items/Toys/ceaser.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Exodus/Items/Toys/ceaser.ogg
-  - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Exodus/Items/Toys/ceaser.ogg
-
-- type: entity
-  parent: BasePlushie
   id: PlushAtima
   name: Atima
   components:

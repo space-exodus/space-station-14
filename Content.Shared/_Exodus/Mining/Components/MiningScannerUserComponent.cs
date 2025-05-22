@@ -5,7 +5,7 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared.Exodus.Mining.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause, Access(typeof(MiningScannerSystem))]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause, Access(typeof(SharedMiningScannerSystem))]
 public sealed partial class MiningScannerUserComponent : Component
 {
     [DataField]
@@ -17,11 +17,11 @@ public sealed partial class MiningScannerUserComponent : Component
     [DataField, AutoNetworkedField, AutoPausedField]
     public TimeSpan NextPingTime = TimeSpan.MaxValue;
 
-    [DataField]
+    [DataField, AutoNetworkedField]
     public float AnimationDuration = 1.5f;
 
-    [DataField]
-    public float ViewRange;
+    [DataField, AutoNetworkedField]
+    public float ViewRange = 5f;
 
     [DataField, AutoNetworkedField]
     public SoundSpecifier? PingSound = new SoundPathSpecifier("/Audio/Machines/sonar-ping.ogg")
