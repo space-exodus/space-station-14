@@ -64,7 +64,7 @@
 - type: emote
   id: Groan
   name: chat-emote-name-groan
-  categories: Vocal
+  category: Vocal
   available: false
   icon: Exodus/Interface/Emotes/groan.png
   chatMessages: [устало стонет]

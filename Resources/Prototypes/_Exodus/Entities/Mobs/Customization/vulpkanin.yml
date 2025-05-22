@@ -1,4 +1,4 @@
-# Snouts
+#region Snouts
 - type: marking
   id: VulpkaninSpotThroat
   bodyPart: Snout
@@ -161,7 +161,7 @@
     - sprite: Exodus/Mobs/Customization/Vulpkanin/vulpkanin_snout.rsi
       state: thai
 
-# Ears
+#region Ears
 - type: marking
   id: VulpkaninEarsCutoff
   bodyPart: HeadTop
