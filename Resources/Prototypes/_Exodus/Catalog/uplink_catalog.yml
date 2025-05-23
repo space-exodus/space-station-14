@@ -34,6 +34,7 @@
         components:
           - SurplusBundle
 
+- type: listing
   id: UplinkCatEars
   name: uplink-cat-ears-name
   description: uplink-cat-ears-desc
