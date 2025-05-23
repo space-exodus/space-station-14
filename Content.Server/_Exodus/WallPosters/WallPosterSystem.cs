@@ -1,7 +1,6 @@
 using Content.Server.Engineering.Components;
-using Content.Server.Engineering.EntitySystems;
 using Content.Server.Exodus.WallPoster.Components;
-using Content.Shared.Mobs;
+using Content.Shared.Engineering.Systems;
 
 namespace Content.Server.Exodus.WallPoster.Systems;
 public sealed class WallPosterSystem : EntitySystem

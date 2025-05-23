@@ -42,12 +42,12 @@ nano-task-ui-heading-low-priority-tasks =
        *[other] { $amount } задач с низким приоритетом
     }
 nano-task-ui-done = Готово
-nano-task-ui-revert-done = Отменить
+nano-task-ui-revert-done = Отмена
 nano-task-ui-priority-low = Низкий
 nano-task-ui-priority-medium = Средний
 nano-task-ui-priority-high = Высокий
 nano-task-ui-cancel = Отмена
-nano-task-ui-print = Печать
+nano-task-ui-print = Распечатать
 nano-task-ui-delete = Удалить
 nano-task-ui-save = Сохранить
 nano-task-ui-new-task = Новая задача

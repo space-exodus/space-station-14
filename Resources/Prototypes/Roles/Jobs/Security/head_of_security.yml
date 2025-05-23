@@ -15,6 +15,15 @@
       time: 108000 #50 hrs # Corvax-RoleTime
 #    - !type:OverallPlaytimeRequirement
 #      time: 144000 #40 hrs
+    # Exodus-Better-Sec-Hiring-Start
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+      - Pacifist
+    # Exodus-Better-Sec-Hiring-End
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"

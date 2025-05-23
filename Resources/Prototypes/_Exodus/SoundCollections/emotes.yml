@@ -55,7 +55,7 @@
     - /Audio/Exodus/Voice/Kidan/grumble3.ogg
 
 - type: soundCollection
-  id: KidanMoan
+  id: KidanGroan
   files:
     - /Audio/Exodus/Voice/Kidan/moan1.ogg
 
@@ -71,6 +71,23 @@
   files:
     - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply1.ogg
     - /Audio/Exodus/Voice/Kidan/waves_antennae_sharply2.ogg
+
+- type: soundCollection
+  id: KidanJawsSnap
+  files:
+    - /Audio/Exodus/Voice/Kidan/clicking.ogg
+    - /Audio/Exodus/Voice/Kidan/clicking2.ogg
+    - /Audio/Exodus/Voice/Kidan/clicking3.ogg
+
+- type: soundCollection
+  id: KidanYawn
+  files:
+    - /Audio/Exodus/Voice/Kidan/yawn_k.ogg
+
+- type: soundCollection
+  id: KidanWhistle
+  files:
+    - /Audio/Exodus/Voice/Kidan/whistle_k.ogg
 
 #region Reptilian
 - type: soundCollection

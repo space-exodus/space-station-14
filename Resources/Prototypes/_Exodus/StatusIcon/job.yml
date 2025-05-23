@@ -4,6 +4,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: BlueshieldOfficer
+  jobName: job-name-blueshieldofficer
 
 - type: jobIcon
   parent: JobIcon
@@ -11,3 +12,4 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: DeathSquad
+  jobName: job-name-deathsquad-icon

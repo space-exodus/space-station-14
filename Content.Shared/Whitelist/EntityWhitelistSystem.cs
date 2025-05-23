@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Item;
-using Content.Shared.Roles;
 using Content.Shared.Tag;
 
 namespace Content.Shared.Whitelist;
@@ -8,7 +7,6 @@ namespace Content.Shared.Whitelist;
 public sealed class EntityWhitelistSystem : EntitySystem
 {
     [Dependency] private readonly IComponentFactory _factory = default!;
-    [Dependency] private readonly SharedRoleSystem _roles = default!;
     [Dependency] private readonly TagSystem _tag = default!;
 
     private EntityQuery<ItemComponent> _itemQuery;

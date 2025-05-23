@@ -108,6 +108,9 @@
       arc: 360
     - type: StaticPrice
       price: 150
+# Exodus FireFight-Door-Remote-Return-Start
+    - type: DoorBolt
+# Exodus FireFight-Door-Remote-Return-End
     - type: AccessReader
       access: [ [ "Engineering" ] ]
     - type: PryUnpowered

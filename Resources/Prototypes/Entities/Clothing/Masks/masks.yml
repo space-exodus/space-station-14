@@ -450,7 +450,8 @@
     slots:
     - Hair
     - Snout
-    - FacialHair
+    - HeadTop
+    - HeadSide
     hideOnToggle: true
 
 - type: entity

@@ -33,3 +33,13 @@
       blacklist:
         components:
           - SurplusBundle
+
+  id: UplinkCatEars
+  name: uplink-cat-ears-name
+  description: uplink-cat-ears-desc
+  icon: { sprite: /Textures/Clothing/Head/Hats/catears.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateCatBundle
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkPointless

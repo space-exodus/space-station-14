@@ -9,7 +9,7 @@ spellbook-force-wall-name = Силовой барьер
 spellbook-force-wall-desc = Создайте три стены чистой энергии, через которые вы можете пройти, а другие - нет.
 spellbook-repulse-name = Толчок
 spellbook-repulse-desc = Я говорю GITTAH`WEIGH и оттолкиваю их от себя.
-spellbook-smoke-name = Дым
+spellbook-smoke-name = Дымка
 spellbook-smoke-desc = Создает вокруг клубы дыма
 spellbook-polymorph-spider-name = Полиморф-паук
 spellbook-polymorph-spider-desc = Превращает вас в паука!
@@ -24,13 +24,13 @@ spellbook-animate-name = Одушевление
 spellbook-animate-description = Оживите неодушевленный предмет!
 spellbook-mind-swap-description = Обменяйтесь телами с другим человеком!
 spellbook-smite-name = Кара
-spellbook-smite-desc = Они тебе не нравятся? ВЗОРВИ ИХ, оставив только потроха. Требуется магическая шляпа и мантия волшебника.
+spellbook-smite-desc = Они тебе не нравятся? ВЗОРВИ ИХ, оставив только потроха. Требуется магическая шляпа и мантия мага.
 spellbook-cluwne-name = Проклятия клувня
-spellbook-cluwne-desc = Для случаев, когда вы действительно ненавидите кого-то, а кары недостаточно. Требуется магическая шляпа и мантия волшебника.
+spellbook-cluwne-desc = Для случаев, когда вы действительно ненавидите кого-то, а кары недостаточно. Требуется магическая шляпа и мантия мага.
 spellbook-slip-name = Скользкая дорожка
 spellbook-item-recall-name = Призыв предмета
 spellbook-item-recall-description = Пометьте удерживаемый предмет и вызовите его обратно в любой момент, одним щелчком пальцев!
-spellbook-slip-desc = Изучите древние приемы уборщика и прокляните свою цель, чтобы она подскальзывалась. Требуется магическая шляпа и мантия волшебника.
+spellbook-slip-desc = Изучите древние приемы уборщика и прокляните свою цель, чтобы она подскальзывалась. Требуется магическая шляпа и мантия мага.
 
 # Equipment
 
