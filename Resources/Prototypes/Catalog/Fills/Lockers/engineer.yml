@@ -96,6 +96,9 @@
       - id: HolofanProjector
       - id: RCD
       - id: RCDAmmo
+# Exodus FireFight-Door-Remote-Return-Start
+      - id: DoorRemoteFirefight
+# Exodus FireFight-Door-Remote-Return-End
 
 - type: entity
   id: LockerAtmosphericsFilled
@@ -112,6 +115,9 @@
       - id: HolofanProjector
       - id: RCD
       - id: RCDAmmo
+# Exodus FireFight-Door-Remote-Return-Start
+      - id: DoorRemoteFirefight
+# Exodus FireFight-Door-Remote-Return-End
 
 - type: entity
   id: LockerEngineerFilledHardsuit
