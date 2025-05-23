@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Content.Server.Chat.Systems;
-using Content.Server.Players.RateLimiting;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
@@ -143,17 +142,5 @@ public sealed partial class TTSSystem : EntitySystem
             textSanitized += ".";
 
         return await _ttsManager.ConvertTextToSpeech(speaker, textSanitized);
-    }
-}
-
-public sealed class TransformSpeakerVoiceEvent : EntityEventArgs
-{
-    public EntityUid Sender;
-    public string VoiceId;
-
-    public TransformSpeakerVoiceEvent(EntityUid sender, string voiceId)
-    {
-        Sender = sender;
-        VoiceId = voiceId;
     }
 }

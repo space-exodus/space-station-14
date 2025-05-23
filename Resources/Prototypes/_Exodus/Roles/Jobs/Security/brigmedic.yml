@@ -10,6 +10,13 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 # 10 hrs
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+      - Blindness
+      - Narcolepsy
+      - Pacifist
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

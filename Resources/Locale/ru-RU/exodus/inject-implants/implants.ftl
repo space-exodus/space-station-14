@@ -16,4 +16,7 @@ ent-MindSlaveImplanter = { ent-BaseImplantOnlyImplanterSyndi }
     .suffix = Подчинение
 ent-MindSlaveImplant = имплант "подчинение"
     .desc = Этот имплант заставляет носителя полностью подчиняться хозяину, пока имплант активен
-
+ent-ActionStimulantsImplant = Ввести стимуляторы в кровь
+    .desc = Немедленно вводит стимуляторы в кровеносную систему
+ent-ActionCombatInjectorImplant = Ввести медикаменты в кровь
+    .desc = Немедленная доза медикаментов в критических ситуациях

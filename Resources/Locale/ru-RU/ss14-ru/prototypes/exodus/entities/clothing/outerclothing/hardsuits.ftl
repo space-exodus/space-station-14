@@ -18,3 +18,7 @@ ent-ClothingOuterHardsuitSalvageMaximal = { ent-ClothingOuterHardsuitMaxim }
     .desc = { ent-ClothingOuterHardsuitMaxim.desc }
 ent-ClothingHeadHelmetHardsuitSalvageMaximal = { ent-ClothingHeadHelmetHardsuitMaxim }
     .desc = { ent-ClothingHeadHelmetHardsuitMaxim.desc }
+ent-ClothingOuterHardsuitBlueshield = скафандр офицера Синего Щита
+    .desc = Совершенно новый скафандр разработанный специально для Департамента "Синий Щит". Это самый красивый скафандр, который вы когда-либо видели.
+ent-ClothingHeadHelmetHardsuitBlueshield = шлем скафандра офицера Синего Щита
+    .desc = Элемент скафандра офицера Синего Щита. Он прекрасен.

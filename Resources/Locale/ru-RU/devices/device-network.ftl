@@ -10,13 +10,13 @@ device-frequency-prototype-name-basic-device = Базовые устройств
 device-frequency-prototype-name-cyborg-control = Управление киборгами
 device-frequency-prototype-name-robotics-console = Консоль управления робототехникой
 device-frequency-prototype-name-turret = Охранная турель
-device-frequency-prototype-name-turret-control = Управление охранными турелями
-# prefixes for randomly generated device addresses
-device-address-prefix-vent = Вент-
-device-address-prefix-scrubber = Скр-
+device-frequency-prototype-name-turret-control = Управление охранной турелью
+
+## camera frequencies
+
 device-frequency-prototype-name-surveillance-camera-test = Тест подсети
 device-frequency-prototype-name-surveillance-camera-engineering = Камеры (Инженерный)
-device-frequency-prototype-name-surveillance-camera-security = Камеры (Охрана)
+device-frequency-prototype-name-surveillance-camera-security = Камеры (Служба безопасности)
 device-frequency-prototype-name-surveillance-camera-science = Камеры (Научный)
 device-frequency-prototype-name-surveillance-camera-supply = Камеры (Снабжение)
 device-frequency-prototype-name-surveillance-camera-command = Камеры (Командование)
@@ -24,6 +24,9 @@ device-frequency-prototype-name-surveillance-camera-service = Камеры (Се
 device-frequency-prototype-name-surveillance-camera-medical = Камеры (Медицинский)
 device-frequency-prototype-name-surveillance-camera-general = Камеры (Общие)
 device-frequency-prototype-name-surveillance-camera-entertainment = Камеры (Развлечения)
+# prefixes for randomly generated device addresses
+device-address-prefix-vent = Вен-
+device-address-prefix-scrubber = СКР-
 device-address-prefix-sensor = Сенс-
 device-address-prefix-fire-alarm = Пож-
 # Damn bet you couldn't see this one coming.
@@ -32,7 +35,7 @@ device-address-prefix-heater = НГР-
 device-address-prefix-freezer = ОХЛ-
 device-address-prefix-volume-pump = ОБН-
 device-address-prefix-smes = СМС-
-device-address-prefix-turret = ТУР-
+device-address-prefix-turret = ТРЛ-
 #PDAs and terminals
 device-address-prefix-console = Конс-
 device-address-prefix-air-alarm = Возд-

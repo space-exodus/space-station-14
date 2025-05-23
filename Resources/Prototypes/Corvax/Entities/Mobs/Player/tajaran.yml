@@ -1,0 +1,7 @@
+# Exodus-Tajaran-Remove-Start
+# - type: entity
+#   save: false
+#   name: Urist McTajar
+#   parent: [BaseMobTajaran, BaseMob]
+#   id: MobTajaran
+# Exodus-Tajaran-Remove-End

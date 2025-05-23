@@ -56,7 +56,7 @@ admin-smite-vomit-organs-name = Рвота органами
 admin-smite-ghostkick-name = Кик втихаря
 admin-smite-nyanify-name = НЯфикация
 admin-smite-kill-sign-name = Знак смерти
-admin-smite-omni-accent-name = Омни-Акцент
+admin-smite-omni-accent-name = Омни-акцент
 
 ## Smite descriptions
 

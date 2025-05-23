@@ -1,4 +1,4 @@
-ent-SyringeAmmo = метательный щприц
+ent-SyringeAmmo = метательный шприц
     .desc = Метательный шприц, вводящий реагент при попадании.
 ent-SyringeAmmoPolytrinic = { ent-SyringeAmmo }
     .desc = { ent-SyringeAmmo.desc }

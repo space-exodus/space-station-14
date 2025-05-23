@@ -1746,15 +1746,17 @@
   categories:
   - UplinkPointless
 
-- type: listing
-  id: UplinkCatEars
-  name: uplink-cat-ears-name
-  description: uplink-cat-ears-desc
-  productEntity: ClothingHeadHatCatEars
-  cost:
-    Telecrystal: 26
-  categories:
-  - UplinkPointless
+#   Exodus-Nya-Paws-Start
+# - type: listing
+#   id: UplinkCatEars
+#   name: uplink-cat-ears-name
+#   description: uplink-cat-ears-desc
+#   productEntity: ClothingHeadHatCatEars
+#   cost:
+#     Telecrystal: 26
+#   categories:
+#   - UplinkPointless
+#   Exodus-Nya-Paws-End
 
 - type: listing
   id: UplinkOutlawHat

@@ -43,7 +43,7 @@
   - type: Metabolizer
     metabolismRateModifier: 1.5
     maxReagents: 3
-    metabolizerTypes: [ NewKidan ]
+    metabolizerTypes: [ Kidan ]
     groups:
     - id: Food
     - id: Drink

@@ -478,6 +478,11 @@
           - !type:OrganType
             type: Animal
             shouldHave: false
+          # Exodus-Kidans-Start
+          - !type:OrganType
+            type: Kidan
+            shouldHave: false
+          # Exodus-Kidans-End
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
@@ -488,18 +493,28 @@
           - !type:OrganType
             type: Animal
             shouldHave: false
+          # Exodus-Kidans-Start
+          - !type:OrganType
+            type: Kidan
+            shouldHave: false
+          # Exodus-Kidans-End
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Animal
           shouldHave: false
+        # Exodus-Kidans-Start
+        - !type:OrganType
+          type: Kidan
+          shouldHave: false
+        # Exodus-Kidans-End
         damage:
           types:
             Poison: 1
       - !type:AdjustReagent
         conditions:
         - !type:OrganType
-          type: Animal
+          type: [ Animal, Kidan ] # Exodus-Kidans
           shouldHave: true
         reagent: Protein
         amount: 0.5
