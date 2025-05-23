@@ -28,7 +28,9 @@
       color: "#9f9f00"
   - type: Access
     groups:
-    - Command
+# Exodus-Door-Remote-Up-Start
+    - AllAccess
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
@@ -45,6 +47,13 @@
   - type: Access
     groups:
     - Security
+# Exodus-Door-Remote-Up-Start
+    tags:
+    - Maintenance
+    - Service
+    - External
+    - Command
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseSecurityCommandContraband]
@@ -77,6 +86,13 @@
   - type: Access
     groups:
     - Service
+# Exodus-Door-Remote-Up-Start
+    tags:
+    - Maintenance
+    - Service
+    - External
+    - Command
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
@@ -93,6 +109,11 @@
   - type: Access
     groups:
     - Research
+# Exodus-Door-Remote-Up-Start
+    tags:
+    - Maintenance
+    - Command
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
@@ -109,6 +130,13 @@
   - type: Access
     groups:
     - Cargo
+# Exodus-Door-Remote-Up-Start
+    tags:
+    - Maintenance
+    - Service
+    - External
+    - Command
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
@@ -125,6 +153,12 @@
   - type: Access
     groups:
     - Medical
+# Exodus-Door-Remote-Up-Start
+    tags:
+    - Maintenance
+    - Service
+    - Command
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
@@ -141,6 +175,13 @@
   - type: Access
     groups:
     - Engineering
+# Exodus-Door-Remote-Up-Start
+    tags:
+    - Maintenance
+    - Service
+    - External
+    - Command
+# Exodus-Door-Remote-Up-End
 
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
