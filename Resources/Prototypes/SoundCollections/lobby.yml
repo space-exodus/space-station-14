@@ -1,6 +1,12 @@
 - type: soundCollection
   id: LobbyMusic
-  files: # Exodus - LobbyMusic
+  files:
+  # Exodus-lobby-music-replace
+  - /Audio/Lobby/space_asshole.ogg
+  - /Audio/Lobby/the_wizard.ogg
+  - /Audio/Lobby/thunderdome.ogg
+  - /Audio/Lobby/absconditus.ogg
+  - /Audio/Lobby/title2.ogg
   - /Audio/Exodus/Lobby/flames.ogg
   - /Audio/Exodus/Lobby/hopeful.ogg
   - /Audio/Exodus/Lobby/larik.ogg
@@ -10,3 +16,26 @@
   - /Audio/Exodus/Lobby/voided.ogg
   - /Audio/Exodus/Lobby/weightlessness.ogg
   - /Audio/Exodus/Lobby/endless_space.ogg
+  - /Audio/Exodus/Lobby/nothing-wrong-with-megacorpos.ogg
+  - /Audio/Exodus/Lobby/nuclearoperations_remake.ogg
+  - /Audio/Exodus/Lobby/revolution_A-Guy.ogg
+  - /Audio/Exodus/Lobby/corporate-rats.ogg
+  - /Audio/Exodus/Lobby/terminated-contracts.ogg
+  - /Audio/Exodus/Lobby/liberation.ogg
+  - /Audio/Exodus/Lobby/taypan.ogg
+  - /Audio/Exodus/Lobby/tear-of-veil.ogg
+  - /Audio/Exodus/Lobby/nuke-ops-theme.ogg
+  - /Audio/Exodus/Lobby/despair.ogg
+  - /Audio/Exodus/Lobby/vordhosbn.ogg
+  - /Audio/Exodus/Lobby/devourer-of-gods.ogg
+  - /Audio/Exodus/Lobby/blessing-of-the-moon.ogg
+  - /Audio/Exodus/Lobby/heaven-sent-abomination.ogg
+  - /Audio/Exodus/Lobby/catastrophes-before-the-calamity.ogg
+  - /Audio/Exodus/Lobby/erased-one.ogg
+  - /Audio/Exodus/Lobby/exodus.ogg
+  - /Audio/Exodus/Lobby/seven-summer-days.ogg
+  - /Audio/Exodus/Lobby/sanati.ogg
+  - /Audio/Exodus/Lobby/tabula-rasa.ogg
+  - /Audio/Exodus/Lobby/will-we-meet-again.ogg
+  - /Audio/Exodus/Lobby/deadman-on-vacation.ogg
+  - /Audio/Exodus/Lobby/my-silent-angel.ogg
