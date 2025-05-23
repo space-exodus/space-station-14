@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateCatBundle
+  name: syndicate duffel bag
+  description: A large duffel bag for holding various traitor goods.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingUniformJumpskirtJanimaidmini
+    - id: ClothingUniformJumpskirtElegantMaid
+    - id: ClothingHandsCatPawsWhite
+    - id: ClothingHandsCatPawsBrown
+    - id: ClothingHandsCatPawsBlack
+    - id: ClothingHandsCatPawsBlackWhite
+    - id: ClothingUniformJumpskirtJanimaid
+    - id: ClothingHeadHatCatEars
+      amount: 3
