@@ -19,5 +19,5 @@
         - id: ClothingMaskGasSecurity
         - id: MechanicalInjector
         - id: Syringe
-        - id: OmnizineChemistryBottle
+        - id: ChemistryBottleOmnizine
           amount: 2

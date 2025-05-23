@@ -317,7 +317,7 @@
     sprintModifier: 0.9
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitBlueshield
   name: blueshield hardsuit helmet
   description: Element of blueshield's hardsuit. It's beautiful.
