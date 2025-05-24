@@ -31138,13 +31138,6 @@ entities:
     - type: Transform
       pos: 0.7375392,13.47217
       parent: 2
-- proto: MaterialReclaimer
-  entities:
-  - uid: 4741
-    components:
-    - type: Transform
-      pos: -17.5,4.5
-      parent: 2
 - proto: MaterialWoodPlank1
   entities:
   - uid: 4742

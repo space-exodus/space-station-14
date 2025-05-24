@@ -16,6 +16,7 @@
   - PillCanister
   - HandLabeler
   - BaseChemistryEmptyVial
+  - MechanicalInjector # Exodus-ThickSyringes
 
 - type: latheRecipePack
   parent: BasicChemistryStatic
@@ -93,7 +94,6 @@
   - SyringeCryostasis
   - BluespaceBeaker
   - SyringeBluespace
-  - MechanicalInjector # Exodus-ThickSyringes
 
 - type: latheRecipePack
   id: MedicalBoards

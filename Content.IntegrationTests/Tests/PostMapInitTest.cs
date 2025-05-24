@@ -81,11 +81,10 @@ namespace Content.IntegrationTests.Tests
             // Corvax-End
             // Exodus-Start
             "ExodusCluster",
-            "ExodusDelta",
-            "ExodusOmega",
             "ExodusPacked",
             "ExodusSaltern",
-            "ExodusOmicron",
+            "ExodusSalternNewYear",
+            "ExodusClusterNewYear",
             // Exodus-End
             "Dev",
             "TestTeg",
