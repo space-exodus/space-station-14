@@ -20,8 +20,8 @@
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
   - type: TemperatureProtection
-    heatingCoefficient: 0.01
-    coolingCoefficient: 0.01
+    heatingCoefficient: 0.5
+    coolingCoefficient: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.40
   - type: Armor
