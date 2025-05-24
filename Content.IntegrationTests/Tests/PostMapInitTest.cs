@@ -55,7 +55,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
-            "/Maps/Exodus/NewYear/exodus_cluster.yml" // Not actual for Exodus
+            "/Maps/Exodus/NewYear/exodus_cluster.yml", // Not actual for Exodus
             "/Maps/Exodus/NewYear/exodus_saltern.yml" // Not actual for Exodus
         };
 
