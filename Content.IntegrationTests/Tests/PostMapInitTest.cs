@@ -85,6 +85,8 @@ namespace Content.IntegrationTests.Tests
             "ExodusCluster",
             "ExodusPacked",
             "ExodusSaltern",
+            "ExodusClusterNewYear",
+            "ExodusSalternNewYear",
             // Exodus-End
             "Dev",
             "TestTeg",
