@@ -19,7 +19,7 @@ comms-console-announcement-sent-by = Отправитель
 comms-console-announcement-unknown-sender = Неизвестный
 # Comms console variant titles
 comms-console-announcement-title-station = Консоль связи
-comms-console-announcement-title-centcom = Центрального КомандованиЯ
+comms-console-announcement-title-centcom = Центрального Командования
 comms-console-announcement-title-nukie = Синдиката
 comms-console-announcement-title-station-ai = Станционного ИИ
 comms-console-announcement-title-wizard = Мага
