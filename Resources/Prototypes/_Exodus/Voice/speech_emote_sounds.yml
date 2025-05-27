@@ -34,6 +34,10 @@
       collection: Weh
     Hew:
       collection: Hew
+    Gasp:
+      collection: KidanGasp
+    DefaultDeathgasp:
+      collection: KidanDeathGasp
 
 - type: emoteSounds
   id: MaleFelinid
