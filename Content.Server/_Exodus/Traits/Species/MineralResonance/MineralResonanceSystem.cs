@@ -32,6 +32,7 @@ public sealed partial class MineralResonanceSystem : EntitySystem
 
     private void OnAction(Entity<MineralResonanceComponent> entity, ref MineralResonanceUseEvent args)
     {
+        args.Handled = true;
         _chat.TryEmoteWithChat(entity, entity.Comp.TriggerEmote);
     }
 

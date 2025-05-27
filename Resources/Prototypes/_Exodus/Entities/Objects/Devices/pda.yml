@@ -34,17 +34,6 @@
   description: Smells like death.
   suffix: commander
   components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
-    - state: "light_overlay"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
-      shader: "unshaded"
-      visible: false
-    - state: "id_overlay"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
-      shader: "unshaded"
-      visible: false
   - type: Pda
     id: IDCardDSCommander
   - type: PdaBorderColor
@@ -86,8 +75,4 @@
   components:
   - type: Pda
     id: IDCardDSSpecialist
-  - type: HealthAnalyzer
-    scanDelay: 0.5
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
 
