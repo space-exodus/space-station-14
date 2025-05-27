@@ -16,19 +16,19 @@
                     HorizontalExpand="True"
                     VerticalExpand="True"
                     Text="{Loc shuttle-console-Nav}"
-                    Margin="5"/>
+                    Margin="5"/> <!--Exodus Locale-->
             <Button Name="MapModeButton"
                     ToggleMode="True"
                     HorizontalExpand="True"
                     VerticalExpand="True"
                     Text="{Loc shuttle-console-Map}"
-                    Margin="5"/>
+                    Margin="5"/> <!--Exodus Locale-->
             <Button Name="DockModeButton"
                     ToggleMode="True"
                     HorizontalExpand="True"
                     VerticalExpand="True"
                     Text="{Loc shuttle-console-Dock}"
-                    Margin="5"/>
+                    Margin="5"/> <!--Exodus Locale-->
         </BoxContainer>
         <!-- Contents box -->
         <BoxContainer Name="Contents"
