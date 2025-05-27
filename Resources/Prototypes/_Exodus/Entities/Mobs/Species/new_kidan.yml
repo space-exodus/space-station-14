@@ -4,6 +4,8 @@
   name: Urisst' McKidan
   abstract: true
   components:
+  - type: Sprite
+    scale: 1.04, 1.04
   - type: HumanoidAppearance
     species: NewKidan
   - type: Hunger
@@ -20,6 +22,7 @@
   - type: PheromonesCommunication
   - type: Speech
     speechVerb: Kidan
+    speechSounds: Kidan
     allowedEmotes: ['WigglesAntennae', 'WavesAntennaeSharply', 'JawsSnap', 'Grumble', 'Groan']
   - type: TypingIndicator
     proto: kidan
@@ -100,6 +103,8 @@
       time: 4
       type: Add
       refresh: false
+  - type: Bloodstream
+    bloodReagent: CopperBlood
   - type: Reactive
     groups:
       Flammable: [ Touch ]

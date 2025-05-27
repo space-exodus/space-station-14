@@ -124,3 +124,14 @@
   files:
     - /Audio/Exodus/Voice/Felinid/cat_purr.ogg
     - /Audio/Exodus/Voice/Felinid/cat_purr_long.ogg
+
+- type: soundCollection
+  id: KidanGasp
+  files:
+    - /Audio/Exodus/Voice/Kidan/suffocation.ogg
+    - /Audio/Exodus/Voice/Kidan/suffocation2.ogg
+
+- type: soundCollection
+  id: KidanDeathGasp
+  files:
+    - /Audio/Exodus/Voice/Kidan/deathgasp.ogg
