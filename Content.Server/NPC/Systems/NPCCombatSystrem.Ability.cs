@@ -14,6 +14,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Actions;
 using Content.Server.Actions;
 using Content.Shared.Directions;
+using Content.Server.Charges;
 
 namespace Content.Server.NPC.Systems;
 
@@ -23,6 +24,7 @@ public sealed partial class NPCCombatSystem
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly RotateToFaceSystem _rotateToFaceSystem = default!;
+    [Dependency] private readonly ChargesSystem _chargesSystem = default!;
 
     private const float TargetAbilityLostRange = 28f;
 
@@ -141,8 +143,9 @@ public sealed partial class NPCCombatSystem
         if (action.Cooldown.HasValue && action.Cooldown.Value.End > curTime)
             return false;
 
-        if (action is { Charges: < 1, RenewCharges: true })
-            _actions.ResetCharges(actionUid);
+        // if action is rechargable and needs recharge we'll reset charges
+        if (_chargesSystem.GetNextRechargeTime(actionUid) <= TimeSpan.Zero)
+            _chargesSystem.ResetCharges(actionUid);
 
         BaseActionEvent? performEvent = null;
 
