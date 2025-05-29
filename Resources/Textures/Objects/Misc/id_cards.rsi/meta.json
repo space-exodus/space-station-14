@@ -47,6 +47,9 @@
             "name": "idbartender"
         },
         {
+            "name": "idblueshieldofficer"
+        },
+        {
             "name": "idbotanist"
         },
         {
@@ -164,10 +167,16 @@
             "name": "idzookeeper"
         },
         {
+            "name": "idiaa"
+        },
+        {
             "name": "idintern-sci"
         },
         {
             "name": "idintern-cadet"
+        },
+        {
+            "name": "idpilot"
         },
         {
             "name": "idintern-med"
