@@ -238,6 +238,7 @@
     - id: MedkitFilled
     - id: RubberStampCMO
     - id: MedTekCartridge
+    - id: ClothingEyesHudChemMed # Exodus-Better-Med-Hud
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
