@@ -44,7 +44,21 @@
   id: DeathSquad
   parent: EventHumanoidCentcomm
   randomizeName: false
-  speciesBlacklist: ['Diona'] # Corvax-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
+    - Diona
+    - Arachnid
+    - Dwarf
+    - Moth
+    - Reptilian
+    - Skeleton
+    - SlimePerson
+    - Vulpkanin
+    - Vox
+    - Kidan
+    - Felinid
+    - NewKidan
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: GhostRole
       name: ghost-role-information-Death-Squad-name
@@ -86,8 +100,11 @@
   id: ERTLeader
   parent: EventHumanoidCentcomm
   randomizeName: false
-  speciesBlacklist: # Exodus-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
     - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
@@ -378,7 +395,10 @@
   id: ERTSecurity
   speciesBlacklist: # Corvax-MRP
     - Diona
-    - Vox # Exodus-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+    - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -529,7 +549,10 @@
 - type: randomHumanoidSettings
   speciesBlacklist: # Corvax-MRP
     - Diona
-    - Vox # Exodus-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+    - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   id: CBURNAgent
   parent: EventHumanoidCentcomm
   components:
@@ -563,8 +586,11 @@
 - type: randomHumanoidSettings
   id: CentcomOfficial
   parent: EventHumanoidCentcomm
-  speciesBlacklist: # Exodus-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
     - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
@@ -592,8 +618,11 @@
 
 - type: randomHumanoidSettings
   id: SyndicateAgent
-  speciesBlacklist: # Exodus-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
     - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
@@ -613,8 +642,11 @@
 
 - type: randomHumanoidSettings
   id: NukeOp
-  speciesBlacklist: # Exodus-MRP
+  # Exodus-CentCom-Balance-and-Lore-Start
+  speciesBlacklist:
     - Vox
+    - Felinid
+  # Exodus-CentCom-Balance-and-Lore-End
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
