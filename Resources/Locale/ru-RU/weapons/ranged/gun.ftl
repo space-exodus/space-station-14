@@ -8,7 +8,7 @@ gun-set-fire-mode = Выбран режим { $mode }
 gun-magazine-whitelist-fail = Это не помещается в оружие!
 gun-magazine-fired-empty = Нет патронов!
 # SelectiveFire
-gun-SemiAuto = полуавто
+gun-SemiAuto = одиночные
 gun-Burst = очередь
 gun-FullAuto = авто
 # BallisticAmmoProvider

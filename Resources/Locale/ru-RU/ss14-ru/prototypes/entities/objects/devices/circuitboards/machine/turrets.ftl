@@ -1,4 +1,4 @@
-ent-WeaponEnergyTurretStationMachineCircuitboard = охранная турель (машинная плата)
+ent-WeaponEnergyTurretStationMachineCircuitboard = машинная плата охранной турели
     .desc = Печатная плата для охранной турели.
-ent-WeaponEnergyTurretAIMachineCircuitboard = охранная турель ИИ (машинная плата)
+ent-WeaponEnergyTurretAIMachineCircuitboard = машинная плата охранной турели ИИ
     .desc = Печатная плата для охранной турели ИИ.
