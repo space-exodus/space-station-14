@@ -1,5 +1,5 @@
-ent-MailSpamLetter = spam letter
-    .desc = Even space isn't safe from junk mail.
+ent-MailSpamLetter = спам письмо
+    .desc = Даже космос на защищён от нежелательной почты.
 ent-MailRobustToolsSpam = Робаст Тулбокс - Специальное предложение!
     .desc = Реклама робаст тулбоксов.
 ent-MailNanotrasenSpam = Причины выбрать Nanotrasen!

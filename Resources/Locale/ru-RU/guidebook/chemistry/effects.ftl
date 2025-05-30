@@ -81,15 +81,15 @@ reagent-effect-guidebook-even-health-change =
     { $chance ->
         [1]
             { $healsordeals ->
-                [heals] Evenly heals
-                [deals] Evenly deals
-               *[both] Evenly modifies health by
+                [heals] Равномерно лечит
+                [deals] Равномерно наносит
+               *[both] Равномерно изменять здоровье на
             }
        *[other]
             { $healsordeals ->
-                [heals] evenly heal
-                [deals] evenly deal
-               *[both] evenly modify health by
+                [heals] Равномерно лечит
+                [deals] Равномерно наносит
+               *[both] равномерно изменять здоровье на
             }
     } { $changes }
 reagent-effect-guidebook-status-effect =

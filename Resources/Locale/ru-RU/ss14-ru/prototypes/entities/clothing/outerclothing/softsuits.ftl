@@ -1,9 +1,7 @@
 ent-ClothingOuterHardsuitEVA = скафандр EVA
     .desc = Лёгкий космический скафандр, способный защитить владельца от космического вакуума во время аварийной ситуации.
-ent-ClothingOuterEVASuitSyndicate = syndicate EVA suit
-    .desc = Has a tag on the back that reads: 'Totally not property of an enemy corporation, honest!'
 # Corvax-HiddenDesc-Start
-ent-ClothingOuterHardsuitSyndicate = кроваво-красный скафандр EVA
+ent-SuitStorageEVASyndicate = кроваво-красный скафандр EVA
     .suffix = Синдикат
     .desc = { ent-ClothingOuterHardsuitEVA.desc }
 # Corvax-HiddenDesc-End
