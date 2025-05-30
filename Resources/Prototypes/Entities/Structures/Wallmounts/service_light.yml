@@ -27,5 +27,5 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 0.05
+        Heat: 0.01
     popupText: powered-light-component-burn-hand

@@ -126,7 +126,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 0.02
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
