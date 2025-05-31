@@ -560,6 +560,7 @@
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyOxygenMimeMechInjector # Exodus-ThickSyringes
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -846,6 +847,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyOxygenExtendedMechInjector # Exodus-ThickSyringes
 
 # Science
 - type: loadoutGroup
@@ -1138,6 +1140,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyOxygenSecurityMechInjector # Exodus-ThickSyringes
 
 - type: loadoutGroup
   id: SecurityStar
