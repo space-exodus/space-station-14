@@ -1,10 +1,7 @@
 ent-ClothingOuterHardsuitEVA = скафандр EVA
     .desc = Лёгкий космический скафандр, способный защитить владельца от космического вакуума во время аварийной ситуации.
-# Corvax-HiddenDesc-Start
-ent-SuitStorageEVASyndicate = кроваво-красный скафандр EVA
-    .suffix = Синдикат
-    .desc = { ent-ClothingOuterHardsuitEVA.desc }
-# Corvax-HiddenDesc-End
+ent-ClothingOuterEVASuitSyndicate = кроваво-красный скафандр EVA
+    .desc =  Лёгкий космический скафандр, способный защитить владельца от космического вакуума во время аварийной ситуации. Выполнен в подозрительном красном цвете.
 ent-ClothingOuterSuitEmergency = аварийный скафандр EVA
     .desc = Аварийный скафандр EVA со встроенным шлемом. Он ужасно медленный и не имеет температурной защиты, но его достаточно, чтобы выиграть время в жёстком вакууме космоса.
 ent-ClothingOuterHardsuitEVAPrisoner = тюремный скафандр EVA
