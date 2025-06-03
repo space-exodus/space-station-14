@@ -1,6 +1,8 @@
 using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Events;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Movement.Components;
+using Content.Shared.Standing;
 using Robust.Shared.Timing;
 
 namespace Content.Shared.Exodus.Stamina;
@@ -10,18 +12,38 @@ public sealed partial class RushSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedStaminaSystem _stamina = default!;
 
+    private const float RushStaminaDamageModify = 1.3f;
+    private const float WalkStaminaDamageModify = 0.7f;
+
     private EntityQuery<InputMoverComponent> _inputQuery = default!;
     private EntityQuery<RushComponent> _rushQuery = default!;
     private EntityQuery<StaminaComponent> _staminaQuery = default!;
+    private EntityQuery<StandingStateComponent> _standingQuery = default!;
 
 
     public override void Initialize()
     {
         base.Initialize();
 
+        SubscribeLocalEvent<StaminaComponent, BeforeStaminaDamageEvent>(OnStaminaDamage);
+
         _inputQuery = GetEntityQuery<InputMoverComponent>();
         _rushQuery = GetEntityQuery<RushComponent>();
         _staminaQuery = GetEntityQuery<StaminaComponent>();
+        _standingQuery = GetEntityQuery<StandingStateComponent>();
+    }
+
+    // Reduce & increase damage when walking & rushing
+    private void OnStaminaDamage(Entity<StaminaComponent> entity, ref BeforeStaminaDamageEvent ev)
+    {
+        if (!_inputQuery.TryComp(entity, out var input))
+            return;
+
+        if (input.Walking)
+            ev.Value *= WalkStaminaDamageModify;
+        else if (_rushQuery.TryComp(entity, out var rush) &&
+            input.Rushing)
+            ev.Value *= RushStaminaDamageModify;
     }
 
     public float GetRushModify(EntityUid uid)
@@ -35,6 +57,10 @@ public sealed partial class RushSystem : EntitySystem
     public (float RushFraction, float sprintFraction) GetRushFracAndUdpateStamina(EntityUid uid, float fraction)
     {
         if (!_timing.InSimulation)
+            return (0, 1);
+
+        if (_standingQuery.TryComp(uid, out var standing) &&
+            !standing.Standing)
             return (0, 1);
 
         if (!_rushQuery.TryComp(uid, out var rush) ||

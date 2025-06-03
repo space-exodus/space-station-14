@@ -81,7 +81,6 @@ public sealed partial class StaminaComponent : Component
     public bool IsInDanger = false;
 
 
-
     // There's RS-trigger schema
     // It's nessesary 'cause some systems use its for cast decay
 
