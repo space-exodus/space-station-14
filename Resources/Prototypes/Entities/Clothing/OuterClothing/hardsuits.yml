@@ -522,8 +522,10 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  #- type: StaminaResistance
-  #  damageCoefficient: 0.75
+  # Exodus - Stamina Armor
+  - type: StaminaArmor
+    coefficient: 0.75
+  # Exodus - end
   - type: Armor
     modifiers:
       coefficients:
@@ -654,8 +656,10 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
-  #- type: StaminaResistance # Should not have stamina resistance, this is purely so people know it was not forgotten.
-  #  damageCoefficient: 0.99
+  # Exodus - Stamina Armor | Add stamina armor for nuke ops
+  - type: StaminaArmor
+    coefficient: 0.8  # Needs 16 hits with a disabler to stun
+  # Exodus - End
   - type: Armor
     modifiers:
       coefficients:
@@ -956,8 +960,10 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: StaminaResistance
-    damageCoefficient: 0.15 # Needs 21 hits with a disabler to stun :godo:
+  # Exodus - Stamina Rework | Replace wizrds stamina protection
+  - type: StaminaArmor
+    damageCoefficient: 0.15 # Needs 21 hits with a disabler to stun
+  # Exodus - ends
   - type: Armor
     modifiers:
       coefficients:
