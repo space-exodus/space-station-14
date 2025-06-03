@@ -193,7 +193,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         }
 
         // Exodus - Stamina Refector | Correct logic
-        if (curValue > 0 && (component.StaminaDamage + value >= component.CritThreshold || IsStunned(component)))
+        if (curValue > 0 && (component.StaminaDamage + value >= component.DangerThreshold || IsStunned(component)))
             return false;
 
         TakeStaminaDamage(uid, value, component, source, with, visual: false);
@@ -260,17 +260,25 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         // Have we already reached the point of max stamina damage?
 
         component.StaminaDamage = MathF.Max(0f, component.StaminaDamage);
-        component.StaminaDamage = MathF.Min(component.CritThreshold, component.StaminaDamage);
+
+        var thresholdOverflow = false;
+        if (component.StaminaDamage >= component.CritThreshold)
+        {
+            thresholdOverflow = true;
+            component.StaminaDamage = component.CritThreshold;
+        }
 
         // Exodus - Remove Slow down when stamina damage
 
-        component.IsInDanger = component.IsInDanger ?
-            component.StaminaDamage >= component.ResetDangerThreshold :
-            component.StaminaDamage >= component.SetDangerThreshold;
+        component.UpdateIsInDanger();
 
-        if (component.StaminaDamage == component.CritThreshold &&
-            component.LastStun + component.StunInterval + component.StunTime < _timing.CurTime)
-            StaminaStun(uid, component);
+        if (thresholdOverflow)
+        {
+            if (component.StunEnd < _timing.CurTime)
+                StaminaStun(uid, component.StunTime * 2, component);
+            else
+                StaminaStun(uid, component.StunTime, component);
+        }
     }
     // Exodus - End
 
@@ -306,7 +314,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
     }
 
     // Exodus - Stamina Refactor - Start | Replace EnterStamCrit
-    private void StaminaStun(EntityUid uid, StaminaComponent? component = null)
+    private void StaminaStun(EntityUid uid, TimeSpan stunTime, StaminaComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -314,8 +322,8 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         // To make the difference between a stun and a stamcrit clear
         // TODO: Mask?
 
-        component.LastStun = _timing.CurTime;
-        _stunSystem.TryParalyze(uid, component.StunTime, true);
+        component.StunEnd = _timing.CurTime + stunTime;
+        _stunSystem.TryParalyze(uid, stunTime, true);
 
         EnsureComp<ActiveStaminaComponent>(uid);
         Dirty(uid, component);
@@ -346,7 +354,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
 
     public bool IsStunned(StaminaComponent component)
     {
-        return component.LastStun + component.StunTime > _timing.CurTime;
+        return component.StunEnd > _timing.CurTime;
     }
     // Exodus - End
 }

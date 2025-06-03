@@ -1,5 +1,6 @@
 // Exodus
 using Robust.Shared.GameStates;
+using Robust.Shared.Noise;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
@@ -40,28 +41,24 @@ public sealed partial class StaminaComponent : Component
     /// <summary>
     /// How long will this mob be stunned for?
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField]
-    public TimeSpan StunTime = TimeSpan.FromSeconds(3); // Exodus - Balance
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public TimeSpan StunTime = TimeSpan.FromSeconds(2); // Exodus - Balance
 
     // Exodus - Stamina refactor - start
 
     /// <summary>
-    /// Delay before a new stun can be applied
+    /// Save time of end of last stamina stun
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField]
-    public TimeSpan StunInterval = TimeSpan.FromSeconds(1);
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public TimeSpan StunEnd = TimeSpan.Zero;
 
     /// <summary>
     /// Save time of last stamina stun
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField]
-    public TimeSpan LastStun = TimeSpan.Zero;
-
-    /// <summary>
-    /// Save time of last stamina stun
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField]
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
     public TimeSpan LastDamage = TimeSpan.Zero;
+
+    public TimeSpan RestoreDamageStart => LastDamage + Cooldown;
 
     /// <summary>
     /// Modify stamina damage when walking
@@ -76,25 +73,29 @@ public sealed partial class StaminaComponent : Component
 
     // Exodus - Stamina Rework
 
-    /// <summary>
-    /// Some systems decays depends on stamina damage
-    /// This is set threshold
-    /// </summary>
-    public float SetDangerThreshold => CritThreshold * 0.9f;
 
     /// <summary>
-    /// Some systems decays depends on stamina damage
-    /// This is reset threshold
+    /// Is this entity in danger?
     /// </summary>
-    public float ResetDangerThreshold => CritThreshold * 0.85f;
-
-    /// <summary>
-    /// Some systems decays depends on stamina damage
-    /// </summary>
-    [AutoNetworkedField]
+    [ViewVariables(VVAccess.ReadOnly), DataField, AutoNetworkedField]
     public bool IsInDanger = false;
 
-    public float DangerThreshold => IsInDanger ? ResetDangerThreshold : SetDangerThreshold;
+
+
+    // There's RS-trigger schema
+    // It's nessesary 'cause some systems use its for cast decay
+
+    /// <summary>
+    /// Some systems decays depends on stamina damage
+    /// </summary>
+    public float DangerThreshold => IsInDanger
+        ? MathF.Min(CritThreshold * 0.89f, CritThreshold - 2f)
+        : CritThreshold * 0.90f;
+
+    public void UpdateIsInDanger()
+    {
+        IsInDanger = StaminaDamage >= DangerThreshold;
+    }
 
     /// <summary>
     /// How much stamina reduces per second.
