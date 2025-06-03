@@ -250,8 +250,10 @@
         Caustic: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.35
-  #- type: StaminaResistance
-  #  damageCoefficient: 0.45
+  # Exodus - Stamina Armor
+  - type: StaminaArmor
+    coefficient: 0.5
+  # Exodus - End
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
