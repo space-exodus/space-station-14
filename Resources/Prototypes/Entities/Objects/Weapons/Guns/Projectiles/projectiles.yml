@@ -258,7 +258,7 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 33
+    damage: 34 # Exodus - Balance
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
