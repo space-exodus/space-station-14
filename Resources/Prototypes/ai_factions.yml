@@ -22,6 +22,7 @@
   - Dragon
   - AllHostile
   - Wizard
+  - Xenoborg
 
 - type: npcFaction
   id: Mouse
@@ -53,9 +54,11 @@
   - PetsNT
   - Zombie
   - Revolutionary
+  - Dragon
+  - Xeno
   - AllHostile
   - Wizard
-  - Dragon
+  - Xenoborg
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -72,6 +75,7 @@
   - Dragon
   - AllHostile
   - Wizard
+  - Xenoborg
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -86,6 +90,7 @@
   - AllHostile
   - Wizard
   - Dragon
+  - Xenoborg
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -101,6 +106,7 @@
   - AllHostile
   - Wizard
   - Dragon
+  - Xenoborg
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -112,6 +118,7 @@
   - Dragon
   - AllHostile
   - Wizard
+  - Xenoborg
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -129,6 +136,7 @@
   - Zombie
   - Revolutionary
   - Wizard
+  - Xenoborg
   - DeathSquad # Exodus-DeathSquad
 
 - type: npcFaction
@@ -153,3 +161,21 @@
   - SimpleHostile
   - NanoTrasen
   - AllHostile
+
+- type: npcFaction
+  id: Xenoborg
+  hostile:
+  # they have brains
+  - NanoTrasen
+  - Syndicate
+  - Zombie
+  - Revolutionary
+  - Wizard
+
+  - Xeno # rivalry
+
+  # cause they are hostile to them
+  - SimpleHostile 
+  - AllHostile
+
+  - DeathSquad # Exodus-DeathSquad

@@ -47,15 +47,11 @@ namespace Content.Server.Body.Components
         [DataField]
         public EntityWhitelist? SpecialDigestible = null;
 
-        // Exodus-Species-Start
         /// <summary>
-        ///     Used for cases when specie can eat as a normal but also can eat something more that the others cant eat.
-        ///     So we don't specify every food tag to SpecialDigestible and extend eat capabilities as we intended.
-        ///     For example, kidans can eat like humans but also is an only specie which can eat diona nymphs.
+        /// Controls whitelist behavior. If true, this stomach can digest <i>only</i> food that passes the whitelist. If false, it can digest normal food <i>and</i> any food that passes the whitelist.
         /// </summary>
         [DataField]
-        public bool SpecialDigestibleOnly = false;
-        // Exodus-Species-End
+        public bool IsSpecialDigestibleExclusive = true;
 
         /// <summary>
         ///     Used to track how long each reagent has been in the stomach
