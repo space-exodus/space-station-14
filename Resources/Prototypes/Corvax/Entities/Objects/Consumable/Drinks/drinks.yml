@@ -85,23 +85,6 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkDarkAndStormyGlass
-  suffix: dark and stormy
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: DarkAndStormy
-          Quantity: 30
-  - type: Drink
-  - type: Icon
-    sprite: Corvax/Objects/Consumable/Drinks/darkAndStormy.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
   id: DrinkEspressoMartiniGlass
   suffix: espresso martini
   components:
