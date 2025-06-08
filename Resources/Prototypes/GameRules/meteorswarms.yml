@@ -32,11 +32,13 @@
     - id: GameRuleMeteorSwarmSmall
     - id: GameRuleMeteorSwarmMedium
     - id: GameRuleMeteorSwarmLarge
-    - id: GameRuleUristSwarm
-    - id: GameRuleClownSwarm
-    - id: GameRuleCowSwarm
-    - id: GameRulePotatoSwarm
-    - id: GameRuleFunSwarm
+    # Exodus-Remove-Strange-Meteors-Start
+    # - id: GameRuleUristSwarm
+    # - id: GameRuleClownSwarm
+    # - id: GameRuleCowSwarm
+    # - id: GameRulePotatoSwarm
+    # - id: GameRuleFunSwarm
+    # Exodus-Remove-Strange-Meteors-End
     - id: ImmovableRodSpawn
 
 - type: weightedRandomEntity
