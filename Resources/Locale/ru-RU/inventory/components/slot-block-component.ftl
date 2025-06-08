@@ -1,1 +1,1 @@
-slot-block-component-blocked = Этот слот одежды заблокирован { $item }!
+slot-block-component-blocked = { $item } блокирует этот слот!

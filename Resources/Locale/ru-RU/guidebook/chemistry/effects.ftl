@@ -242,9 +242,9 @@ reagent-effect-guidebook-drunk =
     } опьянение
 reagent-effect-guidebook-emote =
     { $chance ->
-        [1] Will force
-       *[other] force
-    } the metabolizer to [bold][color=white]{ $emote }[/color][/bold]
+        [1] Вызывает
+       *[other] вызвать
+   }  [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
