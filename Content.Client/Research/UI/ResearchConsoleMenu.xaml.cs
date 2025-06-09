@@ -97,11 +97,12 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
             disciplineText = Loc.GetString(discipline.Name);
             disciplineColor = discipline.Color;
         }
-
-        var msg = new FormattedMessage();
-        msg.AddMarkupOrThrow(Loc.GetString("research-console-menu-main-discipline",
-            ("name", disciplineText), ("color", disciplineColor)));
-        MainDisciplineLabel.SetMessage(msg);
+        // Exodus-All-Disciline-On-3-Tier-Start
+        // var msg = new FormattedMessage();
+        // msg.AddMarkupOrThrow(Loc.GetString("research-console-menu-main-discipline",
+        //     ("name", disciplineText), ("color", disciplineColor)));
+        // MainDisciplineLabel.SetMessage(msg);
+        // Exodus-All-Disciline-On-3-Tier-End
 
         TierDisplayContainer.Children.Clear();
         foreach (var disciplineId in database.SupportedDisciplines)
