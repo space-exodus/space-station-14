@@ -33,6 +33,7 @@
   parent: RehydratableAnimalCube
   id: SpiderCube
   name: spider cube
+  description: Just add water!
   components:
   - type: Sprite
     sprite: Exodus/Objects/Misc/spidercube.rsi

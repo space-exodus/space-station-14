@@ -1,7 +1,7 @@
 - type: cargoProduct
   id: LivestockSpiderCube
   icon:
-    sprite: Objects/Misc/spidercube.rsi
+    sprite: Exodus/Objects/Misc/spidercube.rsi
     state: box
   product: CrateNPCSpiderCube
   cost: 2000
