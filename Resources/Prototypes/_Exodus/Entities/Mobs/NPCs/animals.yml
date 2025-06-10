@@ -80,7 +80,7 @@
         Blunt: 3
         Piercing: 3
   - type: GhostRole
-    prob: 0.99
+    prob: 0.05
     makeSentient: true
     name: ghost-role-information-spider-food-name
     description: ghost-role-information-spider-food-description
