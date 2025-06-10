@@ -7,7 +7,7 @@
         - to: ClothingOuterHardsuitSalvageMaximal
           steps:
             - tag: HardsuitMining
-              name: mining hardsuit
+              name: construction-graph-tag-mining-hardsuit
               icon:
                 sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
                 state: icon
