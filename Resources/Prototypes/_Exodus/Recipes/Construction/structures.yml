@@ -19,3 +19,16 @@
   category: construction-category-utilities
   objectType: Structure
   placementMode: SnapgridCenter
+
+- type: construction
+  id: InteriorShuttleWall
+  graph: Girder
+  startNode: start
+  targetNode: shuttleInteriorWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
