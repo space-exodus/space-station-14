@@ -32,6 +32,8 @@
     RLeg: MobNewKidanRLeg
     LFoot: MobNewKidanLFoot
     RFoot: MobNewKidanRFoot
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobNewKidanMarkingLimits
@@ -58,6 +60,9 @@
       required: false
     Tail:
       points: 1
+      required: false
+    FacialHair:
+      points: 0
       required: false
 
 - type: humanoidBaseSprite
