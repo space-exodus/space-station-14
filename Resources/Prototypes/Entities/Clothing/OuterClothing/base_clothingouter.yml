@@ -36,6 +36,7 @@
     containers:
       storagebase: !type:Container
         ents: []
+      item: !type:Container # Exodus-Armor-Tweak-Radio
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

@@ -668,5 +668,8 @@ RandomPosterMiners: null
 # 2025-05-18
 ClothingNeckCloakMiner: null
 
+# 2025-05-27 Corvax
+PlayerStationAiPilgrim: PlayerStationAi
+
 # 2025-06-09 Exodus
 ClothingUniformColorJumpskirtRainbow: ClothingUniformJumpskirtColorRainbow

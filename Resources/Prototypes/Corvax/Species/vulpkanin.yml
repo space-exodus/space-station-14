@@ -41,6 +41,9 @@
     Hair:
       points: 1
       required: false
+    FacialHair:
+      points: 0
+      required: false
     # Exodus-FixVulpkaninsCustomization | Delete facial hair
     Tail:
       points: 1
@@ -56,9 +59,6 @@
       defaultMarkings: [ FoxEar ]
     HeadSide:
       points: 1
-      required: false
-    FacialHair:
-      points: 0
       required: false
 
 - type: humanoidBaseSprite
