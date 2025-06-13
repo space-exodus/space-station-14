@@ -35,8 +35,6 @@ jobs:
     steps:
       - name: Checkout Master
         uses: actions/checkout@v4.2.2
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Setup Submodule
         run: |
@@ -54,7 +52,7 @@ jobs:
       - name: Setup secrets
         if: github.repository == 'space-exodus/space-station-14'
         run: |
-          git -c submodule.Secrets.update=checkout submodule update --init
+          git -c submodule.Secrets.update=checkout -c submodule.Secrets.url="https://oauth2:${{ secrets.TOKEN }}@github.com/space-exodus/secrets.git" submodule update --init
           ./sync-secrets.sh
       # Exodus-Secrets-End
 
