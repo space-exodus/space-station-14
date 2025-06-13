@@ -52,7 +52,7 @@ jobs:
       - name: Setup secrets
         if: github.repository == 'space-exodus/space-station-14'
         run: |
-          git -c submodule.Secrets.update=checkout -c submodule.Secrets.url="https://${{ secrets.TOKEN }}@github.com/space-exodus/secrets.git" submodule update --init
+          git -c submodule.Secrets.update=checkout -c submodule.Secrets.url="https://oauth2:${{ secrets.ACCESS_TOKEN }}@github.com/space-exodus/secrets.git" submodule update --init
           ./sync-secrets.sh
       # Exodus-Secrets-End
 
