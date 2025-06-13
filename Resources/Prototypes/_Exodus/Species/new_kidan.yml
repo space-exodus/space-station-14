@@ -32,8 +32,6 @@
     RLeg: MobNewKidanRLeg
     LFoot: MobNewKidanLFoot
     RFoot: MobNewKidanRFoot
-    UndergarmentTop: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobNewKidanMarkingLimits
