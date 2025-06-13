@@ -44,6 +44,9 @@
     Head:
       points: 2
       required: false
+    FacialHair:
+      points: 0
+      required: false
     HeadSide:
       points: 2
       required: false
