@@ -49,7 +49,7 @@
     sprite: Objects/Specific/Medical/syndihypo.rsi
     layers:
       - state: hypo
-        map: ["enum.SolutionContainerLayers.Base"] # Exodus-UPSTREAM-MARK | Decide what to do with solution container layers of hypospray
+        map: ["enum.SolutionContainerLayers.Base"]
       - state: hypo_fill1
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
