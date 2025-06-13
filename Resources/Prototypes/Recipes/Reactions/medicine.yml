@@ -41,6 +41,12 @@
       amount: 1
     Hydrogen:
       amount: 1
+#Exodus ChemicalEffects start
+  effects:
+  - !type:CreateGas
+    gas: Tritium
+    multiplier: 1.5
+#Exodus ChemicalEffects end
   products:
     Arithrazine: 2
 
@@ -122,6 +128,15 @@
       amount: 1
     Iron:
       amount: 1
+#Exodus ChemicalEffects start
+  effects:
+  - !type:CreateGas
+    gas: CarbonDioxide
+    multiplier: 5
+  - !type:CreateGas
+    gas: WaterVapor
+    multiplier: 5
+#Exodus ChemicalEffects end
   products:
     DexalinPlus: 3
 
@@ -554,6 +569,14 @@
       amount: 1
     Silicon:
       amount: 1
+#Exodus ChemicalEffects start
+  effects:
+    - !type:EmpReactionEffect
+      rangePerUnit: 1
+      maxRange: 6
+      energyConsumption: 12500
+      duration: 15
+#Exodus ChemicalEffects end
   products:
     Insuzine: 3
 
@@ -561,7 +584,7 @@
   id: Opporozidone
   minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
   reactants:
-    Cognizine: 
+    Cognizine:
       amount: 1
     Plasma:
       amount: 2
@@ -660,5 +683,11 @@
       amount: 1
     PotassiumIodide:
       amount: 1
+#Exodus ChemicalEffects start
+  effects:
+  - !type:CreateGas
+    gas: NitrousOxide
+    multiplier: 5
+#Exodus ChemicalEffects end
   products:
     Haloperidol: 5
