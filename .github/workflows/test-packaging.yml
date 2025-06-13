@@ -53,6 +53,7 @@ jobs:
         if: github.repository == 'space-exodus/space-station-14'
         env:
           ACCESS_TOKEN: ${{ secrets.SECRETS_PRIVATE_KEY }}
+          SSH_KEY: ${{ secrets.SECRETS_PRIVATE_KEY }}
         run: |
           git -c submodule.Secrets.update=checkout -c submodule.Secrets.url="https://${{ env.ACCESS_TOKEN }}@github.com/space-exodus/secrets.git" submodule update --init
           ./sync-secrets.sh
