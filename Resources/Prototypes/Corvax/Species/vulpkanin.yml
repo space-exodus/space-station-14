@@ -18,9 +18,10 @@
   sprites:
     Head: MobVulpkaninHead
     Hair: MobHumanoidAnyMarking
-    FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobVulpkaninTorso
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -58,6 +59,9 @@
       defaultMarkings: [ FoxEar ]
     HeadSide:
       points: 1
+      required: false
+    FacialHair:
+      points: 0
       required: false
 
 - type: humanoidBaseSprite

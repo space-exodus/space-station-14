@@ -8,6 +8,8 @@ on:
 jobs:
   this_aint_right:
     name: Submodule update in pr found
+    # Exodus | It is save if it is done by the members with write access to repository
+    if: github.actor != 'Lokilife'
     runs-on: ubuntu-latest
     steps:
       - name: Fail
