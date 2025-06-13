@@ -60,9 +60,6 @@
     HeadSide:
       points: 1
       required: false
-    FacialHair:
-      points: 0
-      required: false
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHead
