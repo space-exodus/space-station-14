@@ -22,19 +22,10 @@ jobs:
 
     # Exodus-Secrets-Start
     - name: Setup secrets
-      env:
-        SSH_KEY: ${{ secrets.SECRETS_PRIVATE_KEY }}
-      if: ${{ env.SSH_KEY != '' }}
+      if: github.repository == 'space-exodus/space-station-14'
       run: |
-        mkdir ~/.ssh
-        echo "${{ secrets.SECRETS_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        echo "HOST *" > ~/.ssh/config
-        echo "StrictHostKeyChecking no" >> ~/.ssh/config
         git -c submodule.Secrets.update=checkout submodule update --init
-        cp -R Secrets/Resources/Prototypes Resources/Prototypes/ExodusSecrets
-        cp -R Secrets/Resources/Locale Resources/Locale/ru-RU/exodus-secrets
-        cp -R Secrets/Resources/Textures Resources/Textures/ExodusSecrets
+        ./sync-secrets.sh
     # Exodus-Secrets-End
 
     - name: Setup .NET Core

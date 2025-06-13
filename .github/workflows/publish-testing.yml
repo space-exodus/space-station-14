@@ -6,8 +6,8 @@ concurrency:
 
 on:
   workflow_dispatch:
-  schedule:
-  - cron: '0 10 * * *'
+  # schedule:
+  # - cron: '0 10 * * *'
 
 jobs:
   build:
@@ -17,6 +17,15 @@ jobs:
     - uses: actions/checkout@v3.6.0
       with:
         submodules: 'recursive'
+
+    # Exodus-Secrets-Start
+    - name: Setup secrets
+      if: github.repository == 'space-exodus/space-station-14'
+      run: |
+        git -c submodule.Secrets.update=checkout submodule update --init
+        ./sync-secrets.sh
+    # Exodus-Secrets-End
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3.2.0
       with:
@@ -34,13 +43,13 @@ jobs:
       run: dotnet build Content.Packaging --configuration Release --no-restore /m
 
     - name: Package server
-      run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64 --platform osx-x64 --platform linux-arm64
+      run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64 # --platform osx-x64 --platform linux-arm64
 
     - name: Package client
       run: dotnet run --project Content.Packaging client --no-wipe-release
 
     - name: Publish version
-      run: Tools/publish_multi_request.py --fork-id wizards-testing
+      run: Tools/publish_multi_request.py --fork-id exodus-testing
       env:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
