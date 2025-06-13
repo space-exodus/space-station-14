@@ -240,6 +240,12 @@
       amount: 5
     Omnizine:
       amount: 5
+#Exodus ChemicalEffects start
+  effects:
+  - !type:CreateGas
+    gas: Ammonia
+    multiplier: 3
+#Exodus ChemicalEffects end
   products:
     AmbuzolPlus: 10
 
