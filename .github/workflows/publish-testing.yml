@@ -16,16 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3.6.0
       with:
-        token: ${{ secrets.ACCESS_TOKEN }}
         submodules: 'recursive'
-
-    # Exodus-Secrets-Start
-    - name: Setup secrets
-      if: github.repository == 'space-exodus/space-station-14'
-      run: |
-        git -c submodule.Secrets.update=checkout submodule update --init
-        ./sync-secrets.sh
-    # Exodus-Secrets-End
 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3.2.0
