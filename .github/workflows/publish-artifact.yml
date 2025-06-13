@@ -19,6 +19,7 @@ jobs:
 
       - uses: actions/checkout@v3.6.0
         with:
+          token: ${{ secrets.ACCESS_TOKEN }}
           submodules: "recursive"
 
       # Exodus-Secrets-Start

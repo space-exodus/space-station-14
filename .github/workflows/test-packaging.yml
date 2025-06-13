@@ -2,29 +2,29 @@
 
 on:
   push:
-    branches: [ master, staging, stable, upstream ]
+    branches: [master, staging, stable, upstream]
     paths:
-      - '**.cs'
-      - '**.csproj'
-      - '**.sln'
-      - '**.git**'
-      - '**.yml'
+      - "**.cs"
+      - "**.csproj"
+      - "**.sln"
+      - "**.git**"
+      - "**.yml"
       # no docs on which one of these is supposed to work, so
       # why not just do both
-      - 'RobustToolbox'
-      - 'RobustToolbox/**'
+      - "RobustToolbox"
+      - "RobustToolbox/**"
   merge_group:
   pull_request:
-    types: [ opened, reopened, synchronize, ready_for_review ]
-    branches: [ master, staging, stable, upstream ]
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches: [master, staging, stable, upstream]
     paths:
-      - '**.cs'
-      - '**.csproj'
-      - '**.sln'
-      - '**.git**'
-      - '**.yml'
-      - 'RobustToolbox'
-      - 'RobustToolbox/**'
+      - "**.cs"
+      - "**.csproj"
+      - "**.sln"
+      - "**.git**"
+      - "**.yml"
+      - "RobustToolbox"
+      - "RobustToolbox/**"
 
 jobs:
   build:
@@ -35,6 +35,8 @@ jobs:
     steps:
       - name: Checkout Master
         uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Setup Submodule
         run: |
