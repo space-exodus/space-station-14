@@ -168,7 +168,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: interior shuttle wall
   id: InteriorShuttleWall
   graph: Girder
   startNode: start
