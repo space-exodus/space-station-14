@@ -163,6 +163,23 @@
             - tool: Welding
               doAfter: 10
    # Exodus-Wall-Diagonal-Craft-End
+
+        - to: shuttleInteriorWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: MetalRod
+              amount: 2
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
     - node: wall
       entity: WallSolid
       edges:
@@ -268,6 +285,23 @@
           steps:
             - tool: Prying
               doAfter: 5
+
+    - node: shuttleInteriorWall
+      entity: WallShuttleInterior
+      edges:
+        - to: girder
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: PartRodMetal1
+              amount: 2
+          steps:
+            - tool: Welding
+              doAfter: 10
+            - tool: Screwing
+              doAfter: 1
 
     - node: reinforcedGirder
       entity: ReinforcedGirder

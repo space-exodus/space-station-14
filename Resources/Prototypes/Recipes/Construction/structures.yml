@@ -168,6 +168,20 @@
     - !type:TileNotBlocked
 
 - type: construction
+  name: interior shuttle wall
+  id: InteriorShuttleWall
+  graph: Girder
+  startNode: start
+  targetNode: shuttleInteriorWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   id: DiagonalShuttleWall
   graph: Girder
   startNode: start
