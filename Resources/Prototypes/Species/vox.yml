@@ -21,8 +21,10 @@
     Snout: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
+    # Exodus-No-Need-For-Underwear-For-Race-Start
+    # UndergarmentTop: MobHumanoidAnyMarking
+    # UndergarmentBottom: MobHumanoidAnyMarking
+    # Exodus-No-Need-For-Underwear-For-Race-End
     Chest: MobVoxTorso
     Eyes: MobVoxEyes
     LArm: MobVoxLArm
