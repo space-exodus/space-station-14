@@ -23,7 +23,6 @@ marking-KidanHairFalsereindeer = Рога (неправильный олень)
 marking-KidanHairTruereindeer = Рога (правильный олень)
 marking-KidanTailWings = Крылья
 marking-KidanSnoutRuminations = Жвала
-
 marking-NewKidanAntennasClassic = Усики (классика)
 marking-NewKidanAntennasClassic-classic_ones = Классические усики
 marking-NewKidanAntennasFan = Усики (пушистые)

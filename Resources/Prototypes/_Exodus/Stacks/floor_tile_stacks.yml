@@ -1,17 +1,17 @@
 - type: stack
   id: FloorTileConcreteWOWeather
-  name: concrete tile
+  name: tiles-concrete
   spawn: FloorTileItemGrayConcreteWOWeather
   maxCount: 30
 
 - type: stack
   id: FloorTileGrayConcreteWOWeather
-  name: gray concrete tile
+  name: tiles-gray-concrete
   spawn: FloorTileItemGrayConcreteWOWeather
   maxCount: 30
 
 - type: stack
   id: FloorTileOldConcreteWOWeather
-  name: old concrete tile
+  name: tiles-old-concrete
   spawn: FloorTileItemOldConcreteWOWeather
   maxCount: 30

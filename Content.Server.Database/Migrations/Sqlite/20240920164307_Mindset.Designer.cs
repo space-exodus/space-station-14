@@ -813,10 +813,12 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
 
+                    // Exodus-Mindset-Start
                     b.Property<string>("Mindset")
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("mindset");
+                    // Exodus-Mindset-End
 
                     b.Property<int>("PreferenceId")
                         .HasColumnType("INTEGER")

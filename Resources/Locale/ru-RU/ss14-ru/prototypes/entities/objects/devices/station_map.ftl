@@ -8,4 +8,4 @@ ent-HandheldStationMapEmpty = { ent-HandheldStationMap }
     .desc = { ent-HandheldStationMap.desc }
 ent-HandheldStationMapUnpowered = { ent-BaseHandheldStationMap }
     .desc = { ent-BaseHandheldStationMap.desc }
-    .suffix = Ручной, Не требует питания
+    .suffix = Ручной, Всегда запитан

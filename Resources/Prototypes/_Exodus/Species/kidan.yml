@@ -46,6 +46,9 @@
       points: 1
       defaultMarkings: [ KidanHeadNormal ]
       required: false
+    FacialHair:
+      points: 0
+      required: false
 
 - type: humanoidBaseSprite
   id: MobKidanHead
