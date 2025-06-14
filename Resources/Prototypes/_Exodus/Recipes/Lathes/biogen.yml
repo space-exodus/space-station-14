@@ -1,0 +1,8 @@
+- type: latheRecipe
+  id: BioGenSpiderCube
+  result: SpiderCube
+  categories:
+  - Food
+  completetime: 3
+  materials:
+    Biomass: 70

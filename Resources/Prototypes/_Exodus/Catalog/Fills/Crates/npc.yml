@@ -1,0 +1,9 @@
+- type: entity
+  id: CrateNPCSpiderCube
+  parent: CrateGenericSteel
+  name: spider cube crate
+  description: A crate containing single box of spider cubes.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SpiderCubeBox

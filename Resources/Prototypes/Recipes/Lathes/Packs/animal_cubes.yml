@@ -4,6 +4,7 @@
   id: FriendlyCubesStatic
   recipes:
   - MonkeyCube
+  - SpiderCube # Exodus New-Meat-Animal-Add
   - KoboldCube
   - CowCube
   - GoatCube

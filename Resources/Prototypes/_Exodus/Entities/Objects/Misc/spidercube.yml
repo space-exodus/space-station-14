@@ -1,0 +1,47 @@
+- type: entity
+  parent: BoxCardboard
+  name: spider cube box
+  id: SpiderCubeBox
+  description: Drymate brand spider cubes. Just add water!
+  components:
+  - type: StorageFill
+    contents:
+      - id: SpiderCubeWrapped
+        amount: 8
+  - type: Sprite
+    sprite: Exodus/Objects/Misc/spidercube.rsi
+    state: box
+
+- type: entity
+  parent: BaseWrappedCube
+  name: spider cube
+  id: SpiderCubeWrapped
+  description: Unwrap this to get a spider cube.
+  suffix: wrapped
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: SpiderCube
+  - type: Sprite
+    sprite: Exodus/Objects/Misc/spidercube.rsi
+    state: wrapper
+  - type: Tag
+    tags:
+    - SpiderCube
+
+- type: entity
+  parent: RehydratableAnimalCube
+  id: SpiderCube
+  name: spider cube
+  description: Just add water!
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Misc/spidercube.rsi
+    state: cube
+  - type: Rehydratable
+    possibleSpawns:
+    - MobSpiderWebbit
+  - type: Tag
+    tags:
+    - Meat
+    - SpiderCube

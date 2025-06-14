@@ -34,7 +34,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: VariantCubeBox
+      - id: SpiderCubeBox # Exodus New-Meat-Animal-Add
       - id: BoxMousetrap
         amount: 2
       - id: SprayBottleWater
