@@ -95,6 +95,10 @@
   - SyringeCryostasis
   - BluespaceBeaker
   - SyringeBluespace
+  # Exodus-Syringe-Launcher-Remove-Start
+  # - LauncherSyringe
+  # - MiniSyringe
+  # Exodus-Syringe-Launcher-Remove-End
 
 - type: latheRecipePack
   id: MedicalBoards
