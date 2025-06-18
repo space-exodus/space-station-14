@@ -17,12 +17,12 @@
     - Dwarf
     - Human
     - Moth
-    - Reptilian
+    # - Reptilian # Exodus-ThickSyringes
     #Corvax-Species-Start
     - Vulpkanin
     #Corvax-Species-End
   # Exodus-Species-Start
-    - Kidan
+    - NewKidan
     - Felinid
   # Exodus-Species-End
 
