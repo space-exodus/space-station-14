@@ -245,17 +245,19 @@
   id: ClothingUniformJumpskirtCMOTurtle
   result: ClothingUniformJumpskirtCMOTurtle
 
-## Command (Generic)
+# Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+# ## Command (Generic)
 
-- type: latheRecipe
-  parent: BaseCommandJumpsuitRecipe
-  id: ClothingUniformJumpsuitCommandGeneric
-  result: ClothingUniformJumpsuitCommandGeneric
+# - type: latheRecipe
+#   parent: BaseCommandJumpsuitRecipe
+#   id: ClothingUniformJumpsuitCommandGeneric
+#   result: ClothingUniformJumpsuitCommandGeneric
 
-- type: latheRecipe
-  parent: BaseCommandJumpsuitRecipe
-  id: ClothingUniformJumpskirtCommandGeneric
-  result: ClothingUniformJumpskirtCommandGeneric
+# - type: latheRecipe
+#   parent: BaseCommandJumpsuitRecipe
+#   id: ClothingUniformJumpskirtCommandGeneric
+#   result: ClothingUniformJumpskirtCommandGeneric
+# Exodus-RevertCommandUniform-End
 
 ## Detective
 
@@ -835,15 +837,17 @@
   id: ClothingHeadHatBeretCmo
   result: ClothingHeadHatBeretCmo
 
-- type: latheRecipe
-  parent: BaseCommandHatRecipe
-  id: ClothingHeadHatBeretCommand
-  result: ClothingHeadHatBeretCommand
+# Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+# - type: latheRecipe
+#   parent: BaseCommandHatRecipe
+#   id: ClothingHeadHatBeretCommand
+#   result: ClothingHeadHatBeretCommand
 
-- type: latheRecipe
-  parent: BaseCommandHatRecipe
-  id: ClothingHeadHatCommandSoft
-  result: ClothingHeadHatCommandSoft
+# - type: latheRecipe
+#   parent: BaseCommandHatRecipe
+#   id: ClothingHeadHatCommandSoft
+#   result: ClothingHeadHatCommandSoft
+# Exodus-RevertCommandUniform-End
 
 # Non-command hats
 

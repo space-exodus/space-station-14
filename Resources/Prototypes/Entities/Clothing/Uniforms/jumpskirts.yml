@@ -221,16 +221,18 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/hos_parade.rsi
 
-- type: entity
-  parent: [ClothingUniformSkirtBase, BaseCommandContraband]
-  id: ClothingUniformJumpskirtCommandGeneric
-  name: command jumpskirt
-  description: A generic Command-colored jumpsuit not associated with any particular department.
-  components:
-  - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/commandgeneric.rsi
-  - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/commandgeneric.rsi
+# Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+# - type: entity
+#   parent: [ClothingUniformSkirtBase, BaseCommandContraband]
+#   id: ClothingUniformJumpskirtCommandGeneric
+#   name: command jumpskirt
+#   description: A generic Command-colored jumpsuit not associated with any particular department.
+#   components:
+#   - type: Sprite
+#     sprite: Clothing/Uniforms/Jumpskirt/commandgeneric.rsi
+#   - type: Clothing
+#     sprite: Clothing/Uniforms/Jumpskirt/commandgeneric.rsi
+# Exodus-RevertCommandUniform-End
 
 - type: entity
   parent: ClothingUniformSkirtBase

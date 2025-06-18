@@ -101,21 +101,23 @@
   id: ClothingHeadHatQMsoftFlipped
   name: quartermaster's cap
 
-- type: entity
-  parent: ClothingHeadHeadHatBaseFlippable
-  id: ClothingHeadHatCommandSoft
-  name: command cap
-  description: It's a baseball hat painted in Command colours.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Soft/commandsoft.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Soft/commandsoft.rsi
+# Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+# - type: entity
+#   parent: ClothingHeadHeadHatBaseFlippable
+#   id: ClothingHeadHatCommandSoft
+#   name: command cap
+#   description: It's a baseball hat painted in Command colours.
+#   components:
+#   - type: Sprite
+#     sprite: Clothing/Head/Soft/commandsoft.rsi
+#   - type: Clothing
+#     sprite: Clothing/Head/Soft/commandsoft.rsi
 
-- type: entity
-  parent: [ ClothingHeadHeadHatBaseFlipped, ClothingHeadHatCommandSoft ]
-  id: ClothingHeadHatCommandSoftFlipped
-  name: command cap
+# - type: entity
+#   parent: [ ClothingHeadHeadHatBaseFlipped, ClothingHeadHatCommandSoft ]
+#   id: ClothingHeadHatCommandSoftFlipped
+#   name: command cap
+# Exodus-RevertCommandUniform-End
 
 - type: entity
   parent: ClothingHeadHeadHatBaseFlippable

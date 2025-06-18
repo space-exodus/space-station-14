@@ -199,21 +199,23 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_merc.rsi
 
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeretCommand
-  name: command beret
-  description: A beret with a Command insignia emblazoned on it. It has an aura of authority.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beret_command.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beret_command.rsi
-  - type: Tag
-    tags:
-    - ClothMade
-    - HamsterWearable
-    - WhitelistChameleon
+# Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+# - type: entity
+#   parent: ClothingHeadBase
+#   id: ClothingHeadHatBeretCommand
+#   name: command beret
+#   description: A beret with a Command insignia emblazoned on it. It has an aura of authority.
+#   components:
+#   - type: Sprite
+#     sprite: Clothing/Head/Hats/beret_command.rsi
+#   - type: Clothing
+#     sprite: Clothing/Head/Hats/beret_command.rsi
+#   - type: Tag
+#     tags:
+#     - ClothMade
+#     - HamsterWearable
+#     - WhitelistChameleon
+# Exodus-RevertCommandUniform-End
 
 - type: entity
   parent: ClothingHeadBase
