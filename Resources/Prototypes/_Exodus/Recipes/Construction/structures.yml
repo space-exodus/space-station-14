@@ -1,17 +1,34 @@
 - type: construction
-  name: diagonal wall
   id: DiagonalWall
   graph: Girder
   startNode: start
   targetNode: diagonalWall
   category: construction-category-structures
-  description: Keeps the air in and the greytide out.
-  icon:
-    sprite: Structures/Walls/solid_diagonal.rsi
-    state: state0
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: true
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: AtmosDeviceFanTiny
+  graph: AtmosDeviceFan
+  startNode: start
+  targetNode: AtmosDeviceFan
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: InteriorShuttleWall
+  graph: Girder
+  startNode: start
+  targetNode: shuttleInteriorWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked

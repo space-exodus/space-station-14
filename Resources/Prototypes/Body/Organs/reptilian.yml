@@ -4,7 +4,6 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Stomach
-    specialDigestibleOnly: true # Exodus-Species
     specialDigestible:
       tags:
       - Fruit

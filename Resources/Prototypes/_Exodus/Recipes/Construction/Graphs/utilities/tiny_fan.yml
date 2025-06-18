@@ -24,7 +24,7 @@
         - to: AtmosDeviceFan
           steps:
             - tag: AASElectronics
-              name: AAS Electronics
+              name: construction-graph-tag-aas-electronics
               icon:
                 sprite: Objects/Misc/module.rsi
                 state: charger_APC

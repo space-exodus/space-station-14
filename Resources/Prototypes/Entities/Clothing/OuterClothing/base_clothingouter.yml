@@ -36,6 +36,7 @@
     containers:
       storagebase: !type:Container
         ents: []
+      item: !type:ContainerSlot {} # Exodus-Armor-Tweak-Radio
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -105,6 +106,9 @@
   id: ClothingOuterHardsuitBase
   name: base hardsuit
   components:
+# SlotBlocker blocked until UI change
+#  - type: SlotBlock
+#    slots: [innerclothing, feet]
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
@@ -150,6 +154,9 @@
   id: ClothingOuterEVASuitBase
   name: base EVA Suit
   components:
+# SlotBlocker blocked until UI change
+#  - type: SlotBlock
+#    slots: [innerclothing, feet]
   - type: PressureProtection
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
