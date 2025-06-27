@@ -230,7 +230,7 @@ flavor-complex-ice = как лёд
 ## Cocktails
 
 flavor-complex-mopwata = как застоявшаяся грязная вода
-flavor-complex-gin = like fermented grain with juniper berries
+flavor-complex-gin = как ферментированные ягоды можжевельника
 flavor-complex-long-island = подозрительно похож на холодный чай
 flavor-complex-three-mile-island = как чай, заваренный в ядерных отходах
 flavor-complex-arnold-palmer = как попадание в лунку с первого удара

@@ -1,4 +1,5 @@
 ent-BaseMobKidan = Урист МакКидан
     .desc = { ent-BaseMobSpeciesOrganic.desc }
-ent-MobKidanDummy = Urist McKidan
-    .desc = A dummy kidan meant to be used in character setup.
+ent-MobKidanDummy = Урист МакКидан
+    .desc = Манекен кидана, предназначенный для настройки персонажа.
+.
