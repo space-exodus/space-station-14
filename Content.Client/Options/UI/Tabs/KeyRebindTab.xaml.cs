@@ -161,6 +161,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(EngineKeyFunctions.MoveRight);
             AddButton(ContentKeyFunctions.ToggleStanding); // Exodus-Crawling
             AddButton(EngineKeyFunctions.Walk);
+            AddButton(ContentKeyFunctions.Rush);  // Exodus - Rush
             AddCheckBox("ui-options-hotkey-toggle-walk", _cfg.GetCVar(CCVars.ToggleWalk), HandleToggleWalk);
             InitToggleWalk();
 
