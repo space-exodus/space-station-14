@@ -18,6 +18,12 @@
 #      time: 54000 # 15 hours
     - !type:OverallPlaytimeRequirement
       time: 504000 #140 hrs # Corvax-RoleTime
+    # Exodus-Better-Command-Hiring-Start
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Vox
+    # Exodus-Better-Command-Hiring-End
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
