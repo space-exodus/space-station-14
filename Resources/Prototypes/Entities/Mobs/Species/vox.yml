@@ -106,8 +106,8 @@
       visible: false
   - type: HumanoidAppearance
     species: Vox
-    undergarmentTop: UndergarmentTopTanktopVox
-    undergarmentBottom: UndergarmentBottomBoxersVox
+    # undergarmentTop: UndergarmentTopTanktopVox # Exodus-No-Need-For-Underwear-For-Race
+    # undergarmentBottom: UndergarmentBottomBoxersVox # Exodus-No-Need-For-Underwear-For-Race
     markingsDisplacement:
       Hair:
         sizeMaps:
@@ -171,8 +171,8 @@
   components:
   - type: HumanoidAppearance
     species: Vox
-    undergarmentTop: UndergarmentTopTanktopVox
-    undergarmentBottom: UndergarmentBottomBoxersVox
+    # undergarmentTop: UndergarmentTopTanktopVox # Exodus-No-Need-For-Underwear-For-Race
+    # undergarmentBottom: UndergarmentBottomBoxersVox # Exodus-No-Need-For-Underwear-For-Race
     markingsDisplacement:
       Hair:
         sizeMaps:
