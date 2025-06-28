@@ -23,14 +23,15 @@ public sealed partial class HasTags : EntityEffectCondition
     {
         if (args.EntityManager.TryGetComponent<TagComponent>(args.TargetEntity, out var tagComp))
         {
+            var entityTags = tagComp.Tags.ToList();
             if (All)
             {
-                var allTagsPresent = Tags.All(tag => tagComp.Tags.Contains(tag));
+                var allTagsPresent = Tags.All(tag => entityTags.Contains(tag));
                 return allTagsPresent ^ Invert;
             }
             else
             {
-                var anyTagPresent = Tags.Any(tag => tagComp.Tags.Contains(tag));
+                var anyTagPresent = Tags.Any(tag => entityTags.Contains(tag));
                 return anyTagPresent ^ Invert;
             }
         }
