@@ -57,7 +57,7 @@
     - Snout
     - HeadTop
     - HeadSide
-    undergarmentBottom: UndergarmentBottomBoxersReptilian
+    # undergarmentBottom: UndergarmentBottomBoxersReptilian # Exodus-No-Need-For-Underwear-For-Race
   - type: Hunger
     baseDecayRate: 0.0333333333 # Exodus-ReptilianLore
   - type: Puller
@@ -206,7 +206,7 @@
     - Snout
     - HeadTop
     - HeadSide
-    undergarmentBottom: UndergarmentBottomBoxersReptilian
+    # undergarmentBottom: UndergarmentBottomBoxersReptilian # Exodus-No-Need-For-Underwear-For-Race
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:
