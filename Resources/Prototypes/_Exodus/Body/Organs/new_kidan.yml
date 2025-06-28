@@ -37,6 +37,7 @@
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
   - type: Stomach
+    isSpecialDigestibleExclusive: false
     specialDigestible:
       tags:
       - DionaNymph

@@ -396,6 +396,19 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/hos_parade.rsi
 
+# Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+# - type: entity
+#   parent: [ ClothingUniformBase, BaseCommandContraband ]
+#   id: ClothingUniformJumpsuitCommandGeneric
+#   name: command jumpsuit
+#   description: A generic Command-colored jumpsuit not associated with any particular department.
+#   components:
+#   - type: Sprite
+#     sprite: Clothing/Uniforms/Jumpsuit/commandgeneric.rsi
+#   - type: Clothing
+#     sprite: Clothing/Uniforms/Jumpsuit/commandgeneric.rsi
+# Exodus-RevertCommandUniform-End
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitHydroponics
@@ -509,6 +522,7 @@
   - type: Tag
     tags:
     - ClothMade
+    - Recyclable
     - PrisonUniform
     - WhitelistChameleon
 
