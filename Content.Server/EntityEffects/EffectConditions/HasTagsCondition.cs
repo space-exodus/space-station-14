@@ -25,12 +25,12 @@ public sealed partial class HasTags : EntityEffectCondition
         {
             if (All)
             {
-                var allTagsPresent = tagComp.Tags.All(tag => Tags.Contains(tag));
+                var allTagsPresent = Tags.All(tag => tagComp.Tags.Contains(tag));
                 return allTagsPresent ^ Invert;
             }
             else
             {
-                var anyTagPresent = tagComp.Tags.Any(tag => Tags.Contains(tag));
+                var anyTagPresent = Tags.Any(tag => tagComp.Tags.Contains(tag));
                 return anyTagPresent ^ Invert;
             }
         }
