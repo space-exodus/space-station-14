@@ -150,6 +150,20 @@
               amount: 2
               doAfter: 2
 
+   # Exodus-Wall-Diagonal-Craft-Start
+    - node: diagonalWall
+      entity: WallSolidDiagonal
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 1
+          steps:
+            - tool: Welding
+              doAfter: 10
+   # Exodus-Wall-Diagonal-Craft-End
+   # Exodus-Shuttle-Interior-Wall-Return-Start
         - to: shuttleInteriorWall
           completed:
             - !type:SnapToGrid
@@ -165,19 +179,7 @@
             - material: Steel
               amount: 2
               doAfter: 1
-   # Exodus-Wall-Diagonal-Craft-Start
-    - node: diagonalWall
-      entity: WallSolidDiagonal
-      edges:
-        - to: girder
-          completed:
-            - !type:GivePrototype
-              prototype: SheetSteel1
-              amount: 1
-          steps:
-            - tool: Welding
-              doAfter: 10
-   # Exodus-Wall-Diagonal-Craft-End
+   # Exodus-Shuttle-Interior-Wall-Return-End
 
     - node: wall
       entity: WallSolid
@@ -285,6 +287,7 @@
             - tool: Prying
               doAfter: 5
 
+   # Exodus-Shuttle-Interior-Wall-Return-Start
     - node: shuttleInteriorWall
       entity: WallShuttleInterior
       edges:
@@ -301,7 +304,8 @@
               doAfter: 10
             - tool: Screwing
               doAfter: 1
-
+   # Exodus-Shuttle-Interior-Wall-Return-End
+   
     - node: reinforcedGirder
       entity: ReinforcedGirder
       edges:

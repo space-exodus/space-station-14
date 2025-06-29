@@ -1,8 +1,8 @@
 name: Publish
 
-permissions: write-all
-#concurrency:
-#  group: publish
+concurrency:
+  group: publish
+  cancel-in-progress: true
 
 on:
   workflow_dispatch:
@@ -23,18 +23,11 @@ jobs:
     # Exodus-Secrets-Start
     - name: Setup secrets
       env:
-        SSH_KEY: ${{ secrets.SECRETS_PRIVATE_KEY }}
-      if: ${{ env.SSH_KEY != '' }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      if: ${{ env.ACCESS_TOKEN != '' }}
       run: |
-        mkdir ~/.ssh
-        echo "${{ secrets.SECRETS_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        echo "HOST *" > ~/.ssh/config
-        echo "StrictHostKeyChecking no" >> ~/.ssh/config
-        git -c submodule.Secrets.update=checkout submodule update --init
-        cp -R Secrets/Resources/Prototypes Resources/Prototypes/ExodusSecrets
-        cp -R Secrets/Resources/Locale Resources/Locale/ru-RU/exodus-secrets
-        cp -R Secrets/Resources/Textures Resources/Textures/ExodusSecrets
+        git -c submodule.Secrets.update=checkout -c submodule.Secrets.url="https://${{ env.ACCESS_TOKEN }}@github.com/space-exodus/secrets.git" submodule update --init
+        ./sync-secrets.sh
     # Exodus-Secrets-End
 
     - name: Setup .NET Core
@@ -67,13 +60,15 @@ jobs:
         FORK_ID: exodus-secret
         ROBUST_CDN_URL: ${{ secrets.ROBUST_CDN_URL }}
 
-    #    - name: Publish changelog (Discord)
-    #      run: Tools/actions_changelogs_since_last_run.py
-    #      env:
-    #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+    #- name: Publish changelog (Discord)
+    #  continue-on-error: true
+    #  run: Tools/actions_changelogs_since_last_run.py
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #    DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
 
-    #    - name: Publish changelog (RSS)
-    #      run: Tools/actions_changelog_rss.py
-    #      env:
-    #        CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}
+    #- name: Publish changelog (RSS)
+    #  continue-on-error: true
+    #  run: Tools/actions_changelog_rss.py
+    #  env:
+    #    CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}

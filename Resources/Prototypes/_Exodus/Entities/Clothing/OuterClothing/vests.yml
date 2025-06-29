@@ -35,3 +35,7 @@
         whitelist:
           tags:
           - Radio
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      item: !type:ContainerSlot {}

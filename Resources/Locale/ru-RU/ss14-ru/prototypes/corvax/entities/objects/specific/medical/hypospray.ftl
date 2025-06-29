@@ -1,2 +1,2 @@
-ent-HyposprayBrigmedic = hypospray brigmedic
-    .desc = Sterile injector for rapid administration of medications to prisoners and security personnel.
+ent-HyposprayBrigmedic = гипоспрей бригмедика
+    .desc = Стерильный гипоспрей для быстрого введения лекарственных препаратов заключенным и сотрудникам службы безопасности.

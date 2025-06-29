@@ -36,7 +36,7 @@ humanoid-profile-editor-guidebook-button-tooltip = Кликните для по�
 # Spawn priority
 humanoid-profile-editor-preference-spawn-priority-none = Нет
 humanoid-profile-editor-preference-spawn-priority-arrivals = Зал прибытия
-humanoid-profile-editor-preference-spawn-priority-cryosleep = Капсула криосна
+humanoid-profile-editor-preference-spawn-priority-cryosleep = Капсула криогенного сна
 humanoid-profile-editor-jobs-amount-in-department-tooltip = { $departmentName }
 humanoid-profile-editor-department-jobs-label = { $departmentName }
 humanoid-profile-editor-antags-tab = Антагонисты

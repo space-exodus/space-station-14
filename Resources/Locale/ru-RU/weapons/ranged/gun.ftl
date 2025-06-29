@@ -8,7 +8,7 @@ gun-set-fire-mode = Выбран режим { $mode }
 gun-magazine-whitelist-fail = Это не помещается в оружие!
 gun-magazine-fired-empty = Нет патронов!
 # SelectiveFire
-gun-SemiAuto = полуавто
+gun-SemiAuto = одиночные
 gun-Burst = очередь
 gun-FullAuto = авто
 # BallisticAmmoProvider
@@ -52,3 +52,6 @@ gun-revolver-insert = Заряжен
 gun-revolver-spin = Вращать барабан
 gun-revolver-spun = Барабан вращается
 gun-speedloader-empty = Спидлоадер пуст
+# GunSpreadModifier
+examine-gun-spread-modifier-reduction = Разброс снижен на [color=yellow]{ $percentage }%[/color].
+examine-gun-spread-modifier-increase = Разброс повышен на [color=yellow]{ $percentage }%[/color].

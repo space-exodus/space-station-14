@@ -870,8 +870,6 @@ entities:
       pos: 1.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
   - uid: 229
@@ -880,8 +878,6 @@ entities:
       pos: 3.5,-4.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
   - uid: 230
@@ -890,8 +886,6 @@ entities:
       pos: 5.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
 - proto: GasPassiveVent
@@ -1124,8 +1118,6 @@ entities:
       pos: 6.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
     - type: AtmosPipeColor
@@ -1137,8 +1129,6 @@ entities:
       pos: 3.5,1.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
     - type: AtmosPipeColor
@@ -1168,8 +1158,6 @@ entities:
       pos: 6.5,-3.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
     - type: AtmosPipeColor
@@ -1180,8 +1168,6 @@ entities:
       pos: 3.5,-2.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 231
     - type: AtmosPipeColor

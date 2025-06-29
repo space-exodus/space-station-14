@@ -2,7 +2,6 @@
 
 using Content.Shared.Exodus.Traits.Species.Pheromones;
 using Robust.Client.GameObjects;
-using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Player;
 
@@ -10,10 +9,7 @@ namespace Content.Client.Exodus.Traits.Species.Pheromones;
 
 public sealed partial class PheromonesSystem : SharedPheromonesSystem
 {
-    [Dependency] private readonly IOverlayManager _overlay = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IClyde _clyde = default!;
 
     public override void Initialize()
     {

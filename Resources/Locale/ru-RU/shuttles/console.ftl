@@ -21,6 +21,9 @@ shuttle-console-exclusion = Зона отчуждения
 shuttle-console-nav-settings = Настройки
 shuttle-console-iff-toggle = Показ системы опознавания
 shuttle-console-dock-toggle = Показ стыковочных портов
+shuttle-console-Nav = НАВИГАЦИЯ
+shuttle-console-Map = БСС
+shuttle-console-Dock = СТЫКОВКА
 
 # MAP
 

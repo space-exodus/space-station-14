@@ -1,4 +1,4 @@
-ent-BoxSyringeAmmo = коробка метательных шприцов
+ent-BoxSyringeAmmo = коробка метательных шприцев
     .desc = Полная коробка веселья.
 ent-BoxSyringeAmmoPolytrinic = { ent-BoxSyringeAmmo }
     .desc = { ent-BoxSyringeAmmo.desc }

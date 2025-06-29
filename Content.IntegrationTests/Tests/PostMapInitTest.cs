@@ -59,33 +59,10 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
-            // Corvax-Start
-            "CorvaxAvrite",
-            "CorvaxDelta",
-            "CorvaxSilly",
-            "CorvaxOutpost",
-            "CorvaxAstra",
-            "CorvaxGelta",
-			"CorvaxMaus",
-			"CorvaxIshimura",
-			"CorvaxPaper",
-            "CorvaxPilgrim",
-            "CorvaxSplit",
-            "CorvaxTerra",
-            "CorvaxFrame",
-            "CorvaxPearl",
-            "CorvaxTushkan",
-            "CorvaxGlacier",
-            "CorvaxAwesome",
-			"CorvaxChloris",
-            // Corvax-End
             // Exodus-Start
             "ExodusCluster",
-            "ExodusDelta",
-            "ExodusOmega",
             "ExodusPacked",
             "ExodusSaltern",
-            "ExodusOmicron",
             // Exodus-End
             "Dev",
             "TestTeg",
@@ -109,7 +86,9 @@ namespace Content.IntegrationTests.Tests
             "Plasma",
             "Elkridge",
             "Convex",
-            "Relic"
+            "Relic",
+            "dm01-entryway"
+
         };
 
         /// <summary>

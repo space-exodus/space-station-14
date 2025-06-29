@@ -30,22 +30,22 @@ public sealed partial class PheromonesAskEui : BaseEui
         if (Player.AttachedEntity == null)
             return;
 
-        var text = ask.Text[..256];
+        Close();
+        var text = ask.Text.Substring(0, Math.Min(ask.Text.Length, 256));
 
         if (Target != null && Target.Value.IsValid())
         {
-            if (!_pheromones.ValidateCanMark(Player.AttachedEntity.Value, Target.Value, true))
+            if (!_pheromones.ValidateCanMark(Player.AttachedEntity.Value, Target.Value))
                 return;
 
             _pheromones.MarkTargetWithPheromones(Target.Value, Player.AttachedEntity.Value, text);
         }
         else if (Coordinates != null)
         {
-            if (!_pheromones.ValidateCanMark(Player.AttachedEntity.Value, Coordinates.Value, true))
+            if (!_pheromones.ValidateCanMark(Player.AttachedEntity.Value, Coordinates.Value))
                 return;
 
             _pheromones.MarkCoordsWithPheromones(Coordinates.Value, Player.AttachedEntity.Value, text);
-            Close();
         }
     }
 }

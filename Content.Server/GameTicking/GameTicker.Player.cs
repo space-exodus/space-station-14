@@ -34,11 +34,8 @@ namespace Content.Server.GameTicking
             {
                 if (args.OldStatus == SessionStatus.Connecting && args.NewStatus == SessionStatus.Connected)
                 {
-                    mind.Session = session;
                     _pvsOverride.AddSessionOverride(mindId.Value, session);
                 }
-
-                DebugTools.Assert(mind.Session == session);
             }
 
             DebugTools.Assert(session.GetMind() == mindId);
@@ -65,16 +62,16 @@ namespace Content.Server.GameTicking
                             ? Loc.GetString("player-first-join-message", ("name", args.Session.Name))
                             : Loc.GetString("player-join-message", ("name", args.Session.Name)));
 
-                    if (firstConnection && _cfg.GetCVar(CCVars.AdminNewPlayerJoinSound))
-                        _audio.PlayGlobal(new SoundPathSpecifier("/Audio/Effects/newplayerping.ogg"),
-                            Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false,
-                            audioParams: new AudioParams { Volume = -5f });
+                        if (firstConnection && _cfg.GetCVar(CCVars.AdminNewPlayerJoinSound))
+                            _audio.PlayGlobal(new SoundPathSpecifier("/Audio/Effects/newplayerping.ogg"),
+                                Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false,
+                                audioParams: new AudioParams { Volume = -5f });
 
-                    if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
-                    {
-                        _roundStartCountdownHasNotStartedYetDueToNoPlayers = false;
-                        _roundStartTime = _gameTiming.CurTime + LobbyDuration;
-                    }
+                        if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
+                        {
+                            _roundStartCountdownHasNotStartedYetDueToNoPlayers = false;
+                            _roundStartTime = _gameTiming.CurTime + LobbyDuration;
+                        }
 
                         if (LobbyEnabled && _roundStartCountdownHasNotStartedYetDueToNoPlayers)
                         {
@@ -134,10 +131,9 @@ namespace Content.Server.GameTicking
                 case SessionStatus.Disconnected:
                     {
                         _chatManager.SendAdminAnnouncement(Loc.GetString("player-leave-message", ("name", args.Session.Name)));
-                        if (mind != null)
+                        if (mindId != null)
                         {
-                            _pvsOverride.ClearOverride(GetNetEntity(mindId!.Value));
-                            mind.Session = null;
+                            _pvsOverride.RemoveSessionOverride(mindId.Value, session);
                         }
 
                         if (_playerGameStatuses.ContainsKey(args.Session.UserId)) // Corvax-Queue: Delete data only if player was in game

@@ -199,5 +199,7 @@ ent-FloorTileItemAstroSnow = астро-снег
     .desc = Искусственный снег, такой же пушистый, как настоящий, и при этом легко снимается!
 ent-FloorTileItemWoodLarge = большой деревянный пол
     .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemAstroAsteroidSandBorderless = безграничный астро-песок астероида
+    .desc = Искусственный песок. К счастью, он не такой крупнозернистый, как настоящий.
 ent-FloorTileItemAstroAsteroidSand = астероидный астро-песок
     .desc = Искусственный песок, такой же сухой, как настоящий, и при этом легко снимается!

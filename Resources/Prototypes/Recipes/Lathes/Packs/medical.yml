@@ -16,6 +16,7 @@
   - PillCanister
   - HandLabeler
   - BaseChemistryEmptyVial
+  - MechanicalInjector # Exodus-ThickSyringes
 
 - type: latheRecipePack
   parent: BasicChemistryStatic
@@ -44,6 +45,7 @@
   - DiseaseSwab
   - BodyBag
   - WhiteCane
+  - ClothingEyesHudChemMed # Exodus-Better-Med-Hud
 
 - type: latheRecipePack
   id: RollerBedsStatic
@@ -93,7 +95,10 @@
   - SyringeCryostasis
   - BluespaceBeaker
   - SyringeBluespace
-  - MechanicalInjector # Exodus-ThickSyringes
+  # Exodus-Syringe-Launcher-Remove-Start
+  # - LauncherSyringe
+  # - MiniSyringe
+  # Exodus-Syringe-Launcher-Remove-End
 
 - type: latheRecipePack
   id: MedicalBoards

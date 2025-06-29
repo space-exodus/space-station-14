@@ -15,5 +15,5 @@ sandbox-window-toggle-shadows-button = Переключить тени
 sandbox-window-toggle-subfloor-button = Переключить пол
 sandbox-window-toggle-suicide-button = Самоубийство
 sandbox-window-show-spawns-button = Показать спавны
-sandbox-window-show-bb-button = Показать BB
+sandbox-window-show-bb-button = Показать хитбоксы
 sandbox-window-show-npc-button = Показать NPC

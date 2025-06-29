@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseWeaponTurret
+  parent: BaseWeaponBallisticTurret
   id: WeaponTurretDeathSquad
   name: ballistic turret
   description: A ballistic machine gun auto-turret.

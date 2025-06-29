@@ -35,6 +35,13 @@
   - ClothingHeadHatHopcap
   - ClothingUniformJumpsuitHoP
   - ClothingUniformJumpskirtHoP
+  # Exodus-RevertCommandUniform-Start | https://github.com/space-exodus/space-station-14/issues/159
+  # # Generic
+  # - ClothingHeadHatBeretCommand
+  # - ClothingHeadHatCommandSoft
+  # - ClothingUniformJumpskirtCommandGeneric
+  # - ClothingUniformJumpsuitCommandGeneric
+  # Exodus-RevertCommandUniform-End
 
 - type: latheRecipePack
   id: ClothingEngineering
