@@ -1,0 +1,11 @@
+- type: cargoBounty
+  id: BountySpiderCube
+  reward: 2000
+  description: bounty-description-spider-cube
+  idPrefix: CC
+  entries:
+  - name: bounty-item-spider-cube
+    amount: 3
+    whitelist:
+      tags:
+      - SpiderCube

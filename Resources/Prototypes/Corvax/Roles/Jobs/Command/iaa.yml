@@ -10,6 +10,12 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 36000
+  # Exodus-Better-Command-Hiring-Start
+  - !type:SpeciesRequirement
+    inverted: true
+    species:
+    - Vox
+  # Exodus-Better-Command-Hiring-End
   startingGear: IAAGear
   icon: "JobIconIAA"
   supervisors: job-supervisors-centcom

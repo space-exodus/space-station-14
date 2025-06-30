@@ -21,6 +21,9 @@
 
 - type: Tag
   id: DionaNymph
-  
+
 - type: Tag
   id: MindSlave
+
+- type: Tag
+  id: SpiderCube

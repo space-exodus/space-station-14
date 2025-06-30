@@ -20,8 +20,10 @@
     Head: MobDionaHead
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
+    # Exodus-No-Need-For-Underwear-For-Race-Start
+    # UndergarmentTop: MobHumanoidAnyMarking
+    # UndergarmentBottom: MobHumanoidAnyMarking
+    # Exodus-No-Need-For-Underwear-For-Race-End
     Chest: MobDionaTorso
     Eyes: MobDionaEyes
     LArm: MobDionaLArm
