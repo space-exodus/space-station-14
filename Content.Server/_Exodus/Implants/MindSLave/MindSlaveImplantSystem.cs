@@ -1,7 +1,6 @@
 using Content.Server.Popups;
 using Content.Server.Chat.Managers;
 using Robust.Server.Player;
-using Content.Shared.Whitelist;
 using Content.Shared.Ghost;
 using Content.Shared.Popups;
 using Robust.Shared.Containers;
@@ -28,7 +27,6 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<MindShieldImplantComponent, ImplantImplantedEvent>(RemoveMindSlave);
         SubscribeLocalEvent<MindSlaveImplantComponent, ImplantImplantedEvent>(ImplantCheck);
         SubscribeLocalEvent<MindSlaveImplantComponent, EntGotRemovedFromContainerMessage>(OnImplantDraw);
         SubscribeLocalEvent<MindSlaveImplantComponent, ImplantInjectEvent>(AddMindSlaveAttempt);
@@ -60,6 +58,7 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
             if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var master))
                 return;
+
             EnsureComp<MindSlaveMasterComponent>(master);
 
             _playerManager.TryGetSessionByEntity(master, out var playerMasterSession);
@@ -76,31 +75,20 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
 
 
             var slaveComp = EntityManager.GetComponent<MindSlaveComponent>(ev.Implanted.Value);
+            var slaveNetId = EntityManager.GetNetEntity(ev.Implanted.Value);
+
             slaveComp.Master = masterNetId;
             Dirty(ev.Implanted.Value, slaveComp);
 
-            if (!masterComp.Slaves.Contains(ev.Implanted.Value))
+            if (!masterComp.IconList.Contains(masterNetId))
             {
-                masterComp.Slaves.Add(ev.Implanted.Value);
-                Dirty(master, masterComp);
+                masterComp.IconList.Add(masterNetId);
             }
 
-            var iconWhiteList = new List<NetEntity>();
-            if (masterComp.Slaves != null)
+            if (!masterComp.IconList.Contains(slaveNetId))
             {
-                foreach (var slave in masterComp.Slaves)
-                {
-                    iconWhiteList.Add(EntityManager.GetNetEntity(slave));
-                }
+                masterComp.IconList.Add(slaveNetId);
             }
-            iconWhiteList.Add(EntityManager.GetNetEntity(master));
-
-            var whitelistSlaves = new EntityWhitelist
-            {
-                NetEntities = iconWhiteList,
-            };
-
-            masterComp.SlavesWhiteList = whitelistSlaves;
 
             Dirty(master, masterComp);
 
@@ -177,26 +165,21 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             }
 
             var slaveComp = EntityManager.GetComponent<MindSlaveComponent>(ev.Implanted.Value);
+            var slaveNetId = EntityManager.GetNetEntity(ev.Implanted.Value);
             var masterUid = EntityManager.GetEntity(slaveComp.Master);
+            var masterNetId = EntityManager.GetNetEntity(masterUid);
             var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(masterUid);
 
-            if (masterComp.Slaves.Contains(ev.Implanted.Value))
+            if (masterComp.IconList.Contains(slaveNetId))
             {
-                masterComp.Slaves.Remove(ev.Implanted.Value);
-                Dirty(masterUid, masterComp);
-            }
-
-
-            if (masterComp.SlavesWhiteList.NetEntities.Contains(EntityManager.GetNetEntity(ev.Implanted.Value)))
-            {
-                masterComp.SlavesWhiteList.NetEntities.Remove(EntityManager.GetNetEntity(ev.Implanted.Value));
+                masterComp.IconList.Remove(slaveNetId);
                 Dirty(masterUid, masterComp);
             }
 
             if (_mindSlaveImplantUsers.ContainsKey(ev.Implanted.Value))
                 _mindSlaveImplantUsers.Remove(ev.Implanted.Value);
 
-            if (masterComp.Slaves.Count == 0)
+            if (masterComp.IconList.Contains(masterNetId) && masterComp.IconList.Count == 1)
             {
                 _playerManager.TryGetSessionByEntity(masterUid, out var playerMasterSession);
                 if (playerMasterSession != null)
@@ -238,23 +221,19 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             return;
 
         var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(masterUid);
+        var masterNetId = EntityManager.GetNetEntity(masterUid);
+        var slaveNetId = EntityManager.GetNetEntity(args.Container.Owner);
 
-        if (masterComp.Slaves.Contains(args.Container.Owner))
+        if (masterComp.IconList.Contains(slaveNetId))
         {
-            masterComp.Slaves.Remove(args.Container.Owner);
-            Dirty(masterUid, masterComp);
-        }
-
-        if (masterComp.SlavesWhiteList.NetEntities.Contains(EntityManager.GetNetEntity(args.Container.Owner)))
-        {
-            masterComp.SlavesWhiteList.NetEntities.Remove(EntityManager.GetNetEntity(args.Container.Owner));
+            masterComp.IconList.Remove(slaveNetId);
             Dirty(masterUid, masterComp);
         }
 
         if (_mindSlaveImplantUsers.ContainsKey(args.Container.Owner))
             _mindSlaveImplantUsers.Remove(args.Container.Owner);
 
-        if (masterComp.Slaves.Count == 0)
+        if (masterComp.IconList.Contains(masterNetId) && masterComp.IconList.Count == 1)
         {
             _playerManager.TryGetSessionByEntity(masterUid, out var playerMasterSession);
             if (playerMasterSession != null)

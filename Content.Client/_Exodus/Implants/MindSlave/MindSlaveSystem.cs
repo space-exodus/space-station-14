@@ -29,7 +29,7 @@ public sealed class MindSlaveSystem : EntitySystem
         var icon = new StatusIconData
         {
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Exodus/Interface/Misc/JobIcons/mindslave.rsi"), "subordinate"),
-            ShowTo = masterComp.SlavesWhiteList
+            ShowToNetEntities = masterComp.IconList
         };
 
         args.StatusIcons.Add(icon);
@@ -43,7 +43,7 @@ public sealed class MindSlaveSystem : EntitySystem
         var icon = new StatusIconData
         {
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Exodus/Interface/Misc/JobIcons/mindslave.rsi"), "subordinating"),
-            ShowTo = ent.Comp.SlavesWhiteList
+            ShowToNetEntities = ent.Comp.IconList
         };
 
         args.StatusIcons.Add(icon);

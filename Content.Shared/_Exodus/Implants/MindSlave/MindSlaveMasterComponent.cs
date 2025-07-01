@@ -10,8 +10,5 @@ namespace Content.Shared.Exodus.Implants.MindSlave.Components;
 public sealed partial class MindSlaveMasterComponent : Component
 {
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public List<EntityUid> Slaves = new List<EntityUid>();
-
-    [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public EntityWhitelist SlavesWhiteList = new();
+    public HashSet<NetEntity> IconList = new HashSet<NetEntity>();
 }

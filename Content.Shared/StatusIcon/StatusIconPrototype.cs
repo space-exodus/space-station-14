@@ -50,6 +50,8 @@ public partial class StatusIconData : IComparable<StatusIconData>
     [DataField]
     public EntityWhitelist? ShowTo;
 
+    public HashSet<NetEntity> ShowToNetEntities = new();//Exodus-MindSlave
+
     /// <summary>
     /// A preference for where the icon will be displayed. None | Left | Right
     /// </summary>
