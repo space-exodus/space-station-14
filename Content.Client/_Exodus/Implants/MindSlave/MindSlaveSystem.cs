@@ -1,9 +1,6 @@
 using Content.Shared.StatusIcon.Components;
 using Content.Shared.Exodus.Implants.MindSlave.Components;
 using Content.Shared.StatusIcon;
-using Content.Shared.Whitelist;
-using Robust.Client.GameObjects;
-using Robust.Shared.Utility;
 
 namespace Content.Client.Exodus.Implants.MindSlave;
 
@@ -28,7 +25,7 @@ public sealed class MindSlaveSystem : EntitySystem
 
         var icon = new StatusIconData
         {
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Exodus/Interface/Misc/JobIcons/mindslave.rsi"), "subordinate"),
+            Icon = ent.Comp.Icon,
             ShowToNetEntities = masterComp.IconList
         };
 
@@ -42,7 +39,7 @@ public sealed class MindSlaveSystem : EntitySystem
 
         var icon = new StatusIconData
         {
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Exodus/Interface/Misc/JobIcons/mindslave.rsi"), "subordinating"),
+            Icon = ent.Comp.Icon,
             ShowToNetEntities = ent.Comp.IconList
         };
 

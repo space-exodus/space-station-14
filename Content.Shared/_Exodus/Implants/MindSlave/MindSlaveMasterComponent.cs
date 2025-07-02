@@ -1,7 +1,5 @@
-using Content.Shared.StatusIcon;
-using Robust.Shared.Prototypes;
 using Robust.Shared.GameStates;
-using Content.Shared.Whitelist;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Exodus.Implants.MindSlave.Components;
 
@@ -11,4 +9,7 @@ public sealed partial class MindSlaveMasterComponent : Component
 {
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
     public HashSet<NetEntity> IconList = new HashSet<NetEntity>();
+
+    [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
+    public SpriteSpecifier Icon { get; set; } = new SpriteSpecifier.Rsi(new ResPath("/Textures/Exodus/Interface/Misc/JobIcons/mindslave.rsi"), "subordinating");
 }
