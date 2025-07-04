@@ -321,6 +321,7 @@ ent-AirlockMaintServiceLocked = { ent-AirlockMaint }
     .desc = { ent-AirlockMaint.desc }
 ent-AirlockMaintServiceTheatreLocked = { ent-AirlockServiceTheatreLocked }
     .desc = { ent-AirlockServiceTheatreLocked.desc }
+    .suffix = Сервисный-Театр, Закрыт
 ent-AirlockMaintTheatreLocked = { ent-AirlockMaintServiceLocked }
     .suffix = Театр, Закрыт
     .desc = { ent-AirlockMaintServiceLocked.desc }

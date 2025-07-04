@@ -1,4 +1,4 @@
-ent-FloorTrapSpikes = возможно это может быть опасно...
+ent-FloorTrapSpikes = ловушка с шипами
     .desc = Ты же не будешь пробовать это своими ногами?
     .suffix = Ловушка, Шипы
 ent-FloorTrapSpikesActivated = ловушка с шипами
