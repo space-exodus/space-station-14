@@ -441,7 +441,7 @@
   - type: Sprite
     state: pill16
   - type: Label
-    currentLabel: pill-label-dexalin
+    currentLabel: pill-label-dexalin # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -457,7 +457,7 @@
   suffix: Dexalin 10u, 7
   components:
   - type: Label
-    currentLabel: pill-label-dexalin
+    currentLabel: pill-label-dexalin # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillDexalin
@@ -474,7 +474,7 @@
   - type: Sprite
     state: pill10
   - type: Label
-    currentLabel: pill-label-dylovene
+    currentLabel: pill-label-dylovene # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -490,7 +490,7 @@
   suffix: Dylovene 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-dylovene
+    currentLabel: pill-label-dylovene # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillDylovene
@@ -507,7 +507,7 @@
   - type: Sprite
     state: pill17
   - type: Label
-    currentLabel: pill-label-hyronalin
+    currentLabel: pill-label-hyronalin # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -523,7 +523,7 @@
   suffix: Hyronalin 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-hyronalin
+    currentLabel: pill-label-hyronalin # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillHyronalin
@@ -540,7 +540,7 @@
   - type: Sprite
     state: pill9
   - type: Label
-    currentLabel: pill-label-potassium-iodide
+    currentLabel: pill-label-potassium-iodide # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -556,7 +556,7 @@
   suffix: Potassium iodide 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-potassium-iodide
+    currentLabel: pill-label-potassium-iodide # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillPotassiumIodide
@@ -573,7 +573,7 @@
   - type: Sprite
     state: pill14
   - type: Label
-    currentLabel: pill-label-iron
+    currentLabel: pill-label-iron # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -589,7 +589,7 @@
   suffix: Iron 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-iron
+    currentLabel: pill-label-iron # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillIron
@@ -606,7 +606,7 @@
   - type: Sprite
     state: pill13
   - type: Label
-    currentLabel: pill-label-copper
+    currentLabel: pill-label-copper # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -622,7 +622,7 @@
   suffix: Copper 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-copper
+    currentLabel: pill-label-copper # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillCopper
@@ -639,7 +639,7 @@
   - type: Sprite
     state: pill4
   - type: Label
-    currentLabel: pill-label-kelotane
+    currentLabel: pill-label-kelotane # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -655,7 +655,7 @@
   suffix: Kelotane 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-kelotane
+    currentLabel: pill-label-kelotane # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillKelotane
@@ -672,7 +672,7 @@
   - type: Sprite
     state: pill8
   - type: Label
-    currentLabel: pill-label-dermaline
+    currentLabel: pill-label-dermaline # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -688,7 +688,7 @@
   suffix: Dermaline 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-dermaline
+    currentLabel: pill-label-dermaline # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillDermaline
@@ -718,7 +718,7 @@
   - type: Sprite
     state: pill3
   - type: Label
-    currentLabel: pill-label-tricordrazine
+    currentLabel: pill-label-tricordrazine # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -734,7 +734,7 @@
   suffix: Tricordrazine 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-tricordrazine
+    currentLabel: pill-label-tricordrazine # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillTricordrazine
@@ -751,7 +751,7 @@
   - type: Sprite
     state: pill5
   - type: Label
-    currentLabel: pill-label-bicaridine
+    currentLabel: pill-label-bicaridine # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -767,7 +767,7 @@
   suffix: Bicaridine 10u, 5
   components:
   - type: Label
-    currentLabel: pill-label-bicaridine
+    currentLabel: pill-label-bicaridine # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillBicaridine
@@ -784,7 +784,7 @@
   - type: Sprite
     state: pill21
   - type: Label
-    currentLabel: pill-label-charcoal
+    currentLabel: pill-label-charcoal # Exodus-Pill-Localization
   - type: SolutionContainerManager
     solutions:
       food:
@@ -800,7 +800,7 @@
   suffix: Charcoal 10u, 3
   components:
   - type: Label
-    currentLabel: pill-label-charcoal
+    currentLabel: pill-label-charcoal # Exodus-Pill-Localization
   - type: StorageFill
     contents:
     - id: PillCharcoal
