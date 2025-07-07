@@ -4,9 +4,10 @@
   description: Due to the resonance from clicking your jaw, you can recognize where the ore is located.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 5
     icon: { sprite: Exodus/Interface/Actions/kidans.rsi, state: mineral-resonance }
     itemIconStyle: NoItem
     priority: -11
+  - type: InstantAction
     event: !type:MineralResonanceUseEvent {}
