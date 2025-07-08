@@ -46,10 +46,12 @@
   inhand:
   - WeaponPulseRifle
 
-- type: chameleonOutfit
-  id: DeathSquadChameleonOutfit
-  job: DeathSquad
-  hasMindShield: true
-  equipment:
-    head: ClothingHeadHelmetHardsuitDeathsquad
-    neck: ClothingNeckBronzeheart
+# Exodus-Better-Chameleon-Start
+# - type: chameleonOutfit
+#   id: DeathSquadChameleonOutfit
+#   job: DeathSquad
+#   hasMindShield: true
+#   equipment:
+#     head: ClothingHeadHelmetHardsuitDeathsquad
+#     neck: ClothingNeckBronzeheart
+# Exodus-Better-Chameleon-End

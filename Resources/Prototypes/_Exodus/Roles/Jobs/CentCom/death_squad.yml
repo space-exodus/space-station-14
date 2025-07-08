@@ -30,6 +30,14 @@
     pocket1: DoorRemoteAll
     pocket2: DSEnergyShield
 
+- type: chameleonOutfit
+  id: DeathSquadCommanderChameleonOutfit
+  job: DSCommander
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetHardsuitDeathsquadCommander
+    neck: ClothingNeckMantleHOSShoulder
+
 - type: job
   id: DSOfficer
   name: job-name-deathsquad-officer
@@ -62,6 +70,14 @@
     pocket2: DSEnergyShield
     suitstorage: WeaponRifleSP
 
+- type: chameleonOutfit
+  id: DeathSquadOfficerChameleonOutfit
+  job: DSOfficer
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetHardsuitDeathsquadOfficer
+    neck: ClothingNeckMantleHOSShoulder
+
 - type: job
   id: DSSpecialist
   name: job-name-deathsquad-specialist
@@ -93,3 +109,11 @@
     pocket1: EnergySword
     pocket2: DSEnergyShield
     suitstorage: DSSyringeGun
+
+- type: chameleonOutfit
+  id: DeathSquadSpecialistChameleonOutfit
+  job: DSSpecialist
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetHardsuitDeathsquadSpecialist
+    neck: ClothingNeckMantleHOSShoulder
