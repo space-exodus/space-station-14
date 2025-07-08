@@ -880,14 +880,16 @@
     containers:
       board: [ DoorElectronicsMaintenance ]
 
-- type: entity
-  parent: AirlockXeno
-  id: AirlockXenoMaintLocked
-  suffix: Maintenance, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsMaintenance ]
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: entity
+#   parent: AirlockXeno
+#   id: AirlockXenoMaintLocked
+#   suffix: Maintenance, Locked
+#   components:
+#   - type: ContainerFill
+#     containers:
+#       board: [ DoorElectronicsMaintenance ]
+# Exodus-Exo-Station-Thing-Delete-End
 
 - type: entity
   parent: AirlockMaintGlass

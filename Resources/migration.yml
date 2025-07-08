@@ -716,3 +716,37 @@ BarSignEmprahAlignTile: BarSignEmprah
 BarSignSpacebucksAlignTile: BarSignSpacebucks
 BarSignMaltroachAlignTile: BarSignMaltroach
 BarSignWhiskeyEchoesAlignTile: BarSignWhiskeyEchoes
+
+# 2025-07-08 Exodus-Exo-Station-Thing-Delete
+PuddleFluorosulfuricAcidSmall: null
+PuddleFluorosulfuricAcid: null
+SpawnMobXenoLonePraetorian: null
+FloorTileItemTechmaintDark: null
+FloorTileItemXeno: null
+FloorTileItemXenoSteel: null
+FloorTileItemXenoSteelCorner: null
+FloorTileItemXenoMaint: null
+FloorTileItemDarkSquiggly: null
+AirlockXenoMaintLocked: AirlockMaintLocked
+AirlockXeno: Airlock
+AirlockGlassXeno: AirlockGlass
+BlastDoorXeno: BlastDoor
+BlastDoorXenoOpen: BlastDoorOpen
+BlastDoorXenoFrame: BlastDoorFrame
+TableXeno: Table
+ChairXeno: Stool
+ShuttleGunKineticOld: ShuttleGunKinetic
+RustedThruster: Thruster
+AirAlarmXeno: AirAlarm
+AirAlarmAssemblyXeno: AirAlarmAssembly
+FireAlarmXeno: FireAlarm
+FireAlarmAssemblyXeno: FireAlarmAssembly
+WallSolidChitin: WallSolid
+WallReinforcedChitin: WallReinforced
+XenoResinWindow: Window
+FloorTechMaintDark: FloorSteel
+FloorXeno: FloorSteel
+FloorXenoSteel: FloorSteel
+FloorXenoSteelCorner: FloorSteel
+FloorDarkSquiggly: FloorSteel
+FloorXenoMaint: FloorSteel
