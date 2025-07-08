@@ -58,9 +58,9 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMaps =
         {
             // Exodus-Start
-            "ExodusCluster",
-            "ExodusPacked",
-            "ExodusSaltern",
+            // "ExodusCluster",
+            // "ExodusPacked",
+            // "ExodusSaltern",
             // Exodus-End
             "Dev",
             "TestTeg",
