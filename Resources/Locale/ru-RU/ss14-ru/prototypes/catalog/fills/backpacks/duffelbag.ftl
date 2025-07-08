@@ -72,3 +72,6 @@ ent-ClothingBackpackDuffelSyndicateFilledStarterKit = { ent-ClothingBackpackDuff
 ent-ClothingBackpackDuffelSyndicateDecoyKitFilled = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = Набор обманок
+ent-ClothingBackpackDuffelSyndicateFilledRifle = { ent-ClothingBackpackDuffelSyndicate }
+    .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
+    .suffix = Эсток
