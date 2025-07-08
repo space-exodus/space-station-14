@@ -67,6 +67,10 @@
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/security.rsi
+# Exodus-Add-ExplosionResistance-start
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+# Exodus-Add-ExplosionResistance-end
 
 - type: entity
   parent: [ClothingBackpack, BaseSecurityContraband]
@@ -76,6 +80,10 @@
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/brigmedic.rsi
+# Exodus-Add-ExplosionResistance-start
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+# Exodus-Add-ExplosionResistance-end
 
 - type: entity
   parent: ClothingBackpack
@@ -206,6 +214,10 @@
   - type: Storage
     grid:
     - 0,0,10,3
+# Exodus-Add-ExplosionResistance-start
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+# Exodus-Add-ExplosionResistance-end   
 
 - type: entity
   parent: ClothingBackpackERTLeader
