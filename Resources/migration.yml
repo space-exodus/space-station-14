@@ -743,10 +743,4 @@ FireAlarmXeno: FireAlarm
 FireAlarmAssemblyXeno: FireAlarmAssembly
 WallSolidChitin: WallSolid
 WallReinforcedChitin: WallReinforced
-XenoResinWindow: Window
-FloorTechMaintDark: FloorSteel
-FloorXeno: FloorSteel
-FloorXenoSteel: FloorSteel
-FloorXenoSteelCorner: FloorSteel
-FloorDarkSquiggly: FloorSteel
-FloorXenoMaint: FloorSteel
+XenoResinWindow: Window 
