@@ -14,6 +14,8 @@
   - CigPackRed
   - CigPackBlue
   - CigPackBlack
+  - CigarCase
+  - CigarGold
   - PlushieLizard
   - PlushieSpaceLizard
   # Exodus-Loadouts-Update-Start
@@ -84,8 +86,6 @@
   # - TowelColorWhite
   # - TowelColorYellow
   # Exodus-Loadouts-Update-End
-  - CigarCase
-  - CigarGold
 
 - type: loadoutGroup
   id: Glasses
