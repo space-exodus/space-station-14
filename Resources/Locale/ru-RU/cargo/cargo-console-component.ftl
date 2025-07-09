@@ -24,10 +24,10 @@ cargo-console-menu-cargo-order-row-approve-button = Одобрить
 cargo-console-menu-cargo-order-row-cancel-button = Отменить
 cargo-console-menu-tab-title-orders = Заказы
 cargo-console-menu-tab-title-funds = Переводы
-cargo-console-menu-account-action-transfer-limit =  [bold]Лимит перевода:[/bold] ${ $limit }
-cargo-console-menu-account-action-transfer-limit-unlimited-notifier =  [color=gold](Безлимитно)[/color]
-cargo-console-menu-account-action-select =  [bold]Действие аккаунта:[/bold]
-cargo-console-menu-account-action-amount =  [bold]Сумма:[/bold] $
+cargo-console-menu-account-action-transfer-limit = [bold]Лимит перевода:[/bold] ${ $limit }
+cargo-console-menu-account-action-transfer-limit-unlimited-notifier = [color=gold](Безлимитно)[/color]
+cargo-console-menu-account-action-select = [bold]Действие аккаунта:[/bold]
+cargo-console-menu-account-action-amount = [bold]Сумма:[/bold] $
 cargo-console-menu-account-action-button = Перевести
 cargo-console-menu-toggle-account-lock-button = Переключить лимит перевода
 cargo-console-menu-account-action-option-withdraw = Обналичить
@@ -42,8 +42,8 @@ cargo-console-insufficient-funds = Недостаточно средств (тр
 cargo-console-unfulfilled = Нет места для выполнения заказа
 cargo-console-trade-station = Отправлено на { $destination }
 cargo-console-unlock-approved-order-broadcast = [bold]Заказ на { $productName } x{ $orderAmount }[/bold], стоимостью [bold]{ $cost }[/bold], был одобрен [bold]{ $approver }[/bold]
-cargo-console-fund-withdraw-broadcast =  [bold]{ $name } снял { $amount } кредитов с { $name1 } \[{ $code1 }\]
-cargo-console-fund-transfer-broadcast =  [bold]{ $name } перевёл { $amount } кредитов { $name1 } \[{ $code1 }\] на { $name2 } \[{ $code2 }\][/bold]
+cargo-console-fund-withdraw-broadcast = [bold]{ $name } снял { $amount } кредитов с { $name1 } \[{ $code1 }\]
+cargo-console-fund-transfer-broadcast = [bold]{ $name } перевёл { $amount } кредитов { $name1 } \[{ $code1 }\] на { $name2 } \[{ $code2 }\][/bold]
 cargo-console-fund-transfer-user-unknown = Неизвестно
 cargo-console-paper-reason-default = Отсутствует
 cargo-console-paper-approver-default = Самостоятельно
@@ -63,27 +63,27 @@ cargo-no-shuttle = Грузовой шаттл не найден!
 cargo-shuttle-console-organics = На шаттле обнаружены органические формы жизни
 # Funding allocation console
 cargo-funding-alloc-console-menu-title = Консоль распределения финансов
-cargo-funding-alloc-console-label-account =  [bold]Аккаунт[/bold]
-cargo-funding-alloc-console-label-code =  [bold] Код [/bold]
-cargo-funding-alloc-console-label-balance =  [bold] Баланс [/bold]
-cargo-funding-alloc-console-label-cut =  [bold] Разделение дохода (%) [/bold]
+cargo-funding-alloc-console-label-account = [bold]Аккаунт[/bold]
+cargo-funding-alloc-console-label-code = [bold] Код [/bold]
+cargo-funding-alloc-console-label-balance = [bold] Баланс [/bold]
+cargo-funding-alloc-console-label-cut = [bold] Разделение дохода (%) [/bold]
 cargo-funding-alloc-console-label-primary-cut = Доля дохода отдела снабжения от всего, кроме ящиков с замком (%):
 cargo-funding-alloc-console-label-lockbox-cut = Доля дохода отдела снабжения от продажи ящиков с замком (%):
 cargo-funding-alloc-console-label-help-non-adjustible = Отдел снабжения получает { $percent }% от всех доходов, кроме ящиков с замком. Остаток распределяется следующим образом:
 cargo-funding-alloc-console-label-help-adjustible = Остаток доходов от всего, кроме ящиков с замком, распределяется следующим образом:
 cargo-funding-alloc-console-button-save = Сохранить изменения
-cargo-funding-alloc-console-label-save-fail =  [bold]Разделение выручки невалидно![/bold] [color=red]({ $pos ->
+cargo-funding-alloc-console-label-save-fail = [bold]Разделение выручки невалидно![/bold] [color=red]({ $pos ->
         [1] +
        *[-1] -
     }{ $val }%)[/color]
 # Slip template
-cargo-acquisition-slip-body =  [head=3]Детали актива[/head]
+cargo-acquisition-slip-body = [head=3]Детали актива[/head]
     { "[bold]Продукт:[/bold]" } { $product }
     { "[bold]Описание:[/bold]" } { $description }
     { "[bold]Цена за единицу:[/bold" }] ${ $unit }
     { "[bold]Количество:[/bold]" } { $amount }
     { "[bold]Цена:[/bold]" } ${ $cost }
-
+    
     { "[head=3]Детали покупки[/head]" }
     { "[bold]Заказчик:[/bold]" } { $orderer }
     { "[bold]Причина:[/bold]" } { $reason }

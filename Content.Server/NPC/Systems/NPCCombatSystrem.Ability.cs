@@ -15,6 +15,7 @@ using Content.Shared.Actions;
 using Content.Server.Actions;
 using Content.Shared.Directions;
 using Content.Server.Charges;
+using Content.Shared.Actions.Components;
 
 namespace Content.Server.NPC.Systems;
 
@@ -122,119 +123,66 @@ public sealed partial class NPCCombatSystem
                               NPCAbilityCombatComponent combatComp,
                               TimeSpan curTime)
     {
-        if (!TryComp(uid, out ActionsComponent? actionComp))
+        if (!HasComp<ActionsComponent>(uid))
             return false;
 
-        if (!TryComp(actionUid, out MetaDataComponent? actionMeta))
-            return false;
+        var action = _actions.GetAction(actionUid);
 
-        if (!_actions.TryGetActionData(actionUid, out var action))
+        if (action == null)
+        {
+            Log.Error($"Tried to perform an invalid action with uid: {actionUid}");
             return false;
+        }
 
-        if (!action.Enabled || !action.UsableByNPC)
+        var actionComp = action.Value.Comp;
+
+        if (!actionComp.Enabled || !actionComp.UsableByNPC)
             return false;
 
         // check for action use prevention
         var attemptEv = new ActionAttemptEvent(uid);
         RaiseLocalEvent(actionUid, ref attemptEv);
+
         if (attemptEv.Cancelled)
             return false;
 
-        if (action.Cooldown.HasValue && action.Cooldown.Value.End > curTime)
+        if (actionComp.Cooldown.HasValue && actionComp.Cooldown.Value.End > curTime)
             return false;
 
         // if action is rechargable and needs recharge we'll reset charges
         if (_chargesSystem.GetNextRechargeTime(actionUid) <= TimeSpan.Zero)
             _chargesSystem.ResetCharges(actionUid);
 
-        BaseActionEvent? performEvent = null;
+        BaseActionEvent? performEvent = _actions.GetEvent(actionUid);
 
-        if (action.CheckConsciousness && !_actionBlockerSystem.CanConsciouslyPerformAction(uid))
-            return false;
-
-        if (!combatComp.Target.IsValid())
+        if (performEvent == null)
         {
-            Log.Error($"Attempted to perform an entity-targeted action without a target! Action: {actionMeta.EntityName}");
+            Log.Error("Tried to perform an invalid action which doesn't have any event");
             return false;
         }
 
-        if (action.MinAIUseRange >= distance ||
-            action.MaxAIUseRange <= distance)
+        // Perform all needed validation for action like if it was used just by player
+        // TODO: rewrite it when proper way for manual calling of action will be available
+        var provider = actionComp.Container ?? uid;
+        var validateActionEv = new ActionValidateEvent()
         {
-            Log.Error("Out");
+            Input = new RequestPerformActionEvent(GetNetEntity(actionUid), GetNetEntity(combatComp.Target)),
+            Provider = provider,
+            User = uid,
+        };
+        RaiseLocalEvent(actionUid, ref validateActionEv);
+
+        if (validateActionEv.Invalid)
+            return false;
+
+        if (actionComp.MinAIUseRange >= distance ||
+            actionComp.MaxAIUseRange <= distance)
+        {
             return false;
         }
-
-        // Validate request by checking action blockers and the like:
-        switch (action)
-        {
-            case EntityTargetActionComponent entityAction:
-                var targetWorldPos = _transform.GetWorldPosition(combatComp.Target);
-
-                if (entityAction.Range <= distance)
-                    return false;
-
-                _rotateToFaceSystem.TryFaceCoordinates(uid, targetWorldPos);
-
-                if (!_actions.ValidateEntityTarget(uid, combatComp.Target, (actionUid, entityAction)))
-                    return false;
-
-                _adminLogger.Add(LogType.Action,
-                    $"{ToPrettyString(uid):user} is performing the {actionMeta.EntityName:action} action (provided by {ToPrettyString(action.Container ?? uid):provider}) targeted at {ToPrettyString(combatComp.Target):target}.");
-
-                if (entityAction.Event != null)
-                {
-                    entityAction.Event.Target = combatComp.Target;
-                    Dirty(actionUid, entityAction);
-                    performEvent = entityAction.Event;
-                }
-                break;
-            case WorldTargetActionComponent worldAction:
-                var entityCoordinatesTarget = Transform(combatComp.Target).Coordinates;
-
-                if (worldAction.Range <= distance)
-                {
-                    var mapTargetPos = entityCoordinatesTarget.ToMapPos(EntityManager, _transform);
-                    var mapUserPos = Transform(uid).Coordinates.ToMapPos(EntityManager, _transform);
-
-                    var direction = mapTargetPos - mapUserPos;
-                    var coefficient = worldAction.Range / distance;
-                    var delta = new Vector2(direction.X * coefficient, direction.Y * coefficient);
-                    entityCoordinatesTarget = new EntityCoordinates(entityCoordinatesTarget.EntityId, mapUserPos + delta);
-                }
-
-                _rotateToFaceSystem.TryFaceCoordinates(uid, entityCoordinatesTarget.ToMapPos(EntityManager, _transform));
-
-                if (!_actions.ValidateWorldTarget(uid, entityCoordinatesTarget, (actionUid, worldAction)))
-                    return false;
-
-                _adminLogger.Add(LogType.Action,
-                    $"{ToPrettyString(uid):user} is performing the {actionMeta.EntityName:action} action (provided by {ToPrettyString(action.Container ?? uid):provider}) targeted at {entityCoordinatesTarget:target}.");
-
-                if (worldAction.Event != null)
-                {
-                    worldAction.Event.Target = entityCoordinatesTarget;
-                    Dirty(actionUid, worldAction);
-                    performEvent = worldAction.Event;
-                }
-
-                break;
-            case InstantActionComponent instantAction:
-                if (action.CheckCanInteract && !_actionBlockerSystem.CanInteract(uid, null))
-                    return false;
-
-                _adminLogger.Add(LogType.Action,
-                    $"{ToPrettyString(uid):user} is performing the {actionMeta.EntityName:action} action provided by {ToPrettyString(action.Container ?? uid):provider}.");
-
-                performEvent = instantAction.Event;
-                break;
-        }
-
-        if (performEvent != null)
-            performEvent.Performer = uid;
 
         // All checks passed. Perform the action!
-        _actions.PerformAction(uid, actionComp, actionUid, action, performEvent, curTime);
+        _actions.PerformAction(uid, (actionUid, actionComp), performEvent);
 
         return true;
     }

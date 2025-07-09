@@ -44,3 +44,12 @@
     back:
     - Flash
     - MagazinePistol
+
+
+- type: chameleonOutfit
+  id: PilotChameleonOutfit
+  job: Pilot
+  hasMindShield: true
+  equipment:
+    mask: ClothingMaskGasSecurity
+

@@ -26,12 +26,12 @@ steal-target-groups-lamps = ЛАМПЫ
 # Thief single item
 steal-target-groups-forensic-scanner = криминалистический сканер
 steal-target-groups-flippo-engraved-lighter = гравированная зажигалка флиппо детектива
-steal-target-groups-ammo-tech-fab-circuitboard = машинная плата ТехФаба патронов
+steal-target-groups-ammo-tech-fab-circuitboard = печатная плата ТехФаба патронов
 steal-target-groups-clothing-head-hat-warden = фуражка смотрителя
 steal-target-groups-clothing-outer-hardsuit-void-paramed = пустотный скафандр парамедика
-steal-target-groups-medical-tech-fab-circuitboard = машинная плата медицинского ТехФаба
+steal-target-groups-medical-tech-fab-circuitboard = печатная плата медицинского ТехФаба
 steal-target-groups-clothing-headset-alt-medical = полноразмерная гарнитура главного врача
-steal-target-groups-research-and-development-server-machine-circuitboard = машинная плата сервера РнД
+steal-target-groups-research-and-development-server-machine-circuitboard = печатная плата сервера РнД
 steal-target-groups-fire-axe = пожарный топор
 steal-target-groups-ame-part-flatpack = упаковка ДАМ
 steal-target-groups-salvage-expeditions-computer-circuitboard = плата консоли утилизаторских экспедиций

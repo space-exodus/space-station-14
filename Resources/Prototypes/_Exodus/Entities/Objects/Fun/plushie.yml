@@ -13,6 +13,29 @@
         Heat: 8
     soundHit:
       collection: MetalThud
+  - type: Extractable
+    juiceSolution:
+      reagents:
+        - ReagentId: Chlorine
+          Quantity: 3
+        - ReagentId: Fluorine
+          Quantity: 9
+  - type: DamageOnInteract
+    damage:
+      types:
+        Holy: 10
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 22
+        canReact: false
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Chlorine
+          Quantity: 3
+        - ReagentId: Fluorine
+          Quantity: 9
 
 - type: entity
   parent: PlushieMoth
@@ -36,6 +59,20 @@
   - type: Sprite
     sprite: Exodus/Objects/Fun/toys.rsi
     state: plush_asler
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Amatoxin
+        Quantity: 20
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Amatoxin
+          Quantity: 10
 
 - type: entity
   parent: BasePlushie
@@ -82,7 +119,6 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 10
-  - type: StaminaDamageOnHit
-    damage: 50
-    sound: /Audio/Weapons/egloves.ogg
+        Blunt: 5
+    soundHit:
+      path: /Audio/Weapons/egloves.ogg

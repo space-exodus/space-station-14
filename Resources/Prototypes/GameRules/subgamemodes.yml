@@ -25,8 +25,11 @@
       allowNonHumans: true
       multiAntagSetting: NotExclusive
       startingGear: ThiefGear
-#      components: # Corvax-MRP
-#      - type: Pacified
+      components:
+      # - type: Pacified # Exodus-MRP
+      - type: Thieving
+        stripTimeReduction: 2
+        stealthy: true
       mindRoles:
       - MindRoleThief
       briefing:

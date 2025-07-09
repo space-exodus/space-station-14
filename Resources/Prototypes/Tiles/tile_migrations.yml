@@ -70,3 +70,28 @@
 - type: tileAlias
   id: FloorSteelBurnt
   target: FloorSteelDamaged
+
+# 2025-07-08 Exodus-Exo-Station-Thing-Delete
+- type: tileAlias
+  id: FloorTechMaintDark
+  target: FloorSteel
+
+- type: tileAlias
+  id: FloorXeno
+  target: FloorSteel
+
+- type: tileAlias
+  id: FloorXenoSteel
+  target: FloorSteel
+
+- type: tileAlias
+  id: FloorXenoSteelCorner
+  target: FloorSteel
+
+- type: tileAlias
+  id: FloorDarkSquiggly
+  target: FloorSteel
+
+- type: tileAlias
+  id: FloorXenoMaint
+  target: FloorSteel

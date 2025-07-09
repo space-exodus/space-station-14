@@ -1,3 +1,3 @@
-ent-WeaponTurretDeathSquad = { ent-BaseWeaponTurret }
-    .desc = { ent-BaseWeaponTurret.desc }
+ent-WeaponTurretDeathSquad = { ent-BaseWeaponBallisticTurret }
+    .desc = { ent-BaseWeaponBallisticTurret.desc }
     .suffix = Эскадрон Смерти

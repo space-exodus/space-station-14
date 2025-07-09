@@ -1,8 +1,8 @@
 ent-BaseRoofMarker = { "" }
     .desc = { "" }
-ent-RoofMarker = Крыша
+ent-RoofMarker = крыша
     .suffix = Есть
     .desc = { ent-BaseRoofMarker.desc }
-ent-NoRoofMarker = Крыша
+ent-NoRoofMarker = крыша
     .suffix = Нет
     .desc = { ent-BaseRoofMarker.desc }

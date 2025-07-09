@@ -84,8 +84,8 @@ ghost-role-information-rat-king-name = Крысиный король
 ghost-role-information-rat-king-description = Вы - Крысиный король, вас интересует еда, еда и ещё раз еда. Сотрудничайте со станцией или сражайтесь с ней ради еды. Я уже упоминал, что вас интересует еда?
 ghost-role-information-rat-servant-name = Крысиный слуга
 ghost-role-information-rat-servant-description = Вы Крысиный слуга. Выполняйте приказы своего короля.
-ghost-role-information-salvage-carp-name = Space carp on salvage wreck
-ghost-role-information-salvage-carp-description = Defend the loot inside the salvage wreck!
+ghost-role-information-salvage-carp-name = Космический карп с космических обломков
+ghost-role-information-salvage-carp-description = Защищай содержимое обломка!
 ghost-role-information-sentient-carp-name = Разумный карп
 ghost-role-information-sentient-carp-description = Помогите дракону наводнить станцию карпами!
 ghost-role-information-willow-name = Кенгуру Уиллоу
@@ -184,10 +184,10 @@ ghost-role-information-syndicate-monkey-reinforcement-rules = Вы [color=red][b
 ghost-role-information-syndicate-kobold-reinforcement-name = Агент Синдиката-кобольд
 ghost-role-information-syndicate-kobold-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученный кобольд, поможете им.
 ghost-role-information-syndicate-kobold-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.
-ghost-role-information-syndicate-cyborg-assault-name = Штурмовой киборг Синдиката
+ghost-role-information-syndicate-cyborg-assault-name = Штурмовой борг Синдиката
 ghost-role-information-derelict-cyborg-name = Заброшенный борг
-ghost-role-information-derelict-cyborg-description = Вы обычный киборг, который заблудился в космосе. После многих лет путешествия сквозь ионные бури вы оказываетесь рядом с космической станцией.
-ghost-role-information-syndicate-cyborg-saboteur-name = Саботажный киборг Синдиката
+ghost-role-information-derelict-cyborg-description = Вы обычный борг, который заблудился в космосе. После многих лет путешествия сквозь ионные бури вы оказываетесь рядом с космической станцией.
+ghost-role-information-syndicate-cyborg-saboteur-name = Саботажный борг Синдиката
 ghost-role-information-syndicate-cyborg-description = Синдикату нужно подкрепление. Вы, холодная кремниевая машина для убийства, поможете им.
 ghost-role-information-security-name = Служба безопасности
 ghost-role-information-security-description = Вы входите в состав оперативной группы службы безопасности, но, похоже, попали в странную ситуацию...

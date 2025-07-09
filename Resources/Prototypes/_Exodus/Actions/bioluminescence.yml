@@ -4,10 +4,11 @@
   description: Begin or stop emitting light
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 5
     icon: { sprite: Exodus/Interface/Actions/kidans.rsi, state: light-off }
     iconOn: { sprite: Exodus/Interface/Actions/kidans.rsi, state: light-on }
     itemIconStyle: NoItem
     priority: -11
+  - type: InstantAction
     event: !type:ToggleBioluminescenceEvent {}

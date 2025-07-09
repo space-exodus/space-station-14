@@ -159,7 +159,7 @@ public sealed partial class PheromonesSystem : SharedPheromonesSystem
 
         args.Handled = true;
 
-        var eui = new PheromonesAskEui(this, args.Entity, args.Coords);
+        var eui = new PheromonesAskEui(this, args.Entity, args.Target);
         _eui.OpenEui(eui, actor.PlayerSession);
     }
 

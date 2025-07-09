@@ -1,7 +1,9 @@
 ent-MobHivebot = ройбот
     .desc = Раздражающие, механизированные вредители.
+    .suffix = ИИ
 ent-MobHivebotRanged = { ent-MobHivebot }
     .desc = Раздражающие, механизированные вредители. Этот с оружием...
-    .suffix = Ranged
+    .suffix = Дальнего боя
 ent-MobHivebotStrong = усиленный ройбот
     .desc = Раздражающие, механизированные вредители. Выглядит круче остальных.
+    .suffix = ИИ

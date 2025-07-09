@@ -1,8 +1,8 @@
-ent-LilieSeeds = пакет семян лилии
+ent-LilieSeeds = пакет семян (Лилии)
     .desc = { ent-SeedBase.desc }
-ent-SunflowerSeeds = пакет семян подсолнуха
+ent-SunflowerSeeds = пакет семян (Подсолнух)
     .desc = { ent-SeedBase.desc }
-ent-RoseSeeds = пакет семян роз
+ent-RoseSeeds = пакет семян (Роза)
     .desc = { ent-SeedBase.desc }
-ent-FieldFlowersSeeds = пакет семян полевых цветов
+ent-FieldFlowersSeeds = пакет семян (Полевые цветы)
     .desc = { ent-SeedBase.desc }
