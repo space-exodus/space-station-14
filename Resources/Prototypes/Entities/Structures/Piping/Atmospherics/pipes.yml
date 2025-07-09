@@ -53,7 +53,7 @@
   - type: PipeAppearance
   - type: PipeColorVisuals
   - type: NodeContainer
-  # - type: PipeRestrictOverlap # Exodus
+  - type: PipeRestrictOverlap
   - type: AtmosUnsafeUnanchor
   - type: AtmosPipeColor
   - type: AtmosMonitoringConsoleDevice
