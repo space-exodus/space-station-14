@@ -49,26 +49,31 @@
   id: SecurityJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SecurityJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSec
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: SecurityJumpsuitGrey
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecGrey
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SecurityJumpskirtGrey
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecGrey
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: TrooperUniform
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformSecurityTrooper
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorOfficerJumpsuit
@@ -77,6 +82,7 @@
     proto: SeniorOfficer
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorOfficerJumpskirt
@@ -85,6 +91,7 @@
     proto: SeniorOfficer
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Back
 - type: loadout
@@ -118,11 +125,13 @@
   id: ArmorVest
   equipment:
     outerClothing: ClothingOuterArmorBasic
+  groupBy: "Armor" # Exodus-Better-Loadout
 
 - type: loadout
   id: ArmorVestSlim
   equipment:
     outerClothing: ClothingOuterArmorBasicSlim
+  groupBy: "Armor" # Exodus-Better-Loadout
 
 - type: loadout
   id: SecurityOfficerWintercoat
@@ -139,6 +148,7 @@
   id: JackBoots
   equipment:
     shoes: ClothingShoesBootsJackFilled
+  groupBy: "Boots" # Exodus-Better-Loadout
 
 - type: loadout
   id: SecurityWinterBoots

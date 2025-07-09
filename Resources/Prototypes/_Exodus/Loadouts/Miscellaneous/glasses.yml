@@ -1,0 +1,5 @@
+# Glasses
+- type: loadout
+  id: CheapSunglasses
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses

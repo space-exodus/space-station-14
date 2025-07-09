@@ -5,13 +5,10 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
-  - SpaceLaw # Corvax-HyperLink
+  # - SpaceLaw # Exodus-Corvax-Hyperlink-Remove
   - FlowerWreath
   - Hairflower
   - Headphones
-  - PlushieLizard
-  - PlushieSpaceLizard
-  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -19,51 +16,76 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
-  - ClothingNeckLGBTPin
-  - ClothingNeckAllyPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckAroacePin
-  - ClothingNeckBisexualPin
-  - ClothingNeckGayPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckPluralPin
-  - ClothingNeckOmnisexualPin
-  - ClothingNeckGenderqueerPin
-  - ClothingNeckGenderfluidPin
-  - ClothingNeckTransPin
-  - ClothingNeckAutismPin
-  - ClothingNeckGoldAutismPin
-   # Corvax-Loadouts-Start
-  - ClothingNeckAtharaPin
-  - ClothingNeckCorvaxPin
-  - ClothingNeckEchoPin
-  - ClothingNeckElysiumPin
-  - ClothingNeckMainPin
-  - ClothingNeckNebulaPin
-  - ClothingNeckNovaPin
-  - ClothingNeckSolarisPin
-  - ClothingNeckWhiteListPin
+  - PlushieLizard
+  - PlushieSpaceLizard
+  # Exodus-Loadouts-Update-Start
+  - Harmonica
+  - PersonalAI
+  - Eyepatch
+  - MimeSuspendersBlack
+  - MedkitLoadout
+  # - ThreeCandles
+  # - ClothingNeckLGBTPin
+  # - ClothingNeckAllyPin
+  # - ClothingNeckAromanticPin
+  # - ClothingNeckAsexualPin
+  # - ClothingNeckAroacePin
+  # - ClothingNeckBisexualPin
+  # - ClothingNeckGayPin
+  # - ClothingNeckIntersexPin
+  # - ClothingNeckLesbianPin
+  # - ClothingNeckNonBinaryPin
+  # - ClothingNeckPansexualPin
+  # - ClothingNeckOmnisexualPin
+  # - ClothingNeckGenderqueerPin
+  # - ClothingNeckTransPin
+  # - ClothingNeckAutismPin
+  # - ClothingNeckGoldAutismPin
+  # Corvax-Loadouts-Start
+  # - ClothingNeckAtharaPin
+  # - ClothingNeckCorvaxPin
+  # - ClothingNeckEchoPin
+  # - ClothingNeckElysiumPin
+  # - ClothingNeckMainPin
+  # - ClothingNeckNebulaPin
+  # - ClothingNeckNovaPin
+  # - ClothingNeckSolarisPin
+  # - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
-  - TowelColorBlack
-  - TowelColorDarkBlue
-  - TowelColorDarkGreen
-  - TowelColorGold
-  - TowelColorGray
-  - TowelColorGreen
-  - TowelColorLightBlue
-  - TowelColorLightBrown
-  - TowelColorMaroon
-  - TowelColorMime
-  - TowelColorOrange
-  - TowelColorPurple
-  - TowelColorRed
-  - TowelColorSilver
-  - TowelColorWhite
-  - TowelColorYellow
+  # - ClothingNeckLGBTPin
+  # - ClothingNeckAllyPin
+  # - ClothingNeckAromanticPin
+  # - ClothingNeckAsexualPin
+  # - ClothingNeckAroacePin
+  # - ClothingNeckBisexualPin
+  # - ClothingNeckGayPin
+  # - ClothingNeckIntersexPin
+  # - ClothingNeckLesbianPin
+  # - ClothingNeckNonBinaryPin
+  # - ClothingNeckPansexualPin
+  # - ClothingNeckOmnisexualPin
+  # - ClothingNeckGenderqueerPin
+  # - ClothingNeckTransPin
+  # - ClothingNeckAutismPin
+  # - ClothingNeckGoldAutismPin
+  # - TowelColorBlack
+  # - TowelColorDarkBlue
+  # - TowelColorDarkGreen
+  # - TowelColorGold
+  # - TowelColorGray
+  # - TowelColorGreen
+  # - TowelColorLightBlue
+  # - TowelColorLightBrown
+  # - TowelColorMaroon
+  # - TowelColorMime
+  # - TowelColorOrange
+  # - TowelColorPurple
+  # - TowelColorRed
+  # - TowelColorSilver
+  # - TowelColorLightBlue
+  # - TowelColorWhite
+  # - TowelColorYellow
+  # Exodus-Loadouts-Update-End
 
 - type: loadoutGroup
   id: Glasses
@@ -71,6 +93,7 @@
   minLimit: 0
   loadouts:
   - Glasses
+  - CheapSunglasses
   - GlassesJamjar
   - GlassesJensen
 
@@ -162,6 +185,7 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+  - Captaincoat
 
 - type: loadoutGroup
   id: HoPHead
@@ -204,6 +228,7 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+  - HoPCoat
 
 # Civilian
 - type: loadoutGroup
@@ -474,6 +499,8 @@
   - ClownSkirt
   - JesterSuit
   - JesterAltSuit
+  - ClownSuitBanana
+  - ClownSuiPriest
 
 - type: loadoutGroup
   id: ClownBackpack
@@ -497,6 +524,8 @@
   loadouts:
   - ClownShoes
   - JesterShoes
+  - ClownShoesLarge
+  - ClownShoesBanana
 
 - type: loadoutGroup
   id: SurvivalClown
@@ -868,6 +897,7 @@
   loadouts:
   - ResearchDirectorMantle
   - ResearchDirectorCloak
+  - ScientistTie
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -981,6 +1011,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - HeadofSecurityHeadCap
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1012,6 +1043,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - HeadofSecurityOvercoat
 
 - type: loadoutGroup
   id: WardenHead
@@ -1085,6 +1117,7 @@
   id: SecurityShoes
   name: loadout-group-security-shoes
   loadouts:
+  - CombatBoots
   - JackSecBoots # Corvax
   - JackBoots
   - SecurityWinterBoots
@@ -1110,6 +1143,7 @@
   minLimit: 0
   loadouts:
   - DetectiveTie
+  - HorrificTie
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
@@ -1119,6 +1153,7 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
+  - SuperstarCopJumpsuit
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1127,6 +1162,10 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - DiscoAssBlazer
+  - AerostaticBomberJacket
+  - CoatGentle
+  - CoatDetectiveDark
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
