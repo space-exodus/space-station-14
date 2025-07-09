@@ -40,4 +40,8 @@
   components:
   - type: Sprite
     sprite: Corvax/Back/Backpacks/warden.rsi
+# Exodus-Add-ExplosionResistance-start
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+# Exodus-Add-ExplosionResistance-end
     
