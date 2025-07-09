@@ -40,6 +40,9 @@ namespace Content.Shared.Humanoid
                 default:
                     return Loc.GetString("namepreset-firstlast",
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto, gender))); // Corvax-LastnameGender
+                case SpeciesNaming.FirstDashLastDashFirst:
+                    return Loc.GetString("namepreset-firstdashlastdashfirst",
+                        ("first1", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto, gender)), ("first2", GetFirstName(speciesProto, gender))); // Exodus-Kidan
             }
         }
 
