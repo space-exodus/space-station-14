@@ -34,10 +34,12 @@
     - Welder
     - Multitool
 
-- type: chameleonOutfit
-  id: NinjaChameleonOutfit
-  name: roles-antag-space-ninja-name
-  startingGear: SpaceNinjaGear
-  equipment:
-    id: PassengerPDA
-    neck: ClothingNeckGoldmedal
+# Exodus-Lore-Issue-Chameleon-Start
+# - type: chameleonOutfit
+#   id: NinjaChameleonOutfit
+#   name: roles-antag-space-ninja-name
+#   startingGear: SpaceNinjaGear
+#   equipment:
+#     id: PassengerPDA
+#     neck: ClothingNeckGoldmedal
+# Exodus-Lore-Issue-Chameleon-End

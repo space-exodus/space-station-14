@@ -100,7 +100,9 @@
   hasMindShield: true
   equipment:
     head: ClothingHeadHelmetHardsuitERTLeader
-    neck: ClothingNeckBronzeheart
+# Exodus-Better-Chameleon-Start
+    neck: ClothingNeckMantleERTLeader
+# Exodus-Better-Chameleon-End
 
 # Chaplain
 - type: job
