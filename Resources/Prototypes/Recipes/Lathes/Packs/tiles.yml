@@ -12,7 +12,7 @@
   - FloorTileItemDarkPavement
   - FloorTileItemDarkPavementVertical
   - FloorTileItemDarkOffset
-  - FloorTileItemDarkSquiggly
+  # - FloorTileItemDarkSquiggly # Exodus-Exo-Station-Thing-Delete
   - FloorTileItemSteelCheckerDark
   - FloorTileItemSteel
   - FloorTileItemSteelOffset
@@ -36,7 +36,7 @@
   - FloorTileItemGratingMaint
   - FloorTileItemTechmaint
   - FloorTileItemSteelMaint
-  - FloorTileItemTechmaintDark
+  # - FloorTileItemTechmaintDark # Exodus-Exo-Station-Thing-Delete
   - FloorTileItemWood
   - FloorTileItemWoodLarge
   - FloorTileItemWoodPattern

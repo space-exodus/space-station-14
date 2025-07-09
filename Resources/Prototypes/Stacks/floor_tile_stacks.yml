@@ -190,11 +190,13 @@
   spawn: FloorTileItemTechmaint
   maxCount: 30
 
-- type: stack
-  id: FloorTileTechmaintDark
-  name: stack-techmaint-floor-dark
-  spawn: FloorTileItemTechmaintDark
-  maxCount: 30
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: stack
+#   id: FloorTileTechmaintDark
+#   name: stack-techmaint-floor-dark
+#   spawn: FloorTileItemTechmaintDark
+#   maxCount: 30
+# Exodus-Exo-Station-Thing-Delete-End
 
 - type: stack
   id: FloorTileFreezer
@@ -641,32 +643,34 @@
   spawn: FloorTileItemWoodLarge
   maxCount: 30
 
-- type: stack
-  id: FloorTileXeno
-  name: stack-xeno-floor
-  spawn: FloorTileItemXeno
-  maxCount: 30
-
-- type: stack
-  id: FloorTileXenoSteel
-  name: stack-xeno-steel
-  spawn: FloorTileItemXenoSteelCorner
-  maxCount: 30
-
-- type: stack
-  id: FloorTileXenoSteelCorner
-  name: stack-xeno-steel-corner
-  spawn: FloorTileItemXenoSteelCorner
-  maxCount: 30
-
-- type: stack
-  id: FloorTileXenoMaint
-  name: stack-xeno-maint
-  spawn: FloorTileItemXenoSteelCorner
-  maxCount: 30
-
-- type: stack
-  id: FloorTileDarkSquiggly
-  name: stack-dark-squiggly
-  spawn: FloorTileItemDarkSquiggly
-  maxCount: 30
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: stack
+#   id: FloorTileXeno
+#   name: stack-xeno-floor
+#   spawn: FloorTileItemXeno
+#   maxCount: 30
+#
+# - type: stack
+#   id: FloorTileXenoSteel
+#   name: stack-xeno-steel
+#   spawn: FloorTileItemXenoSteelCorner
+#   maxCount: 30
+#
+# - type: stack
+#   id: FloorTileXenoSteelCorner
+#   name: stack-xeno-steel-corner
+#   spawn: FloorTileItemXenoSteelCorner
+#   maxCount: 30
+#
+# - type: stack
+#   id: FloorTileXenoMaint
+#   name: stack-xeno-maint
+#   spawn: FloorTileItemXenoSteelCorner
+#   maxCount: 30
+#
+# - type: stack
+#   id: FloorTileDarkSquiggly
+#   name: stack-dark-squiggly
+#   spawn: FloorTileItemDarkSquiggly
+#   maxCount: 30
+# Exodus-Exo-Station-Thing-Delete-End
