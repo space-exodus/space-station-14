@@ -16,6 +16,7 @@
   id: HeadofSecurityOvercoat
   equipment:
     outerClothing: ClothingOuterCoatSecurityOvercoat
+  groupBy: "Coat" # Exodus-Better-Loadout
 
 # Gun
 - type: loadout
