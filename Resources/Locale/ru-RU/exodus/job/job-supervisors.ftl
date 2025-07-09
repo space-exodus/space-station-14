@@ -1,2 +1,2 @@
-job-supervisors-soo = Офицеру Специальных Операций
-job-supervisors-dsc = Командиру Эскадрона Смерти
+job-supervisors-soo = офицеру Специальных Операций
+job-supervisors-dsc = командиру Эскадрона Смерти

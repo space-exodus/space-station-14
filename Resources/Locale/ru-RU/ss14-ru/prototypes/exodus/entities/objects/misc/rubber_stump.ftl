@@ -1,4 +1,6 @@
-ent-RubberStampDSO = Печать ДСО
+ent-RubberStampDSO = печать ДСО
     .desc = { ent-RubberStampBase.desc }
-ent-RubberStampTopSecret = Печать "Совершенно секретно"
+    .suffix = НЕ МАППИТЬ
+ent-RubberStampTopSecret = печать "Совершенно секретно"
     .desc = { ent-RubberStampBase.desc }
+    .suffix = НЕ МАППИТЬ
