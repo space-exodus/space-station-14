@@ -26,7 +26,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakblacktravelers
+  id: ClothingNeckCloakTravelerBlack
   name: mantle of timelessness
   description: Short shoulder cape. The lining is hand embroidered.
   components:
@@ -37,7 +37,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakgoldtravelers
+  id: ClothingNeckCloakTravelerGold
   name: mantle of the windsong
   description: Short shoulder cape. The lining is hand embroidered.
   components:
@@ -48,7 +48,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakredtravelers
+  id: ClothingNeckCloakTravelerRed
   name: mantle of memory
   description: Short shoulder cape. The lining is hand embroidered.
   components:
