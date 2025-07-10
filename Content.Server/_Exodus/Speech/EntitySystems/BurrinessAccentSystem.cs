@@ -12,15 +12,9 @@ namespace Content.Server.Speech.EntitySystems
             SubscribeLocalEvent<BurrinessAccentComponent, AccentGetEvent>(OnAccent);
         }
 
-        public string Accentuate(string message)
-        {
-            return message
-                .Replace("р", "в").Replace("Р", "В");
-        }
-
         private void OnAccent(EntityUid uid, BurrinessAccentComponent component, AccentGetEvent args)
         {
-            args.Message = Accentuate(args.Message);
+            args.Message = args.Message.Replace("р", "в").Replace("Р", "В");
         }
     }
 }
