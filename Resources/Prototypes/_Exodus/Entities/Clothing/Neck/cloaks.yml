@@ -23,3 +23,38 @@
     sprite: Exodus/Clothing/Neck/Cloaks/Talma_cloak.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Neck/Cloaks/Talma_cloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakblacktravelers
+  name: mantle of timelessness
+  description: Short shoulder cape. The lining is hand embroidered.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Cloaks/black_traveler's_cloak.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Cloaks/black_traveler's_cloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakgoldtravelers
+  name: mantle of the windsong
+  description: Short shoulder cape. The lining is hand embroidered.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Cloaks/gold_traveler's_cloak.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Cloaks/gold_traveler's_cloak.rsi   
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakredtravelers
+  name: mantle of memory
+  description: Short shoulder cape. The lining is hand embroidered.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Cloaks/red_traveler's_cloak.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Cloaks/red_traveler's_cloak.rsi   
+
+
