@@ -4,7 +4,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Exodus.Chat;
 
 [Serializable, NetSerializable]
-public abstract class BaseChatMessage
+public abstract class BaseChatServerMessage
 {
     public abstract ChatChannel Channel { get; }
     public string? SenderName { get; set; }

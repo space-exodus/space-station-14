@@ -5,6 +5,4 @@ public enum LocalSpeechType
     Normal,
     Whisper,
     Shout,
-    Emote,
-    LOOC,
 }
