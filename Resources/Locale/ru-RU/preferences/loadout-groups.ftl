@@ -145,10 +145,10 @@ ResearchAssistant-loadout = Снаряжение научного ассисте
 loadout-group-research-assistant-jumpsuit = Научный ассистент, комбинезон
 # Security
 HeadOfSecurity-loadout = Снаряжение главы службы безопасности
-loadout-group-head-of-security-head = Глава службы безопасности, голова
-loadout-group-head-of-security-jumpsuit = Глава службы безопасности, комбинезон
-loadout-group-head-of-security-neck = Глава службы безопасности, шея
-loadout-group-head-of-security-outerclothing = Глава службы безопасности, верхняя одежда
+loadout-group-head-of-security-head = ГСБ, голова
+loadout-group-head-of-security-jumpsuit = ГСБ, комбинезон
+loadout-group-head-of-security-neck = ГСБ, шея
+loadout-group-head-of-security-outerclothing = ГСБ, верхняя одежда
 Warden-loadout = Снаряжение смотрителя
 loadout-group-warden-head = Смотритель, голова
 loadout-group-warden-jumpsuit = Смотритель, комбинезон

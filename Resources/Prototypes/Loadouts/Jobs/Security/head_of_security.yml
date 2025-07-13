@@ -80,7 +80,7 @@
   id: HeadofSecurityCoat
   equipment:
     outerClothing: ClothingOuterCoatHoSTrench
-  groupBy: "Coat" # Exodus-Better-Loadout
+  groupBy: "Armor" # Exodus-Better-Loadout
 
 - type: loadout
   id: HeadofSecurityWinterCoat

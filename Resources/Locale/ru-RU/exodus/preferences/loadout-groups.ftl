@@ -26,11 +26,11 @@ loadout-group-quartermaster-backpack = Квартирмейстер, рюкза�
 loadout-group-quartermaster-headset = Квартирмейстер, гарнитура
 
 # Security HeadofSecurity
-loadout-group-head-of-security-gun = Глава службы безопасности, оружие
-loadout-group-head-of-security-headset = Глава службы безопасности, гарнитура
-loadout-group-head-of-security-backpack = Глава службы безопасности, рюкзак
-loadout-group-head-of-security-belt = Глава службы безопасности, пояс
-loadout-group-head-of-security-shoes = Глава службы безопасности, обувь
+loadout-group-head-of-security-gun = ГСБ, оружие
+loadout-group-head-of-security-headset = ГСБ, гарнитура
+loadout-group-head-of-security-backpack = ГСБ, рюкзак
+loadout-group-head-of-security-belt = ГСБ, пояс
+loadout-group-head-of-security-shoes = ГСБ, обувь
 
 # Security Warden
 loadout-group-warden-gun = Смотритель, оружие

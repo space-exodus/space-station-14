@@ -15,3 +15,151 @@
   storage:
     back:
     - MedkitLoadout
+
+- type: loadout
+  id: PlushieSharkGrey
+  storage:
+    back:
+    - PlushieSharkGrey
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSharkPink
+  storage:
+    back:
+    - PlushieSharkPink
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSharkBlue
+  storage:
+    back:
+    - PlushieSharkBlue
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieBee
+  storage:
+    back:
+    - PlushieBee
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieRatvar
+  storage:
+    back:
+    - PlushieRatvar
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieArachind
+  storage:
+    back:
+    - PlushieArachind
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSnake
+  storage:
+    back:
+    - PlushieSnake
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieAtmosian
+  storage:
+    back:
+    - PlushieAtmosian
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieDiona
+  storage:
+    back:
+    - PlushieDiona
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieVox
+  storage:
+    back:
+    - PlushieVox
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieHampter
+  storage:
+    back:
+    - PlushieHampter
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieXeno
+  storage:
+    back:
+    - PlushieXeno
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSlime
+  storage:
+    back:
+    - PlushieSlime
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieRouny
+  storage:
+    back:
+    - PlushieRouny
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushiePenguin
+  storage:
+    back:
+    - PlushiePenguin
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieNar
+  storage:
+    back:
+    - PlushieNar
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieNuke
+  storage:
+    back:
+    - PlushieNuke
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieHuman
+  storage:
+    back:
+    - PlushieHuman
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieMagicarp
+  storage:
+    back:
+    - PlushieMagicarp
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieExperiment
+  storage:
+    back:
+    - PlushieExperiment
+  groupBy: "Plush"
+

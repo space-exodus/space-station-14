@@ -16,7 +16,7 @@
   id: HeadofSecurityOvercoat
   equipment:
     outerClothing: ClothingOuterCoatSecurityOvercoat
-  groupBy: "Coat" # Exodus-Better-Loadout
+  groupBy: "Armor"
 
 # Gun
 - type: loadout
@@ -25,6 +25,7 @@
   equipment:
     pocket1: WeaponRevolverMateba
     pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
 
 - type: loadout
   id: SecurityGunDeckard
@@ -32,6 +33,7 @@
   equipment:
     pocket1: WeaponRevolverDeckard
     pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
 
 - type: loadout
   id: SecurityGunInspector
@@ -39,6 +41,7 @@
   equipment:
     pocket1: WeaponRevolverInspector
     pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
 
 - type: loadout
   id: SecurityGunMk58
@@ -46,6 +49,7 @@
   equipment:
     pocket1: WeaponPistolMk58
     pocket2: MagazinePistol
+  groupBy: "GunPistol"
 
 #Ears
 - type: loadout
