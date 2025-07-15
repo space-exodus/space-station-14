@@ -33,6 +33,25 @@
     timeToDecay: 600
     startPrice: 10000
     endPrice: 200
+#Exodus-AnomalyCore-Begin
+  - type: DamageOnLand
+    ignoreResistances: true
+    damage:
+      types:
+        Blunt: 5
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -49,6 +68,30 @@
   - type: IgnitionSource
     temperature: 400
     ignited: true
+#Exodus-AnomalyCore-Begin
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 70
+    intensitySlope: 3
+    maxIntensity: 120
+    canCreateVacuum: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 10
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -62,6 +105,53 @@
     energy: 10
     color: "#1e070e"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+        - !type:TriggerBehavior
+  - type: SoundOnTrigger
+    removeOnTrigger: true
+    sound:
+      path: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
+      volume: 5
+  - type: TwoStageTrigger
+    triggerDelay: 10.0
+    components:
+      - type: AmbientSound
+        enabled: true
+        volume: -5
+        range: 14
+        sound:
+          path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
+      - type: GravityWell
+        maxRange: 7
+        baseRadialAcceleration: 5
+        baseTangentialAcceleration: .5
+        gravPulsePeriod: 0.03
+      - type: SingularityDistortion
+        intensity: 150
+        falloffPower: 1.5
+      - type: PointLight
+        enabled: true
+        color: "#ffaa44"
+        energy: 8
+        radius: 6
+        softness: 1
+        offset: "0, 0"
+      - type: SoundOnTrigger
+        sound:
+          path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
+          params:
+            volume: 5
+      - type: DeleteOnTrigger
+  - type: RadiationSource
+    intensity: 4
+    slope: 0.4
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -75,6 +165,40 @@
     energy: 1.5
     color: "#befaff"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 2.0
+        spawn:
+          IceCrust:
+            min: 25
+            max: 25
+      - !type:SpawnGasBehavior
+        gasMixture:
+          volume: 100
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 200
+          temperature: 373.15
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnInteract
+    damage:
+      types:
+        Cold: 10
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -90,10 +214,30 @@
     color: "#cb5b7e"
     castShadows: false
 
+#Exodus-AnomalyCore-Begin
+#- type: entity
+#  parent: BaseAnomalyCore
+#  id: AnomalyCoreRock
+#  suffix: Rock
+#  components:
+#  - type: Sprite
+#    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+#  - type: PointLight
+#    radius: 1.5
+#    energy: 3.5
+#    color: "#5ca8cb"
+#    castShadows: false
+#  - type: MaterialCluster
+#    whitelist:
+#      tags:
+#      - Ore
+#    materials:
+#      RawIron: 3000
+
 - type: entity
   parent: BaseAnomalyCore
-  id: AnomalyCoreRock
-  suffix: Rock
+  id: AnomalyCoreRockUranium
+  suffix: Uranium
   components:
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
@@ -102,6 +246,210 @@
     energy: 3.5
     color: "#5ca8cb"
     castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawUranium: 6000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 3.0
+        spawn:
+          WallSpawnAsteroid:
+            min: 36
+            max: 36
+          MobSpawnCrabUranium:
+            min: 4
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyCore
+  id: AnomalyCoreRockQuartz
+  suffix: Quartz
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawQuartz: 6000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 3.0
+        spawn:
+          WallSpawnAsteroid:
+            min: 36
+            max: 36
+          MobSpawnCrabQuartz:
+            min: 4
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyCore
+  id: AnomalyCoreRockSilver
+  suffix: Silver
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawSilver: 6000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 3.0
+        spawn:
+          WallSpawnAsteroid:
+            min: 36
+            max: 36
+          MobSpawnCrabSilver:
+            min: 4
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyCore
+  id: AnomalyCoreRockGold
+  suffix: Gold
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawGold: 6000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 3.0
+        spawn:
+          WallSpawnAsteroid:
+            min: 36
+            max: 36
+          MobSpawnCrabGold:
+            min: 4
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyCore
+  id: AnomalyCoreRockIron
+  suffix: Iron
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawIron: 6000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 3.0
+        spawn:
+          WallSpawnAsteroid:
+            min: 36
+            max: 36
+          MobSpawnCrabIron:
+            min: 4
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyCore
+  id: AnomalyCoreRockCoal
+  suffix: Coal
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      Coal: 6000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 3.0
+        spawn:
+          WallSpawnAsteroid:
+            min: 36
+            max: 36
+          MobSpawnCrabCoal:
+            min: 4
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -115,6 +463,98 @@
     energy: 3.5
     color: "#ffffff"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnReagentPuddleBehavior
+        possibleReagents:
+          UnstableMutagen: 1000
+          Mold: 1000
+          PolytrinicAcid: 1000
+          FerrochromicAcid: 1000
+          FluorosulfuricAcid: 1000
+          SulfuricAcid: 1000
+          HeartbreakerToxin: 1000
+          VentCrud: 1000
+          UncookedAnimalProteins: 1000
+          Thermite: 1000
+          Napalm: 1000
+          Phlogiston: 1000
+          ChlorineTrifluoride: 1000
+          FoamingAgent: 1000
+          BuzzochloricBees: 1000
+          RobustHarvest: 1000
+          Cryptobiolin: 1000
+          Dylovene: 1000
+          Arithrazine: 1000
+          Bicaridine: 1000
+          Cryoxadone: 1000
+          Dermaline: 1000
+          Dexalin: 1000
+          DexalinPlus: 1000
+          Epinephrine: 1000
+          Leporazine: 1000
+          Ambuzol: 1000
+          Tricordrazine: 1000
+          Artifexium: 1000
+          Ethylredoxrazine: 1000
+          Desoxyephedrine: 1000
+          Ephedrine: 1000
+          THC: 1000
+          SpaceDrugs: 1000
+          Nocturine: 1000
+          MuteToxin: 1000
+          NorepinephricAcid: 1000
+          Pax: 1000
+          Ipecac: 1000
+          Cognizine: 1000
+          Beer: 1000
+          SpaceGlue: 1000
+          SpaceLube: 1000
+          CogChamp: 1000
+          Honk: 1000
+          Carpetium: 1000
+          JuiceThatMakesYouWeh: 1000
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: HandheldFriction
+    acceleration: 0.1
+    friction: 0.05
+    frictionNoInput: 0.05
+  - type: Slippery
+    slipData:
+      paralyzeTime: 5.0
+      launchForwardsMultiplier: 3.0
+  - type: Residue
+    residueAdjective: residue-slippery
+    residueColor: residue-blue
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        layer:
+        - SlipLayer
+        hard: false
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        density: 10
+        mask:
+        - ItemMask
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -128,6 +568,43 @@
     energy: 3.5
     color: "#00ccff"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: EntityEffectsOnCollide
+    effects:
+      - !type:RandomTeleport
+        range: 20
+    deleteAfterCollide: true
+    onlyForMob: true
+  - type: DamageOnLand
+    ignoreResistances: true
+    damage:
+      types:
+        Blunt: 5
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DeleteItemsInStorageBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,1,1
+    maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -136,12 +613,33 @@
   components:
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/electric_core.rsi
+#  - type: PointLight
+#    radius: 5.0
+#    energy: 2.0
+#    color: "#ffffaa"
+#    castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Electrified
+    requirePower: false
+  - type: EntityEffectsOnCollide
+    effects:
+      - !type:Paralyze
+        paralyzeTime: 6.0
   - type: PointLight
-    radius: 1.5
-    energy: 2.0
+    radius: 5.0
+    energy: 3.0
     color: "#ffffaa"
     castShadows: false
-  - type: Electrified
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -159,7 +657,7 @@
     castShadows: false
 
 - type: entity
-  parent: [ BaseAnomalyCore, BaseShadow ]
+  parent: [BaseAnomalyCore, BaseShadow]
   id: AnomalyCoreShadow
   suffix: Shadow
   components:
@@ -170,6 +668,36 @@
     energy: 2.0
     color: "#793a80"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.0
+        spawn:
+          ShadowPortal:
+            min: 1
+            max: 3
+          ShadowKudzu:
+            min: 3
+            max: 7
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StealthOnHeld
+    enabled: true
+    enabledOnDeath: false
+    examineThreshold: 0.5
+    lastVisibility: 1
+    minVisibility: -1
+    maxVisibility: 1.5
+    examinedDesc: stealth-visual-effect
+    stealthOnMoveEnabled: true
+    passiveVisibilityRate: -0.2
+    movementVisibilityRate: 0.5
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -183,6 +711,34 @@
     energy: 2.0
     color: "#56c1e8"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:EmpPulseBehavior
+        range: 5.5
+        energyConsumption: 50000
+  - type: Tag
+    tags:
+      - AnomalyTechCore
+      - Payload
+  - type: Signaller
+  - type: UseDelay
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 9999 #DBO condemn this
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyCore
@@ -226,6 +782,30 @@
     energy: 1.5
     color: "#fca3c0"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 25
+    intensitySlope: 5
+    maxIntensity: 3
+    canCreateVacuum: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:ExplodeBehavior
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 5
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -239,6 +819,53 @@
     energy: 10
     color: "#1e070e"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+        - !type:TriggerBehavior
+  - type: SoundOnTrigger
+    removeOnTrigger: true
+    sound:
+      path: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
+      volume: 5
+  - type: TwoStageTrigger
+    triggerDelay: 5.0
+    components:
+      - type: AmbientSound
+        enabled: true
+        volume: -5
+        range: 14
+        sound:
+          path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
+      - type: GravityWell
+        maxRange: 7
+        baseRadialAcceleration: 5
+        baseTangentialAcceleration: .5
+        gravPulsePeriod: 0.03
+      - type: SingularityDistortion
+        intensity: 150
+        falloffPower: 1.5
+      - type: PointLight
+        enabled: true
+        color: "#ffaa44"
+        energy: 8
+        radius: 6
+        softness: 1
+        offset: "0, 0"
+      - type: SoundOnTrigger
+        sound:
+          path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
+          params:
+            volume: 5
+      - type: DeleteOnTrigger
+  - type: RadiationSource
+    intensity: 2
+    slope: 0.4
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -252,6 +879,40 @@
     energy: 1.5
     color: "#befaff"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.0
+        spawn:
+          IceCrust:
+            min: 9
+            max: 9
+      - !type:SpawnGasBehavior
+        gasMixture:
+          volume: 100
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 100
+          temperature: 373.15
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnInteract
+    damage:
+      types:
+        Cold: 5
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -267,18 +928,26 @@
     color: "#cb5b7e"
     castShadows: false
 
-- type: entity
-  parent: BaseAnomalyInertCore
-  id: AnomalyCoreRockInert
-  suffix: Rock, Inert
-  components:
-  - type: Sprite
-    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
-  - type: PointLight
-    radius: 1.5
-    energy: 3.5
-    color: "#5ca8cb"
-    castShadows: false
+#Exodus-AnomalyCore-Begin
+#- type: entity
+#  parent: BaseAnomalyInertCore
+#  id: AnomalyCoreRockInert
+#  suffix: Rock, Inert
+#  components:
+#  - type: Sprite
+#    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+#  - type: PointLight
+#    radius: 1.5
+#    energy: 3.5
+#    color: "#5ca8cb"
+#    castShadows: false
+#  - type: MaterialCluster
+#    whitelist:
+#      tags:
+#      - Ore
+#    materials:
+#      RawIron: 3000
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -292,6 +961,98 @@
     energy: 3.5
     color: "#ffffff"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnReagentPuddleBehavior
+        possibleReagents:
+          UnstableMutagen: 500
+          Mold: 500
+          PolytrinicAcid: 500
+          FerrochromicAcid: 500
+          FluorosulfuricAcid: 500
+          SulfuricAcid: 500
+          HeartbreakerToxin: 500
+          VentCrud: 500
+          UncookedAnimalProteins: 500
+          Thermite: 500
+          Napalm: 500
+          Phlogiston: 500
+          ChlorineTrifluoride: 500
+          FoamingAgent: 500
+          BuzzochloricBees: 500
+          RobustHarvest: 500
+          Cryptobiolin: 500
+          Dylovene: 500
+          Arithrazine: 500
+          Bicaridine: 500
+          Cryoxadone: 500
+          Dermaline: 500
+          Dexalin: 500
+          DexalinPlus: 500
+          Epinephrine: 500
+          Leporazine: 500
+          Ambuzol: 500
+          Tricordrazine: 500
+          Artifexium: 500
+          Ethylredoxrazine: 500
+          Desoxyephedrine: 500
+          Ephedrine: 500
+          THC: 500
+          SpaceDrugs: 500
+          Nocturine: 500
+          MuteToxin: 500
+          NorepinephricAcid: 500
+          Pax: 500
+          Ipecac: 500
+          Cognizine: 500
+          Beer: 500
+          SpaceGlue: 500
+          SpaceLube: 500
+          CogChamp: 500
+          Honk: 500
+          Carpetium: 500
+          JuiceThatMakesYouWeh: 500
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: HandheldFriction
+    acceleration: 0.1
+    friction: 0.05
+    frictionNoInput: 0.05
+  - type: Slippery
+    slipData:
+      paralyzeTime: 5.0
+      launchForwardsMultiplier: 3.0
+  - type: Residue
+    residueAdjective: residue-slippery
+    residueColor: residue-blue
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        layer:
+        - SlipLayer
+        hard: false
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.3,0.4,0.3"
+        density: 10
+        mask:
+        - ItemMask
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -305,6 +1066,42 @@
     energy: 3.5
     color: "#00ccff"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: EntityEffectsOnCollide
+    effects:
+      - !type:RandomTeleport
+    deleteAfterCollide: true
+    onlyForMob: true
+  - type: DamageOnLand
+    ignoreResistances: true
+    damage:
+      types:
+        Blunt: 5
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DeleteItemsInStorageBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Storage
+    grid:
+    - 0,0,2,2
+    maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -313,11 +1110,33 @@
   components:
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/electric_core.rsi
+#  - type: PointLight
+#    radius: 1.5
+#    energy: 2.0
+#   color: "#ffffaa"
+#   castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: EntityEffectsOnCollide
+    effects:
+      - !type:Paralyze
+        paralyzeTime: 4.0
   - type: PointLight
-    radius: 1.5
+    radius: 3.0
     energy: 2.0
     color: "#ffffaa"
     castShadows: false
+  - type: Electrified
+    requirePower: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -335,7 +1154,7 @@
     castShadows: false
 
 - type: entity
-  parent: [ BaseAnomalyInertCore, BaseShadow ]
+  parent: [BaseAnomalyInertCore, BaseShadow]
   id: AnomalyCoreShadowInert
   suffix: Shadow, Inert
   components:
@@ -346,6 +1165,33 @@
     energy: 2.0
     color: "#793a80"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.0
+        spawn:
+          ShadowKudzu:
+            min: 3
+            max: 7
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StealthOnHeld
+    enabled: true
+    enabledOnDeath: false
+    examineThreshold: 0.5
+    lastVisibility: 1
+    minVisibility: -1
+    maxVisibility: 1.5
+    examinedDesc: stealth-visual-effect
+    stealthOnMoveEnabled: true
+    passiveVisibilityRate: -0.2
+    movementVisibilityRate: 0.5
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -359,6 +1205,34 @@
     energy: 2.0
     color: "#56c1e8"
     castShadows: false
+#Exodus-AnomalyCore-Begin
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:EmpPulseBehavior
+        range: 2.5
+        energyConsumption: 25000
+  - type: Tag
+    tags:
+      - AnomalyTechCore
+      - Payload
+  - type: Signaller
+  - type: UseDelay
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 9999 #DBO condemn this
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -372,3 +1246,221 @@
     energy: 2.0
     color: "#fc0303"
     castShadows: false
+
+#Exodus-AnomalyCore-Begin
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreRockUraniumInert
+  suffix: Uranium, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawUranium: 3000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.5
+        spawn:
+          WallSpawnAsteroid:
+            min: 9
+            max: 9
+          MobSpawnCrabUranium:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreRockQuartzInert
+  suffix: Quartz, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawQuartz: 3000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.5
+        spawn:
+          WallSpawnAsteroid:
+            min: 9
+            max: 9
+          MobSpawnCrabQuartz:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreRockSilverInert
+  suffix: Silver, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawSilver: 3000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.5
+        spawn:
+          WallSpawnAsteroid:
+            min: 9
+            max: 9
+          MobSpawnCrabSilver:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreRockGoldInert
+  suffix: Gold, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawGold: 3000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.5
+        spawn:
+          WallSpawnAsteroid:
+            min: 9
+            max: 9
+          MobSpawnCrabGold:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreRockIronInert
+  suffix: Iron, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      RawIron: 3000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.5
+        spawn:
+          WallSpawnAsteroid:
+            min: 9
+            max: 9
+          MobSpawnCrabIron:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: AnomalyCoreRockCoalInert
+  suffix: Coal, Inert
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/rock_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 3.5
+    color: "#5ca8cb"
+    castShadows: false
+  - type: MaterialCluster
+    whitelist:
+      tags:
+      - Ore
+    materials:
+      Coal: 3000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 1.5
+        spawn:
+          WallSpawnAsteroid:
+            min: 9
+            max: 9
+          MobSpawnCrabCoal:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+#Exodus-AnomalyCore-End

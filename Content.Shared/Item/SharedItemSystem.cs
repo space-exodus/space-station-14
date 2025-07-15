@@ -10,6 +10,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.Damage.Components;//Exodus-AnomalyCore
 
 namespace Content.Shared.Item;
 
@@ -121,6 +122,11 @@ public abstract class SharedItemSystem : EntitySystem
             !args.CanInteract ||
             !_handsSystem.CanPickupAnyHand(args.User, args.Target, handsComp: args.Hands, item: component))
             return;
+
+        //Exodus-AnomalyCore-Begin
+        if (EntityManager.HasComponent<DamageOnInteractComponent>(uid))
+            return;
+        //Exodus-AnomalyCore-End
 
         InteractionVerb verb = new();
         verb.Act = () => _handsSystem.TryPickupAnyHand(args.User, args.Target, checkActionBlocker: false,

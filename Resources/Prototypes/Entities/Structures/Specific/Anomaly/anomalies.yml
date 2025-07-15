@@ -371,11 +371,12 @@
   abstract: true
   suffix: Rock
   components:
-  - type: Anomaly
-    corePrototype: AnomalyCoreRock
-    coreInertPrototype: AnomalyCoreRockInert
-    minPulseLength: 180
-    maxPulseLength: 300
+#Exodus-AnomalyCore 
+#  - type: Anomaly
+#    corePrototype: AnomalyCoreRock
+#    coreInertPrototype: AnomalyCoreRockInert
+#    minPulseLength: 180
+#    maxPulseLength: 300
   - type: Sprite
     layers:
     - state: anom6
@@ -414,6 +415,13 @@
     radius: 2.0
     energy: 7.5
     color: "#52ff39"
+#Exodus-EnomalyCore-Begin
+  - type: Anomaly
+    corePrototype: AnomalyCoreRockUranium
+    coreInertPrototype: AnomalyCoreRockUraniumInert
+    minPulseLength: 180
+    maxPulseLength: 300
+#Exodus-AnomalyCore-End
   - type: EntitySpawnAnomaly
     entries:
     - settings:
@@ -464,6 +472,13 @@
     radius: 2.0
     energy: 7.5
     color: "#fb4747"
+#Exodus-EnomalyCore-Begin
+  - type: Anomaly
+    corePrototype: AnomalyCoreRockQuartz
+    coreInertPrototype: AnomalyCoreRockQuartzInert
+    minPulseLength: 180
+    maxPulseLength: 300
+#Exodus-AnomalyCore-End
   - type: EntitySpawnAnomaly
     entries:
     - settings:
@@ -514,6 +529,13 @@
     radius: 2.0
     energy: 7.5
     color: "#47f8ff"
+#Exodus-EnomalyCore-Begin
+  - type: Anomaly
+    corePrototype: AnomalyCoreRockSilver
+    coreInertPrototype: AnomalyCoreRockSilverInert
+    minPulseLength: 180
+    maxPulseLength: 300
+#Exodus-AnomalyCore-End
   - type: EntitySpawnAnomaly
     entries:
     - settings:
@@ -564,6 +586,13 @@
     radius: 2.0
     energy: 7.5
     color: "#e3ba70"
+#Exodus-EnomalyCore-Begin
+  - type: Anomaly
+    corePrototype: AnomalyCoreRockGold
+    coreInertPrototype: AnomalyCoreRockGoldInert
+    minPulseLength: 180
+    maxPulseLength: 300
+#Exodus-AnomalyCore-End
   - type: EntitySpawnAnomaly
     entries:
     - settings:
@@ -614,6 +643,13 @@
     radius: 2.0
     energy: 7.5
     color: "#ff8227"
+#Exodus-EnomalyCore-Begin
+  - type: Anomaly
+    corePrototype: AnomalyCoreRockIron
+    coreInertPrototype: AnomalyCoreRockIronInert
+    minPulseLength: 180
+    maxPulseLength: 300
+#Exodus-AnomalyCore-End
   - type: EntitySpawnAnomaly
     entries:
     - settings:
@@ -664,6 +700,13 @@
     radius: 2.0
     energy: 7.5
     color: "#484848"
+#Exodus-EnomalyCore-Begin
+  - type: Anomaly
+    corePrototype: AnomalyCoreCoalRock
+    coreInertPrototype: AnomalyCoreRockCoalInert
+    minPulseLength: 180
+    maxPulseLength: 300
+#Exodus-AnomalyCore-End
   - type: EntitySpawnAnomaly
     entries:
     - settings:
