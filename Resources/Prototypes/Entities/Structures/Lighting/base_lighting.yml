@@ -130,7 +130,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -154,7 +154,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 #LED lights
@@ -174,7 +174,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 1 # LEDs don't get as hot
+        Heat: 0.01 # LEDs don't get as hot
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -200,7 +200,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 4 # brighter light gets hotter
+        Heat: 0.04 # brighter light gets hotter
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -231,7 +231,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -348,7 +348,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -369,7 +369,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 1
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -390,7 +390,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 1
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -411,7 +411,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -428,7 +428,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 #Emergency Lights
@@ -521,7 +521,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -550,7 +550,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -579,7 +579,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -608,7 +608,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -637,7 +637,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -667,7 +667,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -696,7 +696,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
@@ -725,7 +725,7 @@
   - type: DamageOnInteract
     damage:
       types:
-        Heat: 2
+        Heat: 0.01
     popupText: powered-light-component-burn-hand
 
 - type: entity
