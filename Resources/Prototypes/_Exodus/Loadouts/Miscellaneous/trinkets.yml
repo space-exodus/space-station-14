@@ -5,10 +5,11 @@
     - PersonalAI
 
 - type: loadout
-  id: Eyepatch
+  id: EyepatchLoadout
   storage:
     back:
     - ClothingEyesEyepatch
+  groupBy: "ClothingTrinkets"
 
 - type: loadout
   id: MedkitLoadout

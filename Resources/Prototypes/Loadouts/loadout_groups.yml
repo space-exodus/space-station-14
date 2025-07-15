@@ -42,7 +42,7 @@
   - PlushieExperiment
   - Harmonica
   - PersonalAI
-  - Eyepatch
+  - EyepatchLoadout
   - MimeSuspendersBlack
   - MedkitLoadout
   # - ThreeCandles
@@ -621,10 +621,10 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
+  - Microphone # Exodus-Better-Loadout
   - Glockenspiel
   - MusicBox
   - Xylophone
-  - Microphone
   - Synthesizer
   - Kalimba
   - Woodblock
