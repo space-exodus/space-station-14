@@ -316,8 +316,8 @@
       - type: Anomaly
         deleteEntity: false
         maxPointsPerSecond: 100
-        corePrototype: AnomalyCoreRock
-        coreInertPrototype: AnomalyCoreRockInert
+        corePrototype: AnomalyCoreRockIron
+        coreInertPrototype: AnomalyCoreRockIronInert
       - type: InnerBodyAnomaly
         injectionProto: AnomalyInjectionRock
         startMessage: inner-anomaly-start-message-rock

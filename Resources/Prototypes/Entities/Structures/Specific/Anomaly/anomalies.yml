@@ -702,7 +702,7 @@
     color: "#484848"
 #Exodus-EnomalyCore-Begin
   - type: Anomaly
-    corePrototype: AnomalyCoreCoalRock
+    corePrototype: AnomalyCoreRockCoal
     coreInertPrototype: AnomalyCoreRockCoalInert
     minPulseLength: 180
     maxPulseLength: 300

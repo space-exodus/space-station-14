@@ -11,7 +11,6 @@ namespace Content.Shared.Exodus.Movement;
 public sealed class HandheldFrictionSystem : EntitySystem
 {
     [Dependency] private readonly MovementSpeedModifierSystem _move = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
 
     public override void Initialize()
     {

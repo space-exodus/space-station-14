@@ -24,4 +24,3 @@ public sealed partial class EmpPulseBehavior : IThresholdBehavior
         emp.EmpPulse(xform.Coordinates, Range, EnergyConsumption, DisableDuration);
     }
 }
-

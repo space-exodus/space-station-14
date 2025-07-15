@@ -23,7 +23,7 @@ public sealed partial class RandomTeleport : EntityEffect
     public SoundSpecifier TeleportSound = new SoundPathSpecifier("/Audio/Effects/teleport_arrival.ogg");
 
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
-    => Loc.GetString("reagent-effect-guidebook-ranom-teleport",
+    => Loc.GetString("reagent-effect-guidebook-random-teleport",
         ("chance", Probability));
 
     public override void Effect(EntityEffectBaseArgs args)

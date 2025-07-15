@@ -227,12 +227,6 @@
 #    energy: 3.5
 #    color: "#5ca8cb"
 #    castShadows: false
-#  - type: MaterialCluster
-#    whitelist:
-#      tags:
-#      - Ore
-#    materials:
-#      RawIron: 3000
 
 - type: entity
   parent: BaseAnomalyCore
@@ -595,7 +589,7 @@
   - type: Storage
     grid:
     - 0,0,1,1
-    maxItemSize: Small
+    maxItemSize: Tiny
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -941,12 +935,6 @@
 #    energy: 3.5
 #    color: "#5ca8cb"
 #    castShadows: false
-#  - type: MaterialCluster
-#    whitelist:
-#      tags:
-#      - Ore
-#    materials:
-#      RawIron: 3000
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -1092,7 +1080,7 @@
   - type: Storage
     grid:
     - 0,0,2,2
-    maxItemSize: Small
+    maxItemSize: Tiny
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
