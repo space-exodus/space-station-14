@@ -29,6 +29,6 @@ public sealed partial class PheromonesCommunicationComponent : Component
     public EntProtoId PheromonesCloud = "PheromonesEffect";
 }
 
-public sealed partial class TryMarkWithPheromonesEvent : EntityWorldTargetActionEvent
+public sealed partial class TryMarkWithPheromonesEvent : WorldTargetActionEvent
 {
 }
