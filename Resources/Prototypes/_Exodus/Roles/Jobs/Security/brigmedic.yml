@@ -42,3 +42,14 @@
     back:
     - Flash
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: BrigmedicChameleonOutfit
+  job: Brigmedic
+  hasMindShield: true
+  equipment:
+    mask: ClothingMaskSterile
+    neck: ClothingNeckScarfStripedRed
+    gloves: ClothingHandsGlovesLatex
+    outerClothing: ClothingOuterCoatAMG
+    head: ClothingHeadHatBeretSecurityMedic

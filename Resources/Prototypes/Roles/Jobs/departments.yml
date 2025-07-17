@@ -47,7 +47,15 @@
   - ERTMedical
   - ERTSecurity
   - ERTEngineer
-  - DeathSquad
+  # Exodus-Better-DeathSquad-Start
+  # - DeathSquad
+  - DSCommander
+  - DSOfficer
+  - DSSpecialist
+  # Exodus-Better-DeathSquad-End
+  # Exodus-BlueshieldOfficer-Start
+  - BlueshieldOfficer
+  # Exodus-BlueshieldOfficer-Start
   editorHidden: true
   weight: 120
 
@@ -73,7 +81,15 @@
   - ERTMedical
   - ERTSecurity
   - ERTEngineer
-  - DeathSquad
+  # Exodus-Better-DeathSquad-Start
+  # - DeathSquad
+  - DSCommander
+  - DSOfficer
+  - DSSpecialist
+  # Exodus-Better-DeathSquad-End
+  # Exodus-BlueshieldOfficer-Start
+  - BlueshieldOfficer
+  # Exodus-BlueshieldOfficer-Start
   primary: false
   weight: 100
 

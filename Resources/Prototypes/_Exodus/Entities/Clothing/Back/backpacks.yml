@@ -6,6 +6,10 @@
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Back/Backpacks/blueshield.rsi
+# Exodus-Add-ExplosionResistance-start
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+# Exodus-Add-ExplosionResistance-end
 
 - type: entity
   parent: ClothingBackpackCentcomOfficer
