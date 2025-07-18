@@ -65,3 +65,14 @@
     back:
     - Flash
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: HeadOfSecurityChameleonOutfit
+  job: HeadOfSecurity
+  hasMindShield: true
+  equipment:
+  # Exodus-Better-Chameleon-Start
+    head: ClothingHeadHatBeretHoS
+  # Exodus-Better-Chameleon-End
+    mask: ClothingMaskGasSecurity
+    neck: ClothingNeckCloakHos

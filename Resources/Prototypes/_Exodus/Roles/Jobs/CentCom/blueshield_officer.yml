@@ -29,3 +29,11 @@
     neck: ClothingNeckCloakBlueshield
     pocket1: WeaponAdvancedPulsePistol
     suitstorage: WeaponSubMachineGunVector
+
+- type: chameleonOutfit
+  id: BlueshieldOfficerChameleonOutfit
+  job: BlueshieldOfficer
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetHardsuitBlueshield
+    outerClothing: ClothingOuterHardsuitBlueshield

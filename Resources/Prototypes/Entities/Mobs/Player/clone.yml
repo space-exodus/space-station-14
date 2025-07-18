@@ -17,6 +17,7 @@
   # traits
   # - LegsParalyzed (you get healed)
   - LightweightDrunk
+  - Monochromacy
   - Muted
   - Narcolepsy
   - Pacified
@@ -61,6 +62,10 @@
   - SpanishAccent
   - StutteringAccent
   - TTS # Corvax-TTS
+  # Exodus-Accent-Add-Start
+  - BurrinessAccent
+  - KidanAccent
+  # Exodus-Accent-Add-End
   blacklist:
     components:
     - AttachedClothing # helmets, which are part of the suit

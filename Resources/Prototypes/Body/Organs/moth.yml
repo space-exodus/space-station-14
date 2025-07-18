@@ -8,7 +8,7 @@
       tags:
       - ClothMade
       - Paper
-      - Pill
+      # - Pill # Exodus-Lore-Issue
   - type: SolutionContainerManager
     solutions:
       stomach:

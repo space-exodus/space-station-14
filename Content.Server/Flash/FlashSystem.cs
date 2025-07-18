@@ -45,7 +45,7 @@ namespace Content.Server.Flash
         public override void Initialize()
         {
             base.Initialize();
-
+            SubscribeLocalEvent<FlashImmunityComponent, ExaminedEvent>(OnExamine);
             SubscribeLocalEvent<FlashComponent, MeleeHitEvent>(OnFlashMeleeHit);
             // ran before toggling light for extra-bright lantern
             SubscribeLocalEvent<FlashComponent, UseInHandEvent>(OnFlashUseInHand, before: new[] { typeof(HandheldLightSystem) });
@@ -54,7 +54,13 @@ namespace Content.Server.Flash
             SubscribeLocalEvent<PermanentBlindnessComponent, FlashModifiersEvent>(OnPermanentBlindnessFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
             SubscribeLocalEvent<TemporaryBlindnessComponent, FlashModifiersEvent>(OnTemporaryBlindnessFlashAttempt); // Exodus-SensitiveEyes | FlashAttemptEvent -> FlashModifiersEvent
         }
+        
+        private void OnExamine(Entity<FlashImmunityComponent> ent, ref ExaminedEvent args)
 
+        {
+            args.PushMarkup(Loc.GetString("flash-protection"));
+        }
+        
         private void OnFlashMeleeHit(EntityUid uid, FlashComponent comp, MeleeHitEvent args)
         {
             if (!args.IsHit ||

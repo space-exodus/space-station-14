@@ -1,4 +1,4 @@
-﻿- type: inventoryTemplate
+- type: inventoryTemplate
   id: human
   slots:
     - name: shoes
@@ -120,4 +120,7 @@
       stripTime: 6
       uiWindowPos: 3,0
       strippingWindowPos: 0,5
-      displayName: inventory-slot-back
+      displayName: Back
+      blacklist:
+        tags:
+        - PetOnly
