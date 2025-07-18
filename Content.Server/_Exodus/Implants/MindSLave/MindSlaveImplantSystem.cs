@@ -37,68 +37,66 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
         if (ev.Implanted == null)
             return;
 
-        if (_tag.HasTag(ev.Implant, MindSlaveTag))
+        if (MindSlaveRemovalCheck(ev.Implanted.Value, ev.Implant))
+            return;
+
+        if (!_mindSlaveImplantMap.TryAdd(ev.Implanted.Value, ev.Implant))
+            return;
+
+        EnsureComp<MindSlaveComponent>(ev.Implanted.Value);
+
+        _playerManager.TryGetSessionByEntity(ev.Implanted.Value, out var playerSession);
+        if (playerSession != null)
         {
-
-            if (MindSlaveRemovalCheck(ev.Implanted.Value, ev.Implant))
-                return;
-
-            _mindSlaveImplantMap[ev.Implanted.Value] = ev.Implant;
-
-            EnsureComp<MindSlaveComponent>(ev.Implanted.Value);
-
-            _playerManager.TryGetSessionByEntity(ev.Implanted.Value, out var playerSession);
-            if (playerSession != null)
-            {
-                _chatManager.DispatchServerMessage(
+            _chatManager.DispatchServerMessage(
                 playerSession,
                 Loc.GetString("mindslave-implant-success")
-                );
-            }
-
-            if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var master))
-                return;
-
-            EnsureComp<MindSlaveMasterComponent>(master);
-
-            _playerManager.TryGetSessionByEntity(master, out var playerMasterSession);
-            if (playerMasterSession != null)
-            {
-                _chatManager.DispatchServerMessage(
-                    playerMasterSession,
-                    Loc.GetString("mindslave-implant-master-success")
-                );
-            }
-
-            var masterNetId = EntityManager.GetNetEntity(_mindSlaveImplantUsers[ev.Implanted.Value]);
-            var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(_mindSlaveImplantUsers[ev.Implanted.Value]);
-
-
-            var slaveComp = EntityManager.GetComponent<MindSlaveComponent>(ev.Implanted.Value);
-            var slaveNetId = EntityManager.GetNetEntity(ev.Implanted.Value);
-
-            slaveComp.Master = masterNetId;
-            Dirty(ev.Implanted.Value, slaveComp);
-
-            if (!masterComp.IconList.Contains(masterNetId))
-            {
-                masterComp.IconList.Add(masterNetId);
-            }
-
-            if (!masterComp.IconList.Contains(slaveNetId))
-            {
-                masterComp.IconList.Add(slaveNetId);
-            }
-
-            Dirty(master, masterComp);
-
+            );
         }
 
+        if (!_mindSlaveImplantUsers.TryGetValue(ev.Implanted.Value, out var masterUid))
+            return;
+
+        EnsureComp<MindSlaveMasterComponent>(masterUid);
+
+        _playerManager.TryGetSessionByEntity(masterUid, out var playerMasterSession);
+        if (playerMasterSession != null)
+        {
+            _chatManager.DispatchServerMessage(
+                playerMasterSession,
+                Loc.GetString("mindslave-implant-master-success")
+            );
+        }
+
+        var masterNetId = EntityManager.GetNetEntity(masterUid);
+        if (!TryComp<MindSlaveMasterComponent>(masterUid, out var masterComp))
+            return;
+
+        if (!TryComp<MindSlaveComponent>(ev.Implanted.Value, out var slaveComp))
+            return;
+
+        var slaveNetId = EntityManager.GetNetEntity(ev.Implanted.Value);
+
+        slaveComp.Master = masterUid;
+        Dirty(ev.Implanted.Value, slaveComp);
+
+        if (!masterComp.IconList.Contains(masterNetId))
+        {
+            masterComp.IconList.Add(masterNetId);
+        }
+
+        if (!masterComp.IconList.Contains(slaveNetId))
+        {
+            masterComp.IconList.Add(slaveNetId);
+        }
+
+        Dirty(masterUid, masterComp);
     }
 
     private void AddMindSlaveAttempt(EntityUid uid, MindSlaveImplantComponent component, ImplantInjectEvent ev)
     {
-        _mindSlaveImplantUsers[ev.Target] = ev.User;
+        if (!_mindSlaveImplantUsers.TryAdd(ev.Target, ev.User))
+            return;
     }
 
     public bool MindSlaveRemovalCheck(EntityUid implanted, EntityUid implant)
@@ -108,43 +106,33 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             return true;
         }
 
-        if (HasComp<MindShieldComponent>(implanted))
-        {
-            _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-implant-failed"), implanted, PopupType.Large);
-            QueueDel(implant);
-            _mindSlaveImplantUsers.Remove(implanted);
-            return true;
-        }
-        else if (master == implanted)
-        {
-            _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-implant-for-master-failed"), implanted, PopupType.Medium);
-            _mindSlaveImplantUsers.Remove(implanted);
-            QueueDel(implant);
-            return true;
-        }
-        else if (HasComp<MindSlaveComponent>(master))
-        {
-            _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-implant-for-slave-failed"), implanted, PopupType.Medium);
-            _mindSlaveImplantUsers.Remove(implanted);
-            QueueDel(implant);
-            return true;
-        }
-        else if (HasComp<MindSlaveMasterComponent>(implanted))
-        {
-            _popup.PopupEntity(Loc.GetString("implanter-component-target-master"), implanted, PopupType.Medium);
-            _mindSlaveImplantUsers.Remove(implanted);
-            QueueDel(implant);
-            return true;
-        }
-        else if (HasComp<GhostComponent>(master))
-        {
-            _popup.PopupEntity(Loc.GetString("implanter-component-mindslave-user-ghost"), implanted, PopupType.Medium);
-            _mindSlaveImplantUsers.Remove(implanted);
-            QueueDel(implant);
-            return true;
-        }
+        bool shouldRemove =
+        HasComp<MindShieldComponent>(implanted) ||
+        master == implanted ||
+        HasComp<MindSlaveComponent>(master) ||
+        HasComp<MindSlaveMasterComponent>(implanted) ||
+        HasComp<GhostComponent>(master);
 
-        return false;
+        if (!shouldRemove)
+            return false;
+
+        var message = Loc.GetString(
+            HasComp<MindShieldComponent>(implanted) ? "implanter-component-mindslave-implant-failed" :
+            master == implanted ? "implanter-component-mindslave-implant-for-master-failed" :
+            HasComp<MindSlaveComponent>(master) ? "implanter-component-mindslave-implant-for-slave-failed" :
+            HasComp<MindSlaveMasterComponent>(implanted) ? "implanter-component-target-master" :
+            "implanter-component-mindslave-user-ghost"
+            );
+
+        var popupType = HasComp<MindShieldComponent>(implanted) ? PopupType.Large : PopupType.Medium;
+
+        _popup.PopupEntity(message, implanted, popupType);
+        _mindSlaveImplantUsers.Remove(implanted);
+
+        if (implant.IsValid())
+            QueueDel(implant);
+
+        return true;
     }
 
     public void RemoveMindSlave(EntityUid uid, MindShieldImplantComponent component, ImplantImplantedEvent ev)
@@ -164,11 +152,13 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
                 );
             }
 
-            var slaveComp = EntityManager.GetComponent<MindSlaveComponent>(ev.Implanted.Value);
+            if (!TryComp<MindSlaveComponent>(ev.Implanted.Value, out var slaveComp)
+                || !TryComp<MindSlaveMasterComponent>(slaveComp.Master, out var masterComp))
+                return;
+
             var slaveNetId = EntityManager.GetNetEntity(ev.Implanted.Value);
-            var masterUid = EntityManager.GetEntity(slaveComp.Master);
+            var masterUid = slaveComp.Master;
             var masterNetId = EntityManager.GetNetEntity(masterUid);
-            var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(masterUid);
 
             if (masterComp.IconList.Contains(slaveNetId))
             {
@@ -217,10 +207,10 @@ public sealed partial class MindSlaveImplantSystem : EntitySystem
             );
         }
 
-        if (!_mindSlaveImplantUsers.TryGetValue(args.Container.Owner, out var masterUid))
+        if (!_mindSlaveImplantUsers.TryGetValue(args.Container.Owner, out var masterUid)
+            || !TryComp<MindSlaveMasterComponent>(masterUid, out var masterComp))
             return;
 
-        var masterComp = EntityManager.GetComponent<MindSlaveMasterComponent>(masterUid);
         var masterNetId = EntityManager.GetNetEntity(masterUid);
         var slaveNetId = EntityManager.GetNetEntity(args.Container.Owner);
 

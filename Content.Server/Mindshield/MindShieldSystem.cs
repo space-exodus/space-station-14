@@ -39,7 +39,7 @@ public sealed class MindShieldSystem : EntitySystem
         EnsureComp<MindShieldComponent>(ev.Implanted.Value);
         MindShieldRemovalCheck(ev.Implanted.Value, ev.Implant);
         //Exodus-MindSlave-Begin
-        if (!EntityManager.TryGetComponent<MindShieldImplantComponent>(ent.Owner, out var mindShieldComp))
+        if (!TryComp<MindShieldImplantComponent>(ent.Owner, out var mindShieldComp))
             return;
 
         _mindSlaveImplantSystem.RemoveMindSlave(ent.Owner, mindShieldComp, ev);

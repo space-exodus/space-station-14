@@ -121,10 +121,13 @@ public abstract class SharedImplanterSystem : EntitySystem
         if (!CanImplant(user, target, implanter, component, out var implant, out var implantComp))
             return;
 
+        //Exodus-MindSlave-Begin
         var evOnImplant = new ImplantInjectEvent(user, target, implant.Value, implanter);
         RaiseLocalEvent(implant.Value, evOnImplant);
         if (evOnImplant.Cancelled)
             return;
+        //Exodus-MindSlave-End
+
         // Check if we are trying to implant a implant which is already implanted
         // Check AFTER the doafter to prevent "is it a fake?" metagaming against deceptive implants
         if (!component.AllowMultipleImplants && CheckSameImplant(target, implant.Value))
@@ -376,6 +379,7 @@ public sealed class AddImplantAttemptEvent : CancellableEntityEventArgs
     }
 }
 
+//Exodus-MindSlave-Begin
 public sealed class ImplantInjectEvent : CancellableEntityEventArgs
 {
     public readonly EntityUid User;
@@ -391,6 +395,7 @@ public sealed class ImplantInjectEvent : CancellableEntityEventArgs
         Implanter = implanter;
     }
 }
+//Exodus-MindSlave-End
 
 /// <summary>
 /// Change the chosen implanter in the UI.
