@@ -1219,8 +1219,12 @@
       0: Alive
       200: Critical
       250: Dead
-  - type: StaminaResistance
-    damageCoefficient: 0.40
+  # Exodus - Stamina Rework
+  #- type: StaminaResistance
+  #  damageCoefficient: 0.40
+  - type: StaminaProtection
+    coefficient: 0.4
+  # Exodus - Stamina Rework - end
 
 - type: entity
   name: kangaroo
