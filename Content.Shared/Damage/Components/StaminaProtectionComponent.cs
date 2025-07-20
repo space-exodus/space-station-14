@@ -1,3 +1,5 @@
+// Exodus - Stamina Rework
+// Use this comp and StaminaArmor instead of StaminaResistance
 using Robust.Shared.GameStates;
 
 

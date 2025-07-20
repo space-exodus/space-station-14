@@ -1,4 +1,7 @@
-﻿using Content.Shared.Damage.Systems;
+﻿// Exodus - Stamina Rework
+// Use this comp and StaminaProtection instead of StaminaResistance
+
+using Content.Shared.Damage.Systems;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary;
 using Robust.Shared.GameStates;
 
