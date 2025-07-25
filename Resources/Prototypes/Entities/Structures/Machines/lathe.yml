@@ -536,6 +536,13 @@
           - RawMaterial
           - Ingot
     - type: OreSiloClient
+#Exodus-AnomalyCore-Begin
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
+#Exodus-AnomalyCore-End
 
 - type: entity
   id: MedicalTechFab
