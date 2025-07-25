@@ -244,10 +244,10 @@
     - SecurityWeapons
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -262,10 +262,10 @@
     board: ProtolatheHyperConvectionMachineCircuitboard
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -320,10 +320,10 @@
   - type: RequireProjectileTarget
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -338,10 +338,10 @@
     board: CircuitImprinterHyperConvectionMachineCircuitboard
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -385,10 +385,10 @@
     - Robotics
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -442,10 +442,10 @@
     modifiers:
       AnomalyTechCore: 0.7
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -497,10 +497,10 @@
     channels: [Security]
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -578,10 +578,10 @@
     channels: [Medical]
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -643,10 +643,10 @@
     modifiers:
       AnomalyTechCore: 0.7
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -749,10 +749,10 @@
     modifiers:
       AnomalyTechCore: 0.7
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -774,10 +774,10 @@
     - AdvancedSmelting
 #Exodus-AnomalyCore-Begin
   - type: ContainerContainer
-  containers:
-    machine_board: !type:Container
-    machine_parts: !type:Container
-    latheSpeedUp: !type:ContainerSlot
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
