@@ -83,6 +83,9 @@
   - type: LatheSpeedUp
     modifiers:
       AnomalyTechCore: 0.7
+  - type: ContainerContainer
+    containers:
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -169,6 +172,7 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       blueprint: !type:Container
+      latheSpeedUp: !type:ContainerSlot #Exodus-AnomalyCore
   - type: EmptyOnMachineDeconstruct
     containers:
     - blueprint
@@ -405,6 +409,9 @@
   - type: LatheSpeedUp
     modifiers:
       AnomalyTechCore: 0.7
+  - type: ContainerContainer
+    containers:
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -587,6 +594,9 @@
   - type: LatheSpeedUp
     modifiers:
       AnomalyTechCore: 0.7
+  - type: ContainerContainer
+    containers:
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -617,6 +627,7 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       beaker_slot: !type:ContainerSlot
+      latheSpeedUp: !type:ContainerSlot #Exodus-AnomalyCore
   - type: Lathe
     reagentOutputSlotId: beaker_slot
     idleState: icon
@@ -687,6 +698,9 @@
   - type: LatheSpeedUp
     modifiers:
       AnomalyTechCore: 0.7
+  - type: ContainerContainer
+    containers:
+      latheSpeedUp: !type:ContainerSlot
 #Exodus-AnomalyCore-End
 
 - type: entity

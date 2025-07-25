@@ -1,3 +1,4 @@
+// © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 using Content.Shared.Exodus.Materials.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Materials;
@@ -30,7 +31,7 @@ public sealed partial class MaterialClusterSystem : EntitySystem
             return;
 
 
-        if (comp.Whitelist == null)
+        if (comp.Whitelist != null && !_entityWhitelist.IsValid(comp.Whitelist, args.Target.Value))
             return;
 
         foreach (var material in comp.Materials.Keys)

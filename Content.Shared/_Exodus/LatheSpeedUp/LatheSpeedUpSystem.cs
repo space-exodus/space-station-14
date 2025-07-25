@@ -1,3 +1,4 @@
+// © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 using Content.Shared.Exodus.LatheSpeedUp.Components;
 using Content.Shared.Tag;
 using Content.Shared.Containers.ItemSlots;

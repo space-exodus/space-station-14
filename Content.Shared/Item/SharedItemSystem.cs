@@ -124,7 +124,7 @@ public abstract class SharedItemSystem : EntitySystem
             return;
 
         //Exodus-AnomalyCore-Begin
-        if (EntityManager.HasComponent<DamageOnInteractComponent>(uid))
+        if (HasComp<DamageOnInteractComponent>(uid))
             return;
         //Exodus-AnomalyCore-End
 

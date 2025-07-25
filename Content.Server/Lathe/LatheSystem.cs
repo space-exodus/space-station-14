@@ -200,11 +200,13 @@ namespace Content.Server.Lathe
             var recipe = component.Queue.First();
             component.Queue.RemoveAt(0);
 
+            //Exodus-AnomalyCore-Begin
             //var time = _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime) * component.TimeMultiplier;
             var time = _latheSpeedUpSystem.ApplySpeed(
                uid,
                _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime)
-           ) * component.TimeMultiplier;
+            ) * component.TimeMultiplier;
+           //Exodus-AnomalyCore-End
 
             var lathe = EnsureComp<LatheProducingComponent>(uid);
             lathe.StartTime = _timing.CurTime;
