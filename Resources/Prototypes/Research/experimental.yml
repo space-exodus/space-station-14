@@ -145,7 +145,7 @@
     state: icon
   discipline: Experimental
   tier: 3
-  cost: 10000
+  cost: 12500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - DeviceQuantumSpinInverter
 
@@ -157,6 +157,6 @@
     state: icon
   discipline: Experimental
   tier: 3
-  cost: 10000
+  cost: 12500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - DeviceDesynchronizer
