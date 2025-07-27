@@ -21,7 +21,7 @@
         loop: true
 
 - type: entity
-  id: SoundMarkerСave
+  id: SoundMarkerCave
   parent: SoundMarkerBase
   suffix: Cave, 10 range
 

@@ -1,6 +1,6 @@
 ent-SoundMarkerBase = маркер звука
     .desc = { "" }
-ent-SoundMarkerСave = { ent-SoundMarkerBase }
+ent-SoundMarkerCave = { ent-SoundMarkerBase }
     .desc = { ent-SoundMarkerBase.desc }
     .suffix = Пещера, радиус 10
 ent-SoundMarkerForest1 = { ent-SoundMarkerBase }
