@@ -201,7 +201,7 @@
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 17500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
@@ -214,7 +214,7 @@
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 17500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - WeaponTemperatureGun
 
@@ -226,7 +226,7 @@
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 17500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - GrenadeEMP
   - PowerCageHigh

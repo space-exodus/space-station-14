@@ -210,7 +210,7 @@
     state: icon
   discipline: CivilianServices
   tier: 3
-  cost: 10000
+  cost: 12500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - ClothingShoesBootsSpeed
 
@@ -222,7 +222,7 @@
     state: beakerbluespace
   discipline: CivilianServices
   tier: 3
-  cost: 10000
+  cost: 12500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace

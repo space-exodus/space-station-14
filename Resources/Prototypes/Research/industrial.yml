@@ -194,7 +194,7 @@
     state: holding
   discipline: Industrial
   tier: 3
-  cost: 15000
+  cost: 17500 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
@@ -208,7 +208,7 @@
     state: microreactor
   discipline: Industrial
   tier: 3
-  cost: 10000
+  cost: 15000 # Exodus-All-Disciline-On-3-Tier
   recipeUnlocks:
   - PowerCellMicroreactor
   - PowerCellHyper
