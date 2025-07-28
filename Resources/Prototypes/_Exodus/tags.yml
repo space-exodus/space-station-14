@@ -23,4 +23,7 @@
   id: DionaNymph
 
 - type: Tag
+  id: AnomalyTechCore
+
+- type: Tag
   id: SpiderCube
