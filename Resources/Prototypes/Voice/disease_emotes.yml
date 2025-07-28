@@ -2,6 +2,14 @@
   id: Sneeze
   name: chat-emote-name-sneeze
   category: Vocal
+  #Exodus-Whitelist-Add-Start
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
+  #Exodus-Whitelist-Add-End
   chatMessages: ["chat-emote-msg-sneeze"]
   # Exodus-EmotesSounds-Start
   chatTriggers:
@@ -54,6 +62,14 @@
   id: CatHisses
   name: chat-emote-name-cathisses
   category: Vocal
+  #Exodus-Whitelist-Add-Start
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
+  #Exodus-Whitelist-Add-End
   chatMessages: ["chat-emote-msg-cathisses"]
   # Exodus-EmotesSounds-Start
   available: false

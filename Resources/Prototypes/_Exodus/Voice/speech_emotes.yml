@@ -3,6 +3,12 @@
   id: Grumble
   name: chat-emote-name-grumble
   category: Vocal
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
   chatMessages: [ворчит]
   chatTriggers:
     - grumble
@@ -14,6 +20,12 @@
   id: Rumble
   name: chat-emote-name-rumble
   category: Vocal
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
   available: false
   chatMessages: [урчит]
   chatTriggers:
@@ -26,6 +38,12 @@
   category: General
   available: false
   icon: Exodus/Interface/Emotes/wiggles_antennae.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
   chatMessages: [шевелит антенками]
   chatTriggers:
     - waves antennae
@@ -41,6 +59,12 @@
   category: General
   available: false
   icon: Exodus/Interface/Emotes/moves_wiggles_antennae.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
   chatMessages: [резко машет антенками]
   chatTriggers:
     - waves antennae sharply
@@ -53,6 +77,12 @@
   category: Vocal
   available: false
   icon: Exodus/Interface/Emotes/snaps_jaws.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
   chatMessages: [щёлкает челюстями]
   chatTriggers:
     - snaps his jaws
@@ -67,6 +97,12 @@
   category: Vocal
   available: false
   icon: Exodus/Interface/Emotes/groan.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    tags:
+    - SiliconEmotes
   chatMessages: [устало стонет]
   chatTriggers:
     - groans
