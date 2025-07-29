@@ -9,9 +9,10 @@
   markingLimits: MobNewKidanMarkingLimits
   maleFirstNames: NamesFirstKidan
   femaleFirstNames: NamesFirstKidan
-  naming: FirstDashLastDashFirst
+  naming: FirstDashMiddleDashLast
   maleLastNames: NamesLastKidan
   femaleLastNames: NamesLastKidan
+  middleNames: NamesMiddleKidan
   sexes:
   - Unsexed
 

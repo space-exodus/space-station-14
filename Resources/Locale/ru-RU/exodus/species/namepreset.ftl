@@ -1,2 +1,2 @@
-namepreset-firstdashlastdashfirst = { $first1 }-{ $last }-{ $first2 }
+namepreset-firstdashmiddledashfirst = { $first }-{ $middle }-{ $last }
 

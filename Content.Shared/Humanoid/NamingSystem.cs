@@ -40,9 +40,9 @@ namespace Content.Shared.Humanoid
                 default:
                     return Loc.GetString("namepreset-firstlast",
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto, gender))); // Corvax-LastnameGender
-                case SpeciesNaming.FirstDashLastDashFirst:
-                    return Loc.GetString("namepreset-firstdashlastdashfirst",
-                        ("first1", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto, gender)), ("first2", GetFirstName(speciesProto, gender))); // Exodus-Kidan
+                case SpeciesNaming.FirstDashMiddleDashLast:
+                    return Loc.GetString("namepreset-firstdashmiddledashfirst",
+                        ("first", GetFirstName(speciesProto, gender)), ("middle", GetMiddleName(speciesProto)!), ("last", GetLastName(speciesProto, gender))); // Exodus-Kidan
             }
         }
 
@@ -79,5 +79,11 @@ namespace Content.Shared.Humanoid
             }
         }
         // Corvax-LastnameGender-End
+
+        public string? GetMiddleName(SpeciesPrototype speciesProto)
+        {
+            return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames).Values);
+        }
+
     }
 }

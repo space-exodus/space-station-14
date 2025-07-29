@@ -10,7 +10,7 @@
   skinColoration: Hues
   maleFirstNames: NamesFirstKidan
   femaleFirstNames: NamesFirstKidan
-  naming: FirstDashLastDashFirst
+  naming: FirstDashFirst
   sexes:
   - Unsexed
 

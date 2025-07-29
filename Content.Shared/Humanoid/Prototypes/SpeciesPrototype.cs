@@ -98,6 +98,9 @@ public sealed partial class SpeciesPrototype : IPrototype
     // Corvax-LastnameGender-End
 
     [DataField]
+    public ProtoId<LocalizedDatasetPrototype> MiddleNames { get; private set; } = "NamesMiddleKidan";
+
+    [DataField]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
 
     [DataField]
@@ -135,5 +138,5 @@ public enum SpeciesNaming : byte
     FirstLast,
     FirstDashFirst,
     TheFirstofLast,
-    FirstDashLastDashFirst,  // Exodus-Kidan
+    FirstDashMiddleDashLast,  // Exodus-Kidan
 }
