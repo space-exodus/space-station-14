@@ -949,7 +949,7 @@ namespace Content.Client.Lobby.UI
                     };
                     var jobIcon = _prototypeManager.Index(job.Icon);
                     icon.Texture = _sprite.Frame0(jobIcon.Icon);
-                    selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
+                    selector.Setup(items, job.LocalizedName, 230, job.LocalizedDescription, icon, job.Guides); // Exodus-Better-Loadout
 
                     if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
                     {
