@@ -44,7 +44,7 @@
   - type: Sprite
     sprite: Exodus/Clothing/Neck/Cloaks/gold_traveler's_cloak.rsi
   - type: Clothing
-    sprite: Exodus/Clothing/Neck/Cloaks/gold_traveler's_cloak.rsi   
+    sprite: Exodus/Clothing/Neck/Cloaks/gold_traveler's_cloak.rsi
 
 - type: entity
   parent: ClothingNeckBase
@@ -55,6 +55,17 @@
   - type: Sprite
     sprite: Exodus/Clothing/Neck/Cloaks/red_traveler's_cloak.rsi
   - type: Clothing
-    sprite: Exodus/Clothing/Neck/Cloaks/red_traveler's_cloak.rsi   
+    sprite: Exodus/Clothing/Neck/Cloaks/red_traveler's_cloak.rsi
 
-
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHosFur
+  name: head of security's fur cloak
+  description: An exquisite gold-trimmed dark fur cloak fitting for taking up heroic poses during madness. Lead your security force in style.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Cloaks/hos_fur_cloak.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Cloaks/hos_fur_cloak.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
