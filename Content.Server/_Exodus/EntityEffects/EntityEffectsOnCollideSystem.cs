@@ -21,7 +21,7 @@ public sealed partial class EntityEffectsOnCollideSystem : EntitySystem
 
         var otherUid = args.OtherEntity;
 
-        if (comp.OnlyForMob && !EntityManager.HasComponent<MobStateComponent>(otherUid))
+        if (comp.OnlyForMob && !HasComp<MobStateComponent>(otherUid))
             return;
 
         foreach (var effect in comp.Effects)

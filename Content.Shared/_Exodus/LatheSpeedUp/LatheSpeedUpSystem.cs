@@ -15,7 +15,7 @@ public sealed class LatheSpeedUpSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, false))
             return time;
 
-        if (!EntityManager.TryGetComponent<ItemSlotsComponent>(ent.Owner, out var itemSlotsComp))
+        if (!TryComp<ItemSlotsComponent>(ent.Owner, out var itemSlotsComp))
             return time;
 
         foreach (var (slotId, slot) in itemSlotsComp.Slots)

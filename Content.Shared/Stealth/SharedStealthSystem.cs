@@ -32,8 +32,8 @@ public abstract class SharedStealthSystem : EntitySystem
         SubscribeLocalEvent<StealthComponent, MobStateChangedEvent>(OnMobStateChanged);
 
         //Exodus-AnomalyCore-Begin
-        SubscribeLocalEvent<StealthOnHeldComponent, GotEquippedHandEvent >(OnEquipped);
-        SubscribeLocalEvent<StealthOnHeldComponent, GotUnequippedHandEvent >(OnUnEquipped);
+        SubscribeLocalEvent<StealthOnHeldComponent, GotEquippedHandEvent>(OnEquipped);
+        SubscribeLocalEvent<StealthOnHeldComponent, GotUnequippedHandEvent>(OnUnEquipped);
         //Exodus-AnomalyCore-End
     }
 
@@ -123,6 +123,9 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnMove(EntityUid uid, StealthOnMoveComponent component, ref MoveEvent args)
     {
+        if (!HasComp<StealthComponent>(uid))
+            return;
+
         if (_timing.ApplyingState)
             return;
 
@@ -200,10 +203,18 @@ public abstract class SharedStealthSystem : EntitySystem
     //Exodus-AnomalyCore-Begin
     private void OnEquipped(EntityUid uid, StealthOnHeldComponent comp, GotEquippedHandEvent  args)
     {
-        EnsureComp<StealthComponent>(args.User);
-
-        if (!EntityManager.TryGetComponent<StealthComponent>(args.User, out var stealthComp))
+        if (args.Handled)
             return;
+
+        Log.Info("OnEquipped start");
+
+        if (HasComp<StealthComponent>(args.User))
+        {
+            comp.StealthOnHeldEnabled = false;
+            return;
+        }
+
+        var stealthComp = EnsureComp<StealthComponent>(args.User);
 
         stealthComp.LastUpdated = _timing.CurTime;
 
@@ -218,9 +229,10 @@ public abstract class SharedStealthSystem : EntitySystem
 
         if (comp.StealthOnMoveEnabled)
         {
-            EnsureComp<StealthOnMoveComponent>(args.User);
-            if (!EntityManager.TryGetComponent<StealthOnMoveComponent>(args.User, out var stealthOnMoveComp))
+            if (HasComp<StealthOnMoveComponent>(args.User))
                 return;
+
+            var stealthOnMoveComp = EnsureComp<StealthOnMoveComponent>(args.User);
 
             stealthOnMoveComp.PassiveVisibilityRate = comp.PassiveVisibilityRate;
             stealthOnMoveComp.MovementVisibilityRate = comp.MovementVisibilityRate;
@@ -229,11 +241,13 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnUnEquipped(EntityUid uid, StealthOnHeldComponent comp, GotUnequippedHandEvent  args)
     {
-        if (HasComp<StealthComponent>(args.User))
+        if (HasComp<StealthComponent>(args.User) && comp.StealthOnHeldEnabled)
             RemComp<StealthComponent>(args.User);
 
-        if (HasComp<StealthOnMoveComponent>(args.User))
+        if (HasComp<StealthOnMoveComponent>(args.User)  && comp.StealthOnHeldEnabled)
             RemComp<StealthOnMoveComponent>(args.User);
+
+        comp.StealthOnHeldEnabled = true;
     }
     //Exodus-AnomalyCore-End
 

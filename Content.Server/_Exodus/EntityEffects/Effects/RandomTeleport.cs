@@ -31,11 +31,9 @@ public sealed partial class RandomTeleport : EntityEffect
     {
         var transformSys = args.EntityManager.System<SharedTransformSystem>();
         var audioSys = args.EntityManager.System<SharedAudioSystem>();
-        var mapSys = args.EntityManager.System<SharedMapSystem>();
-        var mapManager = IoCManager.Resolve<IMapManager>();
         var randTeleport = args.EntityManager.System<RandomTeleportSystem>();
 
-        EntityCoordinates? targetCoordinates = randTeleport.GetRandomCoordinates(args.TargetEntity, Range, SpaceAllowed);
+        var targetCoordinates = randTeleport.GetRandomCoordinates(args.TargetEntity, Range, SpaceAllowed);
 
         if (targetCoordinates.HasValue)
         {

@@ -27,6 +27,8 @@ public partial class RandomTeleportSystem : EntitySystem
         var coord = xform.Coordinates;
         var newCoords = coord.Offset(_random.NextVector2(range));
 
+        bool notValidCoordinates = false;
+
         for (int i = 0; i < MaxRandomTeleportAttempts; i++)
         {
             var randVector = _random.NextVector2(range);
@@ -42,9 +44,12 @@ public partial class RandomTeleportSystem : EntitySystem
             }
 
             if (!_entityLookup.GetEntitiesIntersecting(_xform.ToMapCoordinates(newCoords), LookupFlags.Static).Any())
+            {
+                notValidCoordinates = true;
                 break;
+            }
         }
 
-        return newCoords;
+        return notValidCoordinates ? newCoords : null;
     }
 }

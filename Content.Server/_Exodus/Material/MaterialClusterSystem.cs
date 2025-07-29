@@ -27,7 +27,7 @@ public sealed partial class MaterialClusterSystem : EntitySystem
         if (args.Target == null)
             return;
 
-        if (!EntityManager.TryGetComponent<MaterialStorageComponent>(args.Target, out var materialStorageComp))
+        if (!TryComp<MaterialStorageComponent>(args.Target, out var materialStorageComp))
             return;
 
 
