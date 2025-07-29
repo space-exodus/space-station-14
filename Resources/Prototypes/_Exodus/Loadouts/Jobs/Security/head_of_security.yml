@@ -6,10 +6,22 @@
     head: ClothingHeadHatCapHoS
 
 # Neck
+- type: loadoutEffectGroup
+  id: SpecialistHoS
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 144000 #40 hrs
+
 - type: loadout
-  id: HeadofSecurityMantleShoulder
+  id: HeadofSecurityClothingNeckCloakFur
   equipment:
-    neck: ClothingNeckMantleHOSShoulder
+    neck: ClothingNeckCloakHosFur
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SpecialistHoS
 
 # OuterClothing
 - type: loadout
