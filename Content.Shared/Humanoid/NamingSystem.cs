@@ -80,9 +80,20 @@ namespace Content.Shared.Humanoid
         }
         // Corvax-LastnameGender-End
 
-        public string? GetMiddleName(SpeciesPrototype speciesProto)
+        public string? GetMiddleName(SpeciesPrototype speciesProto, Gender? gender = null)
         {
-            return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames).Values);
+            switch (gender)
+            {
+                case Gender.Male:
+                    return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames));
+                case Gender.Female:
+                    return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames));
+                default:
+                    if (_random.Prob(0.5f))
+                        return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MaleLastNames));
+                    else
+                        return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.FemaleLastNames));
+            }
         }
 
     }
