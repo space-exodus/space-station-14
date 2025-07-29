@@ -80,6 +80,7 @@ namespace Content.Shared.Humanoid
         }
         // Corvax-LastnameGender-End
 
+        // Exodus-Middle-Name-Start
         public string? GetMiddleName(SpeciesPrototype speciesProto, Gender? gender = null)
         {
             switch (gender)
@@ -95,6 +96,6 @@ namespace Content.Shared.Humanoid
                         return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.FemaleLastNames));
             }
         }
-
+        // Exodus-Middle-Name-End
     }
 }

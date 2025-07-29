@@ -97,8 +97,10 @@ public sealed partial class SpeciesPrototype : IPrototype
     public ProtoId<LocalizedDatasetPrototype> FemaleLastNames { get; private set; } = "NamesHumanLastFemale";
     // Corvax-LastnameGender-End
 
+    // Exodus-Middle-Name-Start
     [DataField]
     public ProtoId<LocalizedDatasetPrototype> MiddleNames { get; private set; } = "NamesMiddleKidan";
+    // Exodus-Middle-Name-End
 
     [DataField]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
