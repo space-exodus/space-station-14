@@ -3,9 +3,11 @@
   id: JackSecBoots
   equipment:
     shoes: ClothingShoesBootsJackSecFilled
+  groupBy: "Boots" # Exodus-Better-Loadout
 
 # Outerclothing
 - type: loadout
   id: ArmorVestSec
   equipment:
     outerClothing: ClothingOuterVestArmorSec
+  groupBy: "Armor" # Exodus-Better-Loadout

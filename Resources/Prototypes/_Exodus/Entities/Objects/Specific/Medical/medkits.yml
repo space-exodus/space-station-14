@@ -1,0 +1,22 @@
+- type: entity
+  name: first aid kit
+  description: It's an emergency medical kit for those serious boo-boos.
+  parent: BaseStorageItem
+  id: MedkitLoadout
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    state: firstaid
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,1
+  - type: Item
+    size: Normal
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    heldPrefix: firstaid
+  - type: StorageFill
+    contents:
+      - id: Gauze3
+      - id: Ointment3
+      - id: PillCanisterTricordrazine

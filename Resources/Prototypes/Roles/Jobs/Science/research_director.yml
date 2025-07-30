@@ -38,7 +38,7 @@
   id: ResearchDirectorGear
   equipment:
     id: RnDPDA
-    ears: ClothingHeadsetRD
+#    ears: ClothingHeadsetRD #Exodus-Loadouts-Update
   storage:
     back:
     - Flash

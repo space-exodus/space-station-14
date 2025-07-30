@@ -12,3 +12,26 @@
     sprite: Exodus/Clothing/Ears/Headsets/blueshield.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Ears/Headsets/blueshield.rsi
+
+- type: entity
+  parent: ClothingHeadsetAltSecurity
+  id: ClothingHeadsetAltWarden
+  name: wardens's over-ear headset
+  description: The personal headset of the warden, the right hand (and ear) of the head of security.
+  components:
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/security.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/security.rsi
+
+- type: entity
+  parent: ClothingHeadsetAltCommand
+  id: ClothingHeadsetAltCaptain
+  name: captain over-ear headset
+  description:
+
+- type: entity
+  parent: ClothingHeadsetAltCommand
+  id: ClothingHeadsetAltHOP
+  name: head of personnel over-ear headset
+  description: 
