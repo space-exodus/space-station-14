@@ -99,7 +99,7 @@ public sealed partial class SpeciesPrototype : IPrototype
 
     // Exodus-Middle-Name-Start
     [DataField]
-    public ProtoId<LocalizedDatasetPrototype> MiddleNames { get; private set; } = "NamesMiddleKidan";
+    public ProtoId<LocalizedDatasetPrototype> MiddleNames { get; private set; } = "NamesMiddleBase";
     // Exodus-Middle-Name-End
 
     [DataField]
