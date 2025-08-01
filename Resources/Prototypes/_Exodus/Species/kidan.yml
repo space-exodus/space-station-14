@@ -8,8 +8,8 @@
   markingLimits: MobKidanMarkingLimits
   dollPrototype: MobKidanDummy
   skinColoration: Hues
-  maleFirstNames: NamesKidan
-  femaleFirstNames: NamesKidan
+  maleFirstNames: NamesFirstKidan
+  femaleFirstNames: NamesFirstKidan
   naming: FirstDashFirst
   sexes:
   - Unsexed
