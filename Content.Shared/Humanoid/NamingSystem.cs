@@ -42,7 +42,7 @@ namespace Content.Shared.Humanoid
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto, gender))); // Corvax-LastnameGender
                 case SpeciesNaming.FirstDashMiddleDashLast:
                     return Loc.GetString("namepreset-firstdashmiddledashfirst",
-                        ("first", GetFirstName(speciesProto, gender)), ("middle", GetMiddleName(speciesProto)!), ("last", GetLastName(speciesProto, gender))); // Exodus-Kidan
+                        ("first", GetFirstName(speciesProto, gender)), ("middle", GetMiddleName(speciesProto)), ("last", GetLastName(speciesProto, gender))); // Exodus-Kidan
             }
         }
 
@@ -81,20 +81,9 @@ namespace Content.Shared.Humanoid
         // Corvax-LastnameGender-End
 
         // Exodus-Middle-Name-Start
-        public string? GetMiddleName(SpeciesPrototype speciesProto, Gender? gender = null)
+        public string GetMiddleName(SpeciesPrototype speciesProto)
         {
-            switch (gender)
-            {
-                case Gender.Male:
-                    return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames));
-                case Gender.Female:
-                    return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames));
-                default:
-                    if (_random.Prob(0.5f))
-                        return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames));
-                    else
-                        return _random.Pick(_prototypeManager.Index<LocalizedDatasetPrototype>(speciesProto.MiddleNames));
-            }
+            return _random.Pick(_prototypeManager.Index(speciesProto.MiddleNames));
         }
         // Exodus-Middle-Name-End
     }
