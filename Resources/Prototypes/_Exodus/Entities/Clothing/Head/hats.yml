@@ -13,3 +13,33 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingHeadBase, BaseCommandContraband]
+  id: ClothingHeadHatBeretCap
+  name: captain's beret
+  description: Weh!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Head/Hats/beret_captain.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Head/Hats/beret_captain.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSecurityBlack
+  name: black security beret
+  description: A stylish clothing option for security officers.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Head/Hats/beret_security_black.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Head/Hats/beret_security_black.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon

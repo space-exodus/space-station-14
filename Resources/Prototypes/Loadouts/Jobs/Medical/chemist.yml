@@ -3,11 +3,13 @@
   id: ChemistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitChemistry
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ChemistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtChemistry
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

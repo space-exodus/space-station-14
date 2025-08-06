@@ -98,3 +98,15 @@
     - ParcelWrapBlacklist # No exponential wrapper trash-splosions.
     - Recyclable
   - type: SpaceGarbage
+
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelWEH
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterHardsuitAtmos

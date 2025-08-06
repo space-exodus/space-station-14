@@ -1,0 +1,2464 @@
+- type: entity
+  id: LoadoutDummyClothingNeckTieAtmos
+  categories: [ HideSpawnMenu ]
+  name: atmospheric technician's tie
+  description: A neosilk clip-on technician's tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/atmos.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieSec
+  categories: [ HideSpawnMenu ]
+  name: security's tie
+  description: A neosilk clip-on red tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/security.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieCap
+  categories: [ HideSpawnMenu ]
+  name: captain's tie
+  description: A neosilk clip-on captain's tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/cap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieEngi
+  categories: [ HideSpawnMenu ]
+  name: engineer's tie
+  description: A neosilk clip-on engineer's tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/engi.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieJanitor
+  categories: [ HideSpawnMenu ]
+  name: janitor's tie
+  description: A neosilk clip-on janitor's tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/jani.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieClown
+  categories: [ HideSpawnMenu ]
+  name: clown's tie
+  description: HONK!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/clown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieMime
+  categories: [ HideSpawnMenu ]
+  name: mime tie
+  description: ...!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/mime.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieService
+  categories: [ HideSpawnMenu ]
+  name: service tie
+  description: A neosilk clip-on service tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/service.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieMedical
+  categories: [ HideSpawnMenu ]
+  name: medical tie
+  description: A neosilk clip-on service tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/medical.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckTieRainbow
+  categories: [ HideSpawnMenu ]
+  name: Rainbow tie
+  description: A neosilk clip-on rainbow tie.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic0
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_0.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic1
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_1.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic2
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_2.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic3
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_3.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic4
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_4.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic0
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_0.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic1
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_1.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic2
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_2.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic3
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_3.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic4
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_4.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic5
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_5.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic6
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_6.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic7
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: weh
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_7.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorTeal
+  categories: [ HideSpawnMenu ]
+  name: teal jumpskirt
+  description: A generic teal jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#77f3b7"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorTeal
+  categories: [ HideSpawnMenu ]
+  name: teal gloves
+  description: Regular teal gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#3CB57C"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorTeal
+  categories: [ HideSpawnMenu ]
+  name: teal jumpsuit
+  description: A generic teal jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#77f3b7"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatGentle
+  categories: [ HideSpawnMenu ]
+  name: gentle coat
+  description: A gentle coat for a gentle man, or woman.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandSkull
+  categories: [ HideSpawnMenu ]
+  name: skull bandana
+  description: A bandana with a skull to make you look even cooler.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/skull.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#EAE8E8"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatMimesoft
+  categories: [ HideSpawnMenu ]
+  name: white cap
+  description: It's a baseball hat in a tasteless white colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/mimesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white gloves
+  description: Regular white gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white shoes
+  description: Don't take them off at your office Christmas party.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#EAE8E8"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white jumpsuit
+  description: A generic white jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBeret
+  categories: [ HideSpawnMenu ]
+  name: beret
+  description: A beret, an artists favorite headwear.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesFingerless
+  categories: [ HideSpawnMenu ]
+  name: fingerless gloves
+  description: Plain black gloves without fingertips for the hard working.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/fingerless.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorMaroon
+  categories: [ HideSpawnMenu ]
+  name: maroon jumpskirt
+  description: A generic maroon jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#cc295f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorMaroon
+  categories: [ HideSpawnMenu ]
+  name: maroon jumpsuit
+  description: A generic maroon jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#cc295f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakTrans
+  categories: [ HideSpawnMenu ]
+  name: vampire cloak
+  description: Worn by high ranking vampires of the transylvanian society of vampires.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/trans.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAdmin
+  categories: [ HideSpawnMenu ]
+  name: weh cloak
+  description: Weh!
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/admin.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadWehcellentCap
+  categories: [ HideSpawnMenu ]
+  name: wehcellent cap
+  description: It was a net hat! Tiders wear them all the time! It's got airholes in the back to keep a cross-breeze going and everything!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/wehcellentcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingEyesGlassesGarGiga
+  categories: [ HideSpawnMenu ]
+  name: giga gar glasses
+  description: We evolve past the person we were a minute before. Little by little we advance with each turn. That's how a drill works!
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/gar.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedLesbianLong
+  categories: [ HideSpawnMenu ]
+  name: long bacon
+  description: Long bacon! Perfect for sharing with your girlfriend!
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/lesbian-long.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow hawaiian shirt
+  description: Yellow as a bright sun.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaiyellow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#EBE216"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatYellowsoft
+  categories: [ HideSpawnMenu ]
+  name: yellow cap
+  description: A yellow baseball hat.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/yellowsoft.rsi
+    state: icon
+    color: "#EBE216"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow jumpskirt
+  description: A generic yellow jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#ffe14d"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtYellowTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: yellow turtleneck dress
+  description: Turtleneck dress with a unique design.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#684519"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow shoes
+  description: Stylish yellow shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#EBE216"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow jumpsuit
+  description: A generic yellow jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#ffe14d"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandGreen
+  categories: [ HideSpawnMenu ]
+  name: green bandana
+  description: A green bandana to make you look cool.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/green.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#5ABF2F"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatGreensoft
+  categories: [ HideSpawnMenu ]
+  name: green cap
+  description: It's a baseball hat in a tasteless green colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/greensoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterFlannelGreen
+  categories: [ HideSpawnMenu ]
+  name: green flannel jacket
+  description: An old fashioned green flannel jacket for space autumn.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/flannel_jacket.rsi
+    layers:
+    - state: icon
+      color: "#164d0f"
+    - state: icon-lines
+      color: "#000000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green jumpskirt
+  description: A generic green jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#9ed63a"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGreenTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: green turtleneck dress
+  description: Turtleneck dress with a unique design.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#0e6316"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green gloves
+  description: Regular green gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#5ABF2F"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green shoes
+  description: Stylish green shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#5ABF2F"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesGreenLizardskin
+  categories: [ HideSpawnMenu ]
+  name: green lizardskin shoes
+  description: They may have lost some of their lustre over the years, but these green lizardskin shoes fit you perfectly.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Shoes/Specific/disco.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green jumpsuit
+  description: A generic green jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#9ed63a"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesBootsWinter
+  categories: [ HideSpawnMenu ]
+  name: winter boots
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/winterboots.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterCoat
+  categories: [ HideSpawnMenu ]
+  name: winter coat
+  description: A heavy jacket made from 'synthetic' animal furs.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadBandGold
+  categories: [ HideSpawnMenu ]
+  name: gold bandana
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/gold.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadFishCap
+  categories: [ HideSpawnMenu ]
+  name: fishing cap
+  description: Women fear me. Fish fear me. Men turn their eyes away from me. As I walk no beast dares make a sound in my presence. I am alone on this barren Earth.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/fishcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBizarreSoft
+  categories: [ HideSpawnMenu ]
+  name: troublemaker's cap
+  description: A truly.. bizarre accessory.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/bizarresoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterPonchoClassic
+  categories: [ HideSpawnMenu ]
+  name: classic poncho
+  description: A warm and comfy classic poncho.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/classicponcho.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitNanotrasen
+  categories: [ HideSpawnMenu ]
+  name: nanotrasen jumpsuit
+  description: A stately blue jumpsuit to represent NanoTrasen.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandBrown
+  categories: [ HideSpawnMenu ]
+  name: brown bandana
+  description: A brown bandana to make you look cool.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/brown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#723A02"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyBrown
+  categories: [ HideSpawnMenu ]
+  name: brown cowboy hat
+  description: This hat ain't big enough for the both of us.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatbrown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBrownFlatcap
+  categories: [ HideSpawnMenu ]
+  name: brown flatcap
+  description: Stupid clown! You made me look bad!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/brownflatcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckUSSPPin
+  categories: [ HideSpawnMenu ]
+  name: USSP pin
+  description: The pin of United Soviet Socialist Planet.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    state: comm
+
+- type: entity
+  id: LoadoutDummyClothingNeckEarthPin
+  categories: [ HideSpawnMenu ]
+  name: Earth pin
+  description: The pin of United Earth Government.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    state: earth
+
+- type: entity
+  id: LoadoutDummyClothingNeckNanoTrasenPin
+  categories: [ HideSpawnMenu ]
+  name: NanoTrasen pin
+  description: The pin of corporation NanoTrasen.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    state: nano
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown jumpskirt
+  description: A generic brown jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#a17229"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown gloves
+  description: Regular brown gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#723A02"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown shoes
+  description: A pair of brown shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#723A02"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown jumpsuit
+  description: A generic brown jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#a17229"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCorpsoft
+  categories: [ HideSpawnMenu ]
+  name: corporate cap
+  description: A baseball bat in corporation colors.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/corpsoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitDameDane
+  categories: [ HideSpawnMenu ]
+  name: yakuza outfit
+  description: Baka mitai...
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/damedaneoutfit.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckHorrific
+  categories: [ HideSpawnMenu ]
+  name: horrific necktie
+  description: The necktie is adorned with a garish pattern. It's disturbingly vivid. Somehow you feel as if it would be wrong to ever take it off. It's your friend now. You will betray it if you change it for some boring scarf.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Ties/disco.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandRed
+  categories: [ HideSpawnMenu ]
+  name: red bandana
+  description: A red bandana to make you look cool.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/red.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiRed
+  categories: [ HideSpawnMenu ]
+  name: red hawaiian shirt
+  description: Red as a juicy watermelons.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaired.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorRed
+  categories: [ HideSpawnMenu ]
+  name: red winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#940000"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatRedsoft
+  categories: [ HideSpawnMenu ]
+  name: red cap
+  description: It's a baseball hat in a tasteless red colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/redsoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyRed
+  categories: [ HideSpawnMenu ]
+  name: red cowboy hat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatred.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterFlannelRed
+  categories: [ HideSpawnMenu ]
+  name: red flannel jacket
+  description: An old fashioned red flannel jacket for space autumn.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/flannel_jacket.rsi
+    layers:
+    - state: icon
+      color: "#670a09"
+    - state: icon-lines
+      color: "#000000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorRed
+  categories: [ HideSpawnMenu ]
+  name: red jumpskirt
+  description: A generic red jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#eb0c07"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtRedTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: red turtleneck dress
+  description: Turtleneck dress with a unique design.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#730404"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorRed
+  categories: [ HideSpawnMenu ]
+  name: red gloves
+  description: Regular red gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#940000"
+
+- type: entity
+  id: LoadoutDummyClothingBeltSuspendersRed
+  categories: [ HideSpawnMenu ]
+  name: red suspenders
+  description: For holding your pants up.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/suspenders_red.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorRed
+  categories: [ HideSpawnMenu ]
+  name: red shoes
+  description: Stylish red shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#940000"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorRed
+  categories: [ HideSpawnMenu ]
+  name: red jumpsuit
+  description: A generic red jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#eb0c07"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatBomber
+  categories: [ HideSpawnMenu ]
+  name: bomber jacket
+  description: A thick, well-worn WW2 leather bomber jacket.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/bomber.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckMantle
+  categories: [ HideSpawnMenu ]
+  name: mantle
+  description: A soft mantle, made with the same 'synthetic' animal furs of the iconic winter coat.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/mantles/mantle.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingEyesGlassesGar
+  categories: [ HideSpawnMenu ]
+  name: gar glasses
+  description: Go beyond impossible and kick reason to the curb!
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/gar.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckHeadphones
+  categories: [ HideSpawnMenu ]
+  name: headphones
+  description: Quality headphones from Drunk Masters, with good sound insulation.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Misc/headphones.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUnderSocksCoder
+  categories: [ HideSpawnMenu ]
+  name: coder socks
+  description: It's time to code sisters!!11!
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/coder.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUnderSocksBee
+  categories: [ HideSpawnMenu ]
+  name: bee socks
+  description: Make them loins buzz!
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/bee.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#EF8100"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatOrangesoft
+  categories: [ HideSpawnMenu ]
+  name: orange cap
+  description: It's a baseball hat in a good-looking orange colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/orangesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange jumpskirt
+  description: Don't wear this near paranoid security officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#ff8c19"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingEyesGlassesGarOrange
+  categories: [ HideSpawnMenu ]
+  name: orange gar glasses
+  description: Just who the hell do you think I am?!
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/gar.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange gloves
+  description: Regular orange gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#EF8100"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange shoes
+  description: Stylish orange shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#EF8100"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange jumpsuit
+  description: Don't wear this near paranoid security officers.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#ff8c19"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatJensen
+  categories: [ HideSpawnMenu ]
+  name: jensen coat
+  description: A jensen coat.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/jensencoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterDameDane
+  categories: [ HideSpawnMenu ]
+  name: yakuza coat
+  description: Friday...
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/damedanecoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakNanotrasen
+  categories: [ HideSpawnMenu ]
+  name: nanotrasen cloak
+  description: A stately blue cloak to represent NanoTrasen.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/nanotrasen.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAroace
+  categories: [ HideSpawnMenu ]
+  name: aeropilot's cloak
+  description: Cloak awarded to Nanotrasen's finest pilots on planets with inhabitable atmospheres.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/aroace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAro
+  categories: [ HideSpawnMenu ]
+  name: werewolf cloak
+  description: This cloak lets others know you're a lone wolf.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/aro.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakHerald
+  categories: [ HideSpawnMenu ]
+  name: herald's cloak
+  description: An evil-looking red cloak with spikes on its shoulders.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/herald.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakGoliathCloak
+  categories: [ HideSpawnMenu ]
+  name: goliath cloak
+  description: A cloak made from the hide of resilient fauna from a distant planet, though its protective value has faded with its age.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/goliathcloak.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakEnby
+  categories: [ HideSpawnMenu ]
+  name: treasure hunter cloak
+  description: This cloak belonged to a greedy treasure hunter.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/enby.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakMoth
+  categories: [ HideSpawnMenu ]
+  name: moth cloak
+  description: A cloak in the form of moth wings is an unusual and original element of the wardrobe that can attract the attention of others. It is made of a thin fabric imitating moth wings, with soft and fluffy edges. The raincoat is fastened around the neck with Velcro, and has a hood in the shape of a moths head.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/moth.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAce
+  categories: [ HideSpawnMenu ]
+  name: pilot's cloak
+  description: Cloak awarded to Nanotrasen's finest space aces.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/ace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakLesbian
+  categories: [ HideSpawnMenu ]
+  name: poet cloak
+  description: This cloak belonged to an ancient poet, you forgot which one.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/les.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakVoid
+  categories: [ HideSpawnMenu ]
+  name: void cloak
+  description: A cloak of darkness. For those who have gone to the dark side of the force.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/void.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakGay
+  categories: [ HideSpawnMenu ]
+  name: multi-level marketing cloak
+  description: This cloak is highly sought after in the Nanotrasen Marketing Offices.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/gay.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakIntersex
+  categories: [ HideSpawnMenu ]
+  name: cyclops cloak
+  description: The circle on this cloak represents a cyclops' eye.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/intersex.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakPan
+  categories: [ HideSpawnMenu ]
+  name: chef's cloak
+  description: Meant to be worn alongside a frying pan.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/pan.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualGreen
+  categories: [ HideSpawnMenu ]
+  name: casual green jumpskirt
+  description: A loose worn green shirt with a grey skirt, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#00661D"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualRed
+  categories: [ HideSpawnMenu ]
+  name: casual red jumpskirt
+  description: A loose worn red shirt with a grey skirt, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#b30000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualBlue
+  categories: [ HideSpawnMenu ]
+  name: casual blue jumpskirt
+  description: A loose worn blue shirt with a grey skirt, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#134fc1"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualPurple
+  categories: [ HideSpawnMenu ]
+  name: casual purple jumpskirt
+  description: A loose worn purple shirt with a grey skirt, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#9c0dff"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualGreen
+  categories: [ HideSpawnMenu ]
+  name: casual green jumpsuit
+  description: A loose worn green shirt with a grey pants, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#00661D"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualRed
+  categories: [ HideSpawnMenu ]
+  name: casual red jumpsuit
+  description: A loose worn red shirt with a grey pants, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#b30000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualBlue
+  categories: [ HideSpawnMenu ]
+  name: casual blue jumpsuit
+  description: A loose worn blue shirt with a grey pants, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#134fc1"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualPurple
+  categories: [ HideSpawnMenu ]
+  name: casual purple jumpsuit
+  description: A loose worn purple shirt with a grey pants, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#9c0dff"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCyanStripedDress
+  categories: [ HideSpawnMenu ]
+  name: cyan striped dress
+  description: Cute striped dress.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#009a9a"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGreenStripedDress
+  categories: [ HideSpawnMenu ]
+  name: green striped dress
+  description: Cute striped dress.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#008c1f"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtRedStripedDress
+  categories: [ HideSpawnMenu ]
+  name: red striped dress
+  description: Cute striped dress.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#a40000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtOrangeStripedDress
+  categories: [ HideSpawnMenu ]
+  name: orange striped dress
+  description: Cute striped dress.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#9d4000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtPinkStripedDress
+  categories: [ HideSpawnMenu ]
+  name: pink striped dress
+  description: Cute striped dress.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#a40086"
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedGreen
+  categories: [ HideSpawnMenu ]
+  name: striped green scarf
+  description: A stylish striped green scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/green.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBrown
+  categories: [ HideSpawnMenu ]
+  name: striped brown scarf
+  description: A stylish striped brown scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/brown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedOrange
+  categories: [ HideSpawnMenu ]
+  name: striped orange scarf
+  description: A stylish striped orange scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/orange.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedPurple
+  categories: [ HideSpawnMenu ]
+  name: striped purple scarf
+  description: A stylish striped purple scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/purple.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedAce
+  categories: [ HideSpawnMenu ]
+  name: striped asexual scarf
+  description: A stylish striped asexual scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/ace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedGay
+  categories: [ HideSpawnMenu ]
+  name: striped gay scarf
+  description: A stylish striped gay scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/gay.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBiSexual
+  categories: [ HideSpawnMenu ]
+  name: striped bisexual scarf
+  description: A stylish striped bisexual scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/bi.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedLesbian
+  categories: [ HideSpawnMenu ]
+  name: striped lesbian scarf
+  description: A stylish striped lesbian scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/lesbian.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedAro
+  categories: [ HideSpawnMenu ]
+  name: striped aromantic scarf
+  description: A stylish striped aromantic scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/aro.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedNonBinary
+  categories: [ HideSpawnMenu ]
+  name: striped non-binary scarf
+  description: A stylish striped non-binary scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/non.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedAroace
+  categories: [ HideSpawnMenu ]
+  name: striped aroace scarf
+  description: A stylish striped aroace scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/aroace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedTrans
+  categories: [ HideSpawnMenu ]
+  name: striped trans scarf
+  description: A stylish striped trans scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/trans.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedInter
+  categories: [ HideSpawnMenu ]
+  name: striped intersex scarf
+  description: A stylish striped intersex scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/inter.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedPan
+  categories: [ HideSpawnMenu ]
+  name: striped pan scarf
+  description: A stylish striped pan scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/pan.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedLightBlue
+  categories: [ HideSpawnMenu ]
+  name: striped light blue scarf
+  description: A stylish striped light blue scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/lightblue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBlue
+  categories: [ HideSpawnMenu ]
+  name: striped blue scarf
+  description: A stylish striped blue scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/blue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBlack
+  categories: [ HideSpawnMenu ]
+  name: striped black scarf
+  description: A stylish striped black scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterPoncho
+  categories: [ HideSpawnMenu ]
+  name: poncho
+  description: A warm and comfy poncho.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/poncho.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorRainbow
+  categories: [ HideSpawnMenu ]
+  name: rainbow jumpskirt
+  description: A multi-colored jumpskirt!
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformColorRainbow
+  categories: [ HideSpawnMenu ]
+  name: rainbow jumpsuit
+  description: A multi-colored jumpsuit!
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedRainbow
+  categories: [ HideSpawnMenu ]
+  name: rainbow scarf
+  description: A stylish rainbow scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorPink
+  categories: [ HideSpawnMenu ]
+  name: pink jumpskirt
+  description: Just looking at this makes you feel <i>fabulous</i>.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#ffa69b"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorPink
+  categories: [ HideSpawnMenu ]
+  name: pink jumpsuit
+  description: Just looking at this makes you feel <i>fabulous</i>.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#ffa69b"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#C09F72"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown jumpskirt
+  description: A generic light brown jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#c59431"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown gloves
+  description: Regular light brown gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#C09F72"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown jumpsuit
+  description: A generic light brown jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#c59431"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitFamilyGuy
+  categories: [ HideSpawnMenu ]
+  name: familiar garbs
+  description: Makes you remember the time you did something funny.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandGrey
+  categories: [ HideSpawnMenu ]
+  name: grey bandana
+  description: A grey bandana to make you look cool.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/grey.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorGray
+  categories: [ HideSpawnMenu ]
+  name: gray winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#999999"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatGreysoft
+  categories: [ HideSpawnMenu ]
+  name: grey cap
+  description: It's a baseball hat in a tasteless grey colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/greysoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyGrey
+  categories: [ HideSpawnMenu ]
+  name: grey cowboy hat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatgrey.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatGreyFlatcap
+  categories: [ HideSpawnMenu ]
+  name: grey flatcap
+  description: Fashionable for both the working class and old man Jenkins.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/greyflatcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterHoodieGrey
+  categories: [ HideSpawnMenu ]
+  name: grey hoodie
+  description: A grey hoodie.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/grey_hoodie.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorGrey
+  categories: [ HideSpawnMenu ]
+  name: grey jumpskirt
+  description: A tasteful grey jumpskirt that reminds you of the good old days.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#b3b3b3"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorGray
+  categories: [ HideSpawnMenu ]
+  name: grey gloves
+  description: Regular grey gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#999999"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorGrey
+  categories: [ HideSpawnMenu ]
+  name: grey jumpsuit
+  description: A tasteful grey jumpsuit that reminds you of the good old days.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#b3b3b3"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtBlueTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: blue turtleneck dress
+  description: Turtleneck dress with a unique design.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#193f68"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue gloves
+  description: Regular blue gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#0089EF"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue shoes
+  description: Stylish blue shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#0089EF"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue jumpsuit
+  description: A generic blue jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#52aecc"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandBlue
+  categories: [ HideSpawnMenu ]
+  name: blue bandana
+  description: A blue bandana to make you look cool.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/blue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiBlue
+  categories: [ HideSpawnMenu ]
+  name: blue hawaiian shirt
+  description: Blue as a huge ocean.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaiblue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#0089EF"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBluesoft
+  categories: [ HideSpawnMenu ]
+  name: blue cap
+  description: It's a baseball hat in a tasteless blue colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/bluesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterFlannelBlue
+  categories: [ HideSpawnMenu ]
+  name: blue flannel jacket
+  description: An old fashioned blue flannel jacket for space autumn.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/flannel_jacket.rsi
+    layers:
+    - state: icon
+      color: "#164d0f"
+    - state: icon-lines
+      color: "#000000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue jumpskirt
+  description: A generic blue jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#52aecc"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatSolidHeadband
+  categories: [ HideSpawnMenu ]
+  name: solid headband
+  description: "You'll feel like you're Invisible while wearing this! (DISCLAIMER: DOES NOT ACTUALLY MAKE THE WEARER INVISIBLE)"
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/solidheadband.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatStrawHat
+  categories: [ HideSpawnMenu ]
+  name: straw hat
+  description: A fancy hat for hot days! Not recommended to wear near fires.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/straw_hat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatSombrero
+  categories: [ HideSpawnMenu ]
+  name: sombrero
+  description: Perfectly for Space Mexico, si?
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/sombrero.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtYellowOldDress
+  categories: [ HideSpawnMenu ]
+  name: yellow old dress
+  description: Classic western dress.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/dresswestern.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatTrench
+  categories: [ HideSpawnMenu ]
+  name: trench coat
+  description: A comfy trench coat.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/trenchcoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesDameDane
+  categories: [ HideSpawnMenu ]
+  name: yakuza shoes
+  description: At last...
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Misc/damedaneshoes.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorDarkGreen
+  categories: [ HideSpawnMenu ]
+  name: dark green jumpskirt
+  description: A generic dark green jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#007923"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorDarkGreen
+  categories: [ HideSpawnMenu ]
+  name: dark green jumpsuit
+  description: A generic dark green jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#007923"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorDarkBlue
+  categories: [ HideSpawnMenu ]
+  name: dark blue jumpsuit
+  description: A generic dark blue jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#3285ba"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorDarkBlue
+  categories: [ HideSpawnMenu ]
+  name: dark blue jumpskirt
+  description: A generic dark blue jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#3285ba"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#9C0DE1"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatPurplesoft
+  categories: [ HideSpawnMenu ]
+  name: purple cap
+  description: It's a baseball hat in a tasteless purple colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/purplesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtPurpleTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: purple turtleneck dress
+  description: Turtleneck dress with a unique design.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#341255"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple gloves
+  description: Regular purple gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#9C0DE1"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple shoes
+  description: Stylish purple shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#9C0DE1"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple jumpsuit
+  description: A generic light purple jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#9f70cc"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitFlannel
+  categories: [ HideSpawnMenu ]
+  name: flannel jumpsuit
+  description: Smells like someones been grillin'.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/flannel.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBeretFrench
+  categories: [ HideSpawnMenu ]
+  name: french beret
+  description: A French beret, "vive la France".
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_french.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandBlack
+  categories: [ HideSpawnMenu ]
+  name: black bandana
+  description: A black bandana to make you look cool.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiBlack
+  categories: [ HideSpawnMenu ]
+  name: black hawaiian shirt
+  description: Black as a starry night.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaiblack.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black winter coat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#3f3f3f"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBlacksoft
+  categories: [ HideSpawnMenu ]
+  name: black cap
+  description: It's a baseball hat in a tasteless black colour.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/blacksoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyBlack
+  categories: [ HideSpawnMenu ]
+  name: black cowboy hat
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatblack.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterHoodieBlack
+  categories: [ HideSpawnMenu ]
+  name: black hoodie
+  description: Oh my God, it's a black hoodie!
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  description: A generic black jumpskirt with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black gloves
+  description: Regular black gloves that do not keep you from frying.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingBeltSuspendersBlack
+  categories: [ HideSpawnMenu ]
+  name: black suspenders
+  description: UNKNOWN
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/suspenders_black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black shoes
+  description: Stylish black shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  description: A generic black jumpsuit with no rank markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCanadaBeanie
+  categories: [ HideSpawnMenu ]
+  name: beanie
+  description: Red, white and snug. It radiates a homely feeling, if your home happens to be chilly and filled with coffeehouses.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beanie.rsi
+    layers:
+    - state: body-icon
+    - state: cuffcrown-icon
+      color: "#a60b0b"
+    - state: pompom-icon
+      color: "#a60b0b"
+
+- type: entity
+  id: LoadoutDummyClothingHeadRastaHat
+  categories: [ HideSpawnMenu ]
+  name: rasta hat
+  description: Right near da beach, boyee.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/rasta.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedZebra
+  categories: [ HideSpawnMenu ]
+  name: zebra scarf
+  description: A striped scarf, a mandatory accessory for artists.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/zebra.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskNeckGaiter
+  categories: [ HideSpawnMenu ]
+  name: neck gaiter
+  description: Stylish neck gaiter for your neck, can protect from the cosmic wind?...
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/neckgaiter.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBowlerHat
+  categories: [ HideSpawnMenu ]
+  name: bowler hat
+  description: Stylish bowler hat.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/bowler_hat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesBootsLaceup
+  categories: [ HideSpawnMenu ]
+  name: laceup shoes
+  description: The height of fashion, and they're pre-polished!
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/laceups.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGreenElegantDress
+  categories: [ HideSpawnMenu ]
+  name: green elegant dress
+  description: Elegant dress with a beautiful bow.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#0e6316"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtRedElegantDress
+  categories: [ HideSpawnMenu ]
+  name: red elegant dress
+  description: Elegant dress with a beautiful bow.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#60171d"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtBlueElegantDress
+  categories: [ HideSpawnMenu ]
+  name: blue elegant dress
+  description: Elegant dress with a beautiful bow.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#076183"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtPurpleElegantDress
+  categories: [ HideSpawnMenu ]
+  name: purple elegant dress
+  description: Elegant dress with a beautiful bow.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#630767"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtBlackElegantDress
+  categories: [ HideSpawnMenu ]
+  name: black elegant dress
+  description: Elegant dress with a beautiful bow.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#212030"
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakBi
+  categories: [ HideSpawnMenu ]
+  name: poison cloak
+  description: The purple color is a clear indicator you are poisonous.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/bi.rsi
+    state: icon
+

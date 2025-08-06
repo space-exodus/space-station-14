@@ -24,11 +24,7 @@
   id: ClownSuitBanana
   equipment:
     jumpsuit: ClothingUniformJumpsuitClownBanana
-
-- type: loadout
-  id: ClownSuiPriest
-  equipment:
-    jumpsuit: ClothingOuterClownPriest
+  groupBy: "Jumpsuit"
 
 # Shoes
 - type: loadout

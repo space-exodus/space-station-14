@@ -38,7 +38,7 @@
     eyes: ClothingEyesGlassesSecurity
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltHolsterFilled
+    # belt: ClothingBeltHolsterFilled # Exodus-Better-Loadout
   storage:
     back:
     - Flash

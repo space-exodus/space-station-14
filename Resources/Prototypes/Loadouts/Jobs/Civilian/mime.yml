@@ -35,11 +35,13 @@
   id: MimeJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitMime
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: MimeJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtMime
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

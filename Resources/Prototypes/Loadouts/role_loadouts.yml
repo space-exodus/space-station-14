@@ -401,7 +401,8 @@
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
-  - DetectiveBackpack
+  - DetectiveBelt
+  - DetectiveBackpack # Exodus-Loadouts-Update
   - DetectiveOuterClothing
   - DetectiveShoes
   - SurvivalSecurity
