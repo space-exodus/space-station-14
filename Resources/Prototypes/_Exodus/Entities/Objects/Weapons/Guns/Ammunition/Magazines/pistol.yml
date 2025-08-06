@@ -1,0 +1,56 @@
+- type: entity
+  id: MagazinePistolExtended
+  name: machine pistol magazine extended (.35 auto)
+  description: 1
+  parent: BaseMagazinePistolHighCapacity
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol-mag-extended.rsi
+  - type: Tag
+    tags:
+      - MagazinePistolExtended
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistol
+    capacity: 20
+    proto: CartridgePistol
+
+- type: entity
+  id: MagazinePistolLight
+  name: machine light pistol magazine (.15 auto)
+  description: 1
+  parent: BaseMagazinePistolHighCapacity
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol-mag-light.rsi
+  - type: Tag
+    tags:
+      - MagazinePistolLight
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistolLight
+    capacity: 17
+    proto: CartridgePistolLight
+
+- type: entity
+  id: MagazinePistolAlt
+  name: machine pistol magazine (.25 auto)
+  description: 1
+  parent: BaseMagazinePistolHighCapacity
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol-mag-alt.rsi
+  - type: Tag
+    tags:
+      - MagazinePistolAlt
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistolAlt
+    capacity: 12
+    proto: CartridgePistolAlt

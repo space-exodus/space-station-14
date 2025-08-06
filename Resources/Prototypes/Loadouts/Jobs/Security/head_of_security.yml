@@ -13,37 +13,37 @@
   id: HeadofSecurityJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoS
-  groupBy: "Jumpsuit"
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: HeadofSecurityJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoS
-  groupBy: "Jumpskirt"
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: HeadofSecurityTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSAlt
-  groupBy: "Jumpsuit"
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: HeadofSecurityTurtleneckSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoSAlt
-  groupBy: "Jumpskirt"
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: HeadofSecurityFormalSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHosFormal
-  groupBy: "Jumpsuit"
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: HeadofSecurityFormalSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHosFormal
-  groupBy: "Jumpskirt"
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Head
 - type: loadout

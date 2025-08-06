@@ -1,0 +1,100 @@
+- type: entity
+  parent: WeaponRevolverMateba
+  id: WeaponRevolverMatebaLoadout
+  suffix: Loadout
+  description: A replic of modern revolver used by Nanotrasen’s elite. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Gun
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+
+- type: entity
+  name: Cavalier
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverCavalier
+  description: A quite rare specimen of a revolver, which was used by only a few!... When it belonged to the company of the creator, until another company stole their design. Such is the world. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/cavalier.rsi
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/cavalier.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: Gondor
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverGondor
+  description: A massive revolver, intimidating not only with bullets but also with its appearance. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/gondor.rsi
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/gondor.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: K-38 Master
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverK38Master
+  description: A compact representative of revolvers, known for its reliability compared to other revolvers. Those who carry it definitely do not follow fashion trends! Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/k38master.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: Lucky
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverLucky
+  description: A weapon made based on the revolver of an old movie hero. Perhaps he was good, perhaps bad... Or maybe even evil! Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/lucky.rsi
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/lucky.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: Hinage
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverHinage
+  description: Legendary weapon that gave rise to the great duo of weapon masters. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/hinage.rsi
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/hinage.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: SR-27
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: WeaponRevolverSR27
+  description: The revolver, often used by officers in the USSP army, earned its name there due to its excellent performance.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/sr27.rsi
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/sr27.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]

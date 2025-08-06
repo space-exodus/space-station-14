@@ -2,3 +2,29 @@
   license: "CC-BY-SA-3.0"
   copyright: "Taken from zvukogram.com"
   source: "https://zvukogram.com/category/zvuki-vyistrela-iz-avtomata/"
+
+- files: ["energy_gun_blast", "tp17.ogg"]
+  license: "CC0-1.0"
+  copyright: "Taken from freesound.org"
+  source: "https://freesound.org/people/tradeachest/sounds/730564/, https://freesound.org/people/MrGungus/sounds/773865/"
+
+- files: ["g14.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from freesound.org"
+  source: "https://zvukogram.com/category/zvuki-vyistrela-iz-avtomata/"
+
+- files: ["astra47.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Taken from opengameart.org"
+  source: "https://opengameart.org/content/light-machine-gun"
+
+- files: ["wyvern.ogg"]
+  license: "MIT"
+  copyright: "Taken from youtube.com"
+  source: "https://youtu.be/VEivN5sSGmw?si=acISyZ14bA0GDJB3"
+
+- files: ["energy_revolver.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Taken from directory.audio"
+  source: "https://directory.audio/sound-effects/weapons/34718-blaster-shot"
+
