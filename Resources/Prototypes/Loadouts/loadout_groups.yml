@@ -506,7 +506,6 @@
   - JesterSuit
   - JesterAltSuit
   - ClownSuitBanana
-  - ClownSuiPriest
 
 - type: loadoutGroup
   id: ClownBackpack
@@ -1041,8 +1040,8 @@
   loadouts:
   - HeadofSecurityCloak
   - HeadofSecurityMantle
-  - HeadofSecurityClothingNeckCloakFur # Exodus-Loadouts-Update
   - HeadofSecurityShoulderMantle # Corvax-Loadouts
+  - HeadofSecurityClothingNeckCloakFur # Exodus-Loadouts-Update
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1114,6 +1113,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - BeltHolster
 
 - type: loadoutGroup
   id: SecurityOuterClothing

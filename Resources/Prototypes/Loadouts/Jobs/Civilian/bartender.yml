@@ -14,16 +14,19 @@
   id: BartenderJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBartender
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: BartenderJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtBartender
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: BartenderJumpsuitPurple
   equipment:
     jumpsuit: ClothingUniformJumpsuitBartenderPurple
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 # Outer clothing
 - type: loadout

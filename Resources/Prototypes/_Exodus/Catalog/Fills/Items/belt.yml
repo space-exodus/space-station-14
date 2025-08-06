@@ -1,0 +1,10 @@
+- type: entity
+  id: ClothingBeltHolsterFilledAlt
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: Stunbaton
+        - id: Handcuffs
+        - id: HoloprojectorSecurity

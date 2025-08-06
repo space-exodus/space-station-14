@@ -24,3 +24,18 @@
 
 - type: Tag
   id: SpiderCube
+
+- type: Tag
+  id: MagazinePistolExtended
+
+- type: Tag
+  id: MagazinePistolLight
+
+- type: Tag
+  id: CartridgePistolLight
+
+- type: Tag
+  id: MagazinePistolAlt
+
+- type: Tag
+  id: CartridgePistolAlt

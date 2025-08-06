@@ -1,4 +1,5 @@
 Brigmedic-loadout = Снаряжение бригмедика
+loadout-group-brigmedic-gun = Офицер СБ, оружие
 loadout-group-brigmedic-mask = БригМедик, маска
 loadout-group-brigmedic-head = БригМедик, голова
 loadout-group-brigmedic-jumpsuit = БригМедик, комбинезон
@@ -41,11 +42,12 @@ loadout-group-warden-shoes = Смотритель, обувь
 
 # Security Detective
 loadout-group-detective-gun = Детектив, оружие
+loadout-group-detective-belt = Детектив, пояс
 loadout-group-detective-backpack = Детектив, рюкзак
 loadout-group-detective-shoes = Детектив, обувь
 
 # Security Officer
-loadout-group-security-gun = Офицер СБ, оружие
+loadout-group-security-officer-gun = Офицер СБ, оружие
 
 # Security Cadet
 loadout-group-security-cadet-backpack = Кадет СБ, рюкзак

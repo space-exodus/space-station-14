@@ -1,0 +1,2519 @@
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieAtmos
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieAtmos
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieSec
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieSec
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieCap
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieCap
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieEngi
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieEngi
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieJanitor
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieJanitor
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieClown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieClown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieMime
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieMime
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieService
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieService
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieMedical
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieMedical
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieRainbow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieRainbow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic0
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic0
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic1
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic1
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic2
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic2
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic3
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic3
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic4
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic4
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic0
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic0
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic1
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic1
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic2
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic2
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic3
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic3
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic4
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic4
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic5
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic5
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic6
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic6
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic7
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic7
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorTeal
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorTeal
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorTeal
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorTeal
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorTeal
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorTeal
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatGentle
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatGentle
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandSkull
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandSkull
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorWhite
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorWhite
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatMimesoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatMimesoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorWhite
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorWhite
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorWhite
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorWhite
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorWhite
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorWhite
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBeret
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBeret
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesFingerless
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesFingerless
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorMaroon
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorMaroon
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorMaroon
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorMaroon
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakTrans
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakTrans
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAdmin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAdmin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadWehcellentCap
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadWehcellentCap
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingEyesGlassesGarGiga
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingEyesGlassesGarGiga
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedLesbianLong
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedLesbianLong
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiYellow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiYellow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorYellow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorYellow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatYellowsoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatYellowsoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorYellow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorYellow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtYellowTurtleneckDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtYellowTurtleneckDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorYellow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorYellow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorYellow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorYellow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatGreensoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatGreensoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterFlannelGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterFlannelGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGreenTurtleneckDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGreenTurtleneckDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesGreenLizardskin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesGreenLizardskin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesBootsWinter
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesBootsWinter
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterCoat
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterCoat
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadBandGold
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadBandGold
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadFishCap
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadFishCap
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBizarreSoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBizarreSoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterPonchoClassic
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterPonchoClassic
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitNanotrasen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitNanotrasen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBrownFlatcap
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBrownFlatcap
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckUSSPPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckUSSPPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckDonkPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckDonkPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckEarthPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckEarthPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckLogistikaPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckLogistikaPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckDeForestPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckDeForestPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckNakamuraPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckNakamuraPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckNanoTrasenPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckNanoTrasenPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckSyndicakePin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckSyndicakePin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckVitezstviPin
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckVitezstviPin
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCorpsoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCorpsoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitDameDane
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitDameDane
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckHorrific
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckHorrific
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatRedsoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatRedsoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterFlannelRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterFlannelRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtRedTurtleneckDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtRedTurtleneckDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingBeltSuspendersRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingBeltSuspendersRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatBomber
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatBomber
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckMantle
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckMantle
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingEyesGlassesGar
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingEyesGlassesGar
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckHeadphones
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckHeadphones
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUnderSocksCoder
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUnderSocksCoder
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUnderSocksBee
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUnderSocksBee
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatOrangesoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatOrangesoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingEyesGlassesGarOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingEyesGlassesGarOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatJensen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatJensen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterDameDane
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterDameDane
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakNanotrasen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakNanotrasen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAroace
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAroace
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAro
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAro
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakHerald
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakHerald
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakGoliathCloak
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakGoliathCloak
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakEnby
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakEnby
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakMoth
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakMoth
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAce
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAce
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakLesbian
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakLesbian
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakVoid
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakVoid
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakGay
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakGay
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakIntersex
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakIntersex
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakPan
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakPan
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualRed
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualRed
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCyanStripedDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCyanStripedDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGreenStripedDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGreenStripedDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtRedStripedDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtRedStripedDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtOrangeStripedDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtOrangeStripedDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtPinkStripedDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtPinkStripedDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedOrange
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedOrange
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedAce
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedAce
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedGay
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedGay
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBiSexual
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBiSexual
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedLesbian
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedLesbian
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedAro
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedAro
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedNonBinary
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedNonBinary
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedAroace
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedAroace
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedTrans
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedTrans
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedInter
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedInter
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedPan
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedPan
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedLightBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedLightBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterPoncho
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterPoncho
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorRainbow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorRainbow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformColorRainbow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformColorRainbow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedRainbow
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedRainbow
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorPink
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorPink
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorPink
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorPink
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorLightBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorLightBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorLightBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorLightBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorLightBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorLightBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorLightBrown
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorLightBrown
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitFamilyGuy
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitFamilyGuy
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandGrey
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandGrey
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorGray
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorGray
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatGreysoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatGreysoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyGrey
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyGrey
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatGreyFlatcap
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatGreyFlatcap
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterHoodieGrey
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterHoodieGrey
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorGrey
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorGrey
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorGray
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorGray
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorGrey
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorGrey
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtBlueTurtleneckDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtBlueTurtleneckDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBluesoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBluesoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterFlannelBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterFlannelBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatSolidHeadband
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatSolidHeadband
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatStrawHat
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatStrawHat
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatSombrero
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatSombrero
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtYellowOldDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtYellowOldDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatTrench
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatTrench
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesDameDane
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesDameDane
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorDarkGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorDarkGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorDarkGreen
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorDarkGreen
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorDarkBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorDarkBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorDarkBlue
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorDarkBlue
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatPurplesoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatPurplesoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtPurpleTurtleneckDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtPurpleTurtleneckDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorPurple
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorPurple
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitFlannel
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitFlannel
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBeretFrench
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBeretFrench
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBlacksoft
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBlacksoft
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterHoodieBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterHoodieBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingBeltSuspendersBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingBeltSuspendersBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorBlack
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorBlack
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCanadaBeanie
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCanadaBeanie
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadRastaHat
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadRastaHat
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedZebra
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedZebra
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskNeckGaiter
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskNeckGaiter
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBowlerHat
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBowlerHat
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesBootsLaceup
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesBootsLaceup
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGreenElegantDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGreenElegantDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtRedElegantDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtRedElegantDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtBlueElegantDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtBlueElegantDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtPurpleElegantDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtPurpleElegantDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtBlackElegantDress
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtBlackElegantDress
+
+- type: entity
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakBi
+  name: wrapped parcel
+  description: Something wrapped up in paper. I wonder what's inside...
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakBi
+

@@ -5,7 +5,7 @@
   description: Cap gun for clown crimes!
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
+    sprite: Objects/Fun/capgun.rsi
     state: base
 
 - type: entity
@@ -15,7 +15,7 @@
   description: A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
+    sprite: Objects/Fun/Foam/foam_rifle.rsi
     state: icon
 
 - type: entity
@@ -26,6 +26,66 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolTP17
+  categories: [ HideSpawnMenu ]
+  name: TP-17
+  description: weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/tp17.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolG14
+  categories: [ HideSpawnMenu ]
+  name: G-14
+  description: weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/g14.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolAstra47
+  categories: [ HideSpawnMenu ]
+  name: Astra-47
+  description: weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/astra47.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolWyvern
+  categories: [ HideSpawnMenu ]
+  name: Wyvern
+  description: weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/wyvern.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolDualetta
+  categories: [ HideSpawnMenu ]
+  name: Dualetta
+  description: weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/dualetta.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolUniversal
+  categories: [ HideSpawnMenu ]
+  name: Universal
+  description: weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/universal.rsi
     state: icon
 
 - type: entity
@@ -52,8 +112,68 @@
   id: LoadoutDummyWeaponRevolverMateba
   categories: [ HideSpawnMenu ]
   name: Mateba
-  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
+  description: A replic of modern revolver used by Nanotrasen’s elite. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverCavalier
+  categories: [ HideSpawnMenu ]
+  name: Cavalier
+  description: A quite rare specimen of a revolver, which was used by only a few!... When it belonged to the company of the creator, until another company stole their design. Such is the world. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite:  Exodus/Objects/Weapons/Guns/Revolvers/cavalier.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverK38Master
+  categories: [ HideSpawnMenu ]
+  name: K-38 Master
+  description: A compact representative of revolvers, known for its reliability compared to other revolvers. Those who carry it definitely do not follow fashion trends! Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/k38master.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverLucky
+  categories: [ HideSpawnMenu ]
+  name: Lucky
+  description: A weapon made based on the revolver of an old movie hero. Perhaps he was good, perhaps bad... Or maybe even evil! Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/lucky.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverHinage
+  categories: [ HideSpawnMenu ]
+  name: Hinage
+  description: Legendary weapon that gave rise to the great duo of weapon masters. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/hinage.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverGondor
+  categories: [ HideSpawnMenu ]
+  name: Gondor
+  description: A massive revolver, intimidating not only with bullets but also with its appearance. Loads 6 rounds of .45 magnum.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/gondor.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverSR27
+  categories: [ HideSpawnMenu ]
+  name: SR-27
+  description: The revolver, often used by officers in the USSP army, earned its name there due to its excellent performance.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Revolvers/sr27.rsi
     state: icon

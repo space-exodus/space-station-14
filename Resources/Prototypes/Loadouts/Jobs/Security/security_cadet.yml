@@ -3,10 +3,10 @@
   id: RedJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorRed
-  groupBy: "Jumpsuit"
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: RedJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorRed
-  groupBy: "Jumpskirt"
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout

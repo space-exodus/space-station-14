@@ -1,4 +1,65 @@
-# Brigmedic
+# region Medical
+- type: loadoutGroup
+  id: ChiefMedicalOfficerBackpack
+  name: loadout-group-chief-medical-officer-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerGloves
+  name: loadout-group-chief-medical-officer-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerMask
+  name: loadout-group-chief-medical-officer-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerHeadset
+  name: loadout-group-chief-medical-officer-headset
+  loadouts:
+  - ChiefMedicalOfficerHeadset
+  - ChiefMedicalOfficerAltHeadset
+
+# region Cargo
+- type: loadoutGroup
+  id: QuartermasterBackpack
+  name: loadout-group-quartermaster-backpack
+  loadouts:
+  - CargoTechnicianBackpack
+  - CargoTechnicianSatchel
+  - CargoTechnicianDuffel
+
+- type: loadoutGroup
+  id: QuartermasterHeadset
+  name: loadout-group-quartermaster-headset
+  loadouts:
+  - QuartermasterHeadset
+  - QuartermasterAltHeadset
+
+# region Security
+- type: loadoutGroup
+  id: BrigmedicGun
+  name: loadout-group-brigmedic-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyPistol
+
 - type: loadoutGroup
   id: BrigmedicHead
   name: loadout-group-brigmedic-head
@@ -57,54 +118,6 @@
   - RedShoes
   - SecurityWinterBoots
 
-# Medical
-- type: loadoutGroup
-  id: ChiefMedicalOfficerBackpack
-  name: loadout-group-chief-medical-officer-backpack
-  loadouts:
-  - MedicalDoctorBackpack
-  - MedicalDoctorSatchel
-  - MedicalDoctorDuffel
-
-- type: loadoutGroup
-  id: ChiefMedicalOfficerGloves
-  name: loadout-group-chief-medical-officer-gloves
-  minLimit: 0
-  loadouts:
-  - LatexGloves
-  - NitrileGloves
-
-- type: loadoutGroup
-  id: ChiefMedicalOfficerMask
-  name: loadout-group-chief-medical-officer-mask
-  minLimit: 0
-  loadouts:
-  - SterileMask
-
-- type: loadoutGroup
-  id: ChiefMedicalOfficerHeadset
-  name: loadout-group-chief-engineer-headset
-  loadouts:
-  - ChiefMedicalOfficerHeadset
-  - ChiefMedicalOfficerAltHeadset
-
-# Cargo
-- type: loadoutGroup
-  id: QuartermasterBackpack
-  name: loadout-group-quartermaster-backpack
-  loadouts:
-  - CargoTechnicianBackpack
-  - CargoTechnicianSatchel
-  - CargoTechnicianDuffel
-
-- type: loadoutGroup
-  id: QuartermasterHeadset
-  name: loadout-group-quartermaster-headset
-  loadouts:
-  - QuartermasterHeadset
-  - QuartermasterAltHeadset
-
-# Security
 - type: loadoutGroup
   id: WardenHeadset
   name: loadout-group-warden-headset
@@ -118,7 +131,14 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
+  - SecurityGunDualetta
   - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyPistol
 
 - type: loadoutGroup
   id: WardenBackpack
@@ -134,6 +154,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - BeltHolster
 
 - type: loadoutGroup
   id: WardenShoes
@@ -153,7 +174,20 @@
   - SecurityGunInspector
   - SecurityGunMateba
   - SecurityGunDeckard
+  - SecurityGunCavalier
+  - SecurityGunLucky
+  - SecurityGunGondor
+  - SecurityGunHinage
+  - SecurityGunSR27
+  - SecurityGunK38Master
   - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyRevolver
+  - SecurityGunEnergyPistol
 
 - type: loadoutGroup
   id: HeadofSecurityBackpack
@@ -169,6 +203,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - BeltHolster
 
 - type: loadoutGroup
   id: HeadofSecurityShoes
@@ -195,6 +230,20 @@
   - SecurityGunInspector
   - SecurityGunMateba
   - SecurityGunDeckard
+  - SecurityGunCavalier
+  - SecurityGunLucky
+  - SecurityGunGondor
+  - SecurityGunHinage
+  - SecurityGunSR27
+  - SecurityGunK38Master
+
+- type: loadoutGroup
+  id: DetectiveBelt
+  name: loadout-group-detective-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+  - BeltHolster
 
 - type: loadoutGroup
   id: DetectiveBackpack
@@ -216,12 +265,18 @@
   - ShoesGreenLizardskin
 
 - type: loadoutGroup
-  id: SecurityGun
-  name: loadout-group-security-gun
+  id: SecurityOfficerGun
+  name: loadout-group-security-officer-gun
   minLimit: 1
   maxLimit: 1
   loadouts:
   - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyPistol
 
 - type: loadoutGroup
   id: SecurityCadetBackpack
@@ -231,7 +286,7 @@
   - SecuritySatchel
   - SecurityDuffel
 
-# Sciense
+# region Sciense
 - type: loadoutGroup
   id: ResearchDirectorHeadset
   name: loadout-group-research-director-headset
@@ -256,7 +311,7 @@
   - PurpleGloves
   - RobohandsGloves
 
-# Engineering
+# region Engineering
 - type: loadoutGroup
   id: ChiefEngineerHeadset
   name: loadout-group-chief-engineer-headset
@@ -264,7 +319,7 @@
   - ChiefEngineerHeadset
   - ChiefEngineerAltHeadset
 
-#Civilian
+# region Civilian
 - type: loadoutGroup
   id: ClownOther
   name: loadout-group-clown-other
@@ -284,7 +339,7 @@
   - ClownMaskBlushing
   - ClownMaskSecurity
 
-# Command
+# region Command
 - type: loadoutGroup
   id: CaptainHeadset
   name: loadout-group-captain-headset

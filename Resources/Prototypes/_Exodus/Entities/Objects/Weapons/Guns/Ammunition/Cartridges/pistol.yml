@@ -1,0 +1,138 @@
+- type: entity
+  id: BaseCartridgePistolLight
+  name: cartridge (.15 auto)
+  parent: [ BaseCartridge, BaseSecurityContraband ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgePistolLight
+  - type: CartridgeAmmo
+    proto: BulletPistolLight
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgePistolLight
+  name: cartridge (.15 auto)
+  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
+  parent: BaseCartridgePistolLight
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolLight
+
+- type: entity
+  id: CartridgePistolPracticeLight
+  name: cartridge (.15 auto practice)
+  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Chalk ammunition is generally non-harmful, used for practice.
+  parent: BaseCartridgePistolLight
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolPractice
+  -  type: Sprite
+     layers:
+       - state: base
+         map: [ "enum.AmmoVisualLayers.Base" ]
+       - state: tip
+         map: [ "enum.AmmoVisualLayers.Tip" ]
+         color: "#dbdbdb"
+
+- type: entity
+  id: CartridgePistolIncendiaryLight
+  name: cartridge (.15 auto incendiary)
+  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+  parent: BaseCartridgePistolLight
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ff6e52"
+
+- type: entity
+  id: CartridgePistolUraniumLight
+  name: cartridge (.15 auto uranium)
+  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium core ammunition features a load of fissile material, irradiating the target from the inside.
+  parent: BaseCartridgePistolLight
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolUraniumLight
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+
+- type: entity
+  id: CartridgePistolSpentLight
+  name: cartridge (.15 auto)
+  suffix: spent
+  parent: BaseCartridgePistolLight
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base-spent
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+  - type: CartridgeAmmo
+    proto: BulletPistolLight
+    spent: true
+
+- type: entity
+  id: BaseCartridgePistolAlt
+  name: cartridge (.25 auto)
+  parent: [ BaseCartridge, BaseSecurityContraband ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgePistolAlt
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  id: CartridgePistolAlt
+  name: cartridge (.25 pistol)
+  parent: BaseCartridgePistolAlt
+  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolAlt
+
+- type: entity
+  id: CartridgePistolPracticeAlt
+  name: cartridge (.25 pistol)
+  parent: BaseCartridgePistolAlt
+  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Chalk ammunition is generally non-harmful, used for practice.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletCaselessRiflePractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#dbdbdb"

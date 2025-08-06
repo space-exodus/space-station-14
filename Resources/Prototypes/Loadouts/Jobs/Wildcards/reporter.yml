@@ -3,8 +3,10 @@
   id: ReporterJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitReporter
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: JournalistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJournalist
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout

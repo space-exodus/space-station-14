@@ -9,11 +9,13 @@
   id: ParamedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ParamedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtParamedic
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Outer clothing
 - type: loadout

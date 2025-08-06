@@ -9,11 +9,19 @@
   id: SuperstarCopJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitSuperstarCop
+  groupBy: "Jumpsuit"
 
 - type: loadout
   id: AerostaticJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitAerostatic
+  groupBy: "Jumpsuit"
+  
+# Belt
+- type: loadout
+  id: BeltHolster
+  equipment:
+    belt: ClothingBeltHolsterFilledAlt
 
 # OuterClothing
 - type: loadout
