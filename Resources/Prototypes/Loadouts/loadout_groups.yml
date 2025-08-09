@@ -17,6 +17,27 @@
   - PlushieLizard
   - PlushieSpaceLizard
   # Exodus-Loadouts-Update-Start
+  - PlushieSharkGrey
+  - PlushieSharkPink
+  - PlushieSharkBlue
+  - PlushieBee
+  - PlushieRatvar
+  - PlushieArachind
+  - PlushieSnake
+  - PlushieAtmosian
+  - PlushieDiona
+  - PlushieVox
+  - PlushieMoth
+  - PlushieHampter
+  - PlushieXeno
+  - PlushieSlime
+  - PlushieRouny
+  - PlushiePenguin
+  - PlushieNar
+  - PlushieNuke
+  - PlushieHuman
+  - PlushieMagicarp
+  - PlushieExperiment
   - Harmonica
   - PersonalAI
   - EyepatchLoadout
@@ -50,42 +71,23 @@
   # - ClothingNeckSolarisPin
   # - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
-  # - ClothingNeckLGBTPin
-  # - ClothingNeckAllyPin
-  # - ClothingNeckAromanticPin
-  # - ClothingNeckAsexualPin
-  # - ClothingNeckAroacePin
-  # - ClothingNeckBisexualPin
-  # - ClothingNeckGayPin
-  # - ClothingNeckIntersexPin
-  # - ClothingNeckLesbianPin
-  # - ClothingNeckNonBinaryPin
-  # - ClothingNeckPansexualPin
-  # - ClothingNeckOmnisexualPin
-  # - ClothingNeckGenderqueerPin
-  # - ClothingNeckTransPin
-  # - ClothingNeckAutismPin
-  # - ClothingNeckGoldAutismPin
-  # - TowelColorBlack
-  # - TowelColorDarkBlue
-  # - TowelColorDarkGreen
-  # - TowelColorGold
-  # - TowelColorGray
-  # - TowelColorGreen
-  # - TowelColorLightBlue
-  # - TowelColorLightBrown
-  # - TowelColorMaroon
-  # - TowelColorMime
-  # - TowelColorOrange
-  # - TowelColorPurple
-  # - TowelColorRed
-  # - TowelColorSilver
-  # - TowelColorLightBlue
-  # - TowelColorWhite
-  # - TowelColorYellow
-  # Exodus-Loadouts-Update-End
-  - CigarCase
-  - CigarGold
+  - TowelColorBlack
+  - TowelColorDarkBlue
+  - TowelColorDarkGreen
+  - TowelColorGold
+  - TowelColorGray
+  - TowelColorGreen
+  - TowelColorLightBlue
+  - TowelColorLightBrown
+  - TowelColorMaroon
+  - TowelColorMime
+  - TowelColorOrange
+  - TowelColorPurple
+  - TowelColorRed
+  - TowelColorSilver
+  - TowelColorWhite
+  - TowelColorYellow
+
 
 - type: loadoutGroup
   id: Glasses
@@ -1063,6 +1065,11 @@
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
   - HeadofSecurityOvercoat
+  - ArmorVestSec
+  - ArmorVest
+  - ArmorVestSlim
+  - HeadofSecurityOvercoat
+  - SecurityOfficerWintercoat
 
 - type: loadoutGroup
   id: WardenHead
@@ -1131,6 +1138,7 @@
   - ArmorVestSec # Corvax
   - ArmorVest
   - ArmorVestSlim
+  - HeadofSecurityOvercoat
   - SecurityOfficerWintercoat
 
 - type: loadoutGroup
