@@ -119,7 +119,8 @@ loadout-group-station-engineer-backpack = Инженер, рюкзак
 loadout-group-station-engineer-outerclothing = Инженер, верхняя одежда
 loadout-group-station-engineer-shoes = Инженер, обувь
 loadout-group-station-engineer-id = Инженер, ID
-AtmosphericTechnician = Снаряжение атмосферного техника
+
+AtmosphericTechnician-loadout = Снаряжение атмосферного техника
 loadout-group-atmospheric-technician-jumpsuit = Атмосферный техник, комбинезон
 loadout-group-atmospheric-technician-backpack = Атмосферный техник, рюкзак
 loadout-group-atmospheric-technician-outerclothing = Атмосферный техник, верхняя одежда
@@ -144,10 +145,10 @@ ResearchAssistant-loadout = Снаряжение научного ассисте
 loadout-group-research-assistant-jumpsuit = Научный ассистент, комбинезон
 # Security
 HeadOfSecurity-loadout = Снаряжение главы службы безопасности
-loadout-group-head-of-security-head = Глава службы безопасности, голова
-loadout-group-head-of-security-jumpsuit = Глава службы безопасности, комбинезон
-loadout-group-head-of-security-neck = Глава службы безопасности, шея
-loadout-group-head-of-security-outerclothing = Глава службы безопасности, верхняя одежда
+loadout-group-head-of-security-head = ГСБ, голова
+loadout-group-head-of-security-jumpsuit = ГСБ, комбинезон
+loadout-group-head-of-security-neck = ГСБ, шея
+loadout-group-head-of-security-outerclothing = ГСБ, верхняя одежда
 Warden-loadout = Снаряжение смотрителя
 loadout-group-warden-head = Смотритель, голова
 loadout-group-warden-jumpsuit = Смотритель, комбинезон

@@ -15,11 +15,13 @@
   id: ChefJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitChef
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ChefJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtChef
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Outer clothing
 - type: loadout

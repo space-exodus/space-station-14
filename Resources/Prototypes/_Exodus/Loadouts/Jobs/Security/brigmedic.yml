@@ -33,12 +33,14 @@
   id: BrigmedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBrigmedic
+  groupBy: "Jumpsuit"
 
 # Brigmedic jumpskirt
 - type: loadout
   id: BrigmedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedic
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Brigmedic backpack
 - type: loadout

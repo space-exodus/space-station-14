@@ -3,12 +3,14 @@
   id: JobCaptain
   groups:
   - CaptainHead
+  - CaptainHeadset
   - CaptainNeck
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -16,6 +18,7 @@
   groups:
   - GroupTankHarness
   - HoPHead
+  - HOPHeadset
   - HoPNeck
   - HoPJumpsuit
   - HoPBackpack
@@ -163,10 +166,12 @@
   groups:
   - GroupTankHarness
   - ClownHead
+  - ClownMask
   - ClownJumpsuit
   - ClownBackpack
   - ClownOuterClothing
   - ClownShoes
+  - ClownOther
   - Glasses
   - SurvivalClown
   - Trinkets
@@ -205,9 +210,10 @@
   groups:
   - GroupTankHarness
   - QuartermasterHead
+  - QuartermasterHeadset
   - QuartermasterNeck
   - QuartermasterJumpsuit
-  - CargoTechnicianBackpack
+  - QuartermasterBackpack
   - QuartermasterOuterClothing
   - QuartermasterShoes
   - Glasses
@@ -247,6 +253,7 @@
   groups:
   - GroupTankHarness
   - ChiefEngineerHead
+  - ChiefEngineerHeadset
   - ChiefEngineerJumpsuit
   - ChiefEngineerBackpack # Corvax-Loadouts
   - ChiefEngineerNeck
@@ -298,11 +305,12 @@
   groups:
   - GroupTankHarness
   - ResearchDirectorHead
+  - ResearchDirectorHeadset
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
-  - ScientistBackpack
+  - ResearchDirectorBackpack
   - ResearchDirectorOuterClothing
-  - ScientistGloves
+  - ResearchDirectorGloves
   - ResearchDirectorShoes
   - Glasses
   - Survival
@@ -341,35 +349,40 @@
 - type: roleLoadout
   id: JobHeadOfSecurity
   groups:
+  - HeadofSecurityGun
   - HeadofSecurityHead
+  - HeadofSecurityHeadset
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
-  - SecurityBackpack
-  - SecurityBelt
+  - HeadofSecurityBackpack
+  - HeadofSecurityBelt
   - HeadofSecurityOuterClothing
-  - SecurityShoes
+  - HeadofSecurityShoes
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+#  - SecurityStar #Exodus-Loadouts-Update
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobWarden
   groups:
+  - WardenGun
   - WardenHead
+  - WardenHeadset
   - WardenJumpsuit
-  - SecurityBackpack
-  - SecurityBelt
+  - WardenBackpack
+  - WardenBelt
   - WardenOuterClothing
-  - SecurityShoes
+  - WardenShoes
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+#  - SecurityStar #Exodus-Loadouts-Update
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
+  - SecurityGun
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
@@ -379,28 +392,30 @@
   - SecurityBelt
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+#  - SecurityStar #Exodus-Loadouts-Update
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobDetective
   groups:
+  - DetectiveGun
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
-  - SecurityBackpack
+  - DetectiveBelt
+  - DetectiveBackpack # Exodus-Loadouts-Update
   - DetectiveOuterClothing
-  - SecurityShoes
+  - DetectiveShoes
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+#  - SecurityStar #Exodus-Loadouts-Update
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
   - SecurityCadetJumpsuit
-  - SecurityBackpack
+  - SecurityCadetBackpack
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathToolSecurity
@@ -411,14 +426,15 @@
   groups:
   - GroupTankHarness
   - ChiefMedicalOfficerHead
-  - MedicalMask
-  - ChiefMedicalOfficerJumpsuit
-  - MedicalGloves
-  - MedicalBackpack
-  - ChiefMedicalOfficerOuterClothing
+  - ChiefMedicalOfficerHeadset
   - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerEyewear
+  - ChiefMedicalOfficerMask
+  - ChiefMedicalOfficerJumpsuit
+  - ChiefMedicalOfficerGloves
+  - ChiefMedicalOfficerBackpack
+  - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerShoes
-  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical

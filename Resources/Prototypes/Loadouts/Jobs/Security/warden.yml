@@ -14,11 +14,13 @@
   id: WardenJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitWarden
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: WardenJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtWarden
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # OuterClothing
 - type: loadout

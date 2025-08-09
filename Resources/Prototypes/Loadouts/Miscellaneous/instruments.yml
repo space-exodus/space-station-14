@@ -4,18 +4,21 @@
   storage:
     back:
     - GlockenspielInstrument
+  groupBy: "PercussionInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: MusicBox
   storage:
     back:
     - MusicBoxInstrument
+  groupBy: "PercussionInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Xylophone
   storage:
     back:
     - XylophoneInstrument
+  groupBy: "PercussionInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Microphone
@@ -28,141 +31,166 @@
   storage:
     back:
     - SynthesizerInstrument
+  groupBy: "KeyedInstrument" # Exodus-Better-Loadout
+
 
 - type: loadout
   id: Kalimba
   storage:
     back:
     - KalimbaInstrument
+  groupBy: "KeyedInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Woodblock
   storage:
     back:
     - WoodblockInstrument
+  groupBy: "PercussionInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: ElectricGuitar
   storage:
     back:
     - ElectricGuitarInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: BassGuitar
   storage:
     back:
     - BassGuitarInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: RockGuitar
   storage:
     back:
     - RockGuitarInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: AcousticGuitar
   storage:
     back:
     - AcousticGuitarInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Banjo
   storage:
     back:
     - BanjoInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Violin
   storage:
     back:
     - ViolinInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Viola
   storage:
     back:
     - ViolaInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Cello
   storage:
     back:
     - CelloInstrument
+  groupBy: "StringInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Trumpet
   storage:
     back:
     - TrumpetInstrument
+  groupBy: "BrassInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Trombone
   storage:
     back:
     - TromboneInstrument
+  groupBy: "BrassInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: FrenchHorn
   storage:
     back:
     - FrenchHornInstrument
+  groupBy: "BrassInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Euphonium
   storage:
     back:
     - EuphoniumInstrument
+  groupBy: "BrassInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Saxophone
   storage:
     back:
     - SaxophoneInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Accordion
   storage:
     back:
     - AccordionInstrument
+  groupBy: "KeyedInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Harmonica
   storage:
     back:
     - HarmonicaInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Clarinet
   storage:
     back:
     - ClarinetInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Flute
   storage:
     back:
     - FluteInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Recorder
   storage:
     back:
     - RecorderInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: PanFlute
   storage:
     back:
     - PanFluteInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Ocarina
   storage:
     back:
     - OcarinaInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout
 
 - type: loadout
   id: Bagpipe
   storage:
     back:
     - BagpipeInstrument
+  groupBy: "WoodwindInstrument" # Exodus-Better-Loadout

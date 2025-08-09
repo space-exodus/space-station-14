@@ -3,8 +3,10 @@
   id: PsychologistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitPsychologist
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: PsychologistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtPsychologist
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout

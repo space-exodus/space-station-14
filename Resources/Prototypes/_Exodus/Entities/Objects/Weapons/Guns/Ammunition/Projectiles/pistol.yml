@@ -1,0 +1,45 @@
+- type: entity
+  id: BulletPistolLight
+  name: bullet (.15 auto)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+
+- type: entity
+  id: BulletPistolIncendiaryLight
+  parent: BaseBulletIncendiary
+  name: bullet (.15 auto incendiary)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+        Heat: 9
+
+- type: entity
+  id: BulletPistolUraniumLight
+  parent: BaseBulletUranium
+  name: bullet (.15 auto uranium)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 3
+        Piercing: 7
+
+- type: entity
+  id: BulletPistolAlt
+  name: bullet (.25 pistol)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 19

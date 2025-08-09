@@ -43,21 +43,25 @@
   id: ScientistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitScientist
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ScientistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtScientist
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: RoboticistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitRoboticist
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: RoboticistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtRoboticist
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorResearcherJumpsuit
@@ -66,6 +70,7 @@
     proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorResearcherJumpskirt
@@ -74,6 +79,7 @@
     proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorResearcher
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

@@ -14,16 +14,19 @@
   id: BotanistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHydroponics
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: BotanistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHydroponics
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: BotanistOveralls
   equipment:
     jumpsuit: ClothingUniformOveralls
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

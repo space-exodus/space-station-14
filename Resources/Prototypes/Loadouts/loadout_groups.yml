@@ -5,48 +5,71 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
-  - SpaceLaw # Corvax-HyperLink
+  # - SpaceLaw # Exodus-Corvax-Hyperlink-Remove
   - FlowerWreath
   - Hairflower
   - Headphones
-  - PlushieLizard
-  - PlushieSpaceLizard
-  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
   - CigPackBlue
   - CigPackBlack
-  - CigarCase
-  - CigarGold
-  - ClothingNeckLGBTPin
-  - ClothingNeckAllyPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckAroacePin
-  - ClothingNeckBisexualPin
-  - ClothingNeckGayPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckPluralPin
-  - ClothingNeckOmnisexualPin
-  - ClothingNeckGenderqueerPin
-  - ClothingNeckGenderfluidPin
-  - ClothingNeckTransPin
-  - ClothingNeckAutismPin
-  - ClothingNeckGoldAutismPin
-   # Corvax-Loadouts-Start
-  - ClothingNeckAtharaPin
-  - ClothingNeckCorvaxPin
-  - ClothingNeckEchoPin
-  - ClothingNeckElysiumPin
-  - ClothingNeckMainPin
-  - ClothingNeckNebulaPin
-  - ClothingNeckNovaPin
-  - ClothingNeckSolarisPin
-  - ClothingNeckWhiteListPin
+  - PlushieLizard
+  - PlushieSpaceLizard
+  # Exodus-Loadouts-Update-Start
+  - PlushieSharkGrey
+  - PlushieSharkPink
+  - PlushieSharkBlue
+  - PlushieBee
+  - PlushieRatvar
+  - PlushieArachind
+  - PlushieSnake
+  - PlushieAtmosian
+  - PlushieDiona
+  - PlushieVox
+  - PlushieMoth
+  - PlushieHampter
+  - PlushieXeno
+  - PlushieSlime
+  - PlushieRouny
+  - PlushiePenguin
+  - PlushieNar
+  - PlushieNuke
+  - PlushieHuman
+  - PlushieMagicarp
+  - PlushieExperiment
+  - Harmonica
+  - PersonalAI
+  - EyepatchLoadout
+  - MimeSuspendersBlack
+  - MedkitLoadout
+  # - ThreeCandles
+  # - ClothingNeckLGBTPin
+  # - ClothingNeckAllyPin
+  # - ClothingNeckAromanticPin
+  # - ClothingNeckAsexualPin
+  # - ClothingNeckAroacePin
+  # - ClothingNeckBisexualPin
+  # - ClothingNeckGayPin
+  # - ClothingNeckIntersexPin
+  # - ClothingNeckLesbianPin
+  # - ClothingNeckNonBinaryPin
+  # - ClothingNeckPansexualPin
+  # - ClothingNeckOmnisexualPin
+  # - ClothingNeckGenderqueerPin
+  # - ClothingNeckTransPin
+  # - ClothingNeckAutismPin
+  # - ClothingNeckGoldAutismPin
+  # Corvax-Loadouts-Start
+  # - ClothingNeckAtharaPin
+  # - ClothingNeckCorvaxPin
+  # - ClothingNeckEchoPin
+  # - ClothingNeckElysiumPin
+  # - ClothingNeckMainPin
+  # - ClothingNeckNebulaPin
+  # - ClothingNeckNovaPin
+  # - ClothingNeckSolarisPin
+  # - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
   - TowelColorBlack
   - TowelColorDarkBlue
@@ -65,12 +88,14 @@
   - TowelColorWhite
   - TowelColorYellow
 
+
 - type: loadoutGroup
   id: Glasses
   name: loadout-group-glasses
   minLimit: 0
   loadouts:
   - Glasses
+  - CheapSunglasses
   - GlassesJamjar
   - GlassesJensen
 
@@ -117,7 +142,7 @@
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
 
-# Command
+# region Command
 - type: loadoutGroup
   id: CaptainHead
   name: loadout-group-captain-head
@@ -125,6 +150,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - CaptainBeret # Exodus-Better-Loadout
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -147,6 +173,11 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
+  # Exodus-Better-Loadout-Start
+  - CaptainMantleShoulder
+  - CaptainTie
+  - CaptainScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -162,6 +193,10 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+  # Exodus-Better-Loadout-Start
+  - Captaincoat
+  - CaptainTrenchcoat
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: HoPHead
@@ -188,6 +223,7 @@
   loadouts:
   - HoPCloak
   - HoPMantle
+  - HoPScarf # Exodus-Better-Loadout
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -204,8 +240,9 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+  - HoPCoat
 
-# Civilian
+# region Civilian
 - type: loadoutGroup
   id: PassengerJumpsuit
   name: loadout-group-passenger-jumpsuit
@@ -474,6 +511,7 @@
   - ClownSkirt
   - JesterSuit
   - JesterAltSuit
+  - ClownSuitBanana
 
 - type: loadoutGroup
   id: ClownBackpack
@@ -497,6 +535,8 @@
   loadouts:
   - ClownShoes
   - JesterShoes
+  - ClownShoesLarge
+  - ClownShoesBanana
 
 - type: loadoutGroup
   id: SurvivalClown
@@ -586,10 +626,10 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
+  - Microphone # Exodus-Loadouts-Update
   - Glockenspiel
   - MusicBox
   - Xylophone
-  - Microphone
   - Synthesizer
   - Kalimba
   - Woodblock
@@ -615,7 +655,7 @@
   - Ocarina
   - Bagpipe
 
-# Cargo
+# region Cargo
 - type: loadoutGroup
   id: QuartermasterHead
   name: loadout-group-quartermaster-head
@@ -641,6 +681,7 @@
   loadouts:
   - QuartermasterCloak
   - QuartermasterMantle
+  - QuartermasterScarf # Exodus-Better-Loadout
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -714,7 +755,7 @@
   - SalvageBoots
   - CargoWinterBoots
 
-# Engineering
+# region Engineering
 - type: loadoutGroup
   id: ChiefEngineerHead
   name: loadout-group-chief-engineer-head
@@ -739,6 +780,10 @@
   loadouts:
   - ChiefEngineerCloak
   - ChiefEngineerMantle
+  # Exodus-Better-Loadout-Start
+  - ChiefEngineerTie
+  - ChiefEngineerScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
@@ -853,7 +898,7 @@
   - LoadoutSpeciesVoxNitrogen
   - EmergencyOxygenExtendedMechInjector # Exodus-ThickSyringes
 
-# Science
+# region Science
 - type: loadoutGroup
   id: ResearchDirectorHead
   name: loadout-group-research-director-head
@@ -868,6 +913,7 @@
   loadouts:
   - ResearchDirectorMantle
   - ResearchDirectorCloak
+  - ScientistTie
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -973,7 +1019,7 @@
   - WhiteJumpsuit
   - WhiteJumpskirt
 
-# Security
+# region Security
 - type: loadoutGroup
   id: HeadofSecurityHead
   name: loadout-group-head-of-security-head
@@ -981,6 +1027,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - HeadofSecurityHeadCap
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1005,6 +1052,11 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   - HeadofSecurityShoulderMantle # Corvax-Loadouts
+  # Exodus-Better-Loadout-Start
+  - HeadofSecurityCloakFur
+  - HoSTie
+  - HoSScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1012,6 +1064,12 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - HeadofSecurityOvercoat
+  - ArmorVestSec
+  - ArmorVest
+  - ArmorVestSlim
+  - HeadofSecurityOvercoat
+  - SecurityOfficerWintercoat
 
 - type: loadoutGroup
   id: WardenHead
@@ -1071,6 +1129,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - BeltHolster
 
 - type: loadoutGroup
   id: SecurityOuterClothing
@@ -1079,12 +1138,14 @@
   - ArmorVestSec # Corvax
   - ArmorVest
   - ArmorVestSlim
+  - HeadofSecurityOvercoat
   - SecurityOfficerWintercoat
 
 - type: loadoutGroup
   id: SecurityShoes
   name: loadout-group-security-shoes
   loadouts:
+  - CombatBoots
   - JackSecBoots # Corvax
   - JackBoots
   - SecurityWinterBoots
@@ -1110,6 +1171,7 @@
   minLimit: 0
   loadouts:
   - DetectiveTie
+  - HorrificTie
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
@@ -1119,6 +1181,7 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
+  - SuperstarCopJumpsuit
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1127,6 +1190,10 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - DiscoAssBlazer
+  - AerostaticBomberJacket
+  - CoatGentle
+  - CoatDetectiveDark
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
@@ -1153,7 +1220,7 @@
   loadouts:
   - SecStar
 
-# Medical
+# region Medical
 - type: loadoutGroup
   id: ChiefMedicalOfficerHead
   name: loadout-group-chief-medical-officer-head
@@ -1177,6 +1244,7 @@
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerLabCoat
+  - RegularLabCoat # Exodus-Better-Loadout
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
@@ -1186,6 +1254,10 @@
   loadouts:
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
+  # Exodus-Better-Loadout-Start
+  - ChiefMedicalOfficerTie
+  - ChiefMedicalOfficerScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
@@ -1347,7 +1419,7 @@
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
 
-# Wildcards
+# region Wildcards
 - type: loadoutGroup
   id: ReporterJumpsuit
   name: loadout-group-reporter-jumpsuit
@@ -1378,7 +1450,7 @@
   - GreenBoxingGloves
   - YellowBoxingGloves
 
-# Other
+# region Other
 - type: loadoutGroup
   id: SurvivalSyndicate
   name: loadout-group-survival-syndicate

@@ -1,4 +1,76 @@
-# Brigmedic
+# region Medical
+- type: loadoutGroup
+  id: ChiefMedicalOfficerBackpack
+  name: loadout-group-chief-medical-officer-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerGloves
+  name: loadout-group-chief-medical-officer-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerMask
+  name: loadout-group-chief-medical-officer-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerHeadset
+  name: loadout-group-chief-medical-officer-headset
+  loadouts:
+  - ChiefMedicalOfficerHeadset
+  - ChiefMedicalOfficerAltHeadset
+
+- type: loadoutGroup
+  id: ChiefMedicalOfficerEyewear
+  name: loadout-group-chief-medical-officer-glasses
+  minLimit: 0
+  loadouts:
+  - MedicalHud
+  - MedicalEyePatchHud
+  - ChiefMedicalOfficerHud
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+# region Cargo
+- type: loadoutGroup
+  id: QuartermasterBackpack
+  name: loadout-group-quartermaster-backpack
+  loadouts:
+  - CargoTechnicianBackpack
+  - CargoTechnicianSatchel
+  - CargoTechnicianDuffel
+
+- type: loadoutGroup
+  id: QuartermasterHeadset
+  name: loadout-group-quartermaster-headset
+  loadouts:
+  - QuartermasterHeadset
+  - QuartermasterAltHeadset
+
+# region Security
+- type: loadoutGroup
+  id: BrigmedicGun
+  name: loadout-group-brigmedic-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyPistol
 
 - type: loadoutGroup
   id: BrigmedicHead
@@ -36,6 +108,14 @@
   - BrigmedicJumpskirt
 
 - type: loadoutGroup
+  id: BrigmedicGloves
+  name: loadout-group-brigmedic-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
   id: BrigmedicBackpack
   name: loadout-group-brigmedic-backpack
   loadouts:
@@ -49,3 +129,480 @@
   loadouts:
   - RedShoes
   - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: WardenHeadset
+  name: loadout-group-warden-headset
+  loadouts:
+  - HeadsetWarden
+  - HeadsetAltWarden
+
+- type: loadoutGroup
+  id: WardenGun
+  name: loadout-group-warden-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunDualetta
+  - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyPistol
+
+- type: loadoutGroup
+  id: WardenBackpack
+  name: loadout-group-warden-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+- type: loadoutGroup
+  id: WardenBelt
+  name: loadout-group-warden-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+  - BeltHolster
+
+- type: loadoutGroup
+  id: WardenShoes
+  name: loadout-group-warden-shoes
+  loadouts:
+  - CombatBoots
+  - JackBoots
+  - JackSecBoots
+  - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: HeadofSecurityGun
+  name: loadout-group-head-of-security-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunInspector
+  - SecurityGunMateba
+  - SecurityGunDeckard
+  - SecurityGunCavalier
+  - SecurityGunLucky
+  - SecurityGunGondor
+  - SecurityGunHinage
+  - SecurityGunSR27
+  - SecurityGunK38Master
+  - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyRevolver
+  - SecurityGunEnergyPistol
+
+- type: loadoutGroup
+  id: HeadofSecurityBackpack
+  name: loadout-group-head-of-security-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+- type: loadoutGroup
+  id: HeadofSecurityBelt
+  name: loadout-group-head-of-security-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+  - BeltHolster
+
+- type: loadoutGroup
+  id: HeadofSecurityShoes
+  name: loadout-group-head-of-security-shoes
+  loadouts:
+  - CombatBoots
+  - JackBoots
+  - JackSecBoots
+  - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: HeadofSecurityHeadset
+  name: loadout-group-head-of-security-headset
+  loadouts:
+  - HeadofSecurityHeadset
+  - HeadofSecurityAltHeadset
+
+- type: loadoutGroup
+  id: DetectiveGun
+  name: loadout-group-detective-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunInspector
+  - SecurityGunMateba
+  - SecurityGunDeckard
+  - SecurityGunCavalier
+  - SecurityGunLucky
+  - SecurityGunGondor
+  - SecurityGunHinage
+  - SecurityGunSR27
+  - SecurityGunK38Master
+
+- type: loadoutGroup
+  id: DetectiveBelt
+  name: loadout-group-detective-belt
+  loadouts:
+  - SecurityBelt
+  - SecurityWebbing
+  - BeltHolster
+
+- type: loadoutGroup
+  id: DetectiveBackpack
+  name: loadout-group-detective-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+- type: loadoutGroup
+  id: DetectiveShoes
+  name: loadout-group-detective-shoes
+  loadouts:
+  - CombatBoots
+  - JackBoots
+  - JackSecBoots
+  - SecurityWinterBoots
+  - AerostaticShoes
+  - ShoesGreenLizardskin
+
+- type: loadoutGroup
+  id: SecurityOfficerGun
+  name: loadout-group-security-officer-gun
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SecurityGunMk58
+  - SecurityGunTP17
+  - SecurityGunG14
+  - SecurityGunAstra47
+  - SecurityGunWyvern
+  - SecurityGunUniversal
+  - SecurityGunEnergyPistol
+
+- type: loadoutGroup
+  id: SecurityCadetBackpack
+  name: loadout-group-security-cadet-backpack
+  loadouts:
+  - SecurityBackpack
+  - SecuritySatchel
+  - SecurityDuffel
+
+# region Sciense
+- type: loadoutGroup
+  id: ResearchDirectorHeadset
+  name: loadout-group-research-director-headset
+  loadouts:
+  - ResearchDirectorHeadset
+  - ResearchDirectorAltHeadset
+
+- type: loadoutGroup
+  id: ResearchDirectorBackpack
+  name: loadout-group-research-director-backpack
+  loadouts:
+  - ScientistBackpack
+  - ScientistSatchel
+  - ScientistDuffel
+
+- type: loadoutGroup
+  id: ResearchDirectorGloves
+  name: loadout-group-research-director-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - PurpleGloves
+  - RobohandsGloves
+
+# region Engineering
+- type: loadoutGroup
+  id: ChiefEngineerHeadset
+  name: loadout-group-chief-engineer-headset
+  loadouts:
+  - ChiefEngineerHeadset
+  - ChiefEngineerAltHeadset
+
+- type: loadoutGroup
+  id: ChiefEngineerBelt
+  name: loadout-group-chief-engineer-belt
+  loadouts:
+  - UtilityBelt
+  - UtilityWebbing
+
+- type: loadoutGroup
+  id: EngineerBelt
+  name: loadout-group-engineer-belt
+  loadouts:
+  - UtilityBelt
+  - UtilityWebbing
+
+- type: loadoutGroup
+  id: EngineerBelt
+  name: loadout-group-engineer-belt
+  loadouts:
+  - UtilityBelt
+  - UtilityWebbing
+
+# region Civilian
+- type: loadoutGroup
+  id: ClownOther
+  name: loadout-group-clown-other
+  loadouts:
+  - ClownCapGun
+  - ClownFoamRifle
+  - ToySword
+  - FoamCutlass
+  - GrenadeFoamDart
+
+- type: loadoutGroup
+  id: ClownMask
+  name: loadout-group-clown-mask
+  loadouts:
+  - ClownMask
+  - ClownMaskBanana
+  - ClownMaskBlushing
+  - ClownMaskSecurity
+
+# region Command
+- type: loadoutGroup
+  id: CaptainHeadset
+  name: loadout-group-captain-headset
+  loadouts:
+  - HeadsetCaptain
+  - HeadsetAltCaptain
+
+- type: loadoutGroup
+  id: HOPHeadset
+  name: loadout-group-hop-headset
+  loadouts:
+  - HeadsetHOP
+  - HeadsetAltHOP
+
+# region Trinket Clothing
+- type: loadoutGroup
+  id: TrinketsCloth
+  name: loadout-group-trinkets-clothing
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - LoadoutClothingUniformJumpskirtGothic0
+  - LoadoutClothingUniformJumpskirtGothic1
+  - LoadoutClothingUniformJumpskirtGothic2
+  - LoadoutClothingUniformJumpskirtGothic3
+  - LoadoutClothingUniformJumpskirtGothic4
+  - LoadoutClothingUniformJumpsuitGothic0
+  - LoadoutClothingUniformJumpsuitGothic1
+  - LoadoutClothingUniformJumpsuitGothic2
+  - LoadoutClothingUniformJumpsuitGothic3
+  - LoadoutClothingUniformJumpsuitGothic4
+  - LoadoutClothingUniformJumpsuitGothic5
+  - LoadoutClothingUniformJumpsuitGothic6
+  - LoadoutClothingUniformJumpsuitGothic7
+  - LoadoutClothingUniformJumpskirtColorTeal
+  - LoadoutClothingHandsGlovesColorTeal
+  - LoadoutClothingUniformJumpsuitColorTeal
+  - LoadoutClothingOuterCoatGentle
+  - LoadoutClothingMaskBandSkull
+  - LoadoutClothingOuterWinterColorWhite
+  - LoadoutClothingHeadHatMimesoft
+  - LoadoutClothingHandsGlovesColorWhite
+  - LoadoutClothingShoesColorWhite
+  - LoadoutClothingUniformJumpsuitColorWhite
+  - LoadoutClothingHeadHatBeret
+  - LoadoutClothingHandsGlovesFingerless
+  - LoadoutClothingUniformJumpskirtColorMaroon
+  - LoadoutClothingUniformJumpsuitColorMaroon
+  - LoadoutClothingNeckCloakTrans
+  - LoadoutClothingNeckCloakAdmin
+  - LoadoutClothingHeadWehcellentCap
+  - LoadoutClothingEyesGlassesGarGiga
+  - LoadoutClothingNeckScarfStripedLesbianLong
+  - LoadoutClothingUniformJumpsuitHawaiYellow
+  - LoadoutClothingOuterWinterColorYellow
+  - LoadoutClothingHeadHatYellowsoft
+  - LoadoutClothingUniformJumpskirtColorYellow
+  - LoadoutClothingUniformJumpskirtYellowTurtleneckDress
+  - LoadoutClothingShoesColorYellow
+  - LoadoutClothingUniformJumpsuitColorYellow
+  - LoadoutClothingMaskBandGreen
+  - LoadoutClothingOuterWinterColorGreen
+  - LoadoutClothingHeadHatGreensoft
+  - LoadoutClothingOuterFlannelGreen
+  - LoadoutClothingUniformJumpskirtColorGreen
+  - LoadoutClothingUniformJumpskirtGreenTurtleneckDress
+  - LoadoutClothingHandsGlovesColorGreen
+  - LoadoutClothingShoesColorGreen
+  - LoadoutClothingShoesGreenLizardskin
+  - LoadoutClothingUniformJumpsuitColorGreen
+  - LoadoutClothingShoesBootsWinter
+  - LoadoutClothingOuterWinterCoat
+  - LoadoutClothingHeadBandGold
+  - LoadoutClothingHeadFishCap
+  - LoadoutClothingHeadHatBizarreSoft
+  - LoadoutClothingOuterPonchoClassic
+  - LoadoutClothingUniformJumpsuitNanotrasen
+  - LoadoutClothingMaskBandBrown
+  - LoadoutClothingOuterWinterColorBrown
+  - LoadoutClothingHeadHatCowboyBrown
+  - LoadoutClothingHeadHatBrownFlatcap
+  - LoadoutClothingNeckUSSPPin
+  - LoadoutClothingNeckEarthPin
+  - LoadoutClothingNeckNanoTrasenPin
+  - LoadoutClothingUniformJumpskirtColorBrown
+  - LoadoutClothingHandsGlovesColorBrown
+  - LoadoutClothingShoesColorBrown
+  - LoadoutClothingUniformJumpsuitColorBrown
+  - LoadoutClothingHeadHatCorpsoft
+  - LoadoutClothingUniformJumpsuitDameDane
+  - LoadoutClothingNeckHorrific
+  - LoadoutClothingMaskBandRed
+  - LoadoutClothingUniformJumpsuitHawaiRed
+  - LoadoutClothingOuterWinterColorRed
+  - LoadoutClothingHeadHatRedsoft
+  - LoadoutClothingHeadHatCowboyRed
+  - LoadoutClothingOuterFlannelRed
+  - LoadoutClothingUniformJumpskirtColorRed
+  - LoadoutClothingUniformJumpskirtRedTurtleneckDress
+  - LoadoutClothingHandsGlovesColorRed
+  - LoadoutClothingBeltSuspendersRed
+  - LoadoutClothingShoesColorRed
+  - LoadoutClothingUniformJumpsuitColorRed
+  - LoadoutClothingOuterCoatBomber
+  - LoadoutClothingNeckMantle
+  - LoadoutClothingEyesGlassesGar
+  - LoadoutClothingNeckHeadphones
+  - LoadoutClothingUnderSocksCoder
+  - LoadoutClothingUnderSocksBee
+  - LoadoutClothingOuterWinterColorOrange
+  - LoadoutClothingHeadHatOrangesoft
+  - LoadoutClothingUniformJumpskirtColorOrange
+  - LoadoutClothingEyesGlassesGarOrange
+  - LoadoutClothingHandsGlovesColorOrange
+  - LoadoutClothingShoesColorOrange
+  - LoadoutClothingUniformJumpsuitColorOrange
+  - LoadoutClothingOuterCoatJensen
+  - LoadoutClothingOuterDameDane
+  - LoadoutClothingNeckCloakNanotrasen
+  - LoadoutClothingNeckCloakAroace
+  - LoadoutClothingNeckCloakAro
+  - LoadoutClothingNeckCloakHerald
+  - LoadoutClothingNeckCloakGoliathCloak
+  - LoadoutClothingNeckCloakEnby
+  - LoadoutClothingNeckCloakMoth
+  - LoadoutClothingNeckCloakAce
+  - LoadoutClothingNeckCloakLesbian
+  - LoadoutClothingNeckCloakVoid
+  - LoadoutClothingNeckCloakGay
+  - LoadoutClothingNeckCloakIntersex
+  - LoadoutClothingNeckCloakPan
+  - LoadoutClothingUniformJumpskirtCasualGreen
+  - LoadoutClothingUniformJumpskirtCasualRed
+  - LoadoutClothingUniformJumpskirtCasualBlue
+  - LoadoutClothingUniformJumpskirtCasualPurple
+  - LoadoutClothingUniformJumpsuitCasualGreen
+  - LoadoutClothingUniformJumpsuitCasualRed
+  - LoadoutClothingUniformJumpsuitCasualBlue
+  - LoadoutClothingUniformJumpsuitCasualPurple
+  - LoadoutClothingUniformJumpskirtCyanStripedDress
+  - LoadoutClothingUniformJumpskirtGreenStripedDress
+  - LoadoutClothingUniformJumpskirtRedStripedDress
+  - LoadoutClothingUniformJumpskirtOrangeStripedDress
+  - LoadoutClothingUniformJumpskirtPinkStripedDress
+  - LoadoutClothingNeckScarfStripedGreen
+  - LoadoutClothingNeckScarfStripedBrown
+  - LoadoutClothingNeckScarfStripedOrange
+  - LoadoutClothingNeckScarfStripedPurple
+  - LoadoutClothingNeckScarfStripedAce
+  - LoadoutClothingNeckScarfStripedGay
+  - LoadoutClothingNeckScarfStripedBiSexual
+  - LoadoutClothingNeckScarfStripedLesbian
+  - LoadoutClothingNeckScarfStripedAro
+  - LoadoutClothingNeckScarfStripedNonBinary
+  - LoadoutClothingNeckScarfStripedAroace
+  - LoadoutClothingNeckScarfStripedTrans
+  - LoadoutClothingNeckScarfStripedInter
+  - LoadoutClothingNeckScarfStripedPan
+  - LoadoutClothingNeckScarfStripedLightBlue
+  - LoadoutClothingNeckScarfStripedBlue
+  - LoadoutClothingNeckScarfStripedBlack
+  - LoadoutClothingOuterPoncho
+  - LoadoutClothingUniformJumpskirtColorRainbow
+  - LoadoutClothingUniformColorRainbow
+  - LoadoutClothingNeckScarfStripedRainbow
+  - LoadoutClothingUniformJumpskirtColorPink
+  - LoadoutClothingUniformJumpsuitColorPink
+  - LoadoutClothingOuterWinterColorLightBrown
+  - LoadoutClothingUniformJumpskirtColorLightBrown
+  - LoadoutClothingHandsGlovesColorLightBrown
+  - LoadoutClothingUniformJumpsuitColorLightBrown
+  - LoadoutClothingUniformJumpsuitFamilyGuy
+  - LoadoutClothingMaskBandGrey
+  - LoadoutClothingOuterWinterColorGray
+  - LoadoutClothingHeadHatGreysoft
+  - LoadoutClothingHeadHatCowboyGrey
+  - LoadoutClothingHeadHatGreyFlatcap
+  - LoadoutClothingOuterHoodieGrey
+  - LoadoutClothingUniformJumpskirtColorGrey
+  - LoadoutClothingHandsGlovesColorGray
+  - LoadoutClothingUniformJumpsuitColorGrey
+  - LoadoutClothingUniformJumpskirtBlueTurtleneckDress
+  - LoadoutClothingHandsGlovesColorBlue
+  - LoadoutClothingShoesColorBlue
+  - LoadoutClothingUniformJumpsuitColorBlue
+  - LoadoutClothingMaskBandBlue
+  - LoadoutClothingUniformJumpsuitHawaiBlue
+  - LoadoutClothingOuterWinterColorBlue
+  - LoadoutClothingHeadHatBluesoft
+  - LoadoutClothingOuterFlannelBlue
+  - LoadoutClothingUniformJumpskirtColorBlue
+  - LoadoutClothingHeadHatSolidHeadband
+  - LoadoutClothingHeadHatStrawHat
+  - LoadoutClothingHeadHatSombrero
+  - LoadoutClothingUniformJumpskirtYellowOldDress
+  - LoadoutClothingOuterCoatTrench
+  - LoadoutClothingShoesDameDane
+  - LoadoutClothingUniformJumpskirtColorDarkGreen
+  - LoadoutClothingUniformJumpsuitColorDarkGreen
+  - LoadoutClothingUniformJumpsuitColorDarkBlue
+  - LoadoutClothingUniformJumpskirtColorDarkBlue
+  - LoadoutClothingOuterWinterColorPurple
+  - LoadoutClothingHeadHatPurplesoft
+  - LoadoutClothingUniformJumpskirtPurpleTurtleneckDress
+  - LoadoutClothingHandsGlovesColorPurple
+  - LoadoutClothingShoesColorPurple
+  - LoadoutClothingUniformJumpsuitColorPurple
+  - LoadoutClothingUniformJumpsuitFlannel
+  - LoadoutClothingHeadHatBeretFrench
+  - LoadoutClothingMaskBandBlack
+  - LoadoutClothingUniformJumpsuitHawaiBlack
+  - LoadoutClothingOuterWinterColorBlack
+  - LoadoutClothingHeadHatBlacksoft
+  - LoadoutClothingHeadHatCowboyBlack
+  - LoadoutClothingOuterHoodieBlack
+  - LoadoutClothingUniformJumpskirtColorBlack
+  - LoadoutClothingHandsGlovesColorBlack
+  - LoadoutClothingBeltSuspendersBlack
+  - LoadoutClothingShoesColorBlack
+  - LoadoutClothingUniformJumpsuitColorBlack
+  - LoadoutClothingHeadHatCanadaBeanie
+  - LoadoutClothingHeadRastaHat
+  - LoadoutClothingNeckScarfStripedZebra
+  - LoadoutClothingMaskNeckGaiter
+  - LoadoutClothingHeadHatBowlerHat
+  - LoadoutClothingShoesBootsLaceup
+  - LoadoutClothingUniformJumpskirtGreenElegantDress
+  - LoadoutClothingUniformJumpskirtRedElegantDress
+  - LoadoutClothingUniformJumpskirtBlueElegantDress
+  - LoadoutClothingUniformJumpskirtPurpleElegantDress
+  - LoadoutClothingUniformJumpskirtBlackElegantDress
+  - LoadoutClothingNeckCloakBi
+

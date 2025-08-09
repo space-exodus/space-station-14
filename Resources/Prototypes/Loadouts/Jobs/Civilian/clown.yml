@@ -14,21 +14,25 @@
   id: ClownSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitClown
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ClownSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtClown
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: JesterSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJester
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: JesterAltSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJesterAlt
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

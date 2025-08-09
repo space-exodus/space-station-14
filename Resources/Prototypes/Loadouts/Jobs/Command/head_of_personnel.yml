@@ -23,11 +23,13 @@
   id: HoPJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoP
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: HoPJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoP
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Head
 - type: loadout

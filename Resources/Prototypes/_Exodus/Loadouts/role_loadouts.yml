@@ -1,11 +1,15 @@
 - type: roleLoadout
   id: JobBrigmedic
   groups:
+  - BrigmedicGun
   - BrigmedicHead
   - BrigmedicMask
   - BrigmedicOuterClothing
   - BrigmedicJumpsuit
-  - MedicalGloves
+  - BrigmedicGloves
   - BrigmedicBackpack
   - BrigmedicShoes
   - Trinkets
+  - TrinketsCloth
+  - SurvivalSecurity
+  - GroupSpeciesBreathToolSecurity

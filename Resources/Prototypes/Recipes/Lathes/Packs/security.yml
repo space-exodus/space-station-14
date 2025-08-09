@@ -39,6 +39,15 @@
   - MagazineBoxMagnum
   - MagazineBoxPistol
   - MagazineBoxRifle
+  # Exodus-Better-Loadout-Start
+  - MagazineBoxPistolLight
+  - MagazineBoxPistolPracticeLight
+  - MagazineBoxPistolAlt
+  - MagazineBoxPistolPracticeAlt
+  - MagazinePistolExtended
+  - MagazinePistolLight
+  - MagazinePistolAlt
+  # Exodus-Better-Loadout-End
   - MagazineLightRifle
   - MagazineLightRifleEmpty
   - MagazinePistol
@@ -109,6 +118,10 @@
   - MagazineBoxMagnumUranium
   - MagazineBoxPistolIncendiary
   - MagazineBoxPistolUranium
+  # Exodus-Better-Loadout-Start
+  - MagazineBoxPistolIncendiaryLight
+  - MagazineBoxPistolUraniumLight
+  # Exodus-Better-Loadout-End
   - MagazineBoxRifleIncendiary
   - MagazineBoxRifleUranium
   - MagazineLightRifleIncendiary
