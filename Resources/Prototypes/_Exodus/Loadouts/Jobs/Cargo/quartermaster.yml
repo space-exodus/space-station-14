@@ -8,3 +8,21 @@
   id: QuartermasterHeadset
   equipment:
     ears: ClothingHeadsetQM
+
+# Neck
+- type: loadoutEffectGroup
+  id: NewbieQuartermaster
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: QuartermasterScarf
+  equipment:
+    neck: ClothingNeckScarfQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieQuartermaster

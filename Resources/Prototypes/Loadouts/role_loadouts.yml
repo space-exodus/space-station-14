@@ -10,6 +10,7 @@
   - CaptainOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -426,14 +427,14 @@
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - ChiefMedicalOfficerHeadset
+  - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerEyewear
   - ChiefMedicalOfficerMask
   - ChiefMedicalOfficerJumpsuit
   - ChiefMedicalOfficerGloves
   - ChiefMedicalOfficerBackpack
   - ChiefMedicalOfficerOuterClothing
-  - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
-  - MedicalEyewear
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical

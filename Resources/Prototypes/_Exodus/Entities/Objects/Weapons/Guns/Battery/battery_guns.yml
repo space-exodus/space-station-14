@@ -44,7 +44,7 @@
   name: energy security pistol
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
   id: WeaponEnergyPistolSec
-  description: Energy pistol for security
+  description: Energy pistol for security.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Battery/mini_energygun.rsi
@@ -79,7 +79,7 @@
     fireModes:
     - proto: BulletLaserPistol
       fireCost: 100
-    - proto: BulletDisabler
+    - proto: BulletStunnerMode
       fireCost: 100
   - type: Battery
     maxCharge: 1200
@@ -96,7 +96,7 @@
   name: energy security pistol
   parent: [BaseWeaponBatterySmall, BaseCommandContraband]
   id: WeaponEnergyRevolverSec
-  description: Energy pistol for security
+  description: Energy pistol for security.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Battery/energy_revolver.rsi
@@ -130,7 +130,7 @@
     fireModes:
     - proto: BulletLaserRevolver
       fireCost: 150
-    - proto: BulletDisabler
+    - proto: BulletStunnerMode
       fireCost: 100
   - type: Battery
     maxCharge: 1200
