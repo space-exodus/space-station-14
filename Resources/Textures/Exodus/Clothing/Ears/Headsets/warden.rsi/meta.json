@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "icon made by neo33o1 (discord:574264907285921793), equipped-EARS-VOX made by Askolot (discord:788252896016990219), equipped-EARS made by MureixIoL",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon_alt"
+    },
+    {
+      "name": "equipped-EARS",
+      "directions": 4
+    },
+    {
+      "name": "equipped-EARS-VOX",
+      "directions": 4
+    }
+  ]
+}

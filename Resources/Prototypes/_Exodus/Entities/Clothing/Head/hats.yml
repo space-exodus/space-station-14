@@ -18,7 +18,7 @@
   parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatBeretCap
   name: captain's beret
-  description: Weh!
+  description: A beret showing who has the most power at the station.
   components:
   - type: Sprite
     sprite: Exodus/Clothing/Head/Hats/beret_captain.rsi

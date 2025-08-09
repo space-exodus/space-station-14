@@ -1,7 +1,7 @@
 # Gun
 - type: loadout
   id: SecurityGunMateba
-  dummyEntity: LoadoutDummyWeaponRevolverMateba
+  dummyEntity: LoadoutDummyWeaponRevolverMatebaLoadout
   equipment:
     pocket1: WeaponRevolverMatebaLoadout
     pocket2: SpeedLoaderMagnum

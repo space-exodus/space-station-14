@@ -1,8 +1,65 @@
+# Head
+- type: loadout
+  id: CaptainBeret
+  equipment:
+    head: ClothingHeadHatBeretCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SpecialistCaptain
+
+# Neck
+- type: loadoutEffectGroup
+  id: SpecialistCaptain
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 144000 #40 hrs
+
+- type: loadout
+  id: CaptainMantleShoulder
+  equipment:
+    neck: ClothingNeckMantleCapShoulder
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SpecialistCaptain
+
+- type: loadoutEffectGroup
+  id: NewbieCaptain
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: CaptainScarf
+  equipment:
+    neck: ClothingNeckScarfCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieCaptain
+
+- type: loadout
+  id: CaptainTie
+  equipment:
+    neck: ClothingNeckTieCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieCaptain
+
 # Outer clothing
 - type: loadout
   id: Captaincoat
   equipment:
     outerClothing: ClothingOuterCoatCaptain
+
+- type: loadout
+  id: CaptainTrenchcoat
+  equipment:
+    outerClothing: ClothingOuterTrenchcoatCaptain
 
 #Ears
 - type: loadout

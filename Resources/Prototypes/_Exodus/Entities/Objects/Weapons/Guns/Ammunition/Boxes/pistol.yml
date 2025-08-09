@@ -1,0 +1,117 @@
+- type: entity
+  abstract: true
+  parent: BaseMagazineBoxPistol
+  id: BaseMagazineBoxPistolLight
+  name: ammunition box (.15 auto)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistolLight
+    proto: CartridgePistolLight
+    capacity: 60
+
+# Boxes
+- type: entity
+  parent: BaseMagazineBoxPistolLight
+  id: MagazineBoxPistolLight
+  name: ammunition box (.15 auto)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolLight
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineBoxPistolLight
+  id: MagazineBoxPistolPracticeLight
+  name: ammunition box (.15 auto practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolPracticeLight
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
+- type: entity
+  id: MagazineBoxPistolIncendiaryLight
+  parent: BaseMagazineBoxPistolLight
+  name: ammunition box (.15 auto incendiary)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolIncendiaryLight
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: incendiary
+
+- type: entity
+  id: MagazineBoxPistolUraniumLight
+  parent: BaseMagazineBoxPistolLight
+  name: ammunition box (.15 auto uranium)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolUraniumLight
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: uranium
+
+- type: entity
+  abstract: true
+  parent: BaseMagazineBoxPistol
+  id: BaseMagazineBoxPistolAlt
+  name: ammunition box (.25 auto)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistolAlt
+    proto: CartridgePistolAlt
+    capacity: 60
+
+# Boxes
+- type: entity
+  parent: BaseMagazineBoxPistolAlt
+  id: MagazineBoxPistolAlt
+  name: ammunition box (.25 auto)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolAlt
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineBoxPistolAlt
+  id: MagazineBoxPistolPracticeAlt
+  name: ammunition box (.25 auto practice)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolPracticeAlt
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice

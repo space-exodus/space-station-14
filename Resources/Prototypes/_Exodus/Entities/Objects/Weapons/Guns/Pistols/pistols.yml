@@ -2,7 +2,7 @@
   name: TP-17
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolTP17
-  description: weh.
+  description: Old quality in a new wrapper. Wasn't it better before? It uses .35 auto caliber cartridges but requires only its own magazine.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/tp17.rsi
@@ -48,7 +48,7 @@
   name: G-14
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolG14
-  description: weh.
+  description: The dream of any policeman. Or bandit. Or housewife. Uses .15 caliber bullets.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/g14.rsi
@@ -95,7 +95,7 @@
   name: Astra-47
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolAstra47
-  description: weh.
+  description: Super secret super weapon of the most elite fighters in the galaxy. At least, that's what the advertisement said. It uses .25 caliber ammunition, only with shells.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/astra47.rsi
@@ -142,7 +142,7 @@
   name: Wyvern
   parent: WeaponPistolAstra47
   id: WeaponPistolWyvern
-  description: weh.
+  description: Chrome-plated bolt group, luxurious anatomical grip, striker with diamond coating. And it's cheap too. Chic. Uses .25 caliber cartridges.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/wyvern.rsi
@@ -188,7 +188,7 @@
   name: Dualetta
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolDualetta
-  description: weh.
+  description: The standard weapon of every self-respecting caretaker. It uses .35 auto caliber ammunition.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/dualetta.rsi
@@ -238,7 +238,7 @@
   name: Universal
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolUniversal
-  description: weh.
+  description: It's hard to imagine, but this really is the most universal pistol in the entire galaxy. Take my word for it.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/universal.rsi

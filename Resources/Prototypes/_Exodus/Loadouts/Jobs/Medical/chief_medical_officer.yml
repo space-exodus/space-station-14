@@ -8,3 +8,35 @@
   id: ChiefMedicalOfficerHeadset
   equipment:
     ears: ClothingHeadsetCMO
+
+# Eyes
+- type: loadout
+  id: ChiefMedicalOfficerHud
+  equipment:
+    eyes: ClothingEyesHudChemMed
+
+# Neck
+- type: loadoutEffectGroup
+  id: NewbieChiefMedicalOfficer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: ChiefMedicalOfficerScarf
+  equipment:
+    neck: ClothingNeckScarfCMO
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieChiefMedicalOfficer
+
+- type: loadout
+  id: ChiefMedicalOfficerTie
+  equipment:
+    neck: ClothingNeckTieMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieChiefMedicalOfficer

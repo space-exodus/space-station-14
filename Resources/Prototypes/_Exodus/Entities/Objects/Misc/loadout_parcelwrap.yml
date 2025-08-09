@@ -1,107 +1,7 @@
 - type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieAtmos
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieAtmos
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieSec
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieSec
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieCap
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieCap
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieEngi
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieEngi
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieJanitor
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieJanitor
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieClown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieClown
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieMime
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieMime
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieService
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieService
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingNeckTieMedical
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingNeckTieMedical
-
-- type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckTieRainbow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -109,10 +9,9 @@
         startingItem: ClothingNeckTieRainbow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGothic0
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -120,10 +19,9 @@
         startingItem: ClothingUniformJumpskirtGothic0
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGothic1
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -131,10 +29,9 @@
         startingItem: ClothingUniformJumpskirtGothic1
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGothic2
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -142,10 +39,9 @@
         startingItem: ClothingUniformJumpskirtGothic2
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGothic3
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -153,10 +49,9 @@
         startingItem: ClothingUniformJumpskirtGothic3
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGothic4
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -164,10 +59,9 @@
         startingItem: ClothingUniformJumpskirtGothic4
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic0
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -175,10 +69,9 @@
         startingItem: ClothingUniformJumpsuitGothic0
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic1
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -186,10 +79,9 @@
         startingItem: ClothingUniformJumpsuitGothic1
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic2
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -197,10 +89,9 @@
         startingItem: ClothingUniformJumpsuitGothic2
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic3
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -208,10 +99,9 @@
         startingItem: ClothingUniformJumpsuitGothic3
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic4
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -219,10 +109,9 @@
         startingItem: ClothingUniformJumpsuitGothic4
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic5
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -230,10 +119,9 @@
         startingItem: ClothingUniformJumpsuitGothic5
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic6
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -241,10 +129,9 @@
         startingItem: ClothingUniformJumpsuitGothic6
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitGothic7
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -252,10 +139,9 @@
         startingItem: ClothingUniformJumpsuitGothic7
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorTeal
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -263,10 +149,9 @@
         startingItem: ClothingUniformJumpskirtColorTeal
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorTeal
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -274,10 +159,9 @@
         startingItem: ClothingHandsGlovesColorTeal
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorTeal
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -285,10 +169,9 @@
         startingItem: ClothingUniformJumpsuitColorTeal
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterCoatGentle
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -296,10 +179,9 @@
         startingItem: ClothingOuterCoatGentle
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandSkull
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -307,10 +189,9 @@
         startingItem: ClothingMaskBandSkull
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorWhite
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -318,10 +199,9 @@
         startingItem: ClothingOuterWinterColorWhite
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatMimesoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -329,10 +209,9 @@
         startingItem: ClothingHeadHatMimesoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorWhite
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -340,10 +219,9 @@
         startingItem: ClothingHandsGlovesColorWhite
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorWhite
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -351,10 +229,9 @@
         startingItem: ClothingShoesColorWhite
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorWhite
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -362,10 +239,9 @@
         startingItem: ClothingUniformJumpsuitColorWhite
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBeret
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -373,10 +249,9 @@
         startingItem: ClothingHeadHatBeret
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesFingerless
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -384,10 +259,9 @@
         startingItem: ClothingHandsGlovesFingerless
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorMaroon
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -395,10 +269,9 @@
         startingItem: ClothingUniformJumpskirtColorMaroon
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorMaroon
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -406,10 +279,9 @@
         startingItem: ClothingUniformJumpsuitColorMaroon
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakTrans
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -417,10 +289,9 @@
         startingItem: ClothingNeckCloakTrans
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakAdmin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -428,10 +299,9 @@
         startingItem: ClothingNeckCloakAdmin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadWehcellentCap
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -439,10 +309,9 @@
         startingItem: ClothingHeadWehcellentCap
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingEyesGlassesGarGiga
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -450,10 +319,9 @@
         startingItem: ClothingEyesGlassesGarGiga
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedLesbianLong
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -461,10 +329,9 @@
         startingItem: ClothingNeckScarfStripedLesbianLong
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitHawaiYellow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -472,10 +339,9 @@
         startingItem: ClothingUniformJumpsuitHawaiYellow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorYellow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -483,10 +349,9 @@
         startingItem: ClothingOuterWinterColorYellow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatYellowsoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -494,10 +359,9 @@
         startingItem: ClothingHeadHatYellowsoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorYellow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -505,10 +369,9 @@
         startingItem: ClothingUniformJumpskirtColorYellow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtYellowTurtleneckDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -516,10 +379,9 @@
         startingItem: ClothingUniformJumpskirtYellowTurtleneckDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorYellow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -527,10 +389,9 @@
         startingItem: ClothingShoesColorYellow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorYellow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -538,10 +399,9 @@
         startingItem: ClothingUniformJumpsuitColorYellow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -549,10 +409,9 @@
         startingItem: ClothingMaskBandGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -560,10 +419,9 @@
         startingItem: ClothingOuterWinterColorGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatGreensoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -571,10 +429,9 @@
         startingItem: ClothingHeadHatGreensoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterFlannelGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -582,10 +439,9 @@
         startingItem: ClothingOuterFlannelGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -593,10 +449,9 @@
         startingItem: ClothingUniformJumpskirtColorGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGreenTurtleneckDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -604,10 +459,9 @@
         startingItem: ClothingUniformJumpskirtGreenTurtleneckDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -615,10 +469,9 @@
         startingItem: ClothingHandsGlovesColorGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -626,10 +479,9 @@
         startingItem: ClothingShoesColorGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesGreenLizardskin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -637,10 +489,9 @@
         startingItem: ClothingShoesGreenLizardskin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -648,10 +499,9 @@
         startingItem: ClothingUniformJumpsuitColorGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesBootsWinter
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -659,10 +509,9 @@
         startingItem: ClothingShoesBootsWinter
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterCoat
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -670,10 +519,9 @@
         startingItem: ClothingOuterWinterCoat
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadBandGold
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -681,10 +529,9 @@
         startingItem: ClothingHeadBandGold
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadFishCap
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -692,10 +539,9 @@
         startingItem: ClothingHeadFishCap
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBizarreSoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -703,10 +549,9 @@
         startingItem: ClothingHeadHatBizarreSoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterPonchoClassic
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -714,10 +559,9 @@
         startingItem: ClothingOuterPonchoClassic
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitNanotrasen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -725,10 +569,9 @@
         startingItem: ClothingUniformJumpsuitNanotrasen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -736,10 +579,9 @@
         startingItem: ClothingMaskBandBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -747,10 +589,9 @@
         startingItem: ClothingOuterWinterColorBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatCowboyBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -758,10 +599,9 @@
         startingItem: ClothingHeadHatCowboyBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBrownFlatcap
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -769,10 +609,9 @@
         startingItem: ClothingHeadHatBrownFlatcap
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckUSSPPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -780,10 +619,9 @@
         startingItem: ClothingNeckUSSPPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckDonkPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -791,10 +629,9 @@
         startingItem: ClothingNeckDonkPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckEarthPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -802,10 +639,9 @@
         startingItem: ClothingNeckEarthPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckLogistikaPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -813,10 +649,9 @@
         startingItem: ClothingNeckLogistikaPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckDeForestPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -824,10 +659,9 @@
         startingItem: ClothingNeckDeForestPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckNakamuraPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -835,10 +669,9 @@
         startingItem: ClothingNeckNakamuraPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckNanoTrasenPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -846,10 +679,9 @@
         startingItem: ClothingNeckNanoTrasenPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckSyndicakePin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -857,10 +689,9 @@
         startingItem: ClothingNeckSyndicakePin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckVitezstviPin
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -868,10 +699,9 @@
         startingItem: ClothingNeckVitezstviPin
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -879,10 +709,9 @@
         startingItem: ClothingUniformJumpskirtColorBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -890,10 +719,9 @@
         startingItem: ClothingHandsGlovesColorBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -901,10 +729,9 @@
         startingItem: ClothingShoesColorBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -912,10 +739,9 @@
         startingItem: ClothingUniformJumpsuitColorBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatCorpsoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -923,10 +749,9 @@
         startingItem: ClothingHeadHatCorpsoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitDameDane
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -934,10 +759,9 @@
         startingItem: ClothingUniformJumpsuitDameDane
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckHorrific
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -945,10 +769,9 @@
         startingItem: ClothingNeckHorrific
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -956,10 +779,9 @@
         startingItem: ClothingMaskBandRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitHawaiRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -967,10 +789,9 @@
         startingItem: ClothingUniformJumpsuitHawaiRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -978,10 +799,9 @@
         startingItem: ClothingOuterWinterColorRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatRedsoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -989,10 +809,9 @@
         startingItem: ClothingHeadHatRedsoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatCowboyRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1000,10 +819,9 @@
         startingItem: ClothingHeadHatCowboyRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterFlannelRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1011,10 +829,9 @@
         startingItem: ClothingOuterFlannelRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1022,10 +839,9 @@
         startingItem: ClothingUniformJumpskirtColorRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtRedTurtleneckDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1033,10 +849,9 @@
         startingItem: ClothingUniformJumpskirtRedTurtleneckDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1044,10 +859,9 @@
         startingItem: ClothingHandsGlovesColorRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingBeltSuspendersRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1055,10 +869,9 @@
         startingItem: ClothingBeltSuspendersRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1066,10 +879,9 @@
         startingItem: ClothingShoesColorRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1077,10 +889,9 @@
         startingItem: ClothingUniformJumpsuitColorRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterCoatBomber
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1088,10 +899,9 @@
         startingItem: ClothingOuterCoatBomber
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckMantle
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1099,10 +909,9 @@
         startingItem: ClothingNeckMantle
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingEyesGlassesGar
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1110,10 +919,9 @@
         startingItem: ClothingEyesGlassesGar
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckHeadphones
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1121,10 +929,9 @@
         startingItem: ClothingNeckHeadphones
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUnderSocksCoder
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1132,10 +939,9 @@
         startingItem: ClothingUnderSocksCoder
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUnderSocksBee
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1143,10 +949,9 @@
         startingItem: ClothingUnderSocksBee
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1154,10 +959,9 @@
         startingItem: ClothingOuterWinterColorOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatOrangesoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1165,10 +969,9 @@
         startingItem: ClothingHeadHatOrangesoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1176,10 +979,9 @@
         startingItem: ClothingUniformJumpskirtColorOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingEyesGlassesGarOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1187,10 +989,9 @@
         startingItem: ClothingEyesGlassesGarOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1198,10 +999,9 @@
         startingItem: ClothingHandsGlovesColorOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1209,10 +1009,9 @@
         startingItem: ClothingShoesColorOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1220,10 +1019,9 @@
         startingItem: ClothingUniformJumpsuitColorOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterCoatJensen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1231,10 +1029,9 @@
         startingItem: ClothingOuterCoatJensen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterDameDane
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1242,10 +1039,9 @@
         startingItem: ClothingOuterDameDane
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakNanotrasen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1253,10 +1049,9 @@
         startingItem: ClothingNeckCloakNanotrasen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakAroace
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1264,10 +1059,9 @@
         startingItem: ClothingNeckCloakAroace
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakAro
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1275,10 +1069,9 @@
         startingItem: ClothingNeckCloakAro
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakHerald
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1286,10 +1079,9 @@
         startingItem: ClothingNeckCloakHerald
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakGoliathCloak
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1297,10 +1089,9 @@
         startingItem: ClothingNeckCloakGoliathCloak
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakEnby
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1308,10 +1099,9 @@
         startingItem: ClothingNeckCloakEnby
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakMoth
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1319,10 +1109,9 @@
         startingItem: ClothingNeckCloakMoth
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakAce
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1330,10 +1119,9 @@
         startingItem: ClothingNeckCloakAce
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakLesbian
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1341,10 +1129,9 @@
         startingItem: ClothingNeckCloakLesbian
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakVoid
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1352,10 +1139,9 @@
         startingItem: ClothingNeckCloakVoid
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakGay
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1363,10 +1149,9 @@
         startingItem: ClothingNeckCloakGay
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakIntersex
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1374,10 +1159,9 @@
         startingItem: ClothingNeckCloakIntersex
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakPan
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1385,10 +1169,9 @@
         startingItem: ClothingNeckCloakPan
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtCasualGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1396,10 +1179,9 @@
         startingItem: ClothingUniformJumpskirtCasualGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtCasualRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1407,10 +1189,9 @@
         startingItem: ClothingUniformJumpskirtCasualRed
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtCasualBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1418,10 +1199,9 @@
         startingItem: ClothingUniformJumpskirtCasualBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtCasualPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1429,10 +1209,9 @@
         startingItem: ClothingUniformJumpskirtCasualPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitCasualGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1440,10 +1219,9 @@
         startingItem: ClothingUniformJumpsuitCasualGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitCasualRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1451,32 +1229,9 @@
         startingItem: ClothingUniformJumpsuitCasualRed
 
 - type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingUniformJumpsuitCasualGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingUniformJumpsuitCasualGreen
-
-- type: entity
-  parent: WrappedParcel
-  id: WrappedParcelClothingUniformJumpsuitCasualRed
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
-  components:
-  - type: ItemSlots
-    slots:
-      contents:
-        startingItem: ClothingUniformJumpsuitCasualRed
-
-- type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitCasualBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1484,10 +1239,9 @@
         startingItem: ClothingUniformJumpsuitCasualBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitCasualPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1495,10 +1249,9 @@
         startingItem: ClothingUniformJumpsuitCasualPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtCyanStripedDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1506,10 +1259,9 @@
         startingItem: ClothingUniformJumpskirtCyanStripedDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGreenStripedDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1517,10 +1269,9 @@
         startingItem: ClothingUniformJumpskirtGreenStripedDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtRedStripedDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1528,10 +1279,9 @@
         startingItem: ClothingUniformJumpskirtRedStripedDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtOrangeStripedDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1539,10 +1289,9 @@
         startingItem: ClothingUniformJumpskirtOrangeStripedDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtPinkStripedDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1550,10 +1299,9 @@
         startingItem: ClothingUniformJumpskirtPinkStripedDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1561,10 +1309,9 @@
         startingItem: ClothingNeckScarfStripedGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1572,10 +1319,9 @@
         startingItem: ClothingNeckScarfStripedBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedOrange
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1583,10 +1329,9 @@
         startingItem: ClothingNeckScarfStripedOrange
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1594,10 +1339,9 @@
         startingItem: ClothingNeckScarfStripedPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedAce
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1605,10 +1349,9 @@
         startingItem: ClothingNeckScarfStripedAce
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedGay
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1616,10 +1359,9 @@
         startingItem: ClothingNeckScarfStripedGay
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedBiSexual
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1627,10 +1369,9 @@
         startingItem: ClothingNeckScarfStripedBiSexual
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedLesbian
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1638,10 +1379,9 @@
         startingItem: ClothingNeckScarfStripedLesbian
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedAro
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1649,10 +1389,9 @@
         startingItem: ClothingNeckScarfStripedAro
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedNonBinary
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1660,10 +1399,9 @@
         startingItem: ClothingNeckScarfStripedNonBinary
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedAroace
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1671,10 +1409,9 @@
         startingItem: ClothingNeckScarfStripedAroace
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedTrans
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1682,10 +1419,9 @@
         startingItem: ClothingNeckScarfStripedTrans
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedInter
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1693,10 +1429,9 @@
         startingItem: ClothingNeckScarfStripedInter
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedPan
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1704,10 +1439,9 @@
         startingItem: ClothingNeckScarfStripedPan
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedLightBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1715,10 +1449,9 @@
         startingItem: ClothingNeckScarfStripedLightBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1726,10 +1459,9 @@
         startingItem: ClothingNeckScarfStripedBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1737,10 +1469,9 @@
         startingItem: ClothingNeckScarfStripedBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterPoncho
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1748,10 +1479,9 @@
         startingItem: ClothingOuterPoncho
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorRainbow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1759,10 +1489,9 @@
         startingItem: ClothingUniformJumpskirtColorRainbow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformColorRainbow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1770,10 +1499,9 @@
         startingItem: ClothingUniformColorRainbow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedRainbow
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1781,10 +1509,9 @@
         startingItem: ClothingNeckScarfStripedRainbow
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorPink
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1792,10 +1519,9 @@
         startingItem: ClothingUniformJumpskirtColorPink
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorPink
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1803,10 +1529,9 @@
         startingItem: ClothingUniformJumpsuitColorPink
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorLightBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1814,10 +1539,9 @@
         startingItem: ClothingOuterWinterColorLightBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorLightBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1825,10 +1549,9 @@
         startingItem: ClothingUniformJumpskirtColorLightBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorLightBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1836,10 +1559,9 @@
         startingItem: ClothingHandsGlovesColorLightBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorLightBrown
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1847,10 +1569,9 @@
         startingItem: ClothingUniformJumpsuitColorLightBrown
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitFamilyGuy
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1858,10 +1579,9 @@
         startingItem: ClothingUniformJumpsuitFamilyGuy
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandGrey
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1869,10 +1589,9 @@
         startingItem: ClothingMaskBandGrey
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorGray
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1880,10 +1599,9 @@
         startingItem: ClothingOuterWinterColorGray
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatGreysoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1891,10 +1609,9 @@
         startingItem: ClothingHeadHatGreysoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatCowboyGrey
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1902,10 +1619,9 @@
         startingItem: ClothingHeadHatCowboyGrey
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatGreyFlatcap
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1913,10 +1629,9 @@
         startingItem: ClothingHeadHatGreyFlatcap
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterHoodieGrey
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1924,10 +1639,9 @@
         startingItem: ClothingOuterHoodieGrey
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorGrey
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1935,10 +1649,9 @@
         startingItem: ClothingUniformJumpskirtColorGrey
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorGray
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1946,10 +1659,9 @@
         startingItem: ClothingHandsGlovesColorGray
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorGrey
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1957,10 +1669,9 @@
         startingItem: ClothingUniformJumpsuitColorGrey
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtBlueTurtleneckDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1968,10 +1679,9 @@
         startingItem: ClothingUniformJumpskirtBlueTurtleneckDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1979,10 +1689,9 @@
         startingItem: ClothingHandsGlovesColorBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -1990,10 +1699,9 @@
         startingItem: ClothingShoesColorBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2001,10 +1709,9 @@
         startingItem: ClothingUniformJumpsuitColorBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2012,10 +1719,9 @@
         startingItem: ClothingMaskBandBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitHawaiBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2023,10 +1729,9 @@
         startingItem: ClothingUniformJumpsuitHawaiBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2034,10 +1739,9 @@
         startingItem: ClothingOuterWinterColorBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBluesoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2045,10 +1749,9 @@
         startingItem: ClothingHeadHatBluesoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterFlannelBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2056,10 +1759,9 @@
         startingItem: ClothingOuterFlannelBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2067,10 +1769,9 @@
         startingItem: ClothingUniformJumpskirtColorBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatSolidHeadband
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2078,10 +1779,9 @@
         startingItem: ClothingHeadHatSolidHeadband
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatStrawHat
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2089,10 +1789,9 @@
         startingItem: ClothingHeadHatStrawHat
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatSombrero
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2100,10 +1799,9 @@
         startingItem: ClothingHeadHatSombrero
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtYellowOldDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2111,10 +1809,9 @@
         startingItem: ClothingUniformJumpskirtYellowOldDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterCoatTrench
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2122,10 +1819,9 @@
         startingItem: ClothingOuterCoatTrench
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesDameDane
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2133,10 +1829,9 @@
         startingItem: ClothingShoesDameDane
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorDarkGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2144,10 +1839,9 @@
         startingItem: ClothingUniformJumpskirtColorDarkGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorDarkGreen
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2155,10 +1849,9 @@
         startingItem: ClothingUniformJumpsuitColorDarkGreen
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorDarkBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2166,10 +1859,9 @@
         startingItem: ClothingUniformJumpsuitColorDarkBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorDarkBlue
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2177,10 +1869,9 @@
         startingItem: ClothingUniformJumpskirtColorDarkBlue
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2188,10 +1879,9 @@
         startingItem: ClothingOuterWinterColorPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatPurplesoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2199,10 +1889,9 @@
         startingItem: ClothingHeadHatPurplesoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtPurpleTurtleneckDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2210,10 +1899,9 @@
         startingItem: ClothingUniformJumpskirtPurpleTurtleneckDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2221,10 +1909,9 @@
         startingItem: ClothingHandsGlovesColorPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2232,10 +1919,9 @@
         startingItem: ClothingShoesColorPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorPurple
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2243,10 +1929,9 @@
         startingItem: ClothingUniformJumpsuitColorPurple
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitFlannel
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2254,10 +1939,9 @@
         startingItem: ClothingUniformJumpsuitFlannel
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBeretFrench
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2265,10 +1949,9 @@
         startingItem: ClothingHeadHatBeretFrench
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskBandBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2276,10 +1959,9 @@
         startingItem: ClothingMaskBandBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitHawaiBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2287,10 +1969,9 @@
         startingItem: ClothingUniformJumpsuitHawaiBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterWinterColorBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2298,10 +1979,9 @@
         startingItem: ClothingOuterWinterColorBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBlacksoft
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2309,10 +1989,9 @@
         startingItem: ClothingHeadHatBlacksoft
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatCowboyBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2320,10 +1999,9 @@
         startingItem: ClothingHeadHatCowboyBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingOuterHoodieBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2331,10 +2009,9 @@
         startingItem: ClothingOuterHoodieBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtColorBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2342,10 +2019,9 @@
         startingItem: ClothingUniformJumpskirtColorBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHandsGlovesColorBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2353,10 +2029,9 @@
         startingItem: ClothingHandsGlovesColorBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingBeltSuspendersBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2364,10 +2039,9 @@
         startingItem: ClothingBeltSuspendersBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesColorBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2375,10 +2049,9 @@
         startingItem: ClothingShoesColorBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpsuitColorBlack
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2386,10 +2059,9 @@
         startingItem: ClothingUniformJumpsuitColorBlack
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatCanadaBeanie
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2397,10 +2069,9 @@
         startingItem: ClothingHeadHatCanadaBeanie
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadRastaHat
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2408,10 +2079,9 @@
         startingItem: ClothingHeadRastaHat
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckScarfStripedZebra
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2419,10 +2089,9 @@
         startingItem: ClothingNeckScarfStripedZebra
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingMaskNeckGaiter
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2430,10 +2099,9 @@
         startingItem: ClothingMaskNeckGaiter
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingHeadHatBowlerHat
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2441,10 +2109,9 @@
         startingItem: ClothingHeadHatBowlerHat
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingShoesBootsLaceup
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2452,10 +2119,9 @@
         startingItem: ClothingShoesBootsLaceup
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtGreenElegantDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2463,10 +2129,9 @@
         startingItem: ClothingUniformJumpskirtGreenElegantDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtRedElegantDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2474,10 +2139,9 @@
         startingItem: ClothingUniformJumpskirtRedElegantDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtBlueElegantDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2485,10 +2149,9 @@
         startingItem: ClothingUniformJumpskirtBlueElegantDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtPurpleElegantDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2496,10 +2159,9 @@
         startingItem: ClothingUniformJumpskirtPurpleElegantDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingUniformJumpskirtBlackElegantDress
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:
@@ -2507,10 +2169,9 @@
         startingItem: ClothingUniformJumpskirtBlackElegantDress
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: WrappedParcel
   id: WrappedParcelClothingNeckCloakBi
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
   components:
   - type: ItemSlots
     slots:

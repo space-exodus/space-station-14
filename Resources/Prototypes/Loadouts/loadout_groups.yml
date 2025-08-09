@@ -140,7 +140,7 @@
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
 
-# Command
+# region Command
 - type: loadoutGroup
   id: CaptainHead
   name: loadout-group-captain-head
@@ -148,6 +148,7 @@
   loadouts:
   - CaptainHead
   - CaptainCap
+  - CaptainBeret # Exodus-Better-Loadout
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -170,6 +171,11 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
+  # Exodus-Better-Loadout-Start
+  - CaptainMantleShoulder
+  - CaptainTie
+  - CaptainScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -185,7 +191,10 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+  # Exodus-Better-Loadout-Start
   - Captaincoat
+  - CaptainTrenchcoat
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: HoPHead
@@ -212,6 +221,7 @@
   loadouts:
   - HoPCloak
   - HoPMantle
+  - HoPScarf # Exodus-Better-Loadout
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -230,7 +240,7 @@
   - HoPWintercoat
   - HoPCoat
 
-# Civilian
+# region Civilian
 - type: loadoutGroup
   id: PassengerJumpsuit
   name: loadout-group-passenger-jumpsuit
@@ -643,7 +653,7 @@
   - Ocarina
   - Bagpipe
 
-# Cargo
+# region Cargo
 - type: loadoutGroup
   id: QuartermasterHead
   name: loadout-group-quartermaster-head
@@ -669,6 +679,7 @@
   loadouts:
   - QuartermasterCloak
   - QuartermasterMantle
+  - QuartermasterScarf # Exodus-Better-Loadout
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -742,7 +753,7 @@
   - SalvageBoots
   - CargoWinterBoots
 
-# Engineering
+# region Engineering
 - type: loadoutGroup
   id: ChiefEngineerHead
   name: loadout-group-chief-engineer-head
@@ -767,6 +778,10 @@
   loadouts:
   - ChiefEngineerCloak
   - ChiefEngineerMantle
+  # Exodus-Better-Loadout-Start
+  - ChiefEngineerTie
+  - ChiefEngineerScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
@@ -881,7 +896,7 @@
   - LoadoutSpeciesVoxNitrogen
   - EmergencyOxygenExtendedMechInjector # Exodus-ThickSyringes
 
-# Science
+# region Science
 - type: loadoutGroup
   id: ResearchDirectorHead
   name: loadout-group-research-director-head
@@ -1002,7 +1017,7 @@
   - WhiteJumpsuit
   - WhiteJumpskirt
 
-# Security
+# region Security
 - type: loadoutGroup
   id: HeadofSecurityHead
   name: loadout-group-head-of-security-head
@@ -1035,7 +1050,11 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   - HeadofSecurityShoulderMantle # Corvax-Loadouts
-  - HeadofSecurityClothingNeckCloakFur # Exodus-Loadouts-Update
+  # Exodus-Better-Loadout-Start
+  - HeadofSecurityCloakFur
+  - HoSTie
+  - HoSScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1193,7 +1212,7 @@
   loadouts:
   - SecStar
 
-# Medical
+# region Medical
 - type: loadoutGroup
   id: ChiefMedicalOfficerHead
   name: loadout-group-chief-medical-officer-head
@@ -1217,6 +1236,7 @@
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerLabCoat
+  - RegularLabCoat # Exodus-Better-Loadout
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
@@ -1226,6 +1246,10 @@
   loadouts:
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
+  # Exodus-Better-Loadout-Start
+  - ChiefMedicalOfficerTie
+  - ChiefMedicalOfficerScarf
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
@@ -1387,7 +1411,7 @@
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
 
-# Wildcards
+# region Wildcards
 - type: loadoutGroup
   id: ReporterJumpsuit
   name: loadout-group-reporter-jumpsuit
@@ -1418,7 +1442,7 @@
   - GreenBoxingGloves
   - YellowBoxingGloves
 
-# Other
+# region Other
 - type: loadoutGroup
   id: SurvivalSyndicate
   name: loadout-group-survival-syndicate

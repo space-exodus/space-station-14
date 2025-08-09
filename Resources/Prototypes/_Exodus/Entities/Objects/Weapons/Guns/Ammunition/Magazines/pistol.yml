@@ -1,7 +1,6 @@
 - type: entity
   id: MagazinePistolExtended
   name: machine pistol magazine extended (.35 auto)
-  description: 1
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: Sprite
@@ -20,7 +19,6 @@
 - type: entity
   id: MagazinePistolLight
   name: machine light pistol magazine (.15 auto)
-  description: 1
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: Sprite
@@ -39,7 +37,6 @@
 - type: entity
   id: MagazinePistolAlt
   name: machine pistol magazine (.25 auto)
-  description: 1
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: Sprite
