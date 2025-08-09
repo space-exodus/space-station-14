@@ -1,67 +1,4 @@
 - type: loadout
-  id: LoadoutClothingNeckTieAtmos
-  dummyEntity: LoadoutDummyClothingNeckTieAtmos
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieAtmos
-
-- type: loadout
-  id: LoadoutClothingNeckTieSec
-  dummyEntity: LoadoutDummyClothingNeckTieSec
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieSec
-
-- type: loadout
-  id: LoadoutClothingNeckTieCap
-  dummyEntity: LoadoutDummyClothingNeckTieCap
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieCap
-
-- type: loadout
-  id: LoadoutClothingNeckTieEngi
-  dummyEntity: LoadoutDummyClothingNeckTieEngi
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieEngi
-
-- type: loadout
-  id: LoadoutClothingNeckTieJanitor
-  dummyEntity: LoadoutDummyClothingNeckTieJanitor
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieJanitor
-
-- type: loadout
-  id: LoadoutClothingNeckTieClown
-  dummyEntity: LoadoutDummyClothingNeckTieClown
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieClown
-
-- type: loadout
-  id: LoadoutClothingNeckTieMime
-  dummyEntity: LoadoutDummyClothingNeckTieMime
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieMime
-
-- type: loadout
-  id: LoadoutClothingNeckTieService
-  dummyEntity: LoadoutDummyClothingNeckTieService
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieService
-
-- type: loadout
-  id: LoadoutClothingNeckTieMedical
-  dummyEntity: LoadoutDummyClothingNeckTieMedical
-  storage:
-    back:
-    - WrappedParcelClothingNeckTieMedical
-
-- type: loadout
   id: LoadoutClothingNeckTieRainbow
   dummyEntity: LoadoutDummyClothingNeckTieRainbow
   storage:
@@ -907,20 +844,6 @@
   storage:
     back:
     - WrappedParcelClothingUniformJumpskirtCasualPurple
-
-- type: loadout
-  id: LoadoutClothingUniformJumpsuitCasualGreen
-  dummyEntity: LoadoutDummyClothingUniformJumpsuitCasualGreen
-  storage:
-    back:
-    - WrappedParcelClothingUniformJumpsuitCasualGreen
-
-- type: loadout
-  id: LoadoutClothingUniformJumpsuitCasualRed
-  dummyEntity: LoadoutDummyClothingUniformJumpsuitCasualRed
-  storage:
-    back:
-    - WrappedParcelClothingUniformJumpsuitCasualRed
 
 - type: loadout
   id: LoadoutClothingUniformJumpsuitCasualGreen

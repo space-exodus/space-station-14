@@ -13,6 +13,7 @@ loadout-group-chief-medical-officer-headset = Главный врач, гарн�
 loadout-group-chief-medical-officer-backpack = Главный врач, рюкзак
 loadout-group-chief-medical-officer-gloves = Главный врач, перчатки
 loadout-group-chief-medical-officer-mask = Главный врач, маска
+loadout-group-chief-medical-officer-glasses = Главный врач, очки
 
 # Engineering Сhief Engineer
 loadout-group-chief-engineer-headset = Старший инженер, гарнитура
@@ -61,3 +62,5 @@ loadout-group-captain-headset = Капитан, гарнитура
 
 # Command HOP
 loadout-group-hop-headset = Глава персонала, гарнитура
+
+loadout-group-trinkets-clothing = Одежда, безделушки

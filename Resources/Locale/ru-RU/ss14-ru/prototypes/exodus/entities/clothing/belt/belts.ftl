@@ -9,3 +9,6 @@ ent-ClothingBeltDSCommander = { ent-ClothingBeltDS }
 ent-ClothingBeltDSSpecialist = { ent-ClothingBeltDS }
     .desc = { ent-ClothingBeltDS.desc }
     .suffix = Специалист
+ent-ClothingBeltUtilityWebbing = инженерная жилетка
+    .desc = Более удобный аналог пояса с инструментами!
+

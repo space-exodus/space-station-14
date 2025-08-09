@@ -109,7 +109,7 @@
     state: base
 
 - type: entity
-  id: LoadoutDummyWeaponRevolverMateba
+  id: LoadoutDummyWeaponRevolverMatebaLoadout
   categories: [ HideSpawnMenu ]
   name: Mateba
   description: A replic of modern revolver used by Nanotrasen’s elite. Loads 6 rounds of .45 magnum.

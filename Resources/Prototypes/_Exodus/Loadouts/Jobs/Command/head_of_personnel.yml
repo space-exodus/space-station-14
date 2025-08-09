@@ -4,6 +4,24 @@
   equipment:
     outerClothing: ClothingOuterCoatHOP
 
+# Neck
+- type: loadoutEffectGroup
+  id: NewbieHoP
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: HoPScarf
+  equipment:
+    neck: ClothingNeckScarfHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieHoP
+
 #Ears
 - type: loadout
   id: HeadsetAltHOP
