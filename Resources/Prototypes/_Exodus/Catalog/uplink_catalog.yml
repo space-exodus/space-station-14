@@ -19,6 +19,22 @@
           - SurplusBundle
 
 - type: listing
+  id: UplinkMindSlaveImplant
+  name: uplink-mindslave-implant-name
+  description: uplink-mindslave-implant-desc
+  productEntity: MindSlaveImplanter
+  icon: { sprite: /Textures/Exodus/Interface/Misc/mindslave_icon.rsi, state: icon }
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkImplants
+  conditions:
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
   id: UplinkCatEars
   name: uplink-cat-ears-name
   description: uplink-cat-ears-desc
