@@ -1,0 +1,6 @@
+# Neck
+- type: loadout
+  id: CargoScarf
+  equipment:
+    neck: ClothingNeckScarfStripedBrown
+

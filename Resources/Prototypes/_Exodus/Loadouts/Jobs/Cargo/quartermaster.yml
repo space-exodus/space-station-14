@@ -26,3 +26,20 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: NewbieQuartermaster
+
+- type: loadoutEffectGroup
+  id: CargoAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 144000 # 20 hrs
+
+- type: loadout
+  id: CargoTie
+  equipment:
+    neck: ClothingNeckTieCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: CargoAverage

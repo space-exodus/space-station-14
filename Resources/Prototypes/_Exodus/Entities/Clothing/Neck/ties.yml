@@ -153,6 +153,23 @@
 
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckTieCargo
+  name: cargo tie
+  description: A tie that can be used as a handkerchief while watching and crying over the broken department shuttle.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/cargo.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/cargo.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckTieRainbow
   name: Rainbow tie
   description: RaInBoW!!!
@@ -167,3 +184,4 @@
     - WhitelistChameleon
     - ClothMade
     - Recyclable
+

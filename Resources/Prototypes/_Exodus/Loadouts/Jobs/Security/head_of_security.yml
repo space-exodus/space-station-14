@@ -39,14 +39,6 @@
   - !type:GroupLoadoutEffect
     proto: NewbieHoS
 
-- type: loadout
-  id: HoSTie
-  equipment:
-    neck: ClothingNeckTieSec
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: NewbieHoS
-
 # OuterClothing
 - type: loadout
   id: HeadofSecurityOvercoat

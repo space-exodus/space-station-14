@@ -27,28 +27,3 @@
   - !type:GroupLoadoutEffect
     proto: NewbieChiefEngineer
 
-- type: loadout
-  id: ChiefEngineerTie
-  equipment:
-    neck: ClothingNeckTieEngi
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: NewbieChiefEngineer
-
-# Belt
-- type: loadoutEffectGroup
-  id: UtilityWebbing
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 72000 # 20 hrs
-
-- type: loadout
-  id: UtilityWebbing
-  equipment:
-    belt: ClothingBeltUtilityWebbingEngineering
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: UtilityWebbing
