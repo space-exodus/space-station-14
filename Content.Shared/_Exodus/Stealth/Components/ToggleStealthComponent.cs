@@ -5,7 +5,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Exodus.Stealth.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent]
 public sealed partial class ToggleStealthComponent : Component
 {
     [DataField]
@@ -17,6 +17,6 @@ public sealed partial class ToggleStealthComponent : Component
     [DataField]
     public StealthData Stealth = new();
 
-    [DataField, AutoNetworkedField]
+    [DataField]
     public EntityUid Target;
 }
