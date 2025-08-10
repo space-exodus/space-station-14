@@ -2,7 +2,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Ghost;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
-using Content.Shared.Stealth.Components;
+using Content.Shared.Exodus.Stealth.Components;//Exodus-RefactorStealthSystem
 using Content.Shared.Whitelist;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -83,7 +83,7 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
         if (data.HideInContainer && (ent.Comp.Flags & MetaDataFlags.InContainer) != 0)
             return false;
 
-        if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth) && stealth.Enabled)
+        if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth))//Exodus-RefactorStealthSystem
             return false;
 
         if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)

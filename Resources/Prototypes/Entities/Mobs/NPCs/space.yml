@@ -357,12 +357,14 @@
       radius: 1.1
       energy: 1.5
       color: "#4faffb"
-    - type: Stealth
-      enabledOnDeath: false
-      maxVisibility: 1.2
-    - type: StealthOnMove
-      passiveVisibilityRate: -0.25
-      movementVisibilityRate: 0.25
+#Exodus-RefactorStealthSystem-Begin
+    - type: StealthOnSpawn
+      stealth:
+        enabledOnDeath: false
+        maxVisibility: 1.2
+        passiveVisibilityRate: -0.25
+        movementVisibilityRate: 0.25
+#Exodus-RefactorStealthSystem-End
 
 - type: entity
   id: MobCobraSpaceSalvage

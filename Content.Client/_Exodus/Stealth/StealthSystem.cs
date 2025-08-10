@@ -1,16 +1,15 @@
-//This system was commented out after the stealth system was refactored.
-//You can find it on the path "Content.Client/_Exodus/Stealth/StealthSystem.cs"
+// © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 
-
-/*using Content.Client.Interactable.Components;
+using System.Linq;
+using Content.Client.Interactable.Components;
 using Content.Client.StatusIcon;
-using Content.Shared.Stealth;
-using Content.Shared.Stealth.Components;
+using Content.Shared.Exodus.Stealth;
+using Content.Shared.Exodus.Stealth.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client.Stealth;
+namespace Content.Client.Exodus.Stealth;
 
 public sealed class StealthSystem : SharedStealthSystem
 {
@@ -27,17 +26,16 @@ public sealed class StealthSystem : SharedStealthSystem
         _shader = _protoMan.Index<ShaderPrototype>("Stealth").InstanceUnique();
 
         SubscribeLocalEvent<StealthComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<StealthComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<StealthComponent, BeforePostShaderRenderEvent>(OnShaderRender);
+
+        SubscribeLocalEvent<StealthComponent, StealthRequestChangeEvent>(OnRequestChange);
     }
 
-    public override void SetEnabled(EntityUid uid, bool value, StealthComponent? component = null)
-    {
-        if (!Resolve(uid, ref component) || component.Enabled == value)
-            return;
 
-        base.SetEnabled(uid, value, component);
-        SetShader(uid, value, component);
+    private void OnRequestChange(EntityUid uid, StealthComponent comp, StealthRequestChangeEvent args)
+    {
+        bool enabled = comp.RequestsStealth.Count > 0;
+        SetShader(uid, enabled, comp);
     }
 
     private void SetShader(EntityUid uid, bool enabled, StealthComponent? component = null, SpriteComponent? sprite = null)
@@ -62,11 +60,6 @@ public sealed class StealthSystem : SharedStealthSystem
             RemCompDeferred(uid, outline);
             component.HadOutline = true;
         }
-    }
-
-    private void OnStartup(EntityUid uid, StealthComponent component, ComponentStartup args)
-    {
-        SetShader(uid, component.Enabled, component);
     }
 
     private void OnShutdown(EntityUid uid, StealthComponent component, ComponentShutdown args)
@@ -101,4 +94,3 @@ public sealed class StealthSystem : SharedStealthSystem
         _sprite.SetColor((uid, args.Sprite), new Color(visibility, visibility, 1, 1));
     }
 }
-*/

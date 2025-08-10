@@ -160,12 +160,13 @@
   - type: ToggleClothing
     action: ActionTogglePhaseCloak
     disableOnUnequip: true
-  - type: ComponentToggler
+#Exodus-RefactorStealthSystem-Begin
+  - type: ToggleStealth
     parent: true
-    components:
-    - type: Stealth
+    stealth:
       minVisibility: 0.1
       lastVisibility: 0.1
+#Exodus-RefactorStealthSystem-End
   - type: PowerCellDraw
     drawRate: 1.8 # 200 seconds on the default cell
   - type: ToggleCellDraw
