@@ -33,6 +33,9 @@ public sealed class ToggleStealthSystem : EntitySystem
         }
         else
         {
+            if (!comp.Target.IsValid())
+                return;
+
             if (!_stealthSystem.RemoveRequest(uid, comp.Target))
                 return;
         }

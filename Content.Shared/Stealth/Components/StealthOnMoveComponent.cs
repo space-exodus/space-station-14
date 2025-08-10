@@ -1,5 +1,5 @@
 //This component was commented out after the stealth system was refactored.
-//Now StealthComponent perform its function.
+//Its functionality is now handled by StealthComponent.
 //You can find it on path "Content/Shared/_Exodus/Stealth/Components/StealthComponent.cs"
 
 /*using Robust.Shared.GameStates;

@@ -44,14 +44,26 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
         SubscribeLocalEvent<CardboardBoxComponent, DamageChangedEvent>(OnDamage);
 
         SubscribeLocalEvent<CardboardBoxComponent, ComponentStartup>(OnStartup);//Exodus-RefactorStealthSystem
+        SubscribeLocalEvent<CardboardBoxComponent, ComponentShutdown>(OnShutdown);//Exodus-RefactorStealthSystem
     }
 
 //Exodus-RefactorStealthSystem-Begin
     private void OnStartup(EntityUid uid, CardboardBoxComponent component, ComponentStartup args)
     {
+        if (component.Stealth == null)
+            return;
+    
+        if (TryComp<EntityStorageComponent>(uid, out var storage) && storage.Open)
+            return;
+    
+        _stealth.RequestStealth(uid, uid, component.Stealth);
+    }
+
+    private void OnShutdown(EntityUid uid, CardboardBoxComponent component, ComponentShutdown args)
+    {
         if (component.Stealth != null)
         {
-            _stealth.RequestStealth(uid, uid, component.Stealth);
+            _stealth.RemoveRequest(uid, uid);
         }
     }
 //Exodus-RefactorStealthSystem-End

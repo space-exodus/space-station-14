@@ -16,7 +16,7 @@
 - type: gameMap
   id: Dev
   mapName: Dev
-  mapPath: /Maps/Test/dev_map.yml
+  mapPath: /Maps/Exodus/Test/exodus_dev_map.yml #Exodus-RefactorStealthSystem
   minPlayers: 0
   stations:
     Dev:

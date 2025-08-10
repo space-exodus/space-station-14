@@ -1,6 +1,7 @@
 // © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 
 using Content.Shared.Exodus.Stealth.Components;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared.Exodus.Stealth;
 
@@ -14,6 +15,7 @@ public sealed partial class StealthOnSpawnSystem : EntitySystem
 
         SubscribeLocalEvent<StealthOnSpawnComponent, ComponentInit>(OnInit);
         SubscribeLocalEvent<StealthOnSpawnComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<StealthOnSpawnComponent, EntityUnpausedEvent>(OnUnpaused);
     }
 
     private void OnInit(EntityUid uid, StealthOnSpawnComponent comp, ComponentInit args)
@@ -29,5 +31,10 @@ public sealed partial class StealthOnSpawnSystem : EntitySystem
     {
         if (!_stealthSystem.RemoveRequest(uid, uid))
             return;
+    }
+
+    private void OnUnpaused(EntityUid uid, StealthOnSpawnComponent comp, ref EntityUnpausedEvent args)
+    {
+        _stealthSystem.RequestStealth(uid, uid, comp.Stealth);
     }
 }
