@@ -275,7 +275,7 @@ public abstract class SharedStealthSystem : EntitySystem
 
     public bool RequestStealth(EntityUid target, EntityUid requester, StealthData data)
     {
-        if (!Exists(target))
+        if (!Exists(target) || TerminatingOrDeleted(target))
             return false;
 
         if (!HasComp<StealthComponent>(target))
@@ -304,7 +304,7 @@ public abstract class SharedStealthSystem : EntitySystem
 
     public bool RemoveRequest(EntityUid requester, EntityUid target)
     {
-        if (!Exists(target))
+        if (!Exists(target) || TerminatingOrDeleted(target))
             return false;
 
         if (!TryComp<StealthComponent>(target, out var stealthComp))
