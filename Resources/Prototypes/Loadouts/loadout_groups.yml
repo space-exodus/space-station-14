@@ -681,7 +681,10 @@
   loadouts:
   - QuartermasterCloak
   - QuartermasterMantle
-  - QuartermasterScarf # Exodus-Better-Loadout
+  # Exodus-Better-Loadout-Start
+  - QuartermasterScarf
+  - CargoTie
+  # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -781,7 +784,7 @@
   - ChiefEngineerCloak
   - ChiefEngineerMantle
   # Exodus-Better-Loadout-Start
-  - ChiefEngineerTie
+  - EngineeringTie
   - ChiefEngineerScarf
   # Exodus-Better-Loadout-End
 
@@ -805,6 +808,7 @@
   loadouts:
   - YellowJumpsuit
   - YellowJumpskirt
+  - TechAssistentJumpsuit # Exodus-Better-Loadout-End
 
 - type: loadoutGroup
   id: StationEngineerHead
@@ -1054,7 +1058,7 @@
   - HeadofSecurityShoulderMantle # Corvax-Loadouts
   # Exodus-Better-Loadout-Start
   - HeadofSecurityCloakFur
-  - HoSTie
+  - SecTie
   - HoSScarf
   # Exodus-Better-Loadout-End
 
@@ -1094,7 +1098,7 @@
   - WardenArmoredWinterCoat
 
 - type: loadoutGroup
-  id: SecurityHead
+  id: SecurityOfficerHead
   name: loadout-group-security-head
   minLimit: 0
   loadouts:
@@ -1104,7 +1108,7 @@
   - TrooperHat
 
 - type: loadoutGroup
-  id: SecurityJumpsuit
+  id: SecurityOfficerJumpsuit
   name: loadout-group-security-jumpsuit
   loadouts:
   - SecurityJumpsuit
@@ -1116,7 +1120,7 @@
   - TrooperUniform
 
 - type: loadoutGroup
-  id: SecurityBackpack
+  id: SecurityOfficerBackpack
   name: loadout-group-security-backpack
   loadouts:
   - SecurityBackpack
@@ -1124,7 +1128,7 @@
   - SecurityDuffel
 
 - type: loadoutGroup
-  id: SecurityBelt
+  id: SecurityOfficerBelt
   name: loadout-group-security-belt
   loadouts:
   - SecurityBelt
@@ -1132,7 +1136,7 @@
   - BeltHolster
 
 - type: loadoutGroup
-  id: SecurityOuterClothing
+  id: SecurityOfficerOuterClothing
   name: loadout-group-security-outerclothing
   loadouts:
   - ArmorVestSec # Corvax
@@ -1142,7 +1146,7 @@
   - SecurityOfficerWintercoat
 
 - type: loadoutGroup
-  id: SecurityShoes
+  id: SecurityOfficerShoes
   name: loadout-group-security-shoes
   loadouts:
   - CombatBoots
@@ -1151,7 +1155,7 @@
   - SecurityWinterBoots
 
 - type: loadoutGroup
-  id: SecurityPDA
+  id: SecurityOfficerPDA
   name: loadout-group-security-id
   loadouts:
   - SecurityPDA
@@ -1170,6 +1174,8 @@
   name: loadout-group-detective-neck
   minLimit: 0
   loadouts:
+  - SecTie
+  - ScarfStripedRed
   - DetectiveTie
   - HorrificTie
 
@@ -1255,7 +1261,7 @@
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
   # Exodus-Better-Loadout-Start
-  - ChiefMedicalOfficerTie
+  - MedicalTie
   - ChiefMedicalOfficerScarf
   # Exodus-Better-Loadout-End
 
@@ -1301,7 +1307,7 @@
   - SeniorPhysicianLabCoat
 
 - type: loadoutGroup
-  id: MedicalBackpack
+  id: MedicalDoctorBackpack
   name: loadout-group-medical-doctor-backpack
   loadouts:
   - MedicalDoctorBackpack
@@ -1309,7 +1315,7 @@
   - MedicalDoctorDuffel
 
 - type: loadoutGroup
-  id: MedicalShoes
+  id: MedicalDoctorShoes
   name: loadout-group-medical-doctor-shoes
   loadouts:
   - WhiteShoes
@@ -1323,16 +1329,16 @@
   - SeniorPhysicianPDA
 
 - type: loadoutGroup
-  id: MedicalGloves
-  name: loadout-group-medical-gloves
+  id: MedicalDoctorGloves
+  name: loadout-group-medical-doctor-gloves
   minLimit: 0
   loadouts:
   - LatexGloves
   - NitrileGloves
 
 - type: loadoutGroup
-  id: MedicalMask
-  name: loadout-group-medical-mask
+  id: MedicalDoctorMask
+  name: loadout-group-medical-doctor-mask
   minLimit: 0
   loadouts:
   - SterileMask

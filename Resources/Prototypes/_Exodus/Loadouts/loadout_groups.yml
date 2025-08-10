@@ -41,6 +41,81 @@
   - GlassesJamjar
   - GlassesJensen
 
+- type: loadoutGroup
+  id: ParamedicMask
+  name: loadout-group-paramedic-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+
+- type: loadoutGroup
+  id: ParamedicGloves
+  name: loadout-group-paramedic-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
+  id: ParamedicBackpack
+  name: loadout-group-paramedic-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+
+- type: loadoutGroup
+  id: ParamediсEyewear
+  name: loadout-group-paramedic-glasses
+  minLimit: 0
+  loadouts:
+  - MedicalHud
+  - MedicalEyePatchHud
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: MedicalInternBackpack
+  name: loadout-group-medical-intern-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+
+- type: loadoutGroup
+  id: MedicalInternEyewear
+  name: loadout-group-medical-intern-glasses
+  minLimit: 0
+  loadouts:
+  - MedicalHud
+  - MedicalEyePatchHud
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: ChemistMask
+  name: loadout-group-chemist-mask
+  minLimit: 0
+  loadouts:
+  - SterileMask
+
+- type: loadoutGroup
+  id: ChemistGloves
+  name: loadout-group-chemist-gloves
+  minLimit: 0
+  loadouts:
+  - LatexGloves
+  - NitrileGloves
+
+- type: loadoutGroup
+  id: ChemistShoes
+  name: loadout-group-chemist-shoes
+  loadouts:
+  - WhiteShoes
+  - MedicalWinterBoots
+
 # region Cargo
 - type: loadoutGroup
   id: QuartermasterBackpack
@@ -56,6 +131,22 @@
   loadouts:
   - QuartermasterHeadset
   - QuartermasterAltHeadset
+
+- type: loadoutGroup
+  id: CargoTechnicianNeck
+  name: loadout-group-cargo-technician-neck
+  minLimit: 0
+  loadouts:
+  - CargoTie
+  - CargoScarf
+
+- type: loadoutGroup
+  id: SalvageSpecialistNeck
+  name: loadout-group-salvage-specialist-neck
+  minLimit: 0
+  loadouts:
+  - CargoTie
+  - CargoScarf
 
 # region Security
 - type: loadoutGroup
@@ -90,6 +181,14 @@
   loadouts:
   - SterileMask
   - MedicalSecurityMask
+
+- type: loadoutGroup
+  id: BrigmedicNeck
+  name: loadout-group-brigmedic-neck
+  minLimit: 0
+  loadouts:
+  - SecTie
+  - ScarfStripedRed
 
 - type: loadoutGroup
   id: BrigmedicOuterClothing
@@ -136,6 +235,14 @@
   loadouts:
   - HeadsetWarden
   - HeadsetAltWarden
+
+- type: loadoutGroup
+  id: WardenNeck
+  name: loadout-group-warden-neck
+  minLimit: 0
+  loadouts:
+  - SecTie
+  - ScarfStripedRed
 
 - type: loadoutGroup
   id: WardenGun
@@ -291,12 +398,28 @@
   - SecurityGunEnergyPistol
 
 - type: loadoutGroup
+  id: SecurityOfficerNeck
+  name: loadout-group-security-officer-neck
+  minLimit: 0
+  loadouts:
+  - SecTie
+  - ScarfStripedRed
+
+- type: loadoutGroup
   id: SecurityCadetBackpack
   name: loadout-group-security-cadet-backpack
   loadouts:
   - SecurityBackpack
   - SecuritySatchel
   - SecurityDuffel
+
+- type: loadoutGroup
+  id: SecurityCadetNeck
+  name: loadout-group-security-cadet-neck
+  minLimit: 0
+  loadouts:
+  - SecTie
+  - ScarfStripedRed
 
 # region Sciense
 - type: loadoutGroup
@@ -339,18 +462,50 @@
   - UtilityWebbing
 
 - type: loadoutGroup
-  id: EngineerBelt
-  name: loadout-group-engineer-belt
+  id: StationEngineerBelt
+  name: loadout-group-station-engineer-belt
   loadouts:
   - UtilityBelt
   - UtilityWebbing
 
 - type: loadoutGroup
-  id: EngineerBelt
-  name: loadout-group-engineer-belt
+  id: StationEngineerNeck
+  name: loadout-group-station-engineer-neck
+  minLimit: 0
+  loadouts:
+  - EngineeringTie
+  - EngineeringScarf
+
+- type: loadoutGroup
+  id: AtmosphericTechnicianBelt
+  name: loadout-group-atmospheric-technician-belt
   loadouts:
   - UtilityBelt
   - UtilityWebbing
+
+- type: loadoutGroup
+  id: AtmosphericTechnicianNeck
+  name: loadout-group-atmospheric-technician-neck
+  minLimit: 0
+  loadouts:
+  - EngineeringTie
+  - EngineeringScarf
+
+- type: loadoutGroup
+  id: TechnicalAssistantBackpack
+  name: loadout-group-technical-assistant-backpack
+  loadouts:
+  - StationEngineerBackpack
+  - StationEngineerSatchel
+  - StationEngineerDuffel
+
+- type: loadoutGroup
+  id: TechnicalAssistantNeck
+  name: loadout-group-technical-assistant-neck
+  minLimit: 0
+  loadouts:
+  - EngineeringTie
+  - EngineeringScarf
 
 # region Civilian
 - type: loadoutGroup

@@ -11,11 +11,11 @@
 - type: roleLoadout
   id: JobPilot
   groups:
-  - SecurityJumpsuit
-  - SecurityBackpack
-  - SecurityOuterClothing
-  - SecurityBelt
-  - SecurityShoes
+  - SecurityOfficerJumpsuit
+  - SecurityOfficerBackpack
+  - SecurityOfficerOuterClothing
+  - SecurityOfficerBelt
+  - SecurityOfficerShoes
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathTool
