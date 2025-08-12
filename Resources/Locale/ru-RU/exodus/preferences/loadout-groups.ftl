@@ -241,6 +241,7 @@ loadout-group-brigmedic-head = БригМедик, головной убор
 loadout-group-brigmedic-neck = БригМедик, шея
 loadout-group-brigmedic-jumpsuit = БригМедик, униформа
 loadout-group-brigmedic-gloves = БригМедик, перчатки
+loadout-group-brigmedic-gloves = БригМедик, перчатки
 loadout-group-brigmedic-outerclothing = БригМедик, верхняя одежда
 loadout-group-brigmedic-shoes = БригМедик, обувь
 loadout-group-brigmedic-backpack = БригМедик, рюкзак
