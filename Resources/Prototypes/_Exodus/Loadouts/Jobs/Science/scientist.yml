@@ -1,22 +1,22 @@
 # Neck
 - type: loadout
-  id: MimeTie
+  id: ScientistTie
   equipment:
-    neck: ClothingNeckTieMime
+    neck: ClothingNeckTieSci
   effects:
   - !type:GroupLoadoutEffect
-    proto: MimeAverage
+    proto: ScienceAverage
 
 - type: loadoutEffectGroup
-  id: MimeAverage
+  id: ScienceAverage
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:RoleTimeRequirement
-      role: JobMime
+      !type:DepartmentTimeRequirement
+      department: Science
       time: 36000 # 10 hrs
 
 - type: loadout
-  id: MimeScarf
+  id: ScienceScarf
   equipment:
-    neck: ClothingNeckScarfStripedZebra
+    neck: ClothingNeckScarfStripedPurple

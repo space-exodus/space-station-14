@@ -1,22 +1,22 @@
 # Neck
 - type: loadout
-  id: MimeTie
+  id: ServiceTie
   equipment:
-    neck: ClothingNeckTieMime
+    neck: ClothingNeckTieService
   effects:
   - !type:GroupLoadoutEffect
-    proto: MimeAverage
+    proto: ServiceAverage
 
 - type: loadoutEffectGroup
-  id: MimeAverage
+  id: ServiceAverage
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:RoleTimeRequirement
-      role: JobMime
+      !type:DepartmentTimeRequirement
+      department: Civilian
       time: 36000 # 10 hrs
 
 - type: loadout
-  id: MimeScarf
+  id: ServiceScarf
   equipment:
-    neck: ClothingNeckScarfStripedZebra
+    neck: ClothingNeckScarfStripedGreen

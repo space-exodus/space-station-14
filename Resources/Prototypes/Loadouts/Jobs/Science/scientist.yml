@@ -31,12 +31,13 @@
   equipment:
     head: ClothingHeadBandSkull
 
+# Exodus-Better-Loadout-Start
 # Neck
-
-- type: loadout
-  id: ScientistTie
-  equipment:
-    neck: ClothingNeckTieSci
+# - type: loadout
+#   id: ScientistTie
+#   equipment:
+#     neck: ClothingNeckTieSci
+# Exodus-Better-Loadout-End
 
 # Jumpsuit
 - type: loadout

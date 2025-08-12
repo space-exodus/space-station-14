@@ -1,21 +1,21 @@
 - type: loadoutEffectGroup
-  id: SecurityAverage
+  id: JanitorAverage
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:DepartmentTimeRequirement
-      department: Security
+      !type:RoleTimeRequirement
+      role: JobJanitor
       time: 36000 # 10 hrs
 
 - type: loadout
-  id: SecTie
+  id: JanitorTie
   equipment:
-    neck: ClothingNeckTieSec
+    neck: ClothingNeckTieJanitor
   effects:
   - !type:GroupLoadoutEffect
-    proto: SecurityAverage
+    proto: JanitorAverage
 
 - type: loadout
-  id: ScarfStripedRed
+  id: JanitorScarf
   equipment:
-    neck: ClothingNeckScarfStripedRed
+    neck: ClothingNeckScarfStripedPurple
