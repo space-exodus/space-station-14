@@ -5,7 +5,7 @@ scriptDir="$(cd "$(dirname "$0")" && pwd)"
 build_component() {
     local component
 
-    if [ -d "$scriptDir/Secrets" ]; then
+    if [ -d "$scriptDir/Secrets/ExodusSecrets.sln" ]; then
         component="Secrets/$1"
     else
         component="$1"
