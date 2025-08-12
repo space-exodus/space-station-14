@@ -8,3 +8,21 @@
   id: ResearchDirectorHeadset
   equipment:
     ears: ClothingHeadsetRD
+
+# Neck
+- type: loadoutEffectGroup
+  id: NewbieResearchDirector
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: ResearchDirectorScarf
+  equipment:
+    neck: ClothingNeckScarfRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieResearchDirector

@@ -32,20 +32,3 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: NewbieChiefMedicalOfficer
-
-- type: loadout
-  id: MedicalTie
-  equipment:
-    neck: ClothingNeckTieMedical
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: MedicalAverage
-
-- type: loadoutEffectGroup
-  id: MedicalAverage
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Medical
-      time: 144000 # 20 hrs

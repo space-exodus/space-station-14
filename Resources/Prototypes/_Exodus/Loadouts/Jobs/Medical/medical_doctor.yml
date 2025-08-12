@@ -20,4 +20,4 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Medical
-      time: 144000 # 20 hrs
+      time: 36000 # 10 hrs

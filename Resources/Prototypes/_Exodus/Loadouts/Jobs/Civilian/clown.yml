@@ -19,6 +19,32 @@
   equipment:
     mask: ClothingMaskBlushingClown
 
+# Neck
+- type: loadout
+  id: ClownTie
+  equipment:
+    neck: ClothingNeckTieClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClownAverage
+
+- type: loadoutEffectGroup
+  id: ClownAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: ClownScarf
+  equipment:
+    neck: ClothingNeckTieRainbow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClownAverage
+    
 # Jumpsuit
 - type: loadout
   id: ClownSuitBanana

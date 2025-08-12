@@ -34,7 +34,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Cargo
-      time: 144000 # 20 hrs
+      time: 36000 # 10 hrs
 
 - type: loadout
   id: CargoTie

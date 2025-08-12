@@ -439,6 +439,22 @@
 
 # region Civil, Passenger
 - type: loadoutGroup
+  id: PassengerFace
+  name: loadout-group-passenger-mask
+  minLimit: 0
+  loadouts:
+  - PassengerFace
+
+- type: loadoutGroup
+  id: PassengerNeck
+  name: loadout-group-passenger-neck
+  minLimit: 0
+  loadouts:
+  - PassengerTie
+  - PassengerScarf
+  - Mantle
+
+- type: loadoutGroup
   id: PassengerJumpsuit
   name: loadout-group-passenger-jumpsuit
   loadouts:
@@ -449,13 +465,6 @@
   - RainbowJumpskirt
 
 - type: loadoutGroup
-  id: PassengerFace
-  name: loadout-group-passenger-mask
-  minLimit: 0
-  loadouts:
-  - PassengerFace
-
-- type: loadoutGroup
   id: PassengerGloves
   name: loadout-group-passenger-gloves
   minLimit: 0
@@ -463,19 +472,12 @@
   - PassengerGloves
 
 - type: loadoutGroup
-  id: CommonBackpack
-  name: loadout-group-backpack
+  id: PassengerBackpack
+  name: loadout-group-passenger-backpack
   loadouts:
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
-
-- type: loadoutGroup
-  id: PassengerNeck
-  name: loadout-group-passenger-neck
-  minLimit: 0
-  loadouts:
-  - Mantle
 
 - type: loadoutGroup
   id: PassengerOuterClothing
@@ -501,12 +503,28 @@
   - BartenderBowler
 
 - type: loadoutGroup
+  id: BartenderNeck
+  name: loadout-group-bartender-neck
+  minLimit: 0
+  loadouts:
+  - ServiceTie
+  - ServiceScarf
+
+- type: loadoutGroup
   id: BartenderJumpsuit
   name: loadout-group-bartender-jumpsuit
   loadouts:
   - BartenderJumpsuit
   - BartenderJumpskirt
   - BartenderJumpsuitPurple
+
+- type: loadoutGroup
+  id: BartenderBackpack
+  name: loadout-group-bartender-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 - type: loadoutGroup
   id: BartenderOuterClothing
@@ -516,6 +534,31 @@
   - BartenderVest
   - BartenderApron
   - BartenderWintercoat
+
+# region Service Worker
+- type: loadoutGroup
+  id: ServiceWorkerNeck
+  name: loadout-group-service-worker-neck
+  minLimit: 0
+  loadouts:
+  - ServiceTie
+  - ServiceScarf
+
+- type: loadoutGroup
+  id: ServiceWorkerJumpsuit
+  name: loadout-group-service-worker-jumpsuit
+  loadouts:
+  - BartenderJumpsuit
+  - BartenderJumpskirt
+  - BartenderJumpsuitPurple
+
+- type: loadoutGroup
+  id: ServiceWorkerBackpack
+  name: loadout-group-service-worker-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 # region Chef
 - type: loadoutGroup
@@ -533,11 +576,27 @@
   - ChefMask
 
 - type: loadoutGroup
+  id: ChefNeck
+  name: loadout-group-chef-neck
+  minLimit: 0
+  loadouts:
+  - ServiceTie
+  - ServiceScarf
+
+- type: loadoutGroup
   id: ChefJumpsuit
   name: loadout-group-chef-jumpsuit
   loadouts:
   - ChefJumpsuit
   - ChefJumpskirt
+
+- type: loadoutGroup
+  id: ChefBackpack
+  name: loadout-group-chef-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 - type: loadoutGroup
   id: ChefOuterClothing
@@ -550,6 +609,14 @@
 
 # region Librarian
 - type: loadoutGroup
+  id: LibrarianNeck
+  name: loadout-group-librarian-neck
+  minLimit: 0
+  loadouts:
+  - ServiceTie
+  - ServiceScarf
+
+- type: loadoutGroup
   id: LibrarianJumpsuit
   name: loadout-group-librarian-jumpsuit
   loadouts:
@@ -557,6 +624,14 @@
   - LibrarianJumpskirt
   - CuratorJumpsuit
   - CuratorJumpskirt
+
+- type: loadoutGroup
+  id: LibrarianBackpack
+  name: loadout-group-librarian-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 # region Lawyer
 - type: loadoutGroup
@@ -580,6 +655,14 @@
   - LawyerJumpskirtRed
   - LawyerJumpsuitGood
   - LawyerJumpskirtGood
+
+- type: loadoutGroup
+  id: LawyerBackpack
+  name: loadout-group-lawyer-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 # region Chaplain
 - type: loadoutGroup
@@ -606,6 +689,7 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
+  - ChaplainScarf
 
 - type: loadoutGroup
   id: ChaplainJumpsuit
@@ -615,6 +699,14 @@
   - ChaplainJumpskirt
   - ChaplainRobesLight
   - ChaplainRobesDark
+
+- type: loadoutGroup
+  id: ChaplainBackpack
+  name: loadout-group-chaplain-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 - type: loadoutGroup
   id: ChaplainOuterClothing
@@ -635,6 +727,14 @@
   - JanitorHead
 
 - type: loadoutGroup
+  id: JanitorNeck
+  name: loadout-group-janitor-neck
+  minLimit: 0
+  loadouts:
+  - JanitorTie
+  - JanitorScarf
+
+- type: loadoutGroup
   id: JanitorJumpsuit
   name: loadout-group-janitor-jumpsuit
   loadouts:
@@ -649,6 +749,14 @@
   - JanitorRubberGloves
   - OrangeGloves
   - PurpleGloves
+
+- type: loadoutGroup
+  id: JanitorBackpack
+  name: loadout-group-janitor-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 - type: loadoutGroup
   id: JanitorOuterClothing
@@ -672,6 +780,14 @@
   loadouts:
   - BotanistHead
   - BotanistBandana
+
+- type: loadoutGroup
+  id: BotanistNeck
+  name: loadout-group-botanist-neck
+  minLimit: 0
+  loadouts:
+  - ServiceTie
+  - ServiceScarf
 
 - type: loadoutGroup
   id: BotanistJumpsuit
@@ -714,6 +830,14 @@
   - ClownMaskBanana
   - ClownMaskBlushing
   - ClownMaskSecurity
+
+- type: loadoutGroup
+  id: ClownNeck
+  name: loadout-group-clown-neck
+  minLimit: 0
+  loadouts:
+  - ClownTie
+  - ClownScarf
 
 - type: loadoutGroup
   id: ClownJumpsuit
@@ -789,6 +913,14 @@
   - MimeMaskScared
 
 - type: loadoutGroup
+  id: MimeNeck
+  name: loadout-group-mime-neck
+  minLimit: 0
+  loadouts:
+  - MimeTie
+  - MimeScarf
+
+- type: loadoutGroup
   id: MimeJumpsuit
   name: loadout-group-mime-jumpsuit
   loadouts:
@@ -838,6 +970,14 @@
   - MusicianJumpskirt
 
 - type: loadoutGroup
+  id: MusicianBackpack
+  name: loadout-group-musician-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
+
+- type: loadoutGroup
   id: MusicianOuterClothing
   name: loadout-group-musician-outerclothing
   minLimit: 0
@@ -850,7 +990,7 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - Microphone # Exodus-Loadouts-Update
+  - Microphone
   - Glockenspiel
   - MusicBox
   - Xylophone
@@ -1224,7 +1364,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyOxygenExtendedMechInjector # Exodus-ThickSyringes
+  - EmergencyOxygenExtendedMechInjector
 
 # region Science RD
 - type: loadoutGroup
@@ -1249,6 +1389,7 @@
   - ResearchDirectorMantle
   - ResearchDirectorCloak
   - ScientistTie
+  - ResearchDirectorScarf
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -1307,6 +1448,7 @@
   minLimit: 0
   loadouts:
   - ScientistTie
+  - ScienceScarf
 
 - type: loadoutGroup
   id: ScientistJumpsuit
@@ -1370,6 +1512,7 @@
   minLimit: 0
   loadouts:
   - ScientistTie
+  - ScienceScarf
 
 - type: loadoutGroup
   id: ResearchAssistantJumpsuit
@@ -2208,6 +2351,15 @@
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
 
+# region Wildcards Zookeeper
+- type: loadoutGroup
+  id: ZookeeperBackpack
+  name: loadout-group-zookeeper-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
+
 # region Wildcards Reporter
 - type: loadoutGroup
   id: ReporterJumpsuit
@@ -2216,6 +2368,13 @@
   - ReporterJumpsuit
   - JournalistJumpsuit
 
+- type: loadoutGroup
+  id: ReporterBackpack
+  name: loadout-group-reporter-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 # region Psychologist
 - type: loadoutGroup
   id: PsychologistJumpsuit
@@ -2231,6 +2390,7 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+
 # region Boxer
 - type: loadoutGroup
   id: BoxerJumpsuit
@@ -2247,6 +2407,14 @@
   - BlueBoxingGloves
   - GreenBoxingGloves
   - YellowBoxingGloves
+
+- type: loadoutGroup
+  id: BoxerBackpack
+  name: loadout-group-boxer-backpack
+  loadouts:
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
 
 # region Other
 - type: loadoutGroup
