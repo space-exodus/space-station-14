@@ -1,9 +1,6 @@
 - type: playTimeTracker
   id: JobIAA
 
-- type: playTimeTracker
-  id: JobPilot
-
 # - type: playTimeTracker # Exodus | Brigmedic is our job
 #   id: JobBrigmedic
   
