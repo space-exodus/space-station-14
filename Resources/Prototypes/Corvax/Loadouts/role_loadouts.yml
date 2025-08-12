@@ -8,18 +8,6 @@
   - Trinkets
   - GroupSpeciesBreathTool
 
-- type: roleLoadout
-  id: JobPilot
-  groups:
-  - SecurityJumpsuit
-  - SecurityBackpack
-  - SecurityOuterClothing
-  - SecurityBelt
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
-  - GroupSpeciesBreathTool
-
 # - type: roleLoadout # Exodus | Brigmedic is our job
 #   id: JobBrigmedic
 #   groups:
