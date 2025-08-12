@@ -177,3 +177,2248 @@
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Revolvers/sr27.rsi
     state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolMk58
+  categories: [ HideSpawnMenu ]
+  name: mk 58
+  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverInspector
+  categories: [ HideSpawnMenu ]
+  name: Inspector
+  description:  A detective's best friend. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverDeckard
+  categories: [ HideSpawnMenu ]
+  name: Deckard
+  description: A rare, custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    state: base
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverMateba
+  categories: [ HideSpawnMenu ]
+  name: Mateba
+  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponPistolMk58
+  categories: [ HideSpawnMenu ]
+  name: mk 58
+  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverInspector
+  categories: [ HideSpawnMenu ]
+  name: Inspector
+  description:  A detective's best friend. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverDeckard
+  categories: [ HideSpawnMenu ]
+  name: Deckard
+  description: A rare, custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    state: base
+
+- type: entity
+  id: LoadoutDummyWeaponRevolverMateba
+  categories: [ HideSpawnMenu ]
+  name: Mateba
+  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+    state: icon
+
+
+# region Trinket
+- type: entity
+  id: LoadoutDummyClothingNeckTieRainbow
+  categories: [ HideSpawnMenu ]
+  name: Rainbow tie
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic0
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_0.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic1
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_1.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic2
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_2.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic3
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_3.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGothic4
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpskirt/Gothic/variant_4.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic0
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_0.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic1
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_1.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic2
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_2.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic3
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_3.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic4
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_4.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic5
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_5.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic6
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_6.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitGothic7
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_7.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorTeal
+  categories: [ HideSpawnMenu ]
+  name: teal jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#77f3b7"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorTeal
+  categories: [ HideSpawnMenu ]
+  name: teal gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#3CB57C"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorTeal
+  categories: [ HideSpawnMenu ]
+  name: teal jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#77f3b7"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatGentle
+  categories: [ HideSpawnMenu ]
+  name: gentle coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandSkull
+  categories: [ HideSpawnMenu ]
+  name: skull bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/skull.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#EAE8E8"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatMimesoft
+  categories: [ HideSpawnMenu ]
+  name: white cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/mimesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#EAE8E8"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorWhite
+  categories: [ HideSpawnMenu ]
+  name: white jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBeret
+  categories: [ HideSpawnMenu ]
+  name: beret
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesFingerless
+  categories: [ HideSpawnMenu ]
+  name: fingerless gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/fingerless.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorMaroon
+  categories: [ HideSpawnMenu ]
+  name: maroon jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#cc295f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorMaroon
+  categories: [ HideSpawnMenu ]
+  name: maroon jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#cc295f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakTrans
+  categories: [ HideSpawnMenu ]
+  name: vampire cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/trans.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAdmin
+  categories: [ HideSpawnMenu ]
+  name: weh cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/admin.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadWehcellentCap
+  categories: [ HideSpawnMenu ]
+  name: wehcellent cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/wehcellentcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingEyesGlassesGarGiga
+  categories: [ HideSpawnMenu ]
+  name: giga gar glasses
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/gar.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedLesbianLong
+  categories: [ HideSpawnMenu ]
+  name: long bacon
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/lesbian-long.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow hawaiian shirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaiyellow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#EBE216"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatYellowsoft
+  categories: [ HideSpawnMenu ]
+  name: yellow cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/yellowsoft.rsi
+    state: icon
+    color: "#EBE216"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#ffe14d"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtYellowTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: yellow turtleneck dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#684519"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#EBE216"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorYellow
+  categories: [ HideSpawnMenu ]
+  name: yellow jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#ffe14d"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandGreen
+  categories: [ HideSpawnMenu ]
+  name: green bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/green.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#5ABF2F"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatGreensoft
+  categories: [ HideSpawnMenu ]
+  name: green cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/greensoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterFlannelGreen
+  categories: [ HideSpawnMenu ]
+  name: green flannel jacket
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/flannel_jacket.rsi
+    layers:
+    - state: icon
+      color: "#164d0f"
+    - state: icon-lines
+      color: "#000000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#9ed63a"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGreenTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: green turtleneck dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#0e6316"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#5ABF2F"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#5ABF2F"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesGreenLizardskin
+  categories: [ HideSpawnMenu ]
+  name: green lizardskin shoes
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Shoes/Specific/disco.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorGreen
+  categories: [ HideSpawnMenu ]
+  name: green jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#9ed63a"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesBootsWinter
+  categories: [ HideSpawnMenu ]
+  name: winter boots
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/winterboots.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterCoat
+  categories: [ HideSpawnMenu ]
+  name: winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadBandGold
+  categories: [ HideSpawnMenu ]
+  name: gold bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/gold.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadFishCap
+  categories: [ HideSpawnMenu ]
+  name: fishing cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/fishcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBizarreSoft
+  categories: [ HideSpawnMenu ]
+  name: troublemaker's cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/bizarresoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterPonchoClassic
+  categories: [ HideSpawnMenu ]
+  name: classic poncho
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/classicponcho.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitNanotrasen
+  categories: [ HideSpawnMenu ]
+  name: nanotrasen jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandBrown
+  categories: [ HideSpawnMenu ]
+  name: brown bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/brown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#723A02"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyBrown
+  categories: [ HideSpawnMenu ]
+  name: brown cowboy hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatbrown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBrownFlatcap
+  categories: [ HideSpawnMenu ]
+  name: brown flatcap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/brownflatcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckUSSPPin
+  categories: [ HideSpawnMenu ]
+  name: USSP pin
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    state: comm
+
+- type: entity
+  id: LoadoutDummyClothingNeckEarthPin
+  categories: [ HideSpawnMenu ]
+  name: Earth pin
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    state: earth
+
+- type: entity
+  id: LoadoutDummyClothingNeckNanoTrasenPin
+  categories: [ HideSpawnMenu ]
+  name: NanoTrasen pin
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Misc/pins.rsi
+    state: nano
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#a17229"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#723A02"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#723A02"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorBrown
+  categories: [ HideSpawnMenu ]
+  name: brown jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#a17229"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCorpsoft
+  categories: [ HideSpawnMenu ]
+  name: corporate cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/corpsoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitDameDane
+  categories: [ HideSpawnMenu ]
+  name: yakuza outfit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/damedaneoutfit.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckHorrific
+  categories: [ HideSpawnMenu ]
+  name: horrific necktie
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/Ties/disco.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandRed
+  categories: [ HideSpawnMenu ]
+  name: red bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/red.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiRed
+  categories: [ HideSpawnMenu ]
+  name: red hawaiian shirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaired.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorRed
+  categories: [ HideSpawnMenu ]
+  name: red winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#940000"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatRedsoft
+  categories: [ HideSpawnMenu ]
+  name: red cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/redsoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyRed
+  categories: [ HideSpawnMenu ]
+  name: red cowboy hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatred.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterFlannelRed
+  categories: [ HideSpawnMenu ]
+  name: red flannel jacket
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/flannel_jacket.rsi
+    layers:
+    - state: icon
+      color: "#670a09"
+    - state: icon-lines
+      color: "#000000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorRed
+  categories: [ HideSpawnMenu ]
+  name: red jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#eb0c07"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtRedTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: red turtleneck dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#730404"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorRed
+  categories: [ HideSpawnMenu ]
+  name: red gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#940000"
+
+- type: entity
+  id: LoadoutDummyClothingBeltSuspendersRed
+  categories: [ HideSpawnMenu ]
+  name: red suspenders
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/suspenders_red.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorRed
+  categories: [ HideSpawnMenu ]
+  name: red shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#940000"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorRed
+  categories: [ HideSpawnMenu ]
+  name: red jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#eb0c07"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatBomber
+  categories: [ HideSpawnMenu ]
+  name: bomber jacket
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/bomber.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckMantle
+  categories: [ HideSpawnMenu ]
+  name: mantle
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/mantles/mantle.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingEyesGlassesGar
+  categories: [ HideSpawnMenu ]
+  name: gar glasses
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/gar.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckHeadphones
+  categories: [ HideSpawnMenu ]
+  name: headphones
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Misc/headphones.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUnderSocksCoder
+  categories: [ HideSpawnMenu ]
+  name: coder socks
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/coder.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUnderSocksBee
+  categories: [ HideSpawnMenu ]
+  name: bee socks
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/bee.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#EF8100"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatOrangesoft
+  categories: [ HideSpawnMenu ]
+  name: orange cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/orangesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#ff8c19"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingEyesGlassesGarOrange
+  categories: [ HideSpawnMenu ]
+  name: orange gar glasses
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/gar.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#EF8100"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#EF8100"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorOrange
+  categories: [ HideSpawnMenu ]
+  name: orange jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#ff8c19"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatJensen
+  categories: [ HideSpawnMenu ]
+  name: jensen coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/jensencoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterDameDane
+  categories: [ HideSpawnMenu ]
+  name: yakuza coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/damedanecoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakNanotrasen
+  categories: [ HideSpawnMenu ]
+  name: nanotrasen cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/nanotrasen.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAroace
+  categories: [ HideSpawnMenu ]
+  name: aeropilot's cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/aroace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAro
+  categories: [ HideSpawnMenu ]
+  name: werewolf cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/aro.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakHerald
+  categories: [ HideSpawnMenu ]
+  name: herald's cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/herald.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakGoliathCloak
+  categories: [ HideSpawnMenu ]
+  name: goliath cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/goliathcloak.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakEnby
+  categories: [ HideSpawnMenu ]
+  name: treasure hunter cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/enby.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakMoth
+  categories: [ HideSpawnMenu ]
+  name: moth cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/moth.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakAce
+  categories: [ HideSpawnMenu ]
+  name: pilot's cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/ace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakLesbian
+  categories: [ HideSpawnMenu ]
+  name: poet cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/les.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakVoid
+  categories: [ HideSpawnMenu ]
+  name: void cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/void.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakGay
+  categories: [ HideSpawnMenu ]
+  name: multi-level marketing cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/gay.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakIntersex
+  categories: [ HideSpawnMenu ]
+  name: cyclops cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/intersex.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakPan
+  categories: [ HideSpawnMenu ]
+  name: chef's cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/pan.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualGreen
+  categories: [ HideSpawnMenu ]
+  name: casual green jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#00661D"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualRed
+  categories: [ HideSpawnMenu ]
+  name: casual red jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#b30000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualBlue
+  categories: [ HideSpawnMenu ]
+  name: casual blue jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#134fc1"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCasualPurple
+  categories: [ HideSpawnMenu ]
+  name: casual purple jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpskirt
+    - state: icon-shirt
+      color: "#9c0dff"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualGreen
+  categories: [ HideSpawnMenu ]
+  name: casual green jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#00661D"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualRed
+  categories: [ HideSpawnMenu ]
+  name: casual red jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#b30000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualBlue
+  categories: [ HideSpawnMenu ]
+  name: casual blue jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#134fc1"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitCasualPurple
+  categories: [ HideSpawnMenu ]
+  name: casual purple jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#9c0dff"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtCyanStripedDress
+  categories: [ HideSpawnMenu ]
+  name: cyan striped dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#009a9a"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGreenStripedDress
+  categories: [ HideSpawnMenu ]
+  name: green striped dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#008c1f"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtRedStripedDress
+  categories: [ HideSpawnMenu ]
+  name: red striped dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#a40000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtOrangeStripedDress
+  categories: [ HideSpawnMenu ]
+  name: orange striped dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#9d4000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtPinkStripedDress
+  categories: [ HideSpawnMenu ]
+  name: pink striped dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/stripeddress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#a40086"
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedGreen
+  categories: [ HideSpawnMenu ]
+  name: striped green scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/green.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBrown
+  categories: [ HideSpawnMenu ]
+  name: striped brown scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/brown.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedOrange
+  categories: [ HideSpawnMenu ]
+  name: striped orange scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/orange.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedPurple
+  categories: [ HideSpawnMenu ]
+  name: striped purple scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/purple.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedAce
+  categories: [ HideSpawnMenu ]
+  name: striped asexual scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/ace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedGay
+  categories: [ HideSpawnMenu ]
+  name: striped gay scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/gay.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBiSexual
+  categories: [ HideSpawnMenu ]
+  name: striped bisexual scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/bi.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedLesbian
+  categories: [ HideSpawnMenu ]
+  name: striped lesbian scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/lesbian.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedAro
+  categories: [ HideSpawnMenu ]
+  name: striped aromantic scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/aro.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedNonBinary
+  categories: [ HideSpawnMenu ]
+  name: striped non-binary scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/non.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedAroace
+  categories: [ HideSpawnMenu ]
+  name: striped aroace scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/aroace.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedTrans
+  categories: [ HideSpawnMenu ]
+  name: striped trans scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/trans.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedInter
+  categories: [ HideSpawnMenu ]
+  name: striped intersex scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/inter.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedPan
+  categories: [ HideSpawnMenu ]
+  name: striped pan scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/pan.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedLightBlue
+  categories: [ HideSpawnMenu ]
+  name: striped light blue scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/lightblue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBlue
+  categories: [ HideSpawnMenu ]
+  name: striped blue scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/blue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedBlack
+  categories: [ HideSpawnMenu ]
+  name: striped black scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterPoncho
+  categories: [ HideSpawnMenu ]
+  name: poncho
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/poncho.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorRainbow
+  categories: [ HideSpawnMenu ]
+  name: rainbow jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformColorRainbow
+  categories: [ HideSpawnMenu ]
+  name: rainbow jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedRainbow
+  categories: [ HideSpawnMenu ]
+  name: rainbow scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/PrideScarfs/rainbow.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorPink
+  categories: [ HideSpawnMenu ]
+  name: pink jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#ffa69b"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorPink
+  categories: [ HideSpawnMenu ]
+  name: pink jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#ffa69b"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#C09F72"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#c59431"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#C09F72"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorLightBrown
+  categories: [ HideSpawnMenu ]
+  name: light brown jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#c59431"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitFamilyGuy
+  categories: [ HideSpawnMenu ]
+  name: familiar garbs
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandGrey
+  categories: [ HideSpawnMenu ]
+  name: grey bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/grey.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorGray
+  categories: [ HideSpawnMenu ]
+  name: gray winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#999999"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatGreysoft
+  categories: [ HideSpawnMenu ]
+  name: grey cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/greysoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyGrey
+  categories: [ HideSpawnMenu ]
+  name: grey cowboy hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatgrey.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatGreyFlatcap
+  categories: [ HideSpawnMenu ]
+  name: grey flatcap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/greyflatcap.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterHoodieGrey
+  categories: [ HideSpawnMenu ]
+  name: grey hoodie
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/grey_hoodie.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorGrey
+  categories: [ HideSpawnMenu ]
+  name: grey jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#b3b3b3"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorGray
+  categories: [ HideSpawnMenu ]
+  name: grey gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#999999"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorGrey
+  categories: [ HideSpawnMenu ]
+  name: grey jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#b3b3b3"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtBlueTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: blue turtleneck dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#193f68"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#0089EF"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#0089EF"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#52aecc"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandBlue
+  categories: [ HideSpawnMenu ]
+  name: blue bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/blue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiBlue
+  categories: [ HideSpawnMenu ]
+  name: blue hawaiian shirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaiblue.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#0089EF"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBluesoft
+  categories: [ HideSpawnMenu ]
+  name: blue cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/bluesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterFlannelBlue
+  categories: [ HideSpawnMenu ]
+  name: blue flannel jacket
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/flannel_jacket.rsi
+    layers:
+    - state: icon
+      color: "#164d0f"
+    - state: icon-lines
+      color: "#000000"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorBlue
+  categories: [ HideSpawnMenu ]
+  name: blue jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#52aecc"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatSolidHeadband
+  categories: [ HideSpawnMenu ]
+  name: solid headband
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/solidheadband.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatStrawHat
+  categories: [ HideSpawnMenu ]
+  name: straw hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/straw_hat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatSombrero
+  categories: [ HideSpawnMenu ]
+  name: sombrero
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/sombrero.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtYellowOldDress
+  categories: [ HideSpawnMenu ]
+  name: yellow old dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/dresswestern.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterCoatTrench
+  categories: [ HideSpawnMenu ]
+  name: trench coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/trenchcoat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesDameDane
+  categories: [ HideSpawnMenu ]
+  name: yakuza shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Misc/damedaneshoes.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorDarkGreen
+  categories: [ HideSpawnMenu ]
+  name: dark green jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#007923"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorDarkGreen
+  categories: [ HideSpawnMenu ]
+  name: dark green jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#007923"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorDarkBlue
+  categories: [ HideSpawnMenu ]
+  name: dark blue jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#3285ba"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorDarkBlue
+  categories: [ HideSpawnMenu ]
+  name: dark blue jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#3285ba"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#9C0DE1"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatPurplesoft
+  categories: [ HideSpawnMenu ]
+  name: purple cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/purplesoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtPurpleTurtleneckDress
+  categories: [ HideSpawnMenu ]
+  name: purple turtleneck dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/turtledress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#341255"
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#9C0DE1"
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#9C0DE1"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorPurple
+  categories: [ HideSpawnMenu ]
+  name: purple jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#9f70cc"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitFlannel
+  categories: [ HideSpawnMenu ]
+  name: flannel jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/flannel.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBeretFrench
+  categories: [ HideSpawnMenu ]
+  name: french beret
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beret_french.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskBandBlack
+  categories: [ HideSpawnMenu ]
+  name: black bandana
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Bandanas/black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitHawaiBlack
+  categories: [ HideSpawnMenu ]
+  name: black hawaiian shirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hawaiblack.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterWinterColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black winter coat
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
+    layers:
+    - state: coatybits-icon
+      color: "#3f3f3f"
+    - state: winterbits-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBlacksoft
+  categories: [ HideSpawnMenu ]
+  name: black cap
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Soft/blacksoft.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCowboyBlack
+  categories: [ HideSpawnMenu ]
+  name: black cowboy hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/cowboyhatblack.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingOuterHoodieBlack
+  categories: [ HideSpawnMenu ]
+  name: black hoodie
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black jumpskirt
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/color.rsi
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHandsGlovesColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black gloves
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingBeltSuspendersBlack
+  categories: [ HideSpawnMenu ]
+  name: black suspenders
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/suspenders_black.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/color.rsi
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: soles-icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpsuitColorBlack
+  categories: [ HideSpawnMenu ]
+  name: black jumpsuit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: trinkets-icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatCanadaBeanie
+  categories: [ HideSpawnMenu ]
+  name: beanie
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/beanie.rsi
+    layers:
+    - state: body-icon
+    - state: cuffcrown-icon
+      color: "#a60b0b"
+    - state: pompom-icon
+      color: "#a60b0b"
+
+- type: entity
+  id: LoadoutDummyClothingHeadRastaHat
+  categories: [ HideSpawnMenu ]
+  name: rasta hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/rasta.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingNeckScarfStripedZebra
+  categories: [ HideSpawnMenu ]
+  name: zebra scarf
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Scarfs/zebra.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingMaskNeckGaiter
+  categories: [ HideSpawnMenu ]
+  name: neck gaiter
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/neckgaiter.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingHeadHatBowlerHat
+  categories: [ HideSpawnMenu ]
+  name: bowler hat
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/bowler_hat.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingShoesBootsLaceup
+  categories: [ HideSpawnMenu ]
+  name: laceup shoes
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/laceups.rsi
+    state: icon
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtGreenElegantDress
+  categories: [ HideSpawnMenu ]
+  name: green elegant dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#0e6316"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtRedElegantDress
+  categories: [ HideSpawnMenu ]
+  name: red elegant dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#60171d"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtBlueElegantDress
+  categories: [ HideSpawnMenu ]
+  name: blue elegant dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#076183"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtPurpleElegantDress
+  categories: [ HideSpawnMenu ]
+  name: purple elegant dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#630767"
+
+- type: entity
+  id: LoadoutDummyClothingUniformJumpskirtBlackElegantDress
+  categories: [ HideSpawnMenu ]
+  name: black elegant dress
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/elegantdress.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#212030"
+
+- type: entity
+  id: LoadoutDummyClothingNeckCloakBi
+  categories: [ HideSpawnMenu ]
+  name: poison cloak
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/bi.rsi
+    state: icon
+
