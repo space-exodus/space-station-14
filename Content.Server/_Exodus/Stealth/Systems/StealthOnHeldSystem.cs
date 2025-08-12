@@ -25,7 +25,7 @@ public sealed class StealthOnHeldSystem : EntitySystem
         if (args.Handled)
             return;
 
-        _stealthSystem.RequestStealth(args.User, uid, comp.Stealth);
+        _stealthSystem.RequestStealth(args.User, nameof(StealthOnHeldSystem), comp.Stealth);
     }
 
     private void OnUnequipped(EntityUid uid, StealthOnHeldComponent comp, GotUnequippedHandEvent args)
@@ -33,6 +33,6 @@ public sealed class StealthOnHeldSystem : EntitySystem
         if (args.Handled)
             return;
         
-        _stealthSystem.RemoveRequest(uid, args.User);
+        _stealthSystem.RemoveRequest(nameof(StealthOnHeldSystem), args.User);
     }
 }

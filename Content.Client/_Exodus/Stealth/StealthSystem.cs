@@ -34,26 +34,23 @@ public sealed class StealthSystem : SharedStealthSystem
 
     private void OnRequestChange(EntityUid uid, StealthComponent comp, StealthRequestChangeEvent args)
     {
-        bool enabled = comp.RequestsStealth.Count > 0;
-        SetShader(uid, enabled, comp);
+        var enabled = comp.StealthLayers.Count > 0;
+        if (enabled)
+            AddShader(uid);
+        else
+            RemoveShader(uid);
+
     }
 
-    private void SetShader(EntityUid uid, bool enabled, StealthComponent? component = null, SpriteComponent? sprite = null)
+    private void AddShader(EntityUid uid, StealthComponent? component = null, SpriteComponent? sprite = null)
     {
         if (!Resolve(uid, ref component, ref sprite, false))
             return;
 
         _sprite.SetColor((uid, sprite), Color.White);
-        sprite.PostShader = enabled ? _shader : null;
-        sprite.GetScreenTexture = enabled;
-        sprite.RaiseShaderEvent = enabled;
-
-        if (!enabled)
-        {
-            if (component.HadOutline && !TerminatingOrDeleted(uid))
-                EnsureComp<InteractionOutlineComponent>(uid);
-            return;
-        }
+        sprite.PostShader = _shader;
+        sprite.GetScreenTexture = true;
+        sprite.RaiseShaderEvent = true;
 
         if (TryComp(uid, out InteractionOutlineComponent? outline))
         {
@@ -62,10 +59,26 @@ public sealed class StealthSystem : SharedStealthSystem
         }
     }
 
+    private void RemoveShader(EntityUid uid, StealthComponent? component = null, SpriteComponent? sprite = null)
+    {
+        if (!Resolve(uid, ref component, ref sprite, false))
+            return;
+
+        _sprite.SetColor((uid, sprite), Color.White);
+        sprite.PostShader = null;
+        sprite.GetScreenTexture = false;
+        sprite.RaiseShaderEvent = false;
+
+        if (component.HadOutline && !TerminatingOrDeleted(uid))
+        {
+            EnsureComp<InteractionOutlineComponent>(uid);
+        }
+    }
+
     private void OnShutdown(EntityUid uid, StealthComponent component, ComponentShutdown args)
     {
         if (!Terminating(uid))
-            SetShader(uid, false, component);
+            RemoveShader(uid);
     }
 
     private void OnShaderRender(EntityUid uid, StealthComponent component, BeforePostShaderRenderEvent args)

@@ -161,7 +161,7 @@
   description: anomaly-behavior-invisibility
   components:
 #Exodus-RefactorStealthSystem-Begin
-  - type: StealthOnSpawn
+  - type: InstantStealth
     stealth:
       maxVisibility: 1.2
       passiveVisibilityRate: -0.37
@@ -219,7 +219,7 @@
     rangeMax: 1
     effect: PuddleSparkle
 #Exodus-RefactorStealthSystem-Begin
-  - type: StealthOnSpawn
+  - type: InstantStealth
     stealth:
       maxVisibility: 1.2
       passiveVisibilityRate: -0.37

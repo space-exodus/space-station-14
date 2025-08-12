@@ -1,6 +1,7 @@
 // © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 
 using System.Linq;
+using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Examine;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
@@ -32,14 +33,15 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnExamineAttempt(EntityUid uid, StealthComponent component, ExamineAttemptEvent args)
     {
-        if (component.RequestsStealth.Count == 0)
+        if (IsVisible(uid))
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
-            if (GetVisibility(uid, component) > lastData.ExamineThreshold)
+            if (GetVisibility(uid, component) > data.ExamineThreshold)
                 return;
 
             // Don't block examine for owner or children of the cloaked entity.
@@ -59,29 +61,31 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnExamined(EntityUid uid, StealthComponent component, ExaminedEvent args)
     {
-        if (component.RequestsStealth.Count == 0)
+        if (!IsVisible(uid))
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
-            args.PushMarkup(Loc.GetString(lastData.ExaminedDesc, ("target", uid)));
+            args.PushMarkup(Loc.GetString(data.ExaminedDesc, ("target", uid)));
         }
     }
 
     private void OnMobStateChanged(EntityUid uid, StealthComponent component, MobStateChangedEvent args)
     {
-        if (component.RequestsStealth.Count == 0)
+        if (component.StealthLayers.Count == 0)
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
             if (args.NewMobState == MobState.Dead)
             {
-                if (!lastData.EnabledOnDeath)
+                if (!data.EnabledOnDeath)
                 {
                     RemComp<StealthComponent>(uid);
                     return;
@@ -94,14 +98,15 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnPaused(EntityUid uid, StealthComponent component, ref EntityPausedEvent args)
     {
-        if (TerminatingOrDeleted(uid) || component.RequestsStealth.Count == 0)
+        if (TerminatingOrDeleted(uid) || component.StealthLayers.Count == 0)
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
-            lastData.LastVisibility = GetVisibility(uid, component);
+            data.LastVisibility = GetVisibility(uid, component);
             component.LastUpdated = null;
             Dirty(uid, component);
         }
@@ -125,13 +130,13 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnStealthGetState(EntityUid uid, StealthComponent component, ref ComponentGetState args)
     {
-        if (component.RequestsStealth.Count == 0)
+        /*if (component.StealthLayers.Count == 0)
         {
             RemComp<StealthComponent>(uid);
             return;
-        }
+        }*/
 
-        args.State = new StealthComponentState(component.RequestsStealth, component.LastUpdated);
+        args.State = new StealthComponentState(component.StealthLayers, component.LastUpdated);
     }
 
     private void OnStealthHandleState(EntityUid uid, StealthComponent component, ref ComponentHandleState args)
@@ -139,15 +144,13 @@ public abstract class SharedStealthSystem : EntitySystem
         if (args.Current is not StealthComponentState cast)
             return;
 
-        if (cast.RequestsStealth.Count == 0)
+        /*if (cast.StealthLayers.Count == 0)
         {
             RemComp<StealthComponent>(uid);
             return;
-        }
+        }*/
 
-        var lastData = GetMinVisibilityData(component);
-
-        component.RequestsStealth = cast.RequestsStealth;
+        component.StealthLayers = cast.StealthLayers;
 
         var ev = new StealthRequestChangeEvent();
         RaiseLocalEvent(uid, ev);
@@ -157,14 +160,15 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnMove(EntityUid uid, StealthComponent component, ref MoveEvent args)
     {
-        if (TerminatingOrDeleted(uid) || component.RequestsStealth.Count == 0)
+        if (TerminatingOrDeleted(uid) || component.StealthLayers.Count == 0)
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
-            if (lastData.PassiveVisibilityRate == null || lastData.MovementVisibilityRate == null)
+            if (data.PassiveVisibilityRate == null || data.MovementVisibilityRate == null)
                 return;
 
             if (_timing.ApplyingState)
@@ -173,7 +177,7 @@ public abstract class SharedStealthSystem : EntitySystem
             if (args.NewPosition.EntityId != args.OldPosition.EntityId)
                 return;
 
-            var delta = lastData.MovementVisibilityRate * (args.NewPosition.Position - args.OldPosition.Position).Length();
+            var delta = data.MovementVisibilityRate * (args.NewPosition.Position - args.OldPosition.Position).Length();
 
             if (delta.HasValue)
                 ModifyVisibility(uid, delta.Value);
@@ -182,17 +186,18 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnGetVisibilityModifiers(EntityUid uid, StealthComponent component, GetVisibilityModifiersEvent args)
     {
-        if (component.RequestsStealth.Count == 0)
+        if (IsVisible(uid))
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
-            if (!lastData.PassiveVisibilityRate.HasValue)
+            if (!data.PassiveVisibilityRate.HasValue)
                 return;
 
-            var mod = args.SecondsSinceUpdate * lastData.PassiveVisibilityRate;
+            var mod = args.SecondsSinceUpdate * data.PassiveVisibilityRate;
             if (mod.HasValue)
                 args.FlatModifier += mod.Value;
         }
@@ -204,20 +209,21 @@ public abstract class SharedStealthSystem : EntitySystem
     /// <param name="delta">The delta to be used in visibility calculation.</param>
     public void ModifyVisibility(EntityUid uid, float delta, StealthComponent? component = null)
     {
-        if (delta == 0 || !Resolve(uid, ref component) || component.RequestsStealth.Count == 0)
+        if (delta == 0 || !Resolve(uid, ref component) || component.StealthLayers.Count == 0)
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
             if (component.LastUpdated != null)
             {
-                lastData.LastVisibility = GetVisibility(uid, component);
+                data.LastVisibility = GetVisibility(uid, component);
                 component.LastUpdated = _timing.CurTime;
             }
 
-            lastData.LastVisibility = Math.Clamp(lastData.LastVisibility + delta, lastData.MinVisibility, lastData.MaxVisibility);
+            data.LastVisibility = Math.Clamp(data.LastVisibility + delta, data.MinVisibility, data.MaxVisibility);
             Dirty(uid, component);
         }
     }
@@ -228,14 +234,15 @@ public abstract class SharedStealthSystem : EntitySystem
     /// <param name="value">The value to set the visibility to. -1 is fully invisible, 1 is fully visible</param>
     public void SetVisibility(EntityUid uid, float value, StealthComponent? component = null)
     {
-        if (!Resolve(uid, ref component) || component.RequestsStealth.Count == 0)
+        if (!Resolve(uid, ref component) || component.StealthLayers.Count == 0)
             return;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return;
 
-        if (lastData != null)
+        if (data != null)
         {
-            lastData.LastVisibility = Math.Clamp(value, lastData.MinVisibility, lastData.MaxVisibility);
+            data.LastVisibility = Math.Clamp(value, data.MinVisibility, data.MaxVisibility);
             if (component.LastUpdated != null)
                 component.LastUpdated = _timing.CurTime;
 
@@ -252,28 +259,29 @@ public abstract class SharedStealthSystem : EntitySystem
     /// maximum stealth value if it is currently disabled.</returns>
     public float GetVisibility(EntityUid uid, StealthComponent? component = null)
     {
-        if (!Resolve(uid, ref component) || TerminatingOrDeleted(uid) || component.RequestsStealth.Count == 0)
+        if (!Resolve(uid, ref component) || TerminatingOrDeleted(uid) || component.StealthLayers.Count == 0)
             return 1;
 
-        var lastData = GetMinVisibilityData(component);
+        if (!TryGetMinVisibilityData(uid, out var data))
+            return 1;
 
-        if (lastData != null)
+        if (data != null)
         {
             if (component.LastUpdated == null)
-                return lastData.LastVisibility;
+                return data.LastVisibility;
 
             var deltaTime = _timing.CurTime - component.LastUpdated.Value;
 
             var ev = new GetVisibilityModifiersEvent(uid, component, (float)deltaTime.TotalSeconds, 0f);
             RaiseLocalEvent(uid, ev, false);
 
-            return Math.Clamp(lastData.LastVisibility + ev.FlatModifier, lastData.MinVisibility, lastData.MaxVisibility);
+            return Math.Clamp(data.LastVisibility + ev.FlatModifier, data.MinVisibility, data.MaxVisibility);
         }
 
         return 1;
     }
 
-    public bool RequestStealth(EntityUid target, EntityUid requester, StealthData data)
+    public bool RequestStealth(EntityUid target, string key, StealthData data)
     {
         if (!Exists(target) || TerminatingOrDeleted(target))
             return false;
@@ -282,8 +290,8 @@ public abstract class SharedStealthSystem : EntitySystem
         {
             var stealthComp = EnsureComp<StealthComponent>(target);
 
-            if (!stealthComp.RequestsStealth.ContainsKey(GetNetEntity(requester)))
-                stealthComp.RequestsStealth.Add(GetNetEntity(requester), data);
+            if (!stealthComp.StealthLayers.ContainsKey(key))
+                stealthComp.StealthLayers.Add(key, data);
 
 
             Dirty(target, stealthComp);
@@ -293,8 +301,8 @@ public abstract class SharedStealthSystem : EntitySystem
             if (!TryComp<StealthComponent>(target, out var stealthComp))
                 return false;
 
-            if (!stealthComp.RequestsStealth.ContainsKey(GetNetEntity(requester)))
-                stealthComp.RequestsStealth.Add(GetNetEntity(requester), data);
+            if (!stealthComp.StealthLayers.ContainsKey(key))
+                stealthComp.StealthLayers.Add(key, data);
 
             Dirty(target, stealthComp);
         }
@@ -302,7 +310,7 @@ public abstract class SharedStealthSystem : EntitySystem
         return true;
     }
 
-    public bool RemoveRequest(EntityUid requester, EntityUid target)
+    public bool RemoveRequest(string key, EntityUid target)
     {
         if (!Exists(target) || TerminatingOrDeleted(target))
             return false;
@@ -310,12 +318,12 @@ public abstract class SharedStealthSystem : EntitySystem
         if (!TryComp<StealthComponent>(target, out var stealthComp))
             return false;
 
-        if (!stealthComp.RequestsStealth.ContainsKey(GetNetEntity(requester)))
+        if (!stealthComp.StealthLayers.ContainsKey(key))
             return false;
 
-        stealthComp.RequestsStealth.Remove(GetNetEntity(requester));
+        stealthComp.StealthLayers.Remove(key);
 
-        if (stealthComp.RequestsStealth.Count == 0)
+        if (stealthComp.StealthLayers.Count == 0)
         {
             RemComp<StealthComponent>(target);
             return true;
@@ -326,15 +334,15 @@ public abstract class SharedStealthSystem : EntitySystem
         return true;
     }
 
-    private StealthData? GetMinVisibilityData(StealthComponent component)
+    public bool TryGetMinVisibilityData(EntityUid uid, [NotNullWhen(true)] out StealthData? returnData, StealthComponent? component = null)
     {
-        StealthData? returnData = null;
+        returnData = null;
         float minValue = float.MaxValue;
 
-        if (component.RequestsStealth.Count == 0)
-            return null;
+        if (!Resolve(uid, ref component) || TerminatingOrDeleted(uid) || IsVisible(uid))
+            return false;
 
-        foreach (var data in component.RequestsStealth.Values)
+        foreach (var data in component.StealthLayers.Values)
         {
             var clamped = Math.Clamp(data.LastVisibility, data.MinVisibility, data.MaxVisibility);
 
@@ -345,7 +353,21 @@ public abstract class SharedStealthSystem : EntitySystem
             }
         }
 
-        return returnData;
+        if (returnData == null)
+            return false;
+
+        return true;
+    }
+
+    public bool IsVisible(EntityUid uid)
+    {
+        if (!TryComp<StealthComponent>(uid, out var stealthComp))
+            return true;
+
+        if (stealthComp.StealthLayers.Count == 0)
+            return true;
+
+        return false;
     }
 
     /// <summary>
@@ -371,8 +393,4 @@ public abstract class SharedStealthSystem : EntitySystem
     }
 }
 
-
-public sealed class StealthRequestChangeEvent : EntityEventArgs
-{
-    public StealthRequestChangeEvent() { }
-}
+public sealed class StealthRequestChangeEvent : EntityEventArgs;

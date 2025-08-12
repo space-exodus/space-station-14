@@ -58,10 +58,6 @@ public sealed partial class CardboardBoxComponent : Component
     [DataField("cooldownDuration")]
     public TimeSpan CooldownDuration = TimeSpan.FromSeconds(5f);
 
-//Exodus-RefactorStealthSystem-Begin
-    [DataField]
-    public StealthData? Stealth;
-//Exodus-RefactorStealthSystem-End
 }
 
 [Serializable, NetSerializable]

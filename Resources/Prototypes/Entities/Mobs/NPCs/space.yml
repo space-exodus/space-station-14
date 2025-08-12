@@ -358,7 +358,7 @@
       energy: 1.5
       color: "#4faffb"
 #Exodus-RefactorStealthSystem-Begin
-    - type: StealthOnSpawn
+    - type: InstantStealth
       stealth:
         enabledOnDeath: false
         maxVisibility: 1.2

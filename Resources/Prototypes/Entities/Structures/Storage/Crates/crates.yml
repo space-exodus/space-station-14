@@ -873,7 +873,7 @@
   suffix: Stealth
   components:
 #Exodus-RefactorStealthSystem-Begin
-  - type: StealthOnSpawn
+  - type: InstantStealth
     stealth:
       passiveVisibilityRate: -0.10
       movementVisibilityRate: 0.10

@@ -16,7 +16,7 @@ namespace Content.Shared.Exodus.Stealth.Components;
 public sealed partial class StealthComponent : Component
 {
     [DataField]
-    public Dictionary<NetEntity, StealthData> RequestsStealth = new();
+    public Dictionary<string, StealthData> StealthLayers = new();
 
     /// <summary>
     /// Whether or not the entity previously had an interaction outline prior to cloaking.
@@ -60,8 +60,6 @@ public sealed partial class StealthData
     [DataField]
     public float? MovementVisibilityRate;
 
-    public StealthData() {}
-
     public StealthData(float minVisibility = -1f, float maxVisibility = 1.5f, float lastVisibility = 1,
         bool enabledOnDeath = true, float examineThreshold = 0.5f, string examinedDesc = "stealth-visual-effect",
         float? passiveVisibilityRate = null, float? movementVisibilityRate = null)
@@ -80,12 +78,12 @@ public sealed partial class StealthData
 [Serializable, NetSerializable]
 public sealed class StealthComponentState : ComponentState
 {
-    public readonly Dictionary<NetEntity, StealthData> RequestsStealth;
+    public readonly Dictionary<string, StealthData> StealthLayers;
     public readonly TimeSpan? LastUpdated;
 
-    public StealthComponentState(Dictionary<NetEntity, StealthData> requestsStealth, TimeSpan? lastUpdated)
+    public StealthComponentState(Dictionary<string, StealthData> stealthLayers, TimeSpan? lastUpdated)
     {
-        RequestsStealth = requestsStealth;
+        StealthLayers = stealthLayers;
         LastUpdated = lastUpdated;
     }
 }
