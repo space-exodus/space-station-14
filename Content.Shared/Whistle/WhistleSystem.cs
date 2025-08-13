@@ -1,7 +1,7 @@
 using Content.Shared.Coordinates;
 using Content.Shared.Humanoid;
 using Content.Shared.Interaction.Events;
-using Content.Shared.Stealth.Components;
+using Content.Shared.Exodus.Stealth.Components;//Exodus-RefactorStealthSystem
 using JetBrains.Annotations;
 using Robust.Shared.Timing;
 
@@ -50,7 +50,7 @@ public sealed class WhistleSystem : EntitySystem
             _entityLookup.GetEntitiesInRange<HumanoidAppearanceComponent>(_transform.GetMapCoordinates(uid), component.Distance))
         {
             //Avoid pinging invisible entities
-            if (TryComp(iterator, out stealth) && stealth.Enabled)
+            if (TryComp(iterator, out stealth)) //Exodus-RefactorStealthSystem
                 continue;
 
             //We don't want to ping user of whistle
