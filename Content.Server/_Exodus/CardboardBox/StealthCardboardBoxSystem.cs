@@ -18,13 +18,13 @@ public sealed class StealthCardboardBoxSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CardboardBoxComponent, ComponentInit>(OnStartup);
+        SubscribeLocalEvent<CardboardBoxComponent, ComponentInit>(OnInit);
         SubscribeLocalEvent<CardboardBoxComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<CardboardBoxComponent, StorageAfterOpenEvent>(AfterStorageOpen);
         SubscribeLocalEvent<CardboardBoxComponent, StorageAfterCloseEvent>(AfterStorageClosed);
     }
 
-    private void OnStartup(EntityUid uid, CardboardBoxComponent component, ComponentInit args)
+    private void OnInit(EntityUid uid, CardboardBoxComponent component, ComponentInit args)
     {
         if (!TryComp<StealthCardboardBoxComponent>(uid, out var stealthBox))
             return;
