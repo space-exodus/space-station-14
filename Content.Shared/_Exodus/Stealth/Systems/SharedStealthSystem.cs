@@ -130,12 +130,6 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnStealthGetState(EntityUid uid, StealthComponent component, ref ComponentGetState args)
     {
-        /*if (component.StealthLayers.Count == 0)
-        {
-            RemComp<StealthComponent>(uid);
-            return;
-        }*/
-
         args.State = new StealthComponentState(component.StealthLayers, component.LastUpdated);
     }
 
@@ -143,12 +137,6 @@ public abstract class SharedStealthSystem : EntitySystem
     {
         if (args.Current is not StealthComponentState cast)
             return;
-
-        /*if (cast.StealthLayers.Count == 0)
-        {
-            RemComp<StealthComponent>(uid);
-            return;
-        }*/
 
         component.StealthLayers = cast.StealthLayers;
 
