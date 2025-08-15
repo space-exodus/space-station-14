@@ -1,10 +1,8 @@
 // © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 
-namespace Content.Shared.Exodus.Chat.Channels.OOC;
+namespace Content.Shared.Exodus.Chat.Channels.Emote;
 
-public enum OOCType
+public abstract partial class SharedEmoteSystem : EntitySystem
 {
-    OOC,
-    Admin,
-    Dead
+
 }

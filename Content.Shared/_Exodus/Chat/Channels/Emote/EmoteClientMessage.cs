@@ -2,11 +2,10 @@
 
 using Robust.Shared.Serialization;
 
-namespace Content.Shared.Exodus.Chat.Channels.OOC;
+namespace Content.Shared.Exodus.Chat.Channels.Emote;
 
 [Serializable, NetSerializable]
-public sealed partial class OOCMessage : BaseChatServerMessage
+public sealed partial class EmoteClientMessage : BaseChatClientMessage
 {
-    public override ChatChannel Channel => ChatChannel.OOC;
-    public NetEntity Sender;
+    public override ChatChannel Channel => ChatChannel.Emote;
 }

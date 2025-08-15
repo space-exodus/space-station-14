@@ -1,3 +1,5 @@
+// © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
+
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -40,6 +42,8 @@ public sealed partial class LocalSpeechSystem : EntitySystem
         base.Initialize();
 
         _chat.OnHandleMessage += HandleMessage;
+
+        SubscribeLocalEvent<SpeechHearingComponent, HearSpeechEvent>(HandleSpeechHearing);
     }
 
     public override void Update(float frameTime)
@@ -61,7 +65,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
             if (request.Sender != request.Recipient)
             {
                 var range = GetMaxRange(request.Type);
-                var path = request.PathResult.Result.Path;
+                var path = request.PathResult.ConfigureAwait(false).GetAwaiter().GetResult().Path;
 
                 if (!GetFadeLevel(request.Sender, request.Recipient, range, path, out fadeLevel))
                     continue;
@@ -98,7 +102,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
         foreach (var recipient in recipients)
         {
             // TODO: Optimization | implement checking of obstacles in straight line, in case if no obstacles found handle message hearing instantly instead of requests to pathfinding
-            var senderName = GetSenderNameInitial(message.Sender);
+            var senderName = _chat.GetSenderNameInitial(message.Sender);
             var pathResult = _pathfinding.GetPath(message.Sender, recipient, range, CancellationToken.None);
             var request = new LocalSpeechRequest(message, senderName, recipient, pathResult, CancellationToken.None);
             _requests.Enqueue(request);
@@ -119,7 +123,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
             : message.Content;
         var obfuscatedMessage = message.WithContent(obfuscatedContent);
 
-        var hearedSenderName = GetSenderNameForRecipient(message.Sender, senderName, recipient);
+        var hearedSenderName = _chat.GetSenderNameForRecipient(message.Sender, senderName, recipient);
 
         var attemptEv = new HearSpeechAttemptEvent(recipient, hearedSenderName, obfuscatedMessage);
         RaiseLocalEvent(recipient, ref attemptEv);
@@ -130,18 +134,14 @@ public sealed partial class LocalSpeechSystem : EntitySystem
         var modifyEv = new ModifySpeechHearingMessageEvent(recipient, hearedSenderName, obfuscatedMessage);
         RaiseLocalEvent(recipient, ref modifyEv);
 
-        var hearEv = new HearSpeechEvent(recipient, modifyEv.SenderName, modifyEv.Speech);
+        var speechVerb = GetSpeechVerb(recipient);
+        var hearEv = new HearSpeechEvent(recipient, modifyEv.SenderName, modifyEv.Speech, speechVerb);
         RaiseLocalEvent(recipient, ref hearEv);
     }
 
-    public string GetSenderNameInitial(EntityUid sender)
+    public LocId? GetSpeechVerb(EntityUid entity)
     {
-        return MetaData(sender).EntityName;
-    }
-
-    public string GetSenderNameForRecipient(EntityUid sender, string initialSenderName, EntityUid recipient)
-    {
-        return initialSenderName;
+        return null;
     }
 
     private List<EntityUid> GetRecipientsInRange(EntityUid speaker, float range)
@@ -365,7 +365,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
         };
     }
 
-    private class LocalSpeechRequest
+    private sealed class LocalSpeechRequest
     {
         public Task Task;
         public TaskCompletionSource Tcs;
