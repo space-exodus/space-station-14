@@ -1,0 +1,22 @@
+# Neck
+- type: loadout
+  id: ServiceTie
+  equipment:
+    neck: ClothingNeckTieService
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ServiceAverage
+
+- type: loadoutEffectGroup
+  id: ServiceAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: ServiceScarf
+  equipment:
+    neck: ClothingNeckScarfStripedGreen

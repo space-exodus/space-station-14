@@ -1,0 +1,23 @@
+
+# Neck
+- type: loadout
+  id: MedicalTie
+  equipment:
+    neck: ClothingNeckTieMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MedicalAverage
+
+- type: loadout
+  id: MedicalScarf
+  equipment:
+    neck: ClothingNeckScarfStripedLightBlue
+
+- type: loadoutEffectGroup
+  id: MedicalAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 # 10 hrs

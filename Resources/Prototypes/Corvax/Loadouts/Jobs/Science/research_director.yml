@@ -3,8 +3,10 @@
   id: ResearchDirectorJumpsuitClassical
   equipment:
     jumpsuit: ClothingUniformJumpsuitRDClassical
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ResearchDirectorJumpskirtClassical
   equipment:
     jumpsuit: ClothingUniformJumpskirtRDClassical
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout

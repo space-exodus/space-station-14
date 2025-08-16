@@ -1,0 +1,36 @@
+# Head
+- type: loadout
+  id: SecurityBlackBeret
+  equipment:
+    head: ClothingHeadHatBeretSecurityBlack
+  groupBy: "Beret"
+
+# Neck
+- type: loadoutEffectGroup
+  id: SecurityAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: SecTie
+  equipment:
+    neck: ClothingNeckTieSec
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SecurityAverage
+
+- type: loadout
+  id: ScarfStripedRed
+  equipment:
+    neck: ClothingNeckScarfStripedRed
+
+# Uniform
+- type: loadout
+  id: SecJumpsuitBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlack
+  groupBy: "Jumpsuit"

@@ -1,0 +1,8 @@
+# Uniform
+- type: loadout
+  id: AtmosTie
+  equipment:
+    neck: ClothingNeckTieAtmos
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EngineerAverage

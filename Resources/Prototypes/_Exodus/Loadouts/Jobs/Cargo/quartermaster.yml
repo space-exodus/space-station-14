@@ -1,0 +1,45 @@
+#Ears
+- type: loadout
+  id: QuartermasterAltHeadset
+  equipment:
+    ears: ClothingHeadsetAltCargo
+
+- type: loadout
+  id: QuartermasterHeadset
+  equipment:
+    ears: ClothingHeadsetQM
+
+# Neck
+- type: loadoutEffectGroup
+  id: NewbieQuartermaster
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: QuartermasterScarf
+  equipment:
+    neck: ClothingNeckScarfQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieQuartermaster
+
+- type: loadoutEffectGroup
+  id: CargoAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: CargoTie
+  equipment:
+    neck: ClothingNeckTieCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: CargoAverage

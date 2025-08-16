@@ -5,8 +5,10 @@
     ClothingBackpackSatchelSecurity: 3
     ClothingBackpackDuffelSecurity: 3
     ClothingUniformJumpsuitSec: 3
+    ClothingUniformJumpsuitSecBlack: 3 #Exodus-Better-Loadout
     ClothingShoesBootsJack: 3
     ClothingHeadHatBeretSecurity: 3
+    ClothingHeadHatBeretSecurityBlack: 3 #Exodus-Better-Loadout
     ClothingHeadHatSecsoft: 3
     ClothingHeadBandRed: 3
     ClothingMaskNeckGaiterRed: 3

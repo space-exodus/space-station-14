@@ -3,9 +3,10 @@
   groups:
   - LawyerNeck
   - LawyerJumpsuit
-  - CommonBackpack
+  - LawyerBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # - type: roleLoadout # Exodus | Brigmedic is our job

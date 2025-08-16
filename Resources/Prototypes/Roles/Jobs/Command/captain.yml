@@ -46,7 +46,7 @@
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCaptain
     id: CaptainPDA
-    ears: ClothingHeadsetAltCommand
+#    ears: ClothingHeadsetAltCommand # Exodus-Better-Loadout
   storage:
     back:
     - Flash

@@ -53,3 +53,77 @@
       - id: Hypospray
       - id: EmergencyMedipenDS
         amount: 4
+
+- type: entity
+  id: ClothingBeltUtilityWebbing
+  name: utility webbing
+  description: A special webbing for all your instruments. Comes in handy when you're bored of the belt.
+  parent: ClothingBeltStorageBase
+  components:
+  - type: Storage
+    grid:
+    - 0,0,7,1
+    maxItemSize: Normal
+    whitelist:
+      tags:
+        - Flare
+        - CableCoil
+        - CigPack
+        - Radio
+        - Powerdrill
+        - Wirecutter
+        - Screwdriver
+        - Flashlight
+        - Wrench
+        - GeigerCounter
+        - HolofanProjector
+        - Multitool
+        - AppraisalTool
+        - Crowbar
+        - JawsOfLife
+        - GPS
+        - WeldingMask
+      components:
+        - SprayPainter
+        - NetworkConfigurator
+        - RCD
+        - RCDAmmo
+        - Welder
+        - PowerCell
+        - Geiger
+        - TrayScanner
+        - GasAnalyzer
+        - HandLabeler
+  - type: ItemMapper
+    mapLayers:
+      geiger_counter:
+        whitelist:
+          tags:
+          - GeigerCounter
+      cutters:
+        whitelist:
+          tags:
+          - Wirecutter
+      crowbar:
+        whitelist:
+          tags:
+          - Crowbar
+          - CrowbarRed
+      screwdriver:
+        whitelist:
+          tags:
+          - Screwdriver
+      wrench:
+        whitelist:
+          tags:
+          - Wrench
+      multitool:
+        whitelist:
+          tags:
+            - Multitool
+    sprite: Exodus/Clothing/Belt/utility_webbing_overlay.rsi
+  - type: Appearance
+  - type: Sprite
+    sprite: Exodus/Clothing/Belt/utility_webbing.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Belt/utility_webbing.rsi

@@ -1,0 +1,22 @@
+# Neck
+- type: loadout
+  id: MimeTie
+  equipment:
+    neck: ClothingNeckTieMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MimeAverage
+
+- type: loadoutEffectGroup
+  id: MimeAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobMime
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: MimeScarf
+  equipment:
+    neck: ClothingNeckScarfStripedZebra

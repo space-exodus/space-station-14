@@ -1,0 +1,16 @@
+# Neck
+- type: loadout
+  id: PassengerTie
+  equipment:
+    neck: ClothingNeckTieRainbow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTider
+
+- type: loadout
+  id: PassengerScarf
+  equipment:
+    neck: ClothingNeckScarfStripedRainbow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ClownAverage

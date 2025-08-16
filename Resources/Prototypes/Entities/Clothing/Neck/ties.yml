@@ -5,9 +5,9 @@
   description: A neosilk clip-on red tie.
   components:
   - type: Sprite
-    sprite: Clothing/Neck/Ties/redtie.rsi
+    sprite: Exodus/Clothing/Neck/Ties/redtie.rsi # Exodus-Resprite
   - type: Clothing
-    sprite: Clothing/Neck/Ties/redtie.rsi
+    sprite: Exodus/Clothing/Neck/Ties/redtie.rsi # Exodus-Resprite
   - type: Tag
     tags:
     - HamsterWearable
@@ -22,10 +22,10 @@
   description: A loosely tied necktie, a perfect accessory for the over-worked detective.
   components:
   - type: Sprite
-    sprite: Clothing/Neck/Ties/dettie.rsi
+    sprite: Exodus/Clothing/Neck/Ties/dettie.rsi # Exodus-Resprite
   - type: Clothing
-    sprite: Clothing/Neck/Ties/dettie.rsi
-    
+    sprite: Exodus/Clothing/Neck/Ties/dettie.rsi # Exodus-Resprite
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckTieSci
@@ -33,9 +33,9 @@
   description: Why do we all have to wear these ridiculous ties?
   components:
   - type: Sprite
-    sprite: Clothing/Neck/Ties/scitie.rsi
+    sprite: Exodus/Clothing/Neck/Ties/scitie.rsi # Exodus-Resprite
   - type: Clothing
-    sprite: Clothing/Neck/Ties/scitie.rsi
+    sprite: Exodus/Clothing/Neck/Ties/scitie.rsi # Exodus-Resprite
   - type: Tag
     tags:
     - ClothMade

@@ -9,11 +9,13 @@
   id: CargoTechnicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCargo
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: CargoTechnicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCargo
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

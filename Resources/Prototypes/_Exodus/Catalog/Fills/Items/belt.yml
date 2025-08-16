@@ -1,0 +1,24 @@
+- type: entity
+  id: ClothingBeltHolsterFilledAlt
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: Stunbaton
+        - id: Handcuffs
+        - id: HoloprojectorSecurity
+
+- type: entity
+  id: ClothingBeltUtilityWebbingEngineering
+  parent: ClothingBeltUtilityWebbing
+  suffix: Filled, Engineering
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrowbarYellow
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool

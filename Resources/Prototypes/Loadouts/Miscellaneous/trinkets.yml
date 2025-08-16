@@ -14,12 +14,14 @@
   storage:
     back:
     - ClothingHeadHatFlowerWreath
+  groupBy: "Head" # Exodus-Better-Loadout
 
 - type: loadout
   id: Hairflower
   storage:
     back:
     - ClothingHeadHatHairflower
+  groupBy: "Head" # Exodus-Better-Loadout
 
 # Headphones
 - type: loadout
@@ -27,6 +29,7 @@
   storage:
     back:
     - ClothingNeckHeadphones
+  groupBy: "Neck" # Exodus-Better-Loadout
 
 # Toys
 - type: loadout
@@ -34,12 +37,14 @@
   storage:
     back:
     - PlushieLizard
+  groupBy: "Plush" # Exodus-Better-Loadout
 
 - type: loadout
   id: PlushieSpaceLizard
   storage:
     back:
     - PlushieSpaceLizard
+  groupBy: "Plush" # Exodus-Better-Loadout
 
 - type: loadout
   id: ThreeCandles
@@ -56,35 +61,35 @@
   storage:
     back:
     - Lighter
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 - type: loadout
   id: CigPackGreen
   storage:
     back:
     - CigPackGreen
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 - type: loadout
   id: CigPackRed
   storage:
     back:
     - CigPackRed
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 - type: loadout
   id: CigPackBlue
   storage:
     back:
     - CigPackBlue
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 - type: loadout
   id: CigPackBlack
   storage:
     back:
     - CigPackBlack
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 - type: loadout
   id: CigarCase
@@ -94,7 +99,7 @@
   storage:
     back:
     - CigarCase
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 - type: loadout
   id: CigarGold
@@ -104,7 +109,7 @@
   storage:
     back:
     - CigarGold
-  groupBy: "smokeables"
+  groupBy: "Smokeables"
 
 # Pins
 - type: loadout
@@ -112,126 +117,126 @@
   storage:
     back:
     - ClothingNeckLGBTPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckAllyPin
   storage:
     back:
     - ClothingNeckAllyPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckAromanticPin
   storage:
     back:
     - ClothingNeckAromanticPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckAsexualPin
   storage:
     back:
     - ClothingNeckAsexualPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckBisexualPin
   storage:
     back:
     - ClothingNeckBisexualPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckGayPin
   storage:
     back:
     - ClothingNeckGayPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckIntersexPin
   storage:
     back:
     - ClothingNeckIntersexPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckLesbianPin
   storage:
     back:
     - ClothingNeckLesbianPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckNonBinaryPin
   storage:
     back:
     - ClothingNeckNonBinaryPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckPansexualPin
   storage:
     back:
     - ClothingNeckPansexualPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckOmnisexualPin
   storage:
     back:
     - ClothingNeckOmnisexualPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckGenderqueerPin
   storage:
     back:
     - ClothingNeckGenderqueerPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckTransPin
   storage:
     back:
     - ClothingNeckTransPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckAutismPin
   storage:
     back:
     - ClothingNeckAutismPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckGoldAutismPin
   storage:
     back:
     - ClothingNeckGoldAutismPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckAroacePin
   storage:
     back:
     - ClothingNeckAroacePin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckPluralPin
   storage:
     back:
     - ClothingNeckPluralPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 - type: loadout
   id: ClothingNeckGenderfluidPin
   storage:
     back:
     - ClothingNeckGenderfluidPin
-  groupBy: "pin"
+  groupBy: "Pin"
 
 # Towels
 - type: loadout
@@ -244,7 +249,7 @@
   storage:
     back:
     - TowelColorWhite
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorSilver
@@ -256,7 +261,7 @@
   storage:
     back:
     - TowelColorSilver
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorGold
@@ -268,7 +273,7 @@
   storage:
     back:
     - TowelColorGold
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorLightBrown
@@ -281,7 +286,7 @@
   storage:
     back:
     - TowelColorLightBrown
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorGreen
@@ -294,7 +299,7 @@
   storage:
     back:
     - TowelColorGreen
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorDarkBlue
@@ -307,7 +312,7 @@
   storage:
     back:
     - TowelColorDarkBlue
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorOrange
@@ -320,7 +325,7 @@
   storage:
     back:
     - TowelColorOrange
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorLightBlue
@@ -333,7 +338,7 @@
   storage:
     back:
     - TowelColorLightBlue
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorPurple
@@ -346,7 +351,7 @@
   storage:
     back:
     - TowelColorPurple
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorRed
@@ -359,7 +364,7 @@
   storage:
     back:
     - TowelColorRed
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorGray
@@ -372,7 +377,7 @@
   storage:
     back:
     - TowelColorGray
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorBlack
@@ -385,7 +390,7 @@
   storage:
     back:
     - TowelColorBlack
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorDarkGreen
@@ -398,7 +403,7 @@
   storage:
     back:
     - TowelColorDarkGreen
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorMaroon
@@ -411,7 +416,7 @@
   storage:
     back:
     - TowelColorMaroon
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorYellow
@@ -424,7 +429,7 @@
   storage:
     back:
     - TowelColorYellow
-  groupBy: "towels"
+  groupBy: "Towels"
 
 - type: loadout
   id: TowelColorMime
@@ -437,4 +442,4 @@
   storage:
     back:
     - TowelColorMime
-  groupBy: "towels"
+  groupBy: "Towels"
