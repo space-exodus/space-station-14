@@ -30,8 +30,8 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitTechAssistent
-  name: technician assistent jumpsuit
+  id: ClothingUniformJumpsuitTechAssistant
+  name: technician assistant jumpsuit
   description: The overalls of someone who is just beginning to learn the basics of engineering.
   components:
   - type: Sprite
@@ -60,7 +60,7 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_1.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitGothic0
   id: ClothingUniformJumpsuitGothic2
   components:
   - type: Sprite
@@ -69,7 +69,7 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_2.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitGothic0
   id: ClothingUniformJumpsuitGothic3
   components:
   - type: Sprite
@@ -78,7 +78,7 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_3.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitGothic0
   id: ClothingUniformJumpsuitGothic4
   components:
   - type: Sprite
@@ -87,7 +87,7 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_4.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitGothic0
   id: ClothingUniformJumpsuitGothic5
   components:
   - type: Sprite
@@ -96,7 +96,7 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_5.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitGothic0
   id: ClothingUniformJumpsuitGothic6
   components:
   - type: Sprite
@@ -105,7 +105,7 @@
     sprite: Exodus/Clothing/Uniforms/Jumpsuit/Gothic/variant_6.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformJumpsuitGothic0
   id: ClothingUniformJumpsuitGothic7
   components:
   - type: Sprite

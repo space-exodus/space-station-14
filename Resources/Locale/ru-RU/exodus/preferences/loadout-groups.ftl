@@ -383,7 +383,7 @@ loadout-group-mime-belt = Мим, пояс
 loadout-group-mime-neck = Мим, шея
 
 # Civilian ServiceWorker
-ServiceWorker-loadout = Снаряжение сервисного работник
+ServiceWorker-loadout = Снаряжение сервисного работника
 loadout-group-service-worker-jumpsuit = Сервисный работник, униформа
 loadout-group-service-worker-backpack = Сервисный работник, рюкзак
 loadout-group-service-worker-neck = Сервисный работник, шея

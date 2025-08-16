@@ -67,7 +67,7 @@
 - type: entity
   parent: ClothingScarfBase
   id: ClothingNeckScarfRD
-  name: reseearch director scarf
+  name: research director scarf
   description: This high-tech scarf is woven from experimental fibers that can inspire you to come up with brilliant ideas... or simply make you look smart. Science is an unpredictable thing.
   components:
   - type: Sprite

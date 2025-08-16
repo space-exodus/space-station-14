@@ -10,7 +10,8 @@
 - type: entity
   id: Gauze3
   parent: Gauze
-  suffix: Single
+  suffix: Three
   components:
   - type: Stack
+    stackType: Gauze
     count: 3

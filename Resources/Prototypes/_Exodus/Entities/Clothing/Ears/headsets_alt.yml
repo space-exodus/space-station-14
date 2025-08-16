@@ -16,7 +16,7 @@
 - type: entity
   parent: ClothingHeadsetAltSecurity
   id: ClothingHeadsetAltWarden
-  name: wardens's over-ear headset
+  name: warden's over-ear headset
   description: The personal headset of the warden, the right hand (and ear) of the head of security.
   components:
   - type: Sprite

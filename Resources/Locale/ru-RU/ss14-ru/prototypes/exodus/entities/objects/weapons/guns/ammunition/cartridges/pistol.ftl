@@ -1,6 +1,6 @@
 ent-BaseCartridgePistolLight = патрон (.15 авто)
     .desc = { ent-BaseCartridge.desc }
-ent-CartridgePistolLight =патрон (.15 авто)
+ent-CartridgePistolLight = патрон (.15 авто)
     .desc = { ent-BaseCartridgePistol.desc }
 ent-CartridgePistolPracticeLight = патрон (.15 авто учебный)
     .desc = { ent-BaseCartridgePistol.desc }
@@ -13,8 +13,8 @@ ent-CartridgePistolSpentLight = патрон (.15 авто)
     .desc = { ent-BaseCartridgePistolLight.desc }
 ent-BaseCartridgePistolAlt = патрон (.25 авто)
     .desc = { ent-BaseCartridge.desc }
-ent-CartridgePistolAlt =  патрон (.25 авто)
+ent-CartridgePistolAlt = патрон (.25 авто)
     .desc = { ent-BaseCartridge.desc }
 ent-CartridgePistolPracticeAlt = патрон (.25 авто учебный)
-    .desc = { ent-BaseCartridgePistol.desc }
+    .desc = { ent-BaseCartridge.desc }
 

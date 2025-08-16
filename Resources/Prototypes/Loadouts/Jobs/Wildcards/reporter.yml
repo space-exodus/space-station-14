@@ -9,4 +9,4 @@
   id: JournalistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJournalist
-  groupBy: "Jumpskirt" # Exodus-Better-Loadout
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout

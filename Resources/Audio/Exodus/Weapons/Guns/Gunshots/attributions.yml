@@ -3,14 +3,19 @@
   copyright: "Taken from zvukogram.com"
   source: "https://zvukogram.com/category/zvuki-vyistrela-iz-avtomata/"
 
-- files: ["energy_gun_blast", "tp17.ogg"]
+- files: ["energy_gun_blast"]
   license: "CC0-1.0"
   copyright: "Taken from freesound.org"
-  source: "https://freesound.org/people/tradeachest/sounds/730564/, https://freesound.org/people/MrGungus/sounds/773865/"
+  source: "https://freesound.org/people/tradeachest/sounds/730564/"
+
+- files: ["tp17.ogg"]
+  license: "CC0-1.0"
+  copyright: "Taken from freesound.org"
+  source: "https://freesound.org/people/MrGungus/sounds/773865/"
 
 - files: ["g14.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "Taken from freesound.org"
+  copyright: "Taken from zvukogram.com"
   source: "https://zvukogram.com/category/zvuki-vyistrela-iz-avtomata/"
 
 - files: ["astra47.ogg"]
