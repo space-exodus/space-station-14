@@ -113,7 +113,7 @@
     angleDecay: 4
     fireRate: 4.5
     selectedMode: SemiAuto
-    projectilespeed: 27.5
+    projectileSpeed: 27.5
     availableModes:
       - SemiAuto
     soundGunshot:

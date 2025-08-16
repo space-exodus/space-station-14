@@ -57,7 +57,7 @@
   - type: Clothing
     sprite: Exodus/Objects/Weapons/Guns/Battery/mini_energygun.rsi
   - type: Gun
-    projectilespeed: 35
+    projectileSpeed: 35
     soundGunshot:
       path: /Audio/Exodus/Weapons/Guns/Gunshots/energy_gun_blast.ogg
       params:
