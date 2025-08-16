@@ -25,7 +25,7 @@
   equipment:
     eyes: ClothingEyesGlassesMeson
     id: AtmosPDA
-    # belt: ClothingBeltUtilityEngineering  # Exodus-Loadouts-Update
+    # belt: ClothingBeltUtilityEngineering  # Exodus-Better-Loadout
     ears: ClothingHeadsetEngineering
   #storage:
     #back:

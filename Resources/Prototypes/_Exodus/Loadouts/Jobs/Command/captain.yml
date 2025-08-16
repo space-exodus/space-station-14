@@ -24,6 +24,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: SpecialistCaptain
+  groupBy: "Mantle"
 
 - type: loadoutEffectGroup
   id: NewbieCaptain
@@ -55,11 +56,13 @@
   id: Captaincoat
   equipment:
     outerClothing: ClothingOuterCoatCaptain
+  groupBy: "Coat"
 
 - type: loadout
   id: CaptainTrenchcoat
   equipment:
     outerClothing: ClothingOuterTrenchcoatCaptain
+  groupBy: "Coat"
 
 #Ears
 - type: loadout

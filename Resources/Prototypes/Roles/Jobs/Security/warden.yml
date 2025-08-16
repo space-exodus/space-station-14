@@ -39,14 +39,14 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity
     id: WardenPDA
-    # Exodus-Loadout-Update-Start
+    # Exodus-Better-Loadout-Start
     # ears: ClothingHeadsetSecurity
     # pocket1: WeaponPistolMk58
-    # Exodus-Loadout-Update-End
+    # Exodus-Better-Loadout-End
   storage:
     back:
     - Flash
-    # - MagazinePistol # Exodus-Loadout-Update
+    # - MagazinePistol # Exodus-Better-Loadout
 
 - type: chameleonOutfit
   id: WardenChameleonOutfit

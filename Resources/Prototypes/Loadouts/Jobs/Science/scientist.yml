@@ -103,11 +103,13 @@
   id: RegularLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLab
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 - type: loadout
   id: ScienceLabCoat
   equipment:
     outerClothing: ClothingOuterCoatRnd
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 - type: loadout
   id: ScienceWintercoat
@@ -118,6 +120,7 @@
   id: RoboticistLabCoat
   equipment:
     outerClothing: ClothingOuterCoatRobo
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 - type: loadout
   id: RoboticistWintercoat
@@ -131,6 +134,7 @@
     proto: SeniorResearcher
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 # Gloves
 - type: loadout

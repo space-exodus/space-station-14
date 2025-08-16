@@ -55,7 +55,7 @@
   id: CMOGear
   equipment:
     id: CMOPDA
-#    ears: ClothingHeadsetCMO #Exodus-Loadouts-Update
+#    ears: ClothingHeadsetCMO # Exodus-Better-Loadout
     belt: ClothingBeltMedicalFilled
   storage:
     back:

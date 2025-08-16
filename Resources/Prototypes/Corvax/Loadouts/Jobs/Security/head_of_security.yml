@@ -19,3 +19,4 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterHoS
+  groupBy: "Mantle" # Exodus-Better-Loadout

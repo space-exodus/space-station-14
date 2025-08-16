@@ -4,3 +4,7 @@
   equipment:
     neck: ClothingNeckScarfStripedBrown
 
+- type: loadout
+  id: BlackGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack

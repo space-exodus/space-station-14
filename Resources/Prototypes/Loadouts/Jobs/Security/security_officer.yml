@@ -38,6 +38,7 @@
   id: SecurityBeret
   equipment:
     head: ClothingHeadHatBeretSecurity
+  groupBy: "Beret"  # Exodus-Better-Loadout
 
 - type: loadout
   id: TrooperHat
@@ -144,7 +145,7 @@
   equipment:
     shoes: ClothingShoesBootsCombatFilled
   groupBy: "Boots" # Exodus-Better-Loadout
-  
+
 - type: loadout
   id: JackBoots
   equipment:

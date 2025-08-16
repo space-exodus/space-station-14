@@ -26,6 +26,7 @@
   - HoPOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # region Silicons
@@ -53,6 +54,7 @@
   - PassengerShoes
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -67,6 +69,7 @@
   - BartenderOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -79,6 +82,7 @@
   - ServiceWorkerBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -94,6 +98,7 @@
   - ChefOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -106,6 +111,7 @@
   - LibrarianBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -118,6 +124,7 @@
   - LawyerBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -133,6 +140,7 @@
   - ChaplainOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -148,6 +156,7 @@
   - JanitorOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - JanitorPlunger
   - GroupSpeciesBreathTool
 
@@ -159,10 +168,12 @@
   - Glasses
   - BotanistNeck
   - BotanistJumpsuit
+  - BotanistGloves
   - BotanistBackpack
   - BotanistOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -181,6 +192,7 @@
   - ClownOther
   - SurvivalClown
   - Trinkets
+  - TrinketsCloth
 
 - type: roleLoadout
   id: JobMime
@@ -197,6 +209,7 @@
   - MimeOuterClothing
   - SurvivalMime
   - Trinkets
+  - TrinketsCloth
 
 - type: roleLoadout
   id: JobMusician
@@ -208,6 +221,7 @@
   - MusicianOuterClothing
   - Survival
   - Trinkets
+  - TrinketsCloth
   - Instruments
   - GroupSpeciesBreathTool
 
@@ -226,6 +240,7 @@
   - QuartermasterShoes
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -236,11 +251,13 @@
   - CargoTechnicianHead
   - CargoTechnicianNeck
   - CargoTechnicianJumpsuit
+  - CargoTechnicianGloves
   - CargoTechnicianBackpack
   - CargoTechnicianOuterClothing
   - CargoTechnicianShoes
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -249,11 +266,13 @@
   - GroupTankHarness
   - Glasses
   - SalvageSpecialistNeck
+  - SalvageSpecialistGloves
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # region Engineering
@@ -271,6 +290,7 @@
   - ChiefEngineerShoes
   - SurvivalExtended
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -282,6 +302,7 @@
   - TechnicalAssistantBackpack
   - SurvivalExtended
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -298,6 +319,7 @@
   - StationEngineerShoes
   - SurvivalExtended
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -312,6 +334,7 @@
   - AtmosphericTechnicianShoes
   - SurvivalExtended
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # region Science
@@ -330,6 +353,7 @@
   - ResearchDirectorShoes
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -347,6 +371,7 @@
   - ScientistPDA
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -359,6 +384,7 @@
   - ResearchAssistantBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # region Security
@@ -376,6 +402,7 @@
   - HeadofSecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -392,6 +419,7 @@
   - WardenShoes
   - SurvivalSecurity
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -408,6 +436,7 @@
   - SecurityOfficerPDA
   - SurvivalSecurity
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -440,6 +469,7 @@
   - DetectiveShoes
   - SurvivalSecurity
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -450,6 +480,7 @@
   - SecurityCadetBackpack
   - SurvivalSecurity
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolSecurity
 
 #region Medical
@@ -469,6 +500,7 @@
   - ChiefMedicalOfficerShoes
   - SurvivalMedical
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -487,6 +519,7 @@
   - MedicalDoctorPDA
   - SurvivalMedical
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -499,6 +532,7 @@
   - MedicalInternBackpack
   - SurvivalMedical
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -514,6 +548,7 @@
   - ChemistShoes
   - SurvivalMedical
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -531,6 +566,7 @@
   - ParamedicShoes
   - SurvivalMedical
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathToolMedical
 
 #region Wildcards
@@ -542,6 +578,7 @@
   - ZookeeperBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -553,6 +590,7 @@
   - ReporterBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -564,6 +602,7 @@
   - PsychologistBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -576,6 +615,7 @@
   - BoxerBackpack
   - Survival
   - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs

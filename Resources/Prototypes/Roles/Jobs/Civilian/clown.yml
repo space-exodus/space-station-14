@@ -31,7 +31,7 @@
 - type: startingGear
   id: ClownGear
   equipment:
-#    mask: ClothingMaskClown #Exodus-Loadouts-Update
+#    mask: ClothingMaskClown # Exodus-Better-Loadout
     pocket1: BikeHorn
     pocket2: ClownRecorder
     id: ClownPDA

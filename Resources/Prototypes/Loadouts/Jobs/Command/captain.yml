@@ -49,11 +49,13 @@
   id: CaptainCloak
   equipment:
     neck: ClothingNeckCloakCap
+  groupBy: "Cloak" # Exodus-Better-Loadout
 
 - type: loadout
   id: CaptainCloakFormal
   equipment:
     neck: ClothingNeckCloakCapFormal
+  groupBy: "Cloak" # Exodus-Better-Loadout
 
 - type: loadout
   id: CaptainMantle
@@ -62,11 +64,8 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterCap
+  groupBy: "Mantle" # Exodus-Better-Loadout
 
-- type: startingGear
-  id: CaptainMantle
-  equipment:
-    neck: ClothingNeckMantleCap
 
 # Back
 - type: loadout
@@ -94,3 +93,4 @@
   id: CaptainWintercoat
   equipment:
     outerClothing: ClothingOuterWinterCap
+  groupBy: "Coat" # Exodus-Better-Loadout

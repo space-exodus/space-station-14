@@ -14,12 +14,14 @@
   storage:
     back:
     - ClothingHeadHatFlowerWreath
+  groupBy: "Head" # Exodus-Better-Loadout
 
 - type: loadout
   id: Hairflower
   storage:
     back:
     - ClothingHeadHatHairflower
+  groupBy: "Head" # Exodus-Better-Loadout
 
 # Headphones
 - type: loadout
@@ -27,6 +29,7 @@
   storage:
     back:
     - ClothingNeckHeadphones
+  groupBy: "Neck" # Exodus-Better-Loadout
 
 # Toys
 - type: loadout

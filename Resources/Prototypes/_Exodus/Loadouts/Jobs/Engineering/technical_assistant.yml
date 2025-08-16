@@ -2,5 +2,5 @@
 - type: loadout
   id: TechAssistentJumpsuit
   equipment:
-    belt: ClothingUniformJumpsuitTechAssistent
+    jumpsuit: ClothingUniformJumpsuitTechAssistent
   groupBy: "Jumpsuit"

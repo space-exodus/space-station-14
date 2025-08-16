@@ -47,8 +47,8 @@
   equipment:
     id: CEPDA
     eyes: ClothingEyesGlassesMeson
-#    ears: ClothingHeadsetCE #Exodus-Loadouts-Update
-    # belt: ClothingBeltUtilityEngineering #Exodus-Loadouts-Update
+    # ears: ClothingHeadsetCE # Exodus-Better-Loadout
+    # belt: ClothingBeltUtilityEngineering # Exodus-Better-Loadout
   storage:
     back:
     - Flash

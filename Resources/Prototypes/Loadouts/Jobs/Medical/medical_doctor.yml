@@ -38,6 +38,7 @@
     proto: SeniorPhysician
   equipment:
     head: ClothingHeadHatBeretSeniorPhysician
+  groupBy: "Beret" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalHeadMirror
@@ -51,21 +52,25 @@
   id: MedicalBeret
   equipment:
     head: ClothingHeadHatBeretMedic
+  groupBy: "Beret" # Exodus-Better-Loadout
 
 - type: loadout
   id: BlueSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapBlue
+  groupBy: "SurgeryCap" # Exodus-Better-Loadout
 
 - type: loadout
   id: GreenSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapGreen
+  groupBy: "SurgeryCap" # Exodus-Better-Loadout
 
 - type: loadout
   id: PurpleSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapPurple
+  groupBy: "SurgeryCap" # Exodus-Better-Loadout
 
 - type: loadout
   id: NurseHat
@@ -188,8 +193,10 @@
   id: MedicalHud
   equipment:
     eyes: ClothingEyesHudMedical
+  groupBy: "Hud" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalEyePatchHud
   equipment:
     eyes: ClothingEyesEyepatchHudMedical
+  groupBy: "Hud" # Exodus-Better-Loadout

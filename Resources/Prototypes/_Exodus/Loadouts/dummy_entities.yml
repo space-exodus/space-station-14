@@ -32,7 +32,6 @@
   id: LoadoutDummyWeaponPistolTP17
   categories: [ HideSpawnMenu ]
   name: TP-17
-  description: weh.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/tp17.rsi
@@ -42,7 +41,6 @@
   id: LoadoutDummyWeaponPistolG14
   categories: [ HideSpawnMenu ]
   name: G-14
-  description: weh.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/g14.rsi
@@ -52,7 +50,6 @@
   id: LoadoutDummyWeaponPistolAstra47
   categories: [ HideSpawnMenu ]
   name: Astra-47
-  description: weh.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/astra47.rsi
@@ -62,7 +59,6 @@
   id: LoadoutDummyWeaponPistolWyvern
   categories: [ HideSpawnMenu ]
   name: Wyvern
-  description: weh.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/wyvern.rsi
@@ -72,7 +68,6 @@
   id: LoadoutDummyWeaponPistolDualetta
   categories: [ HideSpawnMenu ]
   name: Dualetta
-  description: weh.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/dualetta.rsi
@@ -82,7 +77,6 @@
   id: LoadoutDummyWeaponPistolUniversal
   categories: [ HideSpawnMenu ]
   name: Universal
-  description: weh.
   components:
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Pistols/universal.rsi
@@ -177,87 +171,6 @@
   - type: Sprite
     sprite: Exodus/Objects/Weapons/Guns/Revolvers/sr27.rsi
     state: icon
-
-- type: entity
-  id: LoadoutDummyWeaponPistolMk58
-  categories: [ HideSpawnMenu ]
-  name: mk 58
-  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
-    state: icon
-
-- type: entity
-  id: LoadoutDummyWeaponRevolverInspector
-  categories: [ HideSpawnMenu ]
-  name: Inspector
-  description:  A detective's best friend. Uses .45 magnum ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
-    state: icon
-
-- type: entity
-  id: LoadoutDummyWeaponRevolverDeckard
-  categories: [ HideSpawnMenu ]
-  name: Deckard
-  description: A rare, custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
-    state: base
-
-- type: entity
-  id: LoadoutDummyWeaponRevolverMateba
-  categories: [ HideSpawnMenu ]
-  name: Mateba
-  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
-    state: icon
-
-- type: entity
-  id: LoadoutDummyWeaponPistolMk58
-  categories: [ HideSpawnMenu ]
-  name: mk 58
-  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
-    state: icon
-
-- type: entity
-  id: LoadoutDummyWeaponRevolverInspector
-  categories: [ HideSpawnMenu ]
-  name: Inspector
-  description:  A detective's best friend. Uses .45 magnum ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
-    state: icon
-
-- type: entity
-  id: LoadoutDummyWeaponRevolverDeckard
-  categories: [ HideSpawnMenu ]
-  name: Deckard
-  description: A rare, custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
-    state: base
-
-- type: entity
-  id: LoadoutDummyWeaponRevolverMateba
-  categories: [ HideSpawnMenu ]
-  name: Mateba
-  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
-    state: icon
-
 
 # region Trinket
 - type: entity
@@ -568,7 +481,7 @@
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/gar.rsi
-    state: icon
+    state: icon-super
 
 - type: entity
   id: LoadoutDummyClothingNeckScarfStripedLesbianLong
@@ -1195,7 +1108,7 @@
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/gar.rsi
-    state: icon
+    state: icon-alt
 
 - type: entity
   id: LoadoutDummyClothingHandsGlovesColorOrange

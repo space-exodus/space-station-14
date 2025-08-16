@@ -21,6 +21,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: SpecialistHoS
+  groupBy: "Cloak"
 
 - type: loadoutEffectGroup
   id: NewbieHoS
@@ -38,6 +39,19 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: NewbieHoS
+
+# Uniform
+- type: loadout
+  id: HoSJumpskirtParadeMale
+  equipment:
+    belt: ClothingUniformJumpskirtHoSParadeMale
+  groupBy: "Jumpskirt"
+
+- type: loadout
+  id: HoSJumpsuitParadeMale
+  equipment:
+    belt: ClothingUniformJumpsuitHoSParadeMale
+  groupBy: "Jumpsuit"
 
 # OuterClothing
 - type: loadout

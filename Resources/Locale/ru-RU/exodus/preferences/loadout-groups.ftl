@@ -168,6 +168,7 @@ loadout-group-cargo-technician-backpack = Грузчик, рюкзак
 loadout-group-cargo-technician-outerclothing = Грузчик, верхняя одежда
 loadout-group-cargo-technician-shoes = Грузчик, обувь
 loadout-group-cargo-technician-neck = Грузчик, шея
+loadout-group-cargo-technician-gloves = Грузчик, перчатки
 
 # Cargo SalvageSpecialist
 SalvageSpecialist-loadout = Снаряжение утилизатора
@@ -175,6 +176,7 @@ loadout-group-salvage-specialist-backpack = Утилизатор, рюкзак
 loadout-group-salvage-specialist-outerclothing = Утилизатор, верхняя одежда
 loadout-group-salvage-specialist-shoes = Утилизатор, обувь
 loadout-group-salvage-specialist-neck = Утилизатор, шея
+loadout-group-salvage-specialist-gloves = Утилизатор, перчатки
 
 
 
@@ -240,7 +242,6 @@ loadout-group-brigmedic-mask = БригМедик, маска
 loadout-group-brigmedic-head = БригМедик, головной убор
 loadout-group-brigmedic-neck = БригМедик, шея
 loadout-group-brigmedic-jumpsuit = БригМедик, униформа
-loadout-group-brigmedic-gloves = БригМедик, перчатки
 loadout-group-brigmedic-gloves = БригМедик, перчатки
 loadout-group-brigmedic-outerclothing = БригМедик, верхняя одежда
 loadout-group-brigmedic-shoes = БригМедик, обувь
@@ -369,6 +370,7 @@ loadout-group-botanist-jumpsuit = Ботаник, униформа
 loadout-group-botanist-backpack = Ботаник, рюкзак
 loadout-group-botanist-outerclothing = Ботаник, верхняя одежда
 loadout-group-botanist-neck = Ботаник, шея
+loadout-group-botanist-gloves = Ботаник, перчатки
 
 # Civilian Mime
 Mime-loadout = Снаряжение мима

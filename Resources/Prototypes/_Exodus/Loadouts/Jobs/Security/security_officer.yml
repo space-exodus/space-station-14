@@ -1,3 +1,11 @@
+# Head
+- type: loadout
+  id: SecurityBlackBeret
+  equipment:
+    head: ClothingHeadHatBeretSecurityBlack
+  groupBy: "Beret"
+
+# Neck
 - type: loadoutEffectGroup
   id: SecurityAverage
   effects:
@@ -19,3 +27,10 @@
   id: ScarfStripedRed
   equipment:
     neck: ClothingNeckScarfStripedRed
+
+# Uniform
+- type: loadout
+  id: SecJumpsuitBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlack
+  groupBy: "Jumpsuit"

@@ -59,12 +59,12 @@
     eyes: ClothingEyesGlassesSecurity
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
-#    ears: ClothingHeadsetAltSecurity #Exodus-Loadouts-Update
-#    pocket1: WeaponPistolMk58 #Exodus-Loadouts-Update
+#    ears: ClothingHeadsetAltSecurity # Exodus-Better-Loadout
+#    pocket1: WeaponPistolMk58 # Exodus-Better-Loadout
   storage:
     back:
     - Flash
-#    - MagazinePistol #Exodus-Loadouts-Update
+#    - MagazinePistol # Exodus-Better-Loadout
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

@@ -44,7 +44,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ClownAverage
-    
+
 # Jumpsuit
 - type: loadout
   id: ClownSuitBanana
@@ -98,3 +98,9 @@
   storage:
     back:
     - GrenadeFoamDart
+
+- type: loadout
+  id: CrayonBox
+  storage:
+    back:
+    - CrayonBox

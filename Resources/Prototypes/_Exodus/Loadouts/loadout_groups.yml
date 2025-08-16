@@ -3,7 +3,7 @@
   id: TrinketsCloth
   name: loadout-group-trinkets-clothing
   minLimit: 0
-  maxLimit: 5
+  maxLimit: 7
   loadouts:
   - LoadoutClothingUniformJumpskirtGothic0
   - LoadoutClothingUniformJumpskirtGothic1
@@ -216,6 +216,10 @@
   - LoadoutClothingUniformJumpskirtPurpleElegantDress
   - LoadoutClothingUniformJumpskirtBlackElegantDress
   - LoadoutClothingNeckCloakBi
+  - FlowerWreath
+  - Hairflower
+  - Headphones
+  - EyepatchLoadout
 
 # region Misc Trinket
 - type: loadoutGroup
@@ -224,14 +228,6 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
-  - FlowerWreath
-  - Hairflower
-  - Headphones
-  - Lighter
-  - CigPackGreen
-  - CigPackRed
-  - CigPackBlue
-  - CigPackBlack
   - PlushieLizard
   - PlushieSpaceLizard
   - PlushieSharkGrey
@@ -255,11 +251,6 @@
   - PlushieHuman
   - PlushieMagicarp
   - PlushieExperiment
-  - Harmonica
-  - PersonalAI
-  - EyepatchLoadout
-  - MimeSuspendersBlack
-  - MedkitLoadout
   - TowelColorBlack
   - TowelColorDarkBlue
   - TowelColorDarkGreen
@@ -276,6 +267,36 @@
   - TowelColorSilver
   - TowelColorWhite
   - TowelColorYellow
+  - Lighter
+  - CigPackGreen
+  - CigPackRed
+  - CigPackBlue
+  - CigPackBlack
+  - PercentileDice
+  - D20Dice
+  - D12Dice
+  - D10Dice
+  - D8Dice
+  - D6Dice
+  - D4Dice
+  - Harmonica
+  - AcousticGuitar
+  - Microphone
+  - MusicBox
+  - Kalimba
+  - ElectricGuitar
+  - Trumpet
+  - Clarinet
+  - Flute
+  - Recorder
+  - PanFlute
+  - Ocarina
+  - Harmonica
+  - PersonalAI
+  - HandheldStationMap
+  - MedkitLoadout
+  - Mothroach
+
 
 - type: loadoutGroup
   id: Glasses
@@ -798,6 +819,14 @@
   - BotanistOveralls
 
 - type: loadoutGroup
+  id: BotanistGloves
+  name: loadout-group-botanist-gloves
+  minLimit: 0
+  loadouts:
+  - BotanistGloves
+  - FingerlessGloves
+
+- type: loadoutGroup
   id: BotanistBackpack
   name: loadout-group-botanist-backpack
   loadouts:
@@ -883,6 +912,7 @@
   - ToySword
   - FoamCutlass
   - GrenadeFoamDart
+  - CrayonBox
 
 - type: loadoutGroup
   id: SurvivalClown
@@ -1101,6 +1131,14 @@
   - CargoTechnicianJumpskirt
 
 - type: loadoutGroup
+  id: CargoTechnicianGloves
+  name: loadout-group-cargo-technician-gloves
+  minLimit: 0
+  loadouts:
+  - FingerlessGloves
+  - BlackGloves
+
+- type: loadoutGroup
   id: CargoTechnicianBackpack
   name: loadout-group-cargo-technician-backpack
   loadouts:
@@ -1130,6 +1168,14 @@
   loadouts:
   - CargoTie
   - CargoScarf
+
+- type: loadoutGroup
+  id: SalvageSpecialistGloves
+  name: loadout-group-salvage-specialist-gloves
+  minLimit: 0
+  loadouts:
+  - FingerlessGloves
+  - BlackGloves
 
 - type: loadoutGroup
   id: SalvageSpecialistBackpack
@@ -1215,6 +1261,8 @@
   name: loadout-group-chief-engineer-shoes
   loadouts:
   - BrownShoes
+  - WhiteShoes
+  - WorkBoots
   - EngineeringWinterBoots
 
 # region Technical Assistant
@@ -1298,6 +1346,8 @@
   id: StationEngineerShoes
   name: loadout-group-station-engineer-shoes
   loadouts:
+  - BrownShoes
+  - WhiteShoes
   - WorkBoots
   - EngineeringWinterBoots
 
@@ -1352,7 +1402,9 @@
   id: AtmosphericTechnicianShoes
   name: loadout-group-atmospheric-technician-shoes
   loadouts:
+  - BrownShoes
   - WhiteShoes
+  - WorkBoots
   - EngineeringWinterBoots
 
 - type: loadoutGroup
@@ -1594,6 +1646,8 @@
   - HeadofSecurityFormalSkirt
   - HeadofSecurityJumpsuitBlack
   - HeadofSecurityJumpskirtBlack
+  - HoSJumpskirtParadeMale
+  - HoSJumpsuitParadeMale
 
 - type: loadoutGroup
   id: HeadofSecurityBackpack
@@ -1735,6 +1789,7 @@
   - SecurityBeret
   - SecurityHat
   - TrooperHat
+  - SecurityBlackBeret
 
 - type: loadoutGroup
   id: SecurityOfficerNeck
@@ -1754,6 +1809,7 @@
   - SecurityJumpskirtGrey
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
+  - SecJumpsuitBlack
   - TrooperUniform
 
 - type: loadoutGroup
