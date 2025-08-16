@@ -7,6 +7,8 @@ public enum ChatChannel
     LocalSpeech, // Normal, Shout, Whisper
     Emote,
     OOC, // OOC, Admin, Dead
+    LOOC, // LOOC, Antag-LOOC
+    Dead, // IC channel
     Radio, // [Prototypes]
     Announcements,
     Server,

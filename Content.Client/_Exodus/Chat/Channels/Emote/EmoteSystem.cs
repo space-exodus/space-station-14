@@ -11,7 +11,7 @@ namespace Content.Client.Exodus.Chat.Channels.Emote;
 
 public sealed partial class EmoteSystem : SharedEmoteSystem
 {
-    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly ISharedChatManager _chat = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
 
@@ -19,7 +19,7 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
     {
         base.Initialize();
 
-        _chat.OnHandleMessage += HandleMessage;
+        _chat.OnServerMessage += HandleMessage;
 
         SubscribeLocalEvent<EmotingComponent, ComponentHandleState>(HandleComponentState);
     }
@@ -75,7 +75,7 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
         {
             ProtoId = emote.Id,
         };
-        _chat.SendNetworkMessage(message);
+        _chat.ClientSendMessage(message);
     }
 
     public void PlayEmoteMessage(string content)
@@ -84,6 +84,6 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
         {
             Message = content,
         };
-        _chat.SendNetworkMessage(message);
+        _chat.ClientSendMessage(message);
     }
 }

@@ -23,7 +23,8 @@ namespace Content.Server.Exodus.Chat.Channels.LocalSpeech;
 
 public sealed partial class LocalSpeechSystem : EntitySystem
 {
-    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly ISharedChatManager _chat = default!;
+    [Dependency] private readonly ChatIdentitySystem _chatIdentity = default!;
     [Dependency] private readonly PathfindingSystem _pathfinding = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly MapSystem _map = default!;
@@ -41,7 +42,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
     {
         base.Initialize();
 
-        _chat.OnHandleMessage += HandleMessage;
+        _chat.OnClientMessage += HandleMessage;
 
         SubscribeLocalEvent<SpeechHearingComponent, HearSpeechEvent>(HandleSpeechHearing);
     }
@@ -102,7 +103,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
         foreach (var recipient in recipients)
         {
             // TODO: Optimization | implement checking of obstacles in straight line, in case if no obstacles found handle message hearing instantly instead of requests to pathfinding
-            var senderName = _chat.GetSenderNameInitial(message.Sender);
+            var senderName = _chatIdentity.GetSenderNameInitial(message.Sender);
             var pathResult = _pathfinding.GetPath(message.Sender, recipient, range, CancellationToken.None);
             var request = new LocalSpeechRequest(message, senderName, recipient, pathResult, CancellationToken.None);
             _requests.Enqueue(request);
@@ -123,7 +124,7 @@ public sealed partial class LocalSpeechSystem : EntitySystem
             : message.Content;
         var obfuscatedMessage = message.WithContent(obfuscatedContent);
 
-        var hearedSenderName = _chat.GetSenderNameForRecipient(message.Sender, senderName, recipient);
+        var hearedSenderName = _chatIdentity.GetSenderNameForRecipient(message.Sender, senderName, recipient);
 
         var attemptEv = new HearSpeechAttemptEvent(recipient, hearedSenderName, obfuscatedMessage);
         RaiseLocalEvent(recipient, ref attemptEv);

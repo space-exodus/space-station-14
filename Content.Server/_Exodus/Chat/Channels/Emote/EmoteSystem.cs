@@ -16,7 +16,8 @@ namespace Content.Server.Exodus.Chat.Channels.Emote;
 
 public sealed partial class EmoteSystem : SharedEmoteSystem
 {
-    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly ChatIdentitySystem _chatIdentity = default!;
+    [Dependency] private readonly ISharedChatManager _chat = default!;
     [Dependency] private readonly InteractionSystem _interaction = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
@@ -25,7 +26,7 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
     {
         base.Initialize();
 
-        _chat.OnHandleMessage += HandleMessage;
+        _chat.OnClientMessage += HandleMessage;
         _prototype.PrototypesReloaded += PrototypesReloaded;
 
         SubscribeLocalEvent<EmotingComponent, ComponentGetState>(HandleComponentState);
@@ -92,7 +93,7 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
         if (CanSee(sender, recipient))
             return;
 
-        var senderName = _chat.GetSenderNameForRecipient(sender, senderNameInitial, recipient);
+        var senderName = _chatIdentity.GetSenderNameForRecipient(sender, senderNameInitial, recipient);
 
         var message = new EmoteServerMessage()
         {
@@ -102,7 +103,7 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
             Emote = emote,
         };
 
-        _chat.SendNetworkMessage(recipient, message);
+        _chat.ServerSendMessage(recipient, message);
     }
 
     private EmotePrototype? GetEmoteByTrigger(Entity<EmotingComponent> emoting, string message)
@@ -138,7 +139,7 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
             return;
 
         var emote = GetEmoteByTrigger((entity, emoting), message);
-        var initialSenderName = _chat.GetSenderNameInitial(entity);
+        var initialSenderName = _chatIdentity.GetSenderNameInitial(entity);
         var recipients = Filter.Pvs(entity, 1).Recipients;
 
         foreach (var recipient in recipients)
