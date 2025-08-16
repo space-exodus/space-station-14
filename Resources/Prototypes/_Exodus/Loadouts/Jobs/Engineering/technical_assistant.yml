@@ -1,0 +1,6 @@
+# Uniform
+- type: loadout
+  id: TechAssistentJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTechAssistent
+  groupBy: "Jumpsuit"

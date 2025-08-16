@@ -1,0 +1,6 @@
+# Neck
+- type: loadout
+  id: ChaplainScarf
+  equipment:
+    neck: ClothingNeckScarfStripedBlack
+

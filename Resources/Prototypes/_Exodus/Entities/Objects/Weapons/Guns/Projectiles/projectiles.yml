@@ -39,3 +39,33 @@
   - type: Reflective
     reflective:
     - Energy
+
+- type: entity
+  name: lethal mode
+  id: BulletLaserPistol
+  parent: BulletLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Heat: 11
+
+- type: entity
+  name: stunner mode
+  id: BulletStunnerMode
+  parent: BulletDisabler
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  name: lethal mode
+  id: BulletLaserRevolver
+  parent: BulletLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Heat: 30

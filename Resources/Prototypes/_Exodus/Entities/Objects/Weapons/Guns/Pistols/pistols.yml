@@ -1,0 +1,285 @@
+- type: entity
+  name: TP-17
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolTP17
+  description: Old quality in a new wrapper. Wasn't it better before? It uses .35 auto caliber cartridges but requires only its own magazine.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/tp17.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/tp17.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 4
+    angleIncrease: 1
+    angleDecay: 3
+    fireRate: 5.5
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/tp17.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolExtended
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolExtended
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+
+- type: entity
+  name: G-14
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolG14
+  description: The dream of any policeman. Or bandit. Or housewife. Uses .15 caliber bullets.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/g14.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/g14.rsi
+  - type: Gun
+    minAngle: 3
+    maxAngle: 20
+    angleIncrease: 4
+    angleDecay: 6
+    fireRate: 7
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/g14.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolLight
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolLight
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistolLight
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistolLight
+
+- type: entity
+  name: Astra-47
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolAstra47
+  description: Super secret super weapon of the most elite fighters in the galaxy. At least, that's what the advertisement said. It uses .25 caliber ammunition, only with shells.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/astra47.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/astra47.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 4
+    angleIncrease: 2
+    angleDecay: 4
+    fireRate: 4.5
+    selectedMode: SemiAuto
+    projectilespeed: 27.5
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/astra47.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolAlt
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolAlt
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistolAlt
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistolAlt
+
+- type: entity
+  name: Wyvern
+  parent: WeaponPistolAstra47
+  id: WeaponPistolWyvern
+  description: Chrome-plated bolt group, luxurious anatomical grip, striker with diamond coating. And it's cheap too. Chic. Uses .25 caliber cartridges.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/wyvern.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/wyvern.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 3
+    angleIncrease: 1
+    angleDecay: 6
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/wyvern.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolAlt
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolAlt
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistolAlt
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistolAlt
+
+- type: entity
+  name: Dualetta
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolDualetta
+  description: The standard weapon of every self-respecting caretaker. It uses .35 auto caliber ammunition.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/dualetta.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/dualetta.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 3
+    angleIncrease: 1
+    angleDecay: 6
+    fireRate: 4
+    selectedMode: SemiAuto
+    shotsPerBurst: 3
+    burstFireRate: 10
+    burstCooldown: 2
+    availableModes:
+    - Burst
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/tp17.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+
+- type: entity
+  name: Universal
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolUniversal
+  description: It's hard to imagine, but this really is the most universal pistol in the entire galaxy. Take my word for it.
+  components:
+  - type: Sprite
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/universal.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Exodus/Objects/Weapons/Guns/Pistols/universal.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 10
+    angleIncrease: 3
+    angleDecay: 3
+    fireRate: 3
+    selectedMode: SemiAuto
+    shotsPerBurst: 3
+    burstFireRate: 8
+    burstCooldown: 1
+    availableModes:
+    - Burst
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Exodus/Weapons/Guns/Gunshots/g14.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolExtended
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolExtended
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol

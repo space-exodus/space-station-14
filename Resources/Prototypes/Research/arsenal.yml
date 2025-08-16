@@ -35,6 +35,10 @@
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxRifleIncendiary
+  # Exodus-Better-Loadout-Start
+  - MagazineBoxPistolIncendiaryLight
+  - MagazineBoxPistolUraniumLight
+  # Exodus-Better-Loadout-End
 
 - type: technology
   id: WeaponizedLaserManipulation
