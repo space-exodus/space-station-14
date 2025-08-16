@@ -364,6 +364,8 @@
 - type: loadoutGroup
   id: CaptainHeadset
   name: loadout-group-captain-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - HeadsetCaptain
   - HeadsetAltCaptain
@@ -419,6 +421,8 @@
 - type: loadoutGroup
   id: HOPHeadset
   name: loadout-group-hop-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - HeadsetHOP
   - HeadsetAltHOP
@@ -1061,6 +1065,8 @@
 - type: loadoutGroup
   id: QuartermasterHeadset
   name: loadout-group-quartermaster-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - QuartermasterHeadset
   - QuartermasterAltHeadset
@@ -1211,6 +1217,8 @@
 - type: loadoutGroup
   id: ChiefEngineerHeadset
   name: loadout-group-chief-engineer-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - ChiefEngineerHeadset
   - ChiefEngineerAltHeadset
@@ -1429,6 +1437,8 @@
 - type: loadoutGroup
   id: ResearchDirectorHeadset
   name: loadout-group-research-director-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - ResearchDirectorHeadset
   - ResearchDirectorAltHeadset
@@ -1618,6 +1628,8 @@
 - type: loadoutGroup
   id: HeadofSecurityHeadset
   name: loadout-group-head-of-security-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - HeadofSecurityHeadset
   - HeadofSecurityAltHeadset
@@ -1714,6 +1726,8 @@
 - type: loadoutGroup
   id: WardenHeadset
   name: loadout-group-warden-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - HeadsetWarden
   - HeadsetAltWarden
@@ -2066,6 +2080,8 @@
 - type: loadoutGroup
   id: ChiefMedicalOfficerHeadset
   name: loadout-group-chief-medical-officer-headset
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - ChiefMedicalOfficerHeadset
   - ChiefMedicalOfficerAltHeadset
