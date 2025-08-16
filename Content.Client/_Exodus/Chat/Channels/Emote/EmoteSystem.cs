@@ -2,7 +2,10 @@
 
 using Content.Shared.Exodus.Chat;
 using Content.Shared.Exodus.Chat.Channels.Emote;
+using Robust.Client.Player;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Toolshed.Commands.Generic;
 
 namespace Content.Client.Exodus.Chat.Channels.Emote;
 
@@ -10,12 +13,15 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
 {
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly IPlayerManager _player = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
         _chat.OnHandleMessage += HandleMessage;
+
+        SubscribeLocalEvent<EmotingComponent, ComponentHandleState>(HandleComponentState);
     }
 
     private void HandleMessage(BaseChatServerMessage message)
@@ -32,5 +38,52 @@ public sealed partial class EmoteSystem : SharedEmoteSystem
             Emoting = emoting,
         };
         RaiseLocalEvent(emoting, ref ev);
+    }
+
+    private void HandleComponentState(Entity<EmotingComponent> emoting, ref ComponentHandleState state)
+    {
+        if (state.Current is not EmotingComponentState emote)
+            return;
+
+        var emotes = new HashSet<EmotePrototype>();
+
+        foreach (var protoId in emote.AvailableEmotes)
+        {
+            if (_prototype.TryIndex(protoId, out var proto))
+                emotes.Add(proto);
+        }
+
+        emoting.Comp.AvailableEmotes = emotes;
+    }
+
+    public HashSet<EmotePrototype> GetAvailableEmotes()
+    {
+        var player = _player.LocalSession?.AttachedEntity;
+
+        if (player == null)
+            return new();
+
+        if (!TryComp<EmotingComponent>(player, out var emoting))
+            return new();
+
+        return emoting.AvailableEmotes;
+    }
+
+    public void PlayEmoteMessage(ProtoId<EmotePrototype> emote)
+    {
+        var message = new EmoteClientMessage()
+        {
+            ProtoId = emote.Id,
+        };
+        _chat.SendNetworkMessage(message);
+    }
+
+    public void PlayEmoteMessage(string content)
+    {
+        var message = new EmoteClientMessage()
+        {
+            Message = content,
+        };
+        _chat.SendNetworkMessage(message);
     }
 }

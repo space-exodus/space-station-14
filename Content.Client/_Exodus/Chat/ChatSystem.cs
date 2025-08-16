@@ -26,4 +26,14 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         OnHandleMessage?.Invoke(content);
     }
+
+    public void SendNetworkMessage(BaseChatClientMessage message)
+    {
+        var netMsg = new ChatClientNetMessage()
+        {
+            Message = message,
+        };
+
+        _net.ClientSendMessage(netMsg);
+    }
 }
