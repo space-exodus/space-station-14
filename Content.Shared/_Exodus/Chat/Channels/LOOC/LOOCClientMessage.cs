@@ -2,11 +2,11 @@
 
 using Robust.Shared.Serialization;
 
-namespace Content.Shared.Exodus.Chat.Channels.OOC;
+namespace Content.Shared.Exodus.Chat.Channels.LOOC;
 
 [Serializable, NetSerializable]
-public sealed partial class OOCClientMessage : BaseChatClientMessage
+public sealed partial class LOOCClientMessage : BaseChatClientMessage
 {
-    public override ChatChannel Channel => ChatChannel.OOC;
-    public OOCType Type;
+    public override ChatChannel Channel => ChatChannel.LOOC;
+    public LOOCType Type;
 }

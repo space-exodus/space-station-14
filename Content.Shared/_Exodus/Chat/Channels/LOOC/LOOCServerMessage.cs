@@ -2,14 +2,14 @@
 
 using Robust.Shared.Serialization;
 
-namespace Content.Shared.Exodus.Chat.Channels.OOC;
+namespace Content.Shared.Exodus.Chat.Channels.LOOC;
 
 [Serializable, NetSerializable]
-public sealed partial class OOCServerMessage : BaseChatServerMessage
+public sealed partial class LOOCServerMessage : BaseChatServerMessage
 {
-    public override ChatChannel Channel => ChatChannel.OOC;
-    public NetEntity? Sender;
-    public OOCType Type;
+    public override ChatChannel Channel => ChatChannel.LOOC;
+    public NetEntity Sender;
+    public LOOCType Type;
     public string Content = string.Empty;
     public string? AdminRank;
     public Color? AdminRankColor; // TODO: update for having specified colors for admin ranks

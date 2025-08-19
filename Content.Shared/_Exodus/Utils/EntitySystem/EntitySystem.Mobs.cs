@@ -6,10 +6,13 @@ namespace Content.Shared.Exodus.Utils;
 
 public static class EntitySystemMobsExt
 {
-    public static bool IsInConscious(this EntitySystem sys, EntityUid mob, IEntityManager entity)
+    public static bool IsInConscious(this EntitySystem sys, EntityUid? mob, IEntityManager entity)
     {
-        var ev = new ConsciousAttemptEvent(mob);
-        entity.EventBus.RaiseLocalEvent(mob, ref ev, false);
+        if (mob is not { } mobUid)
+            return false;
+
+        var ev = new ConsciousAttemptEvent(mobUid);
+        entity.EventBus.RaiseLocalEvent(mobUid, ref ev, false);
 
         return !ev.Cancelled;
     }
