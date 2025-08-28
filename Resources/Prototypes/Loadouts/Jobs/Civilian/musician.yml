@@ -3,11 +3,13 @@
   id: MusicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitMusician
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: MusicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtMusician
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Outerclothing
 - type: loadout

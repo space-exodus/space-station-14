@@ -1,0 +1,140 @@
+# Gun
+- type: loadout
+  id: SecurityGunMateba
+  dummyEntity: LoadoutDummyWeaponRevolverMatebaLoadout
+  equipment:
+    pocket1: WeaponRevolverMatebaLoadout
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunDeckard
+  dummyEntity: LoadoutDummyWeaponRevolverDeckard
+  equipment:
+    pocket1: WeaponRevolverDeckard
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunInspector
+  dummyEntity: LoadoutDummyWeaponRevolverInspector
+  equipment:
+    pocket1: WeaponRevolverInspector
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunCavalier
+  dummyEntity: LoadoutDummyWeaponRevolverCavalier
+  equipment:
+    pocket1: WeaponRevolverCavalier
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunLucky
+  dummyEntity: LoadoutDummyWeaponRevolverLucky
+  equipment:
+    pocket1: WeaponRevolverLucky
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunGondor
+  dummyEntity: LoadoutDummyWeaponRevolverGondor
+  equipment:
+    pocket1: WeaponRevolverGondor
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunHinage
+  dummyEntity: LoadoutDummyWeaponRevolverHinage
+  equipment:
+    pocket1: WeaponRevolverHinage
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunSR27
+  dummyEntity: LoadoutDummyWeaponRevolverSR27
+  equipment:
+    pocket1: WeaponRevolverSR27
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunK38Master
+  dummyEntity: LoadoutDummyWeaponRevolverK38Master
+  equipment:
+    pocket1: WeaponRevolverK38Master
+    pocket2: SpeedLoaderMagnum
+  groupBy: "GunRevolver"
+
+- type: loadout
+  id: SecurityGunEnergyPistol
+  equipment:
+    pocket1: WeaponEnergyPistolSec
+  groupBy: "GunPistolEnergy"
+
+- type: loadout
+  id: SecurityGunEnergyRevolver
+  equipment:
+    pocket1: WeaponEnergyRevolverSec
+  groupBy: "GunPistolEnergy"
+
+- type: loadout
+  id: SecurityGunMk58
+  dummyEntity: LoadoutDummyWeaponPistolMk58
+  equipment:
+    pocket1: WeaponPistolMk58
+    pocket2: MagazinePistol
+  groupBy: "GunPistol"
+
+- type: loadout
+  id: SecurityGunTP17
+  dummyEntity: LoadoutDummyWeaponPistolTP17
+  equipment:
+    pocket1: WeaponPistolTP17
+    pocket2: MagazinePistolExtended
+  groupBy: "GunPistol"
+
+- type: loadout
+  id: SecurityGunG14
+  dummyEntity: LoadoutDummyWeaponPistolG14
+  equipment:
+    pocket1: WeaponPistolG14
+    pocket2: MagazinePistolLight
+  groupBy: "GunPistol"
+
+- type: loadout
+  id: SecurityGunAstra47
+  dummyEntity: LoadoutDummyWeaponPistolAstra47
+  equipment:
+    pocket1: WeaponPistolAstra47
+    pocket2: MagazinePistolAlt
+  groupBy: "GunPistol"
+
+- type: loadout
+  id: SecurityGunWyvern
+  dummyEntity: LoadoutDummyWeaponPistolWyvern
+  equipment:
+    pocket1: WeaponPistolWyvern
+    pocket2: MagazinePistolAlt
+  groupBy: "GunPistol"
+
+- type: loadout
+  id: SecurityGunDualetta
+  dummyEntity: LoadoutDummyWeaponPistolDualetta
+  equipment:
+    pocket1: WeaponPistolDualetta
+    pocket2: MagazinePistol
+  groupBy: "GunPistol"
+
+- type: loadout
+  id: SecurityGunUniversal
+  dummyEntity: LoadoutDummyWeaponPistolUniversal
+  equipment:
+    pocket1: WeaponPistolUniversal
+    pocket2: MagazinePistolExtended
+  groupBy: "GunPistol"

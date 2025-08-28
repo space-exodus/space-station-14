@@ -2,8 +2,8 @@
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
          xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-         SetSize="800 800"
-         MinSize="800 128">
+         SetSize="1000 800"
+          MinSize="1000 500"> <!-- Exodus-Better-Loadout -->
     <BoxContainer Orientation="Vertical" VerticalExpand="True">
         <BoxContainer Name="RoleNameBox" Orientation="Vertical" Margin="10">
             <Label Name="LoadoutNameLabel"/>
