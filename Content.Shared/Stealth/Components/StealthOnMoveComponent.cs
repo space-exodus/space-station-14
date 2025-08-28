@@ -1,4 +1,8 @@
-using Robust.Shared.GameStates;
+//This component was commented out after the stealth system was refactored.
+//Its functionality is now handled by StealthComponent.
+//You can find it on path "Content/Shared/_Exodus/Stealth/Components/StealthComponent.cs"
+
+/*using Robust.Shared.GameStates;
 
 namespace Content.Shared.Stealth.Components
 {
@@ -21,4 +25,4 @@ namespace Content.Shared.Stealth.Components
         [DataField("movementVisibilityRate")]
         public float MovementVisibilityRate = 0.2f;
     }
-}
+}*/
