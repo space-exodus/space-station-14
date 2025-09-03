@@ -14,7 +14,7 @@ loadout-group-survival-extended = Расширенный аварийный за
 loadout-group-survival-clown = Клоунский аварийный запас
 loadout-group-survival-medical = Медицинский аварийный запас
 loadout-group-survival-security = Аварийный запас службы безопасности
-loadout-group-survival-syndicate = Github заставил меня перевести текст, который игрок вообще никогда не сможет увидеть, спасите
+loadout-group-survival-syndicate = Аварийный запас Синдиката
 loadout-group-breath-tool = Расозависимое дыхательное снаряжение
 loadout-group-tank-harness = Расозависимое снаряжение для выживания
 loadout-group-EVA-tank = Расозависимый газовый баллон
@@ -25,20 +25,20 @@ loadout-group-survival-mime = Мимский аварийный запас
 
 
 # Medical ChiefMedicalOfficer
-ChiefMedicalOfficer-loadout = Снаряжение главного врача
-loadout-group-chief-medical-officer-head = Главный врач, головной убор
-loadout-group-chief-medical-officer-jumpsuit = Главный врач, униформа
-loadout-group-chief-medical-officer-outerclothing = Главный врач, верхняя одежда
-loadout-group-chief-medical-officer-shoes = Главный врач, обувь
-loadout-group-chief-medical-officer-neck = Главный врач, шея
-loadout-group-chief-medical-officer-headset = Главный врач, гарнитура
-loadout-group-chief-medical-officer-backpack = Главный врач, рюкзак
-loadout-group-chief-medical-officer-gloves = Главный врач, перчатки
-loadout-group-chief-medical-officer-mask = Главный врач, маска
-loadout-group-chief-medical-officer-glasses = Главный врач, очки
+ChiefMedicalOfficer-loadout = Снаряжение Главного Врача
+loadout-group-chief-medical-officer-head = Главный Врач, головной убор
+loadout-group-chief-medical-officer-jumpsuit = Главный Врач, униформа
+loadout-group-chief-medical-officer-outerclothing = Главный Врач, верхняя одежда
+loadout-group-chief-medical-officer-shoes = Главный Врач, обувь
+loadout-group-chief-medical-officer-neck = Главный Врач, шея
+loadout-group-chief-medical-officer-headset = Главный Врач, гарнитура
+loadout-group-chief-medical-officer-backpack = Главный Врач, рюкзак
+loadout-group-chief-medical-officer-gloves = Главный Врач, перчатки
+loadout-group-chief-medical-officer-mask = Главный Врач, маска
+loadout-group-chief-medical-officer-glasses = Главный Врач, очки
 
 # Medical MedicalDoctor
-MedicalDoctor-loadout = Снаряжение врача
+MedicalDoctor-loadout = Снаряжение Врача
 loadout-group-medical-doctor-head = Врач, головной убор
 loadout-group-medical-doctor-jumpsuit = Врач, униформа
 loadout-group-medical-doctor-glasses = Врач, очки
@@ -51,14 +51,14 @@ loadout-group-medical-doctor-gloves = Врач, перчатки
 loadout-group-medical-doctor-neck = Врач, шея
 
 # Medical MedicalDoctor
-MedicalIntern-loadout = Снаряжение интерна
+MedicalIntern-loadout = Снаряжение Интерна
 loadout-group-medical-intern-jumpsuit = Интерн, униформа
 loadout-group-medical-intern-glasses = Интерн, очки
 loadout-group-medical-intern-backpack = Интерн, рюкзак
 loadout-group-medical-intern-neck = Интерн, шея
 
 # Medical Paramedic
-Paramedic-loadout = Снаряжение парамедика
+Paramedic-loadout = Снаряжение Парамедика
 loadout-group-paramedic-head = Парамедик, головной убор
 loadout-group-paramedic-jumpsuit = Парамедик, униформа
 loadout-group-paramedic-outerclothing = Парамедик, верхняя одежда
@@ -70,7 +70,7 @@ loadout-group-paramedic-backpack = Парамедик, рюкзак
 loadout-group-paramedic-neck = Парамедик, шея
 
 # Medical Chemist
-Chemist-loadout = Снаряжение химика
+Chemist-loadout = Снаряжение Химика
 loadout-group-chemist-jumpsuit = Химик, униформа
 loadout-group-chemist-outerclothing = Химик, верхняя одежда
 loadout-group-chemist-backpack = Химик, рюкзак
@@ -82,18 +82,18 @@ loadout-group-chemist-neck = Химик, шея
 
 
 # Engineering СhiefEngineer
-ChiefEngineer-loadout = Снаряжение старшего инженера
-loadout-group-chief-engineer-head = Старший инженер, головной убор
-loadout-group-chief-engineer-jumpsuit = Старший инженер, униформа
-loadout-group-chief-engineer-outerclothing = Старший инженер, верхняя одежда
-loadout-group-chief-engineer-neck = Старший инженер, шея
-loadout-group-chief-engineer-shoes = Старший инженер, обувь
-loadout-group-chief-engineer-headset = Старший инженер, гарнитура
-loadout-group-chief-engineer-belt = Старший инженер, пояс
-loadout-group-chief-engineer-backpack = Старший инженер, рюкзак
+ChiefEngineer-loadout = Снаряжение Старшего Инженера
+loadout-group-chief-engineer-head = Старший Инженер, головной убор
+loadout-group-chief-engineer-jumpsuit = Старший Инженер, униформа
+loadout-group-chief-engineer-outerclothing = Старший Инженер, верхняя одежда
+loadout-group-chief-engineer-neck = Старший Инженер, шея
+loadout-group-chief-engineer-shoes = Старший Инженер, обувь
+loadout-group-chief-engineer-headset = Старший Инженер, гарнитура
+loadout-group-chief-engineer-belt = Старший Инженер, пояс
+loadout-group-chief-engineer-backpack = Старший Инженер, рюкзак
 
 # Engineering StationEngineer
-StationEngineer-loadout = Снаряжение инженера
+StationEngineer-loadout = Снаряжение Инженера
 loadout-group-station-engineer-head = Инженер, головной убор
 loadout-group-station-engineer-jumpsuit = Инженер, униформа
 loadout-group-station-engineer-backpack = Инженер, рюкзак
@@ -104,35 +104,35 @@ loadout-group-station-engineer-belt = Инженер, пояс
 loadout-group-station-engineer-neck = Инженер, шея
 
 # Engineering AtmosphericTechnician
-AtmosphericTechnician-loadout = Снаряжение атмосферного техника
-loadout-group-atmospheric-technician-jumpsuit = Атмосферный техник, униформа
-loadout-group-atmospheric-technician-backpack = Атмосферный техник, рюкзак
-loadout-group-atmospheric-technician-outerclothing = Атмосферный техник, верхняя одежда
-loadout-group-atmospheric-technician-shoes = Атмосферный техник, обувь
-loadout-group-atmospheric-technician-belt = Атмосферный техник, пояс
-loadout-group-atmospheric-technician-neck = Атмосферный техник, шея
+AtmosphericTechnician-loadout = Снаряжение Атмосферного Техника
+loadout-group-atmospheric-technician-jumpsuit = Атмосферный Техник, униформа
+loadout-group-atmospheric-technician-backpack = Атмосферный Техник, рюкзак
+loadout-group-atmospheric-technician-outerclothing = Атмосферный Техник, верхняя одежда
+loadout-group-atmospheric-technician-shoes = Атмосферный Техник, обувь
+loadout-group-atmospheric-technician-belt = Атмосферный Техник, пояс
+loadout-group-atmospheric-technician-neck = Атмосферный Техник, шея
 
 # Engineering TechnicalAssistant
 TechnicalAssistant-loadout = Снаряжение технического ассистента
-loadout-group-technical-assistant-jumpsuit = Технический ассистент, униформа
-loadout-group-technical-assistant-backpack = Технический ассистент, рюкзак
-loadout-group-technical-assistant-neck = Технический ассистент, шея
+loadout-group-technical-assistant-jumpsuit = Технический Ассистент, униформа
+loadout-group-technical-assistant-backpack = Технический Ассистент, рюкзак
+loadout-group-technical-assistant-neck = Технический Ассистент, шея
 
 
 
 # Science ResearchDirector
-ResearchDirector-loadout = Снаряжение научного руководителя
-loadout-group-research-director-head = Научный руководитель, головной убор
-loadout-group-research-director-neck = Научный руководитель, шея
-loadout-group-research-director-jumpsuit = Научный руководитель, униформа
-loadout-group-research-director-outerclothing = Научный руководитель, верхняя одежда
-loadout-group-research-director-shoes = Научный руководитель, обувь
-loadout-group-research-director-headset = Научный руководитель, гарнитура
-loadout-group-research-director-backpack = Научный руководитель, рюкзак
-loadout-group-research-director-gloves = Научный руководитель, перчатки
+ResearchDirector-loadout = Снаряжение Научного руководителя
+loadout-group-research-director-head = Научный Руководитель, головной убор
+loadout-group-research-director-neck = Научный Руководитель, шея
+loadout-group-research-director-jumpsuit = Научный Руководитель, униформа
+loadout-group-research-director-outerclothing = Научный Руководитель, верхняя одежда
+loadout-group-research-director-shoes = Научный Руководитель, обувь
+loadout-group-research-director-headset = Научный Руководитель, гарнитура
+loadout-group-research-director-backpack = Научный Руководитель, рюкзак
+loadout-group-research-director-gloves = Научный Руководитель, перчатки
 
 # Science Scientist
-Scientist-loadout = Снаряжение учёного
+Scientist-loadout = Снаряжение Учёного
 loadout-group-scientist-head = Учёный, головной убор
 loadout-group-scientist-neck = Учёный, шея
 loadout-group-scientist-jumpsuit = Учёный, униформа
@@ -143,15 +143,15 @@ loadout-group-scientist-shoes = Учёный, обувь
 loadout-group-scientist-id = Учёный, ID
 
 # Science ResearchAssistant
-ResearchAssistant-loadout = Снаряжение научного ассистента
-loadout-group-research-assistant-neck = Научный ассистент, шея
-loadout-group-research-assistant-jumpsuit = Научный ассистент, униформа
-loadout-group-research-assistant-backpack = Научный ассистент, рюкзак
+ResearchAssistant-loadout = Снаряжение Научного Ассистента
+loadout-group-research-assistant-neck = Научный Ассистент, шея
+loadout-group-research-assistant-jumpsuit = Научный Ассистент, униформа
+loadout-group-research-assistant-backpack = Научный Ассистент, рюкзак
 
 
 
 # Cargo Quartermaster
-Quartermaster-loadout = Снаряжение квартирмейстера
+Quartermaster-loadout = Снаряжение Квартирмейстера
 loadout-group-quartermaster-head = Квартирмейстер, головной убор
 loadout-group-quartermaster-jumpsuit = Квартирмейстер, униформа
 loadout-group-quartermaster-neck = Квартирмейстер, шея
@@ -161,7 +161,7 @@ loadout-group-quartermaster-backpack = Квартирмейстер, рюкза�
 loadout-group-quartermaster-headset = Квартирмейстер, гарнитура
 
 # Cargo CargoTechnician
-CargoTechnician-loadout = Снаряжение грузчика
+CargoTechnician-loadout = Снаряжение Грузчика
 loadout-group-cargo-technician-head = Грузчик, головной убор
 loadout-group-cargo-technician-jumpsuit = Грузчик, униформа
 loadout-group-cargo-technician-backpack = Грузчик, рюкзак
@@ -171,7 +171,7 @@ loadout-group-cargo-technician-neck = Грузчик, шея
 loadout-group-cargo-technician-gloves = Грузчик, перчатки
 
 # Cargo SalvageSpecialist
-SalvageSpecialist-loadout = Снаряжение утилизатора
+SalvageSpecialist-loadout = Снаряжение Утилизатора
 loadout-group-salvage-specialist-backpack = Утилизатор, рюкзак
 loadout-group-salvage-specialist-outerclothing = Утилизатор, верхняя одежда
 loadout-group-salvage-specialist-shoes = Утилизатор, обувь
@@ -181,7 +181,7 @@ loadout-group-salvage-specialist-gloves = Утилизатор, перчатки
 
 
 # Security HeadofSecurity
-HeadOfSecurity-loadout = Снаряжение главы службы безопасности
+HeadOfSecurity-loadout = Снаряжение Главы Службы Безопасности
 loadout-group-head-of-security-head = ГСБ, головной убор
 loadout-group-head-of-security-jumpsuit = ГСБ, униформа
 loadout-group-head-of-security-neck = ГСБ, шея
@@ -193,7 +193,7 @@ loadout-group-head-of-security-belt = ГСБ, пояс
 loadout-group-head-of-security-shoes = ГСБ, обувь
 
 # Security Warden
-Warden-loadout = Снаряжение смотрителя
+Warden-loadout = Снаряжение Смотрителя
 loadout-group-warden-head = Смотритель, головной убор
 loadout-group-warden-jumpsuit = Смотритель, униформа
 loadout-group-warden-outerclothing = Смотритель, верхняя одежда
@@ -204,11 +204,8 @@ loadout-group-warden-backpack = Смотритель, рюкзак
 loadout-group-warden-belt = Смотритель, пояс
 loadout-group-warden-shoes = Смотритель, обувь
 
-# Security Pilot
-Pilot-loadout = Снаряжение пилота СБ
-
 # Security Detective
-Detective-loadout = Снаряжение детектива
+Detective-loadout = Снаряжение Детектива
 loadout-group-detective-head = Детектив, головной убор
 loadout-group-detective-neck = Детектив, шея
 loadout-group-detective-jumpsuit = Детектив, униформа
@@ -219,7 +216,7 @@ loadout-group-detective-backpack = Детектив, рюкзак
 loadout-group-detective-shoes = Детектив, обувь
 
 # Security Officer
-SecurityOfficer-loadout = Снаряжение офицера СБ
+SecurityOfficer-loadout = Снаряжение Офицера Службы Безопасности
 loadout-group-security-head = Офицер СБ, головной убор
 loadout-group-security-jumpsuit = Офицер СБ, униформа
 loadout-group-security-backpack = Офицер СБ, рюкзак
@@ -231,12 +228,12 @@ loadout-group-security-officer-gun = Офицер СБ, оружие
 loadout-group-security-officer-neck = Офицер СБ, шея
 
 # Security Cadet
-SecurityCadet-loadout = Снаряжение кадета СБ
+SecurityCadet-loadout = Снаряжение Кадета Службы Безопасности
 loadout-group-security-cadet-neck = Кадет СБ, шея
 loadout-group-security-cadet-jumpsuit = Кадет СБ, униформа
 loadout-group-security-cadet-backpack = Кадет СБ, рюкзак
 
-Brigmedic-loadout = Снаряжение бригмедика
+Brigmedic-loadout = Снаряжение Бригмедика
 loadout-group-brigmedic-gun = БригМедик, оружие
 loadout-group-brigmedic-mask = БригМедик, маска
 loadout-group-brigmedic-head = БригМедик, головной убор
@@ -250,7 +247,7 @@ loadout-group-brigmedic-backpack = БригМедик, рюкзак
 
 
 # Command Captain
-Captain-loadout = Снаряжение капитана
+Captain-loadout = Снаряжение Капитана
 loadout-group-captain-head = Капитан, головной убор
 loadout-group-captain-jumpsuit = Капитан, униформа
 loadout-group-captain-neck = Капитан, шея
@@ -259,35 +256,35 @@ loadout-group-captain-outerclothing = Капитан, верхняя одежд�
 loadout-group-captain-headset = Капитан, гарнитура
 
 # Command HOP
-HeadOfPersonnel-loadout = Снаряжение главы персонала
-loadout-group-hop-head = Глава персонала, головной убор
-loadout-group-hop-jumpsuit = Глава персонала, униформа
-loadout-group-hop-neck = Глава персонала, шея
-loadout-group-hop-backpack = Глава персонала, рюкзак
-loadout-group-hop-outerclothing = Глава персонала, верхняя одежда
-loadout-group-hop-headset = Глава персонала, гарнитура
+HeadOfPersonnel-loadout = Снаряжение Главы Персонала
+loadout-group-hop-head = Глава Персонала, головной убор
+loadout-group-hop-jumpsuit = Глава Персонала, униформа
+loadout-group-hop-neck = Глава Персонала, шея
+loadout-group-hop-backpack = Глава Персонала, рюкзак
+loadout-group-hop-outerclothing = Глава Персонала, верхняя одежда
+loadout-group-hop-headset = Глава Персонала, гарнитура
 
 # Command IAA
-IAA-loadout = Снаряжение агента внутренних дел
+IAA-loadout = Снаряжение Агента Внутренних Дел
 
 
 
 # Wildcards Reporter
-Reporter-loadout = Снаряжение репортёра
+Reporter-loadout = Снаряжение Репортёра
 loadout-group-reporter-jumpsuit = Репортёр, униформа
 loadout-group-reporter-backpack = Репортёр, рюкзак
 
 # Wildcards Psychologist
-Psychologist-loadout = Снаряжение психолога
+Psychologist-loadout = Снаряжение Психолога
 loadout-group-psychologist-jumpsuit = Психолог, униформа
 loadout-group-psychologist-backpack = Психолог, рюкзак
 
 # Wildcards Zookeeper
-Zookeeper-loadout = Снаряжение зоотехника
+Zookeeper-loadout = Снаряжение Зоотехника
 loadout-group-zookeeper-backpack = Зоотехник, рюкзак
 
 # Wildcards Boxer
-Boxer-loadout = Снаряжение боксёра
+Boxer-loadout = Снаряжение Боксёра
 loadout-group-boxer-jumpsuit = Боксёр, униформа
 loadout-group-boxer-gloves = Боксёр, перчатки
 loadout-group-boxer-backpack = Боксёр, рюкзак
@@ -295,7 +292,7 @@ loadout-group-boxer-backpack = Боксёр, рюкзак
 
 
 # Civilian Clown
-Clown-loadout = Снаряжение клоуна
+Clown-loadout = Снаряжение Клоуна
 loadout-group-clown-head = Клоун, головной убор
 loadout-group-clown-jumpsuit = Клоун, униформа
 loadout-group-clown-backpack = Клоун, рюкзак
@@ -306,7 +303,7 @@ loadout-group-clown-mask = Клоун, маска
 loadout-group-clown-neck = Клоун, шея
 
 # Civilian Passenger
-Passenger-loadout = Снаряжение пассажира
+Passenger-loadout = Снаряжение Пассажира
 loadout-group-passenger-jumpsuit = Пассажир, униформа
 loadout-group-passenger-mask = Пассажир, маска
 loadout-group-passenger-gloves = Пассажир, перчатки
@@ -316,7 +313,7 @@ loadout-group-passenger-neck = Пассажир, шея
 loadout-group-passenger-backpack = Пассажир, рюкзак
 
 # Civilian Bartender
-Bartender-loadout = Снаряжение бармена
+Bartender-loadout = Снаряжение Бармена
 loadout-group-bartender-head = Бармен, головной убор
 loadout-group-bartender-jumpsuit = Бармен, униформа
 loadout-group-bartender-outerclothing = Бармен, верхняя одежда
@@ -324,28 +321,28 @@ loadout-group-bartender-backpack = Бармен, рюкзак
 loadout-group-bartender-neck = Бармен, шея
 
 # Civilian Chef
-Chef-loadout = Снаряжение шеф-повара
-loadout-group-chef-head = Шеф-повар, головной убор
-loadout-group-chef-mask = Шеф-повар, маска
-loadout-group-chef-jumpsuit = Шеф-повар, униформа
-loadout-group-chef-outerclothing = Шеф-повар, верхняя одежда
-loadout-group-chef-backpack = Шеф-повар, рюкзак
-loadout-group-chef-neck = Шеф-повар, шея
+Chef-loadout = Снаряжение Шеф-Повара
+loadout-group-chef-head = Шеф-Повар, головной убор
+loadout-group-chef-mask = Шеф-Повар, маска
+loadout-group-chef-jumpsuit = Шеф-Повар, униформа
+loadout-group-chef-outerclothing = Шеф-Повар, верхняя одежда
+loadout-group-chef-backpack = Шеф-Повар, рюкзак
+loadout-group-chef-neck = Шеф-Повар, шея
 
 # Civilian Librarian
-Librarian-loadout = Снаряжение библиотекаря
+Librarian-loadout = Снаряжение Библиотекаря
 loadout-group-librarian-jumpsuit = Библиотекарь, униформа
 loadout-group-librarian-backpack = Библиотекарь, рюкзак
 loadout-group-librarian-neck = Библиотекарь, шея
 
 # Civilian Lawyer
-Lawyer-loadout = Снаряжение адвоката
+Lawyer-loadout = Снаряжение Адвоката
 loadout-group-lawyer-jumpsuit = Адвокат, униформа
 loadout-group-lawyer-neck = Адвокат, шея
 loadout-group-lawyer-backpack = Адвокат, рюкзак
 
 # Civilian Chaplain
-Chaplain-loadout = Снаряжение священника
+Chaplain-loadout = Снаряжение Священника
 loadout-group-chaplain-head = Священник, головной убор
 loadout-group-chaplain-mask = Священник, маска
 loadout-group-chaplain-jumpsuit = Священник, униформа
@@ -354,7 +351,7 @@ loadout-group-chaplain-neck = Священник, шея
 loadout-group-chaplain-backpack = Священник, рюкзак
 
 # Civilian Janitor
-Janitor-loadout = Снаряжение уборщика
+Janitor-loadout = Снаряжение Уборщика
 loadout-group-janitor-head = Уборщик, головной убор
 loadout-group-janitor-jumpsuit = Уборщик, униформа
 loadout-group-janitor-gloves = Уборщик, перчатки
@@ -364,7 +361,7 @@ loadout-group-janitor-backpack = Уборщик, рюкзак
 loadout-group-janitor-neck = Уборщик, шея
 
 # Civilian Botanist
-Botanist-loadout = Снаряжение ботаника
+Botanist-loadout = Снаряжение Ботаника
 loadout-group-botanist-head = Ботаник, головной убор
 loadout-group-botanist-jumpsuit = Ботаник, униформа
 loadout-group-botanist-backpack = Ботаник, рюкзак
@@ -373,7 +370,7 @@ loadout-group-botanist-neck = Ботаник, шея
 loadout-group-botanist-gloves = Ботаник, перчатки
 
 # Civilian Mime
-Mime-loadout = Снаряжение мима
+Mime-loadout = Снаряжение Мима
 loadout-group-mime-head = Мим, головной убор
 loadout-group-mime-mask = Мим, маска
 loadout-group-mime-jumpsuit = Мим, униформа
@@ -383,13 +380,13 @@ loadout-group-mime-belt = Мим, пояс
 loadout-group-mime-neck = Мим, шея
 
 # Civilian ServiceWorker
-ServiceWorker-loadout = Снаряжение сервисного работника
-loadout-group-service-worker-jumpsuit = Сервисный работник, униформа
-loadout-group-service-worker-backpack = Сервисный работник, рюкзак
-loadout-group-service-worker-neck = Сервисный работник, шея
+ServiceWorker-loadout = Снаряжение Сервисного Работника
+loadout-group-service-worker-jumpsuit = Сервисный Работник, униформа
+loadout-group-service-worker-backpack = Сервисный Работник, рюкзак
+loadout-group-service-worker-neck = Сервисный Работник, шея
 
 # Civilian Musician
-Musician-loadout = Снаряжение музыканта
+Musician-loadout = Снаряжение Музыканта
 loadout-group-musician-jumpsuit = Музыкант, униформа
 loadout-group-musician-outerclothing = Музыкант, верхняя одежда
 loadout-group-musician-backpack = Музыкант, рюкзак
