@@ -72,8 +72,8 @@ reagent-effect-guidebook-health-change =
             }
        *[other]
             { $healsordeals ->
-                [heals] излечивать
-                [deals] наносить
+                [heals] лечат
+                [deals] наносят
                *[both] изменяют здоровье на
             }
     } { $changes }
@@ -244,7 +244,7 @@ reagent-effect-guidebook-emote =
     { $chance ->
         [1] Вызывает
        *[other] вызвать
-   }  [bold][color=white]{ $emote }[/color][/bold]
+    }  у цели [bold][color=white]{ $emote }[/color][/bold]
 reagent-effect-guidebook-electrocute =
     { $chance ->
         [1] Бьёт током
