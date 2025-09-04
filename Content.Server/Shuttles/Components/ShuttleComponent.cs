@@ -56,6 +56,11 @@ namespace Content.Server.Shuttles.Components
         [ViewVariables]
         public DirectionFlag ThrustDirections = DirectionFlag.None;
 
+        // Exodus-Indestructible-Grid-Start
+        [DataField]
+        public bool CollisionImmunity = false;
+        // Exodus-Indestructible-Grid-End
+
         /// <summary>
         /// Base damping modifier applied to the shuttle's physics component when not in FTL.
         /// </summary>
