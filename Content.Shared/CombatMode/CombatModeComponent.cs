@@ -40,8 +40,6 @@ namespace Content.Shared.CombatMode
         public EntityUid? CombatToggleActionEntity;
 
         // Exodus-Degree-Rotation-Mode-Start
-        [DataField, AutoNetworkedField]
-        public bool DegreeRotationMode = true;
         /// <summary>
         ///     If enabled, configures the <see cref="MouseRotatorComponent.AngleTolerance"/> to 1 degree and
         ///     disables <see cref="MouseRotatorComponent.Simple4DirMode"/> upon the owner entering combat mode.
@@ -49,6 +47,8 @@ namespace Content.Shared.CombatMode
         ///     Changes will only be applied upon re-entering combat mode.
         ///     This has no effect if the master <see cref="ToggleMouseRotator"/> is set to false.
         /// </summary>
+        [DataField, AutoNetworkedField]
+        public bool DegreeRotationMode = true;
         // Exodus-Degree-Rotation-Mode-End
 
         [ViewVariables(VVAccess.ReadWrite), DataField("isInCombatMode"), AutoNetworkedField]
