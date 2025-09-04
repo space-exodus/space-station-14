@@ -141,8 +141,8 @@ public sealed partial class ShuttleSystem
 
             // Exodus-Indestructible-Grid-Start.
             // If one grid in case of collision have CollisionImmunity, both of them dont take damage.
-            if (!EntityManager.TryGetComponent<ShuttleComponent>(args.OtherEntity, out var otherComponent))
-                continue;
+            if (args.OtherEntity == null || !TryComp<ShuttleComponent>(args.OtherEntity, out var otherComponent))
+            continue;
 
             if (component.CollisionImmunity || otherComponent.CollisionImmunity)
                 continue;
