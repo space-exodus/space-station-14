@@ -5,7 +5,7 @@
   id: MedkitLoadout
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    sprite: Exodus/Objects/Specific/Medical/firstaidkits.rsi
     state: firstaid
   - type: Storage
     maxItemSize: Small
@@ -13,7 +13,7 @@
     - 0,0,2,1
   - type: Item
     size: Normal
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    sprite: Exodus/Objects/Specific/Medical/firstaidkits.rsi
     heldPrefix: firstaid
   - type: StorageFill
     contents:

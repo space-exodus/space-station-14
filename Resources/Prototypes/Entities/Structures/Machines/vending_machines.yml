@@ -1645,6 +1645,7 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
+    denyState: deny-unshaded # Exodus-Resprite
   - type: Advertise
     pack: CargoDrobeAds
   - type: SpeakOnUIClosed

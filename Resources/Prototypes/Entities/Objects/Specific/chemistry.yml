@@ -7,14 +7,14 @@
     tags:
     - GlassBeaker
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
     layers:
       - state: beaker
       - state: beaker1
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Item
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
   - type: MeleeWeapon
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
@@ -105,14 +105,14 @@
     tags:
     - GlassBeaker
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
     layers:
       - state: beaker
       - state: beaker1
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Item
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
   - type: MeleeWeapon
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
@@ -161,14 +161,14 @@
     tags:
     - GlassBeaker
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
     layers:
       - state: beaker
       - state: beaker1
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Item
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
   - type: MeleeWeapon
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
@@ -257,7 +257,7 @@
   - type: Spillable
     solution: beaker
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/beaker_large.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker_large.rsi  # Exodus-Resprite
     layers:
       - state: beakerlarge
       - state: beakerlarge1
@@ -265,7 +265,7 @@
         visible: false
   - type: Item
     size: Normal
-    sprite: Objects/Specific/Chemistry/beaker_large.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker_large.rsi  # Exodus-Resprite
   - type: SolutionContainerManager
     solutions:
       beaker:
@@ -291,7 +291,7 @@
   - type: Spillable
     solution: beaker
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/beaker_cryostasis.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker_cryostasis.rsi  # Exodus-Resprite
     layers:
       - state: beakernoreact
   - type: SolutionContainerVisuals
@@ -642,9 +642,9 @@
   components:
   - type: Item
     size: Tiny
-    sprite: Objects/Specific/Chemistry/pills_canister.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/pills_canister.rsi  # Exodus-Resprite
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/pills_canister.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/pills_canister.rsi  # Exodus-Resprite
     state: pill_canister
   - type: Tag
     tags:

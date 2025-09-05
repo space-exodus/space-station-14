@@ -133,7 +133,7 @@
   description: bounty-description-plates
   group: SalvageJobTier3
   sprite:
-    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    sprite: Exodus/Mobs/Aliens/Asteroid/goliath.rsi # Exodus-Resprite
     state: goliath
   entries:
   - name: bounty-item-plates
