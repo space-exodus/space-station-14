@@ -89,7 +89,14 @@ public abstract class SharedCombatModeSystem : EntitySystem
     {
         if (value)
         {
-            EnsureComp<MouseRotatorComponent>(uid);
+            // Exodus-Degree-Rotation-Mode-Start
+            var rot = EnsureComp<MouseRotatorComponent>(uid);
+            if (TryComp<CombatModeComponent>(uid, out var comp) && comp.DegreeRotationMode)
+            {
+                rot.AngleTolerance = Angle.FromDegrees(1);
+                rot.Simple4DirMode = false;
+            }
+            // Exodus-Degree-Rotation-Mode-Start
             EnsureComp<NoRotateOnMoveComponent>(uid);
         }
         else
