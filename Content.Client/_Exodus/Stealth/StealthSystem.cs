@@ -16,6 +16,7 @@ public sealed class StealthSystem : SharedStealthSystem
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private readonly SharedStealthSystem _stealth = default!;
 
     private ShaderInstance _shader = default!;
 
@@ -34,7 +35,7 @@ public sealed class StealthSystem : SharedStealthSystem
 
     private void OnRequestChange(EntityUid uid, StealthComponent comp, StealthRequestChangeEvent args)
     {
-        var enabled = comp.StealthLayers.Count > 0;
+        var enabled = !_stealth.IsVisible(uid);
         if (enabled)
             AddShader(uid);
         else

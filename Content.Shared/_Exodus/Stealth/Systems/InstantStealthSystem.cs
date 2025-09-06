@@ -13,14 +13,13 @@ public sealed partial class InstantStealthSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<InstantStealthComponent, ComponentInit>(OnInit);
+        SubscribeLocalEvent<InstantStealthComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<InstantStealthComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<InstantStealthComponent, EntityUnpausedEvent>(OnUnpaused);
     }
 
-    private void OnInit(EntityUid uid, InstantStealthComponent comp, ComponentInit args)
+    private void OnMapInit(EntityUid uid, InstantStealthComponent comp, MapInitEvent args)
     {
-        if (Paused(uid) || !comp.Enabled)
+        if (!comp.Enabled)
             return;
 
         if (!_stealthSystem.RequestStealth(uid, nameof(InstantStealthSystem), comp.Stealth))
@@ -33,15 +32,12 @@ public sealed partial class InstantStealthSystem : EntitySystem
             return;
     }
 
-    private void OnUnpaused(EntityUid uid, InstantStealthComponent comp, ref EntityUnpausedEvent args)
-    {
-        if (comp.Enabled)
-            _stealthSystem.RequestStealth(uid, nameof(InstantStealthSystem), comp.Stealth);
-    }
-
     public void SetEnabled(EntityUid uid, bool value, InstantStealthComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))
+            return;
+
+        if (comp.Enabled == value)
             return;
 
         comp.Enabled = value;
