@@ -139,6 +139,15 @@ public sealed partial class ShuttleSystem
                 continue;
             }
 
+            // Exodus-Indestructible-Grid-Start.
+            // If one grid in case of collision have CollisionImmunity, both of them dont take damage.
+            if (args.OtherEntity == null || !TryComp<ShuttleComponent>(args.OtherEntity, out var otherComponent))
+            continue;
+
+            if (component.CollisionImmunity || otherComponent.CollisionImmunity)
+                continue;
+            // Exodus-Indestructible-Grid-End
+
             // Play impact sound
             var coordinates = new EntityCoordinates(ourXform.MapUid.Value, worldPoint);
 
