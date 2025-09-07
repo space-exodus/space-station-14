@@ -1,0 +1,72 @@
+# Head
+- type: loadout
+  id: HeadofSecurityHeadCap
+  equipment:
+    head: ClothingHeadHatCapHoS
+
+# Neck
+- type: loadoutEffectGroup
+  id: SpecialistHoS
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 144000 #40 hrs
+
+- type: loadout
+  id: HeadofSecurityCloakFur
+  equipment:
+    neck: ClothingNeckCloakHosFur
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SpecialistHoS
+  groupBy: "Cloak"
+
+- type: loadoutEffectGroup
+  id: NewbieHoS
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 36000 #10 hrs
+
+- type: loadout
+  id: HoSScarf
+  equipment:
+    neck: ClothingNeckScarfHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NewbieHoS
+
+# Uniform
+- type: loadout
+  id: HoSJumpskirtParadeMale
+  equipment:
+    belt: ClothingUniformJumpskirtHoSParadeMale
+  groupBy: "Jumpskirt"
+
+- type: loadout
+  id: HoSJumpsuitParadeMale
+  equipment:
+    belt: ClothingUniformJumpsuitHoSParadeMale
+  groupBy: "Jumpsuit"
+
+# OuterClothing
+- type: loadout
+  id: HeadofSecurityOvercoat
+  equipment:
+    outerClothing: ClothingOuterCoatSecurityOvercoat
+  groupBy: "Armor"
+
+#Ears
+- type: loadout
+  id: HeadofSecurityAltHeadset
+  equipment:
+    ears: ClothingHeadsetAltSecurity
+
+- type: loadout
+  id: HeadofSecurityHeadset
+  equipment:
+    ears: ClothingHeadsetSecurityHOS

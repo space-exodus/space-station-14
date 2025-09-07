@@ -1,0 +1,17 @@
+- type: entity
+  id: Ointment3
+  parent: Ointment
+  suffix: Three
+  components:
+  - type: Stack
+    stackType: Ointment
+    count: 3
+
+- type: entity
+  id: Gauze3
+  parent: Gauze
+  suffix: Three
+  components:
+  - type: Stack
+    stackType: Gauze
+    count: 3

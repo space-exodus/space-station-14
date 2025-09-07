@@ -3,8 +3,10 @@
   id: HoPJumpsuitTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoPTurtleneck
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: HoPJumpskirtTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoPTurtleneck
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout

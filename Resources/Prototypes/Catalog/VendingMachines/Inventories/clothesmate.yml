@@ -56,6 +56,21 @@
     ClothingUniformJumpskirtCasualRed: 2
     ClothingUniformJumpsuitCasualGreen: 2
     ClothingUniformJumpskirtCasualGreen: 2
+    # Exodus-Better-Loadout-Start
+    ClothingUniformJumpskirtGothic0: 2
+    ClothingUniformJumpskirtGothic1: 2
+    ClothingUniformJumpskirtGothic2: 2
+    ClothingUniformJumpskirtGothic3: 2
+    ClothingUniformJumpskirtGothic4: 2
+    ClothingUniformJumpsuitGothic0: 2
+    ClothingUniformJumpsuitGothic1: 2
+    ClothingUniformJumpsuitGothic2: 2
+    ClothingUniformJumpsuitGothic3: 2
+    ClothingUniformJumpsuitGothic4: 2
+    ClothingUniformJumpsuitGothic5: 2
+    ClothingUniformJumpsuitGothic6: 2
+    ClothingUniformJumpsuitGothic7: 2
+    # Exodus-Better-Loadout-End
     # DO NOT ADD MORE, USE UNIFORM DYING
     ClothingShoesColorBlack: 8
     ClothingShoesColorBrown: 4

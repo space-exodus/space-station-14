@@ -1,0 +1,22 @@
+# Neck
+- type: loadout
+  id: ScientistTie
+  equipment:
+    neck: ClothingNeckTieSci
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ScienceAverage
+
+- type: loadoutEffectGroup
+  id: ScienceAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Science
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: ScienceScarf
+  equipment:
+    neck: ClothingNeckScarfStripedPurple

@@ -1,10 +1,4 @@
-- type: loadoutGroup
-  id: ChiefEngineerBackpack
-  name: loadout-group-chief-engineer-backpack
-  loadouts:
-  - ChiefEngineerBackpack
-  - ChiefEngineerSatchel
-  - ChiefEngineerDuffel
+
 
 # Exodus-Start | Brigmedic is our job
 # - type: loadoutGroup

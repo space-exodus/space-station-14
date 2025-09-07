@@ -186,6 +186,7 @@ flavor-complex-true-nature = как истинная природа реальн
 flavor-complex-false-meat = как не совсем не мясо
 flavor-complex-paper = как кашеобразная масса
 flavor-complex-compressed-meat = как спрессованное мясо
+flavor-complex-dog-food = как еда для собак
 flavor-complex-alcohol = как алкоголь
 flavor-complex-soda = как газировка
 flavor-complex-juice = как сок

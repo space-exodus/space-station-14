@@ -1,0 +1,36 @@
+# Neck
+- type: loadout
+  id: EngineeringTie
+  equipment:
+    neck: ClothingNeckTieEngi
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EngineerAverage
+
+- type: loadout
+  id: EngineeringScarf
+  equipment:
+    neck: ClothingNeckScarfStripedOrange
+
+# Belt
+- type: loadoutEffectGroup
+  id: EngineerAverage
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 36000 # 10 hrs
+
+- type: loadout
+  id: UtilityWebbing
+  equipment:
+    belt: ClothingBeltUtilityWebbingEngineering
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EngineerAverage
+
+- type: loadout
+  id: UtilityBelt
+  equipment:
+    belt: ClothingBeltUtilityEngineering

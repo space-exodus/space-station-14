@@ -38,6 +38,7 @@
     proto: SeniorPhysician
   equipment:
     head: ClothingHeadHatBeretSeniorPhysician
+  groupBy: "Beret" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalHeadMirror
@@ -51,21 +52,25 @@
   id: MedicalBeret
   equipment:
     head: ClothingHeadHatBeretMedic
+  groupBy: "Beret" # Exodus-Better-Loadout
 
 - type: loadout
   id: BlueSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapBlue
+  groupBy: "SurgeryCap" # Exodus-Better-Loadout
 
 - type: loadout
   id: GreenSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapGreen
+  groupBy: "SurgeryCap" # Exodus-Better-Loadout
 
 - type: loadout
   id: PurpleSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapPurple
+  groupBy: "SurgeryCap" # Exodus-Better-Loadout
 
 - type: loadout
   id: NurseHat
@@ -77,11 +82,13 @@
   id: MedicalDoctorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalDoctorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorPhysicianJumpsuit
@@ -90,6 +97,7 @@
     proto: SeniorPhysician
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorPhysicianJumpskirt
@@ -98,21 +106,25 @@
     proto: SeniorPhysician
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorPhysician
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalBlueScrubs
   equipment:
     jumpsuit: UniformScrubsColorBlue
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalGreenScrubs
   equipment:
     jumpsuit: UniformScrubsColorGreen
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalPurpleScrubs
   equipment:
     jumpsuit: UniformScrubsColorPurple
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 # Back
 - type: loadout
@@ -181,8 +193,10 @@
   id: MedicalHud
   equipment:
     eyes: ClothingEyesHudMedical
+  groupBy: "Hud" # Exodus-Better-Loadout
 
 - type: loadout
   id: MedicalEyePatchHud
   equipment:
     eyes: ClothingEyesEyepatchHudMedical
+  groupBy: "Hud" # Exodus-Better-Loadout

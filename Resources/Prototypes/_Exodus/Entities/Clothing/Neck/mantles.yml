@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckMantleCap
+  id: ClothingNeckMantleCapShoulder
+  name: captain's shoulder mantle
+  description: Weh.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Mantles/captainmantle_shoulder.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Mantles/captainmantle_shoulder.rsi

@@ -1,0 +1,76 @@
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfCaptain
+  name: captain scarf
+  description: They say that by wearing it, you get an aura of authority... Or at least look very important.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_cap.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_cap.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfCE
+  name: chief engineer scarf
+  description: Wear it to show that you are the one keeping the station afloat, even when everything is falling apart... Although, perhaps, you are to blame for that.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_ce.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_ce.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfCMO
+  name: chief medical officer scarf
+  description: This scarf is infused with a medical aura that might help you heal the next patient who 'fell' onto the station-baton. Or, at least, it's soft and comfortable.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_cmo.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_cmo.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfHOP
+  name: head of personnel scarf
+  description: It is perfect for warming your neck while you manage the station's workforce and deal with the inevitable paperwork.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_hop.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_hop.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfHOS
+  name: head of security scarf
+  description: Perfect for wiping sweat after chasing down a suspect... Even though it's disgusting.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_hos.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_hos.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfQM
+  name: quartermaster scarf
+  description: A scarf that is always in stock... If you know where to find it!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_qm.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_qm.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfRD
+  name: research director scarf
+  description: This high-tech scarf is woven from experimental fibers that can inspire you to come up with brilliant ideas... or simply make you look smart. Science is an unpredictable thing.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_rd.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Scarfs/scarf_rd.rsi

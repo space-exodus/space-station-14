@@ -37,11 +37,13 @@
   id: ResearchDirectorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitResearchDirector
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ResearchDirectorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtResearchDirector
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # OuterClothing
 - type: loadout

@@ -1,0 +1,65 @@
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: MagazineBoxPistolLight
+  result: MagazineBoxPistolLight
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: MagazineBoxPistolIncendiaryLight
+  result: MagazineBoxPistolIncendiaryLight
+  materials:
+    Plastic: 500
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: MagazineBoxPistolPracticeLight
+  result: MagazineBoxPistolPracticeLight
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: MagazineBoxPistolUraniumLight
+  result: MagazineBoxPistolUraniumLight
+  materials:
+    Plastic: 200
+    Uranium: 500
+
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: MagazineBoxPistolAlt
+  result: MagazineBoxPistolAlt
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: MagazineBoxPistolPracticeAlt
+  result: MagazineBoxPistolPracticeAlt
+  materials:
+    Steel: 300
+
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistolExtended
+  result: MagazinePistolExtended
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistolLight
+  result: MagazinePistolLight
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistolAlt
+  result: MagazinePistolAlt
+  materials:
+    Steel: 150
