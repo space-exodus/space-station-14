@@ -3,21 +3,10 @@
   groups:
   - LawyerNeck
   - LawyerJumpsuit
-  - CommonBackpack
+  - LawyerBackpack
   - Survival
   - Trinkets
-  - GroupSpeciesBreathTool
-
-- type: roleLoadout
-  id: JobPilot
-  groups:
-  - SecurityJumpsuit
-  - SecurityBackpack
-  - SecurityOuterClothing
-  - SecurityBelt
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
+  - TrinketsCloth
   - GroupSpeciesBreathTool
 
 # - type: roleLoadout # Exodus | Brigmedic is our job

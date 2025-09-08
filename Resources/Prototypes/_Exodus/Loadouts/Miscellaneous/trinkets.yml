@@ -1,0 +1,1925 @@
+- type: loadout
+  id: PersonalAI
+  storage:
+    back:
+    - PersonalAI
+
+- type: loadout
+  id: EyepatchLoadout
+  storage:
+    back:
+    - ClothingEyesEyepatch
+  groupBy: "Eyes"
+
+- type: loadout
+  id: MedkitLoadout
+  storage:
+    back:
+    - MedkitLoadout
+
+- type: loadout
+  id: PercentileDice
+  storage:
+    back:
+    - PercentileDie
+  groupBy: "Dice"
+
+- type: loadout
+  id: D20Dice
+  storage:
+    back:
+    - d20Dice
+  groupBy: "Dice"
+
+- type: loadout
+  id: D12Dice
+  storage:
+    back:
+    - d12Dice
+  groupBy: "Dice"
+
+- type: loadout
+  id: D10Dice
+  storage:
+    back:
+    - d10Dice
+  groupBy: "Dice"
+
+- type: loadout
+  id: D8Dice
+  storage:
+    back:
+    - d8Dice
+  groupBy: "Dice"
+
+- type: loadout
+  id: D6Dice
+  storage:
+    back:
+    - d6Dice
+  groupBy: "Dice"
+
+- type: loadout
+  id: D4Dice
+  storage:
+    back:
+    - d4Dice
+  groupBy: "Dice"
+
+- type: loadout
+  id: Mothroach
+  storage:
+    back:
+    - MobMothroach
+
+- type: loadout
+  id: HandheldStationMap
+  storage:
+    back:
+    - HandheldStationMap
+
+- type: loadout
+  id: PlushieSharkGrey
+  storage:
+    back:
+    - PlushieSharkGrey
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSharkPink
+  storage:
+    back:
+    - PlushieSharkPink
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSharkBlue
+  storage:
+    back:
+    - PlushieSharkBlue
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieBee
+  storage:
+    back:
+    - PlushieBee
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieRatvar
+  storage:
+    back:
+    - PlushieRatvar
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieArachind
+  storage:
+    back:
+    - PlushieArachind
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSnake
+  storage:
+    back:
+    - PlushieSnake
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieAtmosian
+  storage:
+    back:
+    - PlushieAtmosian
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieDiona
+  storage:
+    back:
+    - PlushieDiona
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieVox
+  storage:
+    back:
+    - PlushieVox
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieHampter
+  storage:
+    back:
+    - PlushieHampter
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieXeno
+  storage:
+    back:
+    - PlushieXeno
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieSlime
+  storage:
+    back:
+    - PlushieSlime
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieRouny
+  storage:
+    back:
+    - PlushieRouny
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushiePenguin
+  storage:
+    back:
+    - PlushiePenguin
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieNar
+  storage:
+    back:
+    - PlushieNar
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieNuke
+  storage:
+    back:
+    - PlushieNuke
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieHuman
+  storage:
+    back:
+    - PlushieHuman
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieMagicarp
+  storage:
+    back:
+    - PlushieMagicarp
+  groupBy: "Plush"
+
+- type: loadout
+  id: PlushieExperiment
+  storage:
+    back:
+    - PlushieExperiment
+  groupBy: "Plush"
+
+
+# region Clothing
+- type: loadout
+  id: LoadoutClothingNeckTieRainbow
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckTieRainbow
+  storage:
+    back:
+    - WrappedParcelClothingNeckTieRainbow
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGothic0
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGothic0
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGothic0
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGothic1
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGothic1
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGothic1
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGothic2
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGothic2
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGothic2
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGothic3
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGothic3
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGothic3
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGothic4
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGothic4
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGothic4
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic0
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic0
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic0
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic1
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic1
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic1
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic2
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic2
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic2
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic3
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic3
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic3
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic4
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic4
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic4
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic5
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic5
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic5
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic6
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic6
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic6
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitGothic7
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitGothic7
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitGothic7
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorTeal
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorTeal
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorTeal
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorTeal
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorTeal
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorTeal
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorTeal
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorTeal
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorTeal
+
+- type: loadout
+  id: LoadoutClothingOuterCoatGentle
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterCoatGentle
+  storage:
+    back:
+    - WrappedParcelClothingOuterCoatGentle
+
+- type: loadout
+  id: LoadoutClothingMaskBandSkull
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandSkull
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandSkull
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorWhite
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorWhite
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorWhite
+
+- type: loadout
+  id: LoadoutClothingHeadHatMimesoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatMimesoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatMimesoft
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorWhite
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorWhite
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorWhite
+
+- type: loadout
+  id: LoadoutClothingShoesColorWhite
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorWhite
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorWhite
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorWhite
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorWhite
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorWhite
+
+- type: loadout
+  id: LoadoutClothingHeadHatBeret
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBeret
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBeret
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesFingerless
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesFingerless
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesFingerless
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorMaroon
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorMaroon
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorMaroon
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorMaroon
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorMaroon
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorMaroon
+
+- type: loadout
+  id: LoadoutClothingNeckCloakTrans
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakTrans
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakTrans
+
+- type: loadout
+  id: LoadoutClothingNeckCloakAdmin
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakAdmin
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakAdmin
+
+- type: loadout
+  id: LoadoutClothingHeadWehcellentCap
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadWehcellentCap
+  storage:
+    back:
+    - WrappedParcelClothingHeadWehcellentCap
+
+- type: loadout
+  id: LoadoutClothingEyesGlassesGarGiga
+  groupBy: "Eyes"
+  dummyEntity: LoadoutDummyClothingEyesGlassesGarGiga
+  storage:
+    back:
+    - WrappedParcelClothingEyesGlassesGarGiga
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedLesbianLong
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedLesbianLong
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedLesbianLong
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitHawaiYellow
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitHawaiYellow
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitHawaiYellow
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorYellow
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorYellow
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorYellow
+
+- type: loadout
+  id: LoadoutClothingHeadHatYellowsoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatYellowsoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatYellowsoft
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorYellow
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorYellow
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorYellow
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtYellowTurtleneckDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtYellowTurtleneckDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtYellowTurtleneckDress
+
+- type: loadout
+  id: LoadoutClothingShoesColorYellow
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorYellow
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorYellow
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorYellow
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorYellow
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorYellow
+
+- type: loadout
+  id: LoadoutClothingMaskBandGreen
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandGreen
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandGreen
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorGreen
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorGreen
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorGreen
+
+- type: loadout
+  id: LoadoutClothingHeadHatGreensoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatGreensoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatGreensoft
+
+- type: loadout
+  id: LoadoutClothingOuterFlannelGreen
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterFlannelGreen
+  storage:
+    back:
+    - WrappedParcelClothingOuterFlannelGreen
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorGreen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorGreen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorGreen
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGreenTurtleneckDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGreenTurtleneckDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGreenTurtleneckDress
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorGreen
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorGreen
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorGreen
+
+- type: loadout
+  id: LoadoutClothingShoesColorGreen
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorGreen
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorGreen
+
+- type: loadout
+  id: LoadoutClothingShoesGreenLizardskin
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesGreenLizardskin
+  storage:
+    back:
+    - WrappedParcelClothingShoesGreenLizardskin
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorGreen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorGreen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorGreen
+
+- type: loadout
+  id: LoadoutClothingShoesBootsWinter
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesBootsWinter
+  storage:
+    back:
+    - WrappedParcelClothingShoesBootsWinter
+
+- type: loadout
+  id: LoadoutClothingOuterWinterCoat
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterCoat
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterCoat
+
+- type: loadout
+  id: LoadoutClothingHeadBandGold
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadBandGold
+  storage:
+    back:
+    - WrappedParcelClothingHeadBandGold
+
+- type: loadout
+  id: LoadoutClothingHeadFishCap
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadFishCap
+  storage:
+    back:
+    - WrappedParcelClothingHeadFishCap
+
+- type: loadout
+  id: LoadoutClothingHeadHatBizarreSoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBizarreSoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBizarreSoft
+
+- type: loadout
+  id: LoadoutClothingOuterPonchoClassic
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterPonchoClassic
+  storage:
+    back:
+    - WrappedParcelClothingOuterPonchoClassic
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitNanotrasen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitNanotrasen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitNanotrasen
+
+- type: loadout
+  id: LoadoutClothingMaskBandBrown
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandBrown
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandBrown
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorBrown
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorBrown
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorBrown
+
+- type: loadout
+  id: LoadoutClothingHeadHatCowboyBrown
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatCowboyBrown
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatCowboyBrown
+
+- type: loadout
+  id: LoadoutClothingHeadHatBrownFlatcap
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBrownFlatcap
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBrownFlatcap
+
+- type: loadout
+  id: LoadoutClothingNeckUSSPPin
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckUSSPPin
+  storage:
+    back:
+    - WrappedParcelClothingNeckUSSPPin
+
+- type: loadout
+  id: LoadoutClothingNeckEarthPin
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckEarthPin
+  storage:
+    back:
+    - WrappedParcelClothingNeckEarthPin
+
+- type: loadout
+  id: LoadoutClothingNeckNanoTrasenPin
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckNanoTrasenPin
+  storage:
+    back:
+    - WrappedParcelClothingNeckNanoTrasenPin
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorBrown
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorBrown
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorBrown
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorBrown
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorBrown
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorBrown
+
+- type: loadout
+  id: LoadoutClothingShoesColorBrown
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorBrown
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorBrown
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorBrown
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorBrown
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorBrown
+
+- type: loadout
+  id: LoadoutClothingHeadHatCorpsoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatCorpsoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatCorpsoft
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitDameDane
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitDameDane
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitDameDane
+
+- type: loadout
+  id: LoadoutClothingNeckHorrific
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckHorrific
+  storage:
+    back:
+    - WrappedParcelClothingNeckHorrific
+
+- type: loadout
+  id: LoadoutClothingMaskBandRed
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandRed
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandRed
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitHawaiRed
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitHawaiRed
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitHawaiRed
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorRed
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorRed
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorRed
+
+- type: loadout
+  id: LoadoutClothingHeadHatRedsoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatRedsoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatRedsoft
+
+- type: loadout
+  id: LoadoutClothingHeadHatCowboyRed
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatCowboyRed
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatCowboyRed
+
+- type: loadout
+  id: LoadoutClothingOuterFlannelRed
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterFlannelRed
+  storage:
+    back:
+    - WrappedParcelClothingOuterFlannelRed
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorRed
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorRed
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorRed
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtRedTurtleneckDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtRedTurtleneckDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtRedTurtleneckDress
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorRed
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorRed
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorRed
+
+- type: loadout
+  id: LoadoutClothingBeltSuspendersRed
+  groupBy: "Belt"
+  dummyEntity: LoadoutDummyClothingBeltSuspendersRed
+  storage:
+    back:
+    - WrappedParcelClothingBeltSuspendersRed
+
+- type: loadout
+  id: LoadoutClothingShoesColorRed
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorRed
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorRed
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorRed
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorRed
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorRed
+
+- type: loadout
+  id: LoadoutClothingOuterCoatBomber
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterCoatBomber
+  storage:
+    back:
+    - WrappedParcelClothingOuterCoatBomber
+
+- type: loadout
+  id: LoadoutClothingNeckMantle
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckMantle
+  storage:
+    back:
+    - WrappedParcelClothingNeckMantle
+
+- type: loadout
+  id: LoadoutClothingEyesGlassesGar
+  groupBy: "Eyes"
+  dummyEntity: LoadoutDummyClothingEyesGlassesGar
+  storage:
+    back:
+    - WrappedParcelClothingEyesGlassesGar
+
+- type: loadout
+  id: LoadoutClothingNeckHeadphones
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckHeadphones
+  storage:
+    back:
+    - WrappedParcelClothingNeckHeadphones
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCoder
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingUnderSocksCoder
+  storage:
+    back:
+    - WrappedParcelClothingUnderSocksCoder
+
+- type: loadout
+  id: LoadoutClothingUnderSocksBee
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingUnderSocksBee
+  storage:
+    back:
+    - WrappedParcelClothingUnderSocksBee
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorOrange
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorOrange
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorOrange
+
+- type: loadout
+  id: LoadoutClothingHeadHatOrangesoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatOrangesoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatOrangesoft
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorOrange
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorOrange
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorOrange
+
+- type: loadout
+  id: LoadoutClothingEyesGlassesGarOrange
+  groupBy: "Eyes"
+  dummyEntity: LoadoutDummyClothingEyesGlassesGarOrange
+  storage:
+    back:
+    - WrappedParcelClothingEyesGlassesGarOrange
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorOrange
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorOrange
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorOrange
+
+- type: loadout
+  id: LoadoutClothingShoesColorOrange
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorOrange
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorOrange
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorOrange
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorOrange
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorOrange
+
+- type: loadout
+  id: LoadoutClothingOuterCoatJensen
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterCoatJensen
+  storage:
+    back:
+    - WrappedParcelClothingOuterCoatJensen
+
+- type: loadout
+  id: LoadoutClothingOuterDameDane
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterDameDane
+  storage:
+    back:
+    - WrappedParcelClothingOuterDameDane
+
+- type: loadout
+  id: LoadoutClothingNeckCloakNanotrasen
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakNanotrasen
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakNanotrasen
+
+- type: loadout
+  id: LoadoutClothingNeckCloakAroace
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakAroace
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakAroace
+
+- type: loadout
+  id: LoadoutClothingNeckCloakAro
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakAro
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakAro
+
+- type: loadout
+  id: LoadoutClothingNeckCloakHerald
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakHerald
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakHerald
+
+- type: loadout
+  id: LoadoutClothingNeckCloakGoliathCloak
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakGoliathCloak
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakGoliathCloak
+
+- type: loadout
+  id: LoadoutClothingNeckCloakEnby
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakEnby
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakEnby
+
+- type: loadout
+  id: LoadoutClothingNeckCloakMoth
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakMoth
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakMoth
+
+- type: loadout
+  id: LoadoutClothingNeckCloakAce
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakAce
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakAce
+
+- type: loadout
+  id: LoadoutClothingNeckCloakLesbian
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakLesbian
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakLesbian
+
+- type: loadout
+  id: LoadoutClothingNeckCloakVoid
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakVoid
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakVoid
+
+- type: loadout
+  id: LoadoutClothingNeckCloakGay
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakGay
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakGay
+
+- type: loadout
+  id: LoadoutClothingNeckCloakIntersex
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakIntersex
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakIntersex
+
+- type: loadout
+  id: LoadoutClothingNeckCloakPan
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakPan
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakPan
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtCasualGreen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtCasualGreen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtCasualGreen
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtCasualRed
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtCasualRed
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtCasualRed
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtCasualBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtCasualBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtCasualBlue
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtCasualPurple
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtCasualPurple
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtCasualPurple
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitCasualGreen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitCasualGreen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitCasualGreen
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitCasualRed
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitCasualRed
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitCasualRed
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitCasualBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitCasualBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitCasualBlue
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitCasualPurple
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitCasualPurple
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitCasualPurple
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtCyanStripedDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtCyanStripedDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtCyanStripedDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGreenStripedDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGreenStripedDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGreenStripedDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtRedStripedDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtRedStripedDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtRedStripedDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtOrangeStripedDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtOrangeStripedDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtOrangeStripedDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtPinkStripedDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtPinkStripedDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtPinkStripedDress
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedGreen
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedGreen
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedGreen
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedBrown
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedBrown
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedBrown
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedOrange
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedOrange
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedOrange
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedPurple
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedPurple
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedPurple
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedAce
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedAce
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedAce
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedGay
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedGay
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedGay
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedBiSexual
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedBiSexual
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedBiSexual
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedLesbian
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedLesbian
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedLesbian
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedAro
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedAro
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedAro
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedNonBinary
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedNonBinary
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedNonBinary
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedAroace
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedAroace
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedAroace
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedTrans
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedTrans
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedTrans
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedInter
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedInter
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedInter
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedPan
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedPan
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedPan
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedLightBlue
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedLightBlue
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedLightBlue
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedBlue
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedBlue
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedBlue
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedBlack
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedBlack
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedBlack
+
+- type: loadout
+  id: LoadoutClothingOuterPoncho
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterPoncho
+  storage:
+    back:
+    - WrappedParcelClothingOuterPoncho
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorRainbow
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorRainbow
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorRainbow
+
+- type: loadout
+  id: LoadoutClothingUniformColorRainbow
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformColorRainbow
+  storage:
+    back:
+    - WrappedParcelClothingUniformColorRainbow
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedRainbow
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedRainbow
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedRainbow
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorPink
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorPink
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorPink
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorPink
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorPink
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorPink
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorLightBrown
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorLightBrown
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorLightBrown
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorLightBrown
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorLightBrown
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorLightBrown
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorLightBrown
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorLightBrown
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorLightBrown
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorLightBrown
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorLightBrown
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorLightBrown
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitFamilyGuy
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitFamilyGuy
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitFamilyGuy
+
+- type: loadout
+  id: LoadoutClothingMaskBandGrey
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandGrey
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandGrey
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorGray
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorGray
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorGray
+
+- type: loadout
+  id: LoadoutClothingHeadHatGreysoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatGreysoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatGreysoft
+
+- type: loadout
+  id: LoadoutClothingHeadHatCowboyGrey
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatCowboyGrey
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatCowboyGrey
+
+- type: loadout
+  id: LoadoutClothingHeadHatGreyFlatcap
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatGreyFlatcap
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatGreyFlatcap
+
+- type: loadout
+  id: LoadoutClothingOuterHoodieGrey
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterHoodieGrey
+  storage:
+    back:
+    - WrappedParcelClothingOuterHoodieGrey
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorGrey
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorGrey
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorGrey
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorGray
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorGray
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorGray
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorGrey
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorGrey
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorGrey
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtBlueTurtleneckDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtBlueTurtleneckDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtBlueTurtleneckDress
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorBlue
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorBlue
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorBlue
+
+- type: loadout
+  id: LoadoutClothingShoesColorBlue
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorBlue
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorBlue
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorBlue
+
+- type: loadout
+  id: LoadoutClothingMaskBandBlue
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandBlue
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandBlue
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitHawaiBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitHawaiBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitHawaiBlue
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorBlue
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorBlue
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorBlue
+
+- type: loadout
+  id: LoadoutClothingHeadHatBluesoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBluesoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBluesoft
+
+- type: loadout
+  id: LoadoutClothingOuterFlannelBlue
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterFlannelBlue
+  storage:
+    back:
+    - WrappedParcelClothingOuterFlannelBlue
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorBlue
+
+- type: loadout
+  id: LoadoutClothingHeadHatSolidHeadband
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatSolidHeadband
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatSolidHeadband
+
+- type: loadout
+  id: LoadoutClothingHeadHatStrawHat
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatStrawHat
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatStrawHat
+
+- type: loadout
+  id: LoadoutClothingHeadHatSombrero
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatSombrero
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatSombrero
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtYellowOldDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtYellowOldDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtYellowOldDress
+
+- type: loadout
+  id: LoadoutClothingOuterCoatTrench
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterCoatTrench
+  storage:
+    back:
+    - WrappedParcelClothingOuterCoatTrench
+
+- type: loadout
+  id: LoadoutClothingShoesDameDane
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesDameDane
+  storage:
+    back:
+    - WrappedParcelClothingShoesDameDane
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorDarkGreen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorDarkGreen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorDarkGreen
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorDarkGreen
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorDarkGreen
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorDarkGreen
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorDarkBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorDarkBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorDarkBlue
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorDarkBlue
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorDarkBlue
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorDarkBlue
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorPurple
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorPurple
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorPurple
+
+- type: loadout
+  id: LoadoutClothingHeadHatPurplesoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatPurplesoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatPurplesoft
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtPurpleTurtleneckDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtPurpleTurtleneckDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtPurpleTurtleneckDress
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorPurple
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorPurple
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorPurple
+
+- type: loadout
+  id: LoadoutClothingShoesColorPurple
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorPurple
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorPurple
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorPurple
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorPurple
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorPurple
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitFlannel
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitFlannel
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitFlannel
+
+- type: loadout
+  id: LoadoutClothingHeadHatBeretFrench
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBeretFrench
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBeretFrench
+
+- type: loadout
+  id: LoadoutClothingMaskBandBlack
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskBandBlack
+  storage:
+    back:
+    - WrappedParcelClothingMaskBandBlack
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitHawaiBlack
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitHawaiBlack
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitHawaiBlack
+
+- type: loadout
+  id: LoadoutClothingOuterWinterColorBlack
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterWinterColorBlack
+  storage:
+    back:
+    - WrappedParcelClothingOuterWinterColorBlack
+
+- type: loadout
+  id: LoadoutClothingHeadHatBlacksoft
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBlacksoft
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBlacksoft
+
+- type: loadout
+  id: LoadoutClothingHeadHatCowboyBlack
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatCowboyBlack
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatCowboyBlack
+
+- type: loadout
+  id: LoadoutClothingOuterHoodieBlack
+  groupBy: "Outer"
+  dummyEntity: LoadoutDummyClothingOuterHoodieBlack
+  storage:
+    back:
+    - WrappedParcelClothingOuterHoodieBlack
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtColorBlack
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtColorBlack
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtColorBlack
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesColorBlack
+  groupBy: "Hands"
+  dummyEntity: LoadoutDummyClothingHandsGlovesColorBlack
+  storage:
+    back:
+    - WrappedParcelClothingHandsGlovesColorBlack
+
+- type: loadout
+  id: LoadoutClothingBeltSuspendersBlack
+  groupBy: "Belt"
+  dummyEntity: LoadoutDummyClothingBeltSuspendersBlack
+  storage:
+    back:
+    - WrappedParcelClothingBeltSuspendersBlack
+
+- type: loadout
+  id: LoadoutClothingShoesColorBlack
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesColorBlack
+  storage:
+    back:
+    - WrappedParcelClothingShoesColorBlack
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitColorBlack
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpsuitColorBlack
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpsuitColorBlack
+
+- type: loadout
+  id: LoadoutClothingHeadHatCanadaBeanie
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatCanadaBeanie
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatCanadaBeanie
+
+- type: loadout
+  id: LoadoutClothingHeadRastaHat
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadRastaHat
+  storage:
+    back:
+    - WrappedParcelClothingHeadRastaHat
+
+- type: loadout
+  id: LoadoutClothingNeckScarfStripedZebra
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckScarfStripedZebra
+  storage:
+    back:
+    - WrappedParcelClothingNeckScarfStripedZebra
+
+- type: loadout
+  id: LoadoutClothingMaskNeckGaiter
+  groupBy: "Mask"
+  dummyEntity: LoadoutDummyClothingMaskNeckGaiter
+  storage:
+    back:
+    - WrappedParcelClothingMaskNeckGaiter
+
+- type: loadout
+  id: LoadoutClothingHeadHatBowlerHat
+  groupBy: "Head"
+  dummyEntity: LoadoutDummyClothingHeadHatBowlerHat
+  storage:
+    back:
+    - WrappedParcelClothingHeadHatBowlerHat
+
+- type: loadout
+  id: LoadoutClothingShoesBootsLaceup
+  groupBy: "Shoes"
+  dummyEntity: LoadoutDummyClothingShoesBootsLaceup
+  storage:
+    back:
+    - WrappedParcelClothingShoesBootsLaceup
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtGreenElegantDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtGreenElegantDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtGreenElegantDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtRedElegantDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtRedElegantDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtRedElegantDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtBlueElegantDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtBlueElegantDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtBlueElegantDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtPurpleElegantDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtPurpleElegantDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtPurpleElegantDress
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtBlackElegantDress
+  groupBy: "Uniform"
+  dummyEntity: LoadoutDummyClothingUniformJumpskirtBlackElegantDress
+  storage:
+    back:
+    - WrappedParcelClothingUniformJumpskirtBlackElegantDress
+
+- type: loadout
+  id: LoadoutClothingNeckCloakBi
+  groupBy: "Neck"
+  dummyEntity: LoadoutDummyClothingNeckCloakBi
+  storage:
+    back:
+    - WrappedParcelClothingNeckCloakBi
+

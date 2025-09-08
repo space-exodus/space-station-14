@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterTrenchcoatCaptain
+  name: captain's trenchcoat
+  description: Captain's formal trenchcoat, inlaid with gold.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/OuterClothing/Coats/captain_trenchcoat.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/OuterClothing/Coats/captain_trenchcoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.6
+        Heat: 0.5

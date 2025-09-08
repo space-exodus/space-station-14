@@ -1,0 +1,2616 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckTieRainbow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckTieRainbow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic0
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic0
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic1
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic1
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic2
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic2
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic3
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic3
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGothic4
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGothic4
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic0
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic0
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic1
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic1
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic2
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic2
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic3
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic3
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic4
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic4
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic5
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic5
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic6
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic6
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitGothic7
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitGothic7
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorTeal
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorTeal
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorTeal
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorTeal
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorTeal
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorTeal
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatGentle
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatGentle
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandSkull
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandSkull
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorWhite
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorWhite
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatMimesoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatMimesoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorWhite
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorWhite
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorWhite
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorWhite
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorWhite
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorWhite
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBeret
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBeret
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesFingerless
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesFingerless
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorMaroon
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorMaroon
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorMaroon
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorMaroon
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakTrans
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakTrans
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAdmin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAdmin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadWehcellentCap
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadWehcellentCap
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingEyesGlassesGarGiga
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingEyesGlassesGarGiga
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedLesbianLong
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedLesbianLong
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiYellow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiYellow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorYellow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorYellow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatYellowsoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatYellowsoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorYellow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorYellow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtYellowTurtleneckDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtYellowTurtleneckDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorYellow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorYellow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorYellow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorYellow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatGreensoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatGreensoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterFlannelGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterFlannelGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGreenTurtleneckDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGreenTurtleneckDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesGreenLizardskin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesGreenLizardskin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesBootsWinter
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesBootsWinter
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterCoat
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterCoat
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadBandGold
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadBandGold
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadFishCap
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadFishCap
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBizarreSoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBizarreSoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterPonchoClassic
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterPonchoClassic
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitNanotrasen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitNanotrasen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBrownFlatcap
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBrownFlatcap
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckUSSPPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckUSSPPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckDonkPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckDonkPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckEarthPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckEarthPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckLogistikaPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckLogistikaPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckDeForestPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckDeForestPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckNakamuraPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckNakamuraPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckNanoTrasenPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckNanoTrasenPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckSyndicakePin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckSyndicakePin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckVitezstviPin
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckVitezstviPin
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCorpsoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCorpsoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitDameDane
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitDameDane
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckHorrific
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckHorrific
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatRedsoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatRedsoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterFlannelRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterFlannelRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtRedTurtleneckDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtRedTurtleneckDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingBeltSuspendersRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingBeltSuspendersRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatBomber
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatBomber
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckMantle
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckMantle
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingEyesGlassesGar
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingEyesGlassesGar
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckHeadphones
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckHeadphones
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUnderSocksCoder
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUnderSocksCoder
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUnderSocksBee
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUnderSocksBee
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatOrangesoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatOrangesoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingEyesGlassesGarOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingEyesGlassesGarOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatJensen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatJensen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterDameDane
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterDameDane
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakNanotrasen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakNanotrasen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAroace
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAroace
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAro
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAro
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakHerald
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakHerald
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakGoliathCloak
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakGoliathCloak
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakEnby
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakEnby
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakMoth
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakMoth
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakAce
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakAce
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakLesbian
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakLesbian
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakVoid
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakVoid
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakGay
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakGay
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakIntersex
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakIntersex
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakPan
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakPan
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCasualPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCasualPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualRed
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualRed
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitCasualPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitCasualPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtCyanStripedDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtCyanStripedDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGreenStripedDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGreenStripedDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtRedStripedDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtRedStripedDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtOrangeStripedDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtOrangeStripedDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtPinkStripedDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtPinkStripedDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedOrange
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedOrange
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedAce
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedAce
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedGay
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedGay
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBiSexual
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBiSexual
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedLesbian
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedLesbian
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedAro
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedAro
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedNonBinary
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedNonBinary
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedAroace
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedAroace
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedTrans
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedTrans
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedInter
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedInter
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedPan
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedPan
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedLightBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedLightBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterPoncho
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterPoncho
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorRainbow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorRainbow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformColorRainbow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformColorRainbow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedRainbow
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedRainbow
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorPink
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorPink
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorPink
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorPink
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorLightBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorLightBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorLightBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorLightBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorLightBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorLightBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorLightBrown
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorLightBrown
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitFamilyGuy
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitFamilyGuy
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandGrey
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandGrey
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorGray
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorGray
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatGreysoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatGreysoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyGrey
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyGrey
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatGreyFlatcap
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatGreyFlatcap
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterHoodieGrey
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterHoodieGrey
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorGrey
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorGrey
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorGray
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorGray
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorGrey
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorGrey
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtBlueTurtleneckDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtBlueTurtleneckDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBluesoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBluesoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterFlannelBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterFlannelBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatSolidHeadband
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatSolidHeadband
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatStrawHat
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatStrawHat
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatSombrero
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatSombrero
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtYellowOldDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtYellowOldDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterCoatTrench
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterCoatTrench
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesDameDane
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesDameDane
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorDarkGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorDarkGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorDarkGreen
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorDarkGreen
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorDarkBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorDarkBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorDarkBlue
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorDarkBlue
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatPurplesoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatPurplesoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtPurpleTurtleneckDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtPurpleTurtleneckDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorPurple
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorPurple
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitFlannel
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitFlannel
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBeretFrench
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBeretFrench
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskBandBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskBandBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitHawaiBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitHawaiBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterWinterColorBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterWinterColorBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBlacksoft
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBlacksoft
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCowboyBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCowboyBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingOuterHoodieBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingOuterHoodieBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtColorBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtColorBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHandsGlovesColorBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHandsGlovesColorBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingBeltSuspendersBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingBeltSuspendersBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesColorBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesColorBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpsuitColorBlack
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpsuitColorBlack
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatCanadaBeanie
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatCanadaBeanie
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadRastaHat
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadRastaHat
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckScarfStripedZebra
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckScarfStripedZebra
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingMaskNeckGaiter
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingMaskNeckGaiter
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingHeadHatBowlerHat
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingHeadHatBowlerHat
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingShoesBootsLaceup
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingShoesBootsLaceup
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtGreenElegantDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtGreenElegantDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtRedElegantDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtRedElegantDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtBlueElegantDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtBlueElegantDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtPurpleElegantDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtPurpleElegantDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingUniformJumpskirtBlackElegantDress
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingUniformJumpskirtBlackElegantDress
+        disableEject: true
+        locked: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: WrappedParcel
+  id: WrappedParcelClothingNeckCloakBi
+  components:
+  - type: ItemSlots
+    slots:
+      contents:
+        startingItem: ClothingNeckCloakBi
+        disableEject: true
+        locked: true
+

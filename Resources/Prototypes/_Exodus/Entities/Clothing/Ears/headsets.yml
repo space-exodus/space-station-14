@@ -14,3 +14,47 @@
     sprite: Exodus/Clothing/Ears/Headsets/death_squad.rsi
   - type: Clothing
     sprite: Exodus/Clothing/Ears/Headsets/death_squad.rsi
+
+- type: entity
+  parent: [ClothingHeadset, BaseCommandContraband]
+  id: ClothingHeadsetWarden
+  name: warden headset
+  description: This is used by your elite security force.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommon
+      - EncryptionKeyCommand
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/security.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/security.rsi
+
+- type: entity
+  parent: [ClothingHeadset, BaseCommandContraband]
+  id: ClothingHeadsetSecurityHOS
+  name: head of security's headset
+  description: This is used by your elite security force.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommon
+      - EncryptionKeyCommand
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/security.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/security.rsi
+
+- type: entity
+  parent: ClothingHeadsetCommand
+  id: ClothingHeadsetCaptain
+  name: captain headset
+
+- type: entity
+  parent: ClothingHeadsetCommand
+  id: ClothingHeadsetHOP
+  name: head of personnel headset

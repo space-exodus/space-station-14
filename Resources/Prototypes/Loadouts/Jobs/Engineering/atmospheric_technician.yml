@@ -3,16 +3,19 @@
   id: AtmosphericTechnicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmos
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: AtmosphericTechnicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtAtmos
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: AtmosphericTechnicianJumpsuitCasual
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmosCasual
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 # Back
 - type: loadout

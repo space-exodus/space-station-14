@@ -1,0 +1,84 @@
+- type: entity
+  id: SoundMarkerBase
+  abstract: true
+  parent: MarkerBase
+  name: sound marker
+  components:
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: Exodus/Markers/sound.rsi
+    layers:
+      - state: orange
+      - state: sound
+      - state: base_range
+  - type: AmbientSound
+    range: 10
+    enabled: true
+    volume: 0
+    sound:
+      path: /Audio/Exodus/Ambience/Cave.ogg
+      params:
+        loop: true
+
+- type: entity
+  id: SoundMarkerCave
+  parent: SoundMarkerBase
+  suffix: Cave, 10 range
+
+- type: entity
+  id: SoundMarkerForest1
+  parent: SoundMarkerBase
+  suffix: Forest1, 10 range
+  components:
+  - type: AmbientSound
+    volume: 0
+    sound:
+      path: /Audio/Exodus/Ambience/Forest_1.ogg
+      params:
+        loop: true
+
+- type: entity
+  id: SoundMarkerForest2
+  parent: SoundMarkerBase
+  suffix: Forest2, 10 range
+  components:
+  - type: AmbientSound
+    volume: 0
+    sound:
+      path: /Audio/Exodus/Ambience/Forest_2.ogg
+      params:
+        loop: true
+
+- type: entity
+  id: SoundMarkerMaints
+  parent: SoundMarkerBase
+  suffix: Maints, 10 range
+  components:
+  - type: AmbientSound
+    volume: 3
+    sound:
+      path: /Audio/Exodus/Ambience/Maints.ogg
+      params:
+        loop: true
+
+- type: entity
+  id: SoundMarkerOcean
+  parent: SoundMarkerBase
+  suffix: Lake, 10 range
+  components:
+  - type: AmbientSound
+    sound:
+      path: /Audio/Exodus/Ambience/Ocean.ogg
+      params:
+        loop: true
+
+- type: entity
+  id: SoundMarkerPrairie
+  parent: SoundMarkerBase
+  suffix: Prairie, 10 range
+  components:
+  - type: AmbientSound
+    sound:
+      path: /Audio/Exodus/Ambience/Prairie.ogg
+      params:
+        loop: true

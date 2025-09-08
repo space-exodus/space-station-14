@@ -21,7 +21,7 @@
   id: StationEngineerGear
   equipment:
     eyes: ClothingEyesGlassesMeson
-    belt: ClothingBeltUtilityEngineering
+    # belt: ClothingBeltUtilityEngineering # Exodus-Better-Loadout
     ears: ClothingHeadsetEngineering
   #storage:
     #back:

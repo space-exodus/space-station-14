@@ -31,33 +31,38 @@
   equipment:
     head: ClothingHeadBandSkull
 
+# Exodus-Better-Loadout-Start
 # Neck
-
-- type: loadout
-  id: ScientistTie
-  equipment:
-    neck: ClothingNeckTieSci
+# - type: loadout
+#   id: ScientistTie
+#   equipment:
+#     neck: ClothingNeckTieSci
+# Exodus-Better-Loadout-End
 
 # Jumpsuit
 - type: loadout
   id: ScientistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitScientist
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: ScientistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtScientist
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: RoboticistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitRoboticist
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: RoboticistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtRoboticist
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorResearcherJumpsuit
@@ -66,6 +71,7 @@
     proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
+  groupBy: "Jumpsuit" # Exodus-Better-Loadout
 
 - type: loadout
   id: SeniorResearcherJumpskirt
@@ -74,6 +80,7 @@
     proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorResearcher
+  groupBy: "Jumpskirt" # Exodus-Better-Loadout
 
 # Back
 - type: loadout
@@ -96,11 +103,13 @@
   id: RegularLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLab
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 - type: loadout
   id: ScienceLabCoat
   equipment:
     outerClothing: ClothingOuterCoatRnd
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 - type: loadout
   id: ScienceWintercoat
@@ -111,6 +120,7 @@
   id: RoboticistLabCoat
   equipment:
     outerClothing: ClothingOuterCoatRobo
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 - type: loadout
   id: RoboticistWintercoat
@@ -124,6 +134,7 @@
     proto: SeniorResearcher
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
+  groupBy: "CoatLab" # Exodus-Better-Loadout
 
 # Gloves
 - type: loadout

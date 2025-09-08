@@ -127,7 +127,6 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - Pilot # Corvax-Pilot
   - Brigmedic # Exodus-Brigmedic
   - Detective
   - Warden
@@ -163,5 +162,4 @@
   - Reporter
   - Zookeeper
   - Psychologist
-  - Pilot # Corvax-Pilot
   primary: false

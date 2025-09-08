@@ -1,4 +1,8 @@
-using Content.Client.Interactable.Components;
+//This system was commented out after the stealth system was refactored.
+//You can find it on the path "Content.Client/_Exodus/Stealth/StealthSystem.cs"
+
+
+/*using Content.Client.Interactable.Components;
 using Content.Client.StatusIcon;
 using Content.Shared.Stealth;
 using Content.Shared.Stealth.Components;
@@ -97,3 +101,4 @@ public sealed class StealthSystem : SharedStealthSystem
         _sprite.SetColor((uid, args.Sprite), new Color(visibility, visibility, 1, 1));
     }
 }
+*/

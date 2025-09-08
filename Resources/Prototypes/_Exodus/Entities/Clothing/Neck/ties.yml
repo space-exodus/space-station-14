@@ -1,0 +1,187 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieSec
+  name: security's tie
+  description: A red and black tie, used as a form of clothing in the service department. Its colors definitely do not match those of the enemy organization.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/security.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/security.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieCap
+  name: captain's tie
+  description: The postulate of bureaucratism, elevated to... the Absolute!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/cap.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/cap.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieAtmos
+  name: atmospheric technician's tie
+  description: We need to boil, colleague. We need to boil the frezon.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/atmos.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/atmos.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieEngi
+  name: engineer's tie
+  description: This tie was DEFINITELY not the cause of death from the rotating elements of the mechanism among the engineers.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/engi.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/engi.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieJanitor
+  name: janitor's tie
+  description: The indicator of who is the boss here regarding the trash.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/jani.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/jani.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieClown
+  name: clown's tie
+  description: HONK!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/clown.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/clown.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieMime
+  name: mime tie
+  description: ...?
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/mime.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/mime.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieService
+  name: service tie
+  description: A green tie showing that you have been interfering with the visitors for more than a day!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/service.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/service.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieMedical
+  name: medical tie
+  description: A sterile tie that can be used as a tourniquet if necessary.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/medical.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/medical.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieCargo
+  name: cargo tie
+  description: A tie that can be used as a handkerchief while watching and crying over the broken department shuttle.
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/cargo.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/cargo.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieRainbow
+  name: Rainbow tie
+  description: RaInBoW!!!
+  components:
+  - type: Sprite
+    sprite: Exodus/Clothing/Neck/Ties/rainbow.rsi
+  - type: Clothing
+    sprite: Exodus/Clothing/Neck/Ties/rainbow.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable
+

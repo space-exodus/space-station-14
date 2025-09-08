@@ -19,5 +19,3 @@
       layers:
         - state: default
         - state: idpilot
-    - type: PresetIdCard
-      job: Pilot

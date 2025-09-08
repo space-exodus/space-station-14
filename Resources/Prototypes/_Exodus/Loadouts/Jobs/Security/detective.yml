@@ -1,0 +1,56 @@
+# Neck
+- type: loadout
+  id: HorrificTie
+  equipment:
+    neck: ClothingNeckHorrific
+
+# Jumpsuit
+- type: loadout
+  id: SuperstarCopJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSuperstarCop
+  groupBy: "Jumpsuit"
+
+- type: loadout
+  id: AerostaticJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAerostatic
+  groupBy: "Jumpsuit"
+  
+# Belt
+- type: loadout
+  id: BeltHolster
+  equipment:
+    belt: ClothingBeltHolsterFilledAlt
+
+# OuterClothing
+- type: loadout
+  id: AerostaticBomberJacket
+  equipment:
+    outerClothing: ClothingOuterAerostaticBomberJacket
+
+- type: loadout
+  id: CoatDetectiveDark
+  equipment:
+    outerClothing: ClothingOuterCoatDetectiveDark
+
+- type: loadout
+  id: CoatGentle
+  equipment:
+    outerClothing: ClothingOuterCoatGentle
+
+- type: loadout
+  id: DiscoAssBlazer
+  equipment:
+    outerClothing: ClothingOuterDiscoAssBlazer
+
+# Shoes
+- type: loadout
+  id: AerostaticShoes
+  equipment:
+    shoes: ClothingShoesAerostatic
+
+- type: loadout
+  id: ShoesGreenLizardskin
+  equipment:
+    shoes: ClothingShoesGreenLizardskin

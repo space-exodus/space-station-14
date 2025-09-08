@@ -2,6 +2,7 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Content.Shared.Exodus.Stealth.Components;//Exodus-RefactorStealthSystem
 
 namespace Content.Shared.CardboardBox.Components;
 /// <summary>
@@ -31,12 +32,12 @@ public sealed partial class CardboardBoxComponent : Component
     [DataField("effectSound")]
     public SoundSpecifier? EffectSound;
 
-	/// <summary>
-	/// Whether to prevent the box from making the sound and effect
-	/// </summary>
+    /// <summary>
+    /// Whether to prevent the box from making the sound and effect
+    /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-	[DataField("quiet")]
-	public bool Quiet = false;
+    [DataField("quiet")]
+    public bool Quiet = false;
 
     /// <summary>
     /// How far should the box opening effect go?
@@ -56,6 +57,11 @@ public sealed partial class CardboardBoxComponent : Component
     /// </summary>
     [DataField("cooldownDuration")]
     public TimeSpan CooldownDuration = TimeSpan.FromSeconds(5f);
+
+//Exodus-RefactorStealthSystem-Begin
+    [DataField("stealth")]
+    public StealthData? Stealth;
+//Exodus-RefactorStealthSystem-End
 }
 
 [Serializable, NetSerializable]
