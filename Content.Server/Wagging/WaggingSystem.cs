@@ -52,7 +52,7 @@ public sealed class WaggingSystem : EntitySystem
             TryToggleWagging(uid, wagging: component);
     }
 
-    public bool TryToggleWagging(EntityUid uid, WaggingComponent? wagging = null, HumanoidAppearanceComponent? humanoid = null)
+    public bool TryToggleWagging(EntityUid uid, bool? isWagging = null, WaggingComponent? wagging = null, HumanoidAppearanceComponent? humanoid = null) // Exodus-EmoteWaggingAnimation
     {
         if (!Resolve(uid, ref wagging, ref humanoid))
             return false;
@@ -63,7 +63,7 @@ public sealed class WaggingSystem : EntitySystem
         if (markings.Count == 0)
             return false;
 
-        wagging.Wagging = !wagging.Wagging;
+        wagging.Wagging = isWagging ?? !wagging.Wagging; // Exodus-EmoteWaggingAnimation
 
         for (var idx = 0; idx < markings.Count; idx++) // Animate all possible tails
         {
