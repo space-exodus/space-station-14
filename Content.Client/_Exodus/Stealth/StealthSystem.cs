@@ -1,22 +1,22 @@
-//This system was commented out after the stealth system was refactored.
-//You can find it on the path "Content.Client/_Exodus/Stealth/StealthSystem.cs"
+// © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
 
-
-/*using Content.Client.Interactable.Components;
+using System.Linq;
+using Content.Client.Interactable.Components;
 using Content.Client.StatusIcon;
-using Content.Shared.Stealth;
-using Content.Shared.Stealth.Components;
+using Content.Shared.Exodus.Stealth;
+using Content.Shared.Exodus.Stealth.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client.Stealth;
+namespace Content.Client.Exodus.Stealth;
 
 public sealed class StealthSystem : SharedStealthSystem
 {
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private readonly SharedStealthSystem _stealth = default!;
 
     private ShaderInstance _shader = default!;
 
@@ -27,35 +27,31 @@ public sealed class StealthSystem : SharedStealthSystem
         _shader = _protoMan.Index<ShaderPrototype>("Stealth").InstanceUnique();
 
         SubscribeLocalEvent<StealthComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<StealthComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<StealthComponent, BeforePostShaderRenderEvent>(OnShaderRender);
+
+        SubscribeLocalEvent<StealthComponent, StealthRequestChangeEvent>(OnRequestChange);
     }
 
-    public override void SetEnabled(EntityUid uid, bool value, StealthComponent? component = null)
+
+    private void OnRequestChange(EntityUid uid, StealthComponent comp, StealthRequestChangeEvent args)
     {
-        if (!Resolve(uid, ref component) || component.Enabled == value)
-            return;
+        var enabled = !_stealth.IsVisible(uid);
+        if (enabled)
+            AddShader(uid);
+        else
+            RemoveShader(uid);
 
-        base.SetEnabled(uid, value, component);
-        SetShader(uid, value, component);
     }
 
-    private void SetShader(EntityUid uid, bool enabled, StealthComponent? component = null, SpriteComponent? sprite = null)
+    private void AddShader(EntityUid uid, StealthComponent? component = null, SpriteComponent? sprite = null)
     {
         if (!Resolve(uid, ref component, ref sprite, false))
             return;
 
         _sprite.SetColor((uid, sprite), Color.White);
-        sprite.PostShader = enabled ? _shader : null;
-        sprite.GetScreenTexture = enabled;
-        sprite.RaiseShaderEvent = enabled;
-
-        if (!enabled)
-        {
-            if (component.HadOutline && !TerminatingOrDeleted(uid))
-                EnsureComp<InteractionOutlineComponent>(uid);
-            return;
-        }
+        sprite.PostShader = _shader;
+        sprite.GetScreenTexture = true;
+        sprite.RaiseShaderEvent = true;
 
         if (TryComp(uid, out InteractionOutlineComponent? outline))
         {
@@ -64,15 +60,26 @@ public sealed class StealthSystem : SharedStealthSystem
         }
     }
 
-    private void OnStartup(EntityUid uid, StealthComponent component, ComponentStartup args)
+    private void RemoveShader(EntityUid uid, StealthComponent? component = null, SpriteComponent? sprite = null)
     {
-        SetShader(uid, component.Enabled, component);
+        if (!Resolve(uid, ref component, ref sprite, false))
+            return;
+
+        _sprite.SetColor((uid, sprite), Color.White);
+        sprite.PostShader = null;
+        sprite.GetScreenTexture = false;
+        sprite.RaiseShaderEvent = false;
+
+        if (component.HadOutline && !TerminatingOrDeleted(uid))
+        {
+            EnsureComp<InteractionOutlineComponent>(uid);
+        }
     }
 
     private void OnShutdown(EntityUid uid, StealthComponent component, ComponentShutdown args)
     {
         if (!Terminating(uid))
-            SetShader(uid, false, component);
+            RemoveShader(uid);
     }
 
     private void OnShaderRender(EntityUid uid, StealthComponent component, BeforePostShaderRenderEvent args)
@@ -101,4 +108,3 @@ public sealed class StealthSystem : SharedStealthSystem
         _sprite.SetColor((uid, args.Sprite), new Color(visibility, visibility, 1, 1));
     }
 }
-*/

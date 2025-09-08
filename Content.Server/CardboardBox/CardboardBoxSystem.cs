@@ -7,8 +7,10 @@ using Content.Shared.Damage;
 using Content.Shared.Interaction;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
-using Content.Shared.Stealth;
-using Content.Shared.Stealth.Components;
+//Exodus-RefactorStealthSystem-Begin
+using Content.Shared.Exodus.Stealth;
+using Content.Shared.Exodus.Stealth.Components;
+//Exodus-RefactorStealthSystem-End
 using Content.Shared.Storage.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
@@ -38,27 +40,44 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
         SubscribeLocalEvent<CardboardBoxComponent, ActivateInWorldEvent>(OnInteracted);
         SubscribeLocalEvent<CardboardBoxComponent, EntInsertedIntoContainerMessage>(OnEntInserted);
         SubscribeLocalEvent<CardboardBoxComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
-
         SubscribeLocalEvent<CardboardBoxComponent, DamageChangedEvent>(OnDamage);
+
+        SubscribeLocalEvent<CardboardBoxComponent, MapInitEvent>(OnMapInit);//Exodus-RefactorStealthSystem
+        SubscribeLocalEvent<CardboardBoxComponent, ComponentShutdown>(OnShutdown);//Exodus-RefactorStealthSystem
     }
+
+//Exodus-RefactorStealthSystem-Begin
+    private void OnMapInit(EntityUid uid, CardboardBoxComponent component, MapInitEvent args)
+    {
+        if (component.Stealth == null)
+            return;
+
+        if (TryComp<EntityStorageComponent>(uid, out var storage) && storage.Open)
+            return;
+
+        _stealth.RequestStealth(uid, nameof(CardboardBoxSystem), component.Stealth);
+    }
+
+    private void OnShutdown(EntityUid uid, CardboardBoxComponent component, ComponentShutdown args)
+    {
+        if (component.Stealth != null)
+            _stealth.RemoveRequest(nameof(CardboardBoxSystem), uid);
+    }
+//Exodus-RefactorStealthSystem-End
 
     private void OnInteracted(EntityUid uid, CardboardBoxComponent component, ActivateInWorldEvent args)
     {
         if (args.Handled)
             return;
-
         if (!TryComp<EntityStorageComponent>(uid, out var box))
             return;
-
         if (!args.Complex)
         {
             if (box.Open || !box.Contents.Contains(args.User))
                 return;
         }
-
         args.Handled = true;
         _storage.ToggleOpen(args.User, uid, box);
-
         if (box.Contents.Contains(args.User) && !box.Open)
         {
             _mover.SetRelay(args.User, uid);
@@ -77,7 +96,6 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
     {
         if (component.Quiet)
             return;
-
         //Play effect & sound
         if (component.Mover != null)
         {
@@ -93,17 +111,23 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
     private void AfterStorageOpen(EntityUid uid, CardboardBoxComponent component, ref StorageAfterOpenEvent args)
     {
         // If this box has a stealth/chameleon effect, disable the stealth effect while the box is open.
-        _stealth.SetEnabled(uid, false);
+        //Exodus-RefactorStealthSystem-Begin
+        if (component.Stealth != null)
+        {
+            _stealth.RemoveRequest(nameof(CardboardBoxSystem), uid);
+        }
+        //Exodus-RefactorStealthSystem-End
     }
 
     private void AfterStorageClosed(EntityUid uid, CardboardBoxComponent component, ref StorageAfterCloseEvent args)
     {
         // If this box has a stealth/chameleon effect, enable the stealth effect.
-        if (TryComp(uid, out StealthComponent? stealth))
+        //Exodus-RefactorStealthSystem-Begin
+        if (component.Stealth != null)
         {
-            _stealth.SetVisibility(uid, stealth.MaxVisibility, stealth);
-            _stealth.SetEnabled(uid, true, stealth);
+            _stealth.RequestStealth(uid, nameof(CardboardBoxSystem), component.Stealth);
         }
+        //Exodus-RefactorStealthSystem-End
     }
 
     //Relay damage to the mover
@@ -119,14 +143,13 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
     {
         if (!TryComp(args.Entity, out MobMoverComponent? mover))
             return;
-
         if (component.Mover == null)
         {
             _mover.SetRelay(args.Entity, uid);
             component.Mover = args.Entity;
         }
     }
-
+    
     /// <summary>
     /// Through e.g. teleporting, it's possible for the mover to exit the box without opening it.
     /// Handle those situations but don't play the sound.
@@ -135,7 +158,6 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
     {
         if (args.Entity != component.Mover)
             return;
-
         RemComp<RelayInputMoverComponent>(component.Mover.Value);
         component.Mover = null;
     }

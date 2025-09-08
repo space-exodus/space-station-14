@@ -8,12 +8,15 @@
     sprite: Objects/Specific/Research/anomalyscanner.rsi
     state: icon
   - type: ItemToggle
+#Exodus-RefactorStealthSystem-Begin
   - type: ComponentToggler
     parent: true
     components:
-    - type: Stealth
-      minVisibility: 0.1
-      lastVisibility: 0.1
+      - type: InstantStealth
+        stealth:
+          minVisibility: 0.1
+          lastVisibility: 0.1
+#Exodus-RefactorStealthSystem-End
   - type: PowerCellDraw
     drawRate: 3.6 # 100 seconds
   - type: ToggleCellDraw
