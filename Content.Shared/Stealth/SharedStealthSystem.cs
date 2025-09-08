@@ -33,11 +33,6 @@ public abstract class SharedStealthSystem : EntitySystem
         SubscribeLocalEvent<StealthComponent, ExamineAttemptEvent>(OnExamineAttempt);
         SubscribeLocalEvent<StealthComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<StealthComponent, MobStateChangedEvent>(OnMobStateChanged);
-
-        //Exodus-AnomalyCore-Begin
-        SubscribeLocalEvent<StealthOnHeldComponent, GotEquippedHandEvent>(OnEquipped);
-        SubscribeLocalEvent<StealthOnHeldComponent, GotUnequippedHandEvent>(OnUnEquipped);
-        //Exodus-AnomalyCore-End
     }
 
     private void OnExamineAttempt(EntityUid uid, StealthComponent component, ExamineAttemptEvent args)
@@ -202,57 +197,7 @@ public abstract class SharedStealthSystem : EntitySystem
 
         return Math.Clamp(component.LastVisibility + ev.FlatModifier, component.MinVisibility, component.MaxVisibility);
     }
-
-    //Exodus-AnomalyCore-Begin
-    private void OnEquipped(EntityUid uid, StealthOnHeldComponent comp, GotEquippedHandEvent  args)
-    {
-        if (args.Handled)
-            return;
-
-        Log.Info("OnEquipped start");
-
-        if (HasComp<StealthComponent>(args.User))
-        {
-            comp.StealthOnHeldEnabled = false;
-            return;
-        }
-
-        var stealthComp = EnsureComp<StealthComponent>(args.User);
-
-        stealthComp.LastUpdated = _timing.CurTime;
-
-        stealthComp.Enabled = comp.Enabled;
-        stealthComp.EnabledOnDeath = comp.EnabledOnDeath;
-        stealthComp.HadOutline = comp.HadOutline;
-        stealthComp.ExamineThreshold = comp.ExamineThreshold;
-        stealthComp.LastVisibility = comp.LastVisibility;
-        stealthComp.MinVisibility = comp.MinVisibility;
-        stealthComp.MaxVisibility = comp.MaxVisibility;
-        stealthComp.ExaminedDesc = comp.ExaminedDesc;
-
-        if (comp.StealthOnMoveEnabled)
-        {
-            if (HasComp<StealthOnMoveComponent>(args.User))
-                return;
-
-            var stealthOnMoveComp = EnsureComp<StealthOnMoveComponent>(args.User);
-
-            stealthOnMoveComp.PassiveVisibilityRate = comp.PassiveVisibilityRate;
-            stealthOnMoveComp.MovementVisibilityRate = comp.MovementVisibilityRate;
-        }
-    }
-
-    private void OnUnEquipped(EntityUid uid, StealthOnHeldComponent comp, GotUnequippedHandEvent  args)
-    {
-        if (HasComp<StealthComponent>(args.User) && comp.StealthOnHeldEnabled)
-            RemComp<StealthComponent>(args.User);
-
-        if (HasComp<StealthOnMoveComponent>(args.User)  && comp.StealthOnHeldEnabled)
-            RemComp<StealthOnMoveComponent>(args.User);
-
-        comp.StealthOnHeldEnabled = true;
-    }
-    //Exodus-AnomalyCore-End
+    
 
     /// <summary>
     ///     Used to run through any stealth effecting components on the entity.

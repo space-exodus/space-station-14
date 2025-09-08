@@ -681,16 +681,9 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: StealthOnHeld
-    enabled: true
-    enabledOnDeath: false
-    examineThreshold: 0.5
-    lastVisibility: 1
-    minVisibility: -1
-    maxVisibility: 1.5
-    examinedDesc: stealth-visual-effect
-    stealthOnMoveEnabled: true
-    passiveVisibilityRate: -0.2
-    movementVisibilityRate: 0.5
+    stealth:
+      passiveVisibilityRate: -0.2
+      movementVisibilityRate: 0.5
 #Exodus-AnomalyCore-End
 
 - type: entity
@@ -1169,16 +1162,10 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: StealthOnHeld
-    enabled: true
-    enabledOnDeath: false
-    examineThreshold: 0.5
-    lastVisibility: 1
-    minVisibility: -1
-    maxVisibility: 1.5
-    examinedDesc: stealth-visual-effect
-    stealthOnMoveEnabled: true
-    passiveVisibilityRate: -0.2
-    movementVisibilityRate: 0.5
+    stealth:
+      lastVisibility: 1
+      passiveVisibilityRate: -0.2
+      movementVisibilityRate: 0.5
 #Exodus-AnomalyCore-End
 
 - type: entity
