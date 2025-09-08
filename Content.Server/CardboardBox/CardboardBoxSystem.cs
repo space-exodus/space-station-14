@@ -42,12 +42,12 @@ public sealed class CardboardBoxSystem : SharedCardboardBoxSystem
         SubscribeLocalEvent<CardboardBoxComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
         SubscribeLocalEvent<CardboardBoxComponent, DamageChangedEvent>(OnDamage);
 
-        SubscribeLocalEvent<CardboardBoxComponent, ComponentStartup>(OnStartup);//Exodus-RefactorStealthSystem
+        SubscribeLocalEvent<CardboardBoxComponent, MapInitEvent>(OnMapInit);//Exodus-RefactorStealthSystem
         SubscribeLocalEvent<CardboardBoxComponent, ComponentShutdown>(OnShutdown);//Exodus-RefactorStealthSystem
     }
 
 //Exodus-RefactorStealthSystem-Begin
-    private void OnStartup(EntityUid uid, CardboardBoxComponent component, ComponentStartup args)
+    private void OnMapInit(EntityUid uid, CardboardBoxComponent component, MapInitEvent args)
     {
         if (component.Stealth == null)
             return;
