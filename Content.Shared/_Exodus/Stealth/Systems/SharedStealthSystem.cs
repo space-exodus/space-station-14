@@ -257,27 +257,6 @@ public abstract class SharedStealthSystem : EntitySystem
         if (!Exists(target) || TerminatingOrDeleted(target))
             return false;
 
-        /*if (!HasComp<StealthComponent>(target))
-        {
-            var stealthComp = EnsureComp<StealthComponent>(target);
-
-            if (!stealthComp.StealthLayers.ContainsKey(key))
-                stealthComp.StealthLayers.Add(key, data);
-
-
-            Dirty(target, stealthComp);
-        }
-        else
-        {
-            if (!TryComp<StealthComponent>(target, out var stealthComp))
-                return false;
-
-            if (!stealthComp.StealthLayers.ContainsKey(key))
-                stealthComp.StealthLayers.Add(key, data);
-
-            Dirty(target, stealthComp);
-        }*/
-
         var stealthComp = EnsureComp<StealthComponent>(target);
 
         if (!stealthComp.StealthLayers.ContainsKey(key))
@@ -301,7 +280,7 @@ public abstract class SharedStealthSystem : EntitySystem
 
         stealthComp.StealthLayers.Remove(key);
 
-        if (!IsVisible(target))
+        if (IsVisible(target))
         {
             RemCompDeferred<StealthComponent>(target);
             return true;
