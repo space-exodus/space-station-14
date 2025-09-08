@@ -90,8 +90,13 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
         if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)
             return false;
 
-        if (data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))
+        //Exodus-MindSlave-Begin
+        if ((data.ShowTo != null && !_entityWhitelist.IsValid(data.ShowTo, viewer))
+            || (data.ShowToNetEntities != null && (
+                !viewer.HasValue
+                || !data.ShowToNetEntities.Contains(EntityManager.GetNetEntity(viewer.Value)))))
             return false;
+        //Exodus-MindSlave-End
 
         return true;
     }
