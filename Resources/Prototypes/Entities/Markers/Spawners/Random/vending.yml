@@ -7,7 +7,7 @@
   - type: Sprite
     layers:
     - state: red
-    - sprite: Structures/Machines/VendingMachines/random.rsi
+    - sprite: Exodus/Structures/Machines/VendingMachines/random.rsi  # Exodus-Resprite
       state: any
   - type: RandomSpawner
     prototypes:
@@ -57,7 +57,7 @@
   - type: Sprite
     layers:
     - state: red
-    - sprite: Structures/Machines/VendingMachines/random.rsi
+    - sprite: Exodus/Structures/Machines/VendingMachines/random.rsi  # Exodus-Resprite
       state: clothing
   - type: EntityTableSpawner
     table: !type:NestedSelector

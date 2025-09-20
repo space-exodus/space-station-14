@@ -39,7 +39,7 @@
   description: A massive beast that uses long tentacles to ensnare its prey, threatening them is not advised under any conditions.
   components:
   - type: Sprite
-    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    sprite: Exodus/Mobs/Aliens/Asteroid/goliath.rsi # Exodus-Resprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: goliath
@@ -115,10 +115,10 @@
   - type: Action
     raiseOnUser: true
     icon:
-      sprite: Mobs/Aliens/Asteroid/goliath.rsi
+      sprite: Exodus/Mobs/Aliens/Asteroid/goliath.rsi # Exodus-Resprite
       state: goliath_tentacle_spawn
     iconOn:
-      sprite: Mobs/Aliens/Asteroid/goliath.rsi
+      sprite: Exodus/Mobs/Aliens/Asteroid/goliath.rsi # Exodus-Resprite
       state: goliath_tentacle_wiggle
     sound:
       path: "/Audio/Weapons/slash.ogg"
@@ -139,7 +139,7 @@
     canCollide: true
   - type: InteractionOutline
   - type: Sprite
-    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    sprite: Exodus/Mobs/Aliens/Asteroid/goliath.rsi # Exodus-Resprite
     layers:
     - state: goliath_tentacle_wiggle
   - type: StunOnContact
@@ -174,7 +174,7 @@
     bodyType: Static
     canCollide: false
   - type: Sprite
-    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    sprite: Exodus/Mobs/Aliens/Asteroid/goliath.rsi # Exodus-Resprite
   - type: InteractionOutline
   - type: TimedDespawn
     lifetime: 0.7
@@ -371,7 +371,7 @@
   description: A territorial beast, covered in a thick shell that absorbs energy. Its stare causes victims to freeze from the inside.
   components:
   - type: Sprite
-    sprite: Mobs/Aliens/Asteroid/basilisk.rsi
+    sprite: Exodus/Mobs/Aliens/Asteroid/basilisk.rsi # Exodus-Resprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: basilisk

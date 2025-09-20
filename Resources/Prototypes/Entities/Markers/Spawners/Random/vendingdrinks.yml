@@ -7,7 +7,7 @@
   - type: Sprite
     layers:
       - state: red
-      - sprite: Structures/Machines/VendingMachines/random.rsi
+      - sprite: Exodus/Structures/Machines/VendingMachines/random.rsi  # Exodus-Resprite
         state: drink
   - type: RandomSpawner
     prototypes:

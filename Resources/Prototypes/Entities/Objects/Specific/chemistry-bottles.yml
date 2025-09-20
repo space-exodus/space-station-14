@@ -14,7 +14,10 @@
       Glass: 25
   - type: SpaceGarbage
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/bottle.rsi
+    # Exodus-Resprite-Start
+    sprite: Exodus/Objects/Specific/Chemistry/bottle.rsi
+    scale: 0.5,0.5
+    # Exodus-Resprite-End
     layers:
     - state: bottle-1
     - state: bottle-1-1
@@ -50,7 +53,7 @@
         type: TransferAmountBoundUserInterface
   - type: Item
     size: Tiny
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: Exodus/Objects/Specific/Chemistry/beaker.rsi  # Exodus-Resprite
   - type: Spillable
     solution: drink
   - type: MeleeWeapon

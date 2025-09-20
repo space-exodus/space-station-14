@@ -8,7 +8,7 @@
       steps:
       - tag: Medkit
         icon:
-          sprite: Objects/Specific/Medical/firstaidkits.rsi
+          sprite: Exodus/Objects/Specific/Medical/firstaidkits.rsi # Exodus-Resprite
           state: firstaid
         name: construction-graph-tag-medkit
       - tag: DiscreteHealthAnalyzer
