@@ -46,6 +46,7 @@
       - MindShieldImplant
       - FakeMindShieldImplant
       - RadioImplant
+      - MindSlaveImplant #Exodus MindSlave
       deimplantFailureDamage:
         types:
           Cellular: 50

@@ -7,6 +7,7 @@ using Content.Shared.Implants;
 using Content.Shared.Mindshield.Components;
 using Content.Shared.Revolutionary.Components;
 using Robust.Shared.Containers;
+using Content.Server.Exodus.Implants.MindSlave;//Exodus-MindSlave
 
 namespace Content.Server.Mindshield;
 
@@ -20,6 +21,7 @@ public sealed class MindShieldSystem : EntitySystem
     [Dependency] private readonly RoleSystem _roleSystem = default!;
     [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
+    [Dependency] private readonly MindSlaveImplantSystem _mindSlaveImplantSystem = default!;//Exodus-MindSlave
 
     public override void Initialize()
     {
@@ -36,6 +38,12 @@ public sealed class MindShieldSystem : EntitySystem
 
         EnsureComp<MindShieldComponent>(ev.Implanted.Value);
         MindShieldRemovalCheck(ev.Implanted.Value, ev.Implant);
+        //Exodus-MindSlave-Begin
+        if (!TryComp<MindShieldImplantComponent>(ent.Owner, out var mindShieldComp))
+            return;
+
+        _mindSlaveImplantSystem.RemoveMindSlave(ent.Owner, mindShieldComp, ev);
+        //Exodus-MindSlave-End
     }
 
     /// <summary>
