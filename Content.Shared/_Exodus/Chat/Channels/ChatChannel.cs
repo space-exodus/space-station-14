@@ -1,0 +1,15 @@
+// © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt
+
+namespace Content.Shared.Exodus.Chat.Channels;
+
+public enum ChatChannel
+{
+    LocalSpeech, // Normal, Shout, Whisper
+    Emote,
+    OOC, // OOC, Admin, Dead
+    LOOC, // LOOC, Antag-LOOC
+    Dead, // IC channel
+    Radio, // [Prototypes]
+    Announcements,
+    Server,
+}
