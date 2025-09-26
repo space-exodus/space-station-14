@@ -9,7 +9,7 @@ if "%1" == "BuildComponent" (goto BuildComponent)
 :BuildComponent
 set component=%2
 
-if exist "%scriptDir%Secrets" (
+if exist "%scriptDir%Secrets\ExodusSecrets.sln" (
     set component=Secrets\%3
 )
 
