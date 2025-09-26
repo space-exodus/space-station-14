@@ -30,16 +30,10 @@ public sealed partial class MaterialClusterSystem : EntitySystem
         if (!TryComp<MaterialStorageComponent>(args.Target, out var materialStorageComp))
             return;
 
-
-        if (comp.Whitelist != null && !_entityWhitelist.IsValid(comp.Whitelist, args.Target.Value))
-            return;
-
         foreach (var material in comp.Materials.Keys)
         {
             if (!_materialStorageSystem.IsMaterialWhitelisted(args.Target.Value, material))
-            {
                 return;
-            }
         }
 
         if (!_materialStorageSystem.TryChangeMaterialAmount(args.Target.Value, comp.Materials))
