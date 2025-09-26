@@ -33,6 +33,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Exodus.LatheSpeedUp;//Exodus-AnomalyCore
 
 namespace Content.Server.Lathe
 {
@@ -56,6 +57,7 @@ namespace Content.Server.Lathe
         [Dependency] private readonly StackSystem _stack = default!;
         [Dependency] private readonly TransformSystem _transform = default!;
         [Dependency] private readonly RadioSystem _radio = default!;
+        [Dependency] private readonly LatheSpeedUpSystem _latheSpeedUpSystem = default!;//Exodus-AnomalyCore
 
         /// <summary>
         /// Per-tick cache
@@ -198,7 +200,13 @@ namespace Content.Server.Lathe
             var recipe = component.Queue.First();
             component.Queue.RemoveAt(0);
 
-            var time = _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime) * component.TimeMultiplier;
+            //Exodus-AnomalyCore-Begin
+            //var time = _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime) * component.TimeMultiplier;
+            var time = _latheSpeedUpSystem.ApplySpeed(
+               uid,
+               _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime)
+            ) * component.TimeMultiplier;
+           //Exodus-AnomalyCore-End
 
             var lathe = EnsureComp<LatheProducingComponent>(uid);
             lathe.StartTime = _timing.CurTime;

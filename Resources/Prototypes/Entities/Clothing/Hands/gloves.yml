@@ -108,6 +108,13 @@
     fiberMaterial: fibers-durathread
     fiberColor: fibers-regal-blue
   - type: FingerprintMask
+#Exodus-AnomalyCore-Begin
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10
+        Cold: 10
+#Exodus-AnomalyCore-End
 
 - type: entity
   parent: ClothingHandsBase
@@ -281,6 +288,13 @@
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
+#Exodus-AnomalyCore-Begin
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10
+        Cold: 10
+#Exodus-AnomalyCore-End
 
 # can't parent combat gloves since they are butcherable
 - type: entity

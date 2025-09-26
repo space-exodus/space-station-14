@@ -8,6 +8,11 @@ using Content.Shared.Stealth.Components;
 using Robust.Shared.GameStates;
 using Robust.Shared.Timing;
 
+//Exodus-AnomalyCore-Begin
+using Content.Shared.Hands;
+using Content.Shared.Exodus.Stealth.Components;
+//Exodus-AnomalyCore-End
+
 namespace Content.Shared.Stealth;
 
 public abstract class SharedStealthSystem : EntitySystem
@@ -116,6 +121,9 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnMove(EntityUid uid, StealthOnMoveComponent component, ref MoveEvent args)
     {
+        if (!HasComp<StealthComponent>(uid))
+            return;
+
         if (_timing.ApplyingState)
             return;
 
@@ -189,6 +197,7 @@ public abstract class SharedStealthSystem : EntitySystem
 
         return Math.Clamp(component.LastVisibility + ev.FlatModifier, component.MinVisibility, component.MaxVisibility);
     }
+    
 
     /// <summary>
     ///     Used to run through any stealth effecting components on the entity.

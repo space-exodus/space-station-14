@@ -27,6 +27,7 @@
     damageProtection:
       flatReductions:
         Heat: 5 # the average lightbulb only does around four damage!
+        Cold: 5 #Exodus-AnomalyCore
 
 - type: entity
   abstract: true
