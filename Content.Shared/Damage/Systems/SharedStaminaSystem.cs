@@ -1,4 +1,5 @@
-using System.Linq;
+// Exodus - Stamina Refactor
+// Exodus - Stamian Refactor | Remove unnecessary usings
 using Content.Shared.Administration.Logs;
 using Content.Shared.Alert;
 using Content.Shared.CCVar;
@@ -7,39 +8,33 @@ using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Events;
 using Content.Shared.Database;
 using Content.Shared.Effects;
-using Content.Shared.FixedPoint;
 using Content.Shared.Projectiles;
 using Content.Shared.Rejuvenate;
-using Content.Shared.Rounding;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Melee.Events;
-using JetBrains.Annotations;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using System.Linq;
 
 namespace Content.Shared.Damage.Systems;
 
 public abstract partial class SharedStaminaSystem : EntitySystem
 {
+    // Exodus - Stamian Refactor | Remove unnecessary systems
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly MetaDataSystem _metadata = default!;
     [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private readonly SharedStunSystem _stunSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
 
-    /// <summary>
-    /// How much of a buffer is there between the stun duration and when stuns can be re-applied.
-    /// </summary>
-    private static readonly TimeSpan StamCritBufferTime = TimeSpan.FromSeconds(3f);
+    // Exodus - Stamina Refactor | Move stamina crit buffer to stamina component
 
     public float UniversalStaminaDamageModifier { get; private set; } = 1f;
 
@@ -50,9 +45,8 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         InitializeModifier();
         InitializeResistance();
 
-        SubscribeLocalEvent<StaminaComponent, ComponentStartup>(OnStartup);
+        // Exodus - Stamian Refactor | Remove ComponentStartup, AfterAutoHandleStateEvent
         SubscribeLocalEvent<StaminaComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<StaminaComponent, AfterAutoHandleStateEvent>(OnStamHandleState);
         SubscribeLocalEvent<StaminaComponent, DisarmedEvent>(OnDisarmed);
         SubscribeLocalEvent<StaminaComponent, RejuvenateEvent>(OnRejuvenate);
 
@@ -63,20 +57,9 @@ public abstract partial class SharedStaminaSystem : EntitySystem
 
         SubscribeLocalEvent<StaminaDamageOnHitComponent, MeleeHitEvent>(OnMeleeHit);
 
+        SubscribeLocalEvent<StaminaComponent, RefreshDecayEvent>(OnRefreshDecay);  // Exodus - Stamina Refactor
+
         Subs.CVar(_config, CCVars.PlaytestStaminaDamageModifier, value => UniversalStaminaDamageModifier = value, true);
-    }
-
-    private void OnStamHandleState(EntityUid uid, StaminaComponent component, ref AfterAutoHandleStateEvent args)
-    {
-        if (component.Critical)
-            EnterStamCrit(uid, component);
-        else
-        {
-            if (component.StaminaDamage > 0f)
-                EnsureComp<ActiveStaminaComponent>(uid);
-
-            ExitStamCrit(uid, component);
-        }
     }
 
     private void OnShutdown(EntityUid uid, StaminaComponent component, ComponentShutdown args)
@@ -85,37 +68,17 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         {
             RemCompDeferred<ActiveStaminaComponent>(uid);
         }
-        _alerts.ClearAlert(uid, component.StaminaAlert);
+        // Exodus - Stamina Refactor | Remove stamina alert
     }
 
-    private void OnStartup(EntityUid uid, StaminaComponent component, ComponentStartup args)
-    {
-        SetStaminaAlert(uid, component);
-    }
-
-    [PublicAPI]
-    public float GetStaminaDamage(EntityUid uid, StaminaComponent? component = null)
-    {
-        if (!Resolve(uid, ref component))
-            return 0f;
-
-        var curTime = _timing.CurTime;
-        var pauseTime = _metadata.GetPauseTime(uid);
-        return MathF.Max(0f, component.StaminaDamage - MathF.Max(0f, (float) (curTime - (component.NextUpdate + pauseTime)).TotalSeconds * component.Decay));
-    }
+    // Exodus - Stamina Refector | Remove OnStartup
+    // Exodus - Stamina Refector | Remove GetStaminaDamage, get it from component
 
     private void OnRejuvenate(EntityUid uid, StaminaComponent component, RejuvenateEvent args)
     {
-        if (component.StaminaDamage >= component.CritThreshold)
-        {
-            ExitStamCrit(uid, component);
-        }
-
-        component.StaminaDamage = 0;
-        AdjustSlowdown(uid);
-        RemComp<ActiveStaminaComponent>(uid);
-        SetStaminaAlert(uid, component);
-        Dirty(uid, component);
+        // Exodus - Stamina Refector | All logic move to StaminaRecover
+        if (component.StaminaDamage >= 0)
+            StaminaRecover(uid, component);
     }
 
     private void OnDisarmed(EntityUid uid, StaminaComponent component, ref DisarmedEvent args)
@@ -123,14 +86,14 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         if (args.Handled)
             return;
 
-        if (component.Critical)
+        if (IsStunned(component)) // Exodus - Stamina Refector | IsStunned instead of Critical
             return;
 
         var damage = args.PushProbability * component.CritThreshold;
         TakeStaminaDamage(uid, damage, component, source: args.Source);
 
         args.PopupPrefix = "disarm-action-shove-";
-        args.IsStunned = component.Critical;
+        args.IsStunned = IsStunned(component);  // Exodus - Stamina Refector | IsStunned instead of Critical
 
         args.Handled = true;
     }
@@ -139,10 +102,8 @@ public abstract partial class SharedStaminaSystem : EntitySystem
     {
         if (!args.IsHit ||
             !args.HitEntities.Any() ||
-            component.Damage <= 0f)
-        {
+            component.Damage <= 0f) // Exodus - Stamina Refector | Remove brackets
             return;
-        }
 
         var ev = new StaminaDamageOnHitAttemptEvent();
         RaiseLocalEvent(uid, ref ev);
@@ -168,9 +129,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
             return;
 
         var damage = component.Damage;
-
         damage *= hitEvent.Multiplier;
-
         damage += hitEvent.FlatModifier;
 
         foreach (var (ent, comp) in toHit)
@@ -212,27 +171,29 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         TakeStaminaDamage(target, component.Damage, source: uid, sound: component.Sound);
     }
 
-    private void SetStaminaAlert(EntityUid uid, StaminaComponent? component = null)
-    {
-        if (!Resolve(uid, ref component, false) || component.Deleted)
-            return;
-
-        var severity = ContentHelpers.RoundToLevels(MathF.Max(0f, component.CritThreshold - component.StaminaDamage), component.CritThreshold, 7);
-        _alerts.ShowAlert(uid, component.StaminaAlert, (short) severity);
-    }
+    // Exodus - Stamina Refector | Remove SetStaminaAlert
 
     /// <summary>
     /// Tries to take stamina damage without raising the entity over the crit threshold.
     /// </summary>
-    public bool TryTakeStamina(EntityUid uid, float value, StaminaComponent? component = null, EntityUid? source = null, EntityUid? with = null)
+    public bool TryTakeStamina(EntityUid uid, float value, StaminaComponent? component = null, EntityUid? source = null, EntityUid? with = null, bool ignoreResist = false)
     {
         // Something that has no Stamina component automatically passes stamina checks
         if (!Resolve(uid, ref component, false))
             return true;
 
-        var oldStam = component.StaminaDamage;
+        var curValue = value;
+        if (!ignoreResist)
+        {
+            var ev = new BeforeStaminaDamageEvent(value);
+            RaiseLocalEvent(uid, ref ev);
+            if (ev.Cancelled)
+                return false;
+            curValue = ev.Value;
+        }
 
-        if (oldStam + value > component.CritThreshold || component.Critical)
+        // Exodus - Stamina Refector | Correct logic
+        if (curValue > 0 && (component.StaminaDamage + value >= component.DangerThreshold || IsStunned(component)))
             return false;
 
         TakeStaminaDamage(uid, value, component, source, with, visual: false);
@@ -245,65 +206,34 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         if (!Resolve(uid, ref component, false))
             return;
 
-        var ev = new BeforeStaminaDamageEvent(value);
-        RaiseLocalEvent(uid, ref ev);
-        if (ev.Cancelled)
-            return;
-
         // Allow stamina resistance to be applied.
         if (!ignoreResist)
         {
-            value = ev.Value;
+            var ev = new BeforeStaminaDamageEvent(value);
+            RaiseLocalEvent(uid, ref ev);
+            if (ev.Cancelled)
+                return;
         }
 
         value = UniversalStaminaDamageModifier * value;
 
-        // Have we already reached the point of max stamina damage?
-        if (component.Critical)
-            return;
+        // Exodus - Stamina Refeactor | Sepatate functions
+        component.StaminaDamage += value;
+        UpdateStamina(uid, component);
+        RefreshDecay(uid, component);
 
-        var oldDamage = component.StaminaDamage;
-        component.StaminaDamage = MathF.Max(0f, component.StaminaDamage + value);
+        // Exodus - Stamina Refector | Remove slowdown when damaged catched
+        // Exodus - Stamina Refector | Remove stamina alert
 
-        // Reset the decay cooldown upon taking damage.
-        if (oldDamage < component.StaminaDamage)
-        {
-            var nextUpdate = _timing.CurTime + TimeSpan.FromSeconds(component.Cooldown);
-
-            if (component.NextUpdate < nextUpdate)
-                component.NextUpdate = nextUpdate;
-        }
-
-        AdjustSlowdown(uid);
-
-        SetStaminaAlert(uid, component);
-
-        // Checking if the stamina damage has decreased to zero after exiting the stamcrit
-        if (component.AfterCritical && oldDamage > component.StaminaDamage && component.StaminaDamage <= 0f)
-        {
-            component.AfterCritical = false; // Since the recovery from the crit has been completed, we are no longer 'after crit'
-        }
-
-        if (!component.Critical)
-        {
-            if (component.StaminaDamage >= component.CritThreshold)
-            {
-                EnterStamCrit(uid, component);
-            }
-        }
-        else
-        {
-            if (component.StaminaDamage < component.CritThreshold)
-            {
-                ExitStamCrit(uid, component);
-            }
-        }
+        if (value > 0)
+            component.LastDamage = _timing.CurTime;
 
         EnsureComp<ActiveStaminaComponent>(uid);
         Dirty(uid, component);
 
         if (value <= 0)
             return;
+
         if (source != null)
         {
             _adminLogger.Add(LogType.Stamina, $"{ToPrettyString(source.Value):user} caused {value} stamina damage to {ToPrettyString(uid):target}{(with != null ? $" using {ToPrettyString(with.Value):using}" : "")}");
@@ -324,6 +254,34 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         }
     }
 
+    // Exodus - Stamina Refector - Start | Separete logic
+    private void UpdateStamina(EntityUid uid, StaminaComponent component)
+    {
+        // Have we already reached the point of max stamina damage?
+
+        component.StaminaDamage = MathF.Max(0f, component.StaminaDamage);
+
+        var thresholdOverflow = false;
+        if (component.StaminaDamage >= component.CritThreshold)
+        {
+            thresholdOverflow = true;
+            component.StaminaDamage = component.CritThreshold;
+        }
+
+        // Exodus - Remove Slow down when stamina damage
+
+        component.UpdateIsInDanger();
+
+        if (thresholdOverflow)
+        {
+            if (component.StunEnd < _timing.CurTime)
+                StaminaStun(uid, component.StunTime * 2, component);
+            else
+                StaminaStun(uid, component.StunTime, component);
+        }
+    }
+    // Exodus - End
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -336,97 +294,67 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         {
             // Just in case we have active but not stamina we'll check and account for it.
             if (!stamQuery.TryGetComponent(uid, out var comp) ||
-                comp.StaminaDamage <= 0f && !comp.Critical)
+                comp.StaminaDamage <= 0f && comp.Decay > 0) // Exodus - Stamina Refector | Correct logic
             {
                 RemComp<ActiveStaminaComponent>(uid);
                 continue;
             }
 
-            // Shouldn't need to consider paused time as we're only iterating non-paused stamina components.
-            var nextUpdate = comp.NextUpdate;
+            // Exodus - Stamina Refactor | Separate function
 
-            if (nextUpdate > curTime)
-                continue;
+            // Decay
+            RefreshDecay(uid, comp);
+            var totalDecay = comp.Decay * frameTime;
+            TryTakeStamina(uid, -totalDecay, comp, ignoreResist: true);
+            //
 
-            // Handle exiting critical condition and restoring stamina damage
-            if (comp.Critical)
-                ExitStamCrit(uid, comp);
-
-            comp.NextUpdate += TimeSpan.FromSeconds(1f);
-
-            TakeStaminaDamage(
-                uid,
-                comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier : -comp.Decay, // Recover faster after crit
-                comp);
-
+            UpdateStamina(uid, comp);
             Dirty(uid, comp);
         }
     }
 
-    private void EnterStamCrit(EntityUid uid, StaminaComponent? component = null)
+    // Exodus - Stamina Refactor - Start | Replace EnterStamCrit
+    private void StaminaStun(EntityUid uid, TimeSpan stunTime, StaminaComponent? component = null)
     {
-        if (!Resolve(uid, ref component) ||
-            component.Critical)
-        {
+        if (!Resolve(uid, ref component))
             return;
-        }
 
         // To make the difference between a stun and a stamcrit clear
         // TODO: Mask?
 
-        component.Critical = true;
-        component.StaminaDamage = component.CritThreshold;
+        component.StunEnd = _timing.CurTime + stunTime;
+        _stunSystem.TryParalyze(uid, stunTime, true);
 
-        _stunSystem.TryParalyze(uid, component.StunTime, true);
-
-        // Give them buffer before being able to be re-stunned
-        component.NextUpdate = _timing.CurTime + component.StunTime + StamCritBufferTime;
         EnsureComp<ActiveStaminaComponent>(uid);
         Dirty(uid, component);
-        _adminLogger.Add(LogType.Stamina, LogImpact.Medium, $"{ToPrettyString(uid):user} entered stamina crit");
+        _adminLogger.Add(LogType.Stamina, LogImpact.Medium, $"{ToPrettyString(uid):user} entered stamina stun");
     }
+    // Exodus - End
 
-    private void ExitStamCrit(EntityUid uid, StaminaComponent? component = null)
+    // Exodus - Stamina Refactor - Start | Replace ExitStamCrit
+    public void StaminaRecover(EntityUid uid, StaminaComponent? component = null)
     {
-        if (!Resolve(uid, ref component) ||
-            !component.Critical)
-        {
+        if (!Resolve(uid, ref component))
             return;
-        }
 
-        component.Critical = false;
-        component.AfterCritical = true;  // Set to true to indicate that stamina will be restored after exiting stamcrit
-        component.NextUpdate = _timing.CurTime;
+        component.StaminaDamage = 0;
+        RefreshDecay(uid);
 
-        SetStaminaAlert(uid, component);
+        RemComp<ActiveStaminaComponent>(uid);
         Dirty(uid, component);
-        _adminLogger.Add(LogType.Stamina, LogImpact.Low, $"{ToPrettyString(uid):user} recovered from stamina crit");
+        _adminLogger.Add(LogType.Stamina, LogImpact.Low, $"{ToPrettyString(uid):user} recovered stamina");
     }
+    // Exodus - End
 
-    /// <summary>
-    /// Adjusts the movement speed of an entity based on its current <see cref="StaminaComponent.StaminaDamage"/> value.
-    /// If the entity has a <see cref="SlowOnDamageComponent"/>, its custom damage-to-speed thresholds are used,
-    /// otherwise, a default set of thresholds is applied.
-    /// The method determines the closest applicable damage threshold below the crit limit and applies the corresponding
-    /// speed modifier using the stun system. If no threshold is met then the entity's speed is restored to normal.
-    /// </summary>
-    /// <param name="ent">Entity to update</param>
-    private void AdjustSlowdown(Entity<StaminaComponent?> ent)
+    // Exodus - Stamina Refactor - Start | Separate function
+    public bool IsStunned(EntityUid uid)
     {
-        if (!Resolve(ent, ref ent.Comp))
-            return;
-
-        var closest = FixedPoint2.Zero;
-
-        // Iterate through the dictionary in the similar way as in Damage.SlowOnDamageSystem.OnRefreshMovespeed
-        foreach (var thres in ent.Comp.StunModifierThresholds)
-        {
-            var key = thres.Key.Float();
-
-            if (ent.Comp.StaminaDamage >= key && key > closest && closest < ent.Comp.CritThreshold)
-                closest = thres.Key;
-        }
-
-        _stunSystem.UpdateStunModifiers(ent, ent.Comp.StunModifierThresholds[closest]);
+        return TryComp<StaminaComponent>(uid, out var stamina) && IsStunned(stamina);
     }
+
+    public bool IsStunned(StaminaComponent component)
+    {
+        return component.StunEnd > _timing.CurTime;
+    }
+    // Exodus - End
 }
