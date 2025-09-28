@@ -5,5 +5,6 @@
   description: "Neon sign. Face in salad and wake up in February."
   components:
   - type: Sprite
-    state: corvax_newyear
-    shader: unshaded
+    layers:
+    - shader: unshaded
+      state: corvax_newyear

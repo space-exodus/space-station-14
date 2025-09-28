@@ -48,7 +48,6 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
-        SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers); // Exodus-Crawling
         SubscribeLocalEvent<MobStateComponent, DamageModifyEvent>(OnDamageModify);
 
         SubscribeLocalEvent<MobStateComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
@@ -106,10 +105,6 @@ public partial class MobStateSystem
         switch (state)
         {
             case MobState.Alive:
-                // Exodus-Crawling-Start
-                if (!_standing.CanCrawl(target))
-                    _standing.Stand(target);
-                // Exodus-Crawling-End
                 _appearance.SetData(target, MobStateVisuals.State, MobState.Alive);
                 break;
             case MobState.Critical:
@@ -204,33 +199,6 @@ public partial class MobStateSystem
     {
         args.Cancelled = true;
     }
-
-    // Exodus-Crawling-Start
-    private void OnRefreshMovementSpeedModifiers(EntityUid uid, MobStateComponent component, ref RefreshMovementSpeedModifiersEvent ev)
-    {
-        if (!HasComp<HumanoidAppearanceComponent>(uid))
-            return;
-
-        switch (component.CurrentState)
-        {
-            case MobState.Critical:
-                if (!TryComp<DamageableComponent>(uid, out var damageable))
-                    return;
-
-                if (!TryComp<MovementSpeedModifierComponent>(uid, out var speed))
-                    return;
-
-                if (!_mobThreshold.TryGetPercentageForState(uid, MobState.Dead, damageable.TotalDamage, out var percentage))
-                    return;
-
-                var sprintSpeedModifier = (1 - (float) percentage) * 2 * 0.15f * speed.BaseSprintSpeed;
-                var walkSpeedModifier = (1 - (float) percentage) * 2 * 0.15f * speed.BaseWalkSpeed;
-
-                ev.ModifySpeed(sprintSpeedModifier, walkSpeedModifier);
-                break;
-        }
-    }
-    // Exodus-Crawling-End
 
     private void OnDamageModify(Entity<MobStateComponent> ent, ref DamageModifyEvent args)
     {

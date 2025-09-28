@@ -57,6 +57,7 @@
     - Snout
     - HeadTop
     - HeadSide
+    - Tail
     # undergarmentBottom: UndergarmentBottomBoxersReptilian # Exodus-No-Need-For-Underwear-For-Race
   - type: Hunger
     baseDecayRate: 0.0333333333 # Exodus-ReptilianLore
@@ -112,9 +113,9 @@
         Heat : 1.5 #per second, scales with temperature & other constants
   - type: TemperatureSpeed
     thresholds:
-      301: 0.8
-      295: 0.6
-      285: 0.4
+      301: 0.9
+      295: 0.8
+      285: 0.7
   - type: Wagging
   # Exodus-ThickSyringes-Start
   # Exodus-ReptilianLore-Start | Zessul Blood heals reptilians better
@@ -154,11 +155,6 @@
       type: Add
       refresh: false
   # Exodus-ReptilianLore-End
-  - type: InjectableSolution
-    solution: chemicals
-    whitelist:
-      tags:
-        - ThickSyringe
   - type: Tag
     tags:
       - ThickSkin
@@ -181,6 +177,16 @@
           32:
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: shoes
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
     displacements:
       jumpsuit:
         sizeMaps:
@@ -193,6 +199,16 @@
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: shoes
     # Corvax-Displacements-End
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -221,6 +237,16 @@
           32:
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: shoes
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
     displacements:
       jumpsuit:
         sizeMaps:
@@ -232,6 +258,16 @@
           32:
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: shoes
-    # Corvax-Digitigrade-End
+    # Corvax-Displacements-End
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Reptilian/displacement.rsi
+            state: mask
 
 #Weh

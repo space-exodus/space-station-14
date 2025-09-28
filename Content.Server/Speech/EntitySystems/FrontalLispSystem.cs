@@ -1,6 +1,7 @@
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
-using Robust.Shared.Random; // Corvax-Localization
+using Robust.Shared.Random; // Exodus-Localization
+using Content.Shared.Speech;
 
 namespace Content.Server.Speech.EntitySystems;
 
@@ -11,9 +12,22 @@ public sealed class FrontalLispSystem : EntitySystem
     private static readonly Regex RegexLowerTh = new(@"[t]+[s]+|[s]+[c]+(?=[iey]+)|[c]+(?=[iey]+)|[p][s]+|([s]+[t]+|[t]+)(?=[i]+[o]+[u]*[n]*)|[c]+[h]+(?=[i]*[e]*)|[z]+|[s]+|[x]+(?=[e]+)");
     private static readonly Regex RegexUpperEcks = new(@"[E]+[Xx]+[Cc]*|[X]+");
     private static readonly Regex RegexLowerEcks = new(@"[e]+[x]+[c]*|[x]+");
+
+    // Exodus-Localization-Start
+    private static readonly Regex RegexUpperSs = new(@"С");
+    private static readonly Regex RegexLowerSs = new(@"с");
+    private static readonly Regex RegexUpperChs = new(@"Ч");
+    private static readonly Regex RegexLowerChs = new(@"ч");
+    private static readonly Regex RegexUpperCs = new(@"Ц");
+    private static readonly Regex RegexLowerCs = new(@"ц");
+    private static readonly Regex RegexUpperTs = new(@"\B[Т](?![АЕЁИОУЫЭЮЯаеёиоуыэюя])");
+    private static readonly Regex RegexLowerTs = new(@"\B[т](?![АЕЁИОУЫЭЮЯаеёиоуыэюя])");
+    private static readonly Regex RegexUpperZs = new(@"З");
+    private static readonly Regex RegexLowerZs = new(@"з");
+    // Exodus-Localization-End
     // @formatter:on
 
-    [Dependency] private readonly IRobustRandom _random = default!; // Corvax-Localization
+    [Dependency] private readonly IRobustRandom _random = default!; // Exodus-Localization
 
     public override void Initialize()
     {
@@ -32,23 +46,23 @@ public sealed class FrontalLispSystem : EntitySystem
         message = RegexUpperEcks.Replace(message, "EKTH");
         message = RegexLowerEcks.Replace(message, "ekth");
 
-        // Corvax-Localization Start
+        // Exodus-Localization-Start
         // с - ш
-        message = Regex.Replace(message, @"с", _random.Prob(0.90f) ? "ш" : "с");
-        message = Regex.Replace(message, @"С", _random.Prob(0.90f) ? "Ш" : "С");
+        message = RegexUpperSs.Replace(message, _random.Prob(0.9f) ? "Ш" : "С");
+        message = RegexLowerSs.Replace(message, _random.Prob(0.9f) ? "ш" : "с");
         // ч - ш
-        message = Regex.Replace(message, @"ч", _random.Prob(0.90f) ? "ш" : "ч");
-        message = Regex.Replace(message, @"Ч", _random.Prob(0.90f) ? "Ш" : "Ч");
+        message = RegexUpperChs.Replace(message, _random.Prob(0.9f) ? "Ш" : "Ч");
+        message = RegexLowerChs.Replace(message, _random.Prob(0.9f) ? "ш" : "ч");
         // ц - ч
-        message = Regex.Replace(message, @"ц", _random.Prob(0.90f) ? "ч" : "ц");
-        message = Regex.Replace(message, @"Ц", _random.Prob(0.90f) ? "Ч" : "Ц");
+        message = RegexUpperCs.Replace(message, _random.Prob(0.9f) ? "Ч" : "Ц");
+        message = RegexLowerCs.Replace(message, _random.Prob(0.9f) ? "ч" : "ц");
         // т - ч
-        message = Regex.Replace(message, @"\B[т](?![АЕЁИОУЫЭЮЯаеёиоуыэюя])", _random.Prob(0.90f) ? "ч" : "т");
-        message = Regex.Replace(message, @"\B[Т](?![АЕЁИОУЫЭЮЯаеёиоуыэюя])", _random.Prob(0.90f) ? "Ч" : "Т");
+        message = RegexUpperTs.Replace(message, _random.Prob(0.9f) ? "Ч" : "Т");
+        message = RegexLowerTs.Replace(message, _random.Prob(0.9f) ? "ч" : "т");
         // з - ж
-        message = Regex.Replace(message, @"з", _random.Prob(0.90f) ? "ж" : "з");
-        message = Regex.Replace(message, @"З", _random.Prob(0.90f) ? "Ж" : "З");
-        // Corvax-Localization End
+        message = RegexUpperZs.Replace(message, _random.Prob(0.90f) ? "Ж" : "З");
+        message = RegexLowerZs.Replace(message, _random.Prob(0.90f) ? "ж" : "з");
+        // Exodus-Localization-End
 
         args.Message = message;
     }

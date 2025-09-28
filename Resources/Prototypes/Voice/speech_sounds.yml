@@ -177,3 +177,23 @@
     path: /Audio/Animals/goat_bah.ogg
   exclaimSound:
     path: /Audio/Animals/goat_bah.ogg
+
+# Exodus-Vulpkanins-Start
+# - type: speechSounds
+#   id: Vulpkanin
+#   saySound:
+#     path: /Audio/Voice/Talk/vulp.ogg
+#   askSound:
+#     path: /Audio/Voice/Talk/vulp_ask.ogg
+#   exclaimSound:
+#     path: /Audio/Voice/Talk/vulp_exclaim.ogg
+# Exodus-Vulpkanins-End
+
+- type: speechSounds
+  id: Wawa
+  saySound:
+    path: /Audio/Animals/wawa_statement.ogg
+  askSound:
+    path: /Audio/Animals/wawa_question.ogg
+  exclaimSound:
+    path: /Audio/Animals/wawa_exclaim.ogg

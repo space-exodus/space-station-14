@@ -21,7 +21,10 @@
   - type: ShockOnTrigger
     damage: 5
     duration: 3
-    cooldown: 4
+  - type: UseDelay
+    delay: 4
+  - type: UseDelayOnTrigger
+  - type: UseDelayTriggerCondition
   - type: TriggerOnSignal
   - type: DeviceLinkSink
     ports:

@@ -1,8 +1,7 @@
 using Content.Server.NPC.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.Interaction;
-using Content.Shared.NPC.Systems; // Exodus-TurretsImprovement
-using Content.Shared.Physics; // Exodus-TurretsImprovement
+using Content.Shared.NPC.Systems; // Exodus-SmartTurrets
 using Content.Shared.Physics;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -15,7 +14,7 @@ public sealed partial class NPCCombatSystem
 {
     [Dependency] private readonly SharedCombatModeSystem _combat = default!;
     [Dependency] private readonly RotateToFaceSystem _rotate = default!;
-    [Dependency] private readonly NpcFactionSystem _faction = default!; // Exodus-TurretsImprovement
+    [Dependency] private readonly NpcFactionSystem _faction = default!; // Exodus-SmartTurrets
 
     private EntityQuery<CombatModeComponent> _combatQuery;
     private EntityQuery<NPCSteeringComponent> _steeringQuery;
@@ -139,7 +138,7 @@ public sealed partial class NPCCombatSystem
 
                 // For consistency with NPC steering.
                 var collisionGroup = comp.UseOpaqueForLOSChecks ? CollisionGroup.Opaque : (CollisionGroup.Impassable | CollisionGroup.InteractImpassable);
-                comp.TargetInLOS = IsEnemyInLOS(uid, comp.Target, distance + 0.1f, collisionGroup); // Exodus-TurretsImprovement
+                comp.TargetInLOS = IsEnemyInLOS(uid, comp.Target, distance + 0.1f, collisionGroup); // Exodus-SmartTurrets
             }
 
             if (!comp.TargetInLOS)
@@ -208,11 +207,11 @@ public sealed partial class NPCCombatSystem
                 return;
             }
 
-            _gun.AttemptShoot(uid, gunUid, gun, targetCordinates, /* Exodus-NPCsAbilityToTargetEnemy-Start */ comp.Target /* Exodus-NPCsAbilityToTargetEnemy-End */);
+            _gun.AttemptShoot(uid, gunUid, gun, targetCordinates, comp.Target);
         }
     }
 
-    // Exodus-TurretsImprovement-Start
+    // Exodus-SmartTurrets-Start
     public bool IsEnemyInLOS(EntityUid uid, EntityUid target, float distance, CollisionGroup collisionGroup)
     {
         return
@@ -220,5 +219,5 @@ public sealed partial class NPCCombatSystem
             _interaction.InRangeUnobstructed(uid, target, distance, CollisionGroup.BulletImpassable,
                 (ent) => !_faction.IsEntityFriendly(uid, ent));
     }
-    // Exodus-TurretsImprovement-End
+    // Exodus-SmartTurrets-End
 }

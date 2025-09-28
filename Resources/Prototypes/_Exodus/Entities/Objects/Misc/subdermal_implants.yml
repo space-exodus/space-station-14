@@ -5,7 +5,7 @@
   description: This implant has a tracking device attached to the suit sensor network, as well as a condition monitor for the Squadron radio channel.
   categories: [ HideSpawnMenu ]
   components:
-    - type: Rattle
+    - type: RattleOnTrigger
       radioChannel: DeathSquad
     - type: TriggerOnMobstateChange
       mobState:
@@ -25,7 +25,7 @@
   components:
     - type: SubdermalImplant
       implantAction: ActionStimulantsImplant
-    - type: TriggerImplantAction
+    - type: TriggerOnActivateImplant
     - type: SolutionContainerManager
       solutions:
         sol1:
@@ -48,7 +48,7 @@
   components:
     - type: SubdermalImplant
       implantAction: ActionCombatInjectorImplant
-    - type: TriggerImplantAction
+    - type: TriggerOnActivateImplant
     - type: SolutionContainerManager
       solutions:
         sol1:
@@ -86,7 +86,7 @@
   components:
   - type: SubdermalImplant
     implantAction: ActionChemicalImplant
-  - type: TriggerImplantAction
+  - type: TriggerOnActivateImplant
   - type: InjectOnTrigger
 
 - type: entity
@@ -98,7 +98,7 @@
   components:
   - type: SubdermalImplant
     implantAction: ActionChemicalImplant
-  - type: TriggerImplantAction
+  - type: TriggerOnActivateImplant
   - type: SolutionContainerManager
     solutions:
       sol1:

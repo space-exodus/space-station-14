@@ -1,15 +1,14 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chemistry.Containers.EntitySystems;
-using Content.Shared.Chemistry.Components;
 using Content.Shared.Database;
 using Content.Shared.Implants.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio.Systems;
 using Content.Shared.Chemistry;
 using Content.Shared.IdentityManagement;
-using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Popups;
+using Content.Shared.Trigger;
 
 
 namespace Content.Server.Exodus.Implants

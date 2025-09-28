@@ -5,45 +5,45 @@
   description: A special injector for races with thick skin. Intimidating enough to make your patient more careful. Please don't use it to intimidate the crew.
   components:
     - type: Injector
-      transferAmount: 15
       toggleState: Draw
-      effectsAfterInjection:
-        - !type:Emote
-          conditions:
-            - !type:HasTags
-              tags:
-                - ThickSkin
-              invert: true
-            - !type:IsMob
-          emote: Scream
-          showInChat: true
-        - !type:HealthChange
-          conditions:
-            - !type:HasTags
-              tags:
-                - ThickSkin
-              invert: true
-            - !type:IsMob
-          damage:
-            types:
-              Piercing: 10
-        - !type:ModifyBleedAmount
-          conditions:
-            - !type:HasTags
-              tags:
-                - ThickSkin
-              invert: true
-            - !type:IsMob
-          amount: 5
-        - !type:PopupMessage
-          conditions:
-            - !type:HasTags
-              tags:
-                - ThickSkin
-              invert: true
-            - !type:IsMob
-          visualType: MediumCaution
-          messages: ["mechanical-injector-effect-pain-message"]
+    - type: InjectorEffects
+      afterInjection:
+      - !type:Emote
+        conditions:
+          - !type:HasTags
+            tags:
+              - ThickSkin
+            invert: true
+          - !type:IsMob
+        emote: Scream
+        showInChat: true
+      - !type:HealthChange
+        conditions:
+          - !type:HasTags
+            tags:
+              - ThickSkin
+            invert: true
+          - !type:IsMob
+        damage:
+          types:
+            Piercing: 10
+      - !type:ModifyBleedAmount
+        conditions:
+          - !type:HasTags
+            tags:
+              - ThickSkin
+            invert: true
+          - !type:IsMob
+        amount: 5
+      - !type:PopupMessage
+        conditions:
+          - !type:HasTags
+            tags:
+              - ThickSkin
+            invert: true
+          - !type:IsMob
+        visualType: MediumCaution
+        messages: ["mechanical-injector-effect-pain-message"]
     - type: Sprite
       sprite: Exodus/Objects/Specific/Medical/mechanical_injector.rsi
       layers:

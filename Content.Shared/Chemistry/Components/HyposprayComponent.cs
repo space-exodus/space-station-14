@@ -1,6 +1,7 @@
 using Content.Shared.FixedPoint;
 using Robust.Shared.GameStates;
 using Robust.Shared.Audio;
+using Content.Shared.Whitelist;
 
 namespace Content.Shared.Chemistry.Components;
 
@@ -50,4 +51,12 @@ public sealed partial class HyposprayComponent : Component
     /// </summary>
     [DataField]
     public bool InjectOnly = false;
+
+    // Exodus-ThickSyringes-Start
+    [DataField]
+    public EntityWhitelist? MobWhitelist;
+
+    [DataField]
+    public EntityWhitelist? MobBlacklist;
+    // Exodus-ThickSyringes-End
 }

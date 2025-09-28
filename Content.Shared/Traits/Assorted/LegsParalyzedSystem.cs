@@ -20,28 +20,18 @@ public sealed class LegsParalyzedSystem : EntitySystem
         SubscribeLocalEvent<LegsParalyzedComponent, BuckledEvent>(OnBuckled);
         SubscribeLocalEvent<LegsParalyzedComponent, UnbuckledEvent>(OnUnbuckled);
         SubscribeLocalEvent<LegsParalyzedComponent, ThrowPushbackAttemptEvent>(OnThrowPushbackAttempt);
-        // Exodus-Crawling-LinesDeletion
+        SubscribeLocalEvent<LegsParalyzedComponent, UpdateCanMoveEvent>(OnUpdateCanMoveEvent);
     }
 
-    private void OnStartup(EntityUid uid, LegsParalyzedComponent component, ComponentStartup args) // Exodus-Crawling
+    private void OnStartup(EntityUid uid, LegsParalyzedComponent component, ComponentStartup args)
     {
         // TODO: In future probably must be surgery related wound
-        _movementSpeedModifierSystem.ChangeBaseSpeed(uid, 0.7f, 0.7f, 20);
+        _movementSpeedModifierSystem.ChangeBaseSpeed(uid, 0, 0, 20);
     }
 
     private void OnShutdown(EntityUid uid, LegsParalyzedComponent component, ComponentShutdown args)
     {
-        // Exodus-Crawling-Start
-        if (!_standingSystem.CanCrawl(uid))
-        {
-            _standingSystem.Stand(uid);
-        }
-        else
-        {
-            _standingSystem.SetCanStandUp(uid, true);
-        }
-        // Exodus-Crawling-End
-
+        _standingSystem.Stand(uid);
         _bodySystem.UpdateMovementSpeed(uid);
     }
 
@@ -52,10 +42,13 @@ public sealed class LegsParalyzedSystem : EntitySystem
 
     private void OnUnbuckled(EntityUid uid, LegsParalyzedComponent component, ref UnbuckledEvent args)
     {
-        _standingSystem.Down(uid, canStandUp: false /* Exodus-Crawling */);
+        _standingSystem.Down(uid);
     }
 
-    // Exodus-Crawling-LinesDeletion
+    private void OnUpdateCanMoveEvent(EntityUid uid, LegsParalyzedComponent component, UpdateCanMoveEvent args)
+    {
+        args.Cancel();
+    }
 
     private void OnThrowPushbackAttempt(EntityUid uid, LegsParalyzedComponent component, ThrowPushbackAttemptEvent args)
     {

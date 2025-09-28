@@ -1110,7 +1110,7 @@
   - type: ItemSlots
     slots:
       contents:
-        startingItem: ClothingNeckHeadphones
+        startingItem: ClothingMultipleHeadphones
         disableEject: true
         locked: true
 

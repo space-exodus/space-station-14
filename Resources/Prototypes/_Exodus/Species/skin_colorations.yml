@@ -1,0 +1,4 @@
+- type: skinColoration
+  id: KidanChitin
+  strategy: !type:ClampedHsvColoration
+    value: [0.30, 0.90]

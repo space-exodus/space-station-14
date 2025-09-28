@@ -10,10 +10,10 @@ public sealed partial class SensitiveEyesSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<SensitiveEyesComponent, FlashModifiersEvent>(OnFlashModifiersEvent);
+        SubscribeLocalEvent<SensitiveEyesComponent, FlashAttemptEvent>(OnFlashModifiersEvent);
     }
 
-    private void OnFlashModifiersEvent(Entity<SensitiveEyesComponent> entity, ref FlashModifiersEvent args)
+    private void OnFlashModifiersEvent(Entity<SensitiveEyesComponent> entity, ref FlashAttemptEvent args)
     {
         args.ModifyDuration(entity.Comp.DurationModifier);
     }

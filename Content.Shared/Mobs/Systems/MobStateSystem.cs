@@ -17,7 +17,6 @@ public partial class MobStateSystem : EntitySystem
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly MobThresholdSystem _mobThreshold = default!; // Exodus-Crawling
     [Dependency] private readonly DamageableSystem _damageable = default!;
     private ISawmill _sawmill = default!;
 

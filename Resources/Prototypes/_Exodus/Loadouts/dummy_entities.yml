@@ -1047,7 +1047,7 @@
   name: headphones
   components:
   - type: Sprite
-    sprite: Clothing/Neck/Misc/headphones.rsi
+    sprite: Clothing/Multiple/headphones.rsi
     state: icon
 
 - type: entity

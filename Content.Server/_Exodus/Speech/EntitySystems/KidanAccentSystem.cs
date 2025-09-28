@@ -2,6 +2,7 @@
 using Content.Server.Exodus.Speech.Components;
 using Content.Server.Speech;
 using Robust.Shared.Random;
+using Content.Shared.Speech;
 
 namespace Content.Server.Exodus.Speech.EntitySystems;
 

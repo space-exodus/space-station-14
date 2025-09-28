@@ -47,7 +47,7 @@
   equipment:
     id: QuartermasterPDA
 #    ears: ClothingHeadsetQM # Exodus-Better-Loadout
-    belt: BoxFolderClipboard
+    belt: BoxFolderClipboardThreePapers
     pocket1: AppraisalTool
   storage:
     back:

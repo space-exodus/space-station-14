@@ -105,7 +105,7 @@ public static class ClientPackaging
             assemblies, // Exodus-Secrets
             cancel: cancel);
 
-        await WriteClientResources(contentDir, inputPass, cancel); // Exodus-Secrets: Support content resource ignore to ignore server-only prototypes
+        await WriteClientResources(contentDir, inputPass, SharedPackaging.AdditionalIgnoredResources, cancel); // Exodus-Secrets: Support content resource ignore to ignore server-only prototypes
 
         inputPass.InjectFinished();
     }
@@ -119,10 +119,12 @@ public static class ClientPackaging
     private static async Task WriteClientResources(
         string contentDir,
         AssetPass pass,
+        IReadOnlySet<string> additionalIgnoredResources,
         CancellationToken cancel = default)
     {
         var ignoreSet = RobustClientPackaging.ClientIgnoredResources
             .Union(RobustSharedPackaging.SharedIgnoredResources)
+            .Union(additionalIgnoredResources)
             .Union(ContentClientIgnoredResources).ToHashSet();
 
         await RobustSharedPackaging.DoResourceCopy(Path.Combine(contentDir, "Resources"), pass, ignoreSet, cancel: cancel);

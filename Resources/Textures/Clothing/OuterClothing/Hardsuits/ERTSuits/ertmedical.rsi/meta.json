@@ -2,7 +2,7 @@
   "version": 1,
   "license": "CC-BY-SA-3.0",
   "copyright": "inhand resprited by inventor05(gh: inventor055, discord: qwerty05555)",
-  "copyright": "Created by discord:SOL(Артур)#8162, reptilian made by hqlle(444118014024220672). Vox sprite made by Askolot (discord:788252896016990219)",
+  "copyright": "Created by discord:SOL(Артур)#8162, reptilian/kidan made by hqlle(444118014024220672). Vox sprite made by Askolot (discord:788252896016990219)",
   "size": {
     "x": 32,
     "y": 32
@@ -16,11 +16,11 @@
       "directions": 4
     },
     {
-      "name": "equipped-OUTERCLOTHING-reptilian",
+      "name": "equipped-OUTERCLOTHING-vox",
       "directions": 4
     },
     {
-      "name": "equipped-OUTERCLOTHING-vox",
+      "name": "equipped-OUTERCLOTHING-reptilian",
       "directions": 4
     },
     {

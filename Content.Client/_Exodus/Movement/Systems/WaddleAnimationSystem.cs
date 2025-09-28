@@ -65,10 +65,8 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
         if (_mobState.IsIncapacitated(entity.Owner))
             return;
 
-        // Exodus-Crawling-Start
         if (TryComp<StandingStateComponent>(entity.Owner, out var standing) && !standing.Standing)
             return;
-        // Exodus-Crawling-End
 
         PlayWaddleAnimationUsing(
             (entity.Owner, entity.Comp),

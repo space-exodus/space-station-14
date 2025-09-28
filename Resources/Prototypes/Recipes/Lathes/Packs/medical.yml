@@ -46,6 +46,8 @@
   - BodyBag
   - WhiteCane
   - ClothingEyesHudChemMed # Exodus-Better-Med-Hud
+  - OffsetCane
+  - OffsetCaneWood
 
 - type: latheRecipePack
   id: RollerBedsStatic

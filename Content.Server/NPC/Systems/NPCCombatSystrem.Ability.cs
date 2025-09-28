@@ -8,12 +8,9 @@ using Robust.Shared.Random;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions.Events;
 using Content.Shared.Administration.Logs;
-using Content.Shared.Database;
 
-using Content.Shared.Interaction;
 using Content.Shared.Actions;
 using Content.Server.Actions;
-using Content.Shared.Directions;
 using Content.Server.Charges;
 using Content.Shared.Actions.Components;
 
@@ -24,7 +21,6 @@ public sealed partial class NPCCombatSystem
     [Dependency] private readonly ActionsSystem _actions = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly RotateToFaceSystem _rotateToFaceSystem = default!;
     [Dependency] private readonly ChargesSystem _chargesSystem = default!;
 
     private const float TargetAbilityLostRange = 28f;

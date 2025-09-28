@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-3.0",
+    "copyright": "Created by Kuro & kxv (source https://github.com/space-syndicate/space-station-14/blob/ea370babf8c7ff34ea65cd4277ca50e3e9a021bc/Resources/Textures/Corvax/Interface/AdminActions/)",
+    "states": [
+        {
+            "name": "cargo"
+        },
+        {
+            "name": "communications"
+        },
+        {
+            "name": "monitoring"
+        },
+        {
+            "name": "radar"
+        },
+        {
+            "name": "records"
+        },
+        {
+            "name": "solar"
+        }
+    ]
+}

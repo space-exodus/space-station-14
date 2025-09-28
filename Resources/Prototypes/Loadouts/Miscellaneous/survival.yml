@@ -18,13 +18,11 @@
     - Human
     - Moth
     # - Reptilian # Exodus-ThickSyringes
-    #Corvax-Species-Start
-    - Vulpkanin
-    #Corvax-Species-End
-  # Exodus-Species-Start
+    # Exodus-Species-Start
     - NewKidan
     - Felinid
-  # Exodus-Species-End
+    - Vulpkanin
+    # Exodus-Species-End
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
@@ -81,7 +79,13 @@
     - Diona
     - Dwarf
     - Human
-    - Reptilian
+    # - Reptilian # Exodus-ThickSyringes
+    # Exodus-Species-Start
+    - Vulpkanin
+    - Kidan
+    - Felinid
+    - NewKidan
+    # Exodus-Species-End
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth

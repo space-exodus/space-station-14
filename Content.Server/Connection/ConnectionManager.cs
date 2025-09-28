@@ -61,7 +61,6 @@ namespace Content.Server.Connection
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
-        [Dependency] private readonly IEntityManager _entity = default!; // Exodus-Queue
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
@@ -408,7 +407,7 @@ namespace Content.Server.Connection
             var isAdmin = await _db.GetAdminDataForAsync(userId) != null;
             var playerRecord = await _db.GetPlayerRecordByUserId(userId);
             var isPremium = playerRecord != null && playerRecord.IsPremium;
-            var wasInGame = _entity.TrySystem<GameTicker>(out var ticker) &&
+            var wasInGame = _entityManager.TrySystem<GameTicker>(out var ticker) &&
                             ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
             return isAdmin || wasInGame || isPremium;
