@@ -10,6 +10,7 @@ namespace Content.Client.Exodus.Traits.Species.Pheromones;
 public sealed partial class PheromonesSystem : SharedPheromonesSystem
 {
     [Dependency] private readonly IPlayerManager _player = default!;
+    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {
@@ -35,10 +36,10 @@ public sealed partial class PheromonesSystem : SharedPheromonesSystem
                 continue;
 
             pheromone.OldSpriteColor = sprite.Color;
-            sprite.Color = pheromone.Color;
+            _sprite.SetColor((uid, sprite), pheromone.Color);
 
             if (pheromone.Hidden)
-                sprite.Visible = show;
+                _sprite.SetVisible((uid, sprite), show);
         }
     }
 
@@ -51,12 +52,12 @@ public sealed partial class PheromonesSystem : SharedPheromonesSystem
 
         if (entity.Comp.Hidden && !show)
         {
-            sprite.Visible = false;
+            _sprite.SetVisible((entity, sprite), false);
         }
         if (show)
         {
             entity.Comp.OldSpriteColor = sprite.Color;
-            sprite.Color = entity.Comp.Color;
+            _sprite.SetColor((entity, sprite), entity.Comp.Color);
         }
     }
 
@@ -67,11 +68,11 @@ public sealed partial class PheromonesSystem : SharedPheromonesSystem
 
         if (entity.Comp.Hidden)
         {
-            sprite.Visible = true;
+            _sprite.SetVisible((entity, sprite), true);
         }
 
         if (entity.Comp.OldSpriteColor != null)
-            sprite.Color = entity.Comp.OldSpriteColor.Value;
+            _sprite.SetColor((entity, sprite), entity.Comp.OldSpriteColor.Value);
     }
 
     private void OnMapInit(Entity<PheromonesCommunicationComponent> entity, ref MapInitEvent args)

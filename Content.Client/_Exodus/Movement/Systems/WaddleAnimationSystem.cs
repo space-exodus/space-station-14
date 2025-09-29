@@ -21,6 +21,7 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private readonly BuckleSystem _buckle = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {
@@ -115,8 +116,8 @@ public sealed class WaddleAnimationSystem : SharedWaddleAnimationSystem
         if (!TryComp<SpriteComponent>(entity.Owner, out var sprite))
             return;
 
-        sprite.Offset = new Vector2();
-        sprite.Rotation = Angle.FromDegrees(0);
+        _sprite.SetOffset((entity, sprite), new Vector2());
+        _sprite.SetRotation((entity, sprite), Angle.FromDegrees(0));
     }
 
     private void PlayWaddleAnimationUsing(Entity<WaddleAnimationComponent> entity, float len, float tumbleIntensity)

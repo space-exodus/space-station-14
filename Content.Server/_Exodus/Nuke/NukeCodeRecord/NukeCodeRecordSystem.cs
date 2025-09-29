@@ -1,13 +1,10 @@
 using Content.Server.Nuke;
-using Content.Server.Station.Systems;
 using Content.Shared.Examine;
 
 namespace Content.Server.Exodus.Nuke.NukeCodeRecord;
 
 public sealed class NukeCodeRecordSystem : EntitySystem
 {
-    [Dependency] private readonly StationSystem _station = default!;
-
     public override void Initialize()
     {
         base.Initialize();
@@ -35,7 +32,6 @@ public sealed class NukeCodeRecordSystem : EntitySystem
     /// <param name="uid">Entity that have component</param>
     /// <param name="component">NukeCodeRecord component</param>
     /// <param name="transform">Tranform component, if we have it</param>
-    /// <returns></returns>
     private bool TrySetRelativeNukeCode(
             EntityUid uid,
             NukeCodeRecordComponent component,
@@ -46,9 +42,6 @@ public sealed class NukeCodeRecordSystem : EntitySystem
             return false;
         }
 
-        bool nukeFound = false;
-        var owningStation = _station.GetOwningStation(uid);
-        var nukes = new List<Entity<NukeComponent>>();
         var query = EntityQueryEnumerator<NukeComponent>();
 
         if (!query.MoveNext(out var nukeUid, out var nuke))

@@ -69,7 +69,7 @@ namespace Content.Server.Exodus.Implants
             _solutionContainer.TryAddSolution(targetSoln.Value, removedSolution);
 
             _popup.PopupEntity(Loc.GetString("inject-trigger-feel-prick-message"), user, user);
-            _adminLogger.Add(LogType.ForceFeed, $"{_entMan.ToPrettyString(user):user} used inject implant with a solution {SolutionContainerSystem.ToPrettyString(removedSolution):removedSolution}");
+            _adminLogger.Add(LogType.ForceFeed, $"{_entMan.ToPrettyString(user):user} used inject implant with a solution {SharedSolutionContainerSystem.ToPrettyString(removedSolution):removedSolution}");
 
             return true;
         }

@@ -1,13 +1,10 @@
 using Content.Server.Exodus.Speech.Components;
-using Robust.Shared.Random;
 using Content.Shared.Speech;
 
 namespace Content.Server.Speech.EntitySystems
 {
     public sealed class BurrinessAccentSystem : EntitySystem
     {
-        [Dependency] private readonly IRobustRandom _random = default!;
-
         public override void Initialize()
         {
             SubscribeLocalEvent<BurrinessAccentComponent, AccentGetEvent>(OnAccent);

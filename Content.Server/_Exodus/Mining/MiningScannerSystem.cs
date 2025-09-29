@@ -15,7 +15,6 @@ namespace Content.Server.Exodus.Mining;
 public sealed class MiningScannerSystem : SharedMiningScannerSystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
