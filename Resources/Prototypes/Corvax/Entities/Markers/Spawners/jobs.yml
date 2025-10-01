@@ -1,9 +1,0 @@
-- type: entity
-  id: SpawnPointSurgeon
-  parent: SpawnPointJobBase
-  name: surgeon
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - state: virologist

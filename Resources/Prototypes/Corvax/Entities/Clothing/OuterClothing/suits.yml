@@ -20,7 +20,7 @@
       sprite: Corvax/Clothing/OuterClothing/Coats/disco.rsi
     - type: Clothing
       sprite: Corvax/Clothing/OuterClothing/Coats/disco.rsi
-      
+
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingAtmosphericsOveralls
