@@ -14,4 +14,3 @@ loadouts-count-items-in-group =
         [few] других предмета
        *[other] других предметов
     }
-loadouts-points-restriction = Не хватает очков

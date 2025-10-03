@@ -10,7 +10,7 @@ emergency-shuttle-command-round-no = Невозможно продлить ок�
 ## Dock emergency shuttle
 
 cmd-dockemergencyshuttle-desc = Вызывает спасательный шаттл и пристыковывает его к станции... если это возможно.
-cmd-delayroundend-help = Использование: dockemergencyshuttle
+cmd-dockemergencyshuttle-help = Использование: dockemergencyshuttle
 
 ## Launch emergency shuttle
 

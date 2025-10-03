@@ -247,3 +247,6 @@ ent-ReagentGrinderIndustrialMachineCircuitboard = печатная плата п
 ent-CutterMachineCircuitboard = печатная плата плиткореза
     .desc = Печатная плата плиткореза.
     .suffix = Печатная плата
+ent-SmartFridgeCircuitboard = печатная плата умного холодильника
+    .desc = Печатная плата умного холодильника.
+    .suffix = Печатная плата
