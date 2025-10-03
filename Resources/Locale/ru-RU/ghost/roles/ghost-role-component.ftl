@@ -46,6 +46,8 @@ ghost-role-information-mouse-name = Мышь
 ghost-role-information-mouse-description = Голодная и озорная мышь.
 ghost-role-information-mothroach-name = Таракамоль
 ghost-role-information-mothroach-description = Милая озорная таракамоль.
+ghost-role-information-moproach-name = Швабромоль
+ghost-role-information-moproach-description = Милая и озорная таракамоль с тряпочками на лапках
 ghost-role-information-snail-name = Улитка
 ghost-role-information-snail-description = Маленькая улитка, которая не против немного побыть на свободе. Только не убегай за пределы клетки!
 ghost-role-information-snailspeed-name = Улитка
@@ -185,8 +187,18 @@ ghost-role-information-syndicate-kobold-reinforcement-name = Агент Синд
 ghost-role-information-syndicate-kobold-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученный кобольд, поможете им.
 ghost-role-information-syndicate-kobold-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.
 ghost-role-information-syndicate-cyborg-assault-name = Штурмовой борг Синдиката
-ghost-role-information-derelict-cyborg-name = Заброшенный борг
-ghost-role-information-derelict-cyborg-description = Вы обычный борг, который заблудился в космосе. После многих лет путешествия сквозь ионные бури вы оказываетесь рядом с космической станцией.
+ghost-role-information-derelict-engineering-cyborg-name = Брошенный борг-инженер
+ghost-role-information-derelict-engineering-cyborg-description = Вы — инженерный борг, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+ghost-role-information-derelict-cyborg-name = Брошенный борг
+ghost-role-information-derelict-cyborg-description = Вы — обычный борг, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+ghost-role-information-derelict-janitor-cyborg-name = Брошенный борг-уборщик
+ghost-role-information-derelict-janitor-cyborg-description = Вы — борг-уборщик, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+ghost-role-information-derelict-medical-cyborg-name = Брошенный борг-доктор
+ghost-role-information-derelict-medical-cyborg-description = Вы — медицинский борг, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+ghost-role-information-derelict-mining-cyborg-name = Брошенный борг-шахтёр
+ghost-role-information-derelict-mining-cyborg-description = Вы — борг-шахтёр, который заблудился в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
+ghost-role-information-derelict-syndicate-assault-cyborg-name = Брошенный штурмовой борг Синдиката
+ghost-role-information-derelict-syndicate-assault-cyborg-description = Вы — ранняя модель штурмового борга Синдиката, которая заблудилась в космосе. После долгих лет воздействия ионных бурь вы оказываетесь рядом с космической станцией.
 ghost-role-information-syndicate-cyborg-saboteur-name = Саботажный борг Синдиката
 ghost-role-information-syndicate-cyborg-description = Синдикату нужно подкрепление. Вы, холодная машина для убийств, поможете им.
 ghost-role-information-security-name = Служба безопасности
@@ -251,6 +263,7 @@ ghost-role-information-tomatokiller-description = Этот маленький п
 # Corvax-start
 ghost-role-information-syndicate-smuggler-name = Контрабандист Синдиката
 ghost-role-information-syndicate-smuggler-description = Вы - специально обученный контрабандист Синдиката. Отправляйтесь на поиски выданной вам цели и отыщите её любыми средствами.
-
+ghost-role-information-emotional-support-scurret-name = Слизнекот эмоциональной поддержки
+ghost-role-information-emotional-support-scurret-description = Поддерживайте экипаж, будьте очаровательными, часто говорите "Ва".
 # Corvax-end
 

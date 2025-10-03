@@ -28,13 +28,8 @@
   ## Взведение
   Чтобы взвести бомбу, вы можете либо кликнуть [color=yellow]ПКМ[/color] и выбрать [color=yellow]Начать обратный отсчёт[/color], либо [color=yellow]Alt-кликнуть[/color] по бомбе. После этого она запикает.
 
-<<<<<<< HEAD
   ## Обратный отсчёт
   Бомба имеет ограниченное время действия, минимум 90 и максимум 300. Таймер можно увидеть, осмотрев бомбу, если только провод не перерезан. Как только таймер достигнет нуля, бомба взорвётся.
-=======
-  ## Time
-  A bomb has a limited time, at a minimum of [protodata="SyndicateBomb" comp="TimerTrigger" member="ShortestDelayOption"/] seconds and a maximum of [protodata="SyndicateBomb" comp="TimerTrigger" member="LongestDelayOption"/] seconds. You can view the timer by examining it, unless the Proceed wire is cut. Once the timer hits zero, the bomb will detonate.
->>>>>>> space-wizards/stable
 
   ## Болты
   По умолчанию, как только бомба будет взведена, она болтируется к земле. Вы должны найти провод БОЛТ и перерезать его, чтобы отключить болты, после чего вы можете открутить её и выбросить в космос.
@@ -73,11 +68,6 @@
   - [color=red]Перерезать провод[/color]: Перерезание провода выведет болты из строя, скорее выбросьте бомбу в космос!
   - [color=green]Починить провод[/color]: Починка провода приведет к повторному включению болтов.
 
-<<<<<<< HEAD
   [color=#a4885c]Провод Пустышка[/color]
   - Пустышки ничего не делают. Их можно свободно прощупывать, перерезать, и чинить, и они никак не повлияют на бомбу.
-=======
-  [color=#a4885c]Dummy Wire[/color]
-  - Dummy wires don't do anything. You can pulse, cut, and mend them freely without affecting the bomb at all.
->>>>>>> space-wizards/stable
 </Document>

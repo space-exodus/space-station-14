@@ -61,7 +61,7 @@ public sealed partial class ScrubberControl : BoxContainer
 
         foreach (var value in Enum.GetValues<ScrubberPumpDirection>())
         {
-            _pumpDirection.AddItem(Loc.GetString("air-alarm-ui-scrubber-pump-direction", ("dir", value)), (int) value); // Exodus-Localization
+            _pumpDirection.AddItem(Loc.GetString($"air-alarm-ui-pump-direction-{value.ToString().ToLower()}"), (int) value);
         }
 
         _pumpDirection.SelectId((int) _data.PumpDirection);

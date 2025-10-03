@@ -1,7 +1,5 @@
 ### Commands
 
-cmd-unlocknode-desc = Разблокировать узел указаного артефакта
-cmd-unlocknode-help = unlocknode <artifact uid> <node uid>
 cmd-parse-failure-unlocknode-arg-num = Неправильное количество аргументов
 cmd-parse-failure-unlocknode-invalid-entity = Указаное netEntity не является валидным узлом
 

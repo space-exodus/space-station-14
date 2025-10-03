@@ -2,7 +2,7 @@
 
 ## Window
 
-air-alarm-ui-window-title = Воздушная сигнализация
+air-alarm-ui-title = Воздушная сигнализация
 air-alarm-ui-access-denied = Недостаточный уровень доступа!
 air-alarm-ui-window-pressure-label = Давление
 air-alarm-ui-window-temperature-label = Температура
@@ -39,11 +39,14 @@ air-alarm-ui-mode-fill = Заполнение
 air-alarm-ui-mode-panic = Паника
 air-alarm-ui-mode-none = Нет
 
+air-alarm-ui-pump-direction-siphoning = Siphoning
+air-alarm-ui-pump-direction-scrubbing = Scrubbing
+air-alarm-ui-pump-direction-releasing = Releasing
+
 ## Widgets
 
 ### General
 
-air-alarm-ui-widget-enable = Включено
 air-alarm-ui-widget-copy = Копировать настройки на похожие устройства
 air-alarm-ui-widget-copy-tooltip = Копирует настройки данного устройства на все устройства данной вкладки воздушной сигнализации.
 air-alarm-ui-widget-ignore = Игнорировать
@@ -71,20 +74,22 @@ air-alarm-ui-vent-internal-bound-label = Внутренняя граница
 ### Scrubbers
 
 air-alarm-ui-scrubber-pump-direction-label = Направление скруббера
-air-alarm-ui-scrubber-pump-direction =
+air-alarm-ui-pump-direction =
     { $dir ->
         [Siphoning] Перекачивание
        *[Scrubbing] Выпускание
     }
 air-alarm-ui-scrubber-volume-rate-label = Объём (Л)
 air-alarm-ui-scrubber-wide-net-label = ШирокаяСеть
-air-alarm-ui-scrubber-gas-filters-title = Фильтрация газов
+air-alarm-ui-widget-gas-filters = Фильтрация газов
+air-alarm-ui-scrubber-select-all-gases-label = Выбрать всё
+air-alarm-ui-scrubber-deselect-all-gases-label = Отменить выбор
 
 ### Thresholds
 
 air-alarm-ui-sensor-gases = Газы
 air-alarm-ui-sensor-thresholds = Границы
-air-alarm-ui-thresholds-enabled = Включено
+air-alarm-ui-widget-enable = Включено
 air-alarm-ui-thresholds-pressure-title = Границы (кПа)
 air-alarm-ui-thresholds-temperature-title = Границы (К)
 air-alarm-ui-thresholds-gas-title = Границы (%)

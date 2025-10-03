@@ -31,6 +31,7 @@ petting-success-slimes = Вы гладите { $target } по { POSS-ADJ($target
 petting-success-snake = Вы гладите { $target } по { POSS-ADJ($target) } большой чешуйчатой голове.
 petting-success-monkey = Вы гладите { $target } по { POSS-ADJ($target) } озорной маленькой голове.
 petting-success-nymph = Вы гладите { $target } по { POSS-ADJ($target) } маленькой деревянной голове.
+petting-success-scurret = Вы гладите { $target } по { POSS-ADJ($target) } юридически отличающейся голове.
 petting-failure-generic = Вы тянетесь погладить { $target }, но { $target } настороженно уклоняется от вас.
 petting-failure-bat = Вы тянетесь погладить { $target }, но { $target } очень трудно поймать!
 petting-failure-carp = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } острые зубки заставляют вас передумать.
@@ -47,6 +48,7 @@ petting-failure-raccoon = Вы тянетесь погладить { $target }, 
 petting-failure-dragon = Вы поднимаете руку, но { $target } издаёт рёв, и вы решаете, что не хотите стать кормом для карпов.
 petting-failure-hamster = Вы тянетесь погладить { $target }, но { $target } пытается укусить вас за палец, и только ваши молниеносные рефлексы спасают вас от почти смертельной травмы.
 petting-failure-bear = Вы думаете погладить { $target }, но { $target } рычит, заставляя вас подумать ещё раз.
+petting-failure-scurret = Вы тянетесь погладить { $target }, но { SUBJECT($target) } делает сальто назад!
 
 ## Knocking on windows
 
