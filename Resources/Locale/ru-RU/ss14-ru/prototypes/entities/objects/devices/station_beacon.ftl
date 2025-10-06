@@ -131,6 +131,7 @@ ent-DefaultStationBeaconAME = { ent-DefaultStationBeaconEngineering }
     .desc = { ent-DefaultStationBeaconEngineering.desc }
 ent-DefaultStationBeaconSolars = { ent-DefaultStationBeaconEngineering }
     .suffix = Солнечные панели
+    .desc = { ent-DefaultStationBeaconEngineering.desc }
 ent-DefaultStationBeaconSolarsN = { ent-DefaultStationBeaconEngineering }
     .suffix = Солнечные панели, Север
     .desc = { ent-DefaultStationBeaconEngineering.desc }
