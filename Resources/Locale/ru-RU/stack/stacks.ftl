@@ -392,4 +392,6 @@ stack-dark-marble-floor = чёрный мраморный пол
 stack-plasma-marble-floor = плазменный мраморный пол
 stack-uranium-marble-floor = урановый мраморный пол
 stack-xenoborg = ксеноборг-плитка
-
+stack-dark-astro-grass-floor = тёмная астро-трава
+stack-light-astro-grass-floor = светлая астро-трава
+stack-desert-astro-sand-floor = пустынный астро-песок

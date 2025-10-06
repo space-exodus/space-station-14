@@ -1,4 +1,4 @@
-ent-ClothingNeckHeadphones = наушники
+ent-ClothingMultipleHeadphones = наушники
     .desc = Качественные наушники от Drunk Masters, с хорошей звукоизоляцией.
 ent-ClothingNeckStethoscope = стетоскоп
     .desc = Устаревший медицинский аппарат для прослушивания звуков человеческого тела. С ним вы будете выглядеть так, будто знаете, что делаете.
