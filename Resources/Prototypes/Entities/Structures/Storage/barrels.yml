@@ -6,7 +6,7 @@
   description: A small metal drum. How tropical.
   components:
   - type: Sprite
-    sprite: Structures/Storage/barrels.rsi
+    sprite: Exodus/Structures/Storage/barrels.rsi # Exodus-Resprite
     state: metalbarrel
     noRot: true
   - type: Fixtures

@@ -10,7 +10,7 @@
     - Wall
   components:
   - type: Anchorable
-    flags: 
+    flags:
     - Anchorable
   - type: Rotatable
   - type: RangedDamageSound
@@ -1215,7 +1215,7 @@
     sprite: Structures/Walls/xenoborg.rsi
   - type: IconSmooth
     key: walls
-    base: xenoborg
+    mode: NoSprite # Exodus-Sprite-Fix
 
 - type: entity
   parent: WallPlastitaniumDiagonal

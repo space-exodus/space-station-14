@@ -928,7 +928,7 @@
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/medical.rsi
+    sprite: Exodus/Structures/Machines/VendingMachines/medical.rsi # Exodus-Resprite
     layers:
     - state: "off-civilian"
       map: ["enum.VendingMachineVisualLayers.Base"]
