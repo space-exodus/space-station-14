@@ -128,3 +128,7 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/shuttle_xenoborg.rsi
+  # Exodus-Sprite-Fix-Start
+  - type: Airlock
+    openUnlitVisible: true
+  # Exodus-Sprite-Fix-End
