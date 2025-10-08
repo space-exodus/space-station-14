@@ -21,3 +21,5 @@ ent-DoorRemoteAll = супер-пульт от шлюзов
     .desc = { ent-DoorRemoteDefault.desc }
 ent-DoorRemoteXenoborg = пульт от шлюзов ксеноборгов
     .desc = { ent-DoorRemoteDefault.desc }
+ent-DoorRemoteCustom = динамический пульт от шлюзов
+    .desc = Гаджет, позволяющий дистанционно открывать и закрывать шлюзы. В этой продвинутой версии отсутствует встроенный доступ, вместо этого используется доступ ID-карты пользователя.

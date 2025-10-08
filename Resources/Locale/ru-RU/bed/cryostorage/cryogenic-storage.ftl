@@ -10,3 +10,5 @@ earlyleave-cryo-announcement =
        *[neuter] было перемещено
     } в криогенное хранилище!
 earlyleave-cryo-sender = Станция
+
+cryostorage-paused-map-name = карта хранения тел криогенного хранилище
