@@ -1,0 +1,18 @@
+name: Publish All
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger-workflows:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Publish Main
+      run: gh workflow run publish-main.yml
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Trigger Publish Public
+      run: gh workflow run publish-public.yml
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
