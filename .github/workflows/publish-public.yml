@@ -1,6 +1,9 @@
 name: Publish Public
 
-permissions: write-all
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
 
 on:
   workflow_dispatch:

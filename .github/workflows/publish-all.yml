@@ -1,5 +1,14 @@
 name: Publish All
 
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+
 on:
   workflow_dispatch:
 
