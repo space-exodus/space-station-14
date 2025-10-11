@@ -36,29 +36,6 @@ jobs:
     - name: Package client
       run: dotnet run --project Content.Packaging client --no-wipe-release
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: release-packages
-        path: |
-          release/
-        retention-days: 1
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4.2.2
-      with:
-        sparse-checkout: Tools
-
-    - name: Download artifacts
-      uses: actions/download-artifact@v4
-      with:
-        name: release-packages
-        path: release/
-
     - name: Publish version
       run: Tools/publish_multi_request.py
       env:
