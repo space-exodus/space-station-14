@@ -21,6 +21,7 @@ jobs:
           -d '{"ref":"master"}'
 
   trigger-public:
+    needs: trigger-main
     runs-on: ubuntu-latest
     steps:
     - name: Trigger Publish Public
