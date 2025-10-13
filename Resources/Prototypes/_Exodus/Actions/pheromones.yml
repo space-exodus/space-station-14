@@ -9,6 +9,7 @@
     icon: { sprite: Exodus/Interface/Actions/kidans.rsi, state: pheromones }
     itemIconStyle: NoItem
     priority: -11
+  - type: TargetAction
   - type: EntityTargetAction
   - type: WorldTargetAction
     event: !type:TryMarkWithPheromonesEvent {}
