@@ -11,7 +11,7 @@
   - Reptilian
   - SlimePerson
   - Vox
-  - Vulpkanin
+  # - Vulpkanin # Exodus-Guidebook
 
 - type: guideEntry
   id: Arachnid
@@ -53,7 +53,7 @@
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
 
-- type: guideEntry
-  id: Vulpkanin
-  name: species-name-vulpkanin
-  text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"
+# - type: guideEntry # Exodus-Guidebook
+#   id: Vulpkanin
+#   name: species-name-vulpkanin
+#   text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"

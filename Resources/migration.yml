@@ -769,7 +769,41 @@ FireAlarmXeno: FireAlarm
 FireAlarmAssemblyXeno: FireAlarmAssembly
 WallSolidChitin: WallSolid
 WallReinforcedChitin: WallReinforced
-XenoResinWindow: Window 
+XenoResinWindow: Window
+SurveillanceCameraWirelessRouterXenoborg: SurveillanceCameraWirelessRouterEntertainment
+ComputerSurveillanceWirelessXenoborgCameraMonitor: ComputerSurveillanceWirelessCameraMonitor
+SurveillanceCameraWirelessRouterXenoborgCircuitboard: SurveillanceCameraWirelessRouterCircuitboard
+XenoborgRadioJammer: BorgChassisGeneric
+XenoborgEngi: BorgChassisGeneric
+XenoborgHeavy: BorgChassisGeneric
+XenoborgScout: BorgChassisGeneric
+XenoborgStealth: BorgChassisGeneric
+XenoborgEngiPrinted: BorgChassisGeneric
+XenoborgHeavyPrinted: BorgChassisGeneric
+XenoborgScoutPrinted: BorgChassisGeneric
+XenoborgStealthPrinted: BorgChassisGeneric
+MothershipCore: null
+MothershipCircuitBoard: AsimovCircuitBoard
+XenoborgCircuitBoard: AsimovCircuitBoard
+# I would chosen normal analogs for it but I just want finish it
+# you can do it if you care
+XenoborgModuleBasic: null
+XenoborgModuleTool: null
+XenoborgModuleAccessBreaker: null
+XenoborgModuleFireExtinguisher: null
+XenoborgModuleJammer: null
+XenoborgModuleLaser: null
+XenoborgModuleHeavyLaser: null
+XenoborgModuleSpaceMovement: null
+XenoborgModuleSword: null
+XenoborgModuleEnergySword: null
+XenoborgModuleHypo: null
+XenoborgModuleChameleonProjector: null
+XenoborgModuleCloakDevice: null
+XenoborgModuleSuperCloakDevice: null
+XenoborgCameraMonitorCircuitboard: null
+ComputerXenoborgsControl: null
+ComputerXenoborgsControlCircuitboard: null
 
 # 2025-07-17
 RipleyChassis: null

@@ -19,7 +19,7 @@
     job: DSCommander
   - type: Sprite
     layers:
-    - state: syndie
+    - state: black
     - state: idchiefmedicalofficer
     - state: iddeathsquad
 

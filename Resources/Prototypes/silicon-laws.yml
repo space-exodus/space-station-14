@@ -536,43 +536,44 @@
   - Xenoborg5
   obeysTo: laws-owner-xenoborgs
 
- # Mothership core laws
-- type: siliconLaw
-  id: MothershipCore1
-  order: 1
-  lawString: law-mothershipcore-1
+# Exodus-Exo-Station-Thing-Delete-Start
+#  # Mothership core laws
+# - type: siliconLaw
+#   id: MothershipCore1
+#   order: 1
+#   lawString: law-mothershipcore-1
 
-- type: siliconLaw
-  id: MothershipCore2
-  order: 2
-  lawString: law-mothershipcore-2
+# - type: siliconLaw
+#   id: MothershipCore2
+#   order: 2
+#   lawString: law-mothershipcore-2
 
-- type: siliconLaw
-  id: MothershipCore3
-  order: 3
-  lawString: law-mothershipcore-3
+# - type: siliconLaw
+#   id: MothershipCore3
+#   order: 3
+#   lawString: law-mothershipcore-3
 
-- type: siliconLaw
-  id: MothershipCore4
-  order: 4
-  lawString: law-mothershipcore-4
+# - type: siliconLaw
+#   id: MothershipCore4
+#   order: 4
+#   lawString: law-mothershipcore-4
 
-- type: siliconLaw
-  id: MothershipCore5
-  order: 5
-  lawString: law-mothershipcore-5
+# - type: siliconLaw
+#   id: MothershipCore5
+#   order: 5
+#   lawString: law-mothershipcore-5
 
 
-- type: siliconLawset
-  id: MothershipCoreLawset
-  laws:
-  - MothershipCore1
-  - MothershipCore2
-  - MothershipCore3
-  - MothershipCore4
-  - MothershipCore5
-  obeysTo: laws-owner-xenoborgs
-
+# - type: siliconLawset
+#   id: MothershipCoreLawset
+#   laws:
+#   - MothershipCore1
+#   - MothershipCore2
+#   - MothershipCore3
+#   - MothershipCore4
+#   - MothershipCore5
+#   obeysTo: laws-owner-xenoborgs
+# Exodus-Exo-Station-Thing-Delete-End
 
 # ion storm random lawsets
 - type: weightedRandom

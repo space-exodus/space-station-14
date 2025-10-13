@@ -1,16 +1,18 @@
-## Static
+# Exodus-Exo-Station-Thing-Delete-Start
+# ## Static
 
-- type: latheRecipePack
-  id: EmptyXenoborgs
-  recipes:
-  - XenoborgEngiRecipe
-  - XenoborgHeavyRecipe
-  - XenoborgScoutRecipe
-  - XenoborgStealthRecipe
+# - type: latheRecipePack
+#   id: EmptyXenoborgs
+#   recipes:
+#   - XenoborgEngiRecipe
+#   - XenoborgHeavyRecipe
+#   - XenoborgScoutRecipe
+#   - XenoborgStealthRecipe
 
-- type: latheRecipePack
-  id: XenoborgUpgradeModules
-  recipes:
-  - XenoborgModuleHeavyLaserRecipe
-  - XenoborgModuleEnergySwordRecipe
-  - XenoborgModuleSuperCloakDeviceRecipe
+# - type: latheRecipePack
+#   id: XenoborgUpgradeModules
+#   recipes:
+#   - XenoborgModuleHeavyLaserRecipe
+#   - XenoborgModuleEnergySwordRecipe
+#   - XenoborgModuleSuperCloakDeviceRecipe
+# Exodus-Exo-Station-Thing-Delete-End

@@ -286,25 +286,27 @@
     maxIntensity: 20
     canCreateVacuum: false # its for killing the borg not the station
 
-- type: entity
-  abstract: true
-  parent: BaseBorgTransponder
-  id: BaseXenoborgTransponder
-  components:
-  - type: DeviceNetwork
-    receiveFrequencyId: Xenoborg
-    transmitFrequencyId: Mothership
-  - type: SurveillanceCamera # they act like cameras for the mothership
-    networkSet: true
-    nameSet: True
-    id: Xenoborg
-  - type: Explosive
-    explosionType: Minibomb
-    deleteAfterExplosion: false # let damage threshold gib the borg
-    totalIntensity: 200 # bigger kaboom
-    intensitySlope: 20
-    maxIntensity: 100
-    canCreateVacuum: false
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: entity
+#   abstract: true
+#   parent: BaseBorgTransponder
+#   id: BaseXenoborgTransponder
+#   components:
+#   - type: DeviceNetwork
+#     receiveFrequencyId: Xenoborg
+#     transmitFrequencyId: Mothership
+#   - type: SurveillanceCamera # they act like cameras for the mothership
+#     networkSet: true
+#     nameSet: True
+#     id: Xenoborg
+#   - type: Explosive
+#     explosionType: Minibomb
+#     deleteAfterExplosion: false # let damage threshold gib the borg
+#     totalIntensity: 200 # bigger kaboom
+#     intensitySlope: 20
+#     maxIntensity: 100
+#     canCreateVacuum: false
+# Exodus-Exo-Station-Thing-Delete-End
 
 - type: entity
   id: BaseBorgChassisNT

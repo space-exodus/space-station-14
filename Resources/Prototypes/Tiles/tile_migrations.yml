@@ -95,3 +95,7 @@
 - type: tileAlias
   id: FloorXenoMaint
   target: FloorSteel
+
+- type: tileAlias
+  id: FloorXenoborg
+  target: FloorSteel

@@ -120,7 +120,7 @@
   - SignalValve
   - PneumaticValve
   - PassiveGate
-  - PressureRegulator
+  # - PressureRegulator # Exodus-Guidebook
 
 - type: guideEntry
   id: ManualValve
@@ -142,10 +142,10 @@
   name: guide-entry-passivegate
   text: "/ServerInfo/Guidebook/Engineering/PassiveGate.xml"
 
-- type: guideEntry
-  id: PressureRegulator
-  name: guide-entry-ressureregulator
-  text: "/ServerInfo/Guidebook/Engineering/PressureRegulator.xml"
+# - type: guideEntry # Exodus-Guidebook
+#   id: PressureRegulator
+#   name: guide-entry-ressureregulator
+#   text: "/ServerInfo/Guidebook/Engineering/PressureRegulator.xml"
 
 - type: guideEntry
   id: MixingAndFiltering
@@ -230,7 +230,7 @@
   children:
   - Fires
   - Spacing
-  - DeltaPressure
+  # - DeltaPressure # Exodus-Guidebook
 
 - type: guideEntry
   id: Fires
@@ -242,10 +242,10 @@
   name: guide-entry-spacing
   text: "/ServerInfo/Guidebook/Engineering/Spacing.xml"
 
-- type: guideEntry
-  id: DeltaPressure
-  name: guide-entry-deltapressure
-  text: "/ServerInfo/Guidebook/Engineering/DeltaPressure.xml"
+# - type: guideEntry # Exodus-Guidebook
+#   id: DeltaPressure
+#   name: guide-entry-deltapressure
+#   text: "/ServerInfo/Guidebook/Engineering/DeltaPressure.xml"
 
 - type: guideEntry
   id: AtmosTools

@@ -261,16 +261,18 @@
   - type: ComputerBoard
     prototype: ComputerSurveillanceWirelessCameraMonitor
 
-- type: entity
-  parent: BaseComputerCircuitboard
-  id: XenoborgCameraMonitorCircuitboard
-  name: xenoborg camera monitor board
-  description: A computer printed circuit board for a xenoborg camera monitor.
-  components:
-  - type: Sprite
-    state: cpu_science
-  - type: ComputerBoard
-    prototype: ComputerSurveillanceWirelessXenoborgCameraMonitor
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: entity
+#   parent: BaseComputerCircuitboard
+#   id: XenoborgCameraMonitorCircuitboard
+#   name: xenoborg camera monitor board
+#   description: A computer printed circuit board for a xenoborg camera monitor.
+#   components:
+#   - type: Sprite
+#     state: cpu_science
+#   - type: ComputerBoard
+#     prototype: ComputerSurveillanceWirelessXenoborgCameraMonitor
+# Exodus-Exo-Station-Thing-Delete-End
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -539,16 +541,18 @@
     - type: ComputerBoard
       prototype: ComputerRoboticsControl
 
-- type: entity
-  parent: BaseComputerCircuitboard
-  id: ComputerXenoborgsControlCircuitboard
-  name: xenoborg control console board
-  description: A computer printed circuit board for a xenoborg control console.
-  components:
-    - type: Sprite
-      state: cpu_science
-    - type: ComputerBoard
-      prototype: ComputerXenoborgsControl
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: entity
+#   parent: BaseComputerCircuitboard
+#   id: ComputerXenoborgsControlCircuitboard
+#   name: xenoborg control console board
+#   description: A computer printed circuit board for a xenoborg control console.
+#   components:
+#     - type: Sprite
+#       state: cpu_science
+#     - type: ComputerBoard
+#       prototype: ComputerXenoborgsControl
+# Exodus-Exo-Station-Thing-Delete-End
 
 - type: entity
   parent: BaseComputerCircuitboard

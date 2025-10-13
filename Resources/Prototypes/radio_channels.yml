@@ -109,11 +109,13 @@
   # long range since I don't wanna make a special xenoborg telecomm server
   longRange: true
 
-- type: radioChannel
-  id: Mothership
-  name: chat-radio-mothership
-  keycode: 'z'
-  frequency: 2003
-  color: "#ff2222"
-  # long range since I don't wanna make a special xenoborg telecomm server
-  longRange: true
+# Exodus-Exo-Station-Thing-Delete-Start
+# - type: radioChannel
+#   id: Mothership
+#   name: chat-radio-mothership
+#   keycode: 'z'
+#   frequency: 2003
+#   color: "#ff2222"
+#   # long range since I don't wanna make a special xenoborg telecomm server
+#   longRange: true
+# Exodus-Exo-Station-Thing-Delete-End
