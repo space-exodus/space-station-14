@@ -39,7 +39,7 @@ public partial class RandomTeleportSystem : EntitySystem
                 if (!_mapManager.TryFindGridAt(_xform.ToMapCoordinates(newCoords), out var gridUid, out var grid) || !_mapSystem.TryGetTileRef(gridUid, grid, newCoords, out var tileRef))
                     continue;
 
-                if (tileRef.Tile.IsSpace())
+                if (tileRef.Tile.IsEmpty)
                     continue;
             }
 
