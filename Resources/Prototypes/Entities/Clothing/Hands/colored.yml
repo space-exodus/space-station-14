@@ -340,6 +340,13 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-yellow
+#Exodus-AnomalyCore-Begin
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10
+        Cold: 10
+#Exodus-AnomalyCore-End
 
 # Budget Insulated Gloves
 - type: entity

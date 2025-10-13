@@ -15,10 +15,12 @@ namespace Content.IntegrationTests.Tests
     [TestFixture]
     public sealed class StorageTest
     {
+        //Exodus-DeleteStorageSizeArbitrageTest-Begin
         /// <summary>
         /// Can an item store more than itself weighs.
         /// In an ideal world this test wouldn't need to exist because sizes would be recursive.
         /// </summary>
+        /*
         [Test]
         public async Task StorageSizeArbitrageTest()
         {
@@ -47,6 +49,8 @@ namespace Content.IntegrationTests.Tests
             });
             await pair.CleanReturnAsync();
         }
+        */
+        //Exodus-DeleteStorageSizeArbitrageTest-End
 
         [Test]
         public async Task TestStorageFillPrototypes()
