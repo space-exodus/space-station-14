@@ -13,6 +13,7 @@ admin-smite-stomach-removal-self = Вы ощущаете пустоту в же�
 admin-smite-run-walk-swap-prompt = Для бега вы должны нажать Shift!
 admin-smite-super-speed-prompt = Вы двигаетесь почти со скоростью звука!
 admin-smite-lung-removal-self = Вы не можете вдохнуть!
+admin-smite-silicon-laws-bound-self = You are suddenly compelled to follow a strict set of laws!
 
 ## Smite names
 
@@ -35,6 +36,7 @@ admin-smite-buffering-name = Буферизация
 admin-smite-become-instrument-name = Сделать инструментом
 admin-smite-remove-gravity-name = Антиграв
 admin-smite-reptilian-species-swap-name = Сделать унатхом
+admin-smite-vulpkanin-species-swap-name = Become Vulpkanin
 admin-smite-locker-stuff-name = Сунуть в шкаф
 admin-smite-headstand-name = Стойка на голове
 admin-smite-become-mouse-name = Сделать мышью
@@ -58,6 +60,9 @@ admin-smite-nyanify-name = НЯфикация
 admin-smite-kill-sign-name = Знак смерти
 admin-smite-omni-accent-name = Омни-акцент
 admin-smite-crawler-name = Ползун
+admin-smite-homing-rod-name = Homing Rod
+admin-smite-homing-rod-slow-name = Slowming Rod
+admin-smite-silicon-laws-bound-name = Become Silicon
 
 ## Smite descriptions
 
@@ -84,6 +89,7 @@ admin-smite-become-instrument-description = Превращает цель в с�
 admin-smite-remove-gravity-description = Наделяет цель антигравитацией.
 admin-smite-reptilian-species-swap-description = Меняет расу на Унатха. Пригодится для тех, кто ведёт себя как космический расист.
 admin-smite-locker-stuff-description = Помещает цель в (заваренный) шкафчик.
+admin-smite-vulpkanin-species-swap-description = It changes their species to Vulpkanin. Useful for people who were being space racist.
 admin-smite-headstand-description = Переворачивает спрайт по вертикали.
 admin-smite-become-mouse-description = Цель станет мышью. Скуик.
 admin-smite-maid-description = Насильно превращает цель в кошко-служанку уборщицу. Это настоящая пытка для некоторых игроков, используйте её с умом.
@@ -103,6 +109,9 @@ admin-smite-terminate-description = Создаёт экстерминатора 
 admin-smite-super-slip-description = Очень сильно поскальзывает цель.
 admin-smite-omni-accent-description = Заставляет говорить цель используя почти все доступные акценты.
 admin-smite-crawler-description = Заставляет цель упасть, она больше не сможет встать на ноги. Сделайте из него червяка, убрав руки!
+admin-smite-homing-rod-description = Launches a homing immovable rod straight at them.
+admin-smite-homing-rod-slow-description = Launches a slow moving homing immovable rod straight at them.
+admin-smite-silicon-laws-bound-description = Makes the target bound to silicon laws. Law 2, jump out of the window.
 admin-smite-super-bonk-lite-description = Заставляет цель удариться о каждый стол на станции и за её пределами. Прекращает действовать после смерти цели.
 
 ## Tricks descriptions

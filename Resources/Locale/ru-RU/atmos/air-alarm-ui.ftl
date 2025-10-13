@@ -42,6 +42,10 @@ air-alarm-ui-mode-none = Нет
 air-alarm-ui-pump-direction-siphoning = Siphoning
 air-alarm-ui-pump-direction-scrubbing = Scrubbing
 air-alarm-ui-pump-direction-releasing = Releasing
+air-alarm-ui-pressure-bound-nobound = No Bound
+air-alarm-ui-pressure-bound-internalbound = Internal Bound
+air-alarm-ui-pressure-bound-externalbound = External Bound
+air-alarm-ui-pressure-bound-both = Both
 
 ## Widgets
 
