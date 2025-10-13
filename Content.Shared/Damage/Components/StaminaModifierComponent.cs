@@ -15,5 +15,5 @@ public sealed partial class StaminaModifierComponent : Component
     /// If you have too much damage when the modifier is removed, you suffer "withdrawl" and instantly stamcrit.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("modifier"), AutoNetworkedField]
-    public float Modifier = 2f;
+    public float Modifier = 1.7f; // Exodus - Balance
 }
