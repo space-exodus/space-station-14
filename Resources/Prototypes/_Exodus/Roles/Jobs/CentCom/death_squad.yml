@@ -12,6 +12,13 @@
   - AllAccess
   access:
   - CentralCommand
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 3h
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 15h
 
 - type: startingGear
   id: DSCommanderGear
@@ -52,6 +59,10 @@
   - AllAccess
   access:
   - CentralCommand
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 15h
 
 - type: startingGear
   id: DSOfficerGear
@@ -92,6 +103,13 @@
   - AllAccess
   access:
   - CentralCommand
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 15h
+  - !type:DepartmentTimeRequirement
+    department: Medical
+    time: 10h
 
 - type: startingGear
   id: DSSpecialistGear

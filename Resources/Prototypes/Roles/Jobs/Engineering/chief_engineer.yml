@@ -4,23 +4,21 @@
   description: job-description-ce
   playTimeTracker: JobChiefEngineer
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobAtmosphericTechnician
-      time: 36000 #10 hrs # Corvax-RoleTime
-#    - !type:RoleTimeRequirement
-#      role: JobStationEngineer
-#      time: 21600 #6 hrs
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
-    # Exodus-Better-Command-Hiring-Start
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Vox
-    # Exodus-Better-Command-Hiring-End
+  # - !type:RoleTimeRequirement
+  #   role: JobAtmosphericTechnician
+  #   time: 2.5h
+  # - !type:RoleTimeRequirement
+  #   role: JobStationEngineer
+  #   time: 5h
+  - !type:DepartmentTimeRequirement
+    department: Engineering
+    time: 16h # Corvax-RoleTime
+  # Exodus-Better-Command-Hiring-Start
+  - !type:SpeciesRequirement
+    inverted: true
+    species:
+    - Vox
+  # Exodus-Better-Command-Hiring-End
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"

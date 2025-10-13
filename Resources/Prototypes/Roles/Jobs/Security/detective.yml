@@ -4,18 +4,18 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 #20 hrs # Corvax-RoleTime
-    # Exodus-Better-Sec-Hiring-Start
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-      - Muted
-      - Blindness
-      - Narcolepsy
-      - Pacifist
-    # Exodus-Better-Sec-Hiring-End
+  - !type:RoleTimeRequirement
+    role: JobSecurityOfficer
+    time: 5h
+  # Exodus-Better-Sec-Hiring-Start
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Muted
+    - Blindness
+    - Narcolepsy
+    - Pacifist
+  # Exodus-Better-Sec-Hiring-End
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

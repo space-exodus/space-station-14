@@ -4,9 +4,12 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 5h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 108000 #50 hrs # Corvax-RoleTime
+      time: 10h
     # Exodus-Better-Sec-Hiring-Start
     - !type:TraitsRequirement
       inverted: true

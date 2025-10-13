@@ -6,15 +6,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobCargoTechnician
-      time: 18000 #5 hrs
+      time: 5h
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 9000 #2.5 hrs
+      time: 2.5h
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 36000 #10 hours
-    - !type:OverallPlaytimeRequirement
-      time: 144000 #40 hrs
+      time: 10h
     # Exodus-Better-Command-Hiring-Start
     - !type:SpeciesRequirement
       inverted: true

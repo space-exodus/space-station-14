@@ -68,7 +68,7 @@
     - id: ClothingMaskBreath
     - id: EmergencyOxygenTankFilled
     - id: MechanicalInjectorEpinephrine
-    - id: FoodBreadBaguette
+    - id: FoodSnackNutribrick # - id: FoodBreadBaguette # was replaced due to missing space
     - id: DrinkWaterBottleFull
 
 - type: entity

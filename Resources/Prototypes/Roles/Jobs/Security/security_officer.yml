@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 #10 hrs # Corvax-RoleTime
+      time: 2.5h
     # Exodus-Better-Sec-Hiring-Start
     - !type:TraitsRequirement
       inverted: true

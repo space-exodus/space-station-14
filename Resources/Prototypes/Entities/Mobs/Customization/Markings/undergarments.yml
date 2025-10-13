@@ -105,7 +105,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: boxers_vox
-#
+
 # - type: marking
 #   id: UndergarmentBottomBriefsVox
 #   bodyPart: UndergarmentBottom
@@ -118,7 +118,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: briefs_vox
-#
+
 # - type: marking
 #   id: UndergarmentBottomSatinVox
 #   bodyPart: UndergarmentBottom
@@ -131,7 +131,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: satin_vox
-#
+
 # - type: marking
 #   id: UndergarmentTopBraVox
 #   bodyPart: UndergarmentTop
@@ -144,7 +144,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: classic_vox
-#
+
 # - type: marking
 #   id: UndergarmentTopSportsbraVox
 #   bodyPart: UndergarmentTop
@@ -157,7 +157,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: sports_vox
-#
+
 # - type: marking
 #   id: UndergarmentTopBinderVox
 #   bodyPart: UndergarmentTop
@@ -170,7 +170,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: binder_vox
-#
+
 # - type: marking
 #   id: UndergarmentTopTanktopVox
 #   bodyPart: UndergarmentTop
@@ -183,8 +183,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: tanktop_vox
-#
-#
+
 # - type: marking
 #   id: UndergarmentBottomBoxersReptilian
 #   bodyPart: UndergarmentBottom
@@ -197,7 +196,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: boxers_reptilian
-#
+
 # - type: marking
 #   id: UndergarmentBottomBriefsReptilian
 #   bodyPart: UndergarmentBottom
@@ -210,7 +209,7 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: briefs_reptilian
-#
+
 # - type: marking
 #   id: UndergarmentBottomSatinReptilian
 #   bodyPart: UndergarmentBottom
@@ -223,4 +222,95 @@
 #   sprites:
 #   - sprite: Mobs/Customization/undergarments.rsi
 #     state: satin_reptilian
+
+# - type: marking
+#   id: UndergarmentBottomBoxersVulpkanin
+#   bodyPart: UndergarmentBottom
+#   markingCategory: UndergarmentBottom
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: boxers_vulpkanin
+
+# - type: marking
+#   id: UndergarmentBottomBriefsVulpkanin
+#   bodyPart: UndergarmentBottom
+#   markingCategory: UndergarmentBottom
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: briefs_vulpkanin
+
+# - type: marking
+#   id: UndergarmentBottomSatinVulpkanin
+#   bodyPart: UndergarmentBottom
+#   markingCategory: UndergarmentBottom
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: satin_vulpkanin
+
+# - type: marking
+#   id: UndergarmentTopBraVulpkanin
+#   bodyPart: UndergarmentTop
+#   markingCategory: UndergarmentTop
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: classic_vulpkanin
+
+# - type: marking
+#   id: UndergarmentTopSportsbraVulpkanin
+#   bodyPart: UndergarmentTop
+#   markingCategory: UndergarmentTop
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: sports_vulpkanin
+
+# - type: marking
+#   id: UndergarmentTopBinderVulpkanin
+#   bodyPart: UndergarmentTop
+#   markingCategory: UndergarmentTop
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: binder_vulpkanin
+
+# - type: marking
+#   id: UndergarmentTopTanktopVulpkanin
+#   bodyPart: UndergarmentTop
+#   markingCategory: UndergarmentTop
+#   speciesRestriction: [Vulpkanin]
+#   coloring:
+#     default:
+#       type: null
+#       fallbackColor: '#FFFFFF'
+#   sprites:
+#   - sprite: Mobs/Customization/undergarments.rsi
+#     state: tanktop_vulpkanin
 # Exodus-No-Need-For-Underwear-For-Race-End

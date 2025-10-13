@@ -1,5 +1,5 @@
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkAlexanderGlass
   suffix: alexander
   components:
@@ -10,13 +10,12 @@
         reagents:
         - ReagentId: Alexander
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/alexander.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkBadTouchGlass
   suffix: bad touch
   components:
@@ -27,13 +26,12 @@
         reagents:
         - ReagentId: BadTouch
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/badTouch.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkBoyarskyGlass
   suffix: boyarsky
   components:
@@ -44,13 +42,12 @@
         reagents:
         - ReagentId: Boyarsky
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/boyarsky.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkBrambleGlass
   suffix: bramble
   components:
@@ -61,7 +58,6 @@
         reagents:
         - ReagentId: Bramble
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/bramble.rsi
     state: icon
@@ -82,7 +78,7 @@
       sprite: Corvax/Objects/Consumable/Drinks/kvass.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkMaiTaiGlass
   suffix: mai tai
   components:
@@ -93,13 +89,12 @@
         reagents:
         - ReagentId: MaiTai
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/maiTai.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkNegroniGlass
   suffix: negroni
   components:
@@ -110,13 +105,12 @@
         reagents:
         - ReagentId: Negroni
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/negroni.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkOldFashionedGlass
   suffix: old fashioned
   components:
@@ -127,13 +121,12 @@
         reagents:
         - ReagentId: OldFashioned
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/oldFashioned.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkPalomaGlass
   suffix: paloma
   components:
@@ -144,13 +137,12 @@
         reagents:
         - ReagentId: Paloma
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/paloma.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkYorshGlass
   suffix: yorsh
   components:
@@ -161,7 +153,6 @@
         reagents:
         - ReagentId: Yorsh
           Quantity: 30
-  - type: Drink
   - type: Icon
     sprite: Corvax/Objects/Consumable/Drinks/yorsh.rsi
     state: icon

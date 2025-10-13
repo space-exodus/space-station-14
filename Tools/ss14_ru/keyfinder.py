@@ -57,10 +57,12 @@ class FilesFinder:
                 ru_file = self.create_ru_analog(relative_file)
                 self.created_files.append(ru_file)
             elif relative_file.locale == 'ru-RU':
-                is_engine_files = "robust-toolbox" in (relative_file.file.full_path)
-                is_corvax_files = "corvax" in (relative_file.file.full_path)
-                if not is_engine_files and not is_corvax_files:
-                    self.warn_en_analog_not_exist(relative_file)
+                pass
+            # Exodus | We no longer care about en-US
+            #     is_engine_files = "robust-toolbox" in (relative_file.file.full_path)
+            #     is_corvax_files = "corvax" in (relative_file.file.full_path)
+            #     if not is_engine_files and not is_corvax_files:
+            #         self.warn_en_analog_not_exist(relative_file)
             else:
                 raise Exception(f'Файл {relative_file.file.full_path} имеет неизвестную локаль "{relative_file.locale}"')
 
@@ -87,11 +89,12 @@ class FilesFinder:
 
         return ru_file
 
-    def warn_en_analog_not_exist(self, ru_relative_file: RelativeFile):
-        file: FluentFile = ru_relative_file.file
-        en_file_path = file.full_path.replace('ru-RU', 'en-US')
+    # Exodus | We no longer care about en-US
+    # def warn_en_analog_not_exist(self, ru_relative_file: RelativeFile):
+    #     file: FluentFile = ru_relative_file.file
+    #     en_file_path = file.full_path.replace('ru-RU', 'en-US')
 
-        logging.warning(f'Файл {file.full_path} не имеет английского аналога по пути {en_file_path}')
+    #     logging.warning(f'Файл {file.full_path} не имеет английского аналога по пути {en_file_path}')
 
 
 class KeyFinder:
@@ -121,10 +124,10 @@ class KeyFinder:
         en_file_parsed: ast.Resource = en_file.parse_data(en_file.read_data())
 
         self.write_to_ru_files(ru_file, ru_file_parsed, en_file_parsed)
-        self.log_not_exist_en_files(en_file, ru_file_parsed, en_file_parsed)
+        # self.log_not_exist_en_files(en_file, ru_file_parsed, en_file_parsed) # Exodus | We no longer care about en-US
 
 
-    def write_to_ru_files(self, ru_file, ru_file_parsed, en_file_parsed):
+    def write_to_ru_files(self, ru_file, ru_file_parsed: ast.Resource, en_file_parsed: ast.Resource):
         for idx, en_message in enumerate(en_file_parsed.body):
             if isinstance(en_message, ast.ResourceComment) or isinstance(en_message, ast.GroupComment) or isinstance(en_message, ast.Comment):
                 continue
@@ -157,15 +160,15 @@ class KeyFinder:
                 serialized = serializer.serialize(ru_file_parsed)
                 self.save_and_log_file(ru_file, serialized, en_message)
 
-    def log_not_exist_en_files(self, en_file, ru_file_parsed, en_file_parsed):
-        for idx, ru_message in enumerate(ru_file_parsed.body):
-            if isinstance(ru_message, ast.ResourceComment) or isinstance(ru_message, ast.GroupComment) or isinstance(ru_message, ast.Comment):
-                continue
+    # Exodus | We no longer care about en-US
+    # def log_not_exist_en_files(self, en_file, ru_file_parsed, en_file_parsed):
+    #     for idx, ru_message in enumerate(ru_file_parsed.body):
+    #         if isinstance(ru_message, ast.ResourceComment) or isinstance(ru_message, ast.GroupComment) or isinstance(ru_message, ast.Comment):
+    #             continue
 
-            en_message_analog = py_.find(en_file_parsed.body, lambda en_message: self.find_duplicate_message_id_name(ru_message, en_message))
-
-            if not en_message_analog:
-                logging.warning(f'Ключ "{FluentAstAbstract.get_id_name(ru_message)}" не имеет английского аналога по пути {en_file.full_path}"')
+    #         en_message_analog = py_.find(en_file_parsed.body, lambda en_message: self.find_duplicate_message_id_name(ru_message, en_message))
+    #         if not en_message_analog:
+    #             logging.warning(f'Ключ "{FluentAstAbstract.get_id_name(ru_message)}" не имеет английского аналога по пути {en_file.full_path}"')
 
     def append_message(self, ru_file_parsed, en_message, en_message_idx):
         ru_message_part_1 = ru_file_parsed.body[0:en_message_idx]
