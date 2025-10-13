@@ -49,6 +49,7 @@ job-name-ertjanitor = Уборщик ОБР
 job-name-boxer = Боксёр
 job-name-zookeeper = Зоотехник
 job-name-visitor = Посетитель
+job-name-cluwne = Клувень
 # unused jobs
 # these are required for the agent ID job icon tooltips
 # I am keeping them for roleplaying opportunities

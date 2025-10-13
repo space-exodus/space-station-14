@@ -26,7 +26,7 @@ construction-graph-tag-medical-hud = медицинский визор
 construction-graph-tag-sun-glasses = солнцезащитные очки
 construction-graph-tag-security-helmet = шлем СБ
 # materials
-construction-graph-tag-capacitor = конденсатор
+construction-graph-tag-manipulator = модульная машинная часть
 construction-graph-tag-voice-trigger = голосовой триггер
 construction-graph-tag-signal-trigger = сигнальный триггер
 construction-graph-tag-proximity-sensor = датчик движения
@@ -48,7 +48,7 @@ construction-graph-tag-super-compact-ai-chip = сверхкомпактный ч
 # other
 construction-graph-tag-light-bulb = лампочка
 construction-graph-tag-radio = радио
-construction-graph-tag-pipe = труба
+construction-graph-tag-pipe = газовая труба
 construction-graph-tag-human-head = человеческая голова
 construction-graph-tag-bucket = ведро
 construction-graph-tag-borg-arm = рука борга
@@ -56,11 +56,15 @@ construction-graph-tag-borg-head = голова борга
 construction-graph-tag-medkit = аптечка
 construction-graph-tag-flower = цветок
 construction-graph-tag-ambrosia = амброзия
-construction-graph-tag-rifle-stock = оружейное ложе
+construction-graph-tag-rifle-stock = ружейное ложе
 construction-graph-tag-match-stick = спичка
 construction-graph-tag-potato = картофель
 construction-graph-tag-wheat-bushel = сноп пшеницы
 construction-graph-tag-corgi-hide = шкура корги
+construction-graph-tag-apron = фартук
+construction-graph-tag-utility-belt = пояс для инструментов
+soil-construction-graph-any-mushroom = любой гриб
+construction-graph-tag-mop-basic = швабра
 # toys
 construction-graph-tag-rubber-ducky = резиновая уточка
 construction-graph-tag-ghost = плюшевый призрак
@@ -88,6 +92,7 @@ construction-graph-tag-ripley-peripherals-control-module = модуль упра
 construction-graph-tag-door-electronics-circuit-board = микросхема шлюза
 construction-graph-tag-firelock-electronics-circuit-board = микросхема пожарного шлюза
 construction-graph-tag-conveyor-belt-assembly = конвейерная лента
+construction-graph-tag-station-ai-core-electronics = электроника ядра ИИ
 # tools
 construction-graph-tag-multitool = мультитул
 construction-graph-tag-health-analyzer = анализатор здоровья
@@ -108,6 +113,7 @@ construction-graph-tag-wallmount-substation-circuit-board = микросхема
 construction-graph-tag-surveillance-camera-monitor-board = плата монитор камер наблюдения
 construction-graph-tag-television-board = плата телевизора
 construction-graph-tag-freezer-electronics = микросхема холодильника
+construction-graph-tag-turret-control-electronics = микросхема панели управления охранной турели
 # crystals
 construction-graph-tag-cyan-crystal-shard = голубой осколок кристалла
 construction-graph-tag-blue-crystal-shard = синий осколок кристалла
@@ -125,3 +131,5 @@ construction-graph-tag-fire-extinguisher = огнетушитель
 construction-graph-tag-fire-helmet = пожарный шлем
 # salvage
 construction-graph-tag-spationaut-hardsuit = лёгкий скафандр утилизатора
+# clothing
+construction-graph-tag-backpack = рюкзак

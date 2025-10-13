@@ -28,3 +28,6 @@ ent-CyborgEnergySwordDouble = { ent-EnergySwordDouble }
 ent-EnergyDaggerLoudBlue = { ent-EnergyDaggerLoud }
     .suffix = Синий
     .desc = { ent-EnergyDaggerLoud.desc }
+ent-CyborgEnergySword = игрушечный меч
+    .desc = Очень громкий и опасный меч с лучом чистой, концентрированной плазмы. Разрезает небронированные объекты как масло.
+    .suffix = энергетический меч

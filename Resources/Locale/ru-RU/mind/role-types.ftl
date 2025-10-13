@@ -30,3 +30,4 @@ role-subtype-survivor = Выживший
 role-subtype-subverted = Дефек Борг
 role-subtype-paradox-clone = Парадокс
 role-subtype-wizard = Маг
+role-subtype-changeling = Метаморф

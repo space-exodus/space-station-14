@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "Made by JunJunn (Jidor) (discord:692704105373761587), owned by Space Exodus",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "silicatebarrel"
+    },
+    {
+      "name": "metalbarrel"
+    },
+    {
+      "name": "radbarrel"
+    }
+  ]
+}
