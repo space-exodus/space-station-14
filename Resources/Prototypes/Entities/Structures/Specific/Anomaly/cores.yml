@@ -114,11 +114,12 @@
         damage: 5
       behaviors:
         - !type:TriggerBehavior
-  - type: SoundOnTrigger
-    removeOnTrigger: true
+  - type: EmitSoundOnTrigger
+    delete: true
     sound:
       path: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
-      volume: 5
+      params:
+        volume: 5
   - type: TwoStageTrigger
     triggerDelay: 10.0
     components:
@@ -143,7 +144,7 @@
         radius: 6
         softness: 1
         offset: "0, 0"
-      - type: SoundOnTrigger
+      - type: EmitSoundOnTrigger
         sound:
           path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
           params:
@@ -523,7 +524,7 @@
     frictionNoInput: 0.05
   - type: Slippery
     slipData:
-      paralyzeTime: 5.0
+      knockdownTime: 5.0
       launchForwardsMultiplier: 3.0
   - type: Residue
     residueAdjective: residue-slippery
@@ -817,11 +818,12 @@
         damage: 5
       behaviors:
         - !type:TriggerBehavior
-  - type: SoundOnTrigger
-    removeOnTrigger: true
+  - type: EmitSoundOnTrigger
+    delete: true
     sound:
       path: /Audio/Effects/Grenades/Supermatter/supermatter_start.ogg
-      volume: 5
+      params:
+        volume: 5
   - type: TwoStageTrigger
     triggerDelay: 5.0
     components:
@@ -846,7 +848,7 @@
         radius: 6
         softness: 1
         offset: "0, 0"
-      - type: SoundOnTrigger
+      - type: EmitSoundOnTrigger
         sound:
           path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
           params:
@@ -1010,7 +1012,7 @@
     frictionNoInput: 0.05
   - type: Slippery
     slipData:
-      paralyzeTime: 5.0
+      knockdownTime: 5.0
       launchForwardsMultiplier: 3.0
   - type: Residue
     residueAdjective: residue-slippery
