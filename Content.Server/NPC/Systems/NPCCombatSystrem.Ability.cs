@@ -153,7 +153,7 @@ public sealed partial class NPCCombatSystem
         if (_chargesSystem.GetNextRechargeTime(actionUid) <= TimeSpan.Zero)
             _chargesSystem.ResetCharges(actionUid);
 
-        BaseActionEvent? performEvent = _actions.GetEvent(actionUid);
+        var performEvent = _actions.GetEvent(actionUid);
 
         if (performEvent == null)
         {
@@ -161,19 +161,34 @@ public sealed partial class NPCCombatSystem
             return false;
         }
 
+        if (performEvent is WorldTargetActionEvent worldTargetAction)
+        {
+            worldTargetAction.Target = Transform(combatComp.Target).Coordinates;
+
+            if (HasComp<EntityTargetActionComponent>(actionUid))
+                worldTargetAction.Entity = combatComp.Target;
+        }
+        if (performEvent is EntityTargetActionEvent entityTargetAction)
+        {
+            entityTargetAction.Target = combatComp.Target;
+        }
+
         // Perform all needed validation for action like if it was used just by player
         // TODO: rewrite it when proper way for manual calling of action will be available
         var provider = actionComp.Container ?? uid;
         var validateActionEv = new ActionValidateEvent()
         {
-            Input = new RequestPerformActionEvent(GetNetEntity(actionUid), GetNetEntity(combatComp.Target)),
+            Input = new RequestPerformActionEvent(GetNetEntity(actionUid), HasComp<EntityTargetActionComponent>(actionUid) ? GetNetEntity(combatComp.Target) : null, GetNetCoordinates(Transform(combatComp.Target).Coordinates)),
             Provider = provider,
             User = uid,
         };
         RaiseLocalEvent(actionUid, ref validateActionEv);
 
         if (validateActionEv.Invalid)
+        {
+            Log.Error($"Action validate event check failed on action {actionUid} ({MetaData(actionUid).EntityName}) of the {uid} ({MetaData(uid).EntityName})");
             return false;
+        }
 
         if (actionComp.MinAIUseRange >= distance ||
             actionComp.MaxAIUseRange <= distance)
