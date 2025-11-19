@@ -1,0 +1,11 @@
+<!-- © Space Wizards Federation, A MIT license, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/MIT_LICENSE.TXT -->
+<!-- © Space Exodus, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/space-exodus/space-station-14/master/CLA.txt -->
+<!-- Made by Space Exodus, based on SimpleRadialMenu.xaml by Space Wizards Federation at https://github.com/space-exodus/space-station-14/tree/15c03d05d0c4481b6965137dbca2a5c9df9e2e9d/Content.Client/UserInterface/Controls/SimpleRadialMenu.xaml -->
+<ui:HealthyRadialMenu xmlns="https://spacestation14.io"
+                     xmlns:ui="clr-namespace:Content.Client.Exodus.UserInterface.Controls"
+                     BackButtonStyleClass="RadialMenuBackButton"
+                     CloseButtonStyleClass="RadialMenuCloseButton"
+                     VerticalExpand="True"
+                     HorizontalExpand="True"
+                     MinSize="450 450">
+</ui:HealthyRadialMenu>

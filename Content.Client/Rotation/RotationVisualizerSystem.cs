@@ -76,4 +76,21 @@ public sealed class RotationVisualizerSystem : SharedRotationVisualsSystem
 
         _animation.Play((uid, animationComp), animation, animationKey);
     }
+
+    // Exodus-EmoteRotateSpriteAnimation-Start
+    /// <summary>
+    /// In case you need to interrupt animation in the middle, for example, when another animation is called
+    /// </summary>
+    public void StopRotationAnimation(EntityUid uid, SpriteComponent spriteComp)
+    {
+        if (!TryComp<AnimationPlayerComponent>(uid, out var animationComp))
+            return;
+
+        const string animationKey = "rotate";
+        if (_animation.HasRunningAnimation(animationComp, animationKey))
+        {
+            _animation.Stop((uid, animationComp), animationKey);
+        }
+    }
+    // Exodus-EmoteRotateSpriteAnimation-End
 }
