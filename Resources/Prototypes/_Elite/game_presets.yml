@@ -1,0 +1,32 @@
+# used for development purposes
+- type: gamePreset
+  id: EliteEmpty
+  alias:
+  - Empty
+  - empty
+  name: elite-empty-title
+  showInVote: false
+  description: elite-empty-description
+  rules:
+  - EliteEmptyEventScheduler
+
+- type: gamePreset
+  id: EliteDevelopment
+  alias:
+  - development
+  - dev
+  name: elite-dev-title
+  description: elite-dev-description
+  showInVote: false
+  rules:
+  - EliteEmptyEventScheduler
+
+- type: gamePreset
+  id: EliteMain
+  alias:
+  - main
+  name: elite-main-title
+  description: elite-main-description
+  showInVote: false
+  rules:
+  - EliteEmptyEventScheduler
